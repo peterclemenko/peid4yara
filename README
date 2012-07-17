@@ -1,0 +1,5 @@
+peid4yara
+
+Given PEiD has long been, and still largely is, the best method to identify packed binaries, but is no longer being updated, peid4yara is the conversion of the PEiD signatures to work with the active Yara Malware Classifer. 
+
+Source: http://research.pandasecurity.com/blogs/images/userdb.txt
