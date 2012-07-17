@@ -1,6 +1,5 @@
 //  Made with Add Signature v2.00 by BoB / BobSoft ..
 //  3520 Signatures in list ..
-
 rule Native UD Packer 1.1 (Modded Poison Ivy Shellcode) -> okkixot : Packer
 {
     meta:
@@ -14,7 +13,6 @@ rule Native UD Packer 1.1 (Modded Poison Ivy Shellcode) -> okkixot : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.3.0.0 -> Obsidium Software (h) : Packer
 {
     meta:
@@ -29,7 +27,6 @@ rule Obsidium v1.3.0.0 -> Obsidium Software (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESpin v0.1 -> Cyberbob : Packer
 {
     meta:
@@ -43,7 +40,6 @@ rule PESpin v0.1 -> Cyberbob : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Private Personal Packer (PPP) v1.0.2 --> ConquestOfTroy.com : Packer
 {
     meta:
@@ -57,7 +53,6 @@ rule Private Personal Packer (PPP) v1.0.2 --> ConquestOfTroy.com : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix : Packer
 {
     meta:
@@ -71,7 +66,6 @@ rule PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix : Packer
 {
     meta:
@@ -85,7 +79,6 @@ rule PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix : Packer
 {
     meta:
@@ -99,7 +92,6 @@ rule PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix : Packer
 {
     meta:
@@ -113,7 +105,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix :
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Morphine 1.2] --> Anorganix : Packer
 {
     meta:
@@ -127,7 +118,6 @@ rule PseudoSigner 0.1 [Morphine 1.2] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Neolite 2.0] --> Anorganix : Packer
 {
     meta:
@@ -141,7 +131,6 @@ rule PseudoSigner 0.1 [Neolite 2.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix : Packer
 {
     meta:
@@ -155,7 +144,6 @@ rule PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SimplePack 1.11 Method 1 -> bagie[TMX] (h) : Packer
 {
     meta:
@@ -169,7 +157,6 @@ rule SimplePack 1.11 Method 1 -> bagie[TMX] (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Software Compress v1.2 -> BG Software Protect Technologies : Packer
 {
     meta:
@@ -183,7 +170,6 @@ rule Software Compress v1.2 -> BG Software Protect Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Software Compress v1.4 LITE -> BG Software Protect Technologies (h) : Packer
 {
     meta:
@@ -197,7 +183,6 @@ rule Software Compress v1.4 LITE -> BG Software Protect Technologies (h) : Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix : Packer
 {
     meta:
@@ -211,7 +196,6 @@ rule PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix : Packer
 {
     meta:
@@ -225,7 +209,6 @@ rule PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ASPack 2.xx Heuristic] --> Anorganix : Packer
 {
     meta:
@@ -239,7 +222,6 @@ rule PseudoSigner 0.1 [ASPack 2.xx Heuristic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ASPack 2.xx Heuristic] --> Anorganix : Packer
 {
     meta:
@@ -253,7 +235,6 @@ rule PseudoSigner 0.1 [ASPack 2.xx Heuristic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix : Packer
 {
     meta:
@@ -267,7 +248,6 @@ rule PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix : Packer
 {
     meta:
@@ -281,7 +261,6 @@ rule PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix : Packer
 {
     meta:
@@ -295,7 +274,6 @@ rule PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix : Packer
 {
     meta:
@@ -309,7 +287,6 @@ rule PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Borland Delphi 6.0 - 7.0] --> Anorganix : Packer
 {
     meta:
@@ -323,7 +300,6 @@ rule PseudoSigner 0.1 [Borland Delphi 6.0 - 7.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Borland Delphi 6.0 - 7.0] --> Anorganix : Packer
 {
     meta:
@@ -337,7 +313,6 @@ rule PseudoSigner 0.1 [Borland Delphi 6.0 - 7.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [FSG 1.0] --> Anorganix : Packer
 {
     meta:
@@ -351,7 +326,6 @@ rule PseudoSigner 0.1 [FSG 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [FSG 1.0] --> Anorganix : Packer
 {
     meta:
@@ -365,7 +339,6 @@ rule PseudoSigner 0.1 [FSG 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Macromedia Flash Projector 6.0] --> Anorganix : Packer
 {
     meta:
@@ -379,7 +352,6 @@ rule PseudoSigner 0.1 [Macromedia Flash Projector 6.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Macromedia Flash Projector 6.0] --> Anorganix : Packer
 {
     meta:
@@ -393,7 +365,6 @@ rule PseudoSigner 0.1 [Macromedia Flash Projector 6.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix : Packer
 {
     meta:
@@ -407,7 +378,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix :
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix : Packer
 {
     meta:
@@ -421,7 +391,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix :
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Morphine 1.2] --> Anorganix : Packer
 {
     meta:
@@ -435,7 +404,6 @@ rule PseudoSigner 0.1 [Morphine 1.2] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Morphine 1.2] --> Anorganix : Packer
 {
     meta:
@@ -449,7 +417,6 @@ rule PseudoSigner 0.1 [Morphine 1.2] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Neolite 2.0] --> Anorganix : Packer
 {
     meta:
@@ -463,7 +430,6 @@ rule PseudoSigner 0.1 [Neolite 2.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Neolite 2.0] --> Anorganix : Packer
 {
     meta:
@@ -477,7 +443,6 @@ rule PseudoSigner 0.1 [Neolite 2.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix : Packer
 {
     meta:
@@ -491,7 +456,6 @@ rule PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix : Packer
 {
     meta:
@@ -505,7 +469,6 @@ rule PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PECompact 1.4+] --> Anorganix : Packer
 {
     meta:
@@ -519,7 +482,6 @@ rule PseudoSigner 0.1 [PECompact 1.4+] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PECompact 1.4+] --> Anorganix : Packer
 {
     meta:
@@ -533,7 +495,6 @@ rule PseudoSigner 0.1 [PECompact 1.4+] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PEtite 2.x (level 0)] --> Anorganix : Packer
 {
     meta:
@@ -547,7 +508,6 @@ rule PseudoSigner 0.1 [PEtite 2.x (level 0)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PEtite 2.x (level 0)] --> Anorganix : Packer
 {
     meta:
@@ -561,7 +521,6 @@ rule PseudoSigner 0.1 [PEtite 2.x (level 0)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Ste@lth PE 1.01] --> Anorganix : Packer
 {
     meta:
@@ -575,7 +534,6 @@ rule PseudoSigner 0.1 [Ste@lth PE 1.01] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Ste@lth PE 1.01] --> Anorganix : Packer
 {
     meta:
@@ -589,7 +547,6 @@ rule PseudoSigner 0.1 [Ste@lth PE 1.01] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Video-Lan-Client] --> Anorganix : Packer
 {
     meta:
@@ -603,7 +560,6 @@ rule PseudoSigner 0.1 [Video-Lan-Client] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Video-Lan-Client] --> Anorganix : Packer
 {
     meta:
@@ -617,7 +573,6 @@ rule PseudoSigner 0.1 [Video-Lan-Client] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [FSG 1.0] --> Anorganix : Packer
 {
     meta:
@@ -631,7 +586,6 @@ rule PseudoSigner 0.2 [FSG 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Macromedia Flash Projector 6.0] --> Anorganix : Packer
 {
     meta:
@@ -645,7 +599,6 @@ rule PseudoSigner 0.2 [Macromedia Flash Projector 6.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Video-Lan-Client] --> Anorganix : Packer
 {
     meta:
@@ -659,7 +612,6 @@ rule PseudoSigner 0.2 [Video-Lan-Client] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -673,7 +625,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -687,7 +638,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -701,7 +651,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -715,7 +664,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ACProtect 1.09g -> Risco software Inc. : Packer
 {
     meta:
@@ -729,7 +677,6 @@ rule ACProtect 1.09g -> Risco software Inc. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ACProtect 1.09g -> Risco software Inc. : Packer
 {
     meta:
@@ -743,7 +690,6 @@ rule ACProtect 1.09g -> Risco software Inc. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Alloy 4.x -> PGWare LLC : Packer
 {
     meta:
@@ -757,7 +703,6 @@ rule Alloy 4.x -> PGWare LLC : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Alloy 4.x -> PGWare LLC : Packer
 {
     meta:
@@ -771,7 +716,6 @@ rule Alloy 4.x -> PGWare LLC : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Apex_c beta -> 500mhz : Packer
 {
     meta:
@@ -785,7 +729,6 @@ rule Apex_c beta -> 500mhz : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Apex_c beta -> 500mhz : Packer
 {
     meta:
@@ -799,7 +742,6 @@ rule Apex_c beta -> 500mhz : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.01, v3.05 : Packer
 {
     meta:
@@ -813,7 +755,6 @@ rule Armadillo v3.01, v3.05 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.01, v3.05 : Packer
 {
     meta:
@@ -827,7 +768,6 @@ rule Armadillo v3.01, v3.05 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.10 : Packer
 {
     meta:
@@ -841,7 +781,6 @@ rule Armadillo v3.10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.10 : Packer
 {
     meta:
@@ -855,7 +794,6 @@ rule Armadillo v3.10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect SKE 2.1x (dll) -> Alexey Solodovnikov (h) : Packer
 {
     meta:
@@ -869,7 +807,6 @@ rule ASProtect SKE 2.1x (dll) -> Alexey Solodovnikov (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect SKE 2.1x (dll) -> Alexey Solodovnikov (h) : Packer
 {
     meta:
@@ -883,7 +820,6 @@ rule ASProtect SKE 2.1x (dll) -> Alexey Solodovnikov (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.23 RC4 build 08.07 (dll) -> Alexey Solodovnikov (h) : Packer
 {
     meta:
@@ -897,7 +833,6 @@ rule ASProtect v1.23 RC4 build 08.07 (dll) -> Alexey Solodovnikov (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.23 RC4 build 08.07 (dll) -> Alexey Solodovnikov (h) : Packer
 {
     meta:
@@ -911,7 +846,6 @@ rule ASProtect v1.23 RC4 build 08.07 (dll) -> Alexey Solodovnikov (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule beria v0.07 public WIP --> symbiont : Packer
 {
     meta:
@@ -925,7 +859,6 @@ rule beria v0.07 public WIP --> symbiont : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule beria v0.07 public WIP --> symbiont (h) : Packer
 {
     meta:
@@ -939,7 +872,6 @@ rule beria v0.07 public WIP --> symbiont (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRo Tiny Pascal -> BeRo : Packer
 {
     meta:
@@ -953,7 +885,6 @@ rule BeRo Tiny Pascal -> BeRo : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRo Tiny Pascal -> BeRo : Packer
 {
     meta:
@@ -967,7 +898,6 @@ rule BeRo Tiny Pascal -> BeRo : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRo Tiny Pascal -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -981,7 +911,6 @@ rule BeRo Tiny Pascal -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BobPack v1.00 --> BoB / BobSoft : Packer
 {
     meta:
@@ -995,7 +924,6 @@ rule BobPack v1.00 --> BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CICompress v1.0 : Packer
 {
     meta:
@@ -1009,7 +937,6 @@ rule CICompress v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CICompress v1.0 : Packer
 {
     meta:
@@ -1023,7 +950,6 @@ rule CICompress v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CipherWall Self-Extrator/Decryptor (Console) v1.5 : Packer
 {
     meta:
@@ -1037,7 +963,6 @@ rule CipherWall Self-Extrator/Decryptor (Console) v1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CipherWall Self-Extrator/Decryptor (Console) v1.5 : Packer
 {
     meta:
@@ -1051,7 +976,6 @@ rule CipherWall Self-Extrator/Decryptor (Console) v1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CipherWall Self-Extrator/Decryptor (GUI) v1.5 : Packer
 {
     meta:
@@ -1065,7 +989,6 @@ rule CipherWall Self-Extrator/Decryptor (GUI) v1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CipherWall Self-Extrator/Decryptor (GUI) v1.5 : Packer
 {
     meta:
@@ -1079,7 +1002,6 @@ rule CipherWall Self-Extrator/Decryptor (GUI) v1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CreateInstall Stub vx.x : Packer
 {
     meta:
@@ -1093,7 +1015,6 @@ rule CreateInstall Stub vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CreateInstall Stub vx.x : Packer
 {
     meta:
@@ -1107,7 +1028,6 @@ rule CreateInstall Stub vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch v4.0 : Packer
 {
     meta:
@@ -1121,7 +1041,6 @@ rule Crunch v4.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch v4.0 : Packer
 {
     meta:
@@ -1135,7 +1054,6 @@ rule Crunch v4.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch v5 -> Bit-Arts : Packer
 {
     meta:
@@ -1149,7 +1067,6 @@ rule Crunch v5 -> Bit-Arts : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch v5 -> Bit-Arts : Packer
 {
     meta:
@@ -1163,7 +1080,6 @@ rule Crunch v5 -> Bit-Arts : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
 {
     meta:
@@ -1177,7 +1093,6 @@ rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
 {
     meta:
@@ -1191,7 +1106,6 @@ rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
 {
     meta:
@@ -1205,7 +1119,6 @@ rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
 {
     meta:
@@ -1219,7 +1132,6 @@ rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DBPE v2.10 : Packer
 {
     meta:
@@ -1233,7 +1145,6 @@ rule DBPE v2.10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DBPE v2.10 : Packer
 {
     meta:
@@ -1247,7 +1158,6 @@ rule DBPE v2.10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DEF 1.0 -> bart/xt : Packer
 {
     meta:
@@ -1261,7 +1171,6 @@ rule DEF 1.0 -> bart/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DEF 1.0 -> bart/xt : Packer
 {
     meta:
@@ -1275,7 +1184,6 @@ rule DEF 1.0 -> bart/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DEF v1.00 (Eng) -> bart/xt : Packer
 {
     meta:
@@ -1289,7 +1197,6 @@ rule DEF v1.00 (Eng) -> bart/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DEF v1.00 (Eng) -> bart/xt : Packer
 {
     meta:
@@ -1303,7 +1210,6 @@ rule DEF v1.00 (Eng) -> bart/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule diPacker V1.X -> diProtector Software : Packer
 {
     meta:
@@ -1317,7 +1223,6 @@ rule diPacker V1.X -> diProtector Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule diProtector V1.X -> diProtector Software : Packer
 {
     meta:
@@ -1331,7 +1236,6 @@ rule diProtector V1.X -> diProtector Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DotFix NiceProtect vna : Packer
 {
     meta:
@@ -1345,7 +1249,6 @@ rule DotFix NiceProtect vna : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Dual's eXe 1.0 : Packer
 {
     meta:
@@ -1359,7 +1262,6 @@ rule Dual's eXe 1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Dual's eXe 1.0 : Packer
 {
     meta:
@@ -1373,7 +1275,6 @@ rule Dual's eXe 1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EmbedPE 1.13 -> cyclotron : Packer
 {
     meta:
@@ -1387,7 +1288,6 @@ rule EmbedPE 1.13 -> cyclotron : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EmbedPE 1.13 -> cyclotron : Packer
 {
     meta:
@@ -1401,7 +1301,6 @@ rule EmbedPE 1.13 -> cyclotron : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EP v1.0 : Packer
 {
     meta:
@@ -1415,7 +1314,6 @@ rule EP v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EP v1.0 : Packer
 {
     meta:
@@ -1429,7 +1327,6 @@ rule EP v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Guarder v1.8 -> Exeicon.com (h) : Packer
 {
     meta:
@@ -1443,7 +1340,6 @@ rule Exe Guarder v1.8 -> Exeicon.com (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Guarder v1.8 -> Exeicon.com (h) : Packer
 {
     meta:
@@ -1457,7 +1353,6 @@ rule Exe Guarder v1.8 -> Exeicon.com (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Locker v1.0 --> IonIce : Packer
 {
     meta:
@@ -1471,7 +1366,6 @@ rule Exe Locker v1.0 --> IonIce : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Locker v1.0 --> IonIce : Packer
 {
     meta:
@@ -1485,7 +1379,6 @@ rule Exe Locker v1.0 --> IonIce : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Shield V0.5 -> Smoke : Packer
 {
     meta:
@@ -1499,7 +1392,6 @@ rule EXE Shield V0.5 -> Smoke : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Shield V0.6 -> SMoKE : Packer
 {
     meta:
@@ -1513,7 +1405,6 @@ rule EXE Shield V0.6 -> SMoKE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Shield v2.7b : Packer
 {
     meta:
@@ -1527,7 +1418,6 @@ rule Exe Shield v2.7b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Shield v2.7b : Packer
 {
     meta:
@@ -1541,7 +1431,6 @@ rule Exe Shield v2.7b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Stealth 2.75a -> WebtoolMaster : Packer
 {
     meta:
@@ -1555,7 +1444,6 @@ rule Exe Stealth 2.75a -> WebtoolMaster : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeBundle v3.0 (small loader) : Packer
 {
     meta:
@@ -1569,7 +1457,6 @@ rule ExeBundle v3.0 (small loader) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeBundle v3.0 (small loader) : Packer
 {
     meta:
@@ -1583,7 +1470,6 @@ rule ExeBundle v3.0 (small loader) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeBundle v3.0 (standard loader) : Packer
 {
     meta:
@@ -1597,7 +1483,6 @@ rule ExeBundle v3.0 (standard loader) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeBundle v3.0 (standard loader) : Packer
 {
     meta:
@@ -1611,7 +1496,6 @@ rule ExeBundle v3.0 (standard loader) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeJoiner 1.0 -> Yoda f2f : Packer
 {
     meta:
@@ -1625,7 +1509,6 @@ rule ExeJoiner 1.0 -> Yoda f2f : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeJoiner 1.0 -> Yoda f2f : Packer
 {
     meta:
@@ -1639,7 +1522,6 @@ rule ExeJoiner 1.0 -> Yoda f2f : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeShield 3.6 -> www.exeshield.com : Packer
 {
     meta:
@@ -1653,7 +1535,6 @@ rule ExeShield 3.6 -> www.exeshield.com : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeShield v3.7 -> ExeShield Team (h) : Packer
 {
     meta:
@@ -1667,7 +1548,6 @@ rule ExeShield v3.7 -> ExeShield Team (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXEStealth v2.75a -> WebtoolMaster (h) : Packer
 {
     meta:
@@ -1681,7 +1561,6 @@ rule EXEStealth v2.75a -> WebtoolMaster (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FixupPak v1.20 : Packer
 {
     meta:
@@ -1695,7 +1574,6 @@ rule FixupPak v1.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FixupPak v1.20 : Packer
 {
     meta:
@@ -1709,7 +1587,6 @@ rule FixupPak v1.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FreePascal 2.0.0 Win32 -> (Bérczi Gábor, Pierre Muller & Peter Vreman) : Packer
 {
     meta:
@@ -1723,7 +1600,6 @@ rule FreePascal 2.0.0 Win32 -> (Bérczi Gábor, Pierre Muller & Peter Vreman) : 
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FreePascal 2.0.0 Win32 -> (Bérczi Gábor, Pierre Muller & Peter Vreman) : Packer
 {
     meta:
@@ -1737,7 +1613,6 @@ rule FreePascal 2.0.0 Win32 -> (Bérczi Gábor, Pierre Muller & Peter Vreman) : 
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.00 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -1751,7 +1626,6 @@ rule FSG v1.00 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.00 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -1765,7 +1639,6 @@ rule FSG v1.00 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> bart/xt : Packer
 {
     meta:
@@ -1779,7 +1652,6 @@ rule FSG v1.10 (Eng) -> bart/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland C++) : Packer
 {
     meta:
@@ -1793,7 +1665,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland C++) : Packer
 {
     meta:
@@ -1807,7 +1678,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
 {
     meta:
@@ -1821,7 +1691,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
 {
     meta:
@@ -1835,7 +1704,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
@@ -1849,7 +1717,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
@@ -1863,7 +1730,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
 {
     meta:
@@ -1877,7 +1743,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
 {
     meta:
@@ -1891,7 +1756,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -1905,7 +1769,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -1919,7 +1782,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -1933,7 +1795,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -1947,7 +1808,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Borland C++) : Packer
 {
     meta:
@@ -1961,7 +1821,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Borland C++) : Packer
 {
     meta:
@@ -1975,7 +1834,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
 {
     meta:
@@ -1989,7 +1847,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
 {
     meta:
@@ -2003,7 +1860,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
@@ -2017,7 +1873,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
@@ -2031,7 +1886,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
 {
     meta:
@@ -2045,7 +1899,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
 {
     meta:
@@ -2059,7 +1912,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -2073,7 +1925,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -2087,7 +1938,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -2101,7 +1951,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -2115,7 +1964,6 @@ rule FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.3 : Packer
 {
     meta:
@@ -2129,7 +1977,6 @@ rule FSG v1.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.3 : Packer
 {
     meta:
@@ -2143,7 +1990,6 @@ rule FSG v1.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.30 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -2157,7 +2003,6 @@ rule FSG v1.30 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.31 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -2171,7 +2016,6 @@ rule FSG v1.31 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.31 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -2185,7 +2029,6 @@ rule FSG v1.31 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.33 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -2199,7 +2042,6 @@ rule FSG v1.33 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.33 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -2213,7 +2055,6 @@ rule FSG v1.33 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Fuck'n'Joy v1.0c -> UsAr : Packer
 {
     meta:
@@ -2227,7 +2068,6 @@ rule Fuck'n'Joy v1.0c -> UsAr : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Fuck'n'Joy v1.0c -> UsAr : Packer
 {
     meta:
@@ -2241,7 +2081,6 @@ rule Fuck'n'Joy v1.0c -> UsAr : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Goat's PE Mutilator 1.6 : Packer
 {
     meta:
@@ -2255,7 +2094,6 @@ rule Goat's PE Mutilator 1.6 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule hmimys Protect v1.0 : Packer
 {
     meta:
@@ -2269,7 +2107,6 @@ rule hmimys Protect v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule InstallAnywhere 6.1 -> Zero G Software Inc : Packer
 {
     meta:
@@ -2283,7 +2120,6 @@ rule InstallAnywhere 6.1 -> Zero G Software Inc : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule InstallAnywhere 6.1 ->Zero G Software Inc : Packer
 {
     meta:
@@ -2297,7 +2133,6 @@ rule InstallAnywhere 6.1 ->Zero G Software Inc : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule InstallShield Custom : Packer
 {
     meta:
@@ -2311,7 +2146,6 @@ rule InstallShield Custom : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule KGB SFX : Packer
 {
     meta:
@@ -2325,7 +2159,6 @@ rule KGB SFX : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LaunchAnywhere v4.0.0.1 : Packer
 {
     meta:
@@ -2339,7 +2172,6 @@ rule LaunchAnywhere v4.0.0.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Macromedia Windows Flash Projector/Player v5.0 : Packer
 {
     meta:
@@ -2353,7 +2185,6 @@ rule Macromedia Windows Flash Projector/Player v5.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C# / Basic .NET : Packer
 {
     meta:
@@ -2367,7 +2198,6 @@ rule Microsoft Visual C# / Basic .NET : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ 6.0 SFX Custom : Packer
 {
     meta:
@@ -2381,7 +2211,6 @@ rule Microsoft Visual C++ 6.0 SFX Custom : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ 7.0 Custom : Packer
 {
     meta:
@@ -2395,7 +2224,6 @@ rule Microsoft Visual C++ 7.0 Custom : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.0 : Packer
 {
     meta:
@@ -2409,7 +2237,6 @@ rule Microsoft Visual C++ v7.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW v3.2.x (Dll_main) : Packer
 {
     meta:
@@ -2423,7 +2250,6 @@ rule MinGW v3.2.x (Dll_main) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW v3.2.x (Dll_mainCRTStartup) : Packer
 {
     meta:
@@ -2437,7 +2263,6 @@ rule MinGW v3.2.x (Dll_mainCRTStartup) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW v3.2.x (Dll_WinMain) : Packer
 {
     meta:
@@ -2451,7 +2276,6 @@ rule MinGW v3.2.x (Dll_WinMain) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW v3.2.x (main) : Packer
 {
     meta:
@@ -2465,7 +2289,6 @@ rule MinGW v3.2.x (main) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW v3.2.x (WinMain) : Packer
 {
     meta:
@@ -2479,7 +2302,6 @@ rule MinGW v3.2.x (WinMain) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW v3.2.x (_mainCRTStartup) : Packer
 {
     meta:
@@ -2493,7 +2315,6 @@ rule MinGW v3.2.x (_mainCRTStartup) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NoodleCrypt v2.00 (Eng) -> NoodleSpa : Packer
 {
     meta:
@@ -2507,7 +2328,6 @@ rule NoodleCrypt v2.00 (Eng) -> NoodleSpa : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Nullsoft Install System v1.xx : Packer
 {
     meta:
@@ -2521,7 +2341,6 @@ rule Nullsoft Install System v1.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Nullsoft Install System v1.xx : Packer
 {
     meta:
@@ -2535,7 +2354,6 @@ rule Nullsoft Install System v1.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Nullsoft Install System v2.0b2, v2.0b3 : Packer
 {
     meta:
@@ -2549,7 +2367,6 @@ rule Nullsoft Install System v2.0b2, v2.0b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.2.5.0 -> Obsidium Software (h) : Packer
 {
     meta:
@@ -2563,7 +2380,6 @@ rule Obsidium v1.2.5.0 -> Obsidium Software (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.2.5.0 -> Obsidium Software (h) : Packer
 {
     meta:
@@ -2577,7 +2393,6 @@ rule Obsidium v1.2.5.0 -> Obsidium Software (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.3.0.0 -> Obsidium Software (h) : Packer
 {
     meta:
@@ -2591,7 +2406,6 @@ rule Obsidium v1.3.0.0 -> Obsidium Software (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.3.0.4 -> Obsidium Software : Packer
 {
     meta:
@@ -2605,7 +2419,6 @@ rule Obsidium v1.3.0.4 -> Obsidium Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ORiEN v2.11 (DEMO) : Packer
 {
     meta:
@@ -2619,7 +2432,6 @@ rule ORiEN v2.11 (DEMO) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ORiEN v2.11 - 2.12 -> Fisun Alexander : Packer
 {
     meta:
@@ -2633,7 +2445,6 @@ rule ORiEN v2.11 - 2.12 -> Fisun Alexander : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PassLock 2000 v1.0 (Eng) -> Moonlight-Software : Packer
 {
     meta:
@@ -2647,7 +2458,6 @@ rule PassLock 2000 v1.0 (Eng) -> Moonlight-Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PC Guard for Win32 v5.00 -> SofPro/Blagoje Ceklic (h) : Packer
 {
     meta:
@@ -2661,7 +2471,6 @@ rule PC Guard for Win32 v5.00 -> SofPro/Blagoje Ceklic (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PC-Guard v5.00d : Packer
 {
     meta:
@@ -2675,7 +2484,6 @@ rule PC-Guard v5.00d : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Diminisher v0.1 -> Teraphy : Packer
 {
     meta:
@@ -2689,7 +2497,6 @@ rule PE Diminisher v0.1 -> Teraphy : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Protector 0.9.3 --> CRYPToCRACk : Packer
 {
     meta:
@@ -2703,7 +2510,6 @@ rule PE Protector 0.9.3 --> CRYPToCRACk : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Spin v0.b : Packer
 {
     meta:
@@ -2717,7 +2523,6 @@ rule PE Spin v0.b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Pe123  v2006.4.12 : Packer
 {
     meta:
@@ -2731,7 +2536,6 @@ rule Pe123  v2006.4.12 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Pe123  v2006.4.4 : Packer
 {
     meta:
@@ -2745,7 +2549,6 @@ rule Pe123  v2006.4.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.67 : Packer
 {
     meta:
@@ -2759,7 +2562,6 @@ rule PECompact v1.67 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.68 - v1.84 : Packer
 {
     meta:
@@ -2773,7 +2575,6 @@ rule PECompact v1.68 - v1.84 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEiD-Bundle v1.00 - v1.01 --> BoB / BobSoft : Packer
 {
     meta:
@@ -2787,7 +2588,6 @@ rule PEiD-Bundle v1.00 - v1.01 --> BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEiD-Bundle v1.00 --> BoB / BobSoft : Packer
 {
     meta:
@@ -2801,7 +2601,6 @@ rule PEiD-Bundle v1.00 --> BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEiD-Bundle v1.01 --> BoB / BobSoft : Packer
 {
     meta:
@@ -2815,7 +2614,6 @@ rule PEiD-Bundle v1.01 --> BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEiD-Bundle v1.02 --> BoB / BobSoft : Packer
 {
     meta:
@@ -2829,7 +2627,6 @@ rule PEiD-Bundle v1.02 --> BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEnguinCrypt v1.0 : Packer
 {
     meta:
@@ -2843,7 +2640,6 @@ rule PEnguinCrypt v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESpin v0.1 -> Cyberbob (h) : Packer
 {
     meta:
@@ -2857,7 +2653,6 @@ rule PESpin v0.1 -> Cyberbob (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESpin v0.3 (Eng) -> cyberbob : Packer
 {
     meta:
@@ -2871,7 +2666,6 @@ rule PESpin v0.3 (Eng) -> cyberbob : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESpin v0.7 -> Cyberbob (h) : Packer
 {
     meta:
@@ -2885,7 +2679,6 @@ rule PESpin v0.7 -> Cyberbob (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESpin v1.1 -> Cyberbob (h) : Packer
 {
     meta:
@@ -2899,7 +2692,6 @@ rule PESpin v1.1 -> Cyberbob (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESPin v1.3 -> Cyberbob (h) : Packer
 {
     meta:
@@ -2913,7 +2705,6 @@ rule PESPin v1.3 -> Cyberbob (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESpin v1.304 -> Cyberbob (h) : Packer
 {
     meta:
@@ -2927,7 +2718,6 @@ rule PESpin v1.304 -> Cyberbob (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESpin v1.3beta -> Cyberbob (h) : Packer
 {
     meta:
@@ -2941,7 +2731,6 @@ rule PESpin v1.3beta -> Cyberbob (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Petite 1.2 -> (c)1998 Ian Luck (h) : Packer
 {
     meta:
@@ -2955,7 +2744,6 @@ rule Petite 1.2 -> (c)1998 Ian Luck (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Petite 1.4 -> (c)1998-99 Ian Luck (h) : Packer
 {
     meta:
@@ -2969,7 +2757,6 @@ rule Petite 1.4 -> (c)1998-99 Ian Luck (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PeX v0.99 (Eng) -> bart/CrackPl : Packer
 {
     meta:
@@ -2983,7 +2770,6 @@ rule PeX v0.99 (Eng) -> bart/CrackPl : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Private EXE Protector 1.8 -> SetiSoft : Packer
 {
     meta:
@@ -2997,7 +2783,6 @@ rule Private EXE Protector 1.8 -> SetiSoft : Packer
     condition:
     	for any of them
 }
-
 rule Private EXE Protector 1.9.7 -> SetiSoft (h) : Packer
 {
     meta:
@@ -3011,7 +2796,6 @@ rule Private EXE Protector 1.9.7 -> SetiSoft (h) : Packer
     condition:
     	for any of them
 }
-
 rule PseudoSigner 0.2 [FSG 1.0] --> Anorganix : Packer
 {
     meta:
@@ -3025,7 +2809,6 @@ rule PseudoSigner 0.2 [FSG 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Macromedia Flash Projector 6.0] --> Anorganix : Packer
 {
     meta:
@@ -3039,7 +2822,6 @@ rule PseudoSigner 0.2 [Macromedia Flash Projector 6.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Video-Lan-Client] --> Anorganix : Packer
 {
     meta:
@@ -3053,7 +2835,6 @@ rule PseudoSigner 0.2 [Video-Lan-Client] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PUNiSHER v1.5 (DEMO) -> FEUERRADER/AHTeam : Packer
 {
     meta:
@@ -3067,7 +2848,6 @@ rule PUNiSHER v1.5 (DEMO) -> FEUERRADER/AHTeam : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RE-Crypt v0.7x -> Crudd [RET] (h1) : Packer
 {
     meta:
@@ -3081,7 +2861,6 @@ rule RE-Crypt v0.7x -> Crudd [RET] (h1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RE-Crypt v0.7x -> Crudd [RET] (h2) : Packer
 {
     meta:
@@ -3095,7 +2874,6 @@ rule RE-Crypt v0.7x -> Crudd [RET] (h2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Reflexive Arcade Wrapper : Packer
 {
     meta:
@@ -3109,7 +2887,6 @@ rule Reflexive Arcade Wrapper : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack 1.0 beta -> ap0x : Packer
 {
     meta:
@@ -3123,7 +2900,6 @@ rule RLPack 1.0 beta -> ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack Full Edition 1.17 DLL [aPLib] -> Ap0x : Packer
 {
     meta:
@@ -3137,7 +2913,6 @@ rule RLPack Full Edition 1.17 DLL [aPLib] -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack V1.0.beta -> ap0x : Packer
 {
     meta:
@@ -3151,7 +2926,6 @@ rule RLPack V1.0.beta -> ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SafeDisc/SafeCast 2.xx - 3.xx -> Macrovision : Packer
 {
     meta:
@@ -3165,7 +2939,6 @@ rule SafeDisc/SafeCast 2.xx - 3.xx -> Macrovision : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SDProtect -> Randy Li : Packer
 {
     meta:
@@ -3179,7 +2952,6 @@ rule SDProtect -> Randy Li : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SDProtector 1.x -> Randy Li : Packer
 {
     meta:
@@ -3193,7 +2965,6 @@ rule SDProtector 1.x -> Randy Li : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SDProtector Basic/Pro Edition 1.10 -> Randy Li (h) : Packer
 {
     meta:
@@ -3207,7 +2978,6 @@ rule SDProtector Basic/Pro Edition 1.10 -> Randy Li (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SDProtector Pro Edition 1.16 -> Randy Li (h) : Packer
 {
     meta:
@@ -3221,7 +2991,6 @@ rule SDProtector Pro Edition 1.16 -> Randy Li (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SmartE -> Microsoft : Packer
 {
     meta:
@@ -3235,7 +3004,6 @@ rule SmartE -> Microsoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Soft Defender v1.0 - v1.1 : Packer
 {
     meta:
@@ -3249,7 +3017,6 @@ rule Soft Defender v1.0 - v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SoftDefender 1.x -> Randy Li : Packer
 {
     meta:
@@ -3263,7 +3030,6 @@ rule SoftDefender 1.x -> Randy Li : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SOFTWrapper for Win9x/NT (Evaluation Version) : Packer
 {
     meta:
@@ -3277,7 +3043,6 @@ rule SOFTWrapper for Win9x/NT (Evaluation Version) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Special EXE Pasword Protector v1.01 (Eng) -> Pavol Cerven : Packer
 {
     meta:
@@ -3291,7 +3056,6 @@ rule Special EXE Pasword Protector v1.01 (Eng) -> Pavol Cerven : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SuperDAT : Packer
 {
     meta:
@@ -3305,7 +3069,6 @@ rule SuperDAT : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SVK Protector v1.32 (Eng) -> Pavol Cerven : Packer
 {
     meta:
@@ -3319,7 +3082,6 @@ rule SVK Protector v1.32 (Eng) -> Pavol Cerven : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SVK Protector v1.3x (Eng) -> Pavol Cerven : Packer
 {
     meta:
@@ -3333,7 +3095,6 @@ rule SVK Protector v1.3x (Eng) -> Pavol Cerven : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule themida 1.0.0.5 -> http://www.oreans.com : Packer
 {
     meta:
@@ -3347,7 +3108,6 @@ rule themida 1.0.0.5 -> http://www.oreans.com : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Themida 1.0.x.x - 1.8.0.0 (compressed engine) -> Oreans Technologies : Packer
 {
     meta:
@@ -3361,7 +3121,6 @@ rule Themida 1.0.x.x - 1.8.0.0 (compressed engine) -> Oreans Technologies : Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Themida 1.2.0.1 (compressed) -> Oreans Technologies (h) : Packer
 {
     meta:
@@ -3375,7 +3134,6 @@ rule Themida 1.2.0.1 (compressed) -> Oreans Technologies (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Themida 1.8.x.x -> Oreans Technologies : Packer
 {
     meta:
@@ -3389,7 +3147,6 @@ rule Themida 1.8.x.x -> Oreans Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Thinstall v2.460 -> Jitit : Packer
 {
     meta:
@@ -3403,7 +3160,6 @@ rule Thinstall v2.460 -> Jitit : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack 0.1x beta -> Dwing : Packer
 {
     meta:
@@ -3417,7 +3173,6 @@ rule Upack 0.1x beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack 0.20 beta -> Dwing : Packer
 {
     meta:
@@ -3431,7 +3186,6 @@ rule Upack 0.20 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack 0.21 beta -> Dwing : Packer
 {
     meta:
@@ -3445,7 +3199,6 @@ rule Upack 0.21 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack 0.22 - 0.23 beta -> Dwing : Packer
 {
     meta:
@@ -3459,7 +3212,6 @@ rule Upack 0.22 - 0.23 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack 0.24 beta -> Dwing : Packer
 {
     meta:
@@ -3473,7 +3225,6 @@ rule Upack 0.24 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.399 -> Dwing : Packer
 {
     meta:
@@ -3487,7 +3238,6 @@ rule Upack v0.399 -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX 2.90 [LZMA] -> Markus Oberhumer, Laszlo Molnar & John Reiser : Packer
 {
     meta:
@@ -3501,7 +3251,6 @@ rule UPX 2.90 [LZMA] -> Markus Oberhumer, Laszlo Molnar & John Reiser : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX Modified Stub b -> Farb-rausch Consumer Consulting : Packer
 {
     meta:
@@ -3515,7 +3264,6 @@ rule UPX Modified Stub b -> Farb-rausch Consumer Consulting : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX Modified Stub c -> Farb-rausch Consumer Consulting : Packer
 {
     meta:
@@ -3529,7 +3277,6 @@ rule UPX Modified Stub c -> Farb-rausch Consumer Consulting : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upx v1.2 -> Marcus & Lazlo : Packer
 {
     meta:
@@ -3543,7 +3290,6 @@ rule Upx v1.2 -> Marcus & Lazlo : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX-SCRAMBLER 3.06 -> ©OnT®oL : Packer
 {
     meta:
@@ -3557,7 +3303,6 @@ rule UPX-SCRAMBLER 3.06 -> ©OnT®oL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vcasm-Protector 1.0 : Packer
 {
     meta:
@@ -3571,7 +3316,6 @@ rule Vcasm-Protector 1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule vfp&exeNc v6.00 -> Wang JianGuo : Packer
 {
     meta:
@@ -3585,7 +3329,6 @@ rule vfp&exeNc v6.00 -> Wang JianGuo : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule vprotector 1.2 -> vcasm : Packer
 {
     meta:
@@ -3599,7 +3342,6 @@ rule vprotector 1.2 -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VProtector V1.0E -> vcasm : Packer
 {
     meta:
@@ -3613,7 +3355,6 @@ rule VProtector V1.0E -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WinUpack v0.39 final (relocated image base) -> By Dwing (c)2005 (h2) : Packer
 {
     meta:
@@ -3627,7 +3368,6 @@ rule WinUpack v0.39 final (relocated image base) -> By Dwing (c)2005 (h2) : Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WinZip Self-Extractor 2.2 personal edition -> WinZip Computing (h) : Packer
 {
     meta:
@@ -3641,7 +3381,6 @@ rule WinZip Self-Extractor 2.2 personal edition -> WinZip Computing (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Wise Installer Stub : Packer
 {
     meta:
@@ -3655,7 +3394,6 @@ rule Wise Installer Stub : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Wise Installer Stub v1.10.1029.1 : Packer
 {
     meta:
@@ -3669,7 +3407,6 @@ rule Wise Installer Stub v1.10.1029.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Xtreme-Protector v1.06 : Packer
 {
     meta:
@@ -3683,7 +3420,6 @@ rule Xtreme-Protector v1.06 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Crypter 1.3 -> Ashkbiz Danehkar : Packer
 {
     meta:
@@ -3697,7 +3433,6 @@ rule yoda's Crypter 1.3 -> Ashkbiz Danehkar : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Protector 1.0 beta -> Ashkbiz Danehkar : Packer
 {
     meta:
@@ -3711,7 +3446,6 @@ rule yoda's Protector 1.0 beta -> Ashkbiz Danehkar : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Protector 1.02 - 1.03 -> Ashkbiz Danehkar : Packer
 {
     meta:
@@ -3725,7 +3459,6 @@ rule yoda's Protector 1.02 - 1.03 -> Ashkbiz Danehkar : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Protector v1.01 -> Ashkbiz Danehkar (h) : Packer
 {
     meta:
@@ -3739,7 +3472,6 @@ rule yoda's Protector v1.01 -> Ashkbiz Danehkar (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Protector v1.03.2 (.exe,.scr,.com) -> Ashkbiz Danehkar (h) : Packer
 {
     meta:
@@ -3753,7 +3485,6 @@ rule yoda's Protector v1.03.2 (.exe,.scr,.com) -> Ashkbiz Danehkar (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Yoda's Protector v1.03.2 Beta2 -> Ashkbiz Danehkar : Packer
 {
     meta:
@@ -3767,7 +3498,6 @@ rule Yoda's Protector v1.03.2 Beta2 -> Ashkbiz Danehkar : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Protector v1.03.3 (.exe,.scr,.com) -> Ashkbiz Danehkar (h) : Packer
 {
     meta:
@@ -3781,7 +3511,6 @@ rule yoda's Protector v1.03.3 (.exe,.scr,.com) -> Ashkbiz Danehkar (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Protector v1.0b -> Ashkbiz Danehkar (h) : Packer
 {
     meta:
@@ -3795,7 +3524,6 @@ rule yoda's Protector v1.0b -> Ashkbiz Danehkar (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Armadillo 3.00] --> Anorganix : Packer
 {
     meta:
@@ -3809,7 +3537,6 @@ rule PseudoSigner 0.1 [Armadillo 3.00] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Armadillo 3.00] --> Anorganix : Packer
 {
     meta:
@@ -3823,7 +3550,6 @@ rule PseudoSigner 0.1 [Armadillo 3.00] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [CodeSafe 2.0] --> Anorganix : Packer
 {
     meta:
@@ -3837,7 +3563,6 @@ rule PseudoSigner 0.1 [CodeSafe 2.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [CodeSafe 2.0] --> Anorganix : Packer
 {
     meta:
@@ -3851,7 +3576,6 @@ rule PseudoSigner 0.1 [CodeSafe 2.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [DEF 1.0] --> Anorganix : Packer
 {
     meta:
@@ -3865,7 +3589,6 @@ rule PseudoSigner 0.1 [DEF 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [DEF 1.0] --> Anorganix : Packer
 {
     meta:
@@ -3879,7 +3602,6 @@ rule PseudoSigner 0.1 [DEF 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [DxPack 1.0] --> Anorganix : Packer
 {
     meta:
@@ -3893,7 +3615,6 @@ rule PseudoSigner 0.1 [DxPack 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [DxPack 1.0] --> Anorganix : Packer
 {
     meta:
@@ -3907,7 +3628,6 @@ rule PseudoSigner 0.1 [DxPack 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ExeSmasher] --> Anorganix : Packer
 {
     meta:
@@ -3921,7 +3641,6 @@ rule PseudoSigner 0.1 [ExeSmasher] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ExeSmasher] --> Anorganix : Packer
 {
     meta:
@@ -3935,7 +3654,6 @@ rule PseudoSigner 0.1 [ExeSmasher] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Gleam 1.00] --> Anorganix : Packer
 {
     meta:
@@ -3949,7 +3667,6 @@ rule PseudoSigner 0.1 [Gleam 1.00] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Gleam 1.00] --> Anorganix : Packer
 {
     meta:
@@ -3963,7 +3680,6 @@ rule PseudoSigner 0.1 [Gleam 1.00] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [JDPack 1.x / JDProtect 0.9] --> Anorganix : Packer
 {
     meta:
@@ -3977,7 +3693,6 @@ rule PseudoSigner 0.1 [JDPack 1.x / JDProtect 0.9] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [JDPack 1.x / JDProtect 0.9] --> Anorganix : Packer
 {
     meta:
@@ -3991,7 +3706,6 @@ rule PseudoSigner 0.1 [JDPack 1.x / JDProtect 0.9] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [LCC Win32 DLL] --> Anorganix : Packer
 {
     meta:
@@ -4005,7 +3719,6 @@ rule PseudoSigner 0.1 [LCC Win32 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [LCC Win32 DLL] --> Anorganix : Packer
 {
     meta:
@@ -4019,7 +3732,6 @@ rule PseudoSigner 0.1 [LCC Win32 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Lockless Intro Pack] --> Anorganix : Packer
 {
     meta:
@@ -4033,7 +3745,6 @@ rule PseudoSigner 0.1 [Lockless Intro Pack] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Lockless Intro Pack] --> Anorganix : Packer
 {
     meta:
@@ -4047,7 +3758,6 @@ rule PseudoSigner 0.1 [Lockless Intro Pack] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual Basic 6.0 DLL] --> Anorganix : Packer
 {
     meta:
@@ -4061,7 +3771,6 @@ rule PseudoSigner 0.1 [Microsoft Visual Basic 6.0 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual Basic 6.0 DLL] --> Anorganix : Packer
 {
     meta:
@@ -4075,7 +3784,6 @@ rule PseudoSigner 0.1 [Microsoft Visual Basic 6.0 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 6.20] --> Anorganix : Packer
 {
     meta:
@@ -4089,7 +3797,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 6.20] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 6.20] --> Anorganix : Packer
 {
     meta:
@@ -4103,7 +3810,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 6.20] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 7.0 DLL] --> Anorganix : Packer
 {
     meta:
@@ -4117,7 +3823,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 7.0 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 7.0 DLL] --> Anorganix : Packer
 {
     meta:
@@ -4131,7 +3836,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 7.0 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PE Intro 1.0] --> Anorganix : Packer
 {
     meta:
@@ -4145,7 +3849,6 @@ rule PseudoSigner 0.1 [PE Intro 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PE Intro 1.0] --> Anorganix : Packer
 {
     meta:
@@ -4159,7 +3862,6 @@ rule PseudoSigner 0.1 [PE Intro 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PENinja 1.31] --> Anorganix : Packer
 {
     meta:
@@ -4173,7 +3875,6 @@ rule PseudoSigner 0.1 [PENinja 1.31] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PENinja 1.31] --> Anorganix : Packer
 {
     meta:
@@ -4187,7 +3888,6 @@ rule PseudoSigner 0.1 [PENinja 1.31] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PESHiELD 0.25] --> Anorganix : Packer
 {
     meta:
@@ -4201,7 +3901,6 @@ rule PseudoSigner 0.1 [PESHiELD 0.25] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PESHiELD 0.25] --> Anorganix : Packer
 {
     meta:
@@ -4215,7 +3914,6 @@ rule PseudoSigner 0.1 [PESHiELD 0.25] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Armadillo 3.00] --> Anorganix : Packer
 {
     meta:
@@ -4229,7 +3927,6 @@ rule PseudoSigner 0.2 [Armadillo 3.00] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [CodeSafe 2.0] --> Anorganix : Packer
 {
     meta:
@@ -4243,7 +3940,6 @@ rule PseudoSigner 0.2 [CodeSafe 2.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [DEF 1.0] --> Anorganix : Packer
 {
     meta:
@@ -4257,7 +3953,6 @@ rule PseudoSigner 0.2 [DEF 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [DxPack 1.0] --> Anorganix : Packer
 {
     meta:
@@ -4271,7 +3966,6 @@ rule PseudoSigner 0.2 [DxPack 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [ExeSmasher] --> Anorganix : Packer
 {
     meta:
@@ -4285,7 +3979,6 @@ rule PseudoSigner 0.2 [ExeSmasher] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Gleam 1.00] --> Anorganix : Packer
 {
     meta:
@@ -4299,7 +3992,6 @@ rule PseudoSigner 0.2 [Gleam 1.00] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [JDPack 1.x / JDProtect 0.9] --> Anorganix : Packer
 {
     meta:
@@ -4313,7 +4005,6 @@ rule PseudoSigner 0.2 [JDPack 1.x / JDProtect 0.9] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PESHiELD 0.25] --> Anorganix : Packer
 {
     meta:
@@ -4327,7 +4018,6 @@ rule PseudoSigner 0.2 [PESHiELD 0.25] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [ZCode 1.01] --> Anorganix : Packer
 {
     meta:
@@ -4341,7 +4031,6 @@ rule PseudoSigner 0.2 [ZCode 1.01] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4355,7 +4044,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4369,7 +4057,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4383,7 +4070,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4397,7 +4083,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4411,7 +4096,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4425,7 +4109,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4439,7 +4122,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4453,7 +4135,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4467,7 +4148,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4481,7 +4161,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4495,7 +4174,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4509,7 +4187,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4523,7 +4200,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4537,7 +4213,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4551,7 +4226,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4565,7 +4239,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4579,7 +4252,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4593,7 +4265,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4607,7 +4278,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4621,7 +4291,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4635,7 +4304,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4649,7 +4317,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4663,7 +4330,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4677,7 +4343,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4691,7 +4356,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4705,7 +4369,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4719,7 +4382,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4733,7 +4395,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4747,7 +4408,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4761,7 +4421,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4775,7 +4434,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4789,7 +4447,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4803,7 +4460,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4817,7 +4473,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4831,7 +4486,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4845,7 +4499,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4859,7 +4512,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4873,7 +4525,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4887,7 +4538,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4901,7 +4551,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4915,7 +4564,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4929,7 +4577,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4943,7 +4590,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4957,7 +4603,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4971,7 +4616,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4985,7 +4629,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -4999,7 +4642,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5013,7 +4655,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5027,7 +4668,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5041,7 +4681,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5055,7 +4694,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5069,7 +4707,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5083,7 +4720,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5097,7 +4733,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5111,7 +4746,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5125,7 +4759,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5139,7 +4772,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5153,7 +4785,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5167,7 +4798,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5181,7 +4811,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5195,7 +4824,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5209,7 +4837,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5223,7 +4850,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5237,7 +4863,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5251,7 +4876,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5265,7 +4889,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5279,7 +4902,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5293,7 +4915,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5307,7 +4928,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5321,7 +4941,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5335,7 +4954,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5349,7 +4967,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5363,7 +4980,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5377,7 +4993,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5391,7 +5006,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5405,7 +5019,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5419,7 +5032,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5433,7 +5045,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5447,7 +5058,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5461,7 +5071,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5475,7 +5084,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5489,7 +5097,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5503,7 +5110,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5517,7 +5123,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5531,7 +5136,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5545,7 +5149,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5559,7 +5162,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5573,7 +5175,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5587,7 +5188,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5601,7 +5201,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5615,7 +5214,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5629,7 +5227,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5643,7 +5240,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5657,7 +5253,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5671,7 +5266,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5685,7 +5279,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5699,7 +5292,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5713,7 +5305,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5727,7 +5318,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5741,7 +5331,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5755,7 +5344,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5769,7 +5357,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5783,7 +5370,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5797,7 +5383,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5811,7 +5396,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5825,7 +5409,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5839,7 +5422,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5853,7 +5435,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5867,7 +5448,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5881,7 +5461,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5895,7 +5474,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5909,7 +5487,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5923,7 +5500,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5937,7 +5513,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5951,7 +5526,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5965,7 +5539,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5979,7 +5552,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -5993,7 +5565,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6007,7 +5578,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6021,7 +5591,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6035,7 +5604,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6049,7 +5617,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6063,7 +5630,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6077,7 +5643,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6091,7 +5656,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6105,7 +5669,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6119,7 +5682,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6133,7 +5695,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6147,7 +5708,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6161,7 +5721,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6175,7 +5734,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6189,7 +5747,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6203,7 +5760,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6217,7 +5773,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6231,7 +5786,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6245,7 +5799,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6259,7 +5812,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6273,7 +5825,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6287,7 +5838,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6301,7 +5851,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6315,7 +5864,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6329,7 +5877,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6343,7 +5890,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6357,7 +5903,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6371,7 +5916,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6385,7 +5929,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6399,7 +5942,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6413,7 +5955,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6427,7 +5968,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6441,7 +5981,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6455,7 +5994,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6469,7 +6007,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6483,7 +6020,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6497,7 +6033,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6511,7 +6046,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6525,7 +6059,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6539,7 +6072,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6553,7 +6085,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6567,7 +6098,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6581,7 +6111,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6595,7 +6124,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6609,7 +6137,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6623,7 +6150,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6637,7 +6163,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6651,7 +6176,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6665,7 +6189,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6679,7 +6202,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6693,7 +6215,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6707,7 +6228,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6721,7 +6241,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6735,7 +6254,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6749,7 +6267,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6763,7 +6280,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6777,7 +6293,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6791,7 +6306,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6805,7 +6319,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6819,7 +6332,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6833,7 +6345,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6847,7 +6358,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6861,7 +6371,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6875,7 +6384,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6889,7 +6397,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6903,7 +6410,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6917,7 +6423,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6931,7 +6436,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6945,7 +6449,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6959,7 +6462,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6973,7 +6475,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -6987,7 +6488,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7001,7 +6501,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7015,7 +6514,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7029,7 +6527,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7043,7 +6540,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7057,7 +6553,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7071,7 +6566,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7085,7 +6579,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7099,7 +6592,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7113,7 +6605,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7127,7 +6618,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7141,7 +6631,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7155,7 +6644,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7169,7 +6657,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7183,7 +6670,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7197,7 +6683,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7211,7 +6696,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7225,7 +6709,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7239,7 +6722,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7253,7 +6735,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7267,7 +6748,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7281,7 +6761,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7295,7 +6774,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7309,7 +6787,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7323,7 +6800,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7337,7 +6813,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7351,7 +6826,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7365,7 +6839,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7379,7 +6852,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7393,7 +6865,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7407,7 +6878,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7421,7 +6891,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7435,7 +6904,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7449,7 +6917,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7463,7 +6930,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7477,7 +6943,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7491,7 +6956,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7505,7 +6969,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7519,7 +6982,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7533,7 +6995,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7547,7 +7008,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7561,7 +7021,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7575,7 +7034,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7589,7 +7047,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7603,7 +7060,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7617,7 +7073,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7631,7 +7086,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7645,7 +7099,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7659,7 +7112,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7673,7 +7125,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7687,7 +7138,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7701,7 +7151,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7715,7 +7164,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7729,7 +7177,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7743,7 +7190,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7757,7 +7203,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7771,7 +7216,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7785,7 +7229,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7799,7 +7242,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7813,7 +7255,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7827,7 +7268,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7841,7 +7281,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7855,7 +7294,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7869,7 +7307,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7883,7 +7320,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7897,7 +7333,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7911,7 +7346,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7925,7 +7359,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7939,7 +7372,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7953,7 +7385,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7967,7 +7398,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7981,7 +7411,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -7995,7 +7424,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8009,7 +7437,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8023,7 +7450,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8037,7 +7463,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8051,7 +7476,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8065,7 +7489,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8079,7 +7502,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8093,7 +7515,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8107,7 +7528,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8121,7 +7541,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8135,7 +7554,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8149,7 +7567,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8163,7 +7580,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8177,7 +7593,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8191,7 +7606,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8205,7 +7619,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8219,7 +7632,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8233,7 +7645,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8247,7 +7658,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8261,7 +7671,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8275,7 +7684,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8289,7 +7697,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8303,7 +7710,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8317,7 +7723,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8331,7 +7736,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8345,7 +7749,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8359,7 +7762,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8373,7 +7775,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8387,7 +7788,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8401,7 +7801,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8415,7 +7814,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8429,7 +7827,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8443,7 +7840,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8457,7 +7853,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8471,7 +7866,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8485,7 +7879,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8499,7 +7892,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8513,7 +7905,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8527,7 +7918,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8541,7 +7931,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8555,7 +7944,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8569,7 +7957,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8583,7 +7970,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8597,7 +7983,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8611,7 +7996,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8625,7 +8009,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8639,7 +8022,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8653,7 +8035,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8667,7 +8048,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8681,7 +8061,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8695,7 +8074,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8709,7 +8087,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8723,7 +8100,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8737,7 +8113,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8751,7 +8126,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8765,7 +8139,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8779,7 +8152,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8793,7 +8165,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8807,7 +8178,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8821,7 +8191,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8835,7 +8204,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8849,7 +8217,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8863,7 +8230,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8877,7 +8243,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8891,7 +8256,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8905,7 +8269,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8919,7 +8282,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8933,7 +8295,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8947,7 +8308,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8961,7 +8321,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8975,7 +8334,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -8989,7 +8347,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9003,7 +8360,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9017,7 +8373,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9031,7 +8386,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9045,7 +8399,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9059,7 +8412,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9073,7 +8425,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9087,7 +8438,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9101,7 +8451,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9115,7 +8464,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9129,7 +8477,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9143,7 +8490,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9157,7 +8503,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9171,7 +8516,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9185,7 +8529,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9199,7 +8542,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9213,7 +8555,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9227,7 +8568,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9241,7 +8581,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9255,7 +8594,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9269,7 +8607,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9283,7 +8620,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9297,7 +8633,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9311,7 +8646,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9325,7 +8659,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9339,7 +8672,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9353,7 +8685,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9367,7 +8698,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9381,7 +8711,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9395,7 +8724,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9409,7 +8737,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9423,7 +8750,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9437,7 +8763,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9451,7 +8776,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9465,7 +8789,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9479,7 +8802,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9493,7 +8815,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9507,7 +8828,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9521,7 +8841,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9535,7 +8854,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9549,7 +8867,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9563,7 +8880,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9577,7 +8893,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9591,7 +8906,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9605,7 +8919,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9619,7 +8932,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9633,7 +8945,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9647,7 +8958,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9661,7 +8971,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9675,7 +8984,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9689,7 +8997,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9703,7 +9010,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9717,7 +9023,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9731,7 +9036,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9745,7 +9049,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9759,7 +9062,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9773,7 +9075,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9787,7 +9088,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9801,7 +9101,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9815,7 +9114,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9829,7 +9127,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9843,7 +9140,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9857,7 +9153,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9871,7 +9166,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9885,7 +9179,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9899,7 +9192,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9913,7 +9205,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9927,7 +9218,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9941,7 +9231,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9955,7 +9244,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9969,7 +9257,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9983,7 +9270,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -9997,7 +9283,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10011,7 +9296,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10025,7 +9309,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10039,7 +9322,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10053,7 +9335,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10067,7 +9348,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10081,7 +9361,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10095,7 +9374,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10109,7 +9387,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10123,7 +9400,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10137,7 +9413,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10151,7 +9426,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10165,7 +9439,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10179,7 +9452,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10193,7 +9465,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10207,7 +9478,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10221,7 +9491,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10235,7 +9504,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10249,7 +9517,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10263,7 +9530,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10277,7 +9543,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10291,7 +9556,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10305,7 +9569,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10319,7 +9582,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10333,7 +9595,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10347,7 +9608,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10361,7 +9621,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10375,7 +9634,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10389,7 +9647,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10403,7 +9660,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10417,7 +9673,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10431,7 +9686,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10445,7 +9699,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10459,7 +9712,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10473,7 +9725,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10487,7 +9738,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10501,7 +9751,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10515,7 +9764,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10529,7 +9777,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10543,7 +9790,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10557,7 +9803,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10571,7 +9816,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10585,7 +9829,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10599,7 +9842,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10613,7 +9855,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10627,7 +9868,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10641,7 +9881,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10655,7 +9894,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10669,7 +9907,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10683,7 +9920,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10697,7 +9933,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10711,7 +9946,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10725,7 +9959,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10739,7 +9972,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10753,7 +9985,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10767,7 +9998,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10781,7 +10011,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10795,7 +10024,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10809,7 +10037,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10823,7 +10050,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10837,7 +10063,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10851,7 +10076,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10865,7 +10089,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10879,7 +10102,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10893,7 +10115,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10907,7 +10128,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10921,7 +10141,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10935,7 +10154,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10949,7 +10167,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10963,7 +10180,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10977,7 +10193,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -10991,7 +10206,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11005,7 +10219,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11019,7 +10232,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11033,7 +10245,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11047,7 +10258,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11061,7 +10271,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11075,7 +10284,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11089,7 +10297,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11103,7 +10310,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11117,7 +10323,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11131,7 +10336,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11145,7 +10349,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11159,7 +10362,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11173,7 +10375,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11187,7 +10388,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11201,7 +10401,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11215,7 +10414,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11229,7 +10427,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11243,7 +10440,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11257,7 +10453,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11271,7 +10466,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11285,7 +10479,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11299,7 +10492,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11313,7 +10505,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11327,7 +10518,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11341,7 +10531,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11355,7 +10544,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11369,7 +10557,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11383,7 +10570,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11397,7 +10583,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11411,7 +10596,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11425,7 +10609,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11439,7 +10622,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11453,7 +10635,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11467,7 +10648,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11481,7 +10661,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11495,7 +10674,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11509,7 +10687,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11523,7 +10700,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11537,7 +10713,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11551,7 +10726,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11565,7 +10739,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11579,7 +10752,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11593,7 +10765,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11607,7 +10778,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11621,7 +10791,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11635,7 +10804,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11649,7 +10817,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11663,7 +10830,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11677,7 +10843,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11691,7 +10856,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11705,7 +10869,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11719,7 +10882,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11733,7 +10895,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11747,7 +10908,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11761,7 +10921,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11775,7 +10934,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11789,7 +10947,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11803,7 +10960,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11817,7 +10973,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11831,7 +10986,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11845,7 +10999,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11859,7 +11012,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11873,7 +11025,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11887,7 +11038,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11901,7 +11051,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11915,7 +11064,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11929,7 +11077,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11943,7 +11090,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11957,7 +11103,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11971,7 +11116,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11985,7 +11129,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -11999,7 +11142,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12013,7 +11155,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12027,7 +11168,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12041,7 +11181,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12055,7 +11194,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12069,7 +11207,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12083,7 +11220,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12097,7 +11233,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12111,7 +11246,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12125,7 +11259,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12139,7 +11272,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12153,7 +11285,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12167,7 +11298,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12181,7 +11311,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12195,7 +11324,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12209,7 +11337,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12223,7 +11350,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12237,7 +11363,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12251,7 +11376,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12265,7 +11389,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12279,7 +11402,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12293,7 +11415,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12307,7 +11428,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12321,7 +11441,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12335,7 +11454,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12349,7 +11467,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12363,7 +11480,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12377,7 +11493,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12391,7 +11506,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12405,7 +11519,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12419,7 +11532,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12433,7 +11545,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12447,7 +11558,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12461,7 +11571,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12475,7 +11584,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12489,7 +11597,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12503,7 +11610,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12517,7 +11623,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12531,7 +11636,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12545,7 +11649,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12559,7 +11662,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12573,7 +11675,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12587,7 +11688,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12601,7 +11701,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12615,7 +11714,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12629,7 +11727,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12643,7 +11740,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12657,7 +11753,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12671,7 +11766,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12685,7 +11779,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12699,7 +11792,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12713,7 +11805,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12727,7 +11818,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12741,7 +11831,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12755,7 +11844,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12769,7 +11857,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12783,7 +11870,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12797,7 +11883,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12811,7 +11896,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12825,7 +11909,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12839,7 +11922,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12853,7 +11935,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12867,7 +11948,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12881,7 +11961,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12895,7 +11974,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12909,7 +11987,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12923,7 +12000,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12937,7 +12013,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12951,7 +12026,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12965,7 +12039,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12979,7 +12052,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -12993,7 +12065,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13007,7 +12078,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13021,7 +12091,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13035,7 +12104,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13049,7 +12117,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13063,7 +12130,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13077,7 +12143,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13091,7 +12156,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13105,7 +12169,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13119,7 +12182,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13133,7 +12195,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13147,7 +12208,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13161,7 +12221,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13175,7 +12234,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13189,7 +12247,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13203,7 +12260,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13217,7 +12273,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13231,7 +12286,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13245,7 +12299,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13259,7 +12312,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13273,7 +12325,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13287,7 +12338,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13301,7 +12351,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13315,7 +12364,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13329,7 +12377,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13343,7 +12390,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13357,7 +12403,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13371,7 +12416,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13385,7 +12429,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13399,7 +12442,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13413,7 +12455,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13427,7 +12468,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13441,7 +12481,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13455,7 +12494,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13469,7 +12507,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13483,7 +12520,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13497,7 +12533,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13511,7 +12546,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13525,7 +12559,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13539,7 +12572,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13553,7 +12585,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13567,7 +12598,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13581,7 +12611,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13595,7 +12624,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13609,7 +12637,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13623,7 +12650,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13637,7 +12663,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13651,7 +12676,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13665,7 +12689,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13679,7 +12702,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13693,7 +12715,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13707,7 +12728,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13721,7 +12741,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13735,7 +12754,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13749,7 +12767,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13763,7 +12780,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13777,7 +12793,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13791,7 +12806,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13805,7 +12819,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13819,7 +12832,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -13833,7 +12845,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule** Protector v1.1.11 (DDeM->PE Engine v0.9, DDeM->CI v0.9.2) : Packer
 {
     meta:
@@ -13846,7 +12857,6 @@ rule** Protector v1.1.11 (DDeM->PE Engine v0.9, DDeM->CI v0.9.2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule** Protector v1.1.11 (DDeM->PE Engine v0.9, DDeM->CI v0.9.2) : Packer
 {
     meta:
@@ -13859,7 +12869,6 @@ rule** Protector v1.1.11 (DDeM->PE Engine v0.9, DDeM->CI v0.9.2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule .NET executable : Packer
 {
     meta:
@@ -13873,7 +12882,6 @@ rule .NET executable : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ACProtect 1.4x -> RISCO soft : Packer
 {
     meta:
@@ -13887,7 +12895,6 @@ rule ACProtect 1.4x -> RISCO soft : Packer
     condition:
     	for any of them
 }
-
 rule ACProtect 1.4x -> RISCO soft : Packer
 {
     meta:
@@ -13901,7 +12908,6 @@ rule ACProtect 1.4x -> RISCO soft : Packer
     condition:
     	for any of them
 }
-
 rule ActiveMARK 5.x -> Trymedia Systems,Inc. (h) : Packer
 {
     meta:
@@ -13915,7 +12921,6 @@ rule ActiveMARK 5.x -> Trymedia Systems,Inc. (h) : Packer
     condition:
     	for any of them
 }
-
 rule ActiveMARK 5.x -> Trymedia Systems,Inc. (h) : Packer
 {
     meta:
@@ -13929,7 +12934,6 @@ rule ActiveMARK 5.x -> Trymedia Systems,Inc. (h) : Packer
     condition:
     	for any of them
 }
-
 rule AHpack 0.1 -> FEUERRADER (h) : Packer
 {
     meta:
@@ -13943,7 +12947,6 @@ rule AHpack 0.1 -> FEUERRADER (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AHpack 0.1 -> FEUERRADER (h) : Packer
 {
     meta:
@@ -13957,7 +12960,6 @@ rule AHpack 0.1 -> FEUERRADER (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Alex Protector 1.0 beta 2 by Alex : Packer
 {
     meta:
@@ -13971,7 +12973,6 @@ rule Alex Protector 1.0 beta 2 by Alex : Packer
     condition:
     	for any of them
 }
-
 rule Alex Protector 1.0 beta 2 by Alex : Packer
 {
     meta:
@@ -13985,7 +12986,6 @@ rule Alex Protector 1.0 beta 2 by Alex : Packer
     condition:
     	for any of them
 }
-
 rule Alex Protector v0.4 beta 1 by Alex : Packer
 {
     meta:
@@ -13999,7 +12999,6 @@ rule Alex Protector v0.4 beta 1 by Alex : Packer
     condition:
     	for any of them
 }
-
 rule Alex Protector v0.4 beta 1 by Alex : Packer
 {
     meta:
@@ -14013,7 +13012,6 @@ rule Alex Protector v0.4 beta 1 by Alex : Packer
     condition:
     	for any of them
 }
-
 rule ARM Protector v0.1 by SMoKE : Packer
 {
     meta:
@@ -14027,7 +13025,6 @@ rule ARM Protector v0.1 by SMoKE : Packer
     condition:
     	for any of them
 }
-
 rule ARM Protector v0.1 by SMoKE : Packer
 {
     meta:
@@ -14041,7 +13038,6 @@ rule ARM Protector v0.1 by SMoKE : Packer
     condition:
     	for any of them
 }
-
 rule Armadillo 3.00a -> Silicon Realms Toolworks : Packer
 {
     meta:
@@ -14055,7 +13051,6 @@ rule Armadillo 3.00a -> Silicon Realms Toolworks : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo 3.00a -> Silicon Realms Toolworks : Packer
 {
     meta:
@@ -14069,7 +13064,6 @@ rule Armadillo 3.00a -> Silicon Realms Toolworks : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo 4.30a -> Silicon Realms Toolworks (h) : Packer
 {
     meta:
@@ -14083,7 +13077,6 @@ rule Armadillo 4.30a -> Silicon Realms Toolworks (h) : Packer
     condition:
     	for any of them
 }
-
 rule Armadillo 4.30a -> Silicon Realms Toolworks (h) : Packer
 {
     meta:
@@ -14097,7 +13090,6 @@ rule Armadillo 4.30a -> Silicon Realms Toolworks (h) : Packer
     condition:
     	for any of them
 }
-
 rule Armadillo 4.40 -> Silicon Realms Toolworks (h) : Packer
 {
     meta:
@@ -14111,7 +13103,6 @@ rule Armadillo 4.40 -> Silicon Realms Toolworks (h) : Packer
     condition:
     	for any of them
 }
-
 rule Armadillo 4.40 -> Silicon Realms Toolworks (h) : Packer
 {
     meta:
@@ -14125,7 +13116,6 @@ rule Armadillo 4.40 -> Silicon Realms Toolworks (h) : Packer
     condition:
     	for any of them
 }
-
 rule Armadillo v1.60a : Packer
 {
     meta:
@@ -14139,7 +13129,6 @@ rule Armadillo v1.60a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.60a : Packer
 {
     meta:
@@ -14153,7 +13142,6 @@ rule Armadillo v1.60a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.77 : Packer
 {
     meta:
@@ -14167,7 +13155,6 @@ rule Armadillo v1.77 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.77 : Packer
 {
     meta:
@@ -14181,7 +13168,6 @@ rule Armadillo v1.77 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.80 : Packer
 {
     meta:
@@ -14195,7 +13181,6 @@ rule Armadillo v1.80 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.80 : Packer
 {
     meta:
@@ -14209,7 +13194,6 @@ rule Armadillo v1.80 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.82 : Packer
 {
     meta:
@@ -14223,7 +13207,6 @@ rule Armadillo v1.82 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.82 : Packer
 {
     meta:
@@ -14237,7 +13220,6 @@ rule Armadillo v1.82 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.83 : Packer
 {
     meta:
@@ -14251,7 +13233,6 @@ rule Armadillo v1.83 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.83 : Packer
 {
     meta:
@@ -14265,7 +13246,6 @@ rule Armadillo v1.83 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.84 : Packer
 {
     meta:
@@ -14279,7 +13259,6 @@ rule Armadillo v1.84 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.84 : Packer
 {
     meta:
@@ -14293,7 +13272,6 @@ rule Armadillo v1.84 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90 : Packer
 {
     meta:
@@ -14307,7 +13285,6 @@ rule Armadillo v1.90 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90 : Packer
 {
     meta:
@@ -14321,7 +13298,6 @@ rule Armadillo v1.90 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90a : Packer
 {
     meta:
@@ -14335,7 +13311,6 @@ rule Armadillo v1.90a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90a : Packer
 {
     meta:
@@ -14349,7 +13324,6 @@ rule Armadillo v1.90a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90b1 : Packer
 {
     meta:
@@ -14363,7 +13337,6 @@ rule Armadillo v1.90b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90b1 : Packer
 {
     meta:
@@ -14377,7 +13350,6 @@ rule Armadillo v1.90b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90b2 : Packer
 {
     meta:
@@ -14391,7 +13363,6 @@ rule Armadillo v1.90b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90b2 : Packer
 {
     meta:
@@ -14405,7 +13376,6 @@ rule Armadillo v1.90b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90b3 : Packer
 {
     meta:
@@ -14419,7 +13389,6 @@ rule Armadillo v1.90b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90b3 : Packer
 {
     meta:
@@ -14433,7 +13402,6 @@ rule Armadillo v1.90b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90b4 : Packer
 {
     meta:
@@ -14447,7 +13415,6 @@ rule Armadillo v1.90b4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90b4 : Packer
 {
     meta:
@@ -14461,7 +13428,6 @@ rule Armadillo v1.90b4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90c : Packer
 {
     meta:
@@ -14475,7 +13441,6 @@ rule Armadillo v1.90c : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.90c : Packer
 {
     meta:
@@ -14489,7 +13454,6 @@ rule Armadillo v1.90c : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.00 : Packer
 {
     meta:
@@ -14503,7 +13467,6 @@ rule Armadillo v2.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.00 : Packer
 {
     meta:
@@ -14517,7 +13480,6 @@ rule Armadillo v2.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.00b2-2.00b3 : Packer
 {
     meta:
@@ -14531,7 +13493,6 @@ rule Armadillo v2.00b2-2.00b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.00b2-2.00b3 : Packer
 {
     meta:
@@ -14545,7 +13506,6 @@ rule Armadillo v2.00b2-2.00b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.01 : Packer
 {
     meta:
@@ -14559,7 +13519,6 @@ rule Armadillo v2.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.01 : Packer
 {
     meta:
@@ -14573,7 +13532,6 @@ rule Armadillo v2.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.10b2 : Packer
 {
     meta:
@@ -14587,7 +13545,6 @@ rule Armadillo v2.10b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.10b2 : Packer
 {
     meta:
@@ -14601,7 +13558,6 @@ rule Armadillo v2.10b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.20 : Packer
 {
     meta:
@@ -14615,7 +13571,6 @@ rule Armadillo v2.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.20 : Packer
 {
     meta:
@@ -14629,7 +13584,6 @@ rule Armadillo v2.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.20b1 : Packer
 {
     meta:
@@ -14643,7 +13597,6 @@ rule Armadillo v2.20b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.20b1 : Packer
 {
     meta:
@@ -14657,7 +13610,6 @@ rule Armadillo v2.20b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.50 : Packer
 {
     meta:
@@ -14671,7 +13623,6 @@ rule Armadillo v2.50 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.50 : Packer
 {
     meta:
@@ -14685,7 +13636,6 @@ rule Armadillo v2.50 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.53 : Packer
 {
     meta:
@@ -14699,7 +13649,6 @@ rule Armadillo v2.53 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.53 : Packer
 {
     meta:
@@ -14713,7 +13662,6 @@ rule Armadillo v2.53 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.5x - v2.6x : Packer
 {
     meta:
@@ -14727,7 +13675,6 @@ rule Armadillo v2.5x - v2.6x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.5x - v2.6x : Packer
 {
     meta:
@@ -14741,7 +13688,6 @@ rule Armadillo v2.5x - v2.6x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.00 : Packer
 {
     meta:
@@ -14755,7 +13701,6 @@ rule Armadillo v3.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.00 : Packer
 {
     meta:
@@ -14769,7 +13714,6 @@ rule Armadillo v3.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.00a : Packer
 {
     meta:
@@ -14783,7 +13727,6 @@ rule Armadillo v3.00a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.00a : Packer
 {
     meta:
@@ -14797,7 +13740,6 @@ rule Armadillo v3.00a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.xx : Packer
 {
     meta:
@@ -14811,7 +13753,6 @@ rule Armadillo v3.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v3.xx : Packer
 {
     meta:
@@ -14825,7 +13766,6 @@ rule Armadillo v3.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.00b : Packer
 {
     meta:
@@ -14839,7 +13779,6 @@ rule ASPack v1.00b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.00b : Packer
 {
     meta:
@@ -14853,7 +13792,6 @@ rule ASPack v1.00b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.01b : Packer
 {
     meta:
@@ -14867,7 +13805,6 @@ rule ASPack v1.01b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.01b : Packer
 {
     meta:
@@ -14881,7 +13818,6 @@ rule ASPack v1.01b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.02a : Packer
 {
     meta:
@@ -14895,7 +13831,6 @@ rule ASPack v1.02a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.02a : Packer
 {
     meta:
@@ -14909,7 +13844,6 @@ rule ASPack v1.02a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.02b : Packer
 {
     meta:
@@ -14923,7 +13857,6 @@ rule ASPack v1.02b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.02b : Packer
 {
     meta:
@@ -14937,7 +13870,6 @@ rule ASPack v1.02b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.03b : Packer
 {
     meta:
@@ -14951,7 +13883,6 @@ rule ASPack v1.03b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.03b : Packer
 {
     meta:
@@ -14965,7 +13896,6 @@ rule ASPack v1.03b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.05b : Packer
 {
     meta:
@@ -14979,7 +13909,6 @@ rule ASPack v1.05b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.05b : Packer
 {
     meta:
@@ -14993,7 +13922,6 @@ rule ASPack v1.05b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.061b : Packer
 {
     meta:
@@ -15007,7 +13935,6 @@ rule ASPack v1.061b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.061b : Packer
 {
     meta:
@@ -15021,7 +13948,6 @@ rule ASPack v1.061b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.01 : Packer
 {
     meta:
@@ -15035,7 +13961,6 @@ rule ASPack v1.08.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.01 : Packer
 {
     meta:
@@ -15049,7 +13974,6 @@ rule ASPack v1.08.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.01 : Packer
 {
     meta:
@@ -15063,7 +13987,6 @@ rule ASPack v1.08.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.01 : Packer
 {
     meta:
@@ -15077,7 +14000,6 @@ rule ASPack v1.08.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.02 : Packer
 {
     meta:
@@ -15091,7 +14013,6 @@ rule ASPack v1.08.02 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.02 : Packer
 {
     meta:
@@ -15105,7 +14026,6 @@ rule ASPack v1.08.02 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.03 : Packer
 {
     meta:
@@ -15119,7 +14039,6 @@ rule ASPack v1.08.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.03 : Packer
 {
     meta:
@@ -15133,7 +14052,6 @@ rule ASPack v1.08.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.xx : Packer
 {
     meta:
@@ -15147,7 +14065,6 @@ rule ASPack v2.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.xx : Packer
 {
     meta:
@@ -15161,7 +14078,6 @@ rule ASPack v2.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect SKE 2.1x (exe) -> Alexey Solodovnikov (h) : Packer
 {
     meta:
@@ -15175,7 +14091,6 @@ rule ASProtect SKE 2.1x (exe) -> Alexey Solodovnikov (h) : Packer
     condition:
     	for any of them
 }
-
 rule ASProtect SKE 2.1x (exe) -> Alexey Solodovnikov (h) : Packer
 {
     meta:
@@ -15189,7 +14104,6 @@ rule ASProtect SKE 2.1x (exe) -> Alexey Solodovnikov (h) : Packer
     condition:
     	for any of them
 }
-
 rule ASProtect v1.23 RC4 build 08.07 (exe) -> Alexey Solodovnikov (h) : Packer
 {
     meta:
@@ -15203,7 +14117,6 @@ rule ASProtect v1.23 RC4 build 08.07 (exe) -> Alexey Solodovnikov (h) : Packer
     condition:
     	for any of them
 }
-
 rule ASProtect v1.23 RC4 build 08.07 (exe) -> Alexey Solodovnikov (h) : Packer
 {
     meta:
@@ -15217,7 +14130,6 @@ rule ASProtect v1.23 RC4 build 08.07 (exe) -> Alexey Solodovnikov (h) : Packer
     condition:
     	for any of them
 }
-
 rule ASProtect v?.? -> If you know this version, post on PEiD board (h2) : Packer
 {
     meta:
@@ -15231,7 +14143,6 @@ rule ASProtect v?.? -> If you know this version, post on PEiD board (h2) : Packe
     condition:
     	for any of them
 }
-
 rule ASProtect v?.? -> If you know this version, post on PEiD board (h2) : Packer
 {
     meta:
@@ -15245,7 +14156,6 @@ rule ASProtect v?.? -> If you know this version, post on PEiD board (h2) : Packe
     condition:
     	for any of them
 }
-
 rule BeRoEXEPacker v1.00 DLL [LZBRS] -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -15259,7 +14169,6 @@ rule BeRoEXEPacker v1.00 DLL [LZBRS] -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 [LZBRS] -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -15273,7 +14182,6 @@ rule BeRoEXEPacker v1.00 [LZBRS] -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BlackEnergy DDoS Bot Crypter : Packer
 {
     meta:
@@ -15287,7 +14195,6 @@ rule BlackEnergy DDoS Bot Crypter : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CExe v1.0a : Packer
 {
     meta:
@@ -15301,7 +14208,6 @@ rule CExe v1.0a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CExe v1.0a : Packer
 {
     meta:
@@ -15315,7 +14221,6 @@ rule CExe v1.0a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Com4mail v1.0 : Packer
 {
     meta:
@@ -15329,7 +14234,6 @@ rule Com4mail v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CreateInstall v2003.3.5 : Packer
 {
     meta:
@@ -15343,7 +14247,6 @@ rule CreateInstall v2003.3.5 : Packer
     condition:
     	for any of them
 }
-
 rule CreateInstall v2003.3.5 : Packer
 {
     meta:
@@ -15357,7 +14260,6 @@ rule CreateInstall v2003.3.5 : Packer
     condition:
     	for any of them
 }
-
 rule CRYPToCRACK's PE Protector V0.9.2 -> Lukas Fleischer : Packer
 {
     meta:
@@ -15371,7 +14273,6 @@ rule CRYPToCRACK's PE Protector V0.9.2 -> Lukas Fleischer : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Dev-C++ 4.9.9.2 -> Bloodshed Software : Packer
 {
     meta:
@@ -15385,7 +14286,6 @@ rule Dev-C++ 4.9.9.2 -> Bloodshed Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DotFix Nice Protect 2.1 -> GPcH Soft : Packer
 {
     meta:
@@ -15399,7 +14299,6 @@ rule DotFix Nice Protect 2.1 -> GPcH Soft : Packer
     condition:
     	for any of them
 }
-
 rule DxPack V0.86 -> Dxd : Packer
 {
     meta:
@@ -15413,7 +14312,6 @@ rule DxPack V0.86 -> Dxd : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DxPack V0.86 -> Dxd : Packer
 {
     meta:
@@ -15427,7 +14325,6 @@ rule DxPack V0.86 -> Dxd : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DzA Patcher v1.3 Loader : Packer
 {
     meta:
@@ -15441,7 +14338,6 @@ rule DzA Patcher v1.3 Loader : Packer
     condition:
     	for any of them
 }
-
 rule DzA Patcher v1.3 Loader : Packer
 {
     meta:
@@ -15455,7 +14351,6 @@ rule DzA Patcher v1.3 Loader : Packer
     condition:
     	for any of them
 }
-
 rule Enigma protector 1.10 (unregistered) : Packer
 {
     meta:
@@ -15469,7 +14364,6 @@ rule Enigma protector 1.10 (unregistered) : Packer
     condition:
     	for any of them
 }
-
 rule Enigma protector 1.10 (unregistered) : Packer
 {
     meta:
@@ -15483,7 +14377,6 @@ rule Enigma protector 1.10 (unregistered) : Packer
     condition:
     	for any of them
 }
-
 rule Exe Shield v1.7 : Packer
 {
     meta:
@@ -15497,7 +14390,6 @@ rule Exe Shield v1.7 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Shield v1.7 : Packer
 {
     meta:
@@ -15511,7 +14403,6 @@ rule Exe Shield v1.7 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Shield v2.9 : Packer
 {
     meta:
@@ -15525,7 +14416,6 @@ rule Exe Shield v2.9 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Shield v2.9 : Packer
 {
     meta:
@@ -15539,7 +14429,6 @@ rule Exe Shield v2.9 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Stealth v2.5 : Packer
 {
     meta:
@@ -15553,7 +14442,6 @@ rule EXE Stealth v2.5 : Packer
     condition:
     	for any of them
 }
-
 rule EXE Stealth v2.5 : Packer
 {
     meta:
@@ -15567,7 +14455,6 @@ rule EXE Stealth v2.5 : Packer
     condition:
     	for any of them
 }
-
 rule EXE Stealth v2.73 : Packer
 {
     meta:
@@ -15581,7 +14468,6 @@ rule EXE Stealth v2.73 : Packer
     condition:
     	for any of them
 }
-
 rule EXE Stealth v2.73 : Packer
 {
     meta:
@@ -15595,7 +14481,6 @@ rule EXE Stealth v2.73 : Packer
     condition:
     	for any of them
 }
-
 rule EXE Stealth v2.74 : Packer
 {
     meta:
@@ -15609,7 +14494,6 @@ rule EXE Stealth v2.74 : Packer
     condition:
     	for any of them
 }
-
 rule EXE Stealth v2.74 : Packer
 {
     meta:
@@ -15623,7 +14507,6 @@ rule EXE Stealth v2.74 : Packer
     condition:
     	for any of them
 }
-
 rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h1) : Packer
 {
     meta:
@@ -15637,7 +14520,6 @@ rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h1) : Packer
 {
     meta:
@@ -15651,7 +14533,6 @@ rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h3) : Packer
 {
     meta:
@@ -15665,7 +14546,6 @@ rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h3) : Packer
     condition:
     	for any of them
 }
-
 rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h3) : Packer
 {
     meta:
@@ -15679,7 +14559,6 @@ rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h3) : Packer
     condition:
     	for any of them
 }
-
 rule EXECryptor v1.3.0.45 : Packer
 {
     meta:
@@ -15693,7 +14572,6 @@ rule EXECryptor v1.3.0.45 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor v1.3.0.45 : Packer
 {
     meta:
@@ -15707,7 +14585,6 @@ rule EXECryptor v1.3.0.45 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor v1.4.0.1 : Packer
 {
     meta:
@@ -15721,7 +14598,6 @@ rule EXECryptor v1.4.0.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor v1.4.0.1 : Packer
 {
     meta:
@@ -15735,7 +14611,6 @@ rule EXECryptor v1.4.0.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor v1.5.1.x : Packer
 {
     meta:
@@ -15749,7 +14624,6 @@ rule EXECryptor v1.5.1.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor v1.5.1.x : Packer
 {
     meta:
@@ -15763,7 +14637,6 @@ rule EXECryptor v1.5.1.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor v1.5.3 : Packer
 {
     meta:
@@ -15777,7 +14650,6 @@ rule EXECryptor v1.5.3 : Packer
     condition:
     	for any of them
 }
-
 rule EXECryptor v1.5.3 : Packer
 {
     meta:
@@ -15791,7 +14663,6 @@ rule EXECryptor v1.5.3 : Packer
     condition:
     	for any of them
 }
-
 rule EXEJoiner v1.0 : Packer
 {
     meta:
@@ -15805,7 +14676,6 @@ rule EXEJoiner v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXEJoiner v1.0 : Packer
 {
     meta:
@@ -15819,7 +14689,6 @@ rule EXEJoiner v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeSafeguard v1.0 -> simonzh (h) : Packer
 {
     meta:
@@ -15833,7 +14702,6 @@ rule ExeSafeguard v1.0 -> simonzh (h) : Packer
     condition:
     	for any of them
 }
-
 rule ExeSafeguard v1.0 -> simonzh (h) : Packer
 {
     meta:
@@ -15847,7 +14715,6 @@ rule ExeSafeguard v1.0 -> simonzh (h) : Packer
     condition:
     	for any of them
 }
-
 rule ExeShield Protector V3.6 -> www.exeshield.com : Packer
 {
     meta:
@@ -15861,7 +14728,6 @@ rule ExeShield Protector V3.6 -> www.exeshield.com : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeShield Protector V3.6 -> www.exeshield.com : Packer
 {
     meta:
@@ -15875,7 +14741,6 @@ rule ExeShield Protector V3.6 -> www.exeshield.com : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor V1.0 -> CGSoftLabs : Packer
 {
     meta:
@@ -15889,7 +14754,6 @@ rule eXPressor V1.0 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor V1.0 -> CGSoftLabs : Packer
 {
     meta:
@@ -15903,7 +14767,6 @@ rule eXPressor V1.0 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXpressor v1.1 -> CGSoftLabs : Packer
 {
     meta:
@@ -15917,7 +14780,6 @@ rule eXpressor v1.1 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXpressor v1.1 -> CGSoftLabs : Packer
 {
     meta:
@@ -15931,7 +14793,6 @@ rule eXpressor v1.1 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor v1.2 -> CGSoftLabs (h) : Packer
 {
     meta:
@@ -15945,7 +14806,6 @@ rule eXPressor v1.2 -> CGSoftLabs (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor v1.2 -> CGSoftLabs (h) : Packer
 {
     meta:
@@ -15959,7 +14819,6 @@ rule eXPressor v1.2 -> CGSoftLabs (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor V1.4.5.1 -> CGSoftLabs : Packer
 {
     meta:
@@ -15973,7 +14832,6 @@ rule eXPressor V1.4.5.1 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor V1.4.5.1 -> CGSoftLabs : Packer
 {
     meta:
@@ -15987,7 +14845,6 @@ rule eXPressor V1.4.5.1 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor v1.4.5.1 -> CGSoftLabs (h) : Packer
 {
     meta:
@@ -16001,7 +14858,6 @@ rule eXPressor v1.4.5.1 -> CGSoftLabs (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor v1.4.5.1 -> CGSoftLabs (h) : Packer
 {
     meta:
@@ -16015,7 +14871,6 @@ rule eXPressor v1.4.5.1 -> CGSoftLabs (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor V1.4.5.x -> CGSoftLabs : Packer
 {
     meta:
@@ -16029,7 +14884,6 @@ rule eXPressor V1.4.5.x -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor v1.5x -> CGSoftLabs (h) : Packer
 {
     meta:
@@ -16043,7 +14897,6 @@ rule eXPressor v1.5x -> CGSoftLabs (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EZIP v1.0 : Packer
 {
     meta:
@@ -16057,7 +14910,6 @@ rule EZIP v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EZIP v1.0 : Packer
 {
     meta:
@@ -16071,7 +14923,6 @@ rule EZIP v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.0 : Packer
 {
     meta:
@@ -16085,7 +14936,6 @@ rule FSG v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.0 : Packer
 {
     meta:
@@ -16099,7 +14949,6 @@ rule FSG v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.2 : Packer
 {
     meta:
@@ -16113,7 +14962,6 @@ rule FSG v1.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.2 : Packer
 {
     meta:
@@ -16127,7 +14975,6 @@ rule FSG v1.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.31 : Packer
 {
     meta:
@@ -16141,7 +14988,6 @@ rule FSG v1.31 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.31 : Packer
 {
     meta:
@@ -16155,7 +15001,6 @@ rule FSG v1.31 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Goats Mutilator v1.6 -> Goat/_e0f : Packer
 {
     meta:
@@ -16169,7 +15014,6 @@ rule Goats Mutilator v1.6 -> Goat/_e0f : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Goats Mutilator v1.6 -> Goat/_e0f : Packer
 {
     meta:
@@ -16183,7 +15027,6 @@ rule Goats Mutilator v1.6 -> Goat/_e0f : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule GP-Install v5.0.3.32 : Packer
 {
     meta:
@@ -16197,7 +15040,6 @@ rule GP-Install v5.0.3.32 : Packer
     condition:
     	for any of them
 }
-
 rule GP-Install v5.0.3.32 : Packer
 {
     meta:
@@ -16211,7 +15053,6 @@ rule GP-Install v5.0.3.32 : Packer
     condition:
     	for any of them
 }
-
 rule HACKSTOP v1.10p1 : Packer
 {
     meta:
@@ -16225,7 +15066,6 @@ rule HACKSTOP v1.10p1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HACKSTOP v1.10p1 : Packer
 {
     meta:
@@ -16239,7 +15079,6 @@ rule HACKSTOP v1.10p1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Hardlock dongle (Alladin) : Packer
 {
     meta:
@@ -16253,7 +15092,6 @@ rule Hardlock dongle (Alladin) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Hasp dongle (Alladin) : Packer
 {
     meta:
@@ -16267,7 +15105,6 @@ rule Hasp dongle (Alladin) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Hide PE 1.01 -> BGCorp : Packer
 {
     meta:
@@ -16281,7 +15118,6 @@ rule Hide PE 1.01 -> BGCorp : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Hide PE 1.01 -> BGCorp : Packer
 {
     meta:
@@ -16295,7 +15131,6 @@ rule Hide PE 1.01 -> BGCorp : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Inno Setup Module v1.09a : Packer
 {
     meta:
@@ -16309,7 +15144,6 @@ rule Inno Setup Module v1.09a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Inno Setup Module v1.2.9 : Packer
 {
     meta:
@@ -16323,7 +15157,6 @@ rule Inno Setup Module v1.2.9 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule iPBProtect v0.1.3 : Packer
 {
     meta:
@@ -16337,7 +15170,6 @@ rule iPBProtect v0.1.3 : Packer
     condition:
     	for any of them
 }
-
 rule JDPack V2.00 -> JDPack : Packer
 {
     meta:
@@ -16351,7 +15183,6 @@ rule JDPack V2.00 -> JDPack : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule kkrunchy -> Ryd : Packer
 {
     meta:
@@ -16365,7 +15196,6 @@ rule kkrunchy -> Ryd : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LameCrypt -> LaZaRus : Packer
 {
     meta:
@@ -16379,7 +15209,6 @@ rule LameCrypt -> LaZaRus : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Launcher Generator v1.03 : Packer
 {
     meta:
@@ -16393,7 +15222,6 @@ rule Launcher Generator v1.03 : Packer
     condition:
     	for any of them
 }
-
 rule Macromedia Windows Flash Projector/Player v3.0 : Packer
 {
     meta:
@@ -16407,7 +15235,6 @@ rule Macromedia Windows Flash Projector/Player v3.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Macromedia Windows Flash Projector/Player v4.0 : Packer
 {
     meta:
@@ -16421,7 +15248,6 @@ rule Macromedia Windows Flash Projector/Player v4.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Macromedia Windows Flash Projector/Player v6.0 : Packer
 {
     meta:
@@ -16435,7 +15261,6 @@ rule Macromedia Windows Flash Projector/Player v6.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Metrowerks CodeWarrior (DLL) v2.0 : Packer
 {
     meta:
@@ -16449,7 +15274,6 @@ rule Metrowerks CodeWarrior (DLL) v2.0 : Packer
     condition:
     	for any of them
 }
-
 rule MEW 11 SE v1.2 : Packer
 {
     meta:
@@ -16463,7 +15287,6 @@ rule MEW 11 SE v1.2 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft CAB SFX module : Packer
 {
     meta:
@@ -16477,7 +15300,6 @@ rule Microsoft CAB SFX module : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C# v7.0 / Basic .NET : Packer
 {
     meta:
@@ -16491,7 +15313,6 @@ rule Microsoft Visual C# v7.0 / Basic .NET : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ 6.0 - 8.0 : Packer
 {
     meta:
@@ -16505,7 +15326,6 @@ rule Microsoft Visual C++ 6.0 - 8.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ 6.0 - 8.0 : Packer
 {
     meta:
@@ -16519,7 +15339,6 @@ rule Microsoft Visual C++ 6.0 - 8.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ 6.0 - 8.0 : Packer
 {
     meta:
@@ -16533,7 +15352,6 @@ rule Microsoft Visual C++ 6.0 - 8.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ v7.1 DLL : Packer
 {
     meta:
@@ -16547,7 +15365,6 @@ rule Microsoft Visual C++ v7.1 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.1 DLL : Packer
 {
     meta:
@@ -16561,7 +15378,6 @@ rule Microsoft Visual C++ v7.1 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Windows Update CAB SFX module : Packer
 {
     meta:
@@ -16575,7 +15391,6 @@ rule Microsoft Windows Update CAB SFX module : Packer
     condition:
     	for any of them
 }
-
 rule MingWin32 v?.? (h) : Packer
 {
     meta:
@@ -16589,7 +15404,6 @@ rule MingWin32 v?.? (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Morphine v3.3 -> Silent Software & Silent Shield (c)2005 : Packer
 {
     meta:
@@ -16603,7 +15417,6 @@ rule Morphine v3.3 -> Silent Software & Silent Shield (c)2005 : Packer
     condition:
     	for any of them
 }
-
 rule nBinder v4.0 : Packer
 {
     meta:
@@ -16617,7 +15430,6 @@ rule nBinder v4.0 : Packer
     condition:
     	for any of them
 }
-
 rule nMacro recorder 1.0 : Packer
 {
     meta:
@@ -16631,7 +15443,6 @@ rule nMacro recorder 1.0 : Packer
     condition:
     	for any of them
 }
-
 rule North Star PE Shrinker v1.3 by Liuxingping : Packer
 {
     meta:
@@ -16645,7 +15456,6 @@ rule North Star PE Shrinker v1.3 by Liuxingping : Packer
     condition:
     	for any of them
 }
-
 rule nPack v1.1 150-200 Beta -> NEOx : Packer
 {
     meta:
@@ -16659,7 +15469,6 @@ rule nPack v1.1 150-200 Beta -> NEOx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule nPack v1.1 250 Beta -> NEOx : Packer
 {
     meta:
@@ -16673,7 +15482,6 @@ rule nPack v1.1 250 Beta -> NEOx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule nPack V1.1.150.2006.Beta -> NEOx/[uinC] : Packer
 {
     meta:
@@ -16687,7 +15495,6 @@ rule nPack V1.1.150.2006.Beta -> NEOx/[uinC] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule nPack V1.1.150.2006.Beta -> NEOx/[uinC] : Packer
 {
     meta:
@@ -16701,7 +15508,6 @@ rule nPack V1.1.150.2006.Beta -> NEOx/[uinC] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule nPack V1.1.200.2006.Beta -> NEOx/[uinC] : Packer
 {
     meta:
@@ -16715,7 +15521,6 @@ rule nPack V1.1.200.2006.Beta -> NEOx/[uinC] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule nPack v1.1.xxx -> NEOx : Packer
 {
     meta:
@@ -16729,7 +15534,6 @@ rule nPack v1.1.xxx -> NEOx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPack v3.1 -> North Star (h) : Packer
 {
     meta:
@@ -16743,7 +15547,6 @@ rule NsPack v3.1 -> North Star (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NTkrnl Secure Suite -> NTkrnl Team (Blue) : Packer
 {
     meta:
@@ -16757,7 +15560,6 @@ rule NTkrnl Secure Suite -> NTkrnl Team (Blue) : Packer
     condition:
     	for any of them
 }
-
 rule NTkrnl Secure Suite -> NTkrnl team (h) : Packer
 {
     meta:
@@ -16771,7 +15573,6 @@ rule NTkrnl Secure Suite -> NTkrnl team (h) : Packer
     condition:
     	for any of them
 }
-
 rule NTkrnl Secure Suite V0.1 -> NTkrnl Software : Packer
 {
     meta:
@@ -16785,7 +15586,6 @@ rule NTkrnl Secure Suite V0.1 -> NTkrnl Software : Packer
     condition:
     	for any of them
 }
-
 rule NTkrnl Secure Suite V0.1 DLL -> NTkrnl Software : Packer
 {
     meta:
@@ -16799,7 +15599,6 @@ rule NTkrnl Secure Suite V0.1 DLL -> NTkrnl Software : Packer
     condition:
     	for any of them
 }
-
 rule NTKrnlPacker -> Ashkbiz Danehkar : Packer
 {
     meta:
@@ -16813,7 +15612,6 @@ rule NTKrnlPacker -> Ashkbiz Danehkar : Packer
     condition:
     	for any of them
 }
-
 rule Nullsoft Install System v2.0 : Packer
 {
     meta:
@@ -16827,7 +15625,6 @@ rule Nullsoft Install System v2.0 : Packer
     condition:
     	for any of them
 }
-
 rule Nullsoft Install System v2.0 RC2 : Packer
 {
     meta:
@@ -16841,7 +15638,6 @@ rule Nullsoft Install System v2.0 RC2 : Packer
     condition:
     	for any of them
 }
-
 rule Nullsoft Install System v2.0a0 : Packer
 {
     meta:
@@ -16855,7 +15651,6 @@ rule Nullsoft Install System v2.0a0 : Packer
     condition:
     	for any of them
 }
-
 rule Nullsoft Install System v2.0b4 : Packer
 {
     meta:
@@ -16869,7 +15664,6 @@ rule Nullsoft Install System v2.0b4 : Packer
     condition:
     	for any of them
 }
-
 rule Nullsoft Install System v2.0b4 : Packer
 {
     meta:
@@ -16883,7 +15677,6 @@ rule Nullsoft Install System v2.0b4 : Packer
     condition:
     	for any of them
 }
-
 rule Obsidium 1.3.0.17 -> Obsidium software : Packer
 {
     meta:
@@ -16897,7 +15690,6 @@ rule Obsidium 1.3.0.17 -> Obsidium software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.3.0.37 -> Obsidium Software (h) : Packer
 {
     meta:
@@ -16911,7 +15703,6 @@ rule Obsidium v1.3.0.37 -> Obsidium Software (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.3.0.4 -> Obsidium Software (h) : Packer
 {
     meta:
@@ -16925,7 +15716,6 @@ rule Obsidium v1.3.0.4 -> Obsidium Software (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.3.3.1 -> Obsidium Software (h) : Packer
 {
     meta:
@@ -16939,7 +15729,6 @@ rule Obsidium v1.3.3.1 -> Obsidium Software (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsiduim 1.3.0.4 -> Obsiduim Software : Packer
 {
     meta:
@@ -16953,7 +15742,6 @@ rule Obsiduim 1.3.0.4 -> Obsiduim Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Pack Master v1.0 : Packer
 {
     meta:
@@ -16967,7 +15755,6 @@ rule Pack Master v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packanoid 1.0 -> ackanoid : Packer
 {
     meta:
@@ -16981,7 +15768,6 @@ rule Packanoid 1.0 -> ackanoid : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packanoid v1 -> Arkanoid : Packer
 {
     meta:
@@ -16995,7 +15781,6 @@ rule Packanoid v1 -> Arkanoid : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packman 0.0.0.1 -> Bubbasoft (h) : Packer
 {
     meta:
@@ -17009,7 +15794,6 @@ rule Packman 0.0.0.1 -> Bubbasoft (h) : Packer
     condition:
     	for any of them
 }
-
 rule PC PE Encryptor Alpha preview : Packer
 {
     meta:
@@ -17023,7 +15807,6 @@ rule PC PE Encryptor Alpha preview : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Diminisher v0.1 : Packer
 {
     meta:
@@ -17037,7 +15820,6 @@ rule PE Diminisher v0.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Lock v1.06 : Packer
 {
     meta:
@@ -17051,7 +15833,6 @@ rule PE Lock v1.06 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Ninja v1.0 -> +DzA kRAker TNT : Packer
 {
     meta:
@@ -17065,7 +15846,6 @@ rule PE Ninja v1.0 -> +DzA kRAker TNT : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Protect v0.9 : Packer
 {
     meta:
@@ -17079,7 +15859,6 @@ rule PE Protect v0.9 : Packer
     condition:
     	for any of them
 }
-
 rule PE-Armor 0.46 -> China Cracking Group : Packer
 {
     meta:
@@ -17093,7 +15872,6 @@ rule PE-Armor 0.46 -> China Cracking Group : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-PaCK v1.0 -> (C) Copyright 1998 by ANAKiN (h) : Packer
 {
     meta:
@@ -17107,7 +15885,6 @@ rule PE-PaCK v1.0 -> (C) Copyright 1998 by ANAKiN (h) : Packer
     condition:
     	for any of them
 }
-
 rule PeCompact 2.xx --> BitSum Technologies : Packer
 {
     meta:
@@ -17121,7 +15898,6 @@ rule PeCompact 2.xx --> BitSum Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.90 : Packer
 {
     meta:
@@ -17135,7 +15911,6 @@ rule PECompact v0.90 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.977 : Packer
 {
     meta:
@@ -17149,7 +15924,6 @@ rule PECompact v0.977 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.978 : Packer
 {
     meta:
@@ -17163,7 +15937,6 @@ rule PECompact v0.978 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.978.1 : Packer
 {
     meta:
@@ -17177,7 +15950,6 @@ rule PECompact v0.978.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.978.2 : Packer
 {
     meta:
@@ -17191,7 +15963,6 @@ rule PECompact v0.978.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.98 : Packer
 {
     meta:
@@ -17205,7 +15976,6 @@ rule PECompact v0.98 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.99 : Packer
 {
     meta:
@@ -17219,7 +15989,6 @@ rule PECompact v0.99 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.00 : Packer
 {
     meta:
@@ -17233,7 +16002,6 @@ rule PECompact v1.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.10b1 : Packer
 {
     meta:
@@ -17247,7 +16015,6 @@ rule PECompact v1.10b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.10b2 : Packer
 {
     meta:
@@ -17261,7 +16028,6 @@ rule PECompact v1.10b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.10b3 : Packer
 {
     meta:
@@ -17275,7 +16041,6 @@ rule PECompact v1.10b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.10b4 : Packer
 {
     meta:
@@ -17289,7 +16054,6 @@ rule PECompact v1.10b4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.10b5 : Packer
 {
     meta:
@@ -17303,7 +16067,6 @@ rule PECompact v1.10b5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.10b6 : Packer
 {
     meta:
@@ -17317,7 +16080,6 @@ rule PECompact v1.10b6 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.10b7 : Packer
 {
     meta:
@@ -17331,7 +16093,6 @@ rule PECompact v1.10b7 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.20 - v1.20.1 : Packer
 {
     meta:
@@ -17345,7 +16106,6 @@ rule PECompact v1.20 - v1.20.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.22 : Packer
 {
     meta:
@@ -17359,7 +16119,6 @@ rule PECompact v1.22 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.23b3 - v1.24.1 : Packer
 {
     meta:
@@ -17373,7 +16132,6 @@ rule PECompact v1.23b3 - v1.24.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.24.2 - v1.24.3 : Packer
 {
     meta:
@@ -17387,7 +16145,6 @@ rule PECompact v1.24.2 - v1.24.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.25 : Packer
 {
     meta:
@@ -17401,7 +16158,6 @@ rule PECompact v1.25 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.26b1 - v1.26b2 : Packer
 {
     meta:
@@ -17415,7 +16171,6 @@ rule PECompact v1.26b1 - v1.26b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.33 : Packer
 {
     meta:
@@ -17429,7 +16184,6 @@ rule PECompact v1.33 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.34 - v1.40b1 : Packer
 {
     meta:
@@ -17443,7 +16197,6 @@ rule PECompact v1.34 - v1.40b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.40 - v1.45 : Packer
 {
     meta:
@@ -17457,7 +16210,6 @@ rule PECompact v1.40 - v1.45 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.40b2 - v1.40b4 : Packer
 {
     meta:
@@ -17471,7 +16223,6 @@ rule PECompact v1.40b2 - v1.40b4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.40b5 - v1.40b6 : Packer
 {
     meta:
@@ -17485,7 +16236,6 @@ rule PECompact v1.40b5 - v1.40b6 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.46 : Packer
 {
     meta:
@@ -17499,7 +16249,6 @@ rule PECompact v1.46 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.47 - v1.50 : Packer
 {
     meta:
@@ -17513,7 +16262,6 @@ rule PECompact v1.47 - v1.50 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.55 : Packer
 {
     meta:
@@ -17527,7 +16275,6 @@ rule PECompact v1.55 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.56 : Packer
 {
     meta:
@@ -17541,7 +16288,6 @@ rule PECompact v1.56 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.60 - v1.65 : Packer
 {
     meta:
@@ -17555,7 +16301,6 @@ rule PECompact v1.60 - v1.65 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.66 : Packer
 {
     meta:
@@ -17569,7 +16314,6 @@ rule PECompact v1.66 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v2.00 alpha 38 : Packer
 {
     meta:
@@ -17583,7 +16327,6 @@ rule PECompact v2.00 alpha 38 : Packer
     condition:
     	for any of them
 }
-
 rule PECompact v2.5 Retail -> Bitsum Technologies : Packer
 {
     meta:
@@ -17597,7 +16340,6 @@ rule PECompact v2.5 Retail -> Bitsum Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PeCompact2 2.53-2.76 --> BitSum Technologies : Packer
 {
     meta:
@@ -17611,7 +16353,6 @@ rule PeCompact2 2.53-2.76 --> BitSum Technologies : Packer
     condition:
     	for any of them
 }
-
 rule PEncrypt v3.0 : Packer
 {
     meta:
@@ -17625,7 +16366,6 @@ rule PEncrypt v3.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PENinja : Packer
 {
     meta:
@@ -17639,7 +16379,6 @@ rule PENinja : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PENinja modified : Packer
 {
     meta:
@@ -17653,7 +16392,6 @@ rule PENinja modified : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEQuake v0.06 by fORGAT : Packer
 {
     meta:
@@ -17667,7 +16405,6 @@ rule PEQuake v0.06 by fORGAT : Packer
     condition:
     	for any of them
 }
-
 rule PESpin V0.71 -> cyberbob : Packer
 {
     meta:
@@ -17681,7 +16418,6 @@ rule PESpin V0.71 -> cyberbob : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Petite 1.3 -> (c)1998 Ian Luck (h) : Packer
 {
     meta:
@@ -17695,7 +16431,6 @@ rule Petite 1.3 -> (c)1998 Ian Luck (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Petite 2.2 -> (c)1998-99 Ian Luck (h) : Packer
 {
     meta:
@@ -17709,7 +16444,6 @@ rule Petite 2.2 -> (c)1998-99 Ian Luck (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEZip v1.0 by BaGIE : Packer
 {
     meta:
@@ -17723,7 +16457,6 @@ rule PEZip v1.0 by BaGIE : Packer
     condition:
     	for any of them
 }
-
 rule PocketPC ARM : Packer
 {
     meta:
@@ -17737,7 +16470,6 @@ rule PocketPC ARM : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PocketPC MIB : Packer
 {
     meta:
@@ -17751,7 +16483,6 @@ rule PocketPC MIB : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PocketPC SHA : Packer
 {
     meta:
@@ -17765,7 +16496,6 @@ rule PocketPC SHA : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PowerBASIC/CC 4.0 : Packer
 {
     meta:
@@ -17779,7 +16509,6 @@ rule PowerBASIC/CC 4.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PowerBASIC/Win 8.00 : Packer
 {
     meta:
@@ -17793,7 +16522,6 @@ rule PowerBASIC/Win 8.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PrincessSandy v1.0 eMiNENCE Process Patcher Patch : Packer
 {
     meta:
@@ -17807,7 +16535,6 @@ rule PrincessSandy v1.0 eMiNENCE Process Patcher Patch : Packer
     condition:
     	for any of them
 }
-
 rule Private exe Protector V1.8X-V1.9X -> SetiSoft Team : Packer
 {
     meta:
@@ -17821,7 +16548,6 @@ rule Private exe Protector V1.8X-V1.9X -> SetiSoft Team : Packer
     condition:
     	for any of them
 }
-
 rule PseudoSigner 0.2 [Armadillo 3.00] --> Anorganix : Packer
 {
     meta:
@@ -17835,7 +16561,6 @@ rule PseudoSigner 0.2 [Armadillo 3.00] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [CodeSafe 2.0] --> Anorganix : Packer
 {
     meta:
@@ -17849,7 +16574,6 @@ rule PseudoSigner 0.2 [CodeSafe 2.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [DEF 1.0] --> Anorganix : Packer
 {
     meta:
@@ -17863,7 +16587,6 @@ rule PseudoSigner 0.2 [DEF 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [DxPack 1.0] --> Anorganix : Packer
 {
     meta:
@@ -17877,7 +16600,6 @@ rule PseudoSigner 0.2 [DxPack 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [ExeSmasher] --> Anorganix : Packer
 {
     meta:
@@ -17891,7 +16613,6 @@ rule PseudoSigner 0.2 [ExeSmasher] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Gleam 1.00] --> Anorganix : Packer
 {
     meta:
@@ -17905,7 +16626,6 @@ rule PseudoSigner 0.2 [Gleam 1.00] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [JDPack 1.x / JDProtect 0.9] --> Anorganix : Packer
 {
     meta:
@@ -17919,7 +16639,6 @@ rule PseudoSigner 0.2 [JDPack 1.x / JDProtect 0.9] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PESHiELD 0.25] --> Anorganix : Packer
 {
     meta:
@@ -17933,7 +16652,6 @@ rule PseudoSigner 0.2 [PESHiELD 0.25] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [ZCode 1.01] --> Anorganix : Packer
 {
     meta:
@@ -17947,7 +16665,6 @@ rule PseudoSigner 0.2 [ZCode 1.01] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule R!SC's Process Patcher v1.4 : Packer
 {
     meta:
@@ -17961,7 +16678,6 @@ rule R!SC's Process Patcher v1.4 : Packer
     condition:
     	for any of them
 }
-
 rule R!SC's Process Patcher v1.5.1 : Packer
 {
     meta:
@@ -17975,7 +16691,6 @@ rule R!SC's Process Patcher v1.5.1 : Packer
     condition:
     	for any of them
 }
-
 rule RJcrush v1.00 : Packer
 {
     meta:
@@ -17989,7 +16704,6 @@ rule RJcrush v1.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack -> Ap0x : Packer
 {
     meta:
@@ -18003,7 +16717,6 @@ rule RLPack -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack -> Ap0x : Packer
 {
     meta:
@@ -18017,7 +16730,6 @@ rule RLPack -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack 1.17+ : Packer
 {
     meta:
@@ -18031,7 +16743,6 @@ rule RLPack 1.17+ : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack Full Edition 1.17 DLL [LZMA] -> Ap0x : Packer
 {
     meta:
@@ -18045,7 +16756,6 @@ rule RLPack Full Edition 1.17 DLL [LZMA] -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack FullEdition V1.1X -> ap0x   * Sign.By.fly : Packer
 {
     meta:
@@ -18059,7 +16769,6 @@ rule RLPack FullEdition V1.1X -> ap0x   * Sign.By.fly : Packer
     condition:
     	for any of them
 }
-
 rule RLPack v0.7.3beta -> ap0x (h) : Packer
 {
     meta:
@@ -18073,7 +16782,6 @@ rule RLPack v0.7.3beta -> ap0x (h) : Packer
     condition:
     	for any of them
 }
-
 rule RLPack V1.11 -> ap0x : Packer
 {
     meta:
@@ -18087,7 +16795,6 @@ rule RLPack V1.11 -> ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SecuPack v1.5 : Packer
 {
     meta:
@@ -18101,7 +16808,6 @@ rule SecuPack v1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Setup Factory v6.0.0.3 Setup Launcher : Packer
 {
     meta:
@@ -18115,7 +16821,6 @@ rule Setup Factory v6.0.0.3 Setup Launcher : Packer
     condition:
     	for any of them
 }
-
 rule Shrinker v3.4 : Packer
 {
     meta:
@@ -18129,7 +16834,6 @@ rule Shrinker v3.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SimplePack 1.11 Method 2(NT) -> bagie[TMX] (h) : Packer
 {
     meta:
@@ -18143,7 +16847,6 @@ rule SimplePack 1.11 Method 2(NT) -> bagie[TMX] (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SimplePack V1.0X -> bagie : Packer
 {
     meta:
@@ -18157,7 +16860,6 @@ rule SimplePack V1.0X -> bagie : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SimplePack V1.X (Method1) -> bagie : Packer
 {
     meta:
@@ -18171,7 +16873,6 @@ rule SimplePack V1.X (Method1) -> bagie : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SoftProtect -> SoftProtect.by.ru : Packer
 {
     meta:
@@ -18185,7 +16886,6 @@ rule SoftProtect -> SoftProtect.by.ru : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SPEC b3 : Packer
 {
     meta:
@@ -18199,7 +16899,6 @@ rule SPEC b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Special EXE Password Protector v1.0 : Packer
 {
     meta:
@@ -18213,7 +16912,6 @@ rule Special EXE Password Protector v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Stone's PE Encryptor v1.0 : Packer
 {
     meta:
@@ -18227,7 +16925,6 @@ rule Stone's PE Encryptor v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Stone's PE Encryptor v1.13 : Packer
 {
     meta:
@@ -18241,7 +16938,6 @@ rule Stone's PE Encryptor v1.13 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SVK-Protector v1.051 : Packer
 {
     meta:
@@ -18255,7 +16951,6 @@ rule SVK-Protector v1.051 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.41x : Packer
 {
     meta:
@@ -18269,7 +16964,6 @@ rule tElock v0.41x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.42 : Packer
 {
     meta:
@@ -18283,7 +16977,6 @@ rule tElock v0.42 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.4x - v0.5x : Packer
 {
     meta:
@@ -18297,7 +16990,6 @@ rule tElock v0.4x - v0.5x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.51 : Packer
 {
     meta:
@@ -18311,7 +17003,6 @@ rule tElock v0.51 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.99 Special Build -> heXer & forgot : Packer
 {
     meta:
@@ -18325,7 +17016,6 @@ rule tElock v0.99 Special Build -> heXer & forgot : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Themida/WinLicense V1.0.0.0-V1.8.0.0-> Oreans Technologies : Packer
 {
     meta:
@@ -18339,7 +17029,6 @@ rule Themida/WinLicense V1.0.0.0-V1.8.0.0-> Oreans Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Themida/WinLicense V1.8.0.2 +  -> Oreans Technologies : Packer
 {
     meta:
@@ -18353,7 +17042,6 @@ rule Themida/WinLicense V1.8.0.2 +  -> Oreans Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Thinstall 2.5 -> ??? (h) : Packer
 {
     meta:
@@ -18367,7 +17055,6 @@ rule Thinstall 2.5 -> ??? (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Trainer Creation Kit v5 Trainer : Packer
 {
     meta:
@@ -18381,7 +17068,6 @@ rule Trainer Creation Kit v5 Trainer : Packer
     condition:
     	for any of them
 }
-
 rule Upack 0.22 - 0.23 beta -> Dwing : Packer
 {
     meta:
@@ -18395,7 +17081,6 @@ rule Upack 0.22 - 0.23 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPack v0.11 : Packer
 {
     meta:
@@ -18409,7 +17094,6 @@ rule UPack v0.11 : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.37 beta -> Dwing : Packer
 {
     meta:
@@ -18423,7 +17107,6 @@ rule Upack v0.37 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.38 beta -> Dwing : Packer
 {
     meta:
@@ -18437,7 +17120,6 @@ rule Upack v0.38 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.399 -> Dwing : Packer
 {
     meta:
@@ -18451,7 +17133,6 @@ rule Upack v0.399 -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX + ECLiPSE layer : Packer
 {
     meta:
@@ -18465,7 +17146,6 @@ rule UPX + ECLiPSE layer : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX Alternative stub : Packer
 {
     meta:
@@ -18479,7 +17159,6 @@ rule UPX Alternative stub : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX Inliner v1.0 by GPcH : Packer
 {
     meta:
@@ -18493,7 +17172,6 @@ rule UPX Inliner v1.0 by GPcH : Packer
     condition:
     	for any of them
 }
-
 rule UPX Modified stub : Packer
 {
     meta:
@@ -18507,7 +17185,6 @@ rule UPX Modified stub : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.51 : Packer
 {
     meta:
@@ -18521,7 +17198,6 @@ rule UPX v0.51 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.62 : Packer
 {
     meta:
@@ -18535,7 +17211,6 @@ rule UPX v0.62 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.70 : Packer
 {
     meta:
@@ -18549,7 +17224,6 @@ rule UPX v0.70 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.81 - v0.84 Modified : Packer
 {
     meta:
@@ -18563,7 +17237,6 @@ rule UPX v0.81 - v0.84 Modified : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.89.6 - v1.02 / v1.05 - v1.22 Modified : Packer
 {
     meta:
@@ -18577,7 +17250,6 @@ rule UPX v0.89.6 - v1.02 / v1.05 - v1.22 Modified : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v1.03 - v1.04 Modified : Packer
 {
     meta:
@@ -18591,7 +17263,6 @@ rule UPX v1.03 - v1.04 Modified : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX-Shit v0.1 -> 500mhz : Packer
 {
     meta:
@@ -18605,7 +17276,6 @@ rule UPX-Shit v0.1 -> 500mhz : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX-Shit v0.1 -> 500mhz : Packer
 {
     meta:
@@ -18619,7 +17289,6 @@ rule UPX-Shit v0.1 -> 500mhz : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VcAsm Protector -> VcAsm : Packer
 {
     meta:
@@ -18633,7 +17302,6 @@ rule VcAsm Protector -> VcAsm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VcAsm Protector V1.0X-> VcAsm : Packer
 {
     meta:
@@ -18647,7 +17315,6 @@ rule VcAsm Protector V1.0X-> VcAsm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VIRUS - I-Worm.Bagle : Packer
 {
     meta:
@@ -18661,7 +17328,6 @@ rule VIRUS - I-Worm.Bagle : Packer
     condition:
     	for any of them
 }
-
 rule VProtector V1.0 [Build 2004.12.13] test! -> vcasm : Packer
 {
     meta:
@@ -18675,7 +17341,6 @@ rule VProtector V1.0 [Build 2004.12.13] test! -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VProtector V1.0A -> vcasm : Packer
 {
     meta:
@@ -18689,7 +17354,6 @@ rule VProtector V1.0A -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VProtector V1.0B -> vcasm : Packer
 {
     meta:
@@ -18703,7 +17367,6 @@ rule VProtector V1.0B -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VProtector V1.0D -> vcasm : Packer
 {
     meta:
@@ -18717,7 +17380,6 @@ rule VProtector V1.0D -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VProtector V1.1 -> vcasm : Packer
 {
     meta:
@@ -18731,7 +17393,6 @@ rule VProtector V1.1 -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VProtector V1.1A -> vcasm : Packer
 {
     meta:
@@ -18745,7 +17406,6 @@ rule VProtector V1.1A -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Watcom C/C++ : Packer
 {
     meta:
@@ -18759,7 +17419,6 @@ rule Watcom C/C++ : Packer
     condition:
     	for any of them
 }
-
 rule Winkript v1.0 : Packer
 {
     meta:
@@ -18773,7 +17432,6 @@ rule Winkript v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WinKript v1.0 -> Mr. Crimson (h) : Packer
 {
     meta:
@@ -18787,7 +17445,6 @@ rule WinKript v1.0 -> Mr. Crimson (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WinUpack v0.39 final -> By Dwing (c)2005 (h1) : Packer
 {
     meta:
@@ -18801,7 +17458,6 @@ rule WinUpack v0.39 final -> By Dwing (c)2005 (h1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WinZip 32-bit SFX v6.x module : Packer
 {
     meta:
@@ -18815,7 +17471,6 @@ rule WinZip 32-bit SFX v6.x module : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WinZip 32-bit SFX v8.x module : Packer
 {
     meta:
@@ -18829,7 +17484,6 @@ rule WinZip 32-bit SFX v8.x module : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule XJ / XPAL -> LiNSoN : Packer
 {
     meta:
@@ -18843,7 +17497,6 @@ rule XJ / XPAL -> LiNSoN : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yC v1.3 by Ashkbiz Danehkar : Packer
 {
     meta:
@@ -18857,7 +17510,6 @@ rule yC v1.3 by Ashkbiz Danehkar : Packer
     condition:
     	for any of them
 }
-
 rule ZipWorxSecureEXE v2.5 -> ZipWORX Technologies LLC (h) : Packer
 {
     meta:
@@ -18871,7 +17523,6 @@ rule ZipWorxSecureEXE v2.5 -> ZipWORX Technologies LLC (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule [MSLRH] v0.1 -> emadicius : Packer
 {
     meta:
@@ -18885,7 +17536,6 @@ rule [MSLRH] v0.1 -> emadicius : Packer
     condition:
     	for any of them
 }
-
 rule [MSLRH] v0.31a : Packer
 {
     meta:
@@ -18899,7 +17549,6 @@ rule [MSLRH] v0.31a : Packer
     condition:
     	for any of them
 }
-
 rule [MSLRH] v0.32a -> emadicius : Packer
 {
     meta:
@@ -18913,7 +17562,6 @@ rule [MSLRH] v0.32a -> emadicius : Packer
     condition:
     	for any of them
 }
-
 rule [MSLRH] v0.32a -> emadicius (h) : Packer
 {
     meta:
@@ -18927,7 +17575,6 @@ rule [MSLRH] v0.32a -> emadicius (h) : Packer
     condition:
     	for any of them
 }
-
 rule PseudoSigner 0.1 --> Anorganix : Packer
 {
     meta:
@@ -18941,7 +17588,6 @@ rule PseudoSigner 0.1 --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 --> Anorganix : Packer
 {
     meta:
@@ -18955,7 +17601,6 @@ rule PseudoSigner 0.1 --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [32Lite 0.03] --> Anorganix : Packer
 {
     meta:
@@ -18969,7 +17614,6 @@ rule PseudoSigner 0.1 [32Lite 0.03] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [32Lite 0.03] --> Anorganix : Packer
 {
     meta:
@@ -18983,7 +17627,6 @@ rule PseudoSigner 0.1 [32Lite 0.03] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ASProtect] --> Anorganix : Packer
 {
     meta:
@@ -18997,7 +17640,6 @@ rule PseudoSigner 0.1 [ASProtect] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [ASProtect] --> Anorganix : Packer
 {
     meta:
@@ -19011,7 +17653,6 @@ rule PseudoSigner 0.1 [ASProtect] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [CD-Cops II] --> Anorganix : Packer
 {
     meta:
@@ -19025,7 +17666,6 @@ rule PseudoSigner 0.1 [CD-Cops II] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [CD-Cops II] --> Anorganix : Packer
 {
     meta:
@@ -19039,7 +17679,6 @@ rule PseudoSigner 0.1 [CD-Cops II] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Code-Lock] --> Anorganix : Packer
 {
     meta:
@@ -19053,7 +17692,6 @@ rule PseudoSigner 0.1 [Code-Lock] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Code-Lock] --> Anorganix : Packer
 {
     meta:
@@ -19067,7 +17705,6 @@ rule PseudoSigner 0.1 [Code-Lock] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Crunch/PE Heuristic] --> Anorganix : Packer
 {
     meta:
@@ -19081,7 +17718,6 @@ rule PseudoSigner 0.1 [Crunch/PE Heuristic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Crunch/PE Heuristic] --> Anorganix : Packer
 {
     meta:
@@ -19095,7 +17731,6 @@ rule PseudoSigner 0.1 [Crunch/PE Heuristic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [FSG 1.31] --> Anorganix : Packer
 {
     meta:
@@ -19109,7 +17744,6 @@ rule PseudoSigner 0.1 [FSG 1.31] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [FSG 1.31] --> Anorganix : Packer
 {
     meta:
@@ -19123,7 +17757,6 @@ rule PseudoSigner 0.1 [FSG 1.31] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [LCC Win32 1.x] --> Anorganix : Packer
 {
     meta:
@@ -19137,7 +17770,6 @@ rule PseudoSigner 0.1 [LCC Win32 1.x] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [LCC Win32 1.x] --> Anorganix : Packer
 {
     meta:
@@ -19151,7 +17783,6 @@ rule PseudoSigner 0.1 [LCC Win32 1.x] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [LTC 1.3] --> Anorganix : Packer
 {
     meta:
@@ -19165,7 +17796,6 @@ rule PseudoSigner 0.1 [LTC 1.3] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [LTC 1.3] --> Anorganix : Packer
 {
     meta:
@@ -19179,7 +17809,6 @@ rule PseudoSigner 0.1 [LTC 1.3] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix : Packer
 {
     meta:
@@ -19193,7 +17822,6 @@ rule PseudoSigner 0.1 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix : Packer
 {
     meta:
@@ -19207,7 +17835,6 @@ rule PseudoSigner 0.1 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 5.0+ (MFC)] --> Anorganix : Packer
 {
     meta:
@@ -19221,7 +17848,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 5.0+ (MFC)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Microsoft Visual C++ 5.0+ (MFC)] --> Anorganix : Packer
 {
     meta:
@@ -19235,7 +17861,6 @@ rule PseudoSigner 0.1 [Microsoft Visual C++ 5.0+ (MFC)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [NorthStar PE Shrinker 1.3] --> Anorganix : Packer
 {
     meta:
@@ -19249,7 +17874,6 @@ rule PseudoSigner 0.1 [NorthStar PE Shrinker 1.3] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [NorthStar PE Shrinker 1.3] --> Anorganix : Packer
 {
     meta:
@@ -19263,7 +17887,6 @@ rule PseudoSigner 0.1 [NorthStar PE Shrinker 1.3] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PE Pack 0.99] --> Anorganix : Packer
 {
     meta:
@@ -19277,7 +17900,6 @@ rule PseudoSigner 0.1 [PE Pack 0.99] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PE Pack 0.99] --> Anorganix : Packer
 {
     meta:
@@ -19291,7 +17913,6 @@ rule PseudoSigner 0.1 [PE Pack 0.99] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PE Protect 0.9] --> Anorganix : Packer
 {
     meta:
@@ -19305,7 +17926,6 @@ rule PseudoSigner 0.1 [PE Protect 0.9] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PE Protect 0.9] --> Anorganix : Packer
 {
     meta:
@@ -19319,7 +17939,6 @@ rule PseudoSigner 0.1 [PE Protect 0.9] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PENightMare 2 Beta] --> Anorganix : Packer
 {
     meta:
@@ -19333,7 +17952,6 @@ rule PseudoSigner 0.1 [PENightMare 2 Beta] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PENightMare 2 Beta] --> Anorganix : Packer
 {
     meta:
@@ -19347,7 +17965,6 @@ rule PseudoSigner 0.1 [PENightMare 2 Beta] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PEX 0.99] --> Anorganix : Packer
 {
     meta:
@@ -19361,7 +17978,6 @@ rule PseudoSigner 0.1 [PEX 0.99] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [PEX 0.99] --> Anorganix : Packer
 {
     meta:
@@ -19375,7 +17991,6 @@ rule PseudoSigner 0.1 [PEX 0.99] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [REALBasic] --> Anorganix : Packer
 {
     meta:
@@ -19389,7 +18004,6 @@ rule PseudoSigner 0.1 [REALBasic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [REALBasic] --> Anorganix : Packer
 {
     meta:
@@ -19403,7 +18017,6 @@ rule PseudoSigner 0.1 [REALBasic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [UPX 0.6] --> Anorganix : Packer
 {
     meta:
@@ -19417,7 +18030,6 @@ rule PseudoSigner 0.1 [UPX 0.6] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [UPX 0.6] --> Anorganix : Packer
 {
     meta:
@@ -19431,7 +18043,6 @@ rule PseudoSigner 0.1 [UPX 0.6] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [.BJFNT 1.1b] --> Anorganix : Packer
 {
     meta:
@@ -19445,7 +18056,6 @@ rule PseudoSigner 0.2 [.BJFNT 1.1b] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [.BJFNT 1.2] --> Anorganix : Packer
 {
     meta:
@@ -19459,7 +18069,6 @@ rule PseudoSigner 0.2 [.BJFNT 1.2] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [ASProtect] --> Anorganix : Packer
 {
     meta:
@@ -19473,7 +18082,6 @@ rule PseudoSigner 0.2 [ASProtect] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Borland C++ 1999] --> Anorganix : Packer
 {
     meta:
@@ -19487,7 +18095,6 @@ rule PseudoSigner 0.2 [Borland C++ 1999] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Borland Delphi DLL] --> Anorganix : Packer
 {
     meta:
@@ -19501,7 +18108,6 @@ rule PseudoSigner 0.2 [Borland Delphi DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Borland Delphi Setup Module] --> Anorganix : Packer
 {
     meta:
@@ -19515,7 +18121,6 @@ rule PseudoSigner 0.2 [Borland Delphi Setup Module] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Code-Lock] --> Anorganix : Packer
 {
     meta:
@@ -19529,7 +18134,6 @@ rule PseudoSigner 0.2 [Code-Lock] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Crunch/PE Heuristic] --> Anorganix : Packer
 {
     meta:
@@ -19543,7 +18147,6 @@ rule PseudoSigner 0.2 [Crunch/PE Heuristic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [FSG 1.31] --> Anorganix : Packer
 {
     meta:
@@ -19557,7 +18160,6 @@ rule PseudoSigner 0.2 [FSG 1.31] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [LCC Win32 1.x] --> Anorganix : Packer
 {
     meta:
@@ -19571,7 +18173,6 @@ rule PseudoSigner 0.2 [LCC Win32 1.x] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [LCC Win32 DLL] --> Anorganix : Packer
 {
     meta:
@@ -19585,7 +18186,6 @@ rule PseudoSigner 0.2 [LCC Win32 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Lockless Intro Pack] --> Anorganix : Packer
 {
     meta:
@@ -19599,7 +18199,6 @@ rule PseudoSigner 0.2 [Lockless Intro Pack] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Microsoft Visual C++ 7.0 DLL] --> Anorganix : Packer
 {
     meta:
@@ -19613,7 +18212,6 @@ rule PseudoSigner 0.2 [Microsoft Visual C++ 7.0 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [NorthStar PE Shrinker 1.3] --> Anorganix : Packer
 {
     meta:
@@ -19627,7 +18225,6 @@ rule PseudoSigner 0.2 [NorthStar PE Shrinker 1.3] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PE Intro 1.0] --> Anorganix : Packer
 {
     meta:
@@ -19641,7 +18238,6 @@ rule PseudoSigner 0.2 [PE Intro 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PE Pack 0.99] --> Anorganix : Packer
 {
     meta:
@@ -19655,7 +18251,6 @@ rule PseudoSigner 0.2 [PE Pack 0.99] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PE Protect 0.9] --> Anorganix : Packer
 {
     meta:
@@ -19669,7 +18264,6 @@ rule PseudoSigner 0.2 [PE Protect 0.9] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PENightMare 2 Beta] --> Anorganix : Packer
 {
     meta:
@@ -19683,7 +18277,6 @@ rule PseudoSigner 0.2 [PENightMare 2 Beta] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PEX 0.99] --> Anorganix : Packer
 {
     meta:
@@ -19697,7 +18290,6 @@ rule PseudoSigner 0.2 [PEX 0.99] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [REALBasic] --> Anorganix : Packer
 {
     meta:
@@ -19711,7 +18303,6 @@ rule PseudoSigner 0.2 [REALBasic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [UPX 0.6] --> Anorganix : Packer
 {
     meta:
@@ -19725,7 +18316,6 @@ rule PseudoSigner 0.2 [UPX 0.6] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Watcom C/C++ DLL] --> Anorganix : Packer
 {
     meta:
@@ -19739,7 +18329,6 @@ rule PseudoSigner 0.2 [Watcom C/C++ DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19753,7 +18342,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19767,7 +18355,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19781,7 +18368,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19795,7 +18381,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19809,7 +18394,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19823,7 +18407,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19837,7 +18420,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19851,7 +18433,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19865,7 +18446,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19879,7 +18459,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19893,7 +18472,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19907,7 +18485,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19921,7 +18498,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19935,7 +18511,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19949,7 +18524,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19963,7 +18537,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19977,7 +18550,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -19991,7 +18563,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20005,7 +18576,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20019,7 +18589,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20033,7 +18602,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20047,7 +18615,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20061,7 +18628,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20075,7 +18641,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20089,7 +18654,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20103,7 +18667,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20117,7 +18680,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20131,7 +18693,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20145,7 +18706,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20159,7 +18719,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20173,7 +18732,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20187,7 +18745,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20201,7 +18758,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20215,7 +18771,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20229,7 +18784,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20243,7 +18797,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20257,7 +18810,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20271,7 +18823,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20285,7 +18836,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20299,7 +18849,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20313,7 +18862,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20327,7 +18875,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20341,7 +18888,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20355,7 +18901,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20369,7 +18914,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20383,7 +18927,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20397,7 +18940,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20411,7 +18953,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20425,7 +18966,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20439,7 +18979,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20453,7 +18992,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20467,7 +19005,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20481,7 +19018,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20495,7 +19031,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20509,7 +19044,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20523,7 +19057,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20537,7 +19070,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20551,7 +19083,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20565,7 +19096,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20579,7 +19109,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20593,7 +19122,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20607,7 +19135,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20621,7 +19148,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20635,7 +19161,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20649,7 +19174,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20663,7 +19187,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20677,7 +19200,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20691,7 +19213,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20705,7 +19226,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20719,7 +19239,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20733,7 +19252,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20747,7 +19265,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20761,7 +19278,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20775,7 +19291,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20789,7 +19304,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20803,7 +19317,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20817,7 +19330,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20831,7 +19343,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20845,7 +19356,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20859,7 +19369,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20873,7 +19382,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20887,7 +19395,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20901,7 +19408,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20915,7 +19421,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20929,7 +19434,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20943,7 +19447,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20957,7 +19460,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20971,7 +19473,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20985,7 +19486,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -20999,7 +19499,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21013,7 +19512,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21027,7 +19525,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21041,7 +19538,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21055,7 +19551,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21069,7 +19564,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21083,7 +19577,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21097,7 +19590,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21111,7 +19603,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21125,7 +19616,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21139,7 +19629,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21153,7 +19642,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21167,7 +19655,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21181,7 +19668,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21195,7 +19681,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21209,7 +19694,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21223,7 +19707,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21237,7 +19720,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21251,7 +19733,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21265,7 +19746,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21279,7 +19759,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21293,7 +19772,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21307,7 +19785,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21321,7 +19798,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21335,7 +19811,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21349,7 +19824,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21363,7 +19837,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21377,7 +19850,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21391,7 +19863,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21405,7 +19876,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21419,7 +19889,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21433,7 +19902,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21447,7 +19915,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21461,7 +19928,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21475,7 +19941,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21489,7 +19954,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21503,7 +19967,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21517,7 +19980,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21531,7 +19993,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21545,7 +20006,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21559,7 +20019,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21573,7 +20032,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21587,7 +20045,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21601,7 +20058,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21615,7 +20071,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21629,7 +20084,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21643,7 +20097,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21657,7 +20110,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21671,7 +20123,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21685,7 +20136,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21699,7 +20149,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21713,7 +20162,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21727,7 +20175,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21741,7 +20188,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21755,7 +20201,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21769,7 +20214,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21783,7 +20227,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21797,7 +20240,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21811,7 +20253,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21825,7 +20266,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21839,7 +20279,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21853,7 +20292,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21867,7 +20305,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21881,7 +20318,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21895,7 +20331,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21909,7 +20344,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21923,7 +20357,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21937,7 +20370,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21951,7 +20383,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21965,7 +20396,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21979,7 +20409,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -21993,7 +20422,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22007,7 +20435,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22021,7 +20448,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22035,7 +20461,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22049,7 +20474,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22063,7 +20487,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22077,7 +20500,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22091,7 +20513,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22105,7 +20526,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22119,7 +20539,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22133,7 +20552,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22147,7 +20565,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22161,7 +20578,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22175,7 +20591,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22189,7 +20604,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22203,7 +20617,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22217,7 +20630,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22231,7 +20643,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22245,7 +20656,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22259,7 +20669,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22273,7 +20682,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22287,7 +20695,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22301,7 +20708,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22315,7 +20721,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22329,7 +20734,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22343,7 +20747,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22357,7 +20760,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22371,7 +20773,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22385,7 +20786,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22399,7 +20799,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22413,7 +20812,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22427,7 +20825,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22441,7 +20838,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22455,7 +20851,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22469,7 +20864,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22483,7 +20877,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22497,7 +20890,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22511,7 +20903,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22525,7 +20916,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22539,7 +20929,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22553,7 +20942,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22567,7 +20955,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22581,7 +20968,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22595,7 +20981,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22609,7 +20994,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22623,7 +21007,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22637,7 +21020,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22651,7 +21033,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22665,7 +21046,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22679,7 +21059,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22693,7 +21072,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22707,7 +21085,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22721,7 +21098,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22735,7 +21111,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22749,7 +21124,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22763,7 +21137,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22777,7 +21150,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22791,7 +21163,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22805,7 +21176,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22819,7 +21189,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22833,7 +21202,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22847,7 +21215,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22861,7 +21228,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22875,7 +21241,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22889,7 +21254,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22903,7 +21267,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22917,7 +21280,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22931,7 +21293,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22945,7 +21306,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22959,7 +21319,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22973,7 +21332,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -22987,7 +21345,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23001,7 +21358,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23015,7 +21371,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23029,7 +21384,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23043,7 +21397,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23057,7 +21410,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23071,7 +21423,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23085,7 +21436,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23099,7 +21449,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23113,7 +21462,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23127,7 +21475,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23141,7 +21488,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23155,7 +21501,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23169,7 +21514,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23183,7 +21527,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23197,7 +21540,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23211,7 +21553,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23225,7 +21566,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23239,7 +21579,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23253,7 +21592,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23267,7 +21605,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23281,7 +21618,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23295,7 +21631,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23309,7 +21644,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23323,7 +21657,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23337,7 +21670,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23351,7 +21683,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23365,7 +21696,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23379,7 +21709,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23393,7 +21722,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23407,7 +21735,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23421,7 +21748,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23435,7 +21761,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23449,7 +21774,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23463,7 +21787,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23477,7 +21800,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23491,7 +21813,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23505,7 +21826,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23519,7 +21839,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23533,7 +21852,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23547,7 +21865,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23561,7 +21878,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23575,7 +21891,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23589,7 +21904,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23603,7 +21917,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23617,7 +21930,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23631,7 +21943,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23645,7 +21956,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23659,7 +21969,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23673,7 +21982,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23687,7 +21995,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23701,7 +22008,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23715,7 +22021,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23729,7 +22034,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23743,7 +22047,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23757,7 +22060,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23771,7 +22073,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23785,7 +22086,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23799,7 +22099,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23813,7 +22112,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23827,7 +22125,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23841,7 +22138,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23855,7 +22151,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23869,7 +22164,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23883,7 +22177,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23897,7 +22190,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23911,7 +22203,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23925,7 +22216,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23939,7 +22229,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23953,7 +22242,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23967,7 +22255,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23981,7 +22268,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -23995,7 +22281,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24009,7 +22294,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24023,7 +22307,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24037,7 +22320,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24051,7 +22333,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24065,7 +22346,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24079,7 +22359,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24093,7 +22372,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24107,7 +22385,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24121,7 +22398,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24135,7 +22411,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24149,7 +22424,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24163,7 +22437,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24177,7 +22450,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24191,7 +22463,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24205,7 +22476,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24219,7 +22489,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24233,7 +22502,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24247,7 +22515,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24261,7 +22528,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24275,7 +22541,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24289,7 +22554,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24303,7 +22567,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24317,7 +22580,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24331,7 +22593,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24345,7 +22606,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24359,7 +22619,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24373,7 +22632,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24387,7 +22645,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24401,7 +22658,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24415,7 +22671,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24429,7 +22684,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24443,7 +22697,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24457,7 +22710,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24471,7 +22723,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24485,7 +22736,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24499,7 +22749,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24513,7 +22762,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24527,7 +22775,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24541,7 +22788,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24555,7 +22801,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24569,7 +22814,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24583,7 +22827,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24597,7 +22840,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24611,7 +22853,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24625,7 +22866,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24639,7 +22879,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24653,7 +22892,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24667,7 +22905,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24681,7 +22918,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24695,7 +22931,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24709,7 +22944,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24723,7 +22957,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24737,7 +22970,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24751,7 +22983,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24765,7 +22996,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24779,7 +23009,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24793,7 +23022,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24807,7 +23035,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24821,7 +23048,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24835,7 +23061,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24849,7 +23074,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24863,7 +23087,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24877,7 +23100,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24891,7 +23113,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24905,7 +23126,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24919,7 +23139,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
     	for any of them
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24933,7 +23152,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24947,7 +23165,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24961,7 +23178,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24975,7 +23191,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -24989,7 +23204,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25003,7 +23217,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25017,7 +23230,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25031,7 +23243,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25045,7 +23256,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25059,7 +23269,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25073,7 +23282,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25087,7 +23295,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25101,7 +23308,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25115,7 +23321,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25129,7 +23334,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25143,7 +23347,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25157,7 +23360,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25171,7 +23373,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25185,7 +23386,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25199,7 +23399,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25213,7 +23412,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25227,7 +23425,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25241,7 +23438,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25255,7 +23451,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25269,7 +23464,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25283,7 +23477,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25297,7 +23490,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25311,7 +23503,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25325,7 +23516,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25339,7 +23529,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25353,7 +23542,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25367,7 +23555,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25381,7 +23568,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25395,7 +23581,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25409,7 +23594,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25423,7 +23607,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25437,7 +23620,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25451,7 +23633,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25465,7 +23646,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25479,7 +23659,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25493,7 +23672,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25507,7 +23685,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25521,7 +23698,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25535,7 +23711,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25549,7 +23724,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25563,7 +23737,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25577,7 +23750,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25591,7 +23763,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25605,7 +23776,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25619,7 +23789,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25633,7 +23802,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25647,7 +23815,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25661,7 +23828,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25675,7 +23841,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25689,7 +23854,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25703,7 +23867,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25717,7 +23880,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25731,7 +23893,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25745,7 +23906,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25759,7 +23919,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25773,7 +23932,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25787,7 +23945,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25801,7 +23958,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25815,7 +23971,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25829,7 +23984,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25843,7 +23997,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25857,7 +24010,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25871,7 +24023,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25885,7 +24036,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25899,7 +24049,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25913,7 +24062,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25927,7 +24075,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25941,7 +24088,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25955,7 +24101,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25969,7 +24114,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25983,7 +24127,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -25997,7 +24140,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26011,7 +24153,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26025,7 +24166,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26039,7 +24179,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26053,7 +24192,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26067,7 +24205,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26081,7 +24218,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26095,7 +24231,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26109,7 +24244,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26123,7 +24257,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26137,7 +24270,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26151,7 +24283,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26165,7 +24296,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26179,7 +24309,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26193,7 +24322,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26207,7 +24335,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26221,7 +24348,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26235,7 +24361,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26249,7 +24374,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26263,7 +24387,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26277,7 +24400,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26291,7 +24413,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26305,7 +24426,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26319,7 +24439,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26333,7 +24452,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26347,7 +24465,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26361,7 +24478,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26375,7 +24491,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26389,7 +24504,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26403,7 +24517,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26417,7 +24530,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26431,7 +24543,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26445,7 +24556,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26459,7 +24569,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26473,7 +24582,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26487,7 +24595,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26501,7 +24608,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26515,7 +24621,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26529,7 +24634,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26543,7 +24647,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26557,7 +24660,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26571,7 +24673,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26585,7 +24686,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26599,7 +24699,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26613,7 +24712,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26627,7 +24725,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26641,7 +24738,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26655,7 +24751,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26669,7 +24764,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26683,7 +24777,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26697,7 +24790,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26711,7 +24803,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26725,7 +24816,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26739,7 +24829,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26753,7 +24842,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26767,7 +24855,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26781,7 +24868,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26795,7 +24881,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26809,7 +24894,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26823,7 +24907,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26837,7 +24920,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26851,7 +24933,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26865,7 +24946,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26879,7 +24959,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26893,7 +24972,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26907,7 +24985,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26921,7 +24998,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26935,7 +25011,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26949,7 +25024,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26963,7 +25037,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26977,7 +25050,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -26991,7 +25063,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27005,7 +25076,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27019,7 +25089,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27033,7 +25102,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27047,7 +25115,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27061,7 +25128,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27075,7 +25141,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27089,7 +25154,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27103,7 +25167,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27117,7 +25180,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27131,7 +25193,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27145,7 +25206,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27159,7 +25219,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27173,7 +25232,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27187,7 +25245,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27201,7 +25258,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27215,7 +25271,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27229,7 +25284,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27243,7 +25297,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27257,7 +25310,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27271,7 +25323,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27285,7 +25336,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27299,7 +25349,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27313,7 +25362,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27327,7 +25375,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27341,7 +25388,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27355,7 +25401,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27369,7 +25414,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27383,7 +25427,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27397,7 +25440,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27411,7 +25453,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27425,7 +25466,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27439,7 +25479,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27453,7 +25492,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27467,7 +25505,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27481,7 +25518,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27495,7 +25531,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27509,7 +25544,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27523,7 +25557,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27537,7 +25570,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27551,7 +25583,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27565,7 +25596,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27579,7 +25609,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27593,7 +25622,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27607,7 +25635,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27621,7 +25648,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27635,7 +25661,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27649,7 +25674,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27663,7 +25687,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27677,7 +25700,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27691,7 +25713,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27705,7 +25726,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27719,7 +25739,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27733,7 +25752,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27747,7 +25765,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27761,7 +25778,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27775,7 +25791,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27789,7 +25804,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27803,7 +25817,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27817,7 +25830,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27831,7 +25843,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27845,7 +25856,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27859,7 +25869,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27873,7 +25882,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27887,7 +25895,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27901,7 +25908,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27915,7 +25921,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27929,7 +25934,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27943,7 +25947,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27957,7 +25960,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27971,7 +25973,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27985,7 +25986,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -27999,7 +25999,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28013,7 +26012,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28027,7 +26025,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28041,7 +26038,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28055,7 +26051,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28069,7 +26064,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28083,7 +26077,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28097,7 +26090,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28111,7 +26103,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28125,7 +26116,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28139,7 +26129,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28153,7 +26142,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28167,7 +26155,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28181,7 +26168,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28195,7 +26181,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28209,7 +26194,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28223,7 +26207,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28237,7 +26220,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28251,7 +26233,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28265,7 +26246,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28279,7 +26259,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28293,7 +26272,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28307,7 +26285,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28321,7 +26298,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28335,7 +26311,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28349,7 +26324,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28363,7 +26337,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28377,7 +26350,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28391,7 +26363,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28405,7 +26376,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28419,7 +26389,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28433,7 +26402,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28447,7 +26415,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28461,7 +26428,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28475,7 +26441,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28489,7 +26454,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28503,7 +26467,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28517,7 +26480,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28531,7 +26493,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28545,7 +26506,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28559,7 +26519,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28573,7 +26532,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28587,7 +26545,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28601,7 +26558,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28615,7 +26571,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28629,7 +26584,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28643,7 +26597,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28657,7 +26610,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28671,7 +26623,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28685,7 +26636,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28699,7 +26649,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28713,7 +26662,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28727,7 +26675,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28741,7 +26688,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28755,7 +26701,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28769,7 +26714,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28783,7 +26727,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28797,7 +26740,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28811,7 +26753,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28825,7 +26766,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28839,7 +26779,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28853,7 +26792,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28867,7 +26805,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28881,7 +26818,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28895,7 +26831,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28909,7 +26844,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28923,7 +26857,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28937,7 +26870,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28951,7 +26883,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28965,7 +26896,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28979,7 +26909,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -28993,7 +26922,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29007,7 +26935,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29021,7 +26948,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29035,7 +26961,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29049,7 +26974,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29063,7 +26987,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29077,7 +27000,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29091,7 +27013,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29105,7 +27026,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29119,7 +27039,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29133,7 +27052,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29147,7 +27065,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29161,7 +27078,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29175,7 +27091,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29189,7 +27104,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29203,7 +27117,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29217,7 +27130,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29231,7 +27143,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29245,7 +27156,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29259,7 +27169,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29273,7 +27182,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29287,7 +27195,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29301,7 +27208,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29315,7 +27221,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29329,7 +27234,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29343,7 +27247,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29357,7 +27260,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29371,7 +27273,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29385,7 +27286,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29399,7 +27299,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29413,7 +27312,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29427,7 +27325,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29441,7 +27338,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29455,7 +27351,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29469,7 +27364,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29483,7 +27377,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29497,7 +27390,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29511,7 +27403,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29525,7 +27416,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29539,7 +27429,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29553,7 +27442,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29567,7 +27455,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29581,7 +27468,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29595,7 +27481,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29609,7 +27494,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29623,7 +27507,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29637,7 +27520,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29651,7 +27533,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29665,7 +27546,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29679,7 +27559,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29693,7 +27572,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29707,7 +27585,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29721,7 +27598,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29735,7 +27611,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29749,7 +27624,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29763,7 +27637,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29777,7 +27650,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29791,7 +27663,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29805,7 +27676,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29819,7 +27689,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29833,7 +27702,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29847,7 +27715,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29861,7 +27728,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29875,7 +27741,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29889,7 +27754,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29903,7 +27767,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29917,7 +27780,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29931,7 +27793,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29945,7 +27806,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29959,7 +27819,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29973,7 +27832,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -29987,7 +27845,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30001,7 +27858,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30015,7 +27871,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30029,7 +27884,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30043,7 +27897,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30057,7 +27910,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30071,7 +27923,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30085,7 +27936,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30099,7 +27949,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30113,7 +27962,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30127,7 +27975,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30141,7 +27988,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30155,7 +28001,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30169,7 +28014,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30183,7 +28027,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30197,7 +28040,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30211,7 +28053,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30225,7 +28066,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30239,7 +28079,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30253,7 +28092,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30267,7 +28105,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30281,7 +28118,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30295,7 +28131,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30309,7 +28144,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30323,7 +28157,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30337,7 +28170,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30351,7 +28183,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30365,7 +28196,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30379,7 +28209,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30393,7 +28222,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30407,7 +28235,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30421,7 +28248,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30435,7 +28261,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30449,7 +28274,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30463,7 +28287,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30477,7 +28300,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30491,7 +28313,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30505,7 +28326,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30519,7 +28339,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30533,7 +28352,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30547,7 +28365,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30561,7 +28378,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30575,7 +28391,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30589,7 +28404,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30603,7 +28417,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30617,7 +28430,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30631,7 +28443,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30645,7 +28456,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30659,7 +28469,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30673,7 +28482,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30687,7 +28495,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30701,7 +28508,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30715,7 +28521,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30729,7 +28534,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30743,7 +28547,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30757,7 +28560,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30771,7 +28573,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30785,7 +28586,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30799,7 +28599,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30813,7 +28612,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30827,7 +28625,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30841,7 +28638,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30855,7 +28651,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30869,7 +28664,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30883,7 +28677,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30897,7 +28690,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30911,7 +28703,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30925,7 +28716,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30939,7 +28729,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30953,7 +28742,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30967,7 +28755,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30981,7 +28768,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -30995,7 +28781,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31009,7 +28794,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31023,7 +28807,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31037,7 +28820,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31051,7 +28833,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31065,7 +28846,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31079,7 +28859,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31093,7 +28872,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31107,7 +28885,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31121,7 +28898,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31135,7 +28911,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31149,7 +28924,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31163,7 +28937,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31177,7 +28950,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31191,7 +28963,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31205,7 +28976,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31219,7 +28989,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31233,7 +29002,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31247,7 +29015,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31261,7 +29028,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31275,7 +29041,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31289,7 +29054,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31303,7 +29067,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31317,7 +29080,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31331,7 +29093,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31345,7 +29106,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31359,7 +29119,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31373,7 +29132,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31387,7 +29145,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31401,7 +29158,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31415,7 +29171,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31429,7 +29184,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31443,7 +29197,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31457,7 +29210,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31471,7 +29223,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31485,7 +29236,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31499,7 +29249,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31513,7 +29262,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31527,7 +29275,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
     	for any of them
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31541,7 +29288,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31555,7 +29301,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31569,7 +29314,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31583,7 +29327,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31597,7 +29340,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31611,7 +29353,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31625,7 +29366,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31639,7 +29379,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31653,7 +29392,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31667,7 +29405,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31681,7 +29418,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31695,7 +29431,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31709,7 +29444,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31723,7 +29457,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31737,7 +29470,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31751,7 +29483,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31765,7 +29496,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31779,7 +29509,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31793,7 +29522,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31807,7 +29535,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31821,7 +29548,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31835,7 +29561,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31849,7 +29574,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31863,7 +29587,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31877,7 +29600,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31891,7 +29613,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31905,7 +29626,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31919,7 +29639,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31933,7 +29652,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31947,7 +29665,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31961,7 +29678,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31975,7 +29691,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -31989,7 +29704,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32003,7 +29717,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32017,7 +29730,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32031,7 +29743,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32045,7 +29756,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32059,7 +29769,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32073,7 +29782,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32087,7 +29795,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32101,7 +29808,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32115,7 +29821,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32129,7 +29834,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32143,7 +29847,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32157,7 +29860,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32171,7 +29873,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32185,7 +29886,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32199,7 +29899,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32213,7 +29912,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32227,7 +29925,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32241,7 +29938,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32255,7 +29951,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32269,7 +29964,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32283,7 +29977,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32297,7 +29990,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32311,7 +30003,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32325,7 +30016,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32339,7 +30029,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32353,7 +30042,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32367,7 +30055,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32381,7 +30068,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32395,7 +30081,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32409,7 +30094,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32423,7 +30107,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32437,7 +30120,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32451,7 +30133,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32465,7 +30146,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32479,7 +30159,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32493,7 +30172,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32507,7 +30185,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32521,7 +30198,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32535,7 +30211,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32549,7 +30224,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32563,7 +30237,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32577,7 +30250,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32591,7 +30263,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32605,7 +30276,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32619,7 +30289,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32633,7 +30302,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32647,7 +30315,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32661,7 +30328,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32675,7 +30341,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32689,7 +30354,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32703,7 +30367,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32717,7 +30380,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32731,7 +30393,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32745,7 +30406,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32759,7 +30419,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32773,7 +30432,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32787,7 +30445,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32801,7 +30458,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32815,7 +30471,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32829,7 +30484,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32843,7 +30497,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32857,7 +30510,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32871,7 +30523,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32885,7 +30536,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32899,7 +30549,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32913,7 +30562,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32927,7 +30575,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32941,7 +30588,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -32955,7 +30601,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule .BJFnt v1.3 : Packer
 {
     meta:
@@ -32969,7 +30614,6 @@ rule .BJFnt v1.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule 624 (Six to Four) v1.0 : Packer
 {
     meta:
@@ -32983,7 +30627,6 @@ rule 624 (Six to Four) v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Ady`s Glue v0.10 : Packer
 {
     meta:
@@ -32997,7 +30640,6 @@ rule Ady`s Glue v0.10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AHPack 0.1 -> FEUERRADER : Packer
 {
     meta:
@@ -33011,7 +30653,6 @@ rule AHPack 0.1 -> FEUERRADER : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Alex Protector v1.0 -> Alex : Packer
 {
     meta:
@@ -33025,7 +30666,6 @@ rule Alex Protector v1.0 -> Alex : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Alloy v1.x.2000 : Packer
 {
     meta:
@@ -33039,7 +30679,6 @@ rule Alloy v1.x.2000 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Anticrack Software Protector v1.09 (ACProtect) : Packer
 {
     meta:
@@ -33053,7 +30692,6 @@ rule Anticrack Software Protector v1.09 (ACProtect) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule aPack v0.82 : Packer
 {
     meta:
@@ -33067,7 +30705,6 @@ rule aPack v0.82 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.50b3 : Packer
 {
     meta:
@@ -33081,7 +30718,6 @@ rule Armadillo v2.50b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.52 : Packer
 {
     meta:
@@ -33095,7 +30731,6 @@ rule Armadillo v2.52 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.52 beta2 : Packer
 {
     meta:
@@ -33109,7 +30744,6 @@ rule Armadillo v2.52 beta2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.53 : Packer
 {
     meta:
@@ -33123,7 +30757,6 @@ rule Armadillo v2.53 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.60 : Packer
 {
     meta:
@@ -33137,7 +30770,6 @@ rule Armadillo v2.60 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.60a : Packer
 {
     meta:
@@ -33151,7 +30783,6 @@ rule Armadillo v2.60a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.60b1 : Packer
 {
     meta:
@@ -33165,7 +30796,6 @@ rule Armadillo v2.60b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.60b2 : Packer
 {
     meta:
@@ -33179,7 +30809,6 @@ rule Armadillo v2.60b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.60c : Packer
 {
     meta:
@@ -33193,7 +30822,6 @@ rule Armadillo v2.60c : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.61 : Packer
 {
     meta:
@@ -33207,7 +30835,6 @@ rule Armadillo v2.61 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.65b1 : Packer
 {
     meta:
@@ -33221,7 +30848,6 @@ rule Armadillo v2.65b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.75a : Packer
 {
     meta:
@@ -33235,7 +30861,6 @@ rule Armadillo v2.75a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.85 : Packer
 {
     meta:
@@ -33249,7 +30874,6 @@ rule Armadillo v2.85 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.xx (CopyMem II) : Packer
 {
     meta:
@@ -33263,7 +30887,6 @@ rule Armadillo v2.xx (CopyMem II) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.03 : Packer
 {
     meta:
@@ -33277,7 +30900,6 @@ rule ASPack v1.08.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.x : Packer
 {
     meta:
@@ -33291,7 +30913,6 @@ rule ASPack v1.08.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.11b : Packer
 {
     meta:
@@ -33305,7 +30926,6 @@ rule ASPack v2.11b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.11c : Packer
 {
     meta:
@@ -33319,7 +30939,6 @@ rule ASPack v2.11c : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.12 : Packer
 {
     meta:
@@ -33333,7 +30952,6 @@ rule ASPack v2.12 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.2 -> Alexey Solodovnikov (h1) : Packer
 {
     meta:
@@ -33347,7 +30965,6 @@ rule ASProtect v1.2 -> Alexey Solodovnikov (h1) : Packer
     condition:
     	for any of them
 }
-
 rule ASProtect V2.X DLL -> Alexey Solodovnikov : Packer
 {
     meta:
@@ -33361,7 +30978,6 @@ rule ASProtect V2.X DLL -> Alexey Solodovnikov : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AVPACK v1.20 : Packer
 {
     meta:
@@ -33375,7 +30991,6 @@ rule AVPACK v1.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BamBam v0.01 : Packer
 {
     meta:
@@ -33389,7 +31004,6 @@ rule BamBam v0.01 : Packer
     condition:
     	for any of them
 }
-
 rule BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -33403,7 +31017,6 @@ rule BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -33417,7 +31030,6 @@ rule BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -33431,7 +31043,6 @@ rule BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -33445,7 +31056,6 @@ rule BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker V1.00 -> BeRo : Packer
 {
     meta:
@@ -33459,7 +31069,6 @@ rule BeRoEXEPacker V1.00 -> BeRo : Packer
     condition:
     	for any of them
 }
-
 rule BeRoEXEPacker v1.00 -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -33473,7 +31082,6 @@ rule BeRoEXEPacker v1.00 -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -33487,7 +31095,6 @@ rule BeRoEXEPacker v1.00 -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 DLL [LZMA] -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -33501,7 +31108,6 @@ rule BeRoEXEPacker v1.00 DLL [LZMA] -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 [LZMA] -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -33515,7 +31121,6 @@ rule BeRoEXEPacker v1.00 [LZMA] -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CA Visual Objects 2.0 - 2.5 : Packer
 {
     meta:
@@ -33529,7 +31134,6 @@ rule CA Visual Objects 2.0 - 2.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CAN2EXE v0.01 : Packer
 {
     meta:
@@ -33543,7 +31147,6 @@ rule CAN2EXE v0.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ChinaProtect -> dummy   * Sign.By.fly : Packer
 {
     meta:
@@ -33557,7 +31160,6 @@ rule ChinaProtect -> dummy   * Sign.By.fly : Packer
     condition:
     	for any of them
 }
-
 rule CodeCrypt v0.164 : Packer
 {
     meta:
@@ -33571,7 +31173,6 @@ rule CodeCrypt v0.164 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule COMPACK v4.5 (2) : Packer
 {
     meta:
@@ -33585,7 +31186,6 @@ rule COMPACK v4.5 (2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule COMPACK v5.1 : Packer
 {
     meta:
@@ -33599,7 +31199,6 @@ rule COMPACK v5.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CopyControl v3.03 : Packer
 {
     meta:
@@ -33613,7 +31212,6 @@ rule CopyControl v3.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Cracked by AutoHack (1) : Packer
 {
     meta:
@@ -33627,7 +31225,6 @@ rule Cracked by AutoHack (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Cracked by Autohack (2) : Packer
 {
     meta:
@@ -33641,7 +31238,6 @@ rule Cracked by Autohack (2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch/PE : Packer
 {
     meta:
@@ -33655,7 +31251,6 @@ rule Crunch/PE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch/PE v2.0.x.x : Packer
 {
     meta:
@@ -33669,7 +31264,6 @@ rule Crunch/PE v2.0.x.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch/PE v4.0 : Packer
 {
     meta:
@@ -33683,7 +31277,6 @@ rule Crunch/PE v4.0 : Packer
     condition:
     	for any of them
 }
-
 rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
 {
     meta:
@@ -33697,7 +31290,6 @@ rule Crypto-Lock v2.02 (Eng) -> Ryan Thian : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DAEMON Protect v0.6.7 : Packer
 {
     meta:
@@ -33711,7 +31303,6 @@ rule DAEMON Protect v0.6.7 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DBPE v1.53 : Packer
 {
     meta:
@@ -33725,7 +31316,6 @@ rule DBPE v1.53 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DBPE v2.10 : Packer
 {
     meta:
@@ -33739,7 +31329,6 @@ rule DBPE v2.10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DBPE v2.33 : Packer
 {
     meta:
@@ -33753,7 +31342,6 @@ rule DBPE v2.33 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DEF v1.0 : Packer
 {
     meta:
@@ -33767,7 +31355,6 @@ rule DEF v1.0 : Packer
     condition:
     	for any of them
 }
-
 rule DIET v1.00, v1.00d : Packer
 {
     meta:
@@ -33781,7 +31368,6 @@ rule DIET v1.00, v1.00d : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DIET v1.02b, v1.10a, v1.20 : Packer
 {
     meta:
@@ -33795,7 +31381,6 @@ rule DIET v1.02b, v1.10a, v1.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Ding Boy's PE-lock Phantasm v1.5b3 : Packer
 {
     meta:
@@ -33809,7 +31394,6 @@ rule Ding Boy's PE-lock Phantasm v1.5b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DOS32 v.3.3 DOS-Extender and Loader : Packer
 {
     meta:
@@ -33823,7 +31407,6 @@ rule DOS32 v.3.3 DOS-Extender and Loader : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Dropper Creator V0.1 -> Conflict : Packer
 {
     meta:
@@ -33837,7 +31420,6 @@ rule Dropper Creator V0.1 -> Conflict : Packer
     condition:
     	for any of them
 }
-
 rule dUP v2.x Patcher --> www.diablo2oo2.cjb.net : Packer
 {
     meta:
@@ -33851,7 +31433,6 @@ rule dUP v2.x Patcher --> www.diablo2oo2.cjb.net : Packer
     condition:
     	for any of them
 }
-
 rule dUP2 -> diablo2oo2 : Packer
 {
     meta:
@@ -33865,7 +31446,6 @@ rule dUP2 -> diablo2oo2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EEXE Version 1.12 : Packer
 {
     meta:
@@ -33879,7 +31459,6 @@ rule EEXE Version 1.12 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ENIGMA Protector V1.12-> Sukhov Vladimir : Packer
 {
     meta:
@@ -33893,7 +31472,6 @@ rule ENIGMA Protector V1.12-> Sukhov Vladimir : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exact Audio Copy : Packer
 {
     meta:
@@ -33907,7 +31485,6 @@ rule Exact Audio Copy : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Packer v7.0 by TurboPower Software : Packer
 {
     meta:
@@ -33921,7 +31498,6 @@ rule EXE Packer v7.0 by TurboPower Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Stealth v1.1 : Packer
 {
     meta:
@@ -33935,7 +31511,6 @@ rule EXE Stealth v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE2COM (regular) : Packer
 {
     meta:
@@ -33949,7 +31524,6 @@ rule EXE2COM (regular) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE2COM (With CRC check) : Packer
 {
     meta:
@@ -33963,7 +31537,6 @@ rule EXE2COM (With CRC check) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE32Pack v1.36 : Packer
 {
     meta:
@@ -33977,7 +31550,6 @@ rule EXE32Pack v1.36 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE32Pack v1.37 : Packer
 {
     meta:
@@ -33991,7 +31563,6 @@ rule EXE32Pack v1.37 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE32Pack v1.38 : Packer
 {
     meta:
@@ -34005,7 +31576,6 @@ rule EXE32Pack v1.38 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE32Pack v1.39 : Packer
 {
     meta:
@@ -34019,7 +31589,6 @@ rule EXE32Pack v1.39 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor 2.1.17 -> Strongbit/SoftComplete Development (h) : Packer
 {
     meta:
@@ -34033,7 +31602,6 @@ rule EXECryptor 2.1.17 -> Strongbit/SoftComplete Development (h) : Packer
     condition:
     	for any of them
 }
-
 rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h2) : Packer
 {
     meta:
@@ -34047,7 +31615,6 @@ rule EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor 2.x -> SoftComplete Developement : Packer
 {
     meta:
@@ -34061,7 +31628,6 @@ rule EXECryptor 2.x -> SoftComplete Developement : Packer
     condition:
     	for any of them
 }
-
 rule ExeJoiner V1.0 -> Yoda f2f : Packer
 {
     meta:
@@ -34075,7 +31641,6 @@ rule ExeJoiner V1.0 -> Yoda f2f : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXEPACK v4.05, v4.06 : Packer
 {
     meta:
@@ -34089,7 +31654,6 @@ rule EXEPACK v4.05, v4.06 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXERefactor V0.1 -> random : Packer
 {
     meta:
@@ -34103,7 +31667,6 @@ rule EXERefactor V0.1 -> random : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeSmasher vx.x : Packer
 {
     meta:
@@ -34117,7 +31680,6 @@ rule ExeSmasher vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeTools COM2EXE : Packer
 {
     meta:
@@ -34131,7 +31693,6 @@ rule ExeTools COM2EXE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor 1.2 -> CGSoftLabs : Packer
 {
     meta:
@@ -34145,7 +31706,6 @@ rule eXPressor 1.2 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor 1.2.0 Beta PE Packer : Packer
 {
     meta:
@@ -34159,7 +31719,6 @@ rule eXPressor 1.2.0 Beta PE Packer : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor v1.2.0b : Packer
 {
     meta:
@@ -34173,7 +31732,6 @@ rule eXPressor v1.2.0b : Packer
     condition:
     	for any of them
 }
-
 rule eXPressor v1.3 -> CGSoftLabs (h) : Packer
 {
     meta:
@@ -34187,7 +31745,6 @@ rule eXPressor v1.3 -> CGSoftLabs (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor v1.4 -> CGSoftLabs (h) : Packer
 {
     meta:
@@ -34201,7 +31758,6 @@ rule eXPressor v1.4 -> CGSoftLabs (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EÓÎµØ´ø-> ÔÂºÚ·ç¸ß : Packer
 {
     meta:
@@ -34215,7 +31771,6 @@ rule EÓÎµØ´ø-> ÔÂºÚ·ç¸ß : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FACRYPT v1.0 : Packer
 {
     meta:
@@ -34229,7 +31784,6 @@ rule FACRYPT v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Feokt : Packer
 {
     meta:
@@ -34243,7 +31797,6 @@ rule Feokt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FreeBasic 0.14 : Packer
 {
     meta:
@@ -34257,7 +31810,6 @@ rule FreeBasic 0.14 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.1 : Packer
 {
     meta:
@@ -34271,7 +31823,6 @@ rule FSG v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> bart/xt -> WinRAR-SFX : Packer
 {
     meta:
@@ -34285,7 +31836,6 @@ rule FSG v1.10 (Eng) -> bart/xt -> WinRAR-SFX : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> bart/xt -> WinRAR-SFX : Packer
 {
     meta:
@@ -34299,7 +31849,6 @@ rule FSG v1.10 (Eng) -> bart/xt -> WinRAR-SFX : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland C++ 1999) : Packer
 {
     meta:
@@ -34313,7 +31862,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland C++ 1999) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland C++) : Packer
 {
     meta:
@@ -34327,7 +31875,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
 {
     meta:
@@ -34341,7 +31888,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
 {
     meta:
@@ -34355,7 +31901,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++ / ASM) : Packer
 {
     meta:
@@ -34369,7 +31914,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++ / ASM
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
@@ -34383,7 +31927,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++) : Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)x : Packer
 {
     meta:
@@ -34397,7 +31940,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)x : P
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi 2.0) : Packer
 {
     meta:
@@ -34411,7 +31953,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi 2.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32 / Microsoft Visual Basic) : Packer
 {
     meta:
@@ -34425,7 +31966,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32 / Microsoft Visual Basic) :
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
 {
     meta:
@@ -34439,7 +31979,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32) : Packer
 {
     meta:
@@ -34453,7 +31992,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (MASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual Basic / MASM32) : Packer
 {
     meta:
@@ -34467,7 +32005,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual Basic / MASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual Basic 5.0 / 6.0) : Packer
 {
     meta:
@@ -34481,7 +32018,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual Basic 5.0 / 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 4.x / LCC Win32 1.x) : Packer
 {
     meta:
@@ -34495,7 +32031,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 4.x / LCC Win32 1.x) :
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 5.0 / 6.0) : Packer
 {
     meta:
@@ -34509,7 +32044,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 5.0 / 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0 / ASM) : Packer
 {
     meta:
@@ -34523,7 +32057,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0 / ASM) : Pac
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -34537,7 +32070,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -34551,7 +32083,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -34565,7 +32096,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -34579,7 +32109,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / ASM) : Packer
 {
     meta:
@@ -34593,7 +32122,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / ASM) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -34607,7 +32135,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -34621,7 +32148,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -34635,7 +32161,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -34649,7 +32174,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -34663,7 +32187,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -34677,7 +32200,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -34691,7 +32213,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -34705,7 +32226,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.33 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -34719,7 +32239,6 @@ rule FSG v1.33 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v2.0 : Packer
 {
     meta:
@@ -34733,7 +32252,6 @@ rule FSG v2.0 : Packer
     condition:
     	for any of them
 }
-
 rule Fusion 1.0 -> jaNooNi : Packer
 {
     meta:
@@ -34747,7 +32265,6 @@ rule Fusion 1.0 -> jaNooNi : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule GHF Protector (pack only) -> GPcH : Packer
 {
     meta:
@@ -34761,7 +32278,6 @@ rule GHF Protector (pack only) -> GPcH : Packer
     condition:
     	for any of them
 }
-
 rule GHF Protector / GPcH : Packer
 {
     meta:
@@ -34775,7 +32291,6 @@ rule GHF Protector / GPcH : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HACKSTOP v1.10, v1.11 : Packer
 {
     meta:
@@ -34789,7 +32304,6 @@ rule HACKSTOP v1.10, v1.11 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HACKSTOP v1.11c : Packer
 {
     meta:
@@ -34803,7 +32317,6 @@ rule HACKSTOP v1.11c : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HACKSTOP v1.13 : Packer
 {
     meta:
@@ -34817,7 +32330,6 @@ rule HACKSTOP v1.13 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HASP HL Protection V1.X -> Aladdin : Packer
 {
     meta:
@@ -34831,7 +32343,6 @@ rule HASP HL Protection V1.X -> Aladdin : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HPA : Packer
 {
     meta:
@@ -34845,7 +32356,6 @@ rule HPA : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Hying's PE-Armor 0.75.exe -> Hying [CCG] (h) : Packer
 {
     meta:
@@ -34859,7 +32369,6 @@ rule Hying's PE-Armor 0.75.exe -> Hying [CCG] (h) : Packer
     condition:
     	for any of them
 }
-
 rule hying's PEArmor V0.76 -> hying : Packer
 {
     meta:
@@ -34873,7 +32382,6 @@ rule hying's PEArmor V0.76 -> hying : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule IMP-Packer 1.0 -> Mahdi Hezavehi [IMPOSTER] (h) : Packer
 {
     meta:
@@ -34887,7 +32395,6 @@ rule IMP-Packer 1.0 -> Mahdi Hezavehi [IMPOSTER] (h) : Packer
     condition:
     	for any of them
 }
-
 rule IMPostor Pack 1.0 -> Mahdi Hezavehi : Packer
 {
     meta:
@@ -34901,7 +32408,6 @@ rule IMPostor Pack 1.0 -> Mahdi Hezavehi : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Inno Setup Module : Packer
 {
     meta:
@@ -34915,7 +32421,6 @@ rule Inno Setup Module : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Inno Setup Module v2.0.18 : Packer
 {
     meta:
@@ -34929,7 +32434,6 @@ rule Inno Setup Module v2.0.18 : Packer
     condition:
     	for any of them
 }
-
 rule Inno Setup Module v3.0.4-beta/v3.0.6/v3.0.7 : Packer
 {
     meta:
@@ -34943,7 +32447,6 @@ rule Inno Setup Module v3.0.4-beta/v3.0.6/v3.0.7 : Packer
     condition:
     	for any of them
 }
-
 rule iPB Protect 0.1.3 - 0.1.7 -> forgot : Packer
 {
     meta:
@@ -34957,7 +32460,6 @@ rule iPB Protect 0.1.3 - 0.1.7 -> forgot : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule JAM v2.11 : Packer
 {
     meta:
@@ -34971,7 +32473,6 @@ rule JAM v2.11 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule JDPack 2.x -> JDPack : Packer
 {
     meta:
@@ -34985,7 +32486,6 @@ rule JDPack 2.x -> JDPack : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Krypton v0.3 : Packer
 {
     meta:
@@ -34999,7 +32499,6 @@ rule Krypton v0.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Krypton v0.4 : Packer
 {
     meta:
@@ -35013,7 +32512,6 @@ rule Krypton v0.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Krypton v0.5 : Packer
 {
     meta:
@@ -35027,7 +32525,6 @@ rule Krypton v0.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule kryptor 9 : Packer
 {
     meta:
@@ -35041,7 +32538,6 @@ rule kryptor 9 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LameCrypt v1.0 : Packer
 {
     meta:
@@ -35055,7 +32551,6 @@ rule LameCrypt v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LCC Win32 DLL : Packer
 {
     meta:
@@ -35069,7 +32564,6 @@ rule LCC Win32 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LTC v1.3 : Packer
 {
     meta:
@@ -35083,7 +32577,6 @@ rule LTC v1.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MASM32 : Packer
 {
     meta:
@@ -35097,7 +32590,6 @@ rule MASM32 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Metrowerks CodeWarrior v2.0 (GUI) : Packer
 {
     meta:
@@ -35111,7 +32603,6 @@ rule Metrowerks CodeWarrior v2.0 (GUI) : Packer
     condition:
     	for any of them
 }
-
 rule Mew 11 SE v1.2 (Eng) -> Northfox : Packer
 {
     meta:
@@ -35125,7 +32616,6 @@ rule Mew 11 SE v1.2 (Eng) -> Northfox : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MicroJoiner 1.7 -> coban2k : Packer
 {
     meta:
@@ -35139,7 +32629,6 @@ rule MicroJoiner 1.7 -> coban2k : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft C (1990/1992) : Packer
 {
     meta:
@@ -35153,7 +32642,6 @@ rule Microsoft C (1990/1992) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft C++ (1990/1992) : Packer
 {
     meta:
@@ -35167,7 +32655,6 @@ rule Microsoft C++ (1990/1992) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual Basic v5.0 : Packer
 {
     meta:
@@ -35181,7 +32668,6 @@ rule Microsoft Visual Basic v5.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ : Packer
 {
     meta:
@@ -35195,7 +32681,6 @@ rule Microsoft Visual C++ : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ 6.0 DLL : Packer
 {
     meta:
@@ -35209,7 +32694,6 @@ rule Microsoft Visual C++ 6.0 DLL : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ 8.0 : Packer
 {
     meta:
@@ -35223,7 +32707,6 @@ rule Microsoft Visual C++ 8.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ 8.0 [Debug] : Packer
 {
     meta:
@@ -35237,7 +32720,6 @@ rule Microsoft Visual C++ 8.0 [Debug] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ ?.? : Packer
 {
     meta:
@@ -35251,7 +32733,6 @@ rule Microsoft Visual C++ ?.? : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ DLL : Packer
 {
     meta:
@@ -35265,7 +32746,6 @@ rule Microsoft Visual C++ DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v4.x : Packer
 {
     meta:
@@ -35279,7 +32759,6 @@ rule Microsoft Visual C++ v4.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v5.0 : Packer
 {
     meta:
@@ -35293,7 +32772,6 @@ rule Microsoft Visual C++ v5.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v5.0/v6.0 (MFC) : Packer
 {
     meta:
@@ -35307,7 +32785,6 @@ rule Microsoft Visual C++ v5.0/v6.0 (MFC) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v6.0 : Packer
 {
     meta:
@@ -35321,7 +32798,6 @@ rule Microsoft Visual C++ v6.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v6.0 (Debug Version) : Packer
 {
     meta:
@@ -35335,7 +32811,6 @@ rule Microsoft Visual C++ v6.0 (Debug Version) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v6.0 DLL : Packer
 {
     meta:
@@ -35349,7 +32824,6 @@ rule Microsoft Visual C++ v6.0 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.0 : Packer
 {
     meta:
@@ -35363,7 +32837,6 @@ rule Microsoft Visual C++ v7.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.1 DLL : Packer
 {
     meta:
@@ -35377,7 +32850,6 @@ rule Microsoft Visual C++ v7.1 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.1 EXE : Packer
 {
     meta:
@@ -35391,7 +32863,6 @@ rule Microsoft Visual C++ v7.1 EXE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ vx.x : Packer
 {
     meta:
@@ -35405,7 +32876,6 @@ rule Microsoft Visual C++ vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ vx.x DLL : Packer
 {
     meta:
@@ -35419,7 +32889,6 @@ rule Microsoft Visual C++ vx.x DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MingWin32 - Dev C++ v4.x (h) : Packer
 {
     meta:
@@ -35433,7 +32902,6 @@ rule MingWin32 - Dev C++ v4.x (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MingWin32 GCC 3.x : Packer
 {
     meta:
@@ -35447,7 +32915,6 @@ rule MingWin32 GCC 3.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule modified HACKSTOP v1.11f : Packer
 {
     meta:
@@ -35461,7 +32928,6 @@ rule modified HACKSTOP v1.11f : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library 1988 (04) : Packer
 {
     meta:
@@ -35475,7 +32941,6 @@ rule MS Run-Time Library 1988 (04) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library 1992 (11) : Packer
 {
     meta:
@@ -35489,7 +32954,6 @@ rule MS Run-Time Library 1992 (11) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Nakedbind 1.0 -> nakedcrew : Packer
 {
     meta:
@@ -35503,7 +32967,6 @@ rule Nakedbind 1.0 -> nakedcrew : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Name of the Packer v1.0 : Packer
 {
     meta:
@@ -35517,7 +32980,6 @@ rule Name of the Packer v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule nBinder v3.6.1 : Packer
 {
     meta:
@@ -35531,7 +32993,6 @@ rule nBinder v3.6.1 : Packer
     condition:
     	for any of them
 }
-
 rule NoodleCrypt v2.0 : Packer
 {
     meta:
@@ -35545,7 +33006,6 @@ rule NoodleCrypt v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule North Star PE Shrinker 1.3 -> Liuxingping : Packer
 {
     meta:
@@ -35559,7 +33019,6 @@ rule North Star PE Shrinker 1.3 -> Liuxingping : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPack 1.4 by North Star (Liu Xing Ping) : Packer
 {
     meta:
@@ -35573,7 +33032,6 @@ rule NsPack 1.4 by North Star (Liu Xing Ping) : Packer
     condition:
     	for any of them
 }
-
 rule NSPack 3.x -> Liu Xing Ping : Packer
 {
     meta:
@@ -35587,7 +33045,6 @@ rule NSPack 3.x -> Liu Xing Ping : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPack v2.3 -> North Star (h) : Packer
 {
     meta:
@@ -35601,7 +33058,6 @@ rule NsPack v2.3 -> North Star (h) : Packer
     condition:
     	for any of them
 }
-
 rule NsPacK V3.0 -> LiuXingPing : Packer
 {
     meta:
@@ -35615,7 +33071,6 @@ rule NsPacK V3.0 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPacK V3.1 -> LiuXingPing : Packer
 {
     meta:
@@ -35629,7 +33084,6 @@ rule NsPacK V3.1 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPacK V3.3 -> LiuXingPing : Packer
 {
     meta:
@@ -35643,7 +33097,6 @@ rule NsPacK V3.3 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPacK V3.4-V3.5 -> LiuXingPing : Packer
 {
     meta:
@@ -35657,7 +33110,6 @@ rule NsPacK V3.4-V3.5 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPacK V3.6 -> LiuXingPing : Packer
 {
     meta:
@@ -35671,7 +33123,6 @@ rule NsPacK V3.6 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPacK V3.7 -> LiuXingPing : Packer
 {
     meta:
@@ -35685,7 +33136,6 @@ rule NsPacK V3.7 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Nullsoft PIMP Install System v1.3x : Packer
 {
     meta:
@@ -35699,7 +33149,6 @@ rule Nullsoft PIMP Install System v1.3x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Nullsoft PiMP Install System v1.x : Packer
 {
     meta:
@@ -35713,7 +33162,6 @@ rule Nullsoft PiMP Install System v1.x : Packer
     condition:
     	for any of them
 }
-
 rule Pack Master v1.0 : Packer
 {
     meta:
@@ -35727,7 +33175,6 @@ rule Pack Master v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packman 0.0.0.1 -> bubba : Packer
 {
     meta:
@@ -35741,7 +33188,6 @@ rule Packman 0.0.0.1 -> bubba : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packman v0.0.0.1 : Packer
 {
     meta:
@@ -35755,7 +33201,6 @@ rule Packman v0.0.0.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packman V1.0 -> Brandon LaCombe : Packer
 {
     meta:
@@ -35769,7 +33214,6 @@ rule Packman V1.0 -> Brandon LaCombe : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PACKWIN v1.01p : Packer
 {
     meta:
@@ -35783,7 +33227,6 @@ rule PACKWIN v1.01p : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PassLock 2000 v1.0 (Eng) -> Moonlight-Software : Packer
 {
     meta:
@@ -35797,7 +33240,6 @@ rule PassLock 2000 v1.0 (Eng) -> Moonlight-Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Password Protector (c) MiniSoft 1992 : Packer
 {
     meta:
@@ -35811,7 +33253,6 @@ rule Password Protector (c) MiniSoft 1992 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PC Shrinker v0.71 : Packer
 {
     meta:
@@ -35825,7 +33266,6 @@ rule PC Shrinker v0.71 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PC-Guard v3.03d, v3.05d : Packer
 {
     meta:
@@ -35839,7 +33279,6 @@ rule PC-Guard v3.03d, v3.05d : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Crypt 1.5 -> BitShape Software : Packer
 {
     meta:
@@ -35853,7 +33292,6 @@ rule PE Crypt 1.5 -> BitShape Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Diminisher v0.1 : Packer
 {
     meta:
@@ -35867,7 +33305,6 @@ rule PE Diminisher v0.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Intro v1.0 : Packer
 {
     meta:
@@ -35881,7 +33318,6 @@ rule PE Intro v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Password v0.2 SMT/SMF : Packer
 {
     meta:
@@ -35895,7 +33331,6 @@ rule PE Password v0.2 SMT/SMF : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Protect v0.9 : Packer
 {
     meta:
@@ -35909,7 +33344,6 @@ rule PE Protect v0.9 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEBundle v0.2 - v2.0x : Packer
 {
     meta:
@@ -35923,7 +33357,6 @@ rule PEBundle v0.2 - v2.0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEBundle v2.0b5 - v2.3 : Packer
 {
     meta:
@@ -35937,7 +33370,6 @@ rule PEBundle v2.0b5 - v2.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEBundle v2.44 : Packer
 {
     meta:
@@ -35951,7 +33383,6 @@ rule PEBundle v2.44 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEBundle v3.10 : Packer
 {
     meta:
@@ -35965,7 +33396,6 @@ rule PEBundle v3.10 : Packer
     condition:
     	for any of them
 }
-
 rule PeCompact 2.xx (Slim Loader) --> BitSum Technologies : Packer
 {
     meta:
@@ -35979,7 +33409,6 @@ rule PeCompact 2.xx (Slim Loader) --> BitSum Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.4x+ : Packer
 {
     meta:
@@ -35993,7 +33422,6 @@ rule PECompact v1.4x+ : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v2.0 beta -> Jeremy Collake : Packer
 {
     meta:
@@ -36007,7 +33435,6 @@ rule PECompact v2.0 beta -> Jeremy Collake : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v2.5 Retail (Slim Loader) -> Bitsum Technologies : Packer
 {
     meta:
@@ -36021,7 +33448,6 @@ rule PECompact v2.5 Retail (Slim Loader) -> Bitsum Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact V2.X-> Bitsum Technologies : Packer
 {
     meta:
@@ -36035,7 +33461,6 @@ rule PECompact V2.X-> Bitsum Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v2.xx : Packer
 {
     meta:
@@ -36049,7 +33474,6 @@ rule PECompact v2.xx : Packer
     condition:
     	for any of them
 }
-
 rule PECrc32 0.88 -> ZhouJinYu : Packer
 {
     meta:
@@ -36063,7 +33487,6 @@ rule PECrc32 0.88 -> ZhouJinYu : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEMangle : Packer
 {
     meta:
@@ -36077,7 +33500,6 @@ rule PEMangle : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEncrypt v1.0 : Packer
 {
     meta:
@@ -36091,7 +33513,6 @@ rule PEncrypt v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PENightMare 2 Beta : Packer
 {
     meta:
@@ -36105,7 +33526,6 @@ rule PENightMare 2 Beta : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESpin v0.3 (Eng) -> cyberbob : Packer
 {
     meta:
@@ -36119,7 +33539,6 @@ rule PESpin v0.3 (Eng) -> cyberbob : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEtite v1.4 : Packer
 {
     meta:
@@ -36133,7 +33552,6 @@ rule PEtite v1.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEtite v2.0 : Packer
 {
     meta:
@@ -36147,7 +33565,6 @@ rule PEtite v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PeX 0.99 -> bart^CrackPl : Packer
 {
     meta:
@@ -36161,7 +33578,6 @@ rule PeX 0.99 -> bart^CrackPl : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.50 (Device driver compression) : Packer
 {
     meta:
@@ -36175,7 +33591,6 @@ rule PKLITE v1.50 (Device driver compression) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v2.00b : Packer
 {
     meta:
@@ -36189,7 +33604,6 @@ rule PKLITE v2.00b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v2.00b [extra] : Packer
 {
     meta:
@@ -36203,7 +33617,6 @@ rule PKLITE v2.00b [extra] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE32 v1.1 : Packer
 {
     meta:
@@ -36217,7 +33630,6 @@ rule PKLITE32 v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Pksmart 1.0b : Packer
 {
     meta:
@@ -36231,7 +33643,6 @@ rule Pksmart 1.0b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PMODE/W v.1.12, 1.16, 1.21, 1.33 DOS extender : Packer
 {
     meta:
@@ -36245,7 +33656,6 @@ rule PMODE/W v.1.12, 1.16, 1.21, 1.33 DOS extender : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PolyCrypt PE - 2.1.4b/2.1.5 -> JLab Software Creations (h-signed) : Packer
 {
     meta:
@@ -36259,7 +33669,6 @@ rule PolyCrypt PE - 2.1.4b/2.1.5 -> JLab Software Creations (h-signed) : Packer
     condition:
     	for any of them
 }
-
 rule PolyCryptor by SMT Version %v3.%v4 : Packer
 {
     meta:
@@ -36273,7 +33682,6 @@ rule PolyCryptor by SMT Version %v3.%v4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PowerBASIC/CC 3.0x : Packer
 {
     meta:
@@ -36287,7 +33695,6 @@ rule PowerBASIC/CC 3.0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PowerBASIC/Win 7.0x : Packer
 {
     meta:
@@ -36301,7 +33708,6 @@ rule PowerBASIC/Win 7.0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Private exe Protector V2.0 -> SetiSoft Team : Packer
 {
     meta:
@@ -36315,7 +33721,6 @@ rule Private exe Protector V2.0 -> SetiSoft Team : Packer
     condition:
     	for any of them
 }
-
 rule PRO-PACK v2.08 : Packer
 {
     meta:
@@ -36329,7 +33734,6 @@ rule PRO-PACK v2.08 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Program Protector XP v1.0 : Packer
 {
     meta:
@@ -36343,7 +33747,6 @@ rule Program Protector XP v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Protection Plus vx.x : Packer
 {
     meta:
@@ -36357,7 +33760,6 @@ rule Protection Plus vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [.BJFNT 1.1b] --> Anorganix : Packer
 {
     meta:
@@ -36371,7 +33773,6 @@ rule PseudoSigner 0.2 [.BJFNT 1.1b] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [.BJFNT 1.2] --> Anorganix : Packer
 {
     meta:
@@ -36385,7 +33786,6 @@ rule PseudoSigner 0.2 [.BJFNT 1.2] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [ASProtect] --> Anorganix : Packer
 {
     meta:
@@ -36399,7 +33799,6 @@ rule PseudoSigner 0.2 [ASProtect] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Borland C++ 1999] --> Anorganix : Packer
 {
     meta:
@@ -36413,7 +33812,6 @@ rule PseudoSigner 0.2 [Borland C++ 1999] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Borland Delphi DLL] --> Anorganix : Packer
 {
     meta:
@@ -36427,7 +33825,6 @@ rule PseudoSigner 0.2 [Borland Delphi DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Borland Delphi Setup Module] --> Anorganix : Packer
 {
     meta:
@@ -36441,7 +33838,6 @@ rule PseudoSigner 0.2 [Borland Delphi Setup Module] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Code-Lock] --> Anorganix : Packer
 {
     meta:
@@ -36455,7 +33851,6 @@ rule PseudoSigner 0.2 [Code-Lock] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Crunch/PE Heuristic] --> Anorganix : Packer
 {
     meta:
@@ -36469,7 +33864,6 @@ rule PseudoSigner 0.2 [Crunch/PE Heuristic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [FSG 1.31] --> Anorganix : Packer
 {
     meta:
@@ -36483,7 +33877,6 @@ rule PseudoSigner 0.2 [FSG 1.31] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [LCC Win32 1.x] --> Anorganix : Packer
 {
     meta:
@@ -36497,7 +33890,6 @@ rule PseudoSigner 0.2 [LCC Win32 1.x] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [LCC Win32 DLL] --> Anorganix : Packer
 {
     meta:
@@ -36511,7 +33903,6 @@ rule PseudoSigner 0.2 [LCC Win32 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Lockless Intro Pack] --> Anorganix : Packer
 {
     meta:
@@ -36525,7 +33916,6 @@ rule PseudoSigner 0.2 [Lockless Intro Pack] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Microsoft Visual C++ 7.0 DLL] --> Anorganix : Packer
 {
     meta:
@@ -36539,7 +33929,6 @@ rule PseudoSigner 0.2 [Microsoft Visual C++ 7.0 DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [NorthStar PE Shrinker 1.3] --> Anorganix : Packer
 {
     meta:
@@ -36553,7 +33942,6 @@ rule PseudoSigner 0.2 [NorthStar PE Shrinker 1.3] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PE Intro 1.0] --> Anorganix : Packer
 {
     meta:
@@ -36567,7 +33955,6 @@ rule PseudoSigner 0.2 [PE Intro 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PE Pack 0.99] --> Anorganix : Packer
 {
     meta:
@@ -36581,7 +33968,6 @@ rule PseudoSigner 0.2 [PE Pack 0.99] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PE Protect 0.9] --> Anorganix : Packer
 {
     meta:
@@ -36595,7 +33981,6 @@ rule PseudoSigner 0.2 [PE Protect 0.9] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PENightMare 2 Beta] --> Anorganix : Packer
 {
     meta:
@@ -36609,7 +33994,6 @@ rule PseudoSigner 0.2 [PENightMare 2 Beta] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [PEX 0.99] --> Anorganix : Packer
 {
     meta:
@@ -36623,7 +34007,6 @@ rule PseudoSigner 0.2 [PEX 0.99] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [REALBasic] --> Anorganix : Packer
 {
     meta:
@@ -36637,7 +34020,6 @@ rule PseudoSigner 0.2 [REALBasic] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [UPX 0.6] --> Anorganix : Packer
 {
     meta:
@@ -36651,7 +34033,6 @@ rule PseudoSigner 0.2 [UPX 0.6] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Watcom C/C++ DLL] --> Anorganix : Packer
 {
     meta:
@@ -36665,7 +34046,6 @@ rule PseudoSigner 0.2 [Watcom C/C++ DLL] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PUNiSHER V1.5-> FEUERRADER : Packer
 {
     meta:
@@ -36679,7 +34059,6 @@ rule PUNiSHER V1.5-> FEUERRADER : Packer
     condition:
     	for any of them
 }
-
 rule RatPacker (Glue) stub : Packer
 {
     meta:
@@ -36693,7 +34072,6 @@ rule RatPacker (Glue) stub : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RCryptor v1.6x --> Vaska : Packer
 {
     meta:
@@ -36707,7 +34085,6 @@ rule RCryptor v1.6x --> Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RCryptor v1.?? -> Vaska : Packer
 {
     meta:
@@ -36721,7 +34098,6 @@ rule RCryptor v1.?? -> Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack -> Ap0x : Packer
 {
     meta:
@@ -36735,7 +34111,6 @@ rule RLPack -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack Full Edition 1.17 iBox [aPLib] -> Ap0x : Packer
 {
     meta:
@@ -36749,7 +34124,6 @@ rule RLPack Full Edition 1.17 iBox [aPLib] -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack Full Edition 1.17 iBox [LZMA] -> Ap0x : Packer
 {
     meta:
@@ -36763,7 +34137,6 @@ rule RLPack Full Edition 1.17 iBox [LZMA] -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack Full Edition 1.17 [aPLib] -> Ap0x : Packer
 {
     meta:
@@ -36777,7 +34150,6 @@ rule RLPack Full Edition 1.17 [aPLib] -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack Full Edition 1.17 [LZMA] -> Ap0x : Packer
 {
     meta:
@@ -36791,7 +34163,6 @@ rule RLPack Full Edition 1.17 [LZMA] -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack V1.12-V1.14 (LZMA 4.30) -> ap0x : Packer
 {
     meta:
@@ -36805,7 +34176,6 @@ rule RLPack V1.12-V1.14 (LZMA 4.30) -> ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SCRAM! v0.8a1 : Packer
 {
     meta:
@@ -36819,7 +34189,6 @@ rule SCRAM! v0.8a1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SCRAM! vC5 : Packer
 {
     meta:
@@ -36833,7 +34202,6 @@ rule SCRAM! vC5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Sentinel SuperPro (Automatic Protection) v6.4.0 -> Safenet : Packer
 {
     meta:
@@ -36847,7 +34215,6 @@ rule Sentinel SuperPro (Automatic Protection) v6.4.0 -> Safenet : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Sentinel SuperPro (Automatic Protection) v6.4.1 -> Safenet : Packer
 {
     meta:
@@ -36861,7 +34228,6 @@ rule Sentinel SuperPro (Automatic Protection) v6.4.1 -> Safenet : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Shegerd Dongle V4.78 -> MS.Co. : Packer
 {
     meta:
@@ -36875,7 +34241,6 @@ rule Shegerd Dongle V4.78 -> MS.Co. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ShellModify 0.1 -> pll621 : Packer
 {
     meta:
@@ -36889,7 +34254,6 @@ rule ShellModify 0.1 -> pll621 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Shrink v2.0 : Packer
 {
     meta:
@@ -36903,7 +34267,6 @@ rule Shrink v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Shrinker v3.2 : Packer
 {
     meta:
@@ -36917,7 +34280,6 @@ rule Shrinker v3.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Shrinker v3.4 : Packer
 {
     meta:
@@ -36931,7 +34293,6 @@ rule Shrinker v3.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Silicon Realms Install Stub : Packer
 {
     meta:
@@ -36945,7 +34306,6 @@ rule Silicon Realms Install Stub : Packer
     condition:
     	for any of them
 }
-
 rule Simple UPX Cryptor v30.4.2005 [multi layer encryption] --> MANtiCORE : Packer
 {
     meta:
@@ -36959,7 +34319,6 @@ rule Simple UPX Cryptor v30.4.2005 [multi layer encryption] --> MANtiCORE : Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Simple UPX Cryptor v30.4.2005 [One layer encryption] --> MANtiCORE : Packer
 {
     meta:
@@ -36973,7 +34332,6 @@ rule Simple UPX Cryptor v30.4.2005 [One layer encryption] --> MANtiCORE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SLVc0deProtector 0.60 -> SLV / ICU : Packer
 {
     meta:
@@ -36987,7 +34345,6 @@ rule SLVc0deProtector 0.60 -> SLV / ICU : Packer
     condition:
     	for any of them
 }
-
 rule SoftComp 1.x -> BG Soft PT : Packer
 {
     meta:
@@ -37001,7 +34358,6 @@ rule SoftComp 1.x -> BG Soft PT : Packer
     condition:
     	for any of them
 }
-
 rule Software Compress V1.2 -> BG Software Protect Technologies : Packer
 {
     meta:
@@ -37015,7 +34371,6 @@ rule Software Compress V1.2 -> BG Software Protect Technologies : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Special EXE Pasword Protector v1.01 (Eng) -> Pavol Cerven : Packer
 {
     meta:
@@ -37029,7 +34384,6 @@ rule Special EXE Pasword Protector v1.01 (Eng) -> Pavol Cerven : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Stone's PE Encryptor v2.0 : Packer
 {
     meta:
@@ -37043,7 +34397,6 @@ rule Stone's PE Encryptor v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SVK-Protector v1.32 : Packer
 {
     meta:
@@ -37057,7 +34410,6 @@ rule SVK-Protector v1.32 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Symantec C v4.00 + Libraries : Packer
 {
     meta:
@@ -37071,7 +34423,6 @@ rule Symantec C v4.00 + Libraries : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock 0.98 Special Build -> forgot & heXer : Packer
 {
     meta:
@@ -37085,7 +34436,6 @@ rule tElock 0.98 Special Build -> forgot & heXer : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock 0.99 -> tE! : Packer
 {
     meta:
@@ -37099,7 +34449,6 @@ rule tElock 0.99 -> tE! : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.98 -> tHE EGOiSTE (h) : Packer
 {
     meta:
@@ -37113,7 +34462,6 @@ rule tElock v0.98 -> tHE EGOiSTE (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.99 : Packer
 {
     meta:
@@ -37127,7 +34475,6 @@ rule tElock v0.99 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Themida -> Oreans Technologies 2004 : Packer
 {
     meta:
@@ -37141,7 +34488,6 @@ rule Themida -> Oreans Technologies 2004 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Themida 1.2.0.1 -> Oreans Technologies (h) : Packer
 {
     meta:
@@ -37155,7 +34501,6 @@ rule Themida 1.2.0.1 -> Oreans Technologies (h) : Packer
     condition:
     	for any of them
 }
-
 rule Thinstall 2.4x - 2.5x -> Jitit Software : Packer
 {
     meta:
@@ -37169,7 +34514,6 @@ rule Thinstall 2.4x - 2.5x -> Jitit Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TMT-Pascal v0.40 : Packer
 {
     meta:
@@ -37183,7 +34527,6 @@ rule TMT-Pascal v0.40 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Trivial173 by SMT/SMF : Packer
 {
     meta:
@@ -37197,7 +34540,6 @@ rule Trivial173 by SMT/SMF : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo C 1987 : Packer
 {
     meta:
@@ -37211,7 +34553,6 @@ rule Turbo C 1987 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo C or Borland C++ : Packer
 {
     meta:
@@ -37225,7 +34566,6 @@ rule Turbo C or Borland C++ : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TXT2COM v2.06 : Packer
 {
     meta:
@@ -37239,7 +34579,6 @@ rule TXT2COM v2.06 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UCEXE v2.3, v2.4 : Packer
 {
     meta:
@@ -37253,7 +34592,6 @@ rule UCEXE v2.3, v2.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UltraPro V1.0 -> SafeNet : Packer
 {
     meta:
@@ -37267,7 +34605,6 @@ rule UltraPro V1.0 -> SafeNet : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule unknown -> jac : Packer
 {
     meta:
@@ -37281,7 +34618,6 @@ rule unknown -> jac : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown encryptor (1) : Packer
 {
     meta:
@@ -37295,7 +34631,6 @@ rule Unknown encryptor (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown packer (05) : Packer
 {
     meta:
@@ -37309,7 +34644,6 @@ rule Unknown packer (05) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown packer (08) : Packer
 {
     meta:
@@ -37323,7 +34657,6 @@ rule Unknown packer (08) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unpacked BS-SFX Archive v1.9 : Packer
 {
     meta:
@@ -37337,7 +34670,6 @@ rule Unpacked BS-SFX Archive v1.9 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack 0.12 beta-->Dwing : Packer
 {
     meta:
@@ -37351,7 +34683,6 @@ rule Upack 0.12 beta-->Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.36 beta -> Dwing : Packer
 {
     meta:
@@ -37365,7 +34696,6 @@ rule Upack v0.36 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX 2.90 [LZMA] (Delphi stub) -> Markus Oberhumer, Laszlo Molnar & John Reiser : Packer
 {
     meta:
@@ -37379,7 +34709,6 @@ rule UPX 2.90 [LZMA] (Delphi stub) -> Markus Oberhumer, Laszlo Molnar & John Rei
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX 2.90 [LZMA] -> Markus Oberhumer, Laszlo Molnar & John Reiser : Packer
 {
     meta:
@@ -37393,7 +34722,6 @@ rule UPX 2.90 [LZMA] -> Markus Oberhumer, Laszlo Molnar & John Reiser : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.60 - v0.61 : Packer
 {
     meta:
@@ -37407,7 +34735,6 @@ rule UPX v0.60 - v0.61 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.71 - v0.72 : Packer
 {
     meta:
@@ -37421,7 +34748,6 @@ rule UPX v0.71 - v0.72 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.89.6 - v1.02 / v1.05 -v1.24 -> Markus & Laszlo [overlay] : Packer
 {
     meta:
@@ -37435,7 +34761,6 @@ rule UPX v0.89.6 - v1.02 / v1.05 -v1.24 -> Markus & Laszlo [overlay] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX V1.94 -> Markus Oberhumer & Laszlo Molnar & John Reiser : Packer
 {
     meta:
@@ -37449,7 +34774,6 @@ rule UPX V1.94 -> Markus Oberhumer & Laszlo Molnar & John Reiser : Packer
     condition:
     	for any of them
 }
-
 rule UPX V2.00-V2.90 -> Markus Oberhumer & Laszlo Molnar & John Reiser : Packer
 {
     meta:
@@ -37463,7 +34787,6 @@ rule UPX V2.00-V2.90 -> Markus Oberhumer & Laszlo Molnar & John Reiser : Packer
     condition:
     	for any of them
 }
-
 rule UPX-Shit v0.1 -> 500mhz : Packer
 {
     meta:
@@ -37477,7 +34800,6 @@ rule UPX-Shit v0.1 -> 500mhz : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPXcrypter -> archphase/NWC : Packer
 {
     meta:
@@ -37491,7 +34813,6 @@ rule UPXcrypter -> archphase/NWC : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPXFreak v0.1 (Borland Delphi) -> HMX0101 : Packer
 {
     meta:
@@ -37505,7 +34826,6 @@ rule UPXFreak v0.1 (Borland Delphi) -> HMX0101 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPXShit 0.06 : Packer
 {
     meta:
@@ -37519,7 +34839,6 @@ rule UPXShit 0.06 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VBOX v4.3 - v4.6 : Packer
 {
     meta:
@@ -37533,7 +34852,6 @@ rule VBOX v4.3 - v4.6 : Packer
     condition:
     	for any of them
 }
-
 rule Video-Lan-Client -> (UnknownCompiler) : Packer
 {
     meta:
@@ -37547,7 +34865,6 @@ rule Video-Lan-Client -> (UnknownCompiler) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect 0.7x - 0.8 -> PolyTech : Packer
 {
     meta:
@@ -37561,7 +34878,6 @@ rule VMProtect 0.7x - 0.8 -> PolyTech : Packer
     condition:
     	for any of them
 }
-
 rule Vx: ACME (Clonewar Mutant) : Packer
 {
     meta:
@@ -37575,7 +34891,6 @@ rule Vx: ACME (Clonewar Mutant) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: ARCV.4 : Packer
 {
     meta:
@@ -37589,7 +34904,6 @@ rule Vx: ARCV.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: August 16th (Iron Maiden) : Packer
 {
     meta:
@@ -37603,7 +34917,6 @@ rule Vx: August 16th (Iron Maiden) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Backfont.900 : Packer
 {
     meta:
@@ -37617,7 +34930,6 @@ rule Vx: Backfont.900 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Doom.666 : Packer
 {
     meta:
@@ -37631,7 +34943,6 @@ rule Vx: Doom.666 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Eddie.1028 : Packer
 {
     meta:
@@ -37645,7 +34956,6 @@ rule Vx: Eddie.1028 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Eddie.1530 : Packer
 {
     meta:
@@ -37659,7 +34969,6 @@ rule Vx: Eddie.1530 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Eddie.1800 : Packer
 {
     meta:
@@ -37673,7 +34982,6 @@ rule Vx: Eddie.1800 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Eddie.2000 : Packer
 {
     meta:
@@ -37687,7 +34995,6 @@ rule Vx: Eddie.2000 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Einstein : Packer
 {
     meta:
@@ -37701,7 +35008,6 @@ rule Vx: Einstein : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Gotcha.879 : Packer
 {
     meta:
@@ -37715,7 +35021,6 @@ rule Vx: Gotcha.879 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Grazie.883 : Packer
 {
     meta:
@@ -37729,7 +35034,6 @@ rule Vx: Grazie.883 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: GRUNT.4.Family : Packer
 {
     meta:
@@ -37743,7 +35047,6 @@ rule Vx: GRUNT.4.Family : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Hafen.809 : Packer
 {
     meta:
@@ -37757,7 +35060,6 @@ rule Vx: Hafen.809 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Kuku.886 : Packer
 {
     meta:
@@ -37771,7 +35073,6 @@ rule Vx: Kuku.886 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Modification of Hi.924 : Packer
 {
     meta:
@@ -37785,7 +35086,6 @@ rule Vx: Modification of Hi.924 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Uddy.2617 : Packer
 {
     meta:
@@ -37799,7 +35099,6 @@ rule Vx: Uddy.2617 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: XRCV.1015 : Packer
 {
     meta:
@@ -37813,7 +35112,6 @@ rule Vx: XRCV.1015 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule W32.Jeefo (PE File Infector) : Packer
 {
     meta:
@@ -37827,7 +35125,6 @@ rule W32.Jeefo (PE File Infector) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WARNING -> TROJAN -> ADinjector : Packer
 {
     meta:
@@ -37841,7 +35138,6 @@ rule WARNING -> TROJAN -> ADinjector : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WATCOM C/C++ 32 Run-Time System 1988-1995 : Packer
 {
     meta:
@@ -37855,7 +35151,6 @@ rule WATCOM C/C++ 32 Run-Time System 1988-1995 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WATCOM C/C++ DLL : Packer
 {
     meta:
@@ -37869,7 +35164,6 @@ rule WATCOM C/C++ DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WebCops [DLL] -> LINK Data Security : Packer
 {
     meta:
@@ -37883,7 +35177,6 @@ rule WebCops [DLL] -> LINK Data Security : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WebCops [EXE] -> LINK Data Security : Packer
 {
     meta:
@@ -37897,7 +35190,6 @@ rule WebCops [EXE] -> LINK Data Security : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Wise Installer Stub : Packer
 {
     meta:
@@ -37911,7 +35203,6 @@ rule Wise Installer Stub : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Wise Installer Stub : Packer
 {
     meta:
@@ -37925,7 +35216,6 @@ rule Wise Installer Stub : Packer
     condition:
     	for any of them
 }
-
 rule WWPACK v3.00, v3.01 (Extractable) : Packer
 {
     meta:
@@ -37939,7 +35229,6 @@ rule WWPACK v3.00, v3.01 (Extractable) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.02, v3.02a (Extractable) : Packer
 {
     meta:
@@ -37953,7 +35242,6 @@ rule WWPACK v3.02, v3.02a (Extractable) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.02, v3.02a, v3.04 (Relocations pack) : Packer
 {
     meta:
@@ -37967,7 +35255,6 @@ rule WWPACK v3.02, v3.02a, v3.04 (Relocations pack) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.03 : Packer
 {
     meta:
@@ -37981,7 +35268,6 @@ rule WWPACK v3.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Extr. Passw.check. Vir. shield) : Packer
 {
     meta:
@@ -37995,7 +35281,6 @@ rule WWPACK v3.05c4 (Extr. Passw.check. Vir. shield) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Extractable + Password checking) : Packer
 {
     meta:
@@ -38009,7 +35294,6 @@ rule WWPACK v3.05c4 (Extractable + Password checking) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Extractable + Virus Shield) : Packer
 {
     meta:
@@ -38023,7 +35307,6 @@ rule WWPACK v3.05c4 (Extractable + Virus Shield) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Extractable) : Packer
 {
     meta:
@@ -38037,7 +35320,6 @@ rule WWPACK v3.05c4 (Extractable) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Modified) : Packer
 {
     meta:
@@ -38051,7 +35333,6 @@ rule WWPACK v3.05c4 (Modified) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Unextr. Passw.check. Vir. shield) : Packer
 {
     meta:
@@ -38065,7 +35346,6 @@ rule WWPACK v3.05c4 (Unextr. Passw.check. Vir. shield) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Unextractable + Password checking) : Packer
 {
     meta:
@@ -38079,7 +35359,6 @@ rule WWPACK v3.05c4 (Unextractable + Password checking) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Unextractable + Virus Shield) : Packer
 {
     meta:
@@ -38093,7 +35372,6 @@ rule WWPACK v3.05c4 (Unextractable + Virus Shield) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.05c4 (Unextractable) : Packer
 {
     meta:
@@ -38107,7 +35385,6 @@ rule WWPACK v3.05c4 (Unextractable) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule XCR v0.13 : Packer
 {
     meta:
@@ -38121,7 +35398,6 @@ rule XCR v0.13 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule XPack 1.67 : Packer
 {
     meta:
@@ -38135,7 +35411,6 @@ rule XPack 1.67 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule y0da's Crypter v1.0 : Packer
 {
     meta:
@@ -38149,7 +35424,6 @@ rule y0da's Crypter v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule y0da's Crypter v1.1 : Packer
 {
     meta:
@@ -38163,7 +35437,6 @@ rule y0da's Crypter v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule y0da's Crypter v1.2 : Packer
 {
     meta:
@@ -38177,7 +35450,6 @@ rule y0da's Crypter v1.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Crypter 1.3-->Ashkbiz Danehkar : Packer
 {
     meta:
@@ -38191,7 +35463,6 @@ rule yoda's Crypter 1.3-->Ashkbiz Danehkar : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yP v1.0b by Ashkbiz Danehkar : Packer
 {
     meta:
@@ -38205,7 +35476,6 @@ rule yP v1.0b by Ashkbiz Danehkar : Packer
     condition:
     	for any of them
 }
-
 rule !EP (ExE Pack) V1.0 -> Elite Coding Group : Packer
 {
     meta:
@@ -38219,7 +35489,6 @@ rule !EP (ExE Pack) V1.0 -> Elite Coding Group : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule $pirit v1.5 : Packer
 {
     meta:
@@ -38233,7 +35502,6 @@ rule $pirit v1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [MEW 11 SE 1.0] --> Anorganix : Packer
 {
     meta:
@@ -38247,7 +35515,6 @@ rule PseudoSigner 0.1 [MEW 11 SE 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [MinGW GCC 2.x] --> Anorganix : Packer
 {
     meta:
@@ -38261,7 +35528,6 @@ rule PseudoSigner 0.1 [MinGW GCC 2.x] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [VBOX 4.3 MTE] --> Anorganix : Packer
 {
     meta:
@@ -38275,7 +35541,6 @@ rule PseudoSigner 0.1 [VBOX 4.3 MTE] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [VOB ProtectCD 5] --> Anorganix : Packer
 {
     meta:
@@ -38289,7 +35554,6 @@ rule PseudoSigner 0.1 [VOB ProtectCD 5] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [WATCOM C/C++ EXE] --> Anorganix : Packer
 {
     meta:
@@ -38303,7 +35567,6 @@ rule PseudoSigner 0.1 [WATCOM C/C++ EXE] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [XCR 0.11] --> Anorganix : Packer
 {
     meta:
@@ -38317,7 +35580,6 @@ rule PseudoSigner 0.1 [XCR 0.11] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Yoda's Protector 1.02] --> Anorganix : Packer
 {
     meta:
@@ -38331,7 +35593,6 @@ rule PseudoSigner 0.1 [Yoda's Protector 1.02] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [32Lite 0.03] --> Anorganix : Packer
 {
     meta:
@@ -38345,7 +35606,6 @@ rule PseudoSigner 0.2 [32Lite 0.03] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Borland C++ DLL (Method 2)] --> Anorganix : Packer
 {
     meta:
@@ -38359,7 +35619,6 @@ rule PseudoSigner 0.2 [Borland C++ DLL (Method 2)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [CD-Cops II] --> Anorganix : Packer
 {
     meta:
@@ -38373,7 +35632,6 @@ rule PseudoSigner 0.2 [CD-Cops II] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [MEW 11 SE 1.0] --> Anorganix : Packer
 {
     meta:
@@ -38387,7 +35645,6 @@ rule PseudoSigner 0.2 [MEW 11 SE 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix : Packer
 {
     meta:
@@ -38401,7 +35658,6 @@ rule PseudoSigner 0.2 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [MinGW GCC 2.x] --> Anorganix : Packer
 {
     meta:
@@ -38415,7 +35671,6 @@ rule PseudoSigner 0.2 [MinGW GCC 2.x] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [VBOX 4.3 MTE] --> Anorganix : Packer
 {
     meta:
@@ -38429,7 +35684,6 @@ rule PseudoSigner 0.2 [VBOX 4.3 MTE] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [VOB ProtectCD 5] --> Anorganix : Packer
 {
     meta:
@@ -38443,7 +35697,6 @@ rule PseudoSigner 0.2 [VOB ProtectCD 5] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [WATCOM C/C++ EXE] --> Anorganix : Packer
 {
     meta:
@@ -38457,7 +35710,6 @@ rule PseudoSigner 0.2 [WATCOM C/C++ EXE] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [XCR 0.11] --> Anorganix : Packer
 {
     meta:
@@ -38471,7 +35723,6 @@ rule PseudoSigner 0.2 [XCR 0.11] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Yoda's Protector 1.02] --> Anorganix : Packer
 {
     meta:
@@ -38485,7 +35736,6 @@ rule PseudoSigner 0.2 [Yoda's Protector 1.02] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -38499,7 +35749,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -38513,7 +35762,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -38527,7 +35775,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -38541,7 +35788,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -38555,7 +35801,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -38569,7 +35814,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -38583,7 +35827,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -38597,7 +35840,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule .BJFnt v1.1b : Packer
 {
     meta:
@@ -38611,7 +35853,6 @@ rule .BJFnt v1.1b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule .BJFnt v1.2 RC : Packer
 {
     meta:
@@ -38625,7 +35866,6 @@ rule .BJFnt v1.2 RC : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule .BJFnt v1.3 : Packer
 {
     meta:
@@ -38639,7 +35879,6 @@ rule .BJFnt v1.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule 32Lite v0.03a : Packer
 {
     meta:
@@ -38653,7 +35892,6 @@ rule 32Lite v0.03a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule A program by Jupiter .. : Packer
 {
     meta:
@@ -38667,7 +35905,6 @@ rule A program by Jupiter .. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule A3E (TXT2COM) : Packer
 {
     meta:
@@ -38681,7 +35918,6 @@ rule A3E (TXT2COM) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AcidCrypt : Packer
 {
     meta:
@@ -38695,7 +35931,6 @@ rule AcidCrypt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AcidCrypt : Packer
 {
     meta:
@@ -38709,7 +35944,6 @@ rule AcidCrypt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ACProtect v1.35 -> risco software Inc. & Anticrack Software (h) : Packer
 {
     meta:
@@ -38723,7 +35957,6 @@ rule ACProtect v1.35 -> risco software Inc. & Anticrack Software (h) : Packer
     condition:
     	for any of them
 }
-
 rule ACProtect V1.3X -> risco : Packer
 {
     meta:
@@ -38737,7 +35970,6 @@ rule ACProtect V1.3X -> risco : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ACProtect V1.4X -> risco : Packer
 {
     meta:
@@ -38751,7 +35983,6 @@ rule ACProtect V1.4X -> risco : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ACProtect v1.90g -> Risco software Inc. : Packer
 {
     meta:
@@ -38765,7 +35996,6 @@ rule ACProtect v1.90g -> Risco software Inc. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ActiveMARK[TM] R5.31.1140 -> Trymedia : Packer
 {
     meta:
@@ -38779,7 +36009,6 @@ rule ActiveMARK[TM] R5.31.1140 -> Trymedia : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AdFlt2 : Packer
 {
     meta:
@@ -38793,7 +36022,6 @@ rule AdFlt2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Ady's Glue 1.10 : Packer
 {
     meta:
@@ -38807,7 +36035,6 @@ rule Ady's Glue 1.10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AINEXE v2.1 : Packer
 {
     meta:
@@ -38821,7 +36048,6 @@ rule AINEXE v2.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AINEXE v2.30 : Packer
 {
     meta:
@@ -38835,7 +36061,6 @@ rule AINEXE v2.30 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Aluwain v8.09 : Packer
 {
     meta:
@@ -38849,7 +36074,6 @@ rule Aluwain v8.09 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Anskya Binder v1.1 -> Anskya : Packer
 {
     meta:
@@ -38863,7 +36087,6 @@ rule Anskya Binder v1.1 -> Anskya : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Anticrack Software Protector v1.09 (ACProtect) : Packer
 {
     meta:
@@ -38877,7 +36100,6 @@ rule Anticrack Software Protector v1.09 (ACProtect) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule AntiVirus Vaccine v.1.03 : Packer
 {
     meta:
@@ -38891,7 +36113,6 @@ rule AntiVirus Vaccine v.1.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule aPack v0.62 : Packer
 {
     meta:
@@ -38905,7 +36126,6 @@ rule aPack v0.62 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule aPack v0.98 -m : Packer
 {
     meta:
@@ -38919,7 +36139,6 @@ rule aPack v0.98 -m : Packer
     condition:
     	for any of them
 }
-
 rule aPack v0.98b (DS&ES not saved) : Packer
 {
     meta:
@@ -38933,7 +36152,6 @@ rule aPack v0.98b (DS&ES not saved) : Packer
     condition:
     	for any of them
 }
-
 rule APatch GUI v1.1 : Packer
 {
     meta:
@@ -38947,7 +36165,6 @@ rule APatch GUI v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ARC-SFX Archive : Packer
 {
     meta:
@@ -38961,7 +36178,6 @@ rule ARC-SFX Archive : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.71 : Packer
 {
     meta:
@@ -38975,7 +36191,6 @@ rule Armadillo v1.71 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.72 - v1.73 : Packer
 {
     meta:
@@ -38989,7 +36204,6 @@ rule Armadillo v1.72 - v1.73 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.9x : Packer
 {
     meta:
@@ -39003,7 +36217,6 @@ rule Armadillo v1.9x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v1.xx - v2.xx : Packer
 {
     meta:
@@ -39017,7 +36230,6 @@ rule Armadillo v1.xx - v2.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.51 : Packer
 {
     meta:
@@ -39031,7 +36243,6 @@ rule Armadillo v2.51 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.52 : Packer
 {
     meta:
@@ -39045,7 +36256,6 @@ rule Armadillo v2.52 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.52b2 : Packer
 {
     meta:
@@ -39059,7 +36269,6 @@ rule Armadillo v2.52b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Armadillo v2.53b3 : Packer
 {
     meta:
@@ -39073,7 +36282,6 @@ rule Armadillo v2.53b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.02b : Packer
 {
     meta:
@@ -39087,7 +36295,6 @@ rule ASPack v1.02b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.04b : Packer
 {
     meta:
@@ -39101,7 +36308,6 @@ rule ASPack v1.04b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.07b : Packer
 {
     meta:
@@ -39115,7 +36321,6 @@ rule ASPack v1.07b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.07b (DLL) : Packer
 {
     meta:
@@ -39129,7 +36334,6 @@ rule ASPack v1.07b (DLL) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.01 : Packer
 {
     meta:
@@ -39143,7 +36347,6 @@ rule ASPack v1.08.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.03 : Packer
 {
     meta:
@@ -39157,7 +36360,6 @@ rule ASPack v1.08.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.03 : Packer
 {
     meta:
@@ -39171,7 +36373,6 @@ rule ASPack v1.08.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.04 : Packer
 {
     meta:
@@ -39185,7 +36386,6 @@ rule ASPack v1.08.04 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.000 : Packer
 {
     meta:
@@ -39199,7 +36399,6 @@ rule ASPack v2.000 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.001 : Packer
 {
     meta:
@@ -39213,7 +36412,6 @@ rule ASPack v2.001 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.1 : Packer
 {
     meta:
@@ -39227,7 +36425,6 @@ rule ASPack v2.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.11d : Packer
 {
     meta:
@@ -39241,7 +36438,6 @@ rule ASPack v2.11d : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.12 : Packer
 {
     meta:
@@ -39255,7 +36451,6 @@ rule ASPack v2.12 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.xx : Packer
 {
     meta:
@@ -39269,7 +36464,6 @@ rule ASPack v2.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPR Stripper v2.x unpacked : Packer
 {
     meta:
@@ -39283,7 +36477,6 @@ rule ASPR Stripper v2.x unpacked : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect 1.33 - 2.1 Registered -> Alexey Solodovnikov : Packer
 {
     meta:
@@ -39297,7 +36490,6 @@ rule ASProtect 1.33 - 2.1 Registered -> Alexey Solodovnikov : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.0 : Packer
 {
     meta:
@@ -39311,7 +36503,6 @@ rule ASProtect v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.1 : Packer
 {
     meta:
@@ -39325,7 +36516,6 @@ rule ASProtect v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.1 MTE : Packer
 {
     meta:
@@ -39339,7 +36529,6 @@ rule ASProtect v1.1 MTE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.1 MTEc : Packer
 {
     meta:
@@ -39353,7 +36542,6 @@ rule ASProtect v1.1 MTEc : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.23 RC1 : Packer
 {
     meta:
@@ -39367,7 +36555,6 @@ rule ASProtect v1.23 RC1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.2x : Packer
 {
     meta:
@@ -39381,7 +36568,6 @@ rule ASProtect v1.2x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.2x (New Strain) : Packer
 {
     meta:
@@ -39395,7 +36581,6 @@ rule ASProtect v1.2x (New Strain) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect vx.x : Packer
 {
     meta:
@@ -39409,7 +36594,6 @@ rule ASProtect vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule bambam V0.01 -> bedrock : Packer
 {
     meta:
@@ -39423,7 +36607,6 @@ rule bambam V0.01 -> bedrock : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -39437,7 +36620,6 @@ rule BeRoEXEPacker v1.00 -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BeRoEXEPacker v1.00 -> BeRo / Farbrausch : Packer
 {
     meta:
@@ -39451,7 +36633,6 @@ rule BeRoEXEPacker v1.00 -> BeRo / Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Blade Joiner v1.5 : Packer
 {
     meta:
@@ -39465,7 +36646,6 @@ rule Blade Joiner v1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BobSoft Mini Delphi -> BoB / BobSoft : Packer
 {
     meta:
@@ -39479,7 +36659,6 @@ rule BobSoft Mini Delphi -> BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BobSoft Mini Delphi -> BoB / BobSoft : Packer
 {
     meta:
@@ -39493,7 +36672,6 @@ rule BobSoft Mini Delphi -> BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BobSoft Mini Delphi -> BoB / BobSoft : Packer
 {
     meta:
@@ -39507,7 +36685,6 @@ rule BobSoft Mini Delphi -> BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BookManager v9510 : Packer
 {
     meta:
@@ -39521,7 +36698,6 @@ rule BookManager v9510 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule BopCrypt v1.0 : Packer
 {
     meta:
@@ -39535,7 +36711,6 @@ rule BopCrypt v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule by Central Point Software : Packer
 {
     meta:
@@ -39549,7 +36724,6 @@ rule by Central Point Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Can2Exe v0.01 : Packer
 {
     meta:
@@ -39563,7 +36737,6 @@ rule Can2Exe v0.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CauseWay DOS Extender v3.25 : Packer
 {
     meta:
@@ -39577,7 +36750,6 @@ rule CauseWay DOS Extender v3.25 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CC v2.61 Beta : Packer
 {
     meta:
@@ -39591,7 +36763,6 @@ rule CC v2.61 Beta : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CD-Cops II : Packer
 {
     meta:
@@ -39605,7 +36776,6 @@ rule CD-Cops II : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CERBERUS v2.0 : Packer
 {
     meta:
@@ -39619,7 +36789,6 @@ rule CERBERUS v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CHECKPRG (c) 1992 : Packer
 {
     meta:
@@ -39633,7 +36802,6 @@ rule CHECKPRG (c) 1992 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ChSfx (small) v1.1 : Packer
 {
     meta:
@@ -39647,7 +36815,6 @@ rule ChSfx (small) v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Code-Lock vx.x : Packer
 {
     meta:
@@ -39661,7 +36828,6 @@ rule Code-Lock vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CodeCrypt v0.14b : Packer
 {
     meta:
@@ -39675,7 +36841,6 @@ rule CodeCrypt v0.14b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CodeCrypt v0.15b : Packer
 {
     meta:
@@ -39689,7 +36854,6 @@ rule CodeCrypt v0.15b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CodeCrypt v0.16b - v0.163b : Packer
 {
     meta:
@@ -39703,7 +36867,6 @@ rule CodeCrypt v0.16b - v0.163b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule COP v1.0 (c) 1988 : Packer
 {
     meta:
@@ -39717,7 +36880,6 @@ rule COP v1.0 (c) 1988 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Copy Protector v2.0 : Packer
 {
     meta:
@@ -39731,7 +36893,6 @@ rule Copy Protector v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CPAV : Packer
 {
     meta:
@@ -39745,7 +36906,6 @@ rule CPAV : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CrackStop v1.01 (c) Stefan Esser 1997 : Packer
 {
     meta:
@@ -39759,7 +36919,6 @@ rule CrackStop v1.01 (c) Stefan Esser 1997 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crinkler V0.1-V0.2 -> Rune L.H.Stubbe and Aske Simon Christensen : Packer
 {
     meta:
@@ -39773,7 +36932,6 @@ rule Crinkler V0.1-V0.2 -> Rune L.H.Stubbe and Aske Simon Christensen : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crinkler V0.3-V0.4 -> Rune L.H.Stubbe and Aske Simon Christensen : Packer
 {
     meta:
@@ -39787,7 +36945,6 @@ rule Crinkler V0.3-V0.4 -> Rune L.H.Stubbe and Aske Simon Christensen : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch/PE v1.0.x.x : Packer
 {
     meta:
@@ -39801,7 +36958,6 @@ rule Crunch/PE v1.0.x.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch/PE v3.0.x.x : Packer
 {
     meta:
@@ -39815,7 +36971,6 @@ rule Crunch/PE v3.0.x.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Cruncher v1.0 : Packer
 {
     meta:
@@ -39829,7 +36984,6 @@ rule Cruncher v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CrypKey v5 - v6 : Packer
 {
     meta:
@@ -39843,7 +36997,6 @@ rule CrypKey v5 - v6 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CrypKey V5.6.X -> Kenonic Controls Ltd. : Packer
 {
     meta:
@@ -39857,7 +37010,6 @@ rule CrypKey V5.6.X -> Kenonic Controls Ltd. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CrypKey V5.6.X DLL -> Kenonic Controls Ltd. : Packer
 {
     meta:
@@ -39871,7 +37023,6 @@ rule CrypKey V5.6.X DLL -> Kenonic Controls Ltd. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CrypKey V6.1X DLL -> CrypKey (Canada) Inc. : Packer
 {
     meta:
@@ -39885,7 +37036,6 @@ rule CrypKey V6.1X DLL -> CrypKey (Canada) Inc. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CRYPT Version 1.7 (c) Dismember : Packer
 {
     meta:
@@ -39899,7 +37049,6 @@ rule CRYPT Version 1.7 (c) Dismember : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CRYPT Version 1.7 (c) Dismember (COM) : Packer
 {
     meta:
@@ -39913,7 +37062,6 @@ rule CRYPT Version 1.7 (c) Dismember (COM) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CRYPT Version 1.7 (c) Dismember (EXE) : Packer
 {
     meta:
@@ -39927,7 +37075,6 @@ rule CRYPT Version 1.7 (c) Dismember (EXE) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CryptCom v1.1 : Packer
 {
     meta:
@@ -39941,7 +37088,6 @@ rule CryptCom v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule CrypWrap vx.x : Packer
 {
     meta:
@@ -39955,7 +37101,6 @@ rule CrypWrap vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Cygwin32 : Packer
 {
     meta:
@@ -39969,7 +37114,6 @@ rule Cygwin32 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DBPE vx.xx : Packer
 {
     meta:
@@ -39983,7 +37127,6 @@ rule DBPE vx.xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DEF v1.0 : Packer
 {
     meta:
@@ -39997,7 +37140,6 @@ rule DEF v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule dePACK -> deNULL : Packer
 {
     meta:
@@ -40011,7 +37153,6 @@ rule dePACK -> deNULL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Dev-C++ v4 : Packer
 {
     meta:
@@ -40025,7 +37166,6 @@ rule Dev-C++ v4 : Packer
     condition:
     	for any of them
 }
-
 rule DIET v1.00d : Packer
 {
     meta:
@@ -40039,7 +37179,6 @@ rule DIET v1.00d : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DIET v1.44, v1.45f : Packer
 {
     meta:
@@ -40053,7 +37192,6 @@ rule DIET v1.44, v1.45f : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Ding Boy's PE-lock Phantasm v0.8 : Packer
 {
     meta:
@@ -40067,7 +37205,6 @@ rule Ding Boy's PE-lock Phantasm v0.8 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Ding Boy's PE-lock Phantasm v1.0 / v1.1 : Packer
 {
     meta:
@@ -40081,7 +37218,6 @@ rule Ding Boy's PE-lock Phantasm v1.0 / v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Ding Boy's PE-lock v0.07 : Packer
 {
     meta:
@@ -40095,7 +37231,6 @@ rule Ding Boy's PE-lock v0.07 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DJoin v0.7 public (RC4 encryption) -> drmist : Packer
 {
     meta:
@@ -40109,7 +37244,6 @@ rule DJoin v0.7 public (RC4 encryption) -> drmist : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DJoin v0.7 public (xor encryption) -> drmist : Packer
 {
     meta:
@@ -40123,7 +37257,6 @@ rule DJoin v0.7 public (xor encryption) -> drmist : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DOS/16M DOS Extender (c) Tenberry Software Inc 1987-1995 : Packer
 {
     meta:
@@ -40137,7 +37270,6 @@ rule DOS/16M DOS Extender (c) Tenberry Software Inc 1987-1995 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Dr.Web Virus-Finding Engine -> InSoft EDV-Systeme : Packer
 {
     meta:
@@ -40151,7 +37283,6 @@ rule Dr.Web Virus-Finding Engine -> InSoft EDV-Systeme : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule DSHIELD : Packer
 {
     meta:
@@ -40165,7 +37296,6 @@ rule DSHIELD : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule dUP 2.x Patcher --> www.diablo2oo2.cjb.net : Packer
 {
     meta:
@@ -40179,7 +37309,6 @@ rule dUP 2.x Patcher --> www.diablo2oo2.cjb.net : Packer
     condition:
     	for any of them
 }
-
 rule DxPack 1.0 : Packer
 {
     meta:
@@ -40193,7 +37322,6 @@ rule DxPack 1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule E language : Packer
 {
     meta:
@@ -40207,7 +37335,6 @@ rule E language : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule E.S.O. Eclipse Operating System v.2.08 + DOS Extender : Packer
 {
     meta:
@@ -40221,7 +37348,6 @@ rule E.S.O. Eclipse Operating System v.2.08 + DOS Extender : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule E2C by DoP : Packer
 {
     meta:
@@ -40235,7 +37361,6 @@ rule E2C by DoP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Elicense System V4.0.0.0 -> ViaTech Inc : Packer
 {
     meta:
@@ -40249,7 +37374,6 @@ rule Elicense System V4.0.0.0 -> ViaTech Inc : Packer
     condition:
     	for any of them
 }
-
 rule Embed PE v1.13 -> cyclotron : Packer
 {
     meta:
@@ -40263,7 +37387,6 @@ rule Embed PE v1.13 -> cyclotron : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EmbedPE v1.24 -> cyclotron : Packer
 {
     meta:
@@ -40277,7 +37400,6 @@ rule EmbedPE v1.24 -> cyclotron : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EmbedPE V1.X -> cyclotron : Packer
 {
     meta:
@@ -40291,7 +37413,6 @@ rule EmbedPE V1.X -> cyclotron : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EncryptPE 1.2003.5.18 -> WFS : Packer
 {
     meta:
@@ -40305,7 +37426,6 @@ rule EncryptPE 1.2003.5.18 -> WFS : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EncryptPE 2.2004.8.10 - 2.2005.3.14 -> WFS : Packer
 {
     meta:
@@ -40319,7 +37439,6 @@ rule EncryptPE 2.2004.8.10 - 2.2005.3.14 -> WFS : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EncryptPE V2.2006.1.15 -> WFS : Packer
 {
     meta:
@@ -40333,7 +37452,6 @@ rule EncryptPE V2.2006.1.15 -> WFS : Packer
     condition:
     	for any of them
 }
-
 rule EncryptPE V2.2006.7.10 -> WFS : Packer
 {
     meta:
@@ -40347,7 +37465,6 @@ rule EncryptPE V2.2006.7.10 -> WFS : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Enigma protector 1.10/1.11 -> Vladimir Sukhov : Packer
 {
     meta:
@@ -40361,7 +37478,6 @@ rule Enigma protector 1.10/1.11 -> Vladimir Sukhov : Packer
     condition:
     	for any of them
 }
-
 rule ENIGMA Protector V1.0-V1.2-> Sukhov Vladimir : Packer
 {
     meta:
@@ -40375,7 +37491,6 @@ rule ENIGMA Protector V1.0-V1.2-> Sukhov Vladimir : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ENIGMA Protector V1.1 CracKed By: shoooo & fly -> Sukhov Vladimir : Packer
 {
     meta:
@@ -40389,7 +37504,6 @@ rule ENIGMA Protector V1.1 CracKed By: shoooo & fly -> Sukhov Vladimir : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ENIGMA Protector V1.1-> Sukhov Vladimir : Packer
 {
     meta:
@@ -40403,7 +37517,6 @@ rule ENIGMA Protector V1.1-> Sukhov Vladimir : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ENIGMA Protector V1.1-V1.2-> Sukhov Vladimir : Packer
 {
     meta:
@@ -40417,7 +37530,6 @@ rule ENIGMA Protector V1.1-V1.2-> Sukhov Vladimir : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EPW v1.2 : Packer
 {
     meta:
@@ -40431,7 +37543,6 @@ rule EPW v1.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EPW v1.30 : Packer
 {
     meta:
@@ -40445,7 +37556,6 @@ rule EPW v1.30 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Escargot V0.1 -> ++Meat : Packer
 {
     meta:
@@ -40459,7 +37569,6 @@ rule Escargot V0.1 -> ++Meat : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exact Audio Copy -> (UnknownCompiler) : Packer
 {
     meta:
@@ -40473,7 +37582,6 @@ rule Exact Audio Copy -> (UnknownCompiler) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Excalibur 1.03 -> forgot : Packer
 {
     meta:
@@ -40487,7 +37595,6 @@ rule Excalibur 1.03 -> forgot : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE joiner -> Amok : Packer
 {
     meta:
@@ -40501,7 +37608,6 @@ rule EXE joiner -> Amok : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Locker 1.0 -> IonIce : Packer
 {
     meta:
@@ -40515,7 +37621,6 @@ rule Exe Locker 1.0 -> IonIce : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Manager Version 3.0 1994 (c) Solar Designer : Packer
 {
     meta:
@@ -40529,7 +37634,6 @@ rule EXE Manager Version 3.0 1994 (c) Solar Designer : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Shield v0.1b - v0.3b, v0.3 -> SMoKE : Packer
 {
     meta:
@@ -40543,7 +37647,6 @@ rule EXE Shield v0.1b - v0.3b, v0.3 -> SMoKE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Shield v2.7 : Packer
 {
     meta:
@@ -40557,7 +37660,6 @@ rule Exe Shield v2.7 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Exe Shield vx.x : Packer
 {
     meta:
@@ -40571,7 +37673,6 @@ rule Exe Shield vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Stealth v2.7 : Packer
 {
     meta:
@@ -40585,7 +37686,6 @@ rule EXE Stealth v2.7 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Stealth v2.71 : Packer
 {
     meta:
@@ -40599,7 +37699,6 @@ rule EXE Stealth v2.71 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Stealth v2.72 : Packer
 {
     meta:
@@ -40613,7 +37712,6 @@ rule EXE Stealth v2.72 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE Stealth v2.74 -> WebToolMaster : Packer
 {
     meta:
@@ -40627,7 +37725,6 @@ rule EXE Stealth v2.74 -> WebToolMaster : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE2COM (Encrypted without selfcheck) : Packer
 {
     meta:
@@ -40641,7 +37738,6 @@ rule EXE2COM (Encrypted without selfcheck) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE2COM (Limited) : Packer
 {
     meta:
@@ -40655,7 +37751,6 @@ rule EXE2COM (Limited) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE2COM (Method 1) : Packer
 {
     meta:
@@ -40669,7 +37764,6 @@ rule EXE2COM (Method 1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE2COM (Packed) : Packer
 {
     meta:
@@ -40683,7 +37777,6 @@ rule EXE2COM (Packed) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXE32Pack v1.3x : Packer
 {
     meta:
@@ -40697,7 +37790,6 @@ rule EXE32Pack v1.3x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor v1.3.0.45 : Packer
 {
     meta:
@@ -40711,7 +37803,6 @@ rule EXECryptor v1.3.0.45 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor V2.1X -> SoftComplete.com : Packer
 {
     meta:
@@ -40725,7 +37816,6 @@ rule EXECryptor V2.1X -> SoftComplete.com : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXECryptor vx.x.x.x : Packer
 {
     meta:
@@ -40739,7 +37829,6 @@ rule EXECryptor vx.x.x.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXELOCK 666 1.5 : Packer
 {
     meta:
@@ -40753,7 +37842,6 @@ rule EXELOCK 666 1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeLock v1.00 : Packer
 {
     meta:
@@ -40767,7 +37855,6 @@ rule ExeLock v1.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXEPACK (LINK) v3.60, v3.64, v3.65 or 5.01.21 : Packer
 {
     meta:
@@ -40781,7 +37868,6 @@ rule EXEPACK (LINK) v3.60, v3.64, v3.65 or 5.01.21 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXEStealth 2.75 -> WebtoolMaster : Packer
 {
     meta:
@@ -40795,7 +37881,6 @@ rule EXEStealth 2.75 -> WebtoolMaster : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ExeTools v2.1 Encruptor by DISMEMBER : Packer
 {
     meta:
@@ -40809,7 +37894,6 @@ rule ExeTools v2.1 Encruptor by DISMEMBER : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor 1.1 -> CGSoftLabs : Packer
 {
     meta:
@@ -40823,7 +37907,6 @@ rule eXPressor 1.1 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXpressor v1.2 -> CGSoftLabs : Packer
 {
     meta:
@@ -40837,7 +37920,6 @@ rule eXpressor v1.2 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXPressor V1.3 -> CGSoftLabs : Packer
 {
     meta:
@@ -40851,7 +37933,6 @@ rule eXPressor V1.3 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXpressor v1.4.5 -> CGSoftLabs : Packer
 {
     meta:
@@ -40865,7 +37946,6 @@ rule eXpressor v1.4.5 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule eXpressor v1.4.5 -> CGSoftLabs : Packer
 {
     meta:
@@ -40879,7 +37959,6 @@ rule eXpressor v1.4.5 -> CGSoftLabs : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FASM v1.3x : Packer
 {
     meta:
@@ -40893,7 +37972,6 @@ rule FASM v1.3x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FileShield : Packer
 {
     meta:
@@ -40907,7 +37985,6 @@ rule FileShield : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Free Pascal v0.99.10 : Packer
 {
     meta:
@@ -40921,7 +37998,6 @@ rule Free Pascal v0.99.10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Free Pascal v1.0.10 (win32 GUI) : Packer
 {
     meta:
@@ -40935,7 +38011,6 @@ rule Free Pascal v1.0.10 (win32 GUI) : Packer
     condition:
     	for any of them
 }
-
 rule FreeBASIC v0.11 : Packer
 {
     meta:
@@ -40949,7 +38024,6 @@ rule FreeBASIC v0.11 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FreePascal 1.0.4 Win32 -> (Berczi Gabor, Pierre Muller & Peter Vreman) : Packer
 {
     meta:
@@ -40963,7 +38037,6 @@ rule FreePascal 1.0.4 Win32 -> (Berczi Gabor, Pierre Muller & Peter Vreman) : Pa
     condition:
     	for any of them
 }
-
 rule FreePascal 1.0.4 Win32 DLL -> (Berczi Gabor, Pierre Muller & Peter Vreman) : Packer
 {
     meta:
@@ -40977,7 +38050,6 @@ rule FreePascal 1.0.4 Win32 DLL -> (Berczi Gabor, Pierre Muller & Peter Vreman) 
     condition:
     	for any of them
 }
-
 rule Freshbind v2.0 -> gFresh : Packer
 {
     meta:
@@ -40991,7 +38063,6 @@ rule Freshbind v2.0 -> gFresh : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule from NORMAN Anti-Virus Utilites : Packer
 {
     meta:
@@ -41005,7 +38076,6 @@ rule from NORMAN Anti-Virus Utilites : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Frusion -> biff : Packer
 {
     meta:
@@ -41019,7 +38089,6 @@ rule Frusion -> biff : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG 1.31 -> dulek/xt : Packer
 {
     meta:
@@ -41033,7 +38102,6 @@ rule FSG 1.31 -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> bart/xt -> (Watcom C/C++ EXE) : Packer
 {
     meta:
@@ -41047,7 +38115,6 @@ rule FSG v1.10 (Eng) -> bart/xt -> (Watcom C/C++ EXE) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -41061,7 +38128,6 @@ rule FSG v1.10 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -41075,7 +38141,6 @@ rule FSG v1.10 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -41089,7 +38154,6 @@ rule FSG v1.10 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt : Packer
 {
     meta:
@@ -41103,7 +38167,6 @@ rule FSG v1.10 (Eng) -> dulek/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -41117,7 +38180,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
 {
     meta:
@@ -41131,7 +38193,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
 {
     meta:
@@ -41145,7 +38206,6 @@ rule FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v1.33 : Packer
 {
     meta:
@@ -41159,7 +38219,6 @@ rule FSG v1.33 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule FSG v2.0 -> bart/xt : Packer
 {
     meta:
@@ -41173,7 +38232,6 @@ rule FSG v2.0 -> bart/xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Gamehouse Media Protector Version Unknown : Packer
 {
     meta:
@@ -41187,7 +38245,6 @@ rule Gamehouse Media Protector Version Unknown : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Gardian Angel 1.0 : Packer
 {
     meta:
@@ -41201,7 +38258,6 @@ rule Gardian Angel 1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Go32Stub v.2.00 DOS-Extender : Packer
 {
     meta:
@@ -41215,7 +38271,6 @@ rule Go32Stub v.2.00 DOS-Extender : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Go32Stub v.2.00T DOS-Extender : Packer
 {
     meta:
@@ -41229,7 +38284,6 @@ rule Go32Stub v.2.00T DOS-Extender : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Guardant Stealth aka Novex Dongle : Packer
 {
     meta:
@@ -41243,7 +38297,6 @@ rule Guardant Stealth aka Novex Dongle : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HACKSTOP v1.00 : Packer
 {
     meta:
@@ -41257,7 +38310,6 @@ rule HACKSTOP v1.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HACKSTOP v1.18 : Packer
 {
     meta:
@@ -41271,7 +38323,6 @@ rule HACKSTOP v1.18 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HACKSTOP v1.19 : Packer
 {
     meta:
@@ -41285,7 +38336,6 @@ rule HACKSTOP v1.19 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule HEALTH v.5.1 by Muslim M.Polyak : Packer
 {
     meta:
@@ -41299,7 +38349,6 @@ rule HEALTH v.5.1 by Muslim M.Polyak : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ILUCRYPT v4.015 [exe] : Packer
 {
     meta:
@@ -41313,7 +38362,6 @@ rule ILUCRYPT v4.015 [exe] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule iLUCRYPT v4.018 [exe] : Packer
 {
     meta:
@@ -41327,7 +38375,6 @@ rule iLUCRYPT v4.018 [exe] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Inbuild v1.0 [hard] : Packer
 {
     meta:
@@ -41341,7 +38388,6 @@ rule Inbuild v1.0 [hard] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Inno Setup Module : Packer
 {
     meta:
@@ -41355,7 +38401,6 @@ rule Inno Setup Module : Packer
     condition:
     	for any of them
 }
-
 rule Install Stub 32-bit : Packer
 {
     meta:
@@ -41369,7 +38414,6 @@ rule Install Stub 32-bit : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule InstallShield 2000 : Packer
 {
     meta:
@@ -41383,7 +38427,6 @@ rule InstallShield 2000 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule JDPack : Packer
 {
     meta:
@@ -41397,7 +38440,6 @@ rule JDPack : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule KGCrypt vx.x : Packer
 {
     meta:
@@ -41411,7 +38453,6 @@ rule KGCrypt vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Krypton v0.2 : Packer
 {
     meta:
@@ -41425,7 +38466,6 @@ rule Krypton v0.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule kryptor 5 : Packer
 {
     meta:
@@ -41439,7 +38479,6 @@ rule kryptor 5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule kryptor 6 : Packer
 {
     meta:
@@ -41453,7 +38492,6 @@ rule kryptor 6 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LamerStop v1.0c (c) Stefan Esser : Packer
 {
     meta:
@@ -41467,7 +38505,6 @@ rule LamerStop v1.0c (c) Stefan Esser : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Lattice C v1.01 : Packer
 {
     meta:
@@ -41481,7 +38518,6 @@ rule Lattice C v1.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Lattice C v3.0 : Packer
 {
     meta:
@@ -41495,7 +38531,6 @@ rule Lattice C v3.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LCC Win32 v1.x : Packer
 {
     meta:
@@ -41509,7 +38544,6 @@ rule LCC Win32 v1.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LCC-Win32 : Packer
 {
     meta:
@@ -41523,7 +38557,6 @@ rule LCC-Win32 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Libraries by John Socha : Packer
 {
     meta:
@@ -41537,7 +38570,6 @@ rule Libraries by John Socha : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Lockless Intro Pack : Packer
 {
     meta:
@@ -41551,7 +38583,6 @@ rule Lockless Intro Pack : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule LSI C-86 Run-Time Libray : Packer
 {
     meta:
@@ -41565,7 +38596,6 @@ rule LSI C-86 Run-Time Libray : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MASM / TASM : Packer
 {
     meta:
@@ -41579,7 +38609,6 @@ rule MASM / TASM : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MEGALITE v1.20a : Packer
 {
     meta:
@@ -41593,7 +38622,6 @@ rule MEGALITE v1.20a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MESS v1.20 : Packer
 {
     meta:
@@ -41607,7 +38635,6 @@ rule MESS v1.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MetaWare High C + Phar Lap DOS Extender 1983-89 : Packer
 {
     meta:
@@ -41621,7 +38648,6 @@ rule MetaWare High C + Phar Lap DOS Extender 1983-89 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MetaWare High C Run-Time Library + Phar Lap DOS Extender 1983-89 : Packer
 {
     meta:
@@ -41635,7 +38661,6 @@ rule MetaWare High C Run-Time Library + Phar Lap DOS Extender 1983-89 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Metrowerks CodeWarrior v2.0 (Console) : Packer
 {
     meta:
@@ -41649,7 +38674,6 @@ rule Metrowerks CodeWarrior v2.0 (Console) : Packer
     condition:
     	for any of them
 }
-
 rule Mew 10 exe-coder 1.0 -> Northfox [HCC] : Packer
 {
     meta:
@@ -41663,7 +38687,6 @@ rule Mew 10 exe-coder 1.0 -> Northfox [HCC] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MEW 11 SE v1.2 -> Northfox[HCC] : Packer
 {
     meta:
@@ -41677,7 +38700,6 @@ rule MEW 11 SE v1.2 -> Northfox[HCC] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MEW 5 1.0 -> Northfox : Packer
 {
     meta:
@@ -41691,7 +38713,6 @@ rule MEW 5 1.0 -> Northfox : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MicroJoiner 1.1 -> coban2k : Packer
 {
     meta:
@@ -41705,7 +38726,6 @@ rule MicroJoiner 1.1 -> coban2k : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MicroJoiner 1.5 -> coban2k : Packer
 {
     meta:
@@ -41719,7 +38739,6 @@ rule MicroJoiner 1.5 -> coban2k : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MicroJoiner 1.6 -> coban2k : Packer
 {
     meta:
@@ -41733,7 +38752,6 @@ rule MicroJoiner 1.6 -> coban2k : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Basic Compiler v5.60 1982-97 : Packer
 {
     meta:
@@ -41747,7 +38765,6 @@ rule Microsoft Basic Compiler v5.60 1982-97 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft C : Packer
 {
     meta:
@@ -41761,7 +38778,6 @@ rule Microsoft C : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft C (1988/1989) : Packer
 {
     meta:
@@ -41775,7 +38791,6 @@ rule Microsoft C (1988/1989) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft C for Windows (1) : Packer
 {
     meta:
@@ -41789,7 +38804,6 @@ rule Microsoft C for Windows (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft C for Windows (2) : Packer
 {
     meta:
@@ -41803,7 +38817,6 @@ rule Microsoft C for Windows (2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft C Library 1985 : Packer
 {
     meta:
@@ -41817,7 +38830,6 @@ rule Microsoft C Library 1985 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft C v1.04 : Packer
 {
     meta:
@@ -41831,7 +38843,6 @@ rule Microsoft C v1.04 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft CAB SFX : Packer
 {
     meta:
@@ -41845,7 +38856,6 @@ rule Microsoft CAB SFX : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft FORTRAN : Packer
 {
     meta:
@@ -41859,7 +38869,6 @@ rule Microsoft FORTRAN : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual Basic v5.0/v6.0 : Packer
 {
     meta:
@@ -41873,7 +38882,6 @@ rule Microsoft Visual Basic v5.0/v6.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual Basic v6.0 DLL : Packer
 {
     meta:
@@ -41887,7 +38895,6 @@ rule Microsoft Visual Basic v6.0 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C 2.0 : Packer
 {
     meta:
@@ -41901,7 +38908,6 @@ rule Microsoft Visual C 2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C v2.0 : Packer
 {
     meta:
@@ -41915,7 +38921,6 @@ rule Microsoft Visual C v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ : Packer
 {
     meta:
@@ -41929,7 +38934,6 @@ rule Microsoft Visual C++ : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ : Packer
 {
     meta:
@@ -41943,7 +38947,6 @@ rule Microsoft Visual C++ : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ (3.0 old crap) : Packer
 {
     meta:
@@ -41957,7 +38960,6 @@ rule Microsoft Visual C++ (3.0 old crap) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ 7.1 : Packer
 {
     meta:
@@ -41971,7 +38973,6 @@ rule Microsoft Visual C++ 7.1 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ 7.1 : Packer
 {
     meta:
@@ -41985,7 +38986,6 @@ rule Microsoft Visual C++ 7.1 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ 7.1 : Packer
 {
     meta:
@@ -41999,7 +38999,6 @@ rule Microsoft Visual C++ 7.1 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ DLL : Packer
 {
     meta:
@@ -42013,7 +39012,6 @@ rule Microsoft Visual C++ DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ DLL : Packer
 {
     meta:
@@ -42027,7 +39025,6 @@ rule Microsoft Visual C++ DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ DLL : Packer
 {
     meta:
@@ -42041,7 +39038,6 @@ rule Microsoft Visual C++ DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v4.2 : Packer
 {
     meta:
@@ -42055,7 +39051,6 @@ rule Microsoft Visual C++ v4.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v4.2 : Packer
 {
     meta:
@@ -42069,7 +39064,6 @@ rule Microsoft Visual C++ v4.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v4.2 DLL : Packer
 {
     meta:
@@ -42083,7 +39077,6 @@ rule Microsoft Visual C++ v4.2 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v6.0 : Packer
 {
     meta:
@@ -42097,7 +39090,6 @@ rule Microsoft Visual C++ v6.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ v6.0 DLL : Packer
 {
     meta:
@@ -42111,7 +39103,6 @@ rule Microsoft Visual C++ v6.0 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v6.0 DLL : Packer
 {
     meta:
@@ -42125,7 +39116,6 @@ rule Microsoft Visual C++ v6.0 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v6.0 DLL : Packer
 {
     meta:
@@ -42139,7 +39129,6 @@ rule Microsoft Visual C++ v6.0 DLL : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ v6.0 SPx : Packer
 {
     meta:
@@ -42153,7 +39142,6 @@ rule Microsoft Visual C++ v6.0 SPx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v6.0 SPx : Packer
 {
     meta:
@@ -42167,7 +39155,6 @@ rule Microsoft Visual C++ v6.0 SPx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.0 (64 Bit) : Packer
 {
     meta:
@@ -42181,7 +39168,6 @@ rule Microsoft Visual C++ v7.0 (64 Bit) : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ v7.0 DLL : Packer
 {
     meta:
@@ -42195,7 +39181,6 @@ rule Microsoft Visual C++ v7.0 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.1 DLL : Packer
 {
     meta:
@@ -42209,7 +39194,6 @@ rule Microsoft Visual C++ v7.1 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.1 DLL (Debug) : Packer
 {
     meta:
@@ -42223,7 +39207,6 @@ rule Microsoft Visual C++ v7.1 DLL (Debug) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ v7.1 EXE : Packer
 {
     meta:
@@ -42237,7 +39220,6 @@ rule Microsoft Visual C++ v7.1 EXE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ vx.x : Packer
 {
     meta:
@@ -42251,7 +39233,6 @@ rule Microsoft Visual C++ vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Microsoft Visual C++ vx.x : Packer
 {
     meta:
@@ -42265,7 +39246,6 @@ rule Microsoft Visual C++ vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW GCC DLL v2xx : Packer
 {
     meta:
@@ -42279,7 +39259,6 @@ rule MinGW GCC DLL v2xx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW GCC v2.x : Packer
 {
     meta:
@@ -42293,7 +39272,6 @@ rule MinGW GCC v2.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MinGW GCC v2.x : Packer
 {
     meta:
@@ -42307,7 +39285,6 @@ rule MinGW GCC v2.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MoleBox V2.X -> MoleStudio.com : Packer
 {
     meta:
@@ -42321,7 +39298,6 @@ rule MoleBox V2.X -> MoleStudio.com : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS FORTRAN Library 19?? : Packer
 {
     meta:
@@ -42335,7 +39311,6 @@ rule MS FORTRAN Library 19?? : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS FORTRAN Library 19?? : Packer
 {
     meta:
@@ -42349,7 +39324,6 @@ rule MS FORTRAN Library 19?? : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library (OS/2) & FORTRAN Compiler 1989 : Packer
 {
     meta:
@@ -42363,7 +39337,6 @@ rule MS Run-Time Library (OS/2) & FORTRAN Compiler 1989 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library 1987 : Packer
 {
     meta:
@@ -42377,7 +39350,6 @@ rule MS Run-Time Library 1987 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library 1990 (07) : Packer
 {
     meta:
@@ -42391,7 +39363,6 @@ rule MS Run-Time Library 1990 (07) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library 1990 (10) : Packer
 {
     meta:
@@ -42405,7 +39376,6 @@ rule MS Run-Time Library 1990 (10) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library 1990, 1992 (09) : Packer
 {
     meta:
@@ -42419,7 +39389,6 @@ rule MS Run-Time Library 1990, 1992 (09) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library 1992 (13) : Packer
 {
     meta:
@@ -42433,7 +39402,6 @@ rule MS Run-Time Library 1992 (13) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MS Run-Time Library 1992 (14) : Packer
 {
     meta:
@@ -42447,7 +39415,6 @@ rule MS Run-Time Library 1992 (14) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule nbuild v1.0 [soft] : Packer
 {
     meta:
@@ -42461,7 +39428,6 @@ rule nbuild v1.0 [soft] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NeoLite v1.0 : Packer
 {
     meta:
@@ -42475,7 +39441,6 @@ rule NeoLite v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NeoLite v2.0 : Packer
 {
     meta:
@@ -42489,7 +39454,6 @@ rule NeoLite v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NeoLite v2.00 : Packer
 {
     meta:
@@ -42503,7 +39467,6 @@ rule NeoLite v2.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NFO v1.0 : Packer
 {
     meta:
@@ -42517,7 +39480,6 @@ rule NFO v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NoodleCrypt v2.0 : Packer
 {
     meta:
@@ -42531,7 +39493,6 @@ rule NoodleCrypt v2.0 : Packer
     condition:
     	for any of them
 }
-
 rule Noodlecrypt2 -> r!sc : Packer
 {
     meta:
@@ -42545,7 +39506,6 @@ rule Noodlecrypt2 -> r!sc : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPack V1.1 -> LiuXingPing : Packer
 {
     meta:
@@ -42559,7 +39519,6 @@ rule NsPack V1.1 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule nSpack V1.3 -> LiuXingPing : Packer
 {
     meta:
@@ -42573,7 +39532,6 @@ rule nSpack V1.3 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NsPack V1.4 -> LiuXingPing : Packer
 {
     meta:
@@ -42587,7 +39545,6 @@ rule NsPack V1.4 -> LiuXingPing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Nullsoft Install System v1.98 : Packer
 {
     meta:
@@ -42601,7 +39558,6 @@ rule Nullsoft Install System v1.98 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Nullsoft PIMP Install System v1.x : Packer
 {
     meta:
@@ -42615,7 +39571,6 @@ rule Nullsoft PIMP Install System v1.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NX PE Packer v1.0 : Packer
 {
     meta:
@@ -42629,7 +39584,6 @@ rule NX PE Packer v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium 1.2.0.0 -> Obsidium Software : Packer
 {
     meta:
@@ -42643,7 +39597,6 @@ rule Obsidium 1.2.0.0 -> Obsidium Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.1.1.1 : Packer
 {
     meta:
@@ -42657,7 +39610,6 @@ rule Obsidium v1.1.1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium V1.2 -> Obsidium Software : Packer
 {
     meta:
@@ -42671,7 +39623,6 @@ rule Obsidium V1.2 -> Obsidium Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium V1.2.5.8 -> Obsidium Software : Packer
 {
     meta:
@@ -42685,7 +39636,6 @@ rule Obsidium V1.2.5.8 -> Obsidium Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium V1.25 -> Obsidium Software : Packer
 {
     meta:
@@ -42699,7 +39649,6 @@ rule Obsidium V1.25 -> Obsidium Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium V1.3.0.0 -> Obsidium Software : Packer
 {
     meta:
@@ -42713,7 +39662,6 @@ rule Obsidium V1.3.0.0 -> Obsidium Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium V1.3.0.0 -> Obsidium Software : Packer
 {
     meta:
@@ -42727,7 +39675,6 @@ rule Obsidium V1.3.0.0 -> Obsidium Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium V1.3.0.4 -> Obsidium Software : Packer
 {
     meta:
@@ -42741,7 +39688,6 @@ rule Obsidium V1.3.0.4 -> Obsidium Software : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ORiEN V2.12 -> Fisun A.V. : Packer
 {
     meta:
@@ -42755,7 +39701,6 @@ rule ORiEN V2.12 -> Fisun A.V. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packanoid -> Arkanoid : Packer
 {
     meta:
@@ -42769,7 +39714,6 @@ rule Packanoid -> Arkanoid : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packed with: PKLITE v1.50 with CRC check (1) : Packer
 {
     meta:
@@ -42783,7 +39727,6 @@ rule Packed with: PKLITE v1.50 with CRC check (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Packman V0.0.0.1 -> Bubbasoft : Packer
 {
     meta:
@@ -42797,7 +39740,6 @@ rule Packman V0.0.0.1 -> Bubbasoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PAK-SFX Archive : Packer
 {
     meta:
@@ -42811,7 +39753,6 @@ rule PAK-SFX Archive : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PassEXE v2.0 : Packer
 {
     meta:
@@ -42825,7 +39766,6 @@ rule PassEXE v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Password protector my SMT : Packer
 {
     meta:
@@ -42839,7 +39779,6 @@ rule Password protector my SMT : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PC Shrinker v0.20 : Packer
 {
     meta:
@@ -42853,7 +39792,6 @@ rule PC Shrinker v0.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PC Shrinker v0.29 : Packer
 {
     meta:
@@ -42867,7 +39805,6 @@ rule PC Shrinker v0.29 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PC Shrinker v0.45 : Packer
 {
     meta:
@@ -42881,7 +39818,6 @@ rule PC Shrinker v0.45 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PC-Guard v4.05d, v4.10d, v4.15d : Packer
 {
     meta:
@@ -42895,7 +39831,6 @@ rule PC-Guard v4.05d, v4.10d, v4.15d : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PCPEC "alpha - preview" : Packer
 {
     meta:
@@ -42909,7 +39844,6 @@ rule PCPEC "alpha - preview" : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PCPEC [alpha] : Packer
 {
     meta:
@@ -42923,7 +39857,6 @@ rule PCPEC [alpha] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PCrypt v3.51 : Packer
 {
     meta:
@@ -42937,7 +39870,6 @@ rule PCrypt v3.51 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PcShare ÎÄ¼þÀ¦°óÆ÷ v4.0 -> ÎÞ¿É·ÇÒé : Packer
 {
     meta:
@@ -42951,7 +39883,6 @@ rule PcShare ÎÄ¼þÀ¦°óÆ÷ v4.0 -> ÎÞ¿É·ÇÒé : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PCShrink 0.71 beta : Packer
 {
     meta:
@@ -42965,7 +39896,6 @@ rule PCShrink 0.71 beta : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PCShrink v0.40b : Packer
 {
     meta:
@@ -42979,7 +39909,6 @@ rule PCShrink v0.40b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Crypt v1.00/v1.01 : Packer
 {
     meta:
@@ -42993,7 +39922,6 @@ rule PE Crypt v1.00/v1.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Crypt v1.02 : Packer
 {
     meta:
@@ -43007,7 +39935,6 @@ rule PE Crypt v1.02 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Crypt32 (Console v1.0, v1.01, v1.02) : Packer
 {
     meta:
@@ -43021,7 +39948,6 @@ rule PE Crypt32 (Console v1.0, v1.01, v1.02) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Crypt32 v1.02 : Packer
 {
     meta:
@@ -43035,7 +39961,6 @@ rule PE Crypt32 v1.02 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Diminisher V0.1 -> Teraphy : Packer
 {
     meta:
@@ -43049,7 +39974,6 @@ rule PE Diminisher V0.1 -> Teraphy : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Lock NT v2.01 : Packer
 {
     meta:
@@ -43063,7 +39987,6 @@ rule PE Lock NT v2.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Lock NT v2.02c : Packer
 {
     meta:
@@ -43077,7 +40000,6 @@ rule PE Lock NT v2.02c : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Lock NT v2.03 : Packer
 {
     meta:
@@ -43091,7 +40013,6 @@ rule PE Lock NT v2.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Lock NT v2.04 : Packer
 {
     meta:
@@ -43105,7 +40026,6 @@ rule PE Lock NT v2.04 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Pack v0.99 : Packer
 {
     meta:
@@ -43119,7 +40039,6 @@ rule PE Pack v0.99 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE Packer : Packer
 {
     meta:
@@ -43133,7 +40052,6 @@ rule PE Packer : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-Armor 0.46 -> Hying : Packer
 {
     meta:
@@ -43147,7 +40065,6 @@ rule PE-Armor 0.46 -> Hying : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-Armor 0.49 -> Hying : Packer
 {
     meta:
@@ -43161,7 +40078,6 @@ rule PE-Armor 0.49 -> Hying : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-Crypt 1.02 : Packer
 {
     meta:
@@ -43175,7 +40091,6 @@ rule PE-Crypt 1.02 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-Crypter : Packer
 {
     meta:
@@ -43189,7 +40104,6 @@ rule PE-Crypter : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-PACK 0.99 : Packer
 {
     meta:
@@ -43203,7 +40117,6 @@ rule PE-PACK 0.99 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-PACK v1.0 by ANAKiN 1998 (???) : Packer
 {
     meta:
@@ -43217,7 +40130,6 @@ rule PE-PACK v1.0 by ANAKiN 1998 (???) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-PROTECT 0.9 : Packer
 {
     meta:
@@ -43231,7 +40143,6 @@ rule PE-PROTECT 0.9 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PE-SHiELD 0.2 : Packer
 {
     meta:
@@ -43245,7 +40156,6 @@ rule PE-SHiELD 0.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEArmor V0.7X -> Hying : Packer
 {
     meta:
@@ -43259,7 +40169,6 @@ rule PEArmor V0.7X -> Hying : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.92 : Packer
 {
     meta:
@@ -43273,7 +40182,6 @@ rule PECompact v0.92 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.94 : Packer
 {
     meta:
@@ -43287,7 +40195,6 @@ rule PECompact v0.94 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v0.971 - v0.976 : Packer
 {
     meta:
@@ -43301,7 +40208,6 @@ rule PECompact v0.971 - v0.976 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PECompact v1.84 : Packer
 {
     meta:
@@ -43315,7 +40221,6 @@ rule PECompact v1.84 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEEncrypt v4.0b (JunkCode) : Packer
 {
     meta:
@@ -43329,7 +40234,6 @@ rule PEEncrypt v4.0b (JunkCode) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PELOCKnt 2.04 : Packer
 {
     meta:
@@ -43343,7 +40247,6 @@ rule PELOCKnt 2.04 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEncrypt v3.1 : Packer
 {
     meta:
@@ -43357,7 +40260,6 @@ rule PEncrypt v3.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PENightMare v1.3 : Packer
 {
     meta:
@@ -43371,7 +40273,6 @@ rule PENightMare v1.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESHiELD v0.1b MTE : Packer
 {
     meta:
@@ -43385,7 +40286,6 @@ rule PESHiELD v0.1b MTE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESHiELD v0.2 / v0.2b / v0.2b2 : Packer
 {
     meta:
@@ -43399,7 +40299,6 @@ rule PESHiELD v0.2 / v0.2b / v0.2b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESHiELD v0.251 : Packer
 {
     meta:
@@ -43413,7 +40312,6 @@ rule PESHiELD v0.251 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEShit : Packer
 {
     meta:
@@ -43427,7 +40325,6 @@ rule PEShit : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEStubOEP v1.x : Packer
 {
     meta:
@@ -43441,7 +40338,6 @@ rule PEStubOEP v1.x : Packer
     condition:
     	for any of them
 }
-
 rule Petite 1.2 : Packer
 {
     meta:
@@ -43455,7 +40351,6 @@ rule Petite 1.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEtite v1.2 : Packer
 {
     meta:
@@ -43469,7 +40364,6 @@ rule PEtite v1.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEtite v1.3 : Packer
 {
     meta:
@@ -43483,7 +40377,6 @@ rule PEtite v1.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Petite v1.4 : Packer
 {
     meta:
@@ -43497,7 +40390,6 @@ rule Petite v1.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEtite v1.4 : Packer
 {
     meta:
@@ -43511,7 +40403,6 @@ rule PEtite v1.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEtite v2.1 : Packer
 {
     meta:
@@ -43525,7 +40416,6 @@ rule PEtite v2.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Petite v2.1 (1) : Packer
 {
     meta:
@@ -43539,7 +40429,6 @@ rule Petite v2.1 (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Petite v2.1 (2) : Packer
 {
     meta:
@@ -43553,7 +40442,6 @@ rule Petite v2.1 (2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEtite v2.2 : Packer
 {
     meta:
@@ -43567,7 +40455,6 @@ rule PEtite v2.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Petite v?.? (after v1.4) : Packer
 {
     meta:
@@ -43581,7 +40468,6 @@ rule Petite v?.? (after v1.4) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEtite vx.x : Packer
 {
     meta:
@@ -43595,7 +40481,6 @@ rule PEtite vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PEX v0.99 : Packer
 {
     meta:
@@ -43609,7 +40494,6 @@ rule PEX v0.99 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PGMPACK v0.13 : Packer
 {
     meta:
@@ -43623,7 +40507,6 @@ rule PGMPACK v0.13 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PGMPACK v0.14 : Packer
 {
     meta:
@@ -43637,7 +40520,6 @@ rule PGMPACK v0.14 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PIRIT v1.5 : Packer
 {
     meta:
@@ -43651,7 +40533,6 @@ rule PIRIT v1.5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.00, v1.03 : Packer
 {
     meta:
@@ -43665,7 +40546,6 @@ rule PKLITE v1.00, v1.03 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.00c (1) : Packer
 {
     meta:
@@ -43679,7 +40559,6 @@ rule PKLITE v1.00c (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.00c (2) : Packer
 {
     meta:
@@ -43693,7 +40572,6 @@ rule PKLITE v1.00c (2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.12, v1.15, v1.20 (1) : Packer
 {
     meta:
@@ -43707,7 +40585,6 @@ rule PKLITE v1.12, v1.15, v1.20 (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.12, v1.15, v1.20 (2) : Packer
 {
     meta:
@@ -43721,7 +40598,6 @@ rule PKLITE v1.12, v1.15, v1.20 (2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.14, v1.15, v1.20 (3) : Packer
 {
     meta:
@@ -43735,7 +40611,6 @@ rule PKLITE v1.14, v1.15, v1.20 (3) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.14, v1.20 : Packer
 {
     meta:
@@ -43749,7 +40624,6 @@ rule PKLITE v1.14, v1.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.20 : Packer
 {
     meta:
@@ -43763,7 +40637,6 @@ rule PKLITE v1.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v1.50 (1) : Packer
 {
     meta:
@@ -43777,7 +40650,6 @@ rule PKLITE v1.50 (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE v2.00c : Packer
 {
     meta:
@@ -43791,7 +40663,6 @@ rule PKLITE v2.00c : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE32 1.1 : Packer
 {
     meta:
@@ -43805,7 +40676,6 @@ rule PKLITE32 1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE32 1.1 -> PKWARE Inc. : Packer
 {
     meta:
@@ -43819,7 +40689,6 @@ rule PKLITE32 1.1 -> PKWARE Inc. : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE32 v1.1 : Packer
 {
     meta:
@@ -43833,7 +40702,6 @@ rule PKLITE32 v1.1 : Packer
     condition:
     	for any of them
 }
-
 rule PKLITE32 v1.1 : Packer
 {
     meta:
@@ -43847,7 +40715,6 @@ rule PKLITE32 v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKLITE32 v1.1 : Packer
 {
     meta:
@@ -43861,7 +40728,6 @@ rule PKLITE32 v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKTINY v1.0 with TINYPROG v3.8 : Packer
 {
     meta:
@@ -43875,7 +40741,6 @@ rule PKTINY v1.0 with TINYPROG v3.8 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PKZIP-SFX v1.1 1989-90 : Packer
 {
     meta:
@@ -43889,7 +40754,6 @@ rule PKZIP-SFX v1.1 1989-90 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PLINK86 1984, 1985 : Packer
 {
     meta:
@@ -43903,7 +40767,6 @@ rule PLINK86 1984, 1985 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PolyEnE V0.01+ -> Lennart Hedlund : Packer
 {
     meta:
@@ -43917,7 +40780,6 @@ rule PolyEnE V0.01+ -> Lennart Hedlund : Packer
     condition:
     	for any of them
 }
-
 rule Prepared by SLR (OPTLINK) : Packer
 {
     meta:
@@ -43931,7 +40793,6 @@ rule Prepared by SLR (OPTLINK) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Private EXE Protector 1.8 : Packer
 {
     meta:
@@ -43945,7 +40806,6 @@ rule Private EXE Protector 1.8 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Private EXE Protector 2.0 -> SetiSoft : Packer
 {
     meta:
@@ -43959,7 +40819,6 @@ rule Private EXE Protector 2.0 -> SetiSoft : Packer
     condition:
     	for any of them
 }
-
 rule Private EXE v2.0a : Packer
 {
     meta:
@@ -43973,7 +40832,6 @@ rule Private EXE v2.0a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PrivateEXE v2.0a : Packer
 {
     meta:
@@ -43987,7 +40845,6 @@ rule PrivateEXE v2.0a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PrivateEXE v2.0a : Packer
 {
     meta:
@@ -44001,7 +40858,6 @@ rule PrivateEXE v2.0a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PRO-PACK v2.08, emphasis on packed size, locked : Packer
 {
     meta:
@@ -44015,7 +40871,6 @@ rule PRO-PACK v2.08, emphasis on packed size, locked : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PROTECT! EXE/COM v6.0 : Packer
 {
     meta:
@@ -44029,7 +40884,6 @@ rule PROTECT! EXE/COM v6.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [MEW 11 SE 1.0] --> Anorganix : Packer
 {
     meta:
@@ -44043,7 +40897,6 @@ rule PseudoSigner 0.1 [MEW 11 SE 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [MinGW GCC 2.x] --> Anorganix : Packer
 {
     meta:
@@ -44057,7 +40910,6 @@ rule PseudoSigner 0.1 [MinGW GCC 2.x] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [VBOX 4.3 MTE] --> Anorganix : Packer
 {
     meta:
@@ -44071,7 +40923,6 @@ rule PseudoSigner 0.1 [VBOX 4.3 MTE] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [VOB ProtectCD 5] --> Anorganix : Packer
 {
     meta:
@@ -44085,7 +40936,6 @@ rule PseudoSigner 0.1 [VOB ProtectCD 5] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [WATCOM C/C++ EXE] --> Anorganix : Packer
 {
     meta:
@@ -44099,7 +40949,6 @@ rule PseudoSigner 0.1 [WATCOM C/C++ EXE] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [XCR 0.11] --> Anorganix : Packer
 {
     meta:
@@ -44113,7 +40962,6 @@ rule PseudoSigner 0.1 [XCR 0.11] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.1 [Yoda's Protector 1.02] --> Anorganix : Packer
 {
     meta:
@@ -44127,7 +40975,6 @@ rule PseudoSigner 0.1 [Yoda's Protector 1.02] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [32Lite 0.03] --> Anorganix : Packer
 {
     meta:
@@ -44141,7 +40988,6 @@ rule PseudoSigner 0.2 [32Lite 0.03] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Borland C++ DLL (Method 2)] --> Anorganix : Packer
 {
     meta:
@@ -44155,7 +41001,6 @@ rule PseudoSigner 0.2 [Borland C++ DLL (Method 2)] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [CD-Cops II] --> Anorganix : Packer
 {
     meta:
@@ -44169,7 +41014,6 @@ rule PseudoSigner 0.2 [CD-Cops II] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [MEW 11 SE 1.0] --> Anorganix : Packer
 {
     meta:
@@ -44183,7 +41027,6 @@ rule PseudoSigner 0.2 [MEW 11 SE 1.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix : Packer
 {
     meta:
@@ -44197,7 +41040,6 @@ rule PseudoSigner 0.2 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [MinGW GCC 2.x] --> Anorganix : Packer
 {
     meta:
@@ -44211,7 +41053,6 @@ rule PseudoSigner 0.2 [MinGW GCC 2.x] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [VBOX 4.3 MTE] --> Anorganix : Packer
 {
     meta:
@@ -44225,7 +41066,6 @@ rule PseudoSigner 0.2 [VBOX 4.3 MTE] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [VOB ProtectCD 5] --> Anorganix : Packer
 {
     meta:
@@ -44239,7 +41079,6 @@ rule PseudoSigner 0.2 [VOB ProtectCD 5] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [WATCOM C/C++ EXE] --> Anorganix : Packer
 {
     meta:
@@ -44253,7 +41092,6 @@ rule PseudoSigner 0.2 [WATCOM C/C++ EXE] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [XCR 0.11] --> Anorganix : Packer
 {
     meta:
@@ -44267,7 +41105,6 @@ rule PseudoSigner 0.2 [XCR 0.11] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PseudoSigner 0.2 [Yoda's Protector 1.02] --> Anorganix : Packer
 {
     meta:
@@ -44281,7 +41118,6 @@ rule PseudoSigner 0.2 [Yoda's Protector 1.02] --> Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PUNiSHER V1.5 Demo-> FEUERRADER : Packer
 {
     meta:
@@ -44295,7 +41131,6 @@ rule PUNiSHER V1.5 Demo-> FEUERRADER : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RAZOR 1911 encruptor : Packer
 {
     meta:
@@ -44309,7 +41144,6 @@ rule RAZOR 1911 encruptor : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RCryptor v1.3 / v1.4 --> Vaska : Packer
 {
     meta:
@@ -44323,7 +41157,6 @@ rule RCryptor v1.3 / v1.4 --> Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RCryptor v1.3b --> Vaska : Packer
 {
     meta:
@@ -44337,7 +41170,6 @@ rule RCryptor v1.3b --> Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RCryptor v1.5 (Private) --> Vaska : Packer
 {
     meta:
@@ -44351,7 +41183,6 @@ rule RCryptor v1.5 (Private) --> Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RCryptor v1.6 -> Vaska : Packer
 {
     meta:
@@ -44365,7 +41196,6 @@ rule RCryptor v1.6 -> Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RCryptor v1.6b / v1.6c --> Vaska : Packer
 {
     meta:
@@ -44379,7 +41209,6 @@ rule RCryptor v1.6b / v1.6c --> Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RCryptor v1.6d --> Vaska : Packer
 {
     meta:
@@ -44393,7 +41222,6 @@ rule RCryptor v1.6d --> Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule REALbasic : Packer
 {
     meta:
@@ -44407,7 +41235,6 @@ rule REALbasic : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule REC v0.32 : Packer
 {
     meta:
@@ -44421,7 +41248,6 @@ rule REC v0.32 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule REC v0.34 [3] : Packer
 {
     meta:
@@ -44435,7 +41261,6 @@ rule REC v0.34 [3] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule REC, C0ded by ROSE : Packer
 {
     meta:
@@ -44449,7 +41274,6 @@ rule REC, C0ded by ROSE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule REC.Small v1.02 : Packer
 {
     meta:
@@ -44463,7 +41287,6 @@ rule REC.Small v1.02 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ReversingLabsProtector 0.7.4 beta -> Ap0x : Packer
 {
     meta:
@@ -44477,7 +41300,6 @@ rule ReversingLabsProtector 0.7.4 beta -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLP V0.7.3.beta -> ap0x : Packer
 {
     meta:
@@ -44491,7 +41313,6 @@ rule RLP V0.7.3.beta -> ap0x : Packer
     condition:
     	for any of them
 }
-
 rule RLPack Full Edition 1.17 -> Ap0x : Packer
 {
     meta:
@@ -44505,7 +41326,6 @@ rule RLPack Full Edition 1.17 -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack Full Edition 1.17 DLL -> Ap0x : Packer
 {
     meta:
@@ -44519,7 +41339,6 @@ rule RLPack Full Edition 1.17 DLL -> Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule RLPack V1.12-V1.14 (aPlib 0.43) -> ap0x : Packer
 {
     meta:
@@ -44533,7 +41352,6 @@ rule RLPack V1.12-V1.14 (aPlib 0.43) -> ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ROD High TECH -> Ayman : Packer
 {
     meta:
@@ -44547,7 +41365,6 @@ rule ROD High TECH -> Ayman : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SCAN /AV : Packer
 {
     meta:
@@ -44561,7 +41378,6 @@ rule SCAN /AV : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SEA-AXE : Packer
 {
     meta:
@@ -44575,7 +41391,6 @@ rule SEA-AXE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SEA-AXE v2.2 : Packer
 {
     meta:
@@ -44589,7 +41404,6 @@ rule SEA-AXE v2.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SecureEXE 3.0 -> ZipWorx : Packer
 {
     meta:
@@ -44603,7 +41417,6 @@ rule SecureEXE 3.0 -> ZipWorx : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SEN Debug Protector??? : Packer
 {
     meta:
@@ -44617,7 +41430,6 @@ rule SEN Debug Protector??? : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Shrink v1.0 : Packer
 {
     meta:
@@ -44631,7 +41443,6 @@ rule Shrink v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Shrink Wrap v1.4 : Packer
 {
     meta:
@@ -44645,7 +41456,6 @@ rule Shrink Wrap v1.4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Shrinker v3.3 : Packer
 {
     meta:
@@ -44659,7 +41469,6 @@ rule Shrinker v3.3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Simple UPX Cryptor V30.4.2005 -> MANtiCORE : Packer
 {
     meta:
@@ -44673,7 +41482,6 @@ rule Simple UPX Cryptor V30.4.2005 -> MANtiCORE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Simple UPX Cryptor v30.4.2005 [multi layer encryption] --> MANtiCORE : Packer
 {
     meta:
@@ -44687,7 +41495,6 @@ rule Simple UPX Cryptor v30.4.2005 [multi layer encryption] --> MANtiCORE : Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SimplePack V1.1X-V1.2X (Method2) -> bagie : Packer
 {
     meta:
@@ -44701,7 +41508,6 @@ rule SimplePack V1.1X-V1.2X (Method2) -> bagie : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SLR (OPTLINK) : Packer
 {
     meta:
@@ -44715,7 +41521,6 @@ rule SLR (OPTLINK) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SLR (OPTLINK) (1) : Packer
 {
     meta:
@@ -44729,7 +41534,6 @@ rule SLR (OPTLINK) (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SLVc0deProtector 1.1x -> SLV / ICU : Packer
 {
     meta:
@@ -44743,7 +41547,6 @@ rule SLVc0deProtector 1.1x -> SLV / ICU : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SLVc0deProtector v1.1 -> SLV (h) : Packer
 {
     meta:
@@ -44757,7 +41560,6 @@ rule SLVc0deProtector v1.1 -> SLV (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SmokesCrypt v1.2 : Packer
 {
     meta:
@@ -44771,7 +41573,6 @@ rule SmokesCrypt v1.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Soft Defender v1.1x -> Randy Li : Packer
 {
     meta:
@@ -44785,7 +41586,6 @@ rule Soft Defender v1.1x -> Randy Li : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SoftSentry v2.11 : Packer
 {
     meta:
@@ -44799,7 +41599,6 @@ rule SoftSentry v2.11 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SoftSentry v3.0 : Packer
 {
     meta:
@@ -44813,7 +41612,6 @@ rule SoftSentry v3.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SoftWrap : Packer
 {
     meta:
@@ -44827,7 +41625,6 @@ rule SoftWrap : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Spalsher 1.0 - 3.0 -> Amok : Packer
 {
     meta:
@@ -44841,7 +41638,6 @@ rule Spalsher 1.0 - 3.0 -> Amok : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Spalsher v1.0 - v3.0 : Packer
 {
     meta:
@@ -44855,7 +41651,6 @@ rule Spalsher v1.0 - v3.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SPEC b2 : Packer
 {
     meta:
@@ -44869,7 +41664,6 @@ rule SPEC b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule StarForce Protection Driver -> Protection Technology : Packer
 {
     meta:
@@ -44883,7 +41677,6 @@ rule StarForce Protection Driver -> Protection Technology : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule StarForce V3.X -> StarForce Copy Protection System : Packer
 {
     meta:
@@ -44897,7 +41690,6 @@ rule StarForce V3.X -> StarForce Copy Protection System : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule StarForce V3.X DLL -> StarForce Copy Protection System : Packer
 {
     meta:
@@ -44911,7 +41703,6 @@ rule StarForce V3.X DLL -> StarForce Copy Protection System : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Stealth PE v1.1 : Packer
 {
     meta:
@@ -44925,7 +41716,6 @@ rule Stealth PE v1.1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule STNPEE 1.13 : Packer
 {
     meta:
@@ -44939,7 +41729,6 @@ rule STNPEE 1.13 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Stone`s PE Encruptor v1.13 : Packer
 {
     meta:
@@ -44953,7 +41742,6 @@ rule Stone`s PE Encruptor v1.13 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Stony Brook Pascal v6.14 : Packer
 {
     meta:
@@ -44967,7 +41755,6 @@ rule Stony Brook Pascal v6.14 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Stony Brook Pascal+ v7.0 : Packer
 {
     meta:
@@ -44981,7 +41768,6 @@ rule Stony Brook Pascal+ v7.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Stranik 1.3 Modula/C/Pascal : Packer
 {
     meta:
@@ -44995,7 +41781,6 @@ rule Stranik 1.3 Modula/C/Pascal : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SuckStop v1.11 : Packer
 {
     meta:
@@ -45009,7 +41794,6 @@ rule SuckStop v1.11 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule SVK-Protector v1.11 : Packer
 {
     meta:
@@ -45023,7 +41807,6 @@ rule SVK-Protector v1.11 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Symantec Visual Cafe v3.0 : Packer
 {
     meta:
@@ -45037,7 +41820,6 @@ rule Symantec Visual Cafe v3.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule T-PACK v0.5c -m1 : Packer
 {
     meta:
@@ -45051,7 +41833,6 @@ rule T-PACK v0.5c -m1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule T-PACK v0.5c -m2 : Packer
 {
     meta:
@@ -45065,7 +41846,6 @@ rule T-PACK v0.5c -m2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TASM / MASM : Packer
 {
     meta:
@@ -45079,7 +41859,6 @@ rule TASM / MASM : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock 0.99 - 1.0 private -> tE! : Packer
 {
     meta:
@@ -45093,7 +41872,6 @@ rule tElock 0.99 - 1.0 private -> tE! : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.60 : Packer
 {
     meta:
@@ -45107,7 +41885,6 @@ rule tElock v0.60 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.70 : Packer
 {
     meta:
@@ -45121,7 +41898,6 @@ rule tElock v0.70 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.71 : Packer
 {
     meta:
@@ -45135,7 +41911,6 @@ rule tElock v0.71 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.71b2 : Packer
 {
     meta:
@@ -45149,7 +41924,6 @@ rule tElock v0.71b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.71b7 : Packer
 {
     meta:
@@ -45163,7 +41937,6 @@ rule tElock v0.71b7 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.80 : Packer
 {
     meta:
@@ -45177,7 +41950,6 @@ rule tElock v0.80 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.85f : Packer
 {
     meta:
@@ -45191,7 +41963,6 @@ rule tElock v0.85f : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.90 : Packer
 {
     meta:
@@ -45205,7 +41976,6 @@ rule tElock v0.90 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.98 : Packer
 {
     meta:
@@ -45219,7 +41989,6 @@ rule tElock v0.98 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Thinstall vx.x : Packer
 {
     meta:
@@ -45233,7 +42002,6 @@ rule Thinstall vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TopSpeed v3.01 1989 : Packer
 {
     meta:
@@ -45247,7 +42015,6 @@ rule TopSpeed v3.01 1989 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo C : Packer
 {
     meta:
@@ -45261,7 +42028,6 @@ rule Turbo C : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo C 1987 or Borland C++ 1991 : Packer
 {
     meta:
@@ -45275,7 +42041,6 @@ rule Turbo C 1987 or Borland C++ 1991 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo C 1988 : Packer
 {
     meta:
@@ -45289,7 +42054,6 @@ rule Turbo C 1988 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo C 1990 or Turbo C 1988 : Packer
 {
     meta:
@@ -45303,7 +42067,6 @@ rule Turbo C 1990 or Turbo C 1988 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo C++ 3.0 1990 : Packer
 {
     meta:
@@ -45317,7 +42080,6 @@ rule Turbo C++ 3.0 1990 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo or Borland Pascal v7.0 : Packer
 {
     meta:
@@ -45331,7 +42093,6 @@ rule Turbo or Borland Pascal v7.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo Pascal v2.0 1984 : Packer
 {
     meta:
@@ -45345,7 +42106,6 @@ rule Turbo Pascal v2.0 1984 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo Pascal v3.0 1985 : Packer
 {
     meta:
@@ -45359,7 +42119,6 @@ rule Turbo Pascal v3.0 1985 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TurboBAT v3.10 .. 5.0 : Packer
 {
     meta:
@@ -45373,7 +42132,6 @@ rule TurboBAT v3.10 .. 5.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TurboBAT v3.10 .. 5.0 (Patched) : Packer
 {
     meta:
@@ -45387,7 +42145,6 @@ rule TurboBAT v3.10 .. 5.0 (Patched) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TXT2COM (Read-A-Matic v1.0) : Packer
 {
     meta:
@@ -45401,7 +42158,6 @@ rule TXT2COM (Read-A-Matic v1.0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UG2002 Cruncher v0.3b3 : Packer
 {
     meta:
@@ -45415,7 +42171,6 @@ rule UG2002 Cruncher v0.3b3 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown by SMT : Packer
 {
     meta:
@@ -45429,7 +42184,6 @@ rule Unknown by SMT : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown encryptor (2) - "PK7Tjrvx" : Packer
 {
     meta:
@@ -45443,7 +42197,6 @@ rule Unknown encryptor (2) - "PK7Tjrvx" : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown packer (01) : Packer
 {
     meta:
@@ -45457,7 +42210,6 @@ rule Unknown packer (01) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown packer (02) : Packer
 {
     meta:
@@ -45471,7 +42223,6 @@ rule Unknown packer (02) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown packer (03) : Packer
 {
     meta:
@@ -45485,7 +42236,6 @@ rule Unknown packer (03) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown packer (04) : Packer
 {
     meta:
@@ -45499,7 +42249,6 @@ rule Unknown packer (04) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown packer (06) : Packer
 {
     meta:
@@ -45513,7 +42262,6 @@ rule Unknown packer (06) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown packer (07) : Packer
 {
     meta:
@@ -45527,7 +42275,6 @@ rule Unknown packer (07) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown Protected Mode compiler (1) : Packer
 {
     meta:
@@ -45541,7 +42288,6 @@ rule Unknown Protected Mode compiler (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown Protected Mode compiler (2) : Packer
 {
     meta:
@@ -45555,7 +42301,6 @@ rule Unknown Protected Mode compiler (2) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.10 - v0.12Beta -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45569,7 +42314,6 @@ rule Upack v0.10 - v0.12Beta -> Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack V0.1X-V0.2X -> Dwing : Packer
 {
     meta:
@@ -45583,7 +42327,6 @@ rule Upack V0.1X-V0.2X -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.21Beta -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45597,7 +42340,6 @@ rule Upack v0.21Beta -> Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.22 ~ v0.23Beta -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45611,7 +42353,6 @@ rule Upack v0.22 ~ v0.23Beta -> Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.24 ~ v0.28alpha -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45625,7 +42366,6 @@ rule Upack v0.24 ~ v0.28alpha -> Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.29 beta -> Dwing : Packer
 {
     meta:
@@ -45639,7 +42379,6 @@ rule Upack v0.29 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.2Beta : Packer
 {
     meta:
@@ -45653,7 +42392,6 @@ rule Upack v0.2Beta : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.30 beta -> Dwing : Packer
 {
     meta:
@@ -45667,7 +42405,6 @@ rule Upack v0.30 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.31 beta -> Dwing : Packer
 {
     meta:
@@ -45681,7 +42418,6 @@ rule Upack v0.31 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.32 beta -> Dwing : Packer
 {
     meta:
@@ -45695,7 +42431,6 @@ rule Upack v0.32 beta -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.33 ~ v0.34 Beta -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45709,7 +42444,6 @@ rule Upack v0.33 ~ v0.34 Beta -> Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack V0.36 -> Dwing : Packer
 {
     meta:
@@ -45723,7 +42457,6 @@ rule Upack V0.36 -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack V0.37-V0.39 -> Dwing : Packer
 {
     meta:
@@ -45737,7 +42470,6 @@ rule Upack V0.37-V0.39 -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack v0.39 final -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45751,7 +42483,6 @@ rule Upack v0.39 final -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.39 final -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45765,7 +42496,6 @@ rule Upack v0.39 final -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule Upack V0.3X -> Dwing : Packer
 {
     meta:
@@ -45779,7 +42509,6 @@ rule Upack V0.3X -> Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack_Patch -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45793,7 +42522,6 @@ rule Upack_Patch -> Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack_Patch or any Version -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45807,7 +42535,6 @@ rule Upack_Patch or any Version -> Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack_Unknown (DLL ???) -> Sign by hot_UNP : Packer
 {
     meta:
@@ -45821,7 +42548,6 @@ rule Upack_Unknown (DLL ???) -> Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX 0.50 - 0.70 : Packer
 {
     meta:
@@ -45835,7 +42561,6 @@ rule UPX 0.50 - 0.70 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX 0.72 : Packer
 {
     meta:
@@ -45849,7 +42574,6 @@ rule UPX 0.72 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX Modifier v0.1x : Packer
 {
     meta:
@@ -45863,7 +42587,6 @@ rule UPX Modifier v0.1x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX Protector v1.0x : Packer
 {
     meta:
@@ -45877,7 +42600,6 @@ rule UPX Protector v1.0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX Protector v1.0x (2) : Packer
 {
     meta:
@@ -45891,7 +42613,6 @@ rule UPX Protector v1.0x (2) : Packer
     condition:
     	for any of them
 }
-
 rule UPX v0.62 : Packer
 {
     meta:
@@ -45905,7 +42626,6 @@ rule UPX v0.62 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.62 [DLL] : Packer
 {
     meta:
@@ -45919,7 +42639,6 @@ rule UPX v0.62 [DLL] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.70 : Packer
 {
     meta:
@@ -45933,7 +42652,6 @@ rule UPX v0.70 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.70 : Packer
 {
     meta:
@@ -45947,7 +42665,6 @@ rule UPX v0.70 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.71 [DLL] : Packer
 {
     meta:
@@ -45961,7 +42678,6 @@ rule UPX v0.71 [DLL] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.72 : Packer
 {
     meta:
@@ -45975,7 +42691,6 @@ rule UPX v0.72 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.76.1 [dos exe] : Packer
 {
     meta:
@@ -45989,7 +42704,6 @@ rule UPX v0.76.1 [dos exe] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.76.1 [pe exe] : Packer
 {
     meta:
@@ -46003,7 +42717,6 @@ rule UPX v0.76.1 [pe exe] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.89.6 - v1.02 / v1.05 - v1.22 DLL : Packer
 {
     meta:
@@ -46017,7 +42730,6 @@ rule UPX v0.89.6 - v1.02 / v1.05 - v1.22 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX v0.89.6 - v1.02 / v1.05 -v1.22 (Delphi) stub : Packer
 {
     meta:
@@ -46031,7 +42743,6 @@ rule UPX v0.89.6 - v1.02 / v1.05 -v1.22 (Delphi) stub : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX [com] : Packer
 {
     meta:
@@ -46045,7 +42756,6 @@ rule UPX [com] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX$HiT v0.0.1 : Packer
 {
     meta:
@@ -46059,7 +42769,6 @@ rule UPX$HiT v0.0.1 : Packer
     condition:
     	for any of them
 }
-
 rule Upx-Lock 1.0 - 1.2 --> CyberDoom / Team-X & BoB / BobSoft : Packer
 {
     meta:
@@ -46073,7 +42782,6 @@ rule Upx-Lock 1.0 - 1.2 --> CyberDoom / Team-X & BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPX-Scrambler RC v1.x : Packer
 {
     meta:
@@ -46087,7 +42795,6 @@ rule UPX-Scrambler RC v1.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPXFreak V0.1 -> HMX0101 : Packer
 {
     meta:
@@ -46101,7 +42808,6 @@ rule UPXFreak V0.1 -> HMX0101 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UPXLock v1.0 -> CyberDoom : Packer
 {
     meta:
@@ -46115,7 +42821,6 @@ rule UPXLock v1.0 -> CyberDoom : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule USERNAME v3.00 : Packer
 {
     meta:
@@ -46129,7 +42834,6 @@ rule USERNAME v3.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VBOX v4.2 MTE : Packer
 {
     meta:
@@ -46143,7 +42847,6 @@ rule VBOX v4.2 MTE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VBOX v4.3 - v4.6 : Packer
 {
     meta:
@@ -46157,7 +42860,6 @@ rule VBOX v4.3 - v4.6 : Packer
     condition:
     	for any of them
 }
-
 rule Vcasm Protector V1.X -> vcasm : Packer
 {
     meta:
@@ -46171,7 +42873,6 @@ rule Vcasm Protector V1.X -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vcasm-Protector 1.0e -> vcasm : Packer
 {
     meta:
@@ -46185,7 +42886,6 @@ rule Vcasm-Protector 1.0e -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vcasm-Protector 1.1 - 1.2 -> vcasm : Packer
 {
     meta:
@@ -46199,7 +42899,6 @@ rule Vcasm-Protector 1.1 - 1.2 -> vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule vfp&exeNc V5.00 -> Wang JianGuo : Packer
 {
     meta:
@@ -46213,7 +42912,6 @@ rule vfp&exeNc V5.00 -> Wang JianGuo : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Video-Lan-Client : Packer
 {
     meta:
@@ -46227,7 +42925,6 @@ rule Video-Lan-Client : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Virogen Crypt v0.75 : Packer
 {
     meta:
@@ -46241,7 +42938,6 @@ rule Virogen Crypt v0.75 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Virogen`s PE Shrinker v0.14 : Packer
 {
     meta:
@@ -46255,7 +42951,6 @@ rule Virogen`s PE Shrinker v0.14 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VIRUS - I-Worm.KLEZ : Packer
 {
     meta:
@@ -46269,7 +42964,6 @@ rule VIRUS - I-Worm.KLEZ : Packer
     condition:
     	for any of them
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46283,7 +42977,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46297,7 +42990,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46311,7 +43003,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46325,7 +43016,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46339,7 +43029,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46353,7 +43042,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46367,7 +43055,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46381,7 +43068,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect v1.25 --> PolyTech : Packer
 {
     meta:
@@ -46395,7 +43081,6 @@ rule VMProtect v1.25 --> PolyTech : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule VMProtect V1.X -> PolyTech : Packer
 {
     meta:
@@ -46409,7 +43094,6 @@ rule VMProtect V1.X -> PolyTech : Packer
     condition:
     	for any of them
 }
-
 rule VOB ProtectCD : Packer
 {
     meta:
@@ -46423,7 +43107,6 @@ rule VOB ProtectCD : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vterminal V1.0X -> Lei Peng : Packer
 {
     meta:
@@ -46437,7 +43120,6 @@ rule Vterminal V1.0X -> Lei Peng : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Caz.1204 : Packer
 {
     meta:
@@ -46451,7 +43133,6 @@ rule Vx: Caz.1204 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: CIH Version 1.2 TTIT (! WIN95CIH !) : Packer
 {
     meta:
@@ -46465,7 +43146,6 @@ rule Vx: CIH Version 1.2 TTIT (! WIN95CIH !) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Compiler : Packer
 {
     meta:
@@ -46479,7 +43159,6 @@ rule Vx: Compiler : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Danish tiny : Packer
 {
     meta:
@@ -46493,7 +43172,6 @@ rule Vx: Danish tiny : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Eddie.2100 : Packer
 {
     meta:
@@ -46507,7 +43185,6 @@ rule Vx: Eddie.2100 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Eddie.based.1745 : Packer
 {
     meta:
@@ -46521,7 +43198,6 @@ rule Vx: Eddie.based.1745 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Explosion.1000 : Packer
 {
     meta:
@@ -46535,7 +43211,6 @@ rule Vx: Explosion.1000 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: FaxFree.Topo : Packer
 {
     meta:
@@ -46549,7 +43224,6 @@ rule Vx: FaxFree.Topo : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: GRUNT.2.Family : Packer
 {
     meta:
@@ -46563,7 +43237,6 @@ rule Vx: GRUNT.2.Family : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Hafen.1641 : Packer
 {
     meta:
@@ -46577,7 +43250,6 @@ rule Vx: Hafen.1641 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Haryanto : Packer
 {
     meta:
@@ -46591,7 +43263,6 @@ rule Vx: Haryanto : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Heloween.1172 : Packer
 {
     meta:
@@ -46605,7 +43276,6 @@ rule Vx: Heloween.1172 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Horse.1776 : Packer
 {
     meta:
@@ -46619,7 +43289,6 @@ rule Vx: Horse.1776 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Hymn.1865 : Packer
 {
     meta:
@@ -46633,7 +43302,6 @@ rule Vx: Hymn.1865 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Igor : Packer
 {
     meta:
@@ -46647,7 +43315,6 @@ rule Vx: Igor : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Involuntary.1349 : Packer
 {
     meta:
@@ -46661,7 +43328,6 @@ rule Vx: Involuntary.1349 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: KBDflags.1024 : Packer
 {
     meta:
@@ -46675,7 +43341,6 @@ rule Vx: KBDflags.1024 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Keypress.1212 : Packer
 {
     meta:
@@ -46689,7 +43354,6 @@ rule Vx: Keypress.1212 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Kuku.448 : Packer
 {
     meta:
@@ -46703,7 +43367,6 @@ rule Vx: Kuku.448 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: MTE (non-encrypted) : Packer
 {
     meta:
@@ -46717,7 +43380,6 @@ rule Vx: MTE (non-encrypted) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Ncu-Li.1688 : Packer
 {
     meta:
@@ -46731,7 +43393,6 @@ rule Vx: Ncu-Li.1688 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Necropolis : Packer
 {
     meta:
@@ -46745,7 +43406,6 @@ rule Vx: Necropolis : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Necropolis.1963 : Packer
 {
     meta:
@@ -46759,7 +43419,6 @@ rule Vx: Necropolis.1963 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Noon.1163 : Packer
 {
     meta:
@@ -46773,7 +43432,6 @@ rule Vx: Noon.1163 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: November 17.768 : Packer
 {
     meta:
@@ -46787,7 +43445,6 @@ rule Vx: November 17.768 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Number One : Packer
 {
     meta:
@@ -46801,7 +43458,6 @@ rule Vx: Number One : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Phoenix.927 : Packer
 {
     meta:
@@ -46815,7 +43471,6 @@ rule Vx: Phoenix.927 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Predator.2448 : Packer
 {
     meta:
@@ -46829,7 +43484,6 @@ rule Vx: Predator.2448 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Quake.518 : Packer
 {
     meta:
@@ -46843,7 +43497,6 @@ rule Vx: Quake.518 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: SK : Packer
 {
     meta:
@@ -46857,7 +43510,6 @@ rule Vx: SK : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Slowload : Packer
 {
     meta:
@@ -46871,7 +43523,6 @@ rule Vx: Slowload : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Sonik Youth : Packer
 {
     meta:
@@ -46885,7 +43536,6 @@ rule Vx: Sonik Youth : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Spanz : Packer
 {
     meta:
@@ -46899,7 +43549,6 @@ rule Vx: Spanz : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: SYP : Packer
 {
     meta:
@@ -46913,7 +43562,6 @@ rule Vx: SYP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: TravJack.883 : Packer
 {
     meta:
@@ -46927,7 +43575,6 @@ rule Vx: TravJack.883 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Trivial.25 : Packer
 {
     meta:
@@ -46941,7 +43588,6 @@ rule Vx: Trivial.25 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Trivial.46 : Packer
 {
     meta:
@@ -46955,7 +43601,6 @@ rule Vx: Trivial.46 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: Trojan.Telefoon : Packer
 {
     meta:
@@ -46969,7 +43614,6 @@ rule Vx: Trojan.Telefoon : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: VCL : Packer
 {
     meta:
@@ -46983,7 +43627,6 @@ rule Vx: VCL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: VCL (encrypted) : Packer
 {
     meta:
@@ -46997,7 +43640,6 @@ rule Vx: VCL (encrypted) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: VCL (encrypted) : Packer
 {
     meta:
@@ -47011,7 +43653,6 @@ rule Vx: VCL (encrypted) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: VirusConstructor(IVP).based : Packer
 {
     meta:
@@ -47025,7 +43666,6 @@ rule Vx: VirusConstructor(IVP).based : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: VirusConstructor.based : Packer
 {
     meta:
@@ -47039,7 +43679,6 @@ rule Vx: VirusConstructor.based : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: VirusConstructor.based : Packer
 {
     meta:
@@ -47053,7 +43692,6 @@ rule Vx: VirusConstructor.based : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: XPEH.4768 : Packer
 {
     meta:
@@ -47067,7 +43705,6 @@ rule Vx: XPEH.4768 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WARNING -> TROJAN -> HuiGeZi : Packer
 {
     meta:
@@ -47081,7 +43718,6 @@ rule WARNING -> TROJAN -> HuiGeZi : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WARNING -> TROJAN -> RobinPE : Packer
 {
     meta:
@@ -47095,7 +43731,6 @@ rule WARNING -> TROJAN -> RobinPE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WARNING -> TROJAN -> XiaoHui : Packer
 {
     meta:
@@ -47109,7 +43744,6 @@ rule WARNING -> TROJAN -> XiaoHui : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WATCOM C/C++ : Packer
 {
     meta:
@@ -47123,7 +43757,6 @@ rule WATCOM C/C++ : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WATCOM C/C++ 32 Run-Time System 1988-1994 : Packer
 {
     meta:
@@ -47137,7 +43770,6 @@ rule WATCOM C/C++ 32 Run-Time System 1988-1994 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WATCOM C/C++ 32 Run-Time System 1988-1995 : Packer
 {
     meta:
@@ -47151,7 +43783,6 @@ rule WATCOM C/C++ 32 Run-Time System 1988-1995 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WATCOM C/C++ 32 Run-Time System 1989, 1994 : Packer
 {
     meta:
@@ -47165,7 +43796,6 @@ rule WATCOM C/C++ 32 Run-Time System 1989, 1994 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WATCOM C/C++ Run-Time system+DOS4GW DOS Extender 1988-93 : Packer
 {
     meta:
@@ -47179,7 +43809,6 @@ rule WATCOM C/C++ Run-Time system+DOS4GW DOS Extender 1988-93 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WinRAR 32-bit SFX Module : Packer
 {
     meta:
@@ -47193,7 +43822,6 @@ rule WinRAR 32-bit SFX Module : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WinUpack v0.30 beta -> By Dwing : Packer
 {
     meta:
@@ -47207,7 +43835,6 @@ rule WinUpack v0.30 beta -> By Dwing : Packer
     condition:
     	for any of them
 }
-
 rule WinZip (32-bit) 6.x : Packer
 {
     meta:
@@ -47221,7 +43848,6 @@ rule WinZip (32-bit) 6.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule with added 'PK' signature : Packer
 {
     meta:
@@ -47235,7 +43861,6 @@ rule with added 'PK' signature : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPACK v3.00, v3.01 (Relocations pack) : Packer
 {
     meta:
@@ -47249,7 +43874,6 @@ rule WWPACK v3.00, v3.01 (Relocations pack) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPack32 v1.00, v1.11, v1.12, v1.20 : Packer
 {
     meta:
@@ -47263,7 +43887,6 @@ rule WWPack32 v1.00, v1.11, v1.12, v1.20 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule WWPack32 v1.x : Packer
 {
     meta:
@@ -47277,7 +43900,6 @@ rule WWPack32 v1.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule X-Pack v1.4.2 : Packer
 {
     meta:
@@ -47291,7 +43913,6 @@ rule X-Pack v1.4.2 : Packer
     condition:
     	for any of them
 }
-
 rule X-PEOR v0.99b : Packer
 {
     meta:
@@ -47305,7 +43926,6 @@ rule X-PEOR v0.99b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule X-PEOR v0.99b : Packer
 {
     meta:
@@ -47319,7 +43939,6 @@ rule X-PEOR v0.99b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule XCR v0.12 : Packer
 {
     meta:
@@ -47333,7 +43952,6 @@ rule XCR v0.12 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule XPack 1.52 - 1.64 : Packer
 {
     meta:
@@ -47347,7 +43965,6 @@ rule XPack 1.52 - 1.64 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule XPack 1.67 [com] : Packer
 {
     meta:
@@ -47361,7 +43978,6 @@ rule XPack 1.67 [com] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule xPEP 0.3x -> xIkUg : Packer
 {
     meta:
@@ -47375,7 +43991,6 @@ rule xPEP 0.3x -> xIkUg : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Xtreme-Protector v1.05 : Packer
 {
     meta:
@@ -47389,7 +44004,6 @@ rule Xtreme-Protector v1.05 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule y0da's Crypter v1.x / Modified : Packer
 {
     meta:
@@ -47403,7 +44017,6 @@ rule y0da's Crypter v1.x / Modified : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule yoda's Protector 1.0x-->Ashkbiz Danehkar : Packer
 {
     meta:
@@ -47417,7 +44030,6 @@ rule yoda's Protector 1.0x-->Ashkbiz Danehkar : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ZCode Win32/PE Protector v1.01 : Packer
 {
     meta:
@@ -47431,7 +44043,6 @@ rule ZCode Win32/PE Protector v1.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Zortech C : Packer
 {
     meta:
@@ -47445,7 +44056,6 @@ rule Zortech C : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Zortech C v2.00 1988, 1989 : Packer
 {
     meta:
@@ -47459,7 +44069,6 @@ rule Zortech C v2.00 1988, 1989 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Zortech C v3.0 : Packer
 {
     meta:
@@ -47473,7 +44082,6 @@ rule Zortech C v3.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Zurenava DOS Extender v0.45, v0.49 : Packer
 {
     meta:
@@ -47487,7 +44095,6 @@ rule Zurenava DOS Extender v0.45, v0.49 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule [MSLRH] V0.31 -> emadicius : Packer
 {
     meta:
@@ -47501,7 +44108,6 @@ rule [MSLRH] V0.31 -> emadicius : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ÐÄÆæEXEºÏ²¢Æ÷ -> yy66 : Packer
 {
     meta:
@@ -47515,7 +44121,6 @@ rule ÐÄÆæEXEºÏ²¢Æ÷ -> yy66 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule aPack v0.98b -> Jibz : Packer
 {
     meta:
@@ -47529,7 +44134,6 @@ rule aPack v0.98b -> Jibz : Packer
     condition:
     	for any of them
 }
-
 rule aPack v0.98b [com] : Packer
 {
     meta:
@@ -47543,7 +44147,6 @@ rule aPack v0.98b [com] : Packer
     condition:
     	for any of them
 }
-
 rule aPack v0.98b [exe] : Packer
 {
     meta:
@@ -47557,7 +44160,6 @@ rule aPack v0.98b [exe] : Packer
     condition:
     	for any of them
 }
-
 rule AsCrypt v0.1 -> SToRM - needs to be added : Packer
 {
     meta:
@@ -47571,7 +44173,6 @@ rule AsCrypt v0.1 -> SToRM - needs to be added : Packer
     condition:
     	for any of them
 }
-
 rule AsCrypt v0.1 -> SToRM - needs to be added : Packer
 {
     meta:
@@ -47585,7 +44186,6 @@ rule AsCrypt v0.1 -> SToRM - needs to be added : Packer
     condition:
     	for any of them
 }
-
 rule AsCrypt v0.1 -> SToRM - needs to be added : Packer
 {
     meta:
@@ -47599,7 +44199,6 @@ rule AsCrypt v0.1 -> SToRM - needs to be added : Packer
     condition:
     	for any of them
 }
-
 rule AsCrypt v0.1 -> SToRM - needs to be added : Packer
 {
     meta:
@@ -47613,7 +44212,6 @@ rule AsCrypt v0.1 -> SToRM - needs to be added : Packer
     condition:
     	for any of them
 }
-
 rule ASProtect v2.0 : Packer
 {
     meta:
@@ -47627,7 +44225,6 @@ rule ASProtect v2.0 : Packer
     condition:
     	for any of them
 }
-
 rule Crunch 4 : Packer
 {
     meta:
@@ -47641,7 +44238,6 @@ rule Crunch 4 : Packer
     condition:
     	for any of them
 }
-
 rule Crunch 5 Fusion 4 : Packer
 {
     meta:
@@ -47655,7 +44251,6 @@ rule Crunch 5 Fusion 4 : Packer
     condition:
     	for any of them
 }
-
 rule Dev-C++ v5 : Packer
 {
     meta:
@@ -47669,7 +44264,6 @@ rule Dev-C++ v5 : Packer
     condition:
     	for any of them
 }
-
 rule ENIGMA Protector -> Sukhov Vladimir : Packer
 {
     meta:
@@ -47683,7 +44277,6 @@ rule ENIGMA Protector -> Sukhov Vladimir : Packer
     condition:
     	for any of them
 }
-
 rule ENIGMA Protector V1.X-> Sukhov Vladimir : Packer
 {
     meta:
@@ -47697,7 +44290,6 @@ rule ENIGMA Protector V1.X-> Sukhov Vladimir : Packer
     condition:
     	for any of them
 }
-
 rule EXECryptor V2.1X -> softcomplete.com : Packer
 {
     meta:
@@ -47711,7 +44303,6 @@ rule EXECryptor V2.1X -> softcomplete.com : Packer
     condition:
     	for any of them
 }
-
 rule EXECryptor V2.2X -> softcomplete.com : Packer
 {
     meta:
@@ -47725,7 +44316,6 @@ rule EXECryptor V2.2X -> softcomplete.com : Packer
     condition:
     	for any of them
 }
-
 rule eXPressor v1.2 -> CGSoftLabs : Packer
 {
     meta:
@@ -47739,7 +44329,6 @@ rule eXPressor v1.2 -> CGSoftLabs : Packer
     condition:
     	for any of them
 }
-
 rule eXPressor v1.3 -> CGSoftLabs : Packer
 {
     meta:
@@ -47753,7 +44342,6 @@ rule eXPressor v1.3 -> CGSoftLabs : Packer
     condition:
     	for any of them
 }
-
 rule eXPressor v1.4 -> CGSoftLabs : Packer
 {
     meta:
@@ -47767,7 +44355,6 @@ rule eXPressor v1.4 -> CGSoftLabs : Packer
     condition:
     	for any of them
 }
-
 rule FASM v1.5x : Packer
 {
     meta:
@@ -47781,7 +44368,6 @@ rule FASM v1.5x : Packer
     condition:
     	for any of them
 }
-
 rule Free Pascal 0.99.10 : Packer
 {
     meta:
@@ -47795,7 +44381,6 @@ rule Free Pascal 0.99.10 : Packer
     condition:
     	for any of them
 }
-
 rule Free Pascal v1.0.10 (win32 console) : Packer
 {
     meta:
@@ -47809,7 +44394,6 @@ rule Free Pascal v1.0.10 (win32 console) : Packer
     condition:
     	for any of them
 }
-
 rule Free Pascal v1.06 : Packer
 {
     meta:
@@ -47823,7 +44407,6 @@ rule Free Pascal v1.06 : Packer
     condition:
     	for any of them
 }
-
 rule Gleam 1.00 : Packer
 {
     meta:
@@ -47837,7 +44420,6 @@ rule Gleam 1.00 : Packer
     condition:
     	for any of them
 }
-
 rule kkrunchy v0.17 -> F. Giesen : Packer
 {
     meta:
@@ -47851,7 +44433,6 @@ rule kkrunchy v0.17 -> F. Giesen : Packer
     condition:
     	for any of them
 }
-
 rule MEW 10 by Northfox : Packer
 {
     meta:
@@ -47865,7 +44446,6 @@ rule MEW 10 by Northfox : Packer
     condition:
     	for any of them
 }
-
 rule MEW 11 SE v1.1 : Packer
 {
     meta:
@@ -47879,7 +44459,6 @@ rule MEW 11 SE v1.1 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual Basic 5.0 : Packer
 {
     meta:
@@ -47893,7 +44472,6 @@ rule Microsoft Visual Basic 5.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual Basic v5.0 - v6.0 : Packer
 {
     meta:
@@ -47907,7 +44485,6 @@ rule Microsoft Visual Basic v5.0 - v6.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual Basic v5.0 - v6.0 : Packer
 {
     meta:
@@ -47921,7 +44498,6 @@ rule Microsoft Visual Basic v5.0 - v6.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual Basic v6.0 : Packer
 {
     meta:
@@ -47935,7 +44511,6 @@ rule Microsoft Visual Basic v6.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C 5.0 : Packer
 {
     meta:
@@ -47949,7 +44524,6 @@ rule Microsoft Visual C 5.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ 6.0 DLL (Debug) : Packer
 {
     meta:
@@ -47963,7 +44537,6 @@ rule Microsoft Visual C++ 6.0 DLL (Debug) : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ 7.0 DLL : Packer
 {
     meta:
@@ -47977,7 +44550,6 @@ rule Microsoft Visual C++ 7.0 DLL : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ v6.0 : Packer
 {
     meta:
@@ -47991,7 +44563,6 @@ rule Microsoft Visual C++ v6.0 : Packer
     condition:
     	for any of them
 }
-
 rule Microsoft Visual C++ v7.0 DLL : Packer
 {
     meta:
@@ -48005,7 +44576,6 @@ rule Microsoft Visual C++ v7.0 DLL : Packer
     condition:
     	for any of them
 }
-
 rule MoleBox v2.0 : Packer
 {
     meta:
@@ -48019,7 +44589,6 @@ rule MoleBox v2.0 : Packer
     condition:
     	for any of them
 }
-
 rule nSpack V2.3 -> LiuXingPing : Packer
 {
     meta:
@@ -48033,7 +44602,6 @@ rule nSpack V2.3 -> LiuXingPing : Packer
     condition:
     	for any of them
 }
-
 rule nSpack V2.x -> LiuXingPing : Packer
 {
     meta:
@@ -48047,7 +44615,6 @@ rule nSpack V2.x -> LiuXingPing : Packer
     condition:
     	for any of them
 }
-
 rule NsPack V2.X -> LiuXingPing : Packer
 {
     meta:
@@ -48061,7 +44628,6 @@ rule NsPack V2.X -> LiuXingPing : Packer
     condition:
     	for any of them
 }
-
 rule PE Spin v0.4x : Packer
 {
     meta:
@@ -48075,7 +44641,6 @@ rule PE Spin v0.4x : Packer
     condition:
     	for any of them
 }
-
 rule PE-Protect 0.9 by Cristoph Gabler 1998 : Packer
 {
     meta:
@@ -48089,7 +44654,6 @@ rule PE-Protect 0.9 by Cristoph Gabler 1998 : Packer
     condition:
     	for any of them
 }
-
 rule PeStubOEP v1.x : Packer
 {
     meta:
@@ -48103,7 +44667,6 @@ rule PeStubOEP v1.x : Packer
     condition:
     	for any of them
 }
-
 rule PeStubOEP v1.x : Packer
 {
     meta:
@@ -48117,7 +44680,6 @@ rule PeStubOEP v1.x : Packer
     condition:
     	for any of them
 }
-
 rule PeStubOEP v1.x : Packer
 {
     meta:
@@ -48131,7 +44693,6 @@ rule PeStubOEP v1.x : Packer
     condition:
     	for any of them
 }
-
 rule Petite 1.3 : Packer
 {
     meta:
@@ -48145,7 +44706,6 @@ rule Petite 1.3 : Packer
     condition:
     	for any of them
 }
-
 rule Petite 1.4 : Packer
 {
     meta:
@@ -48159,7 +44719,6 @@ rule Petite 1.4 : Packer
     condition:
     	for any of them
 }
-
 rule Petite 2.1 : Packer
 {
     meta:
@@ -48173,7 +44732,6 @@ rule Petite 2.1 : Packer
     condition:
     	for any of them
 }
-
 rule PolyCrypt PE - 2.1.4b/2.1.5 -> JLab Software Creations (h-oep) : Packer
 {
     meta:
@@ -48187,7 +44745,6 @@ rule PolyCrypt PE - 2.1.4b/2.1.5 -> JLab Software Creations (h-oep) : Packer
     condition:
     	for any of them
 }
-
 rule PolyEnE 0.01+ by Lennart Hedlund : Packer
 {
     meta:
@@ -48201,7 +44758,6 @@ rule PolyEnE 0.01+ by Lennart Hedlund : Packer
     condition:
     	for any of them
 }
-
 rule Private EXE v2.0a : Packer
 {
     meta:
@@ -48215,7 +44771,6 @@ rule Private EXE v2.0a : Packer
     condition:
     	for any of them
 }
-
 rule RAR-SFX Archive (1) : Packer
 {
     meta:
@@ -48229,7 +44784,6 @@ rule RAR-SFX Archive (1) : Packer
     condition:
     	for any of them
 }
-
 rule RatPacker (Glue) stub : Packer
 {
     meta:
@@ -48243,7 +44797,6 @@ rule RatPacker (Glue) stub : Packer
     condition:
     	for any of them
 }
-
 rule RCryptor v1.1 --> Vaska : Packer
 {
     meta:
@@ -48257,7 +44810,6 @@ rule RCryptor v1.1 --> Vaska : Packer
     condition:
     	for any of them
 }
-
 rule Safe 2.0 : Packer
 {
     meta:
@@ -48271,7 +44823,6 @@ rule Safe 2.0 : Packer
     condition:
     	for any of them
 }
-
 rule SafeDisc v4 : Packer
 {
     meta:
@@ -48285,7 +44836,6 @@ rule SafeDisc v4 : Packer
     condition:
     	for any of them
 }
-
 rule Setup2Go Installer Stub : Packer
 {
     meta:
@@ -48299,7 +44849,6 @@ rule Setup2Go Installer Stub : Packer
     condition:
     	for any of them
 }
-
 rule Shrinker 3.2 : Packer
 {
     meta:
@@ -48313,7 +44862,6 @@ rule Shrinker 3.2 : Packer
     condition:
     	for any of them
 }
-
 rule Shrinker 3.3 : Packer
 {
     meta:
@@ -48327,7 +44875,6 @@ rule Shrinker 3.3 : Packer
     condition:
     	for any of them
 }
-
 rule Shrinker 3.4 : Packer
 {
     meta:
@@ -48341,7 +44888,6 @@ rule Shrinker 3.4 : Packer
     condition:
     	for any of them
 }
-
 rule SPLayer v0.08 : Packer
 {
     meta:
@@ -48355,7 +44901,6 @@ rule SPLayer v0.08 : Packer
     condition:
     	for any of them
 }
-
 rule Trilobyte's JPEG graphics Library : Packer
 {
     meta:
@@ -48369,7 +44914,6 @@ rule Trilobyte's JPEG graphics Library : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.29 Beta ~ v0.31 Beta -> Sign by hot_UNP : Packer
 {
     meta:
@@ -48383,7 +44927,6 @@ rule Upack v0.29 Beta ~ v0.31 Beta -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.32 Beta (Patch) -> Sign by hot_UNP : Packer
 {
     meta:
@@ -48397,7 +44940,6 @@ rule Upack v0.32 Beta (Patch) -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.32 Beta -> Sign by hot_UNP : Packer
 {
     meta:
@@ -48411,7 +44953,6 @@ rule Upack v0.32 Beta -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.32 Beta -> Sign by hot_UNP : Packer
 {
     meta:
@@ -48425,7 +44966,6 @@ rule Upack v0.32 Beta -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.35 alpha -> Sign by hot_UNP : Packer
 {
     meta:
@@ -48439,7 +44979,6 @@ rule Upack v0.35 alpha -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.36 alpha -> Sign by hot_UNP : Packer
 {
     meta:
@@ -48453,7 +44992,6 @@ rule Upack v0.36 alpha -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule Upack v0.37 ~ v0.38 Beta (Strip base relocation table Option)-> Sign by hot_UNP : Packer
 {
     meta:
@@ -48467,7 +45005,6 @@ rule Upack v0.37 ~ v0.38 Beta (Strip base relocation table Option)-> Sign by hot
     condition:
     	for any of them
 }
-
 rule UPX$HiT 0.0.1 -> sibaway7@yahoo.com : Packer
 {
     meta:
@@ -48481,7 +45018,6 @@ rule UPX$HiT 0.0.1 -> sibaway7@yahoo.com : Packer
     condition:
     	for any of them
 }
-
 rule VIRUS - I-Worm.Hybris : Packer
 {
     meta:
@@ -48495,7 +45031,6 @@ rule VIRUS - I-Worm.Hybris : Packer
     condition:
     	for any of them
 }
-
 rule WinUpack v0.30 beta -> By Dwing (h) : Packer
 {
     meta:
@@ -48509,7 +45044,6 @@ rule WinUpack v0.30 beta -> By Dwing (h) : Packer
     condition:
     	for any of them
 }
-
 rule ASPack 1.08 : Packer
 {
     meta:
@@ -48523,7 +45057,6 @@ rule ASPack 1.08 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.06b : Packer
 {
     meta:
@@ -48537,7 +45070,6 @@ rule ASPack v1.06b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.06b : Packer
 {
     meta:
@@ -48551,7 +45083,6 @@ rule ASPack v1.06b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.06b : Packer
 {
     meta:
@@ -48565,7 +45096,6 @@ rule ASPack v1.06b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.07b : Packer
 {
     meta:
@@ -48579,7 +45109,6 @@ rule ASPack v1.07b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.07b : Packer
 {
     meta:
@@ -48593,7 +45122,6 @@ rule ASPack v1.07b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.07b : Packer
 {
     meta:
@@ -48607,7 +45135,6 @@ rule ASPack v1.07b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08 : Packer
 {
     meta:
@@ -48621,7 +45148,6 @@ rule ASPack v1.08 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08 : Packer
 {
     meta:
@@ -48635,7 +45161,6 @@ rule ASPack v1.08 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08 : Packer
 {
     meta:
@@ -48649,7 +45174,6 @@ rule ASPack v1.08 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.01 : Packer
 {
     meta:
@@ -48663,7 +45187,6 @@ rule ASPack v1.08.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.01 : Packer
 {
     meta:
@@ -48677,7 +45200,6 @@ rule ASPack v1.08.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.01 : Packer
 {
     meta:
@@ -48691,7 +45213,6 @@ rule ASPack v1.08.01 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.02 : Packer
 {
     meta:
@@ -48705,7 +45226,6 @@ rule ASPack v1.08.02 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.02 : Packer
 {
     meta:
@@ -48719,7 +45239,6 @@ rule ASPack v1.08.02 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v1.08.04 : Packer
 {
     meta:
@@ -48733,7 +45252,6 @@ rule ASPack v1.08.04 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASPack v2.11 : Packer
 {
     meta:
@@ -48747,7 +45265,6 @@ rule ASPack v2.11 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.1 BRS : Packer
 {
     meta:
@@ -48761,7 +45278,6 @@ rule ASProtect v1.1 BRS : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.1 MTEb : Packer
 {
     meta:
@@ -48775,7 +45291,6 @@ rule ASProtect v1.1 MTEb : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect v1.2 : Packer
 {
     meta:
@@ -48789,7 +45304,6 @@ rule ASProtect v1.2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule ASProtect vx.x : Packer
 {
     meta:
@@ -48803,7 +45317,6 @@ rule ASProtect vx.x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch V5.0 -> Bitarts : Packer
 {
     meta:
@@ -48817,7 +45330,6 @@ rule Crunch V5.0 -> Bitarts : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Crunch/PE v5.0 : Packer
 {
     meta:
@@ -48831,7 +45343,6 @@ rule Crunch/PE v5.0 : Packer
     condition:
     	for any of them
 }
-
 rule EP v2.0 : Packer
 {
     meta:
@@ -48845,7 +45356,6 @@ rule EP v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule EXEPACK v5.31.009 (LINK v3.69) : Packer
 {
     meta:
@@ -48859,7 +45369,6 @@ rule EXEPACK v5.31.009 (LINK v3.69) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Hasp 4 envelope dongle (Alladin) : Packer
 {
     meta:
@@ -48873,7 +45382,6 @@ rule Hasp 4 envelope dongle (Alladin) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Hide&Protect V1.0X-> SoftWar Company : Packer
 {
     meta:
@@ -48887,7 +45395,6 @@ rule Hide&Protect V1.0X-> SoftWar Company : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Mew 10 v1.0 (Eng) -> Northfox : Packer
 {
     meta:
@@ -48901,7 +45408,6 @@ rule Mew 10 v1.0 (Eng) -> Northfox : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule MEW 11 SE v1.1  -> Northfox [HCC] : Packer
 {
     meta:
@@ -48915,7 +45421,6 @@ rule MEW 11 SE v1.1  -> Northfox [HCC] : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NeoLite v1.0 : Packer
 {
     meta:
@@ -48929,7 +45434,6 @@ rule NeoLite v1.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Neolite v2.0 : Packer
 {
     meta:
@@ -48943,7 +45447,6 @@ rule Neolite v2.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule NFO v1.x modified : Packer
 {
     meta:
@@ -48957,7 +45460,6 @@ rule NFO v1.x modified : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Obsidium v1.0.0.61 : Packer
 {
     meta:
@@ -48971,7 +45473,6 @@ rule Obsidium v1.0.0.61 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PCIENC Cryptor : Packer
 {
     meta:
@@ -48985,7 +45486,6 @@ rule PCIENC Cryptor : Packer
     condition:
     	for any of them
 }
-
 rule PEQuake V0.06 -> forgat : Packer
 {
     meta:
@@ -48999,7 +45499,6 @@ rule PEQuake V0.06 -> forgat : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PESHiELD v0.25 : Packer
 {
     meta:
@@ -49013,7 +45512,6 @@ rule PESHiELD v0.25 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule pex V0.99 -> params : Packer
 {
     meta:
@@ -49027,7 +45525,6 @@ rule pex V0.99 -> params : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule PROTECT! EXE/COM v5.0 : Packer
 {
     meta:
@@ -49041,7 +45538,6 @@ rule PROTECT! EXE/COM v5.0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Safeguard 1.0 -> Simonzh : Packer
 {
     meta:
@@ -49055,7 +45551,6 @@ rule Safeguard 1.0 -> Simonzh : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Symantec C v2.10, v4.00 or Zortech C v3.0r1 : Packer
 {
     meta:
@@ -49069,7 +45564,6 @@ rule Symantec C v2.10, v4.00 or Zortech C v3.0r1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TAV : Packer
 {
     meta:
@@ -49083,7 +45577,6 @@ rule TAV : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.7x - v0.84 : Packer
 {
     meta:
@@ -49097,7 +45590,6 @@ rule tElock v0.7x - v0.84 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.92a : Packer
 {
     meta:
@@ -49111,7 +45603,6 @@ rule tElock v0.92a : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.95 : Packer
 {
     meta:
@@ -49125,7 +45616,6 @@ rule tElock v0.95 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.96 : Packer
 {
     meta:
@@ -49139,7 +45629,6 @@ rule tElock v0.96 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.98b1 : Packer
 {
     meta:
@@ -49153,7 +45642,6 @@ rule tElock v0.98b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v0.98b2 : Packer
 {
     meta:
@@ -49167,7 +45655,6 @@ rule tElock v0.98b2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule tElock v1.00 : Packer
 {
     meta:
@@ -49181,7 +45668,6 @@ rule tElock v1.00 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Turbo Basic v1.0 1987 : Packer
 {
     meta:
@@ -49195,7 +45681,6 @@ rule Turbo Basic v1.0 1987 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule TXT2COM : Packer
 {
     meta:
@@ -49209,7 +45694,6 @@ rule TXT2COM : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule UNITA3 (tm) by Sanitary Equipment Research : Packer
 {
     meta:
@@ -49223,7 +45707,6 @@ rule UNITA3 (tm) by Sanitary Equipment Research : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Unknown Packer -> Northfox : Packer
 {
     meta:
@@ -49237,7 +45720,6 @@ rule Unknown Packer -> Northfox : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Upack_Patch -> Sign by hot_UNP : Packer
 {
     meta:
@@ -49251,7 +45733,6 @@ rule Upack_Patch -> Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-
 rule VOB ProtectCD 5 : Packer
 {
     meta:
@@ -49265,7 +45746,6 @@ rule VOB ProtectCD 5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-
 rule Vx: GRUNT.1.Family : Packer
 {
     meta:
