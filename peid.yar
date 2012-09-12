@@ -346,17 +346,6 @@ rule PseudoSigner_0dot2_Video_Lan_Client_Anorganix : Packer
     strings:
         $1 = { 55 89 E5 83 EC 08 90 90 90 90 90 90 90 90 90 90 90 90 90 90 01 FF FF 01 01 01 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 00 01 00 01 90 90 00 01 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 52 56 51 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 A7 72 45 00 C3 }
         $2 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 9C 52 56 53 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 21 71 45 00 C3 }
         $3 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 52 56 51 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 A7 72 45 00 C3 }
@@ -3727,7994 +3716,672 @@ rule PseudoSigner_0dot2_ZCode_1dot01_Anorganix : Packer
         date_added = "2012/07/17"
  
     strings:
-        $1 = { E9 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 E9 FB FF FF FF C3 68 00 00 00 00 64 FF 35 00 00 00 00 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 57 51 9C 50 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-        $2 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 9C 57 52 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-        $3 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 50 57 53 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-        $4 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 9C 50 55 51 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-        $5 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 53 52 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-        $6 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 52 9C 50 51 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-        $7 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 52 51 55 57 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-        $8 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 50 9C 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-        $9 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 9C 51 50 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-        $10 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 57 54 53 9C 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-        $11 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 50 51 57 50 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-        $12 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 57 52 50 51 51 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-        $13 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 50 57 55 51 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-        $14 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 50 52 54 9C 53 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-        $15 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 56 53 51 55 9C 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
-        $16 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-        $17 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 56 55 50 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-        $18 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 55 50 55 56 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-        $19 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 52 53 56 9C 55 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-        $20 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 53 52 50 51 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-        $21 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 52 53 55 52 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-        $22 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 51 55 52 51 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-        $23 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 52 55 51 53 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-        $24 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 53 54 51 55 56 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 52 53 56 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 52 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 53 50 51 51 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 57 53 56 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 50 53 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 56 50 52 53 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 51 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 53 50 54 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 51 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 56 51 52 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 52 53 52 51 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 51 55 56 53 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 53 51 50 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 51 56 53 52 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 51 53 57 52 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 57 53 57 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 57 51 53 9C 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 50 53 51 57 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 52 9C 55 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 50 53 9C 57 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 55 53 51 50 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 50 52 51 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 53 9C 51 57 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 52 9C 52 51 57 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 9C 57 52 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 53 54 57 55 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 51 53 50 52 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 51 56 52 50 9C 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 57 55 53 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 50 9C 53 50 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 54 53 9C 55 52 50 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 56 55 55 9C 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 52 51 57 55 9C 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 50 53 51 56 55 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 9C 56 53 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 57 55 52 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 83 ED 02 66 89 45 00 46 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 56 50 55 51 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 54 55 51 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 50 9C 56 53 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 52 50 56 9C 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5A 5B 59 9D 5E 58 5F 5D 5F C3 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 50 51 56 55 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 55 52 50 53 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 56 56 50 55 51 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E8 89 45 04 9C 8F 45 00 E9 01 7D 00 00 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 55 52 54 50 51 53 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 57 53 55 56 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 52 9C 51 56 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 51 57 53 9C 52 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 56 52 53 55 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 53 56 52 51 50 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 53 55 50 9C 55 56 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 51 9C 56 53 55 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 53 53 9C 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 57 56 55 56 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 57 56 52 55 50 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 50 53 53 52 57 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 51 56 52 56 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 52 57 50 57 51 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 9C 52 50 53 57 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 9C 51 57 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 57 53 52 9C 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 9C 57 50 53 55 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 55 9C 56 57 50 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 57 51 50 52 55 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 50 56 52 57 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 9C 56 50 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 55 9C 56 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8A 45 00 83 ED 02 00 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 51 56 57 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 53 50 52 56 55 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 56 57 53 55 51 52 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 53 51 57 9C 56 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 54 53 56 57 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 52 53 51 55 50 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 80 E0 3C 8B 14 07 83 ED 04 89 55 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 55 51 57 52 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 50 52 51 57 53 55 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 55 52 51 56 57 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 57 55 53 51 52 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 55 56 52 56 51 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 51 9C 57 55 52 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 52 50 56 53 57 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 50 52 57 53 9C 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 51 9C 50 57 53 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 50 55 57 56 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 9C 51 56 51 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 50 55 52 56 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 50 52 57 56 51 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 52 51 9C 52 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 53 9C 54 55 51 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 52 50 56 56 9C 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 57 51 55 55 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 57 9C 51 53 52 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 52 51 9C 53 53 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 9C 55 53 56 52 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 59 5B 5A 5E 58 5D 9D 58 5F C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 9C 55 50 54 51 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 51 53 50 9C 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 52 53 56 50 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 51 53 55 51 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 51 52 55 51 50 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 51 53 55 56 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 8D 76 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 51 50 55 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 51 55 52 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 50 52 56 51 50 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5F 5B 5A 59 5E 5A 58 5D 9D C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 55 56 56 57 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 51 52 55 52 50 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 57 53 52 55 51 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 56 53 57 52 51 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 46 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 52 56 53 57 51 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 52 55 56 51 50 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 52 56 57 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 51 56 57 52 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 53 56 51 55 9C 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 53 50 56 53 51 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 56 55 56 9C 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 9C 52 50 57 56 53 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 51 50 55 53 56 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 9C 54 56 53 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 52 57 51 9C 53 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 55 52 9C 57 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 50 55 56 51 57 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 55 51 53 53 57 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 53 51 55 57 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 56 55 52 50 55 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 50 52 51 55 56 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 56 53 55 53 51 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 56 51 57 53 50 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 56 57 51 52 53 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 52 53 52 56 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 51 53 57 56 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 56 53 52 50 55 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 36 8A 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 55 57 53 56 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 57 53 51 52 55 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 5E 59 5D 5A 59 5B 5F 58 9D C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 57 53 52 50 51 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 8A 4D 08 83 C5 02 0F A5 D0 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 8A 4D 08 83 C5 02 0F AD D0 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8D 47 50 39 C5 0F 87 ?? ?? ?? ?? 8D 4F 40 29 E1 8D 45 80 29 C8 89 C4 9C 56 89 FE 8D BD 40 FF FF FF 57 FC F3 A4 5F 5E 9D E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 57 52 51 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 57 50 55 56 57 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 52 56 50 53 56 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 57 55 56 51 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 57 55 50 52 9C 56 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 53 53 50 9C 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 52 53 50 9C 57 56 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 51 9C 56 50 57 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 9C 50 56 51 55 57 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 52 51 55 55 56 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 57 9C 56 50 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 52 53 51 55 9C 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 52 53 51 52 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 66 8B 55 02 F6 D0 F6 D2 83 ED 02 20 D0 66 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 8A 4D 02 83 ED 02 66 D3 E8 66 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 8A 4D 02 83 ED 02 66 D3 E0 66 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 53 55 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 51 9C 55 52 53 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 52 53 57 51 55 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 55 54 52 51 9C 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 51 52 55 57 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 56 50 51 53 52 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 56 53 57 51 52 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 51 9C 52 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 51 55 9C 50 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 0F B6 06 83 ED 02 46 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 53 9C 57 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 0F B6 06 66 98 98 46 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 53 57 51 55 56 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 9C 50 56 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 55 50 9C 56 54 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 50 57 53 56 9C 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 50 53 56 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 56 50 9C 55 53 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 52 50 56 57 51 9C 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 56 9C 56 53 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 56 53 55 57 9C 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 53 9C 57 55 51 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 50 56 53 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 59 5D 9D 5F 5A 5E 58 5B 5A C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 50 55 51 56 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 51 9C 53 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 C6 04 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 56 51 50 9C 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 53 9C 50 50 56 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 50 53 51 56 55 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 51 53 52 57 55 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 51 51 9C 52 57 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 9C 56 53 55 57 54 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 9C 55 56 57 51 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 9C 50 51 57 53 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 9C 57 51 50 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 56 57 55 53 9C 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 53 51 50 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 53 50 55 9C 57 51 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 55 57 53 9C 50 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 56 52 9C 50 53 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5F 5D 5B 58 9D 5A 5E 59 59 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 52 56 53 50 55 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 50 55 56 53 9C 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 52 57 50 53 55 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 52 53 50 56 57 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 9C 50 53 56 51 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 52 9C 57 54 55 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 57 50 9C 56 52 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 53 57 50 52 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 9C 50 55 53 54 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 57 52 55 50 9C 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 56 53 55 57 9C 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 50 57 53 56 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 56 57 53 9C 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 56 9C 57 53 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 53 9C 55 51 54 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 53 50 57 9C 55 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 EC 5B 5E 5D 5D 9D 5F 58 5B 59 5A C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 50 56 55 53 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 9C 55 53 51 56 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 56 50 52 57 57 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 53 53 56 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 53 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 53 51 9C 55 54 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 53 50 55 51 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 50 50 56 53 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 52 50 51 57 56 55 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 9C 56 50 51 55 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 56 51 50 9C 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 52 51 9C 57 53 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 56 51 52 50 55 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 53 56 51 57 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 9C 52 52 51 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 51 55 50 57 9C 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 9C 56 57 51 50 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 52 55 56 55 50 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 52 55 50 51 57 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 51 52 50 51 9C 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 36 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 57 52 51 9C 53 56 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 51 51 56 50 52 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 57 51 56 53 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 57 50 9C 53 56 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 57 51 52 53 53 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 52 57 50 55 53 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8A 06 46 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 52 9C 57 56 50 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 53 57 52 57 56 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 53 51 56 52 9C 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 9C 56 52 51 53 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 57 56 52 50 56 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 53 56 50 56 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 53 51 52 50 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 9C 50 57 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 55 56 54 57 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 54 51 57 52 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 50 56 57 51 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 52 55 56 55 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 50 9C 55 52 50 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 50 52 52 57 55 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 53 9C 52 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 50 51 9C 52 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 54 9C 51 56 55 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 9C 56 51 52 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 56 9C 55 52 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 56 55 51 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 52 55 56 56 9C 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 55 56 51 55 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 55 51 9C 56 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 50 55 51 9C 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 55 57 51 56 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 52 57 57 50 9C 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 9C 55 57 50 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 9C 52 57 55 50 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 56 50 57 55 52 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 55 56 52 9C 57 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 56 9C 57 50 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 55 9C 57 56 51 50 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 EC 5A 5E 58 59 5E 5F 9D 5D 5A 5B C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 50 56 51 57 56 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 46 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 9C 53 56 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 89 EC 5A 5B 58 5F 5E 5A 9D 5A 5D 59 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 52 53 57 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 55 51 55 9C 56 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 53 57 52 56 51 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 56 56 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 53 55 51 56 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 53 51 55 51 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 51 51 9C 52 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 56 57 57 51 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 8D 76 02 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 53 57 51 52 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 53 51 55 57 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 53 50 55 9C 51 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 52 53 55 57 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 53 56 53 52 55 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 9C 56 53 57 55 52 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 9C 56 53 57 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 57 9C 53 53 55 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 55 9C 56 53 52 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 5A 58 5F 5A 5B 5E 9D 5D 59 59 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 53 55 9C 55 56 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 50 53 56 55 57 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 55 54 56 52 57 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 54 55 56 52 53 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 53 57 52 57 56 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 55 56 50 53 9C 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 0F B6 06 46 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 52 9C 53 57 50 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 56 53 53 55 57 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 53 56 52 57 56 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 55 53 56 51 57 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 9C 52 56 55 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 EE FC E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 54 57 56 52 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 9C 53 57 55 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 53 55 57 52 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5D 9D 5A 5F 5D 5B 5E 59 58 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 55 9C 57 57 56 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 53 9C 56 57 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 50 9C 53 55 57 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 83 C6 02 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 50 57 9C 55 52 56 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 52 55 9C 52 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 9C 50 53 57 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 57 56 55 53 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 53 9C 55 56 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 50 9C 51 57 52 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 9C 55 53 57 51 53 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 9C 50 55 53 51 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 52 52 9C 56 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 57 52 55 51 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 54 52 57 51 55 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 56 53 57 51 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 53 53 55 9C 57 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 9C 56 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 57 9C 54 53 55 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 57 56 57 9C 51 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 56 9C 53 54 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 57 51 9C 50 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 9C 57 52 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 50 57 53 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 9C 50 55 51 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 53 52 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 52 9C 50 51 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 52 51 55 57 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 50 9C 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 9C 51 50 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 57 54 53 9C 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 50 51 57 50 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 57 52 50 51 51 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 50 57 55 51 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 50 52 54 9C 53 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 56 53 51 55 9C 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 56 55 50 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 55 50 55 56 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 52 53 56 9C 55 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 53 52 50 51 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 52 53 55 52 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 51 55 52 51 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 52 55 51 53 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 53 54 51 55 56 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 52 53 56 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 52 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 53 50 51 51 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 57 53 56 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 50 53 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 56 50 52 53 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 51 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 53 50 54 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 51 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 56 51 52 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 52 53 52 51 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 51 55 56 53 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 53 51 50 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 51 56 53 52 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 51 53 57 52 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 57 53 57 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 57 51 53 9C 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 50 53 51 57 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 52 9C 55 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 50 53 9C 57 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 55 53 51 50 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 50 52 51 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 53 9C 51 57 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 52 9C 52 51 57 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 9C 57 52 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 53 54 57 55 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 51 53 50 52 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 51 56 52 50 9C 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 57 55 53 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 50 9C 53 50 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 54 53 9C 55 52 50 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 56 55 55 9C 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 52 51 57 55 9C 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 50 53 51 56 55 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 9C 56 53 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 57 55 52 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 83 ED 02 66 89 45 00 46 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 56 50 55 51 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 54 55 51 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 50 9C 56 53 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 52 50 56 9C 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5A 5B 59 9D 5E 58 5F 5D 5F C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 50 51 56 55 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 55 52 50 53 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 56 56 50 55 51 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E8 89 45 04 9C 8F 45 00 E9 01 7D 00 00 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 55 52 54 50 51 53 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 57 53 55 56 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 52 9C 51 56 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 51 57 53 9C 52 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 56 52 53 55 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 53 56 52 51 50 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 53 55 50 9C 55 56 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 51 9C 56 53 55 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 53 53 9C 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 57 56 55 56 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 57 56 52 55 50 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 50 53 53 52 57 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 51 56 52 56 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 52 57 50 57 51 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 9C 52 50 53 57 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 9C 51 57 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 57 53 52 9C 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 9C 57 50 53 55 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 55 9C 56 57 50 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 57 51 50 52 55 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 50 56 52 57 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 9C 56 50 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 55 9C 56 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8A 45 00 83 ED 02 00 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 51 56 57 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 53 50 52 56 55 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 56 57 53 55 51 52 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 53 51 57 9C 56 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 54 53 56 57 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 52 53 51 55 50 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 80 E0 3C 8B 14 07 83 ED 04 89 55 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 55 51 57 52 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 50 52 51 57 53 55 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 55 52 51 56 57 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 57 55 53 51 52 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 55 56 52 56 51 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 51 9C 57 55 52 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 52 50 56 53 57 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 50 52 57 53 9C 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 51 9C 50 57 53 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 50 55 57 56 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 9C 51 56 51 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 50 55 52 56 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 50 52 57 56 51 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 52 51 9C 52 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 53 9C 54 55 51 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 52 50 56 56 9C 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 57 51 55 55 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 57 9C 51 53 52 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 52 51 9C 53 53 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 9C 55 53 56 52 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 59 5B 5A 5E 58 5D 9D 58 5F C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 9C 55 50 54 51 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 51 53 50 9C 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 52 53 56 50 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 51 53 55 51 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 51 52 55 51 50 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 51 53 55 56 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 8D 76 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 51 50 55 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 51 55 52 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 50 52 56 51 50 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5F 5B 5A 59 5E 5A 58 5D 9D C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 55 56 56 57 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 51 52 55 52 50 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 57 53 52 55 51 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 56 53 57 52 51 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 46 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 52 56 53 57 51 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 52 55 56 51 50 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 52 56 57 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 51 56 57 52 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 53 56 51 55 9C 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 53 50 56 53 51 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 56 55 56 9C 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 9C 52 50 57 56 53 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 51 50 55 53 56 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 9C 54 56 53 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 52 57 51 9C 53 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 55 52 9C 57 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 50 55 56 51 57 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 55 51 53 53 57 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 53 51 55 57 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 56 55 52 50 55 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 50 52 51 55 56 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 56 53 55 53 51 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 56 51 57 53 50 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 56 57 51 52 53 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 52 53 52 56 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 51 53 57 56 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 56 53 52 50 55 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 36 8A 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 55 57 53 56 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 57 53 51 52 55 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 5E 59 5D 5A 59 5B 5F 58 9D C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 57 53 52 50 51 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 8A 4D 08 83 C5 02 0F A5 D0 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 8A 4D 08 83 C5 02 0F AD D0 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8D 47 50 39 C5 0F 87 ?? ?? ?? ?? 8D 4F 40 29 E1 8D 45 80 29 C8 89 C4 9C 56 89 FE 8D BD 40 FF FF FF 57 FC F3 A4 5F 5E 9D E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 57 52 51 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 57 50 55 56 57 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 52 56 50 53 56 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 57 55 56 51 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 57 55 50 52 9C 56 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 53 53 50 9C 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 52 53 50 9C 57 56 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 51 9C 56 50 57 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 9C 50 56 51 55 57 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 52 51 55 55 56 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 57 9C 56 50 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 52 53 51 55 9C 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 52 53 51 52 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 66 8B 55 02 F6 D0 F6 D2 83 ED 02 20 D0 66 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 8A 4D 02 83 ED 02 66 D3 E8 66 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 8A 4D 02 83 ED 02 66 D3 E0 66 89 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 53 55 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 51 9C 55 52 53 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 52 53 57 51 55 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 55 54 52 51 9C 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 51 52 55 57 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 56 50 51 53 52 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 56 53 57 51 52 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 51 9C 52 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 51 55 9C 50 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 0F B6 06 83 ED 02 46 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 53 9C 57 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 0F B6 06 66 98 98 46 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 53 57 51 55 56 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 9C 50 56 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 55 50 9C 56 54 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 50 57 53 56 9C 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 50 53 56 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 56 50 9C 55 53 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 52 50 56 57 51 9C 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 56 9C 56 53 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 56 53 55 57 9C 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 53 9C 57 55 51 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 50 56 53 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 59 5D 9D 5F 5A 5E 58 5B 5A C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 50 55 51 56 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 51 9C 53 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 C6 04 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 56 51 50 9C 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 53 9C 50 50 56 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 50 53 51 56 55 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 51 53 52 57 55 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 51 51 9C 52 57 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 9C 56 53 55 57 54 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 9C 55 56 57 51 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 9C 50 51 57 53 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 9C 57 51 50 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 56 57 55 53 9C 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 53 51 50 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 53 50 55 9C 57 51 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 55 57 53 9C 50 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 56 52 9C 50 53 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5F 5D 5B 58 9D 5A 5E 59 59 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 52 56 53 50 55 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 50 55 56 53 9C 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 52 57 50 53 55 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 52 53 50 56 57 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 9C 50 53 56 51 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 52 9C 57 54 55 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 57 50 9C 56 52 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 53 57 50 52 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 9C 50 55 53 54 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 57 52 55 50 9C 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 56 53 55 57 9C 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 50 57 53 56 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 56 57 53 9C 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 56 9C 57 53 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 53 9C 55 51 54 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 53 50 57 9C 55 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 EC 5B 5E 5D 5D 9D 5F 58 5B 59 5A C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 50 56 55 53 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 9C 55 53 51 56 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 56 50 52 57 57 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 53 53 56 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 53 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 53 51 9C 55 54 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 53 50 55 51 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 50 50 56 53 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 52 50 51 57 56 55 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 9C 56 50 51 55 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 56 51 50 9C 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 52 51 9C 57 53 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 56 51 52 50 55 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 53 56 51 57 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 9C 52 52 51 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 51 55 50 57 9C 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 9C 56 57 51 50 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 52 55 56 55 50 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 52 55 50 51 57 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 51 52 50 51 9C 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 36 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 57 52 51 9C 53 56 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 51 51 56 50 52 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 57 51 56 53 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 57 50 9C 53 56 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 57 51 52 53 53 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 52 57 50 55 53 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8A 06 46 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 52 9C 57 56 50 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 53 57 52 57 56 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 53 51 56 52 9C 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 9C 56 52 51 53 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 57 56 52 50 56 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 53 56 50 56 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 53 51 52 50 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 9C 50 57 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 55 56 54 57 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 54 51 57 52 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 50 56 57 51 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 52 55 56 55 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 50 9C 55 52 50 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 50 52 52 57 55 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 53 9C 52 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 50 51 9C 52 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 54 9C 51 56 55 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 9C 56 51 52 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 56 9C 55 52 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 56 55 51 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 52 55 56 56 9C 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 55 56 51 55 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 55 51 9C 56 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 50 55 51 9C 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 55 57 51 56 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 52 57 57 50 9C 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 9C 55 57 50 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 9C 52 57 55 50 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 56 50 57 55 52 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 55 56 52 9C 57 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 56 9C 57 50 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 55 9C 57 56 51 50 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 EC 5A 5E 58 59 5E 5F 9D 5D 5A 5B C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 50 56 51 57 56 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 46 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 9C 53 56 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 89 EC 5A 5B 58 5F 5E 5A 9D 5A 5D 59 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 52 53 57 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 55 51 55 9C 56 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 53 57 52 56 51 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 56 56 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 53 55 51 56 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 53 51 55 51 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 51 51 9C 52 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 56 57 57 51 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 8D 76 02 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 53 57 51 52 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 53 51 55 57 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 53 50 55 9C 51 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 52 53 55 57 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 53 56 53 52 55 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 9C 56 53 57 55 52 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 9C 56 53 57 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 57 9C 53 53 55 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 55 9C 56 53 52 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 5A 58 5F 5A 5B 5E 9D 5D 59 59 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 53 55 9C 55 56 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 50 53 56 55 57 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 55 54 56 52 57 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 54 55 56 52 53 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 53 57 52 57 56 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 55 56 50 53 9C 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 0F B6 06 46 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 52 9C 53 57 50 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 56 53 53 55 57 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 53 56 52 57 56 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 55 53 56 51 57 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 9C 52 56 55 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 EE FC E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 54 57 56 52 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 9C 53 57 55 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 53 55 57 52 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5D 9D 5A 5F 5D 5B 5E 59 58 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 55 9C 57 57 56 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 53 9C 56 57 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 50 9C 53 55 57 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 83 C6 02 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 50 57 9C 55 52 56 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 52 55 9C 52 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 9C 50 53 57 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 57 56 55 53 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 53 9C 55 56 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 50 9C 51 57 52 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 9C 55 53 57 51 53 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 9C 50 55 53 51 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 52 52 9C 56 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 57 52 55 51 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 54 52 57 51 55 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 56 53 57 51 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 53 53 55 9C 57 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 9C 56 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 57 9C 54 53 55 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 57 56 57 9C 51 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 56 9C 53 54 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
+        $0  = { E9 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 E9 FB FF FF FF C3 68 00 00 00 00 64 FF 35 00 00 00 00 }
+        $1  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 57 51 9C 50 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $2  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 9C 57 52 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $3  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 50 57 53 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $4  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 9C 50 55 51 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $5  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 53 52 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $6  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 52 9C 50 51 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $7  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 52 51 55 57 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $8  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 50 9C 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $9  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 9C 51 50 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $10  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 57 54 53 9C 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $11  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 50 51 57 50 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $12  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 57 52 50 51 51 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $13  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 50 57 55 51 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $14  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 50 52 54 9C 53 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $15  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 56 53 51 55 9C 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
+        $16  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $17  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 56 55 50 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $18  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 55 50 55 56 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $19  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 52 53 56 9C 55 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $20  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 53 52 50 51 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $21  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 52 53 55 52 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $22  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 51 55 52 51 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $23  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 52 55 51 53 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $24  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 53 54 51 55 56 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $25  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 52 53 56 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
+        $26  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 52 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
+        $27  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 53 50 51 51 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $28  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 57 53 56 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
+        $29  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 50 53 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $30  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 56 50 52 53 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $31  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 51 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $32  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 53 50 54 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $33  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 51 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $34  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 56 51 52 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $35  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 52 53 52 51 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $36  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 51 55 56 53 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $37  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 53 51 50 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $38  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 51 56 53 52 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $39  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 51 53 57 52 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $40  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 57 53 57 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $41  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 57 51 53 9C 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
+        $42  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 50 53 51 57 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $43  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 52 9C 55 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $44  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 50 53 9C 57 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $45  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 55 53 51 50 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $46  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 50 52 51 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $47  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 53 9C 51 57 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $48  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 52 9C 52 51 57 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
+        $49  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 9C 57 52 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
+        $50  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 53 54 57 55 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $51  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 51 53 50 52 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $52  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 51 56 52 50 9C 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $53  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 57 55 53 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $54  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 50 9C 53 50 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $55  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 54 53 9C 55 52 50 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $56  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 56 55 55 9C 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $57  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 52 51 57 55 9C 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
+        $58  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 50 53 51 56 55 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $59  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 9C 56 53 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
+        $60  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 57 55 52 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 83 ED 02 66 89 45 00 46 E9 }
+        $61  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 56 50 55 51 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $62  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 54 55 51 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $63  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 50 9C 56 53 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $64  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 52 50 56 9C 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5A 5B 59 9D 5E 58 5F 5D 5F C3 }
+        $65  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 50 51 56 55 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $66  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 55 52 50 53 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $67  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 56 56 50 55 51 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
+        $68  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E8 89 45 04 9C 8F 45 00 E9 01 7D 00 00 }
+        $69  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 55 52 54 50 51 53 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $70  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 57 53 55 56 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $71  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 52 9C 51 56 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $72  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 51 57 53 9C 52 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $73  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 56 52 53 55 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $74  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 53 56 52 51 50 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
+        $75  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 53 55 50 9C 55 56 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $76  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 51 9C 56 53 55 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $77  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 53 53 9C 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $78  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 57 56 55 56 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $79  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 57 56 52 55 50 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $80  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 50 53 53 52 57 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $81  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 51 56 52 56 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $82  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 52 57 50 57 51 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
+        $83  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 9C 52 50 53 57 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $84  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 9C 51 57 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $85  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 57 53 52 9C 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $86  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 9C 57 50 53 55 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $87  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 55 9C 56 57 50 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $88  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 57 51 50 52 55 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $89  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 50 56 52 57 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $90  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 9C 56 50 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $91  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 55 9C 56 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8A 45 00 83 ED 02 00 45 04 9C 8F 45 00 E9 }
+        $92  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 51 56 57 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $93  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 53 50 52 56 55 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $94  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 56 57 53 55 51 52 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $95  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 53 51 57 9C 56 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $96  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 54 53 56 57 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $97  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 52 53 51 55 50 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 80 E0 3C 8B 14 07 83 ED 04 89 55 00 E9 }
+        $98  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 55 51 57 52 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $99  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 50 52 51 57 53 55 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
+        $100  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 55 52 51 56 57 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $101  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 57 55 53 51 52 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $102  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 55 56 52 56 51 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $103  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 51 9C 57 55 52 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $104  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 52 50 56 53 57 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $105  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 50 52 57 53 9C 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $106  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 51 9C 50 57 53 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
+        $107  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 50 55 57 56 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $108  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 9C 51 56 51 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $109  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 50 55 52 56 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $110  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 50 52 57 56 51 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $111  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 52 51 9C 52 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $112  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 53 9C 54 55 51 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $113  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 52 50 56 56 9C 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $114  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 57 51 55 55 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
+        $115  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 57 9C 51 53 52 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $116  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 52 51 9C 53 53 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $117  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 9C 55 53 56 52 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 59 5B 5A 5E 58 5D 9D 58 5F C3 }
+        $118  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 9C 55 50 54 51 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $119  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 51 53 50 9C 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $120  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 52 53 56 50 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $121  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 51 53 55 51 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $122  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 51 52 55 51 50 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $123  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 51 53 55 56 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 8D 76 04 E9 }
+        $124  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 51 50 55 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $125  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 51 55 52 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $126  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 50 52 56 51 50 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5F 5B 5A 59 5E 5A 58 5D 9D C3 }
+        $127  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 55 56 56 57 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $128  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 51 52 55 52 50 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $129  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 57 53 52 55 51 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $130  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 56 53 57 52 51 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 46 83 ED 02 66 89 45 00 E9 }
+        $131  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 52 56 53 57 51 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $132  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 52 55 56 51 50 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $133  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 52 56 57 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $134  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 51 56 57 52 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $135  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 53 56 51 55 9C 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $136  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 53 50 56 53 51 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $137  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 56 55 56 9C 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $138  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 9C 52 50 57 56 53 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $139  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 51 50 55 53 56 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $140  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 9C 54 56 53 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $141  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 52 57 51 9C 53 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $142  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 55 52 9C 57 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $143  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 50 55 56 51 57 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $144  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 55 51 53 53 57 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $145  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 53 51 55 57 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $146  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 56 55 52 50 55 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $147  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 50 52 51 55 56 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $148  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 56 53 55 53 51 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $149  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 56 51 57 53 50 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $150  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 56 57 51 52 53 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
+        $151  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 52 53 52 56 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $152  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 51 53 57 56 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $153  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 56 53 52 50 55 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 36 8A 02 66 89 45 00 E9 }
+        $154  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 55 57 53 56 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $155  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 57 53 51 52 55 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 5E 59 5D 5A 59 5B 5F 58 9D C3 }
+        $156  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 57 53 52 50 51 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $157  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 8A 4D 08 83 C5 02 0F A5 D0 89 45 04 9C 8F 45 00 E9 }
+        $158  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 8A 4D 08 83 C5 02 0F AD D0 89 45 04 9C 8F 45 00 E9 }
+        $159  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8D 47 50 39 C5 0F 87 ?? ?? ?? ?? 8D 4F 40 29 E1 8D 45 80 29 C8 89 C4 9C 56 89 FE 8D BD 40 FF FF FF 57 FC F3 A4 5F 5E 9D E9 }
+        $160  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 57 52 51 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $161  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 57 50 55 56 57 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $162  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 52 56 50 53 56 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
+        $163  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 57 55 56 51 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $164  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 57 55 50 52 9C 56 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $165  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 53 53 50 9C 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $166  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 52 53 50 9C 57 56 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $167  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 51 9C 56 50 57 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $168  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 9C 50 56 51 55 57 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $169  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 52 51 55 55 56 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $170  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 57 9C 56 50 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $171  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 52 53 51 55 9C 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
+        $172  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 52 53 51 52 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $173  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 66 8B 55 02 F6 D0 F6 D2 83 ED 02 20 D0 66 89 45 04 9C 8F 45 00 E9 }
+        $174  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 8A 4D 02 83 ED 02 66 D3 E8 66 89 45 04 9C 8F 45 00 E9 }
+        $175  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 8A 4D 02 83 ED 02 66 D3 E0 66 89 45 04 9C 8F 45 00 E9 }
+        $176  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 53 55 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $177  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 51 9C 55 52 53 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $178  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 52 53 57 51 55 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $179  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 55 54 52 51 9C 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $180  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 51 52 55 57 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $181  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 56 50 51 53 52 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $182  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 56 53 57 51 52 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $183  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 51 9C 52 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
+        $184  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 51 55 9C 50 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 0F B6 06 83 ED 02 46 66 89 45 00 E9 }
+        $185  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 53 9C 57 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 0F B6 06 66 98 98 46 83 ED 04 89 45 00 E9 }
+        $186  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 53 57 51 55 56 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $187  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 9C 50 56 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $188  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 55 50 9C 56 54 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $189  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 50 57 53 56 9C 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $190  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 50 53 56 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $191  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 56 50 9C 55 53 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $192  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 52 50 56 57 51 9C 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $193  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 56 9C 56 53 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $194  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 56 53 55 57 9C 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
+        $195  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 53 9C 57 55 51 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $196  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 50 56 53 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 59 5D 9D 5F 5A 5E 58 5B 5A C3 }
+        $197  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 50 55 51 56 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $198  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 51 9C 53 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 C6 04 83 ED 04 89 45 00 E9 }
+        $199  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 56 51 50 9C 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $200  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 53 9C 50 50 56 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $201  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 50 53 51 56 55 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $202  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 51 53 52 57 55 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $203  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 51 51 9C 52 57 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
+        $204  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 9C 56 53 55 57 54 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $205  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 9C 55 56 57 51 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $206  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 9C 50 51 57 53 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $207  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 9C 57 51 50 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $208  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 56 57 55 53 9C 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $209  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 53 51 50 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $210  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 53 50 55 9C 57 51 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $211  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 55 57 53 9C 50 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $212  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 56 52 9C 50 53 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5F 5D 5B 58 9D 5A 5E 59 59 C3 }
+        $213  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 52 56 53 50 55 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
+        $214  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 50 55 56 53 9C 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $215  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 52 57 50 53 55 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $216  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 52 53 50 56 57 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $217  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 9C 50 53 56 51 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $218  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 52 9C 57 54 55 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $219  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 57 50 9C 56 52 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $220  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 53 57 50 52 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $221  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 9C 50 55 53 54 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $222  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 57 52 55 50 9C 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $223  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 56 53 55 57 9C 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $224  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 50 57 53 56 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $225  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 56 57 53 9C 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $226  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 56 9C 57 53 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $227  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 53 9C 55 51 54 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $228  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 53 50 57 9C 55 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 EC 5B 5E 5D 5D 9D 5F 58 5B 59 5A C3 }
+        $229  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 50 56 55 53 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $230  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 9C 55 53 51 56 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $231  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 56 50 52 57 57 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
+        $232  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 53 53 56 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
+        $233  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 53 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $234  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 53 51 9C 55 54 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $235  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 53 50 55 51 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $236  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 50 50 56 53 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $237  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 52 50 51 57 56 55 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $238  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 9C 56 50 51 55 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $239  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 56 51 50 9C 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $240  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 52 51 9C 57 53 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $241  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 56 51 52 50 55 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $242  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 53 56 51 57 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $243  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 9C 52 52 51 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $244  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 51 55 50 57 9C 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $245  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 9C 56 57 51 50 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
+        $246  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 52 55 56 55 50 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $247  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 52 55 50 51 57 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $248  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 51 52 50 51 9C 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 36 88 10 E9 }
+        $249  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 57 52 51 9C 53 56 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
+        $250  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 51 51 56 50 52 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $251  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 57 51 56 53 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $252  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 57 50 9C 53 56 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $253  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 57 51 52 53 53 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $254  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 52 57 50 55 53 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8A 06 46 83 ED 02 66 89 45 00 E9 }
+        $255  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 52 9C 57 56 50 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $256  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 53 57 52 57 56 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $257  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 53 51 56 52 9C 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $258  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 9C 56 52 51 53 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $259  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 57 56 52 50 56 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $260  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 53 56 50 56 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $261  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 53 51 52 50 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $262  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 9C 50 57 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $263  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 55 56 54 57 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $264  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 54 51 57 52 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $265  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 50 56 57 51 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $266  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 52 55 56 55 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $267  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 50 9C 55 52 50 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
+        $268  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 50 52 52 57 55 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $269  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 53 9C 52 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $270  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 50 51 9C 52 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $271  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 54 9C 51 56 55 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $272  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 9C 56 51 52 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $273  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 56 9C 55 52 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $274  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 56 55 51 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $275  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 52 55 56 56 9C 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $276  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 55 56 51 55 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $277  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 55 51 9C 56 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $278  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 50 55 51 9C 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $279  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 55 57 51 56 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
+        $280  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 52 57 57 50 9C 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $281  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 9C 55 57 50 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $282  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 9C 52 57 55 50 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $283  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 56 50 57 55 52 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $284  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 55 56 52 9C 57 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
+        $285  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 56 9C 57 50 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $286  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 55 9C 57 56 51 50 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 EC 5A 5E 58 59 5E 5F 9D 5D 5A 5B C3 }
+        $287  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 50 56 51 57 56 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 46 E9 }
+        $288  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 9C 53 56 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 89 EC 5A 5B 58 5F 5E 5A 9D 5A 5D 59 C3 }
+        $289  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 52 53 57 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $290  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 55 51 55 9C 56 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $291  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 53 57 52 56 51 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $292  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 56 56 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $293  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 53 55 51 56 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
+        $294  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 53 51 55 51 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $295  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 51 51 9C 52 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $296  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 56 57 57 51 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 8D 76 02 89 45 00 E9 }
+        $297  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 53 57 51 52 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $298  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 53 51 55 57 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $299  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 53 50 55 9C 51 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $300  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 52 53 55 57 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $301  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 53 56 53 52 55 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $302  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 9C 56 53 57 55 52 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $303  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 9C 56 53 57 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $304  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 57 9C 53 53 55 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $305  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 55 9C 56 53 52 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 5A 58 5F 5A 5B 5E 9D 5D 59 59 C3 }
+        $306  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 53 55 9C 55 56 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
+        $307  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 50 53 56 55 57 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $308  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 55 54 56 52 57 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $309  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 54 55 56 52 53 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $310  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 53 57 52 57 56 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $311  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 55 56 50 53 9C 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 0F B6 06 46 83 ED 02 66 89 45 00 E9 }
+        $312  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 52 9C 53 57 50 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $313  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 56 53 53 55 57 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $314  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 53 56 52 57 56 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $315  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 55 53 56 51 57 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $316  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 9C 52 56 55 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 EE FC E9 }
+        $317  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 54 57 56 52 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $318  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 9C 53 57 55 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $319  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 53 55 57 52 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5D 9D 5A 5F 5D 5B 5E 59 58 C3 }
+        $320  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 55 9C 57 57 56 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $321  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 53 9C 56 57 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $322  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 50 9C 53 55 57 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 83 C6 02 E9 }
+        $323  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 50 57 9C 55 52 56 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $324  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 52 55 9C 52 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $325  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 9C 50 53 57 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $326  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 57 56 55 53 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $327  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 53 9C 55 56 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $328  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 50 9C 51 57 52 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
+        $329  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 9C 55 53 57 51 53 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $330  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 9C 50 55 53 51 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $331  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 52 52 9C 56 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $332  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 57 52 55 51 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $333  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 54 52 57 51 55 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $334  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 56 53 57 51 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $335  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 53 53 55 9C 57 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $336  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 9C 56 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $337  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 57 9C 54 53 55 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $338  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 57 56 57 9C 51 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $339  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 56 9C 53 54 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $340  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 57 51 9C 50 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $341  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 9C 57 52 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $342  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 50 57 53 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $343  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 9C 50 55 51 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $344  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 53 52 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $345  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 52 9C 50 51 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $346  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 52 51 55 57 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $347  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 50 9C 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $348  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 9C 51 50 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $349  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 57 54 53 9C 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $350  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 50 51 57 50 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $351  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 57 52 50 51 51 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $352  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 50 57 55 51 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $353  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 50 52 54 9C 53 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $354  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 56 53 51 55 9C 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
+        $355  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $356  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 56 55 50 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $357  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 55 50 55 56 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $358  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 52 53 56 9C 55 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $359  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 53 52 50 51 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $360  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 52 53 55 52 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $361  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 51 55 52 51 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $362  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 52 55 51 53 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $363  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 53 54 51 55 56 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $364  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 52 53 56 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
+        $365  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 52 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
+        $366  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 53 50 51 51 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $367  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 57 53 56 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
+        $368  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 50 53 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $369  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 56 50 52 53 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $370  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 51 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $371  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 53 50 54 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $372  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 51 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $373  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 56 51 52 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $374  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 52 53 52 51 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $375  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 51 55 56 53 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $376  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 53 51 50 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $377  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 51 56 53 52 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $378  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 51 53 57 52 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $379  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 57 53 57 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $380  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 57 51 53 9C 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
+        $381  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 50 53 51 57 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $382  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 52 9C 55 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $383  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 50 53 9C 57 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $384  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 55 53 51 50 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $385  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 50 52 51 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $386  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 53 9C 51 57 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $387  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 52 9C 52 51 57 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
+        $388  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 9C 57 52 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
+        $389  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 53 54 57 55 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $390  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 51 53 50 52 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $391  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 51 56 52 50 9C 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $392  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 57 55 53 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $393  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 50 9C 53 50 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $394  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 54 53 9C 55 52 50 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $395  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 56 55 55 9C 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $396  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 52 51 57 55 9C 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
+        $397  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 50 53 51 56 55 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $398  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 9C 56 53 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
+        $399  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 57 55 52 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 83 ED 02 66 89 45 00 46 E9 }
+        $400  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 56 50 55 51 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $401  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 54 55 51 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $402  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 50 9C 56 53 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $403  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 52 50 56 9C 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5A 5B 59 9D 5E 58 5F 5D 5F C3 }
+        $404  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 50 51 56 55 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $405  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 55 52 50 53 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $406  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 56 56 50 55 51 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
+        $407  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E8 89 45 04 9C 8F 45 00 E9 01 7D 00 00 }
+        $408  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 55 52 54 50 51 53 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $409  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 57 53 55 56 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $410  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 52 9C 51 56 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $411  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 51 57 53 9C 52 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $412  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 56 52 53 55 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $413  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 53 56 52 51 50 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
+        $414  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 53 55 50 9C 55 56 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $415  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 51 9C 56 53 55 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $416  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 53 53 9C 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $417  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 51 57 56 55 56 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $418  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 57 56 52 55 50 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $419  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 50 53 53 52 57 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $420  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 51 56 52 56 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $421  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 52 57 50 57 51 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
+        $422  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 9C 52 50 53 57 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $423  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 9C 51 57 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $424  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 57 53 52 9C 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $425  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 9C 57 50 53 55 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $426  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 55 9C 56 57 50 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $427  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 57 51 50 52 55 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $428  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 50 56 52 57 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $429  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 9C 56 50 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $430  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 55 9C 56 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8A 45 00 83 ED 02 00 45 04 9C 8F 45 00 E9 }
+        $431  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 51 56 57 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $432  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 53 50 52 56 55 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $433  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 56 57 53 55 51 52 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $434  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 53 51 57 9C 56 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $435  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 54 53 56 57 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $436  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 52 53 51 55 50 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 80 E0 3C 8B 14 07 83 ED 04 89 55 00 E9 }
+        $437  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 55 51 57 52 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $438  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 50 52 51 57 53 55 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
+        $439  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 55 52 51 56 57 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $440  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 57 55 53 51 52 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $441  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 55 56 52 56 51 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $442  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 51 9C 57 55 52 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $443  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 52 50 56 53 57 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $444  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 50 52 57 53 9C 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $445  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 51 9C 50 57 53 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
+        $446  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 50 55 57 56 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $447  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 9C 51 56 51 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $448  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 50 55 52 56 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $449  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 50 52 57 56 51 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $450  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 52 51 9C 52 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $451  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 53 9C 54 55 51 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $452  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 52 50 56 56 9C 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $453  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 57 51 55 55 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
+        $454  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 57 9C 51 53 52 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $455  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 52 51 9C 53 53 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $456  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 9C 55 53 56 52 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 59 5B 5A 5E 58 5D 9D 58 5F C3 }
+        $457  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 9C 55 50 54 51 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $458  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 51 53 50 9C 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $459  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 52 53 56 50 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $460  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 51 53 55 51 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $461  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 51 52 55 51 50 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $462  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 51 53 55 56 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 8D 76 04 E9 }
+        $463  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 51 50 55 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $464  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 51 55 52 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $465  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 50 52 56 51 50 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5F 5B 5A 59 5E 5A 58 5D 9D C3 }
+        $466  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 55 56 56 57 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $467  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 51 52 55 52 50 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $468  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 57 53 52 55 51 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $469  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 56 53 57 52 51 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 46 83 ED 02 66 89 45 00 E9 }
+        $470  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 55 52 56 53 57 51 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $471  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 52 55 56 51 50 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $472  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 52 56 57 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $473  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 57 51 56 57 52 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $474  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 52 53 56 51 55 9C 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $475  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 53 50 56 53 51 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $476  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 56 55 56 9C 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $477  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 9C 52 50 57 56 53 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $478  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 51 50 55 53 56 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $479  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 9C 54 56 53 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $480  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 52 57 51 9C 53 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $481  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 55 52 9C 57 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $482  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 50 55 56 51 57 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $483  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 55 51 53 53 57 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $484  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 53 51 55 57 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $485  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 56 55 52 50 55 53 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $486  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 50 52 51 55 56 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $487  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 56 53 55 53 51 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $488  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 52 56 51 57 53 50 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $489  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 56 57 51 52 53 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
+        $490  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 52 53 52 56 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $491  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 51 53 57 56 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $492  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 56 53 52 50 55 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 36 8A 02 66 89 45 00 E9 }
+        $493  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 55 57 53 56 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $494  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 50 57 53 51 52 55 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 5E 59 5D 5A 59 5B 5F 58 9D C3 }
+        $495  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 57 53 52 50 51 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $496  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 8A 4D 08 83 C5 02 0F A5 D0 89 45 04 9C 8F 45 00 E9 }
+        $497  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 8A 4D 08 83 C5 02 0F AD D0 89 45 04 9C 8F 45 00 E9 }
+        $498  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8D 47 50 39 C5 0F 87 ?? ?? ?? ?? 8D 4F 40 29 E1 8D 45 80 29 C8 89 C4 9C 56 89 FE 8D BD 40 FF FF FF 57 FC F3 A4 5F 5E 9D E9 }
+        $499  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 53 57 52 51 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $500  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 57 50 55 56 57 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $501  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 51 52 56 50 53 56 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
+        $502  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 57 55 56 51 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $503  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 57 55 50 52 9C 56 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $504  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 53 53 50 9C 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $505  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 52 53 50 9C 57 56 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $506  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 51 9C 56 50 57 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $507  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 9C 50 56 51 55 57 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $508  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 52 51 55 55 56 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $509  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 57 9C 56 50 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $510  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 52 53 51 55 9C 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
+        $511  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 52 53 51 52 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $512  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 66 8B 55 02 F6 D0 F6 D2 83 ED 02 20 D0 66 89 45 04 9C 8F 45 00 E9 }
+        $513  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 8A 4D 02 83 ED 02 66 D3 E8 66 89 45 04 9C 8F 45 00 E9 }
+        $514  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 8A 4D 02 83 ED 02 66 D3 E0 66 89 45 04 9C 8F 45 00 E9 }
+        $515  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 53 55 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $516  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 51 9C 55 52 53 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $517  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 52 53 57 51 55 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $518  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 55 54 52 51 9C 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $519  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 51 52 55 57 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $520  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 56 50 51 53 52 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $521  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 56 53 57 51 52 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $522  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 51 9C 52 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
+        $523  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 51 55 9C 50 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 0F B6 06 83 ED 02 46 66 89 45 00 E9 }
+        $524  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 53 9C 57 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 0F B6 06 66 98 98 46 83 ED 04 89 45 00 E9 }
+        $525  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 53 57 51 55 56 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $526  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 9C 50 56 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $527  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 55 50 9C 56 54 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $528  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 50 57 53 56 9C 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $529  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 50 53 56 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $530  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 54 56 50 9C 55 53 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $531  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 52 50 56 57 51 9C 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $532  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 56 9C 56 53 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $533  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 56 53 55 57 9C 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
+        $534  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 53 9C 57 55 51 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $535  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 50 56 53 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 58 59 5D 9D 5F 5A 5E 58 5B 5A C3 }
+        $536  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 53 50 55 51 56 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $537  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 51 9C 53 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 C6 04 83 ED 04 89 45 00 E9 }
+        $538  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 56 51 50 9C 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $539  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 53 9C 50 50 56 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $540  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 57 50 53 51 56 55 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $541  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 51 53 52 57 55 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $542  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 51 51 9C 52 57 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
+        $543  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 9C 56 53 55 57 54 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $544  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 9C 55 56 57 51 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $545  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 9C 50 51 57 53 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $546  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 55 56 9C 57 51 50 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $547  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 56 57 55 53 9C 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $548  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 53 51 50 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $549  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 56 53 50 55 9C 57 51 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $550  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 55 57 53 9C 50 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $551  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 56 52 9C 50 53 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5F 5D 5B 58 9D 5A 5E 59 59 C3 }
+        $552  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 52 56 53 50 55 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
+        $553  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 50 55 56 53 9C 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $554  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 52 57 50 53 55 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $555  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 52 53 50 56 57 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $556  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 57 9C 50 53 56 51 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $557  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 52 9C 57 54 55 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $558  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 57 50 9C 56 52 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $559  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 53 57 50 52 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $560  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 9C 50 55 53 54 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $561  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 57 52 55 50 9C 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $562  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 56 56 53 55 57 9C 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $563  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 50 57 53 56 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $564  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 56 57 53 9C 57 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $565  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 55 56 9C 57 53 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $566  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 53 9C 55 51 54 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $567  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 53 50 57 9C 55 54 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 EC 5B 5E 5D 5D 9D 5F 58 5B 59 5A C3 }
+        $568  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 51 50 56 55 53 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $569  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 9C 55 53 51 56 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $570  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 56 50 52 57 57 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
+        $571  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 53 53 56 50 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
+        $572  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 55 53 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $573  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 52 50 53 51 9C 55 54 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $574  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 53 50 55 51 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $575  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 9C 57 50 50 56 53 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $576  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 52 50 51 57 56 55 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $577  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 9C 56 50 51 55 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $578  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 56 51 50 9C 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $579  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 52 51 9C 57 53 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $580  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 56 51 52 50 55 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $581  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 9C 53 56 51 57 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $582  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 9C 52 52 51 55 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $583  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 56 51 55 50 57 9C 52 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $584  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 9C 56 57 51 50 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
+        $585  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 52 55 56 55 50 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $586  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 52 55 50 51 57 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $587  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 57 51 52 50 51 9C 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 36 88 10 E9 }
+        $588  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 57 52 51 9C 53 56 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
+        $589  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 51 51 56 50 52 57 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $590  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 57 51 56 53 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $591  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 52 57 50 9C 53 56 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $592  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 57 51 52 53 53 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $593  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 56 52 57 50 55 53 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8A 06 46 83 ED 02 66 89 45 00 E9 }
+        $594  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 53 52 9C 57 56 50 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $595  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 53 57 52 57 56 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $596  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 53 51 56 52 9C 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $597  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 9C 56 52 51 53 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $598  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 57 56 52 50 56 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $599  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 53 56 50 56 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $600  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 51 9C 53 51 52 50 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $601  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 9C 50 57 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
+        $602  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 55 56 54 57 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $603  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 54 51 57 52 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $604  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 9C 50 56 57 51 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $605  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 52 55 56 55 57 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $606  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 50 9C 55 52 50 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
+        $607  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 50 52 52 57 55 56 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $608  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 53 9C 52 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $609  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 55 50 51 9C 52 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $610  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 54 9C 51 56 55 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $611  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 9C 56 51 52 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $612  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 56 9C 55 52 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $613  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 50 57 56 55 51 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $614  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 52 55 56 56 9C 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $615  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 55 56 51 55 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $616  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 55 51 9C 56 50 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $617  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 57 50 55 51 9C 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $618  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 55 57 51 56 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
+        $619  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 55 52 57 57 50 9C 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $620  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 9C 55 57 50 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
+        $621  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 9C 52 57 55 50 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $622  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 56 50 57 55 52 9C 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $623  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 51 55 56 52 9C 57 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
+        $624  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 56 9C 57 50 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $625  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 55 9C 57 56 51 50 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 EC 5A 5E 58 59 5E 5F 9D 5D 5A 5B C3 }
+        $626  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 53 52 50 56 51 57 56 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 46 E9 }
+        $627  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 55 52 9C 53 56 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 89 EC 5A 5B 58 5F 5E 5A 9D 5A 5D 59 C3 }
+        $628  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 52 53 57 51 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $629  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 55 51 55 9C 56 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $630  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 57 53 57 52 56 51 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $631  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 56 56 53 57 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $632  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 53 55 51 56 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
+        $633  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 52 53 51 55 51 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $634  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 51 51 9C 52 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 6D 00 E9 }
+        $635  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 56 57 57 51 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 8D 76 02 89 45 00 E9 }
+        $636  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 9C 53 57 51 52 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
+        $637  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 53 51 55 57 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $638  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 53 50 55 9C 51 52 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $639  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 56 52 53 55 57 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $640  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 53 56 53 52 55 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $641  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 9C 56 53 57 55 52 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $642  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 9C 56 53 57 52 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $643  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 57 9C 53 53 55 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $644  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 55 9C 56 53 52 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 5A 58 5F 5A 5B 5E 9D 5D 59 59 C3 }
+        $645  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 53 55 9C 55 56 57 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
+        $646  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 50 53 56 55 57 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
+        $647  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 55 54 56 52 57 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
+        $648  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 54 55 56 52 53 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $649  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 53 57 52 57 56 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $650  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 55 56 50 53 9C 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 0F B6 06 46 83 ED 02 66 89 45 00 E9 }
+        $651  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 50 52 9C 53 57 50 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $652  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 9C 56 53 53 55 57 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $653  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 55 53 56 52 57 56 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $654  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 55 53 56 51 57 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $655  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 9C 52 56 55 57 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 24 85 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 EE FC E9 }
+        $656  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 54 57 56 52 55 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $657  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 9C 53 57 55 52 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $658  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 56 53 55 57 52 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5D 9D 5A 5F 5D 5B 5E 59 58 C3 }
+        $659  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 55 9C 57 57 56 52 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $660  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 53 9C 56 57 56 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
+        $661  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 50 9C 53 55 57 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 83 C6 02 E9 }
+        $662  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 50 57 9C 55 52 56 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $663  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 53 52 55 9C 52 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $664  = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 51 52 9C 50 53 57 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 
+                
     condition:
         for any of them : ($ at entrypoint)
 }
@@ -17199,4814 +9866,744 @@ rule PseudoSigner_0dot2_Watcom_C_Cplusplus_DLL_Anorganix : Packer
     strings:
         $1 = { 53 56 57 55 8B 74 24 14 8B 7C 24 18 8B 6C 24 1C 83 FF 03 0F 87 01 00 00 00 F1 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 58 5A 5D 5F 5B 5A 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5F 5E 5B 9D 58 5B 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5F 5A 5E 5D 5B 58 9D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 59 5F 5B 5D 58 5A 9D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 59 58 5F 5D 58 5B 9D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 58 5F 5D 5B 5A 59 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5E 59 5A 58 9D 5D 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5E 58 5D 5F 9D 5A 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5A 9D 5E 5D 58 5F 5A 59 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5F 59 59 5A 5E 5B 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5F 5B 9D 59 5A 5D 58 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5F 58 5A 5E 9D 5D 59 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 5D 59 5B 5A 58 5F 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 59 5A 5F 5E 5D 5D 58 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5F 5B 5A 9D 5E 5D 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5E 9D 59 5A 5A 5B 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5D 5A 5B 58 5F 5E 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5A 5F 5D 58 5B 58 59 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5A 58 5B 5F 59 5D 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 58 5B 59 5E 5F 5D 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 5F 9D 5D 5B 58 5E 5A 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 5D 5A 58 59 5B 5A 5F 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5D 5E 58 5B 9D 59 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5A 5B 59 5D 9D 59 5E 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 58 5B 9D 5A 5D 5F 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5A 5F 5F 58 5E 5D 9D 59 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5B 5E 5B 5D 59 5A 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5A 5E 5E 59 9D 5D 5B 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5F 5F 9D 59 5D 5A 5B 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5E 9D 5D 58 5B 5A 5A 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5E 5D 59 9D 5B 58 5A 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5E 58 5D 5B 59 9D 5A 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5A 5F 58 58 5D 59 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5A 59 5D 5B 58 5F 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 59 5D 9D 58 5B 5A 5F 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5F 5B 59 5D 58 9D 5A 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5B 5D 5A 5F 58 59 58 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5B 5A 59 5D 58 5F 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 9D 58 5F 5F 5B 5A 59 5D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 58 5B 5D 5F 5E 5A 5F 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5F 5B 5D 5E 5B 5A 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5F 59 5A 59 5E 5D 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5A 5F 5B 58 59 5D 9D 5D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 5A 9D 5F 5B 5B 5D 58 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 5A 9D 5E 58 5F 5D 59 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5B 59 59 5E 5D 5F 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 9D 5F 5D 5E 5B 58 59 5A 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 9D 5D 5E 58 59 5B 5F 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5B 9D 5A 5F 5D 5A 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5B 5A 5F 59 5D 5D 5E 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5B 59 5F 5A 5E 5D 9D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 58 5A 5B 5E 5F 9D 5D 5F 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 9D 5E 5F 5B 5D 58 5A 59 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 9D 5E 5A 58 5F 5D 5B 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 58 5F 5E 5B 59 5D 5A 9D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 58 5F 5E 59 9D 5D 5B 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 58 5A 5E 5F 5B 5B 5D 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5F 59 59 5A 5B 9D 5E 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 9D 5A 5D 5F 58 5B 59 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5F 58 5B 5A 59 5D 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 9D 5A 59 5E 5D 5F 5B 5A 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5F 5B 9D 5D 5A 5E 58 5A 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5F 5A 59 5D 9D 5E 58 5B 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 5D 5A 58 9D 5B 5E 5F 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5B 5D 5E 5F 58 9D 5A 58 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5B 59 5E 5F 5D 5A 9D 58 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 9D 5B 5F 5E 5D 58 59 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 5A 5F 58 9D 5E 5B 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 59 9D 5A 5E 58 5B 5F 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5B 9D 58 59 58 5E 5D 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 5F 5B 58 5A 9D 58 5E 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 5E 5F 5D 5A 5B 58 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 5E 5A 5F 5B 9D 5B 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 5D 59 5D 5F 58 5E 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 59 5E 5D 5F 9D 5E 5B 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 58 5B 59 5E 5D 5F 5F 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5E 5B 58 9D 59 5D 5F 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 59 58 5D 5E 5D 5F 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5F 5F 5E 5D 5A 5B 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5F 5D 9D 5E 5B 5A 5A 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 5F 5E 58 5D 59 5D 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 5B 5F 58 5D 5E 5D 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 5B 5D 5E 58 5F 59 5D 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 5B 5D 5E 5A 5E 59 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 59 5E 9D 5F 59 5A 5B 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5F 58 5A 5E 5D 5E 5B 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5D 5D 5A 5F 5E 58 9D 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5A 5B 9D 58 5E 5F 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 9D 5B 5E 5A 5D 5F 5F 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 58 5A 59 5E 9D 5E 5D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 9D 5A 5B 59 58 5E 58 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 5F 5B 5D 58 5E 5A 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 5E 58 5F 5A 59 5B 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5D 5B 5F 5E 59 58 9D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5B 5A 58 5D 59 5F 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5A 5F 5B 9D 58 5E 59 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 5A 9D 58 5F 5E 5E 59 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 59 9D 5D 5A 5E 58 5F 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 58 5D 58 9D 59 5A 5F 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 5E 58 5A 9D 5F 59 5B 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 9D 5F 5D 58 5A 5E 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 5E 59 5F 5D 5D 9D 58 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 5F 5E 58 9D 59 5A 5B 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5B 58 5D 5F 9D 5A 5E 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5A 5E 58 9D 5D 58 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 9D 5B 5D 5E 5F 5A 59 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5E 58 5D 5B 9D 5F 5A 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5D 5F 5E 5A 5B 9D 5B 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5B 9D 5E 5F 5A 58 5D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5B 5E 5D 58 5F 9D 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5A 5D 5B 5E 59 5A 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 59 5E 5D 5B 9D 5F 5A 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5F 5B 5F 5D 59 5E 9D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5E 5A 59 5D 59 9D 5F 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5B 5E 5D 9D 5B 59 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 59 5B 5D 5A 5E 9D 5F 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 9D 59 5E 5D 5D 5F 5A 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5E 5A 58 5F 58 59 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5D 59 5F 5E 58 9D 5A 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 59 9D 5D 58 5B 5E 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 58 5A 5B 5D 9D 5F 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 9D 5E 5A 5E 59 5F 5D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 5E 5D 9D 5B 58 5F 59 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 5B 59 5D 5E 58 5F 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 5B 58 9D 5E 5F 5D 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5D 58 9D 59 5F 5E 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 9D 5E 5D 58 5F 5B 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 9D 5E 5B 5F 5B 58 5D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 8D 76 02 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 66 89 45 00 83 EE FE E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 66 89 45 00 83 C6 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 C6 02 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 8D 76 02 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 EE FE 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 66 89 45 00 8D 76 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 EE FE 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 66 89 45 00 83 EE FE E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 8D 76 02 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 C6 02 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 58 5D 5A 5A 5F 5B 9D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 58 59 5B 59 5A 5D 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 59 5E 5A 58 5B 5F 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 5D 5F 5E 9D 58 5A 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5D 5F 5B 5E 9D 58 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5B 59 5D 9D 5E 5F 5A 5D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 5E 5D 5B 9D 59 58 58 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5F 5E 9D 5F 59 5A 5D 58 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 9D 5B 59 5E 5B 5D 58 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 58 5D 5E 5F 9D 5A 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 9D 5F 5D 5E 5B 59 5A 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5A 5F 58 5B 59 5B 5D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 58 5A 5F 5B 5E 5D 5D 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5F 5E 59 5E 5D 5B 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5A 9D 5D 59 5B 59 5E 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 58 5B 5F 5A 59 5D 9D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5E 9D 58 5B 5F 59 58 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 5D 58 59 9D 5E 5A 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 9D 5E 59 5D 5D 58 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5A 5D 5B 9D 59 5F 5F 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 9D 5D 59 5F 5E 58 58 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 5E 5F 58 5B 5A 5A 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5F 5A 59 58 5D 9D 5E 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5A 5F 59 5B 5D 58 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 5F 5E 5E 5A 5D 5B 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 59 5E 5F 5D 5B 5A 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 59 5A 5B 58 5B 5F 5E 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 59 58 5B 5E 5F 5A 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5E 5A 58 5D 9D 59 5F 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5B 5F 5E 58 9D 5D 5A 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5A 5B 5E 58 5D 5F 9D 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5E 9D 58 5D 5F 5A 5D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5B 5E 5A 5F 58 5D 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 5F 5A 5B 5E 58 9D 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 5F 58 59 5B 5D 5E 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5B 59 5D 5F 9D 5A 58 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 5A 5F 5E 5D 58 58 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 58 5B 5E 59 5D 9D 5F 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 59 5D 5B 5F 58 5E 5A 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 9D 5A 5F 59 58 5D 5E 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5A 5B 5E 5D 5B 9D 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 9D 58 5F 5E 59 5D 5D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5D 58 59 9D 5E 5B 5A 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 5D 5A 5F 59 58 9D 5B 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5D 58 5F 59 5B 9D 5E 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 59 5F 59 58 9D 5E 5D 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 83 C6 01 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 46 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 C6 01 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 83 EE FF 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 EE FF 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 EE FF 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C6 01 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 83 EE FF 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 83 C6 01 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 8D 76 01 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 8D 76 01 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 EE FF 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 8D 76 01 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 9D 5F 5D 5B 58 5D 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 9D 5D 5B 59 5A 58 5F 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 5F 58 59 9D 5F 5B 5D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 5D 59 58 5F 5A 5E 5B 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5F 9D 58 5B 5D 5A 5A 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5F 5A 58 5E 5D 5B 9D 59 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 59 58 5F 5B 5D 5D 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 58 5F 5D 5A 59 9D 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 5B 58 5A 59 5F 9D 5E 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 5D 5B 5A 9D 58 5A 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 5D 58 59 58 9D 5A 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 5A 59 9D 5F 5D 5B 58 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 5D 5E 59 5B 58 5B 5F 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 66 89 14 07 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 88 14 07 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 83 EE FF 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 83 C6 01 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 5F 59 5D 5A 5B 5B 5E 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 5F 58 5E 5A 5B 59 5D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5D 5E 59 5F 58 9D 58 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 9D 5B 59 5D 5F 58 5E 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 8D 76 04 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 88 14 07 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 83 EE FF 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 83 C6 01 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 8D 76 01 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 88 14 07 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 88 14 07 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 46 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 46 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 46 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 66 89 14 07 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 66 89 14 07 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 66 89 14 07 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C6 01 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 8D 76 01 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 8D 76 01 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 46 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 8D 76 01 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 46 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 46 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 5F 5D 9D 58 59 59 5B 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 5B 5F 5E 9D 58 5D 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 59 5F 58 5E 9D 5D 5F 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 59 5A 5B 9D 5F 58 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 9D 59 5F 5D 58 5E 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 5B 59 5F 5E 9D 5D 5A 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 5B 58 5A 5B 5F 5E 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 5E 9D 5F 5B 5A 5B 58 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 5E 5B 5F 58 5E 59 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 5E 5F 5D 5A 58 5B 9D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 59 5E 5D 5F 5B 9D 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5B 5D 5A 5F 59 5E 58 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5F 5F 5B 58 59 5D 5A 5E 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 55 00 83 C5 02 36 8A 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 F7 D0 F7 D2 21 D0 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E8 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E0 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 36 88 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? F7 55 00 66 8B 45 00 83 ED 02 66 21 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 36 8B 00 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 45 00 83 ED 02 00 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 45 00 8A 4D 02 83 ED 02 D2 E0 66 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 36 89 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 C6 04 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 45 00 8A 4D 02 83 ED 02 D2 E8 66 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 EE FC E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 58 5E 5D 5B 5B 9D 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 A5 06 00 00 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
 
     condition:
@@ -22022,6127 +10619,946 @@ rule VMProtect_v1dot25_PolyTech : Packer
     strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 EE FF 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 88 14 07 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 88 14 07 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 46 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 C6 01 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 46 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 46 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 46 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 83 C6 01 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 66 89 14 07 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 66 89 14 07 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 83 EE FE 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 83 C6 02 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 C6 02 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 8D 76 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 83 EE FE E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 83 C6 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 83 EE FE 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 83 C6 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 C6 02 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 EE FE 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 8D 76 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 EE FE 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 80 E0 3C 8B 55 00 83 C5 04 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 80 E0 3C 8B 14 07 83 ED 04 89 55 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5F 58 5A 9D 5D 5E 5E 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5E 5B 5F 5B 9D 58 5D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 83 ED 02 66 01 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 8D 76 02 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 EE FE 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 C6 02 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 C6 02 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 66 89 45 00 83 C6 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 89 45 00 83 C6 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 83 EE FE 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 83 C6 02 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 8D 76 02 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 89 45 00 8D 76 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 89 45 00 83 EE FE E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 83 EE FE 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 83 C6 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 66 89 45 00 8D 76 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 8D 76 02 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 EE FE 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 8D 76 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 8D 76 01 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 EE FF 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 8D 76 01 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 88 14 07 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 88 14 07 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 83 EE FF 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C6 01 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 8D 76 01 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 8D 76 01 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 66 89 14 07 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 46 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 83 EE FF 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 83 C6 01 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 66 89 14 07 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C6 01 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 83 C6 01 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 46 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 8D 76 01 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 83 EE FF 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 8D 76 01 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 8D 76 01 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 EE FF 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 83 EE FF 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 83 C6 01 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 46 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 58 5A 5D 5F 5B 5A 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5F 5E 5B 9D 58 5B 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5F 5A 5E 5D 5B 58 9D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 59 5F 5B 5D 58 5A 9D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 59 58 5F 5D 58 5B 9D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 58 5F 5D 5B 5A 59 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5E 59 5A 58 9D 5D 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5E 58 5D 5F 9D 5A 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5A 9D 5E 5D 58 5F 5A 59 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5F 59 59 5A 5E 5B 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5F 5B 9D 59 5A 5D 58 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5F 58 5A 5E 9D 5D 59 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 5D 59 5B 5A 58 5F 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 59 5A 5F 5E 5D 5D 58 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5F 5B 5A 9D 5E 5D 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5E 9D 59 5A 5A 5B 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5D 5A 5B 58 5F 5E 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5A 5F 5D 58 5B 58 59 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5A 58 5B 5F 59 5D 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 58 5B 59 5E 5F 5D 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 5F 9D 5D 5B 58 5E 5A 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 5D 5A 58 59 5B 5A 5F 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5D 5E 58 5B 9D 59 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5A 5B 59 5D 9D 59 5E 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 58 5B 9D 5A 5D 5F 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5A 5F 5F 58 5E 5D 9D 59 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5B 5E 5B 5D 59 5A 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5A 5E 5E 59 9D 5D 5B 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5F 5F 9D 59 5D 5A 5B 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5E 9D 5D 58 5B 5A 5A 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5E 5D 59 9D 5B 58 5A 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5E 58 5D 5B 59 9D 5A 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5A 5F 58 58 5D 59 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5A 59 5D 5B 58 5F 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 59 5D 9D 58 5B 5A 5F 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5F 5B 59 5D 58 9D 5A 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5B 5D 5A 5F 58 59 58 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5B 5A 59 5D 58 5F 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 9D 58 5F 5F 5B 5A 59 5D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 58 5B 5D 5F 5E 5A 5F 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5F 5B 5D 5E 5B 5A 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5F 59 5A 59 5E 5D 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5A 5F 5B 58 59 5D 9D 5D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 5A 9D 5F 5B 5B 5D 58 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 5A 9D 5E 58 5F 5D 59 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5B 59 59 5E 5D 5F 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 9D 5F 5D 5E 5B 58 59 5A 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 9D 5D 5E 58 59 5B 5F 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5B 9D 5A 5F 5D 5A 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5B 5A 5F 59 5D 5D 5E 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5B 59 5F 5A 5E 5D 9D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 58 5A 5B 5E 5F 9D 5D 5F 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 9D 5E 5F 5B 5D 58 5A 59 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 9D 5E 5A 58 5F 5D 5B 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 58 5F 5E 5B 59 5D 5A 9D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 58 5F 5E 59 9D 5D 5B 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 58 5A 5E 5F 5B 5B 5D 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5F 59 59 5A 5B 9D 5E 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 9D 5A 5D 5F 58 5B 59 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5F 58 5B 5A 59 5D 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 9D 5A 59 5E 5D 5F 5B 5A 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5F 5B 9D 5D 5A 5E 58 5A 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5F 5A 59 5D 9D 5E 58 5B 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 5D 5A 58 9D 5B 5E 5F 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5B 5D 5E 5F 58 9D 5A 58 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5B 59 5E 5F 5D 5A 9D 58 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 9D 5B 5F 5E 5D 58 59 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 5A 5F 58 9D 5E 5B 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 59 9D 5A 5E 58 5B 5F 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5B 9D 58 59 58 5E 5D 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 5F 5B 58 5A 9D 58 5E 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 5E 5F 5D 5A 5B 58 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 5E 5A 5F 5B 9D 5B 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 5D 59 5D 5F 58 5E 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 59 5E 5D 5F 9D 5E 5B 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 58 5B 59 5E 5D 5F 5F 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5E 5B 58 9D 59 5D 5F 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 59 58 5D 5E 5D 5F 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5F 5F 5E 5D 5A 5B 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5F 5D 9D 5E 5B 5A 5A 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 5F 5E 58 5D 59 5D 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 5B 5F 58 5D 5E 5D 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 5B 5D 5E 58 5F 59 5D 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 5B 5D 5E 5A 5E 59 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 59 5E 9D 5F 59 5A 5B 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5F 58 5A 5E 5D 5E 5B 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5D 5D 5A 5F 5E 58 9D 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5A 5B 9D 58 5E 5F 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 9D 5B 5E 5A 5D 5F 5F 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 58 5A 59 5E 9D 5E 5D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 9D 5A 5B 59 58 5E 58 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 5F 5B 5D 58 5E 5A 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 5E 58 5F 5A 59 5B 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5D 5B 5F 5E 59 58 9D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5B 5A 58 5D 59 5F 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5A 5F 5B 9D 58 5E 59 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 5A 9D 58 5F 5E 5E 59 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 59 9D 5D 5A 5E 58 5F 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 58 5D 58 9D 59 5A 5F 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 5E 58 5A 9D 5F 59 5B 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 9D 5F 5D 58 5A 5E 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 5E 59 5F 5D 5D 9D 58 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 5F 5E 58 9D 59 5A 5B 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5B 58 5D 5F 9D 5A 5E 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5A 5E 58 9D 5D 58 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 9D 5B 5D 5E 5F 5A 59 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5E 58 5D 5B 9D 5F 5A 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5D 5F 5E 5A 5B 9D 5B 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5B 9D 5E 5F 5A 58 5D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5B 5E 5D 58 5F 9D 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5A 5D 5B 5E 59 5A 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 59 5E 5D 5B 9D 5F 5A 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5F 5B 5F 5D 59 5E 9D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5E 5A 59 5D 59 9D 5F 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5B 5E 5D 9D 5B 59 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 59 5B 5D 5A 5E 9D 5F 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 9D 59 5E 5D 5D 5F 5A 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5E 5A 58 5F 58 59 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5D 59 5F 5E 58 9D 5A 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 59 9D 5D 58 5B 5E 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 58 5A 5B 5D 9D 5F 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 9D 5E 5A 5E 59 5F 5D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 5E 5D 9D 5B 58 5F 59 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 5B 59 5D 5E 58 5F 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 5B 58 9D 5E 5F 5D 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5D 58 9D 59 5F 5E 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 9D 5E 5D 58 5F 5B 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 9D 5E 5B 5F 5B 58 5D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 8D 76 02 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 66 89 45 00 83 EE FE E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 66 89 45 00 83 C6 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 C6 02 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 8D 76 02 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 EE FE 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 66 89 45 00 8D 76 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 EE FE 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 66 89 45 00 83 EE FE E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 8D 76 02 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 C6 02 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 58 5D 5A 5A 5F 5B 9D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 58 59 5B 59 5A 5D 9D 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 59 5E 5A 58 5B 5F 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 5D 5F 5E 9D 58 5A 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 59 5D 5F 5B 5E 9D 58 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5B 59 5D 9D 5E 5F 5A 5D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 5E 5D 5B 9D 59 58 58 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5F 5E 9D 5F 59 5A 5D 58 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 9D 5B 59 5E 5B 5D 58 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 58 5D 5E 5F 9D 5A 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 9D 5F 5D 5E 5B 59 5A 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5A 5F 58 5B 59 5B 5D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 58 5A 5F 5B 5E 5D 5D 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5F 5E 59 5E 5D 5B 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 58 5A 9D 5D 59 5B 59 5E 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 58 5B 5F 5A 59 5D 9D 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5E 9D 58 5B 5F 59 58 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 5D 58 59 9D 5E 5A 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 9D 5E 59 5D 5D 58 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 58 5A 5D 5B 9D 59 5F 5F 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 9D 5D 59 5F 5E 58 58 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 5E 5F 58 5B 5A 5A 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5F 5A 59 58 5D 9D 5E 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5A 5F 59 5B 5D 58 5B 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 5F 5E 5E 5A 5D 5B 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 59 5E 5F 5D 5B 5A 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 59 5A 5B 58 5B 5F 5E 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 59 59 58 5B 5E 5F 5A 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5E 5E 5A 58 5D 9D 59 5F 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5B 5F 5E 58 9D 5D 5A 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5A 5B 5E 58 5D 5F 9D 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 5E 9D 58 5D 5F 5A 5D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5B 5E 5A 5F 58 5D 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5D 5F 5A 5B 5E 58 9D 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 5F 58 59 5B 5D 5E 9D 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5E 5B 59 5D 5F 9D 5A 58 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5B 5A 5F 5E 5D 58 58 59 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 58 5B 5E 59 5D 9D 5F 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 59 5D 5B 5F 58 5E 5A 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5B 9D 5A 5F 59 58 5D 5E 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5F 5A 5B 5E 5D 5B 9D 59 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 9D 58 5F 5E 59 5D 5D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5F 5D 58 59 9D 5E 5B 5A 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5E 5D 5A 5F 59 58 9D 5B 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 5D 5D 58 5F 59 5B 9D 5E 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 59 5F 59 58 9D 5E 5D 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 83 C6 01 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 46 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 C6 01 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 83 EE FF 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 EE FF 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 EE FF 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C6 01 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 83 EE FF 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 83 C6 01 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 8D 76 01 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 8D 76 01 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 EE FF 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 8D 76 01 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 9D 5F 5D 5B 58 5D 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 9D 5D 5B 59 5A 58 5F 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 5F 58 59 9D 5F 5B 5D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 5D 59 58 5F 5A 5E 5B 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5F 9D 58 5B 5D 5A 5A 5E 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5F 5A 58 5E 5D 5B 9D 59 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 59 58 5F 5B 5D 5D 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 58 5F 5D 5A 59 9D 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 5B 58 5A 59 5F 9D 5E 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 5D 5B 5A 9D 58 5A 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 5D 58 59 58 9D 5A 5B 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 5A 59 9D 5F 5D 5B 58 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 5D 5E 59 5B 58 5B 5F 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 66 89 14 07 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 88 14 07 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 83 EE FF 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 83 C6 01 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 5F 59 5D 5A 5B 5B 5E 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 9D 5F 58 5E 5A 5B 59 5D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5B 5D 5E 59 5F 58 9D 58 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 9D 5B 59 5D 5F 58 5E 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 8D 76 04 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 88 14 07 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 83 EE FF 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 83 C6 01 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 8D 76 01 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 88 14 07 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 88 14 07 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 46 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 46 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 46 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 66 89 14 07 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 66 89 14 07 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C5 02 66 89 14 07 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 83 C6 01 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 C6 01 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 8D 76 01 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 8D 76 01 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 46 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 8D 76 01 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 83 ED 04 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 98 98 46 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 55 00 46 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 5F 5D 9D 58 59 59 5B 5E C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5A 5B 5F 5E 9D 58 5D 59 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 5A 59 5F 58 5E 9D 5D 5F 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5E 59 5A 5B 9D 5F 58 58 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 9D 59 5F 5D 58 5E 5A 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5D 5B 59 5F 5E 9D 5D 5A 58 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 59 5B 58 5A 5B 5F 5E 9D 5D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 5E 9D 5F 5B 5A 5B 58 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5D 5E 5B 5F 58 5E 59 5A 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 5E 5F 5D 5A 58 5B 9D 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A 58 59 5E 5D 5F 5B 9D 5A 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 9D 5B 5D 5A 5F 59 5E 58 59 C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B 5F 5F 5B 58 59 5D 5A 5E 9D C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 66 8B 04 07 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 55 00 83 C5 02 36 8A 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 55 04 F7 D0 F7 D2 21 D0 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E8 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E0 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 36 88 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 55 00 83 C5 02 8A 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? F7 55 00 66 8B 45 00 83 ED 02 66 21 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 36 8B 00 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 45 00 83 ED 02 00 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8D 76 01 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 8A 04 07 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 06 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 45 00 8A 4D 02 83 ED 02 D2 E0 66 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 8D 76 04 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 66 8B 55 04 83 C5 06 66 36 89 10 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 83 C6 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 C6 04 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8A 45 00 8A 4D 02 83 ED 02 D2 E8 66 89 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 EE FC E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 89 45 00 83 C6 04 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 06 83 ED 04 83 EE FC 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 5A 58 5E 5D 5B 5B 9D 59 5F C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 8D 76 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 46 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 ED 02 66 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 A5 06 00 00 8B 45 00 66 8B 55 04 83 C5 06 66 89 10 E9 }
 
     condition:
@@ -28158,1317 +11574,206 @@ rule VMProtect_v1dot25_PolyTech : Packer
     strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 46 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 EE FF 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 88 14 07 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 88 14 07 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 89 45 00 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 46 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 C6 01 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 46 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 46 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 46 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 83 C6 01 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 66 89 14 07 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 66 89 14 07 46 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 83 EE FE 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 83 C6 02 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 C6 02 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 8D 76 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 83 EE FE E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 ED 04 89 45 00 83 C6 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 83 EE FE 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 83 C6 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 C6 02 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 EE FE 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 83 ED 02 8D 76 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 83 EE FE 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 80 E0 3C 8B 55 00 83 C5 04 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 80 E0 3C 8B 14 07 83 ED 04 89 55 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5F 58 5A 9D 5D 5E 5E 5B C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 59 5E 5B 5F 5B 9D 58 5D 5A C3 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 45 00 83 ED 02 66 01 45 04 9C 8F 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 98 8D 76 02 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 EE FE 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 C6 02 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 C6 02 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 66 89 45 00 83 C6 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 89 45 00 83 C6 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 83 EE FE 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 83 C6 02 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 8D 76 02 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 89 45 00 8D 76 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 98 83 ED 04 89 45 00 83 EE FE E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 83 EE FE 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 83 C6 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 66 89 45 00 8D 76 02 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 8D 76 02 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 EE FE 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 83 ED 02 8D 76 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 83 C6 01 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 ED 02 66 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 8D 76 01 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 EE FF 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 8D 76 01 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 C6 01 66 8B 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 8D 76 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 83 EE FF 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 66 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 66 8B 55 00 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8D 76 01 66 8B 55 00 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 8A 04 07 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 83 EE FF 66 98 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 ED 02 66 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 83 C6 01 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 89 45 00 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 88 14 07 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 88 14 07 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 83 EE FF 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C6 01 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 8D 76 01 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 8D 76 01 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 66 89 14 07 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 46 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 04 07 83 EE FF 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 83 EE FF 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 83 C6 01 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C5 02 66 89 14 07 8D 76 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 C6 01 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 83 C6 01 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 46 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 8D 76 01 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 89 45 00 83 EE FF E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 89 45 00 83 C6 01 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 98 83 ED 04 83 EE FF 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 8D 76 01 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 8D 76 01 83 C5 02 66 89 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 8B 55 00 83 EE FF 83 C5 02 88 14 07 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 83 EE FF 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 83 C6 01 98 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 66 98 46 98 83 ED 04 89 45 00 E9 }
 
     condition:
@@ -34606,108 +16911,20 @@ rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix : Packer
     strings:
         $1 = { E8 03 00 00 00 EB 01 90 90 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 6D 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 36 8B 00 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 6D 00 E9 }
 
     condition:
@@ -41847,108 +24064,20 @@ rule VMProtect_v1dot25_PolyTech : Packer
     strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F B6 06 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 0F B7 06 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 66 8B 06 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 58 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 59 }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5A }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 89 EC 5B }
 
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 50 52 }
 
     condition:
