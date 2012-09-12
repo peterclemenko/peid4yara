@@ -54,97 +54,6 @@ rule Private_Personal_Packer_PPP_v1dot0dot2_ConquestOfTroydotcom : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_ACProtect_1dot09_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 04 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 08 00 90 90 90 EB 06 00 00 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 04 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Borland_Delphi_3dot0_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 83 C4 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Borland_Delphi_5dot0_KOL_MCK_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 FF 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 EB 04 00 00 00 01 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 EB 08 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 08 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 08 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 0E 00 90 90 90 90 90 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 0A 00 00 00 90 90 90 90 90 00 00 00 01 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot0_Debug_Version_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 51 90 90 90 01 01 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 10 01 90 90 90 90 90 90 90 90 E8 00 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Morphine_1dot2_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Morphine 1.2] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 EB 08 E8 90 00 00 00 66 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 51 66 90 90 90 59 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 E2 90 90 90 EB 08 82 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 01 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Neolite_2dot0_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Neolite 2.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { E9 A6 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Pack_Master_1dot0_PEX_Clone_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 01 01 00 00 E8 83 C4 04 E8 01 90 90 90 E9 5D 81 ED D3 22 40 90 E8 04 02 90 90 E8 EB 08 EB 02 CD 20 FF 24 24 9A 66 BE 47 46 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 FF FF E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
 rule SimplePack_1dot11_Method_1_bagie_TMX_h_ : Packer
 {
     meta:
@@ -193,19 +102,8 @@ rule PseudoSigner_0dot1_ACProtect_1dot09_Anorganix : Packer
  
     strings:
         $1 = { 60 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 04 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_ACProtect_1dot09_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 04 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $2 = { 60 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 04 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $3 = { 60 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 04 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 08 00 90 90 90 EB 06 00 00 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 04 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 E9 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -219,19 +117,7 @@ rule PseudoSigner_0dot1_ASPack_2dotxx_Heuristic_Anorganix : Packer
  
     strings:
         $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 A8 03 00 00 61 75 08 B8 01 00 00 00 C2 0C 00 68 00 00 00 00 C3 8B 85 26 04 00 00 8D 8D 3B 04 00 00 51 50 FF 95 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_ASPack_2dotxx_Heuristic_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [ASPack 2.xx Heuristic] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 A8 03 00 00 61 75 08 B8 01 00 00 00 C2 0C 00 68 00 00 00 00 C3 8B 85 26 04 00 00 8D 8D 3B 04 00 00 51 50 FF 95 }
+        $2 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 A8 03 00 00 61 75 08 B8 01 00 00 00 C2 0C 00 68 00 00 00 00 C3 8B 85 26 04 00 00 8D 8D 3B 04 00 00 51 50 FF 95 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -245,20 +131,9 @@ rule PseudoSigner_0dot1_Borland_Delphi_3dot0_Anorganix : Packer
  
     strings:
         $1 = { 55 8B EC 83 C4 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Borland_Delphi_3dot0_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 83 C4 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
-
+        $2 = { 55 8B EC 83 C4 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $3 = { 55 8B EC 83 C4 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 E9 }
+    
     condition:
         for any of them : ($ at entrypoint)
 }
@@ -271,24 +146,13 @@ rule PseudoSigner_0dot1_Borland_Delphi_5dot0_KOL_MCK_Anorganix : Packer
  
     strings:
         $1 = { 55 8B EC 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 FF 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 EB 04 00 00 00 01 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 }
+        $2 = { 55 8B EC 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 FF 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 EB 04 00 00 00 01 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 }
+        $3 = { 55 8B EC 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 FF 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 EB 04 00 00 00 01 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 EB 08 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 08 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 08 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 0E 00 90 90 90 90 90 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 0A 00 00 00 90 90 90 90 90 00 00 00 01 E9 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Borland_Delphi_5dot0_KOL_MCK_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 FF 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 EB 04 00 00 00 01 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Borland_Delphi_6dot0___7dot0]_Anorganix : Packer
+rule PseudoSigner_0dot1_Borland_Delphi_6dot0_7dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Borland Delphi 6.0 - 7.0] --> Anorganix" // Packer name & version
@@ -297,19 +161,7 @@ rule PseudoSigner_0dot1_Borland_Delphi_6dot0___7dot0]_Anorganix : Packer
  
     strings:
         $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 53 8B D8 33 C0 A3 09 09 09 00 6A 00 E8 09 09 00 FF A3 09 09 09 00 A1 09 09 09 00 A3 09 09 09 00 33 C0 A3 09 09 09 00 33 C0 A3 09 09 09 00 E8 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Borland_Delphi_6dot0___7dot0]_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Borland Delphi 6.0 - 7.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 53 8B D8 33 C0 A3 09 09 09 00 6A 00 E8 09 09 00 FF A3 09 09 09 00 A1 09 09 09 00 A3 09 09 09 00 33 C0 A3 09 09 09 00 33 C0 A3 09 09 09 00 E8 }
+        $2 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 53 8B D8 33 C0 A3 09 09 09 00 6A 00 E8 09 09 00 FF A3 09 09 09 00 A1 09 09 09 00 A3 09 09 09 00 33 C0 A3 09 09 09 00 33 C0 A3 09 09 09 00 E8 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -323,19 +175,7 @@ rule PseudoSigner_0dot1_FSG_1dot0_Anorganix : Packer
  
     strings:
         $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 BB D0 01 40 00 BF 00 10 40 00 BE 90 90 90 90 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_FSG_1dot0_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [FSG 1.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 BB D0 01 40 00 BF 00 10 40 00 BE 90 90 90 90 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B E9 }
+        $2 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 BB D0 01 40 00 BF 00 10 40 00 BE 90 90 90 90 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B E9 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -349,19 +189,7 @@ rule PseudoSigner_0dot1_Macromedia_Flash_Projector_6dot0_Anorganix : Packer
  
     strings:
         $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 83 EC 44 56 FF 15 24 81 49 00 8B F0 8A 06 3C 22 75 1C 8A 46 01 46 3C 22 74 0C 84 C0 74 08 8A 46 01 46 3C 22 75 F4 80 3E 22 75 0F 46 EB 0C E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Macromedia_Flash_Projector_6dot0_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Macromedia Flash Projector 6.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 83 EC 44 56 FF 15 24 81 49 00 8B F0 8A 06 3C 22 75 1C 8A 46 01 46 3C 22 74 0C 84 C0 74 08 8A 46 01 46 3C 22 75 F4 80 3E 22 75 0F 46 EB 0C E9 }
+        $2 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 83 EC 44 56 FF 15 24 81 49 00 8B F0 8A 06 3C 22 75 1C 8A 46 01 46 3C 22 74 0C 84 C0 74 08 8A 46 01 46 3C 22 75 F4 80 3E 22 75 0F 46 EB 0C E9 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -375,19 +203,8 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot0_Debug_Version_Anorganix
  
     strings:
         $1 = { 55 8B EC 51 90 90 90 01 01 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot0_Debug_Version_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 51 90 90 90 01 01 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 }
+        $2 = { 55 8B EC 51 90 90 90 01 01 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 }
+        $3 = { 55 8B EC 51 90 90 90 01 01 90 90 90 90 68 ?? ?? ?? ?? 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 10 01 90 90 90 90 90 90 90 90 E8 00 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 E9 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -401,19 +218,8 @@ rule PseudoSigner_0dot1_Morphine_1dot2_Anorganix : Packer
  
     strings:
         $1 = { 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 EB 08 E8 90 00 00 00 66 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 51 66 90 90 90 59 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Morphine_1dot2_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Morphine 1.2] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 EB 08 E8 90 00 00 00 66 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 51 66 90 90 90 59 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $2 = { 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 EB 08 E8 90 00 00 00 66 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 51 66 90 90 90 59 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $3 = { 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 06 00 90 90 90 90 90 90 90 90 EB 08 E8 90 00 00 00 66 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 51 66 90 90 90 59 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 E2 90 90 90 EB 08 82 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 EB 02 00 01 E9 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -427,19 +233,8 @@ rule PseudoSigner_0dot1_Neolite_2dot0_Anorganix : Packer
  
     strings:
         $1 = { E9 A6 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Neolite_2dot0_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Neolite 2.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { E9 A6 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $2 = { E9 A6 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $3 = { E9 A6 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 E9 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -453,19 +248,8 @@ rule PseudoSigner_0dot1_Pack_Master_1dot0_PEX_Clone_Anorganix : Packer
  
     strings:
         $1 = { 60 E8 01 01 00 00 E8 83 C4 04 E8 01 90 90 90 E9 5D 81 ED D3 22 40 90 E8 04 02 90 90 E8 EB 08 EB 02 CD 20 FF 24 24 9A 66 BE 47 46 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Pack_Master_1dot0_PEX_Clone_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 01 01 00 00 E8 83 C4 04 E8 01 90 90 90 E9 5D 81 ED D3 22 40 90 E8 04 02 90 90 E8 EB 08 EB 02 CD 20 FF 24 24 9A 66 BE 47 46 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $2 = { 60 E8 01 01 00 00 E8 83 C4 04 E8 01 90 90 90 E9 5D 81 ED D3 22 40 90 E8 04 02 90 90 E8 EB 08 EB 02 CD 20 FF 24 24 9A 66 BE 47 46 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 }
+        $3 = { 60 E8 01 01 00 00 E8 83 C4 04 E8 01 90 90 90 E9 5D 81 ED D3 22 40 90 E8 04 02 90 90 E8 EB 08 EB 02 CD 20 FF 24 24 9A 66 BE 47 46 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 FF FF E9 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -479,19 +263,7 @@ rule PseudoSigner_0dot1_PECompact_1dot4plus_Anorganix : Packer
  
     strings:
         $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 EB 06 68 90 90 90 90 C3 9C 60 E8 02 90 90 90 33 C0 8B C4 83 C0 04 93 8B E3 8B 5B FC 81 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_PECompact_1dot4plus_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [PECompact 1.4+] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 EB 06 68 90 90 90 90 C3 9C 60 E8 02 90 90 90 33 C0 8B C4 83 C0 04 93 8B E3 8B 5B FC 81 }
+        $2 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 EB 06 68 90 90 90 90 C3 9C 60 E8 02 90 90 90 33 C0 8B C4 83 C0 04 93 8B E3 8B 5B FC 81 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -505,24 +277,12 @@ rule PseudoSigner_0dot1_PEtite_2dotx_level_0_Anorganix : Packer
  
     strings:
         $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 B8 00 90 90 00 6A 00 68 90 90 90 00 64 FF 35 00 00 00 00 64 89 25 00 00 00 00 66 9C 60 50 8B D8 03 00 68 }
+        $2 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 B8 00 90 90 00 6A 00 68 90 90 90 00 64 FF 35 00 00 00 00 64 89 25 00 00 00 00 66 9C 60 50 8B D8 03 00 68 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PEtite_2dotx_level_0_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [PEtite 2.x (level 0)] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 B8 00 90 90 00 6A 00 68 90 90 90 00 64 FF 35 00 00 00 00 64 89 25 00 00 00 00 66 9C 60 50 8B D8 03 00 68 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Ste@lth PE 1dot01]_Anorganix : Packer
+rule PseudoSigner_0dot1_Ste_at_lth_PE_1dot01_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Ste@lth PE 1.01] --> Anorganix" // Packer name & version
@@ -531,24 +291,12 @@ rule PseudoSigner_0dot1_Ste@lth PE 1dot01]_Anorganix : Packer
  
     strings:
         $1 = { 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 BA ?? ?? ?? ?? FF E2 BA E0 10 40 00 B8 68 24 1A 40 89 02 83 C2 03 B8 40 00 E8 EE 89 02 83 C2 FD FF E2 2D 3D 5B 20 48 69 64 65 50 45 20 5D 3D 2D 90 00 00 00 }
+        $2 = { 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 BA ?? ?? ?? ?? FF E2 BA E0 10 40 00 B8 68 24 1A 40 89 02 83 C2 03 B8 40 00 E8 EE 89 02 83 C2 FD FF E2 2D 3D 5B 20 48 69 64 65 50 45 20 5D 3D 2D 90 00 00 00 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Ste@lth PE 1dot01]_Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Ste@lth PE 1.01] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 0B C0 BA ?? ?? ?? ?? FF E2 BA E0 10 40 00 B8 68 24 1A 40 89 02 83 C2 03 B8 40 00 E8 EE 89 02 83 C2 FD FF E2 2D 3D 5B 20 48 69 64 65 50 45 20 5D 3D 2D 90 00 00 00 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Video_Lan_Client__Anorganix : Packer
+rule PseudoSigner_0dot1_Video_Lan_Client_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Video-Lan-Client] --> Anorganix" // Packer name & version
@@ -557,19 +305,7 @@ rule PseudoSigner_0dot1_Video_Lan_Client__Anorganix : Packer
  
     strings:
         $1 = { 55 89 E5 83 EC 08 90 90 90 90 90 90 90 90 90 90 90 90 90 90 01 FF FF 01 01 01 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 00 01 00 01 90 90 00 01 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot1_Video_Lan_Client__Anorganix : Packer
-{
-    meta:
-        name = "PseudoSigner 0.1 [Video-Lan-Client] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 89 E5 83 EC 08 90 90 90 90 90 90 90 90 90 90 90 90 90 90 01 FF FF 01 01 01 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 00 01 00 01 90 90 00 01 E9 }
+        $2 = { 55 89 E5 83 EC 08 90 90 90 90 90 90 90 90 90 90 90 90 90 90 01 FF FF 01 01 01 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 00 01 00 01 90 90 00 01 E9 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -600,7 +336,7 @@ rule PseudoSigner_0dot2_Macromedia_Flash_Projector_6dot0_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Video_Lan_Client__Anorganix : Packer
+rule PseudoSigner_0dot2_Video_Lan_Client_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Video-Lan-Client] --> Anorganix" // Packer name & version
@@ -622,45 +358,9 @@ rule VMProtect_v1dot25_PolyTech : Packer
  
     strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 52 56 51 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 A7 72 45 00 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 9C 52 56 53 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 21 71 45 00 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 52 56 51 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 A7 72 45 00 C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 9C 52 56 53 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 21 71 45 00 C3 }
+        $2 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 9C 52 56 53 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 21 71 45 00 C3 }
+        $3 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 52 56 51 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 A7 72 45 00 C3 }
+        $4 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 9C 52 56 53 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 21 71 45 00 C3 }
 
     condition:
         for any of them : ($ at entrypoint)
@@ -951,7 +651,7 @@ rule CICompress_v1dot0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CipherWall_Self_Extrator_Decryptor__Console__v1dot5 : Packer
+rule CipherWall_Self_Extrator_Decryptor_Console_v1dot5 : Packer
 {
     meta:
         name = "CipherWall Self-Extrator/Decryptor (Console) v1.5" // Packer name & version
@@ -964,7 +664,7 @@ rule CipherWall_Self_Extrator_Decryptor__Console__v1dot5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CipherWall_Self_Extrator_Decryptor__Console__v1dot5 : Packer
+rule CipherWall_Self_Extrator_Decryptor_Console_v1dot5 : Packer
 {
     meta:
         name = "CipherWall Self-Extrator/Decryptor (Console) v1.5" // Packer name & version
@@ -977,7 +677,7 @@ rule CipherWall_Self_Extrator_Decryptor__Console__v1dot5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CipherWall_Self_Extrator_Decryptor__GUI__v1dot5 : Packer
+rule CipherWall_Self_Extrator_Decryptor_GUI_v1dot5 : Packer
 {
     meta:
         name = "CipherWall Self-Extrator/Decryptor (GUI) v1.5" // Packer name & version
@@ -990,7 +690,7 @@ rule CipherWall_Self_Extrator_Decryptor__GUI__v1dot5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CipherWall_Self_Extrator_Decryptor__GUI__v1dot5 : Packer
+rule CipherWall_Self_Extrator_Decryptor_GUI_v1dot5 : Packer
 {
     meta:
         name = "CipherWall Self-Extrator/Decryptor (GUI) v1.5" // Packer name & version
@@ -1653,7 +1353,7 @@ rule FSG_v1dot10_Eng_bart_xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
@@ -1666,7 +1366,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
@@ -1679,7 +1379,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Borland C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -1692,7 +1392,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Borland C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -1705,7 +1405,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
@@ -1718,7 +1418,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
@@ -1731,7 +1431,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(MASM32 / TASM32) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
@@ -1744,7 +1444,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(MASM32 / TASM32) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
@@ -1757,7 +1457,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -1770,7 +1470,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -1783,7 +1483,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -1796,7 +1496,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -1809,7 +1509,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Borland C++) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Borland C++) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
@@ -1822,7 +1522,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Borland C++) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Borland C++) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
@@ -1835,7 +1535,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Borland Delphi / Borland C++) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -1848,7 +1548,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Borland Delphi / Borland C++) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -1861,7 +1561,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
@@ -1874,7 +1574,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
@@ -1887,7 +1587,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(MASM32 / TASM32) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
@@ -1900,7 +1600,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(MASM32 / TASM32) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
@@ -1913,7 +1613,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -1926,7 +1626,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -1939,7 +1639,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -1952,7 +1652,7 @@ rule FSG_v1dot20_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot20_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -2433,7 +2133,7 @@ rule ORiEN_v2dot11_DEMO : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ORiEN_v2dot11___2dot12_Fisun_Alexander : Packer
+rule ORiEN_v2dot11_2dot12_Fisun_Alexander : Packer
 {
     meta:
         name = "ORiEN v2.11 - 2.12 -> Fisun Alexander" // Packer name & version
@@ -2563,7 +2263,7 @@ rule PECompact_v1dot67 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot68___v1dot84 : Packer
+rule PECompact_v1dot68_v1dot84 : Packer
 {
     meta:
         name = "PECompact v1.68 - v1.84" // Packer name & version
@@ -2823,7 +2523,7 @@ rule PseudoSigner_0dot2_Macromedia_Flash_Projector_6dot0_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Video_Lan_Client__Anorganix : Packer
+rule PseudoSigner_0dot2_Video_Lan_Client_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Video-Lan-Client] --> Anorganix" // Packer name & version
@@ -2927,7 +2627,7 @@ rule RLPack_V1dot0dotbeta_ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SafeDisc_SafeCast_2dotxx___3dotxx_Macrovision : Packer
+rule SafeDisc_SafeCast_2dotxx_3dotxx_Macrovision : Packer
 {
     meta:
         name = "SafeDisc/SafeCast 2.xx - 3.xx -> Macrovision" // Packer name & version
@@ -2966,7 +2666,7 @@ rule SDProtector_1dotx_Randy_Li : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SDProtector_Basic_Pro_Edition_1dot10_Randy_Li__h_ : Packer
+rule SDProtector_Basic_Pro_Edition_1dot10_Randy_Li_h_ : Packer
 {
     meta:
         name = "SDProtector Basic/Pro Edition 1.10 -> Randy Li (h)" // Packer name & version
@@ -3005,7 +2705,7 @@ rule SmartE_Microsoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Soft_Defender_v1dot0___v1dot1 : Packer
+rule Soft_Defender_v1dot0_v1dot1 : Packer
 {
     meta:
         name = "Soft Defender v1.0 - v1.1" // Packer name & version
@@ -3109,7 +2809,7 @@ rule themida_1dot0dot0dot5_http://wwwdotoreansdotcom : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_1dot0dotxdotx___1dot8dot0dot0_(compressed engine)_Oreans Technologies : Packer
+rule Themida_1dot0dotxdotx_1dot8dot0dot0_(compressed engine)_Oreans Technologies : Packer
 {
     meta:
         name = "Themida 1.0.x.x - 1.8.0.0 (compressed engine) -> Oreans Technologies" // Packer name & version
@@ -3200,7 +2900,7 @@ rule Upack_0dot21_beta_Dwing : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_0dot22___0dot23_beta_Dwing : Packer
+rule Upack_0dot22_0dot23_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.22 - 0.23 beta -> Dwing" // Packer name & version
@@ -3356,7 +3056,7 @@ rule VProtector_V1dot0E_vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinUpack_v0dot39_final_relocated_image_base_By_Dwing_c_2005__h2_ : Packer
+rule WinUpack_v0dot39_final_relocated_image_base_By_Dwing_c_2005_h2_ : Packer
 {
     meta:
         name = "WinUpack v0.39 final (relocated image base) -> By Dwing (c)2005 (h2)" // Packer name & version
@@ -4041,902 +3741,74 @@ rule VMProtect_v1dot25_PolyTech : Packer
  
     strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 57 51 9C 50 52 55 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 9C 57 52 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 50 57 53 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 9C 50 55 51 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 53 52 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 52 9C 50 51 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 52 51 55 57 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 50 9C 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 9C 51 50 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 57 54 53 9C 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 50 51 57 50 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 57 52 50 51 51 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 50 57 55 51 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 50 52 54 9C 53 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 56 53 51 55 9C 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 56 55 50 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 55 50 55 56 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 52 53 56 9C 55 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 53 52 50 51 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 52 53 55 52 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 51 55 52 51 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 52 55 51 53 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 53 54 51 55 56 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
+        $2 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 9C 57 52 51 55 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $3 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 53 50 57 53 9C 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $4 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 9C 50 55 51 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
+        $5 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 53 52 51 9C 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 FF 34 85 ?? ?? ?? ?? C3 }
+        $6 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 57 55 52 9C 50 51 53 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
+        $7 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 55 52 51 55 57 9C 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $8 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 52 50 9C 51 55 54 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $9 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 9C 51 50 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $10 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 51 57 54 53 9C 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
+        $11 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 55 50 51 57 50 52 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $12 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 57 52 50 51 51 9C 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $13 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 50 57 55 51 52 51 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
+        $14 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 50 52 54 9C 53 55 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
+        $15 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 56 53 51 55 9C 55 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
+        $16 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
+        $17 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 56 55 50 9C 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 55 04 83 C5 08 89 10 E9 }
+        $18 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 53 55 50 55 56 52 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $19 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 52 53 56 9C 55 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
+        $20 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 53 52 50 51 55 57 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $21 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 52 53 55 52 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
+        $22 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 9C 51 55 52 51 57 50 53 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
+        $23 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 55 52 55 51 53 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
+        $24 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 53 54 51 55 56 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 50 52 53 56 57 9C 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 55 52 9C 57 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8A 06 8A 04 07 46 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 53 50 51 51 57 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 57 53 56 54 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 06 83 ED 04 8D 76 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 52 51 50 53 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 56 50 52 53 51 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 57 51 50 52 53 56 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 53 50 54 57 51 56 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 51 9C 56 53 51 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 56 51 52 53 50 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 8A 55 04 83 C5 06 88 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 50 52 53 52 51 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 9C 51 55 56 53 52 50 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 53 51 50 52 51 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 55 57 9C 51 56 53 52 50 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 51 53 57 52 9C 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 57 53 57 55 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 55 50 57 51 53 9C 54 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 50 53 51 57 9C 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 52 9C 55 57 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 53 51 50 53 9C 57 52 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 52 9C 55 53 51 50 51 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 50 52 51 57 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 53 9C 51 57 52 57 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 FF 24 85 ?? ?? ?? ?? 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 52 9C 52 51 57 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 55 04 83 C5 08 36 89 10 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 9C 57 52 50 50 53 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 51 53 54 57 55 50 9C 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 56 50 55 51 53 50 52 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 51 56 52 50 9C 50 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 57 55 53 9C 51 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 66 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 56 50 9C 53 50 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 01 45 04 9C 8F 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 54 53 9C 55 52 50 56 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 8D 76 01 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 56 55 55 9C 50 52 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 EE FF 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 36 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 53 52 51 57 55 9C 56 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 06 83 EE FC 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 50 53 51 56 55 51 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 8D 76 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 6D 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 9C 56 53 55 52 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 66 8B 06 8D 76 02 83 ED 02 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 51 56 57 55 52 9C 53 50 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8A 06 83 ED 02 66 89 45 00 46 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 56 50 55 51 9C 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 C6 01 0F B6 C0 FF 24 85 ?? ?? ?? ?? 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 54 55 51 50 9C 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 75 00 83 C5 04 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 52 53 50 9C 56 53 55 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 ?? ?? ?? ?? C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 52 50 56 9C 51 53 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 EC 59 5A 5B 59 9D 5E 58 5F 5D 5F C3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 56 52 50 51 56 55 53 9C 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 83 C6 01 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 56 57 55 52 50 53 51 55 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 24 85 ?? ?? ?? ?? 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 53 56 56 50 55 51 57 52 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 24 85 ?? ?? ?? ?? 8B 45 00 83 C5 02 66 8B 00 66 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 8B 45 00 8A 4D 04 83 ED 02 D3 E8 89 45 04 9C 8F 45 00 E9 01 7D 00 00 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 9C 57 55 52 54 50 51 53 56 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 89 E8 83 ED 04 89 45 00 E9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule VMProtect_v1dot25_PolyTech : Packer
-{
-    meta:
-        name = "VMProtect v1.25 --> PolyTech" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 51 52 57 53 55 56 50 9C 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 83 EE FF 0F B6 C0 8D 0C 85 ?? ?? ?? ?? FF 21 8B 45 00 8B 00 89 45 00 E9 }
 
     condition:
@@ -13663,7 +12535,7 @@ rule Armadillo_v2dot53 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot5x___v2dot6x : Packer
+rule Armadillo_v2dot5x_v2dot6x : Packer
 {
     meta:
         name = "Armadillo v2.5x - v2.6x" // Packer name & version
@@ -13676,7 +12548,7 @@ rule Armadillo_v2dot5x___v2dot6x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot5x___v2dot6x : Packer
+rule Armadillo_v2dot5x_v2dot6x : Packer
 {
     meta:
         name = "Armadillo v2.5x - v2.6x" // Packer name & version
@@ -15314,7 +14186,7 @@ rule Microsoft_Visual_C# v7dot0 / Basic dotNET : Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_6dot0___8dot0 : Packer
+rule Microsoft_Visual_Cplusplus_6dot0_8dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 - 8.0" // Packer name & version
@@ -15327,7 +14199,7 @@ rule Microsoft_Visual_Cplusplus_6dot0___8dot0 : Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_6dot0___8dot0 : Packer
+rule Microsoft_Visual_Cplusplus_6dot0_8dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 - 8.0" // Packer name & version
@@ -15340,7 +14212,7 @@ rule Microsoft_Visual_Cplusplus_6dot0___8dot0 : Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_6dot0___8dot0 : Packer
+rule Microsoft_Visual_Cplusplus_6dot0_8dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 - 8.0" // Packer name & version
@@ -15873,7 +14745,7 @@ rule PE_Armor_0dot46_China_Cracking_Group : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_PaCK_v1dot0__C__Copyright_1998_by_ANAKiN_(h) : Packer
+rule PE_PaCK_v1dot0_C_Copyright_1998_by_ANAKiN_(h) : Packer
 {
     meta:
         name = "PE-PaCK v1.0 -> (C) Copyright 1998 by ANAKiN (h)" // Packer name & version
@@ -16094,7 +14966,7 @@ rule PECompact_v1dot10b7 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot20___v1dot20dot1 : Packer
+rule PECompact_v1dot20_v1dot20dot1 : Packer
 {
     meta:
         name = "PECompact v1.20 - v1.20.1" // Packer name & version
@@ -16120,7 +14992,7 @@ rule PECompact_v1dot22 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot23b3___v1dot24dot1 : Packer
+rule PECompact_v1dot23b3_v1dot24dot1 : Packer
 {
     meta:
         name = "PECompact v1.23b3 - v1.24.1" // Packer name & version
@@ -16133,7 +15005,7 @@ rule PECompact_v1dot23b3___v1dot24dot1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot24dot2___v1dot24dot3 : Packer
+rule PECompact_v1dot24dot2_v1dot24dot3 : Packer
 {
     meta:
         name = "PECompact v1.24.2 - v1.24.3" // Packer name & version
@@ -16159,7 +15031,7 @@ rule PECompact_v1dot25 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot26b1___v1dot26b2 : Packer
+rule PECompact_v1dot26b1_v1dot26b2 : Packer
 {
     meta:
         name = "PECompact v1.26b1 - v1.26b2" // Packer name & version
@@ -16185,7 +15057,7 @@ rule PECompact_v1dot33 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot34___v1dot40b1 : Packer
+rule PECompact_v1dot34_v1dot40b1 : Packer
 {
     meta:
         name = "PECompact v1.34 - v1.40b1" // Packer name & version
@@ -16198,7 +15070,7 @@ rule PECompact_v1dot34___v1dot40b1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot40___v1dot45 : Packer
+rule PECompact_v1dot40_v1dot45 : Packer
 {
     meta:
         name = "PECompact v1.40 - v1.45" // Packer name & version
@@ -16211,7 +15083,7 @@ rule PECompact_v1dot40___v1dot45 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot40b2___v1dot40b4 : Packer
+rule PECompact_v1dot40b2_v1dot40b4 : Packer
 {
     meta:
         name = "PECompact v1.40b2 - v1.40b4" // Packer name & version
@@ -16224,7 +15096,7 @@ rule PECompact_v1dot40b2___v1dot40b4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot40b5___v1dot40b6 : Packer
+rule PECompact_v1dot40b5_v1dot40b6 : Packer
 {
     meta:
         name = "PECompact v1.40b5 - v1.40b6" // Packer name & version
@@ -16250,7 +15122,7 @@ rule PECompact_v1dot46 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot47___v1dot50 : Packer
+rule PECompact_v1dot47_v1dot50 : Packer
 {
     meta:
         name = "PECompact v1.47 - v1.50" // Packer name & version
@@ -16289,7 +15161,7 @@ rule PECompact_v1dot56 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot60___v1dot65 : Packer
+rule PECompact_v1dot60_v1dot65 : Packer
 {
     meta:
         name = "PECompact v1.60 - v1.65" // Packer name & version
@@ -16978,7 +15850,7 @@ rule tElock_v0dot42 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot4x___v0dot5x : Packer
+rule tElock_v0dot4x_v0dot5x : Packer
 {
     meta:
         name = "tElock v0.4x - v0.5x" // Packer name & version
@@ -17017,7 +15889,7 @@ rule tElock_v0dot99_Special_Build_heXer_& forgot : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_WinLicense_V1dot0dot0dot0_V1dot8dot0dot0__Oreans_Technologies : Packer
+rule Themida_WinLicense_V1dot0dot0dot0_V1dot8dot0dot0_Oreans_Technologies : Packer
 {
     meta:
         name = "Themida/WinLicense V1.0.0.0-V1.8.0.0-> Oreans Technologies" // Packer name & version
@@ -17069,7 +15941,7 @@ rule Trainer_Creation_Kit_v5_Trainer : Packer
     condition:
     	for any of them
 }
-rule Upack_0dot22___0dot23_beta_Dwing : Packer
+rule Upack_0dot22_0dot23_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.22 - 0.23 beta -> Dwing" // Packer name & version
@@ -17225,7 +16097,7 @@ rule UPX_v0dot70 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot81___v0dot84_Modified : Packer
+rule UPX_v0dot81_v0dot84_Modified : Packer
 {
     meta:
         name = "UPX v0.81 - v0.84 Modified" // Packer name & version
@@ -17238,7 +16110,7 @@ rule UPX_v0dot81___v0dot84_Modified : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot89dot6___v1dot02_/ v1dot05 - v1dot22 Modified : Packer
+rule UPX_v0dot89dot6_v1dot02_/ v1dot05 - v1dot22 Modified : Packer
 {
     meta:
         name = "UPX v0.89.6 - v1.02 / v1.05 - v1.22 Modified" // Packer name & version
@@ -17251,7 +16123,7 @@ rule UPX_v0dot89dot6___v1dot02_/ v1dot05 - v1dot22 Modified : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v1dot03___v1dot04_Modified : Packer
+rule UPX_v1dot03_v1dot04_Modified : Packer
 {
     meta:
         name = "UPX v1.03 - v1.04 Modified" // Packer name & version
@@ -17316,7 +16188,7 @@ rule VcAsm_Protector_V1dot0X_VcAsm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VIRUS___I-WormdotBagle : Packer
+rule VIRUS_I-WormdotBagle : Packer
 {
     meta:
         name = "VIRUS - I-Worm.Bagle" // Packer name & version
@@ -17654,7 +16526,7 @@ rule PseudoSigner_0dot1_ASProtect_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_CD_Cops_II]_Anorganix : Packer
+rule PseudoSigner_0dot1_CD_Cops_II_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [CD-Cops II] --> Anorganix" // Packer name & version
@@ -17667,7 +16539,7 @@ rule PseudoSigner_0dot1_CD_Cops_II]_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_CD_Cops_II]_Anorganix : Packer
+rule PseudoSigner_0dot1_CD_Cops_II_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [CD-Cops II] --> Anorganix" // Packer name & version
@@ -17680,7 +16552,7 @@ rule PseudoSigner_0dot1_CD_Cops_II]_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Code_Lock__Anorganix : Packer
+rule PseudoSigner_0dot1_Code_Lock_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Code-Lock] --> Anorganix" // Packer name & version
@@ -17693,7 +16565,7 @@ rule PseudoSigner_0dot1_Code_Lock__Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Code_Lock__Anorganix : Packer
+rule PseudoSigner_0dot1_Code_Lock_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Code-Lock] --> Anorganix" // Packer name & version
@@ -17810,7 +16682,7 @@ rule PseudoSigner_0dot1_LTC_1dot3_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0___6dot0]_Anorganix : Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix" // Packer name & version
@@ -17823,7 +16695,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0___6dot0]_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0___6dot0]_Anorganix : Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix" // Packer name & version
@@ -18122,7 +16994,7 @@ rule PseudoSigner_0dot2_Borland_Delphi_Setup_Module_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Code_Lock__Anorganix : Packer
+rule PseudoSigner_0dot2_Code_Lock_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Code-Lock] --> Anorganix" // Packer name & version
@@ -31122,7 +29994,7 @@ rule BeRoEXEPacker_v1dot00_LZMA_BeRo_Farbrausch : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CA_Visual_Objects_2dot0___2dot5 : Packer
+rule CA_Visual_Objects_2dot0_2dot5 : Packer
 {
     meta:
         name = "CA Visual Objects 2.0 - 2.5" // Packer name & version
@@ -31824,7 +30696,7 @@ rule FSG_v1dot1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> bart/xt_WinRAR-SFX : Packer
+rule FSG_v1dot10_Eng_> bart/xt_WinRAR-SFX : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> bart/xt -> WinRAR-SFX" // Packer name & version
@@ -31837,7 +30709,7 @@ rule FSG_v1dot10_Eng__> bart/xt_WinRAR-SFX : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> bart/xt_WinRAR-SFX : Packer
+rule FSG_v1dot10_Eng_> bart/xt_WinRAR-SFX : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> bart/xt -> WinRAR-SFX" // Packer name & version
@@ -31850,7 +30722,7 @@ rule FSG_v1dot10_Eng__> bart/xt_WinRAR-SFX : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland C++ 1999) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland C++ 1999) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland C++ 1999)" // Packer name & version
@@ -31863,7 +30735,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland C++ 1999) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
@@ -31876,7 +30748,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Borland C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -31889,7 +30761,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Borland C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -31902,7 +30774,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Borland C++) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++ / ASM) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Microsoft Visual C++ / ASM) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++ / ASM)" // Packer name & version
@@ -31915,7 +30787,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++ / ASM) :
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
@@ -31928,7 +30800,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++) : Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++)x : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi / Microsoft Visual C++)x : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)x" // Packer name & version
@@ -31941,7 +30813,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi / Microsoft Visual C++)x : Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi 2dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Borland Delphi 2dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi 2.0)" // Packer name & version
@@ -31954,7 +30826,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Borland Delphi 2dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(MASM32 / TASM32 / Microsoft Visual Basic) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(MASM32 / TASM32 / Microsoft Visual Basic) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32 / Microsoft Visual Basic)" // Packer name & version
@@ -31967,7 +30839,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(MASM32 / TASM32 / Microsoft Visual Basic) : Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(MASM32 / TASM32) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
@@ -31980,7 +30852,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(MASM32 / TASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(MASM32) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(MASM32) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32)" // Packer name & version
@@ -31993,7 +30865,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(MASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual Basic / MASM32) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual Basic / MASM32) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual Basic / MASM32)" // Packer name & version
@@ -32006,7 +30878,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual Basic / MASM32) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual Basic 5dot0 / 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual Basic 5dot0 / 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual Basic 5.0 / 6.0)" // Packer name & version
@@ -32019,7 +30891,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual Basic 5dot0 / 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 4dotx / LCC Win32 1dotx) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 4dotx / LCC Win32 1dotx) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 4.x / LCC Win32 1.x)" // Packer name & version
@@ -32032,7 +30904,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 4dotx / LCC Win32 1dotx) 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 5dot0 / 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 5dot0 / 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 5.0 / 6.0)" // Packer name & version
@@ -32045,7 +30917,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 5dot0 / 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0 / ASM) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0 / ASM) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0 / ASM)" // Packer name & version
@@ -32058,7 +30930,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0 / ASM) : Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -32071,7 +30943,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -32084,7 +30956,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -32097,7 +30969,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -32110,7 +30982,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / ASM) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / ASM) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / ASM)" // Packer name & version
@@ -32123,7 +30995,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / ASM) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -32136,7 +31008,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -32149,7 +31021,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -32162,7 +31034,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -32175,7 +31047,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -32188,7 +31060,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -32201,7 +31073,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -32214,7 +31086,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -32448,7 +31320,7 @@ rule Inno_Setup_Module_v3dot0dot4_beta_v3dot0dot6/v3dot0dot7 : Packer
     condition:
     	for any of them
 }
-rule iPB_Protect_0dot1dot3___0dot1dot7_forgot : Packer
+rule iPB_Protect_0dot1dot3_0dot1dot7_forgot : Packer
 {
     meta:
         name = "iPB Protect 0.1.3 - 0.1.7 -> forgot" // Packer name & version
@@ -32773,7 +31645,7 @@ rule Microsoft_Visual_Cplusplus_v5dot0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v5dot0_v6dot0__MFC_ : Packer
+rule Microsoft_Visual_Cplusplus_v5dot0_v6dot0_MFC_ : Packer
 {
     meta:
         name = "Microsoft Visual C++ v5.0/v6.0 (MFC)" // Packer name & version
@@ -32890,7 +31762,7 @@ rule Microsoft_Visual_Cplusplus_vxdotx_DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MingWin32___Dev_C++ v4dotx (h) : Packer
+rule MingWin32_Dev_C++ v4dotx (h) : Packer
 {
     meta:
         name = "MingWin32 - Dev C++ v4.x (h)" // Packer name & version
@@ -33345,7 +32217,7 @@ rule PE_Protect_v0dot9 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEBundle_v0dot2___v2dot0x : Packer
+rule PEBundle_v0dot2_v2dot0x : Packer
 {
     meta:
         name = "PEBundle v0.2 - v2.0x" // Packer name & version
@@ -33358,7 +32230,7 @@ rule PEBundle_v0dot2___v2dot0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEBundle_v2dot0b5___v2dot3 : Packer
+rule PEBundle_v2dot0b5_v2dot3 : Packer
 {
     meta:
         name = "PEBundle v2.0b5 - v2.3" // Packer name & version
@@ -33657,7 +32529,7 @@ rule PMODE_W_vdot1dot12, 1dot16, 1dot21, 1dot33 DOS extender : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PolyCrypt_PE___2dot1dot4b/2dot1dot5_JLab Software Creations (h-signed) : Packer
+rule PolyCrypt_PE_2dot1dot4b/2dot1dot5_JLab Software Creations (h-signed) : Packer
 {
     meta:
         name = "PolyCrypt PE - 2.1.4b/2.1.5 -> JLab Software Creations (h-signed)" // Packer name & version
@@ -33839,7 +32711,7 @@ rule PseudoSigner_0dot2_Borland_Delphi_Setup_Module_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Code_Lock__Anorganix : Packer
+rule PseudoSigner_0dot2_Code_Lock_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Code-Lock] --> Anorganix" // Packer name & version
@@ -34164,7 +33036,7 @@ rule RLPack_Full_Edition_1dot17_LZMA_Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_V1dot12_V1dot14__LZMA_4dot30)_ap0x : Packer
+rule RLPack_V1dot12_V1dot14_LZMA_4dot30)_ap0x : Packer
 {
     meta:
         name = "RLPack V1.12-V1.14 (LZMA 4.30) -> ap0x" // Packer name & version
@@ -34502,7 +33374,7 @@ rule Themida_1dot2dot0dot1_Oreans_Technologies_h : Packer
     condition:
     	for any of them
 }
-rule Thinstall_2dot4x___2dot5x_Jitit_Software : Packer
+rule Thinstall_2dot4x_2dot5x_Jitit_Software : Packer
 {
     meta:
         name = "Thinstall 2.4x - 2.5x -> Jitit Software" // Packer name & version
@@ -34723,7 +33595,7 @@ rule UPX_2dot90_LZMA_Markus_Oberhumer, Laszlo Molnar & John Reiser : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot60___v0dot61 : Packer
+rule UPX_v0dot60_v0dot61 : Packer
 {
     meta:
         name = "UPX v0.60 - v0.61" // Packer name & version
@@ -34736,7 +33608,7 @@ rule UPX_v0dot60___v0dot61 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot71___v0dot72 : Packer
+rule UPX_v0dot71_v0dot72 : Packer
 {
     meta:
         name = "UPX v0.71 - v0.72" // Packer name & version
@@ -34749,7 +33621,7 @@ rule UPX_v0dot71___v0dot72 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot89dot6___v1dot02_/ v1dot05 -v1dot24_Markus & Laszlo [overlay] : Packer
+rule UPX_v0dot89dot6_v1dot02_/ v1dot05 -v1dot24_Markus & Laszlo [overlay] : Packer
 {
     meta:
         name = "UPX v0.89.6 - v1.02 / v1.05 -v1.24 -> Markus & Laszlo [overlay]" // Packer name & version
@@ -34840,7 +33712,7 @@ rule UPXShit_0dot06 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VBOX_v4dot3___v4dot6 : Packer
+rule VBOX_v4dot3_v4dot6 : Packer
 {
     meta:
         name = "VBOX v4.3 - v4.6" // Packer name & version
@@ -34853,7 +33725,7 @@ rule VBOX_v4dot3___v4dot6 : Packer
     condition:
     	for any of them
 }
-rule Video_Lan_Client__UnknownCompiler_ : Packer
+rule Video_Lan_Client_UnknownCompiler_ : Packer
 {
     meta:
         name = "Video-Lan-Client -> (UnknownCompiler)" // Packer name & version
@@ -34866,7 +33738,7 @@ rule Video_Lan_Client__UnknownCompiler_ : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VMProtect_0dot7x___0dot8_PolyTech : Packer
+rule VMProtect_0dot7x_0dot8_PolyTech : Packer
 {
     meta:
         name = "VMProtect 0.7x - 0.8 -> PolyTech" // Packer name & version
@@ -35126,7 +33998,7 @@ rule W32dotJeefo_PE_File_Infector : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WARNING__> TROJAN_ADinjector : Packer
+rule WARNING_> TROJAN_ADinjector : Packer
 {
     meta:
         name = "WARNING -> TROJAN -> ADinjector" // Packer name & version
@@ -35581,7 +34453,7 @@ rule PseudoSigner_0dot1_XCR_0dot11_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Yodas_Protector_1dot02]_Anorganix : Packer
+rule PseudoSigner_0dot1_Yodas_Protector_1dot02_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Yoda's Protector 1.02] --> Anorganix" // Packer name & version
@@ -35620,7 +34492,7 @@ rule PseudoSigner_0dot2_Borland_Cplusplus_DLL_Method_2_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_CD_Cops_II]_Anorganix : Packer
+rule PseudoSigner_0dot2_CD_Cops_II_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [CD-Cops II] --> Anorganix" // Packer name & version
@@ -35646,7 +34518,7 @@ rule PseudoSigner_0dot2_MEW_11_SE_1dot0_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0___6dot0]_Anorganix : Packer
+rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix" // Packer name & version
@@ -35724,7 +34596,7 @@ rule PseudoSigner_0dot2_XCR_0dot11_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Yodas_Protector_1dot02]_Anorganix : Packer
+rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Yoda's Protector 1.02] --> Anorganix" // Packer name & version
@@ -36127,7 +34999,7 @@ rule aPack_v0dot62 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule aPack_v0dot98__m : Packer
+rule aPack_v0dot98_m : Packer
 {
     meta:
         name = "aPack v0.98 -m" // Packer name & version
@@ -36192,7 +35064,7 @@ rule Armadillo_v1dot71 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot72___v1dot73 : Packer
+rule Armadillo_v1dot72_v1dot73 : Packer
 {
     meta:
         name = "Armadillo v1.72 - v1.73" // Packer name & version
@@ -36218,7 +35090,7 @@ rule Armadillo_v1dot9x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dotxx___v2dotxx : Packer
+rule Armadillo_v1dotxx_v2dotxx : Packer
 {
     meta:
         name = "Armadillo v1.xx - v2.xx" // Packer name & version
@@ -36478,7 +35350,7 @@ rule ASPR_Stripper_v2dotx_unpacked : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_1dot33___2dot1_Registered_Alexey_Solodovnikov : Packer
+rule ASProtect_1dot33_2dot1_Registered_Alexey_Solodovnikov : Packer
 {
     meta:
         name = "ASProtect 1.33 - 2.1 Registered -> Alexey Solodovnikov" // Packer name & version
@@ -36855,7 +35727,7 @@ rule CodeCrypt_v0dot15b : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CodeCrypt_v0dot16b___v0dot163b : Packer
+rule CodeCrypt_v0dot16b_v0dot163b : Packer
 {
     meta:
         name = "CodeCrypt v0.16b - v0.163b" // Packer name & version
@@ -36985,7 +35857,7 @@ rule Cruncher_v1dot0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CrypKey_v5___v6 : Packer
+rule CrypKey_v5_v6 : Packer
 {
     meta:
         name = "CrypKey v5 - v6" // Packer name & version
@@ -37258,7 +36130,7 @@ rule DJoin_v0dot7_public_xor_encryption_drmist : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DOS_16M_DOS_Extender__c__Tenberry_Software_Inc_1987-1995 : Packer
+rule DOS_16M_DOS_Extender_c_Tenberry_Software_Inc_1987-1995 : Packer
 {
     meta:
         name = "DOS/16M DOS Extender (c) Tenberry Software Inc 1987-1995" // Packer name & version
@@ -37427,7 +36299,7 @@ rule EncryptPE_1dot2003dot5dot18_WFS : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EncryptPE_2dot2004dot8dot10___2dot2005dot3dot14_WFS : Packer
+rule EncryptPE_2dot2004dot8dot10_2dot2005dot3dot14_WFS : Packer
 {
     meta:
         name = "EncryptPE 2.2004.8.10 - 2.2005.3.14 -> WFS" // Packer name & version
@@ -37479,7 +36351,7 @@ rule Enigma_protector_1dot10_1dot11_Vladimir_Sukhov : Packer
     condition:
     	for any of them
 }
-rule ENIGMA_Protector_V1dot0_V1dot2__Sukhov_Vladimir : Packer
+rule ENIGMA_Protector_V1dot0_V1dot2_Sukhov_Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector V1.0-V1.2-> Sukhov Vladimir" // Packer name & version
@@ -37518,7 +36390,7 @@ rule ENIGMA_Protector_V1dot1_Sukhov_Vladimir : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ENIGMA_Protector_V1dot1_V1dot2__Sukhov_Vladimir : Packer
+rule ENIGMA_Protector_V1dot1_V1dot2_Sukhov_Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector V1.1-V1.2-> Sukhov Vladimir" // Packer name & version
@@ -37635,7 +36507,7 @@ rule EXE_Manager_Version_3dot0_1994_c_Solar_Designer : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Shield_v0dot1b___v0dot3b, v0dot3_SMoKE : Packer
+rule EXE_Shield_v0dot1b_v0dot3b, v0dot3_SMoKE : Packer
 {
     meta:
         name = "EXE Shield v0.1b - v0.3b, v0.3 -> SMoKE" // Packer name & version
@@ -38103,7 +36975,7 @@ rule FSG_1dot31_dulek_xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> bart/xt_(Watcom C/C++ EXE) : Packer
+rule FSG_v1dot10_Eng_> bart/xt_(Watcom C/C++ EXE) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> bart/xt -> (Watcom C/C++ EXE)" // Packer name & version
@@ -38168,7 +37040,7 @@ rule FSG_v1dot10_Eng_dulek_xt : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -38181,7 +37053,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -38194,7 +37066,7 @@ rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0 / 7dot0) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng__> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
+rule FSG_v1dot10_Eng_> dulek/xt_(Microsoft Visual C++ 6dot0) : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -39195,7 +38067,7 @@ rule Microsoft_Visual_Cplusplus_v7dot1_DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot1_DLL__Debug_ : Packer
+rule Microsoft_Visual_Cplusplus_v7dot1_DLL_Debug_ : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.1 DLL (Debug)" // Packer name & version
@@ -40196,7 +39068,7 @@ rule PECompact_v0dot94 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot971___v0dot976 : Packer
+rule PECompact_v0dot971_v0dot976 : Packer
 {
     meta:
         name = "PECompact v0.971 - v0.976" // Packer name & version
@@ -40287,7 +39159,7 @@ rule PESHiELD_v0dot1b_MTE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESHiELD_v0dot2_v0dot2b___v0dot2b2 : Packer
+rule PESHiELD_v0dot2_v0dot2b_v0dot2b2 : Packer
 {
     meta:
         name = "PESHiELD v0.2 / v0.2b / v0.2b2" // Packer name & version
@@ -40963,7 +39835,7 @@ rule PseudoSigner_0dot1_XCR_0dot11_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Yodas_Protector_1dot02]_Anorganix : Packer
+rule PseudoSigner_0dot1_Yodas_Protector_1dot02_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Yoda's Protector 1.02] --> Anorganix" // Packer name & version
@@ -41002,7 +39874,7 @@ rule PseudoSigner_0dot2_Borland_Cplusplus_DLL_Method_2_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_CD_Cops_II]_Anorganix : Packer
+rule PseudoSigner_0dot2_CD_Cops_II_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [CD-Cops II] --> Anorganix" // Packer name & version
@@ -41028,7 +39900,7 @@ rule PseudoSigner_0dot2_MEW_11_SE_1dot0_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0___6dot0]_Anorganix : Packer
+rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix" // Packer name & version
@@ -41106,7 +39978,7 @@ rule PseudoSigner_0dot2_XCR_0dot11_Anorganix : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Yodas_Protector_1dot02]_Anorganix : Packer
+rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Yoda's Protector 1.02] --> Anorganix" // Packer name & version
@@ -41340,7 +40212,7 @@ rule RLPack_Full_Edition_1dot17_DLL_Ap0x : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_V1dot12_V1dot14__aPlib_0dot43)_ap0x : Packer
+rule RLPack_V1dot12_V1dot14_aPlib_0dot43)_ap0x : Packer
 {
     meta:
         name = "RLPack V1.12-V1.14 (aPlib 0.43) -> ap0x" // Packer name & version
@@ -41496,7 +40368,7 @@ rule Simple_UPX_Cryptor_v30dot4dot2005_multi_layer_encryption_MANtiCORE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SimplePack_V1dot1X_V1dot2X__Method2__bagie : Packer
+rule SimplePack_V1dot1X_V1dot2X_Method2_bagie : Packer
 {
     meta:
         name = "SimplePack V1.1X-V1.2X (Method2) -> bagie" // Packer name & version
@@ -41626,7 +40498,7 @@ rule SoftWrap : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Spalsher_1dot0___3dot0_Amok : Packer
+rule Spalsher_1dot0_3dot0_Amok : Packer
 {
     meta:
         name = "Spalsher 1.0 - 3.0 -> Amok" // Packer name & version
@@ -41639,7 +40511,7 @@ rule Spalsher_1dot0___3dot0_Amok : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Spalsher_v1dot0___v3dot0 : Packer
+rule Spalsher_v1dot0_v3dot0 : Packer
 {
     meta:
         name = "Spalsher v1.0 - v3.0" // Packer name & version
@@ -41860,7 +40732,7 @@ rule TASM_MASM : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_0dot99___1dot0_private_tE! : Packer
+rule tElock_0dot99_1dot0_private_tE! : Packer
 {
     meta:
         name = "tElock 0.99 - 1.0 private -> tE!" // Packer name & version
@@ -42185,7 +41057,7 @@ rule Unknown_by_SMT : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_encryptor_2___"PK7Tjrvx" : Packer
+rule Unknown_encryptor_2_"PK7Tjrvx" : Packer
 {
     meta:
         name = "Unknown encryptor (2) - "PK7Tjrvx"" // Packer name & version
@@ -42302,7 +41174,7 @@ rule Unknown_Protected_Mode_compiler_2 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot10___v0dot12Beta_Sign_by_hot_UNP : Packer
+rule Upack_v0dot10_v0dot12Beta_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.10 - v0.12Beta -> Sign by hot_UNP" // Packer name & version
@@ -42549,7 +41421,7 @@ rule Upack_Unknown_DLL_???)_Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_0dot50___0dot70 : Packer
+rule UPX_0dot50_0dot70 : Packer
 {
     meta:
         name = "UPX 0.50 - 0.70" // Packer name & version
@@ -42718,7 +41590,7 @@ rule UPX_v0dot76dot1_pe_exe : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot89dot6___v1dot02_/ v1dot05 - v1dot22 DLL : Packer
+rule UPX_v0dot89dot6_v1dot02_/ v1dot05 - v1dot22 DLL : Packer
 {
     meta:
         name = "UPX v0.89.6 - v1.02 / v1.05 - v1.22 DLL" // Packer name & version
@@ -42731,7 +41603,7 @@ rule UPX_v0dot89dot6___v1dot02_/ v1dot05 - v1dot22 DLL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot89dot6___v1dot02_/ v1dot05 -v1dot22 (Delphi) stub : Packer
+rule UPX_v0dot89dot6_v1dot02_/ v1dot05 -v1dot22 (Delphi) stub : Packer
 {
     meta:
         name = "UPX v0.89.6 - v1.02 / v1.05 -v1.22 (Delphi) stub" // Packer name & version
@@ -42848,7 +41720,7 @@ rule VBOX_v4dot2_MTE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VBOX_v4dot3___v4dot6 : Packer
+rule VBOX_v4dot3_v4dot6 : Packer
 {
     meta:
         name = "VBOX v4.3 - v4.6" // Packer name & version
@@ -42952,7 +41824,7 @@ rule Virogen`s PE Shrinker v0dot14 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VIRUS___I-WormdotKLEZ : Packer
+rule VIRUS_I-WormdotKLEZ : Packer
 {
     meta:
         name = "VIRUS - I-Worm.KLEZ" // Packer name & version
@@ -43706,7 +42578,7 @@ rule Vx: XPEHdot4768 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WARNING__> TROJAN_HuiGeZi : Packer
+rule WARNING_> TROJAN_HuiGeZi : Packer
 {
     meta:
         name = "WARNING -> TROJAN -> HuiGeZi" // Packer name & version
@@ -43719,7 +42591,7 @@ rule WARNING__> TROJAN_HuiGeZi : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WARNING__> TROJAN_RobinPE : Packer
+rule WARNING_> TROJAN_RobinPE : Packer
 {
     meta:
         name = "WARNING -> TROJAN -> RobinPE" // Packer name & version
@@ -43732,7 +42604,7 @@ rule WARNING__> TROJAN_RobinPE : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WARNING__> TROJAN_XiaoHui : Packer
+rule WARNING_> TROJAN_XiaoHui : Packer
 {
     meta:
         name = "WARNING -> TROJAN -> XiaoHui" // Packer name & version
@@ -43836,7 +42708,7 @@ rule WinUpack_v0dot30_beta_By_Dwing : Packer
     condition:
     	for any of them
 }
-rule WinZip_32_bit__6dotx : Packer
+rule WinZip_32_bit_6dotx : Packer
 {
     meta:
         name = "WinZip (32-bit) 6.x" // Packer name & version
@@ -43953,7 +42825,7 @@ rule XCR_v0dot12 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule XPack_1dot52___1dot64 : Packer
+rule XPack_1dot52_1dot64 : Packer
 {
     meta:
         name = "XPack 1.52 - 1.64" // Packer name & version
@@ -44161,7 +43033,7 @@ rule aPack_v0dot98b_exe : Packer
     condition:
     	for any of them
 }
-rule AsCrypt_v0dot1_SToRM___needs_to_be_added : Packer
+rule AsCrypt_v0dot1_SToRM_needs_to_be_added : Packer
 {
     meta:
         name = "AsCrypt v0.1 -> SToRM - needs to be added" // Packer name & version
@@ -44174,7 +43046,7 @@ rule AsCrypt_v0dot1_SToRM___needs_to_be_added : Packer
     condition:
     	for any of them
 }
-rule AsCrypt_v0dot1_SToRM___needs_to_be_added : Packer
+rule AsCrypt_v0dot1_SToRM_needs_to_be_added : Packer
 {
     meta:
         name = "AsCrypt v0.1 -> SToRM - needs to be added" // Packer name & version
@@ -44187,7 +43059,7 @@ rule AsCrypt_v0dot1_SToRM___needs_to_be_added : Packer
     condition:
     	for any of them
 }
-rule AsCrypt_v0dot1_SToRM___needs_to_be_added : Packer
+rule AsCrypt_v0dot1_SToRM_needs_to_be_added : Packer
 {
     meta:
         name = "AsCrypt v0.1 -> SToRM - needs to be added" // Packer name & version
@@ -44200,7 +43072,7 @@ rule AsCrypt_v0dot1_SToRM___needs_to_be_added : Packer
     condition:
     	for any of them
 }
-rule AsCrypt_v0dot1_SToRM___needs_to_be_added : Packer
+rule AsCrypt_v0dot1_SToRM_needs_to_be_added : Packer
 {
     meta:
         name = "AsCrypt v0.1 -> SToRM - needs to be added" // Packer name & version
@@ -44473,7 +43345,7 @@ rule Microsoft_Visual_Basic_5dot0 : Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Basic_v5dot0___v6dot0 : Packer
+rule Microsoft_Visual_Basic_v5dot0_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual Basic v5.0 - v6.0" // Packer name & version
@@ -44486,7 +43358,7 @@ rule Microsoft_Visual_Basic_v5dot0___v6dot0 : Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Basic_v5dot0___v6dot0 : Packer
+rule Microsoft_Visual_Basic_v5dot0_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual Basic v5.0 - v6.0" // Packer name & version
@@ -44525,7 +43397,7 @@ rule Microsoft_Visual_C_5dot0 : Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_6dot0_DLL__Debug_ : Packer
+rule Microsoft_Visual_Cplusplus_6dot0_DLL_Debug_ : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 DLL (Debug)" // Packer name & version
@@ -44733,7 +43605,7 @@ rule Petite_2dot1 : Packer
     condition:
     	for any of them
 }
-rule PolyCrypt_PE___2dot1dot4b/2dot1dot5_JLab Software Creations (h-oep) : Packer
+rule PolyCrypt_PE_2dot1dot4b/2dot1dot5_JLab Software Creations (h-oep) : Packer
 {
     meta:
         name = "PolyCrypt PE - 2.1.4b/2.1.5 -> JLab Software Creations (h-oep)" // Packer name & version
@@ -45019,7 +43891,7 @@ rule UPX$HiT 0dot0dot1_sibaway7@yahoodotcom : Packer
     condition:
     	for any of them
 }
-rule VIRUS___I-WormdotHybris : Packer
+rule VIRUS_I-WormdotHybris : Packer
 {
     meta:
         name = "VIRUS - I-Worm.Hybris" // Packer name & version
@@ -45578,7 +44450,7 @@ rule TAV : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot7x___v0dot84 : Packer
+rule tElock_v0dot7x_v0dot84 : Packer
 {
     meta:
         name = "tElock v0.7x - v0.84" // Packer name & version
