@@ -1,7 +1,7 @@
 //  Made with Add Signature v2.00 by BoB / BobSoft ..
 //  3520 Signatures in list ..
 
-rule Native_UD_Packer_1dot1_Modded_Poison_Ivy_Shellcode_okkixot___: Packer
+rule Native_UD_Packer_1dot1_Modded_Poison_Ivy_Shellcode_okkixot : Packer
 {
     meta:
         name = "Native UD Packer 1.1 (Modded Poison Ivy Shellcode) -> okkixot" // Packer name & version
@@ -14,7 +14,7 @@ rule Native_UD_Packer_1dot1_Modded_Poison_Ivy_Shellcode_okkixot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_v1dot3dot0dot0_Obsidium_Software_h___: Packer
+rule PseudoSigner_0dot2_FSG_1dot0_Anorganix : Packer
 {
     meta:
         name = "Obsidium v1.3.0.0 -> Obsidium Software (h)" // Packer name & version
@@ -23,12 +23,14 @@ rule Obsidium_v1dot3dot0dot0_Obsidium_Software_h___: Packer
  
     strings:
         $1 = { EB 04 25 80 34 CA E8 29 00 00 00 EB 02 C1 81 EB 01 3A 8B 54 24 0C EB 02 32 92 83 82 B8 00 00 00 22 EB 02 F2 7F 33 C0 EB 04 65 7E 14 79 C3 EB 04 05 AD 7F 45 EB 04 05 65 0B E8 64 67 FF 36 00 00 EB 04 0D F6 A8 7F 64 67 89 26 00 00 EB 04 8D 68 C7 FB EB 01 6B 50 EB 03 8A 0B 93 33 C0 EB 02 28 B9 8B 00 EB 01 04 C3 EB 04 65 B3 54 0A E9 FA 00 00 00 EB 01 A2 E8 D5 FF FF FF EB 02 2B 49 EB 03 7C 3E 76 58 EB 04 B8 94 92 56 EB 01 72 64 67 8F 06 00 00 EB 02 23 72 83 C4 04 EB 02 A9 CB E8 47 26 00 00 }
-
+        $2 = { EB 04 25 80 34 CA E8 29 00 00 00 EB 02 C1 81 EB 01 3A 8B 54 24 0C EB 02 32 92 83 82 B8 00 00 00 22 EB 02 F2 7F 33 C0 EB 04 65 7E 14 79 C3 EB 04 05 AD 7F 45 EB 04 05 65 0B E8 64 67 FF 36 00 00 EB 04 0D F6 A8 7F 64 67 89 26 00 00 EB 04 8D 68 C7 FB EB 01 6B }
+        $3 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 BB D0 01 40 00 BF 00 10 40 00 BE 90 90 90 90 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B }
+        $4 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 BB D0 01 40 00 BF 00 10 40 00 BE 90 90 90 90 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESpin_v0dot1_Cyberbob___: Packer
+rule PESpin_v0dot1_Cyberbob : Packer
 {
     meta:
         name = "PESpin v0.1 -> Cyberbob" // Packer name & version
@@ -41,7 +43,7 @@ rule PESpin_v0dot1_Cyberbob___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Private_Personal_Packer_PPP_v1dot0dot2_ConquestOfTroydotcom___: Packer
+rule Private_Personal_Packer_PPP_v1dot0dot2_ConquestOfTroydotcom : Packer
 {
     meta:
         name = "Private Personal Packer (PPP) v1.0.2 --> ConquestOfTroy.com" // Packer name & version
@@ -54,7 +56,7 @@ rule Private_Personal_Packer_PPP_v1dot0dot2_ConquestOfTroydotcom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SimplePack_1dot11_Method_1_bagie_TMX_h____: Packer
+rule SimplePack_1dot11_Method_1_bagie_TMX_h : Packer
 {
     meta:
         name = "SimplePack 1.11 Method 1 -> bagie[TMX] (h)" // Packer name & version
@@ -67,7 +69,7 @@ rule SimplePack_1dot11_Method_1_bagie_TMX_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Software_Compress_v1dot2_BG_Software_Protect_Technologies___: Packer
+rule Software_Compress_v1dot2_BG_Software_Protect_Technologies : Packer
 {
     meta:
         name = "Software Compress v1.2 -> BG Software Protect Technologies" // Packer name & version
@@ -80,7 +82,7 @@ rule Software_Compress_v1dot2_BG_Software_Protect_Technologies___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Software_Compress_v1dot4_LITE_BG_Software_Protect_Technologies_h___: Packer
+rule Software_Compress_v1dot4_LITE_BG_Software_Protect_Technologies_h : Packer
 {
     meta:
         name = "Software Compress v1.4 LITE -> BG Software Protect Technologies (h)" // Packer name & version
@@ -93,7 +95,7 @@ rule Software_Compress_v1dot4_LITE_BG_Software_Protect_Technologies_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_ACProtect_1dot09_Anorganix___: Packer
+rule PseudoSigner_0dot1_ACProtect_1dot09_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [ACProtect 1.09] --> Anorganix" // Packer name & version
@@ -108,7 +110,7 @@ rule PseudoSigner_0dot1_ACProtect_1dot09_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_ASPack_2dotxx_Heuristic_Anorganix___: Packer
+rule PseudoSigner_0dot1_ASPack_2dotxx_Heuristic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [ASPack 2.xx Heuristic] --> Anorganix" // Packer name & version
@@ -122,7 +124,7 @@ rule PseudoSigner_0dot1_ASPack_2dotxx_Heuristic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Borland_Delphi_3dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_Borland_Delphi_3dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Borland Delphi 3.0] --> Anorganix" // Packer name & version
@@ -137,7 +139,7 @@ rule PseudoSigner_0dot1_Borland_Delphi_3dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Borland_Delphi_5dot0_KOL_MCK_Anorganix___: Packer
+rule PseudoSigner_0dot1_Borland_Delphi_5dot0_KOL_MCK_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Borland Delphi 5.0 KOL/MCK] --> Anorganix" // Packer name & version
@@ -152,7 +154,7 @@ rule PseudoSigner_0dot1_Borland_Delphi_5dot0_KOL_MCK_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Borland_Delphi_6dot0_7dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_Borland_Delphi_6dot0_7dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Borland Delphi 6.0 - 7.0] --> Anorganix" // Packer name & version
@@ -166,7 +168,7 @@ rule PseudoSigner_0dot1_Borland_Delphi_6dot0_7dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_FSG_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_FSG_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [FSG 1.0] --> Anorganix" // Packer name & version
@@ -180,7 +182,7 @@ rule PseudoSigner_0dot1_FSG_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Macromedia_Flash_Projector_6dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_Macromedia_Flash_Projector_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Macromedia Flash Projector 6.0] --> Anorganix" // Packer name & version
@@ -194,7 +196,7 @@ rule PseudoSigner_0dot1_Macromedia_Flash_Projector_6dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot0_Debug_Version_Anorganix___: Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot0_Debug_Version_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual C++ 6.0 (Debug Version)] --> Anorganix" // Packer name & version
@@ -209,7 +211,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot0_Debug_Version_Anorganix
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Morphine_1dot2_Anorganix___: Packer
+rule PseudoSigner_0dot1_Morphine_1dot2_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Morphine 1.2] --> Anorganix" // Packer name & version
@@ -224,7 +226,7 @@ rule PseudoSigner_0dot1_Morphine_1dot2_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Neolite_2dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_Neolite_2dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Neolite 2.0] --> Anorganix" // Packer name & version
@@ -239,7 +241,7 @@ rule PseudoSigner_0dot1_Neolite_2dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Pack_Master_1dot0_PEX_Clone_Anorganix___: Packer
+rule PseudoSigner_0dot1_Pack_Master_1dot0_PEX_Clone_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Pack Master 1.0 (PEX Clone)] --> Anorganix" // Packer name & version
@@ -254,7 +256,7 @@ rule PseudoSigner_0dot1_Pack_Master_1dot0_PEX_Clone_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PECompact_1dot4plus_Anorganix___: Packer
+rule PseudoSigner_0dot1_PECompact_1dot4plus_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PECompact 1.4+] --> Anorganix" // Packer name & version
@@ -268,7 +270,7 @@ rule PseudoSigner_0dot1_PECompact_1dot4plus_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PEtite_2dotx_level_0_Anorganix___: Packer
+rule PseudoSigner_0dot1_PEtite_2dotx_level_0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PEtite 2.x (level 0)] --> Anorganix" // Packer name & version
@@ -282,7 +284,7 @@ rule PseudoSigner_0dot1_PEtite_2dotx_level_0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Ste_at_lth_PE_1dot01_Anorganix___: Packer
+rule PseudoSigner_0dot1_Ste_at_lth_PE_1dot01_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Ste@lth PE 1.01] --> Anorganix" // Packer name & version
@@ -296,7 +298,7 @@ rule PseudoSigner_0dot1_Ste_at_lth_PE_1dot01_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Video_Lan_Client_Anorganix___: Packer
+rule PseudoSigner_0dot1_Video_Lan_Client_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Video-Lan-Client] --> Anorganix" // Packer name & version
@@ -310,20 +312,7 @@ rule PseudoSigner_0dot1_Video_Lan_Client_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_FSG_1dot0_Anorganix___: Packer
-{
-    meta:
-        name = "PseudoSigner 0.2 [FSG 1.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 BB D0 01 40 00 BF 00 10 40 00 BE 90 90 90 90 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot2_Macromedia_Flash_Projector_6dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_Macromedia_Flash_Projector_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Macromedia Flash Projector 6.0] --> Anorganix" // Packer name & version
@@ -332,11 +321,12 @@ rule PseudoSigner_0dot2_Macromedia_Flash_Projector_6dot0_Anorganix___: Packer
  
     strings:
         $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 83 EC 44 56 FF 15 24 81 49 00 8B F0 8A 06 3C 22 75 1C 8A 46 01 46 3C 22 74 0C 84 C0 74 08 8A 46 01 46 3C 22 75 F4 80 3E 22 75 0F 46 EB 0C }
+        $2 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 83 EC 44 56 FF 15 24 81 49 00 8B F0 8A 06 3C 22 75 1C 8A 46 01 46 3C 22 74 0C 84 C0 74 08 8A 46 01 46 3C 22 75 F4 80 3E 22 75 0F 46 EB 0C }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Video_Lan_Client_Anorganix___: Packer
+rule PseudoSigner_0dot2_Video_Lan_Client_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Video-Lan-Client] --> Anorganix" // Packer name & version
@@ -349,11 +339,12 @@ rule PseudoSigner_0dot2_Video_Lan_Client_Anorganix___: Packer
         $3 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 9C 52 56 53 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 21 71 45 00 C3 }
         $4 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 50 53 56 52 56 51 9C 55 57 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 46 0F B6 C0 FF 34 85 A7 72 45 00 C3 }
         $5 = { 68 ?? ?? ?? ?? E8 ?? ?? ?? ?? 57 55 9C 52 56 53 56 50 51 68 00 00 00 00 8B 74 24 2C 89 E5 81 EC C0 00 00 00 89 E7 03 75 00 8A 06 0F B6 C0 46 FF 34 85 21 71 45 00 C3 }
+        $6 = { 55 89 E5 83 EC 08 90 90 90 90 90 90 90 90 90 90 90 90 90 90 01 FF FF 01 01 01 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 00 01 00 01 90 90 00 01 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ACProtect_1dot09g_Risco_software_Incdot___: Packer
+rule ACProtect_1dot09g_Risco_software_Incdot : Packer
 {
     meta:
         name = "ACProtect 1.09g -> Risco software Inc." // Packer name & version
@@ -367,7 +358,7 @@ rule ACProtect_1dot09g_Risco_software_Incdot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Alloy_4dotx_PGWare_LLC___: Packer
+rule Alloy_4dotx_PGWare_LLC : Packer
 {
     meta:
         name = "Alloy 4.x -> PGWare LLC" // Packer name & version
@@ -381,7 +372,7 @@ rule Alloy_4dotx_PGWare_LLC___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Apex_c_beta_500mhz___: Packer
+rule Apex_c_beta_500mhz : Packer
 {
     meta:
         name = "Apex_c beta -> 500mhz" // Packer name & version
@@ -395,7 +386,7 @@ rule Apex_c_beta_500mhz___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v3dot01__v3dot05___: Packer
+rule Armadillo_v3dot01_v3dot05 : Packer
 {
     meta:
         name = "Armadillo v3.01, v3.05" // Packer name & version
@@ -409,7 +400,7 @@ rule Armadillo_v3dot01__v3dot05___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v3dot10___: Packer
+rule Armadillo_v3dot10 : Packer
 {
     meta:
         name = "Armadillo v3.10" // Packer name & version
@@ -423,7 +414,7 @@ rule Armadillo_v3dot10___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_SKE_2dot1x_dll_Alexey_Solodovnikov_h____: Packer
+rule ASProtect_SKE_2dot1x_dll_Alexey_Solodovnikov_h : Packer
 {
     meta:
         name = "ASProtect SKE 2.1x (dll) -> Alexey Solodovnikov (h)" // Packer name & version
@@ -437,7 +428,7 @@ rule ASProtect_SKE_2dot1x_dll_Alexey_Solodovnikov_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot23_RC4_build_08dot07_dll_Alexey_Solodovnikov_h____: Packer
+rule ASProtect_v1dot23_RC4_build_08dot07_dll_Alexey_Solodovnikov_h : Packer
 {
     meta:
         name = "ASProtect v1.23 RC4 build 08.07 (dll) -> Alexey Solodovnikov (h)" // Packer name & version
@@ -451,7 +442,7 @@ rule ASProtect_v1dot23_RC4_build_08dot07_dll_Alexey_Solodovnikov_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule beria_v0dot07_public_WIP_symbiont___: Packer
+rule beria_v0dot07_public_WIP_symbiont : Packer
 {
     meta:
         name = "beria v0.07 public WIP --> symbiont" // Packer name & version
@@ -465,7 +456,7 @@ rule beria_v0dot07_public_WIP_symbiont___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRo_Tiny_Pascal_BeRo___: Packer
+rule BeRo_Tiny_Pascal_BeRo : Packer
 {
     meta:
         name = "BeRo Tiny Pascal -> BeRo" // Packer name & version
@@ -479,7 +470,7 @@ rule BeRo_Tiny_Pascal_BeRo___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRo_Tiny_Pascal_BeRo_Farbrausch___: Packer
+rule BeRo_Tiny_Pascal_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRo Tiny Pascal -> BeRo / Farbrausch" // Packer name & version
@@ -492,7 +483,7 @@ rule BeRo_Tiny_Pascal_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BobPack_v1dot00_BoB_BobSoft___: Packer
+rule BobPack_v1dot00_BoB_BobSoft : Packer
 {
     meta:
         name = "BobPack v1.00 --> BoB / BobSoft" // Packer name & version
@@ -505,7 +496,7 @@ rule BobPack_v1dot00_BoB_BobSoft___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CICompress_v1dot0___: Packer
+rule CICompress_v1dot0 : Packer
 {
     meta:
         name = "CICompress v1.0" // Packer name & version
@@ -519,7 +510,7 @@ rule CICompress_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CipherWall_Self_Extrator_Decryptor_Console_v1dot5___: Packer
+rule CipherWall_Self_Extrator_Decryptor_Console_v1dot5 : Packer
 {
     meta:
         name = "CipherWall Self-Extrator/Decryptor (Console) v1.5" // Packer name & version
@@ -533,7 +524,7 @@ rule CipherWall_Self_Extrator_Decryptor_Console_v1dot5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CipherWall_Self_Extrator_Decryptor_GUI_v1dot5___: Packer
+rule CipherWall_Self_Extrator_Decryptor_GUI_v1dot5 : Packer
 {
     meta:
         name = "CipherWall Self-Extrator/Decryptor (GUI) v1.5" // Packer name & version
@@ -547,7 +538,7 @@ rule CipherWall_Self_Extrator_Decryptor_GUI_v1dot5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CreateInstall_Stub_vxdotx___: Packer
+rule CreateInstall_Stub_vxdotx : Packer
 {
     meta:
         name = "CreateInstall Stub vx.x" // Packer name & version
@@ -561,7 +552,7 @@ rule CreateInstall_Stub_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_v4dot0___: Packer
+rule Crunch_v4dot0 : Packer
 {
     meta:
         name = "Crunch v4.0" // Packer name & version
@@ -575,7 +566,7 @@ rule Crunch_v4dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_v5_Bit_Arts___: Packer
+rule Crunch_v5_Bit_Arts : Packer
 {
     meta:
         name = "Crunch v5 -> Bit-Arts" // Packer name & version
@@ -589,7 +580,7 @@ rule Crunch_v5_Bit_Arts___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crypto_Lock_v2dot02__Eng__Ryan_Thian___: Packer
+rule Crypto_Lock_v2dot02_Eng_Ryan_Thian : Packer
 {
     meta:
         name = "Crypto-Lock v2.02 (Eng) -> Ryan Thian" // Packer name & version
@@ -605,7 +596,7 @@ rule Crypto_Lock_v2dot02__Eng__Ryan_Thian___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DBPE_v2dot10___: Packer
+rule DBPE_v2dot10 : Packer
 {
     meta:
         name = "DBPE v2.10" // Packer name & version
@@ -614,24 +605,13 @@ rule DBPE_v2dot10___: Packer
  
     strings:
         $1 = { 9C 6A 10 73 0B EB 02 C1 51 E8 06 ?? ?? ?? C4 11 73 F7 5B CD 83 C4 04 EB 02 99 EB FF 0C 24 71 01 E8 79 E0 7A 01 75 83 C4 04 9D EB 01 75 68 5F 20 40 ?? E8 B0 EF FF FF 72 03 73 01 75 BE }
+        $2 = { 9C 6A 10 73 0B EB 02 C1 51 E8 06 ?? ?? ?? C4 11 73 F7 5B CD 83 C4 04 EB 02 99 EB FF 0C 24 71 01 E8 79 E0 7A 01 75 83 C4 04 9D EB 01 75 68 5F 20 40 ?? E8 B0 EF FF FF 72 03 73 01 75 BE }
+        $3 = { EB 20 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 9C 55 57 56 52 51 53 9C E8 ?? ?? ?? ?? 5D 81 ED ?? ?? ?? ?? EB 58 75 73 65 72 33 32 2E 64 6C 6C ?? 4D 65 73 73 61 67 65 42 6F 78 41 ?? 6B 65 72 6E 65 6C }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DBPE_v2dot10___: Packer
-{
-    meta:
-        name = "DBPE v2.10" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 9C 6A 10 73 0B EB 02 C1 51 E8 06 ?? ?? ?? C4 11 73 F7 5B CD 83 C4 04 EB 02 99 EB FF 0C 24 71 01 E8 79 E0 7A 01 75 83 C4 04 9D EB 01 75 68 5F 20 40 ?? E8 B0 EF FF FF 72 03 73 01 75 BE }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule DEF_1dot0_bart_xt___: Packer
+rule DEF_1dot0_bart_xt : Packer
 {
     meta:
         name = "DEF 1.0 -> bart/xt" // Packer name & version
@@ -647,7 +627,7 @@ rule DEF_1dot0_bart_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule diPacker_V1dotX_diProtector_Software___: Packer
+rule diPacker_V1dotX_diProtector_Software : Packer
 {
     meta:
         name = "diPacker V1.X -> diProtector Software" // Packer name & version
@@ -661,7 +641,7 @@ rule diPacker_V1dotX_diProtector_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DotFix_NiceProtect_vna___: Packer
+rule DotFix_NiceProtect_vna : Packer
 {
     meta:
         name = "DotFix NiceProtect vna" // Packer name & version
@@ -674,7 +654,7 @@ rule DotFix_NiceProtect_vna___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Duals_eXe_1dot0___: Packer
+rule Duals_eXe_1dot0 : Packer
 {
     meta:
         name = "Dual's eXe 1.0" // Packer name & version
@@ -688,7 +668,7 @@ rule Duals_eXe_1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EmbedPE_1dot13_cyclotron___: Packer
+rule EmbedPE_1dot13_cyclotron : Packer
 {
     meta:
         name = "EmbedPE 1.13 -> cyclotron" // Packer name & version
@@ -702,7 +682,7 @@ rule EmbedPE_1dot13_cyclotron___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EP_v1dot0___: Packer
+rule EP_v1dot0 : Packer
 {
     meta:
         name = "EP v1.0" // Packer name & version
@@ -716,7 +696,7 @@ rule EP_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Guarder_v1dot8_Exeicondotcom_h___: Packer
+rule Exe_Guarder_v1dot8_Exeicondotcom_h : Packer
 {
     meta:
         name = "Exe Guarder v1.8 -> Exeicon.com (h)" // Packer name & version
@@ -730,7 +710,7 @@ rule Exe_Guarder_v1dot8_Exeicondotcom_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Locker_v1dot0_IonIce___: Packer
+rule Exe_Locker_v1dot0_IonIce : Packer
 {
     meta:
         name = "Exe Locker v1.0 --> IonIce" // Packer name & version
@@ -744,7 +724,7 @@ rule Exe_Locker_v1dot0_IonIce___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Shield_V0dot5_Smoke___: Packer
+rule EXE_Shield_V0dot5_Smoke : Packer
 {
     meta:
         name = "EXE Shield V0.5 -> Smoke" // Packer name & version
@@ -757,7 +737,7 @@ rule EXE_Shield_V0dot5_Smoke___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Shield_V0dot6_SMoKE___: Packer
+rule EXE_Shield_V0dot6_SMoKE : Packer
 {
     meta:
         name = "EXE Shield V0.6 -> SMoKE" // Packer name & version
@@ -770,7 +750,7 @@ rule EXE_Shield_V0dot6_SMoKE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Shield_v2dot7b___: Packer
+rule Exe_Shield_v2dot7b : Packer
 {
     meta:
         name = "Exe Shield v2.7b" // Packer name & version
@@ -784,7 +764,7 @@ rule Exe_Shield_v2dot7b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Stealth_2dot75a_WebtoolMaster___: Packer
+rule Exe_Stealth_2dot75a_WebtoolMaster : Packer
 {
     meta:
         name = "Exe Stealth 2.75a -> WebtoolMaster" // Packer name & version
@@ -797,7 +777,7 @@ rule Exe_Stealth_2dot75a_WebtoolMaster___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeBundle_v3dot0_small_loader___: Packer
+rule ExeBundle_v3dot0_small_loader : Packer
 {
     meta:
         name = "ExeBundle v3.0 (small loader)" // Packer name & version
@@ -811,7 +791,7 @@ rule ExeBundle_v3dot0_small_loader___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeBundle_v3dot0_standard_loader___: Packer
+rule ExeBundle_v3dot0_standard_loader : Packer
 {
     meta:
         name = "ExeBundle v3.0 (standard loader)" // Packer name & version
@@ -825,7 +805,7 @@ rule ExeBundle_v3dot0_standard_loader___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeJoiner_1dot0_Yoda_f2f___: Packer
+rule ExeJoiner_1dot0_Yoda_f2f : Packer
 {
     meta:
         name = "ExeJoiner 1.0 -> Yoda f2f" // Packer name & version
@@ -839,7 +819,7 @@ rule ExeJoiner_1dot0_Yoda_f2f___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeShield_3dot6_wwwdotexeshielddotcom___: Packer
+rule ExeShield_3dot6_wwwdotexeshielddotcom : Packer
 {
     meta:
         name = "ExeShield 3.6 -> www.exeshield.com" // Packer name & version
@@ -852,7 +832,7 @@ rule ExeShield_3dot6_wwwdotexeshielddotcom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeShield_v3dot7_ExeShield_Team_h___: Packer
+rule ExeShield_v3dot7_ExeShield_Team_h : Packer
 {
     meta:
         name = "ExeShield v3.7 -> ExeShield Team (h)" // Packer name & version
@@ -865,7 +845,7 @@ rule ExeShield_v3dot7_ExeShield_Team_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXEStealth_v2dot75a_WebtoolMaster_h___: Packer
+rule EXEStealth_v2dot75a_WebtoolMaster_h : Packer
 {
     meta:
         name = "EXEStealth v2.75a -> WebtoolMaster (h)" // Packer name & version
@@ -878,7 +858,7 @@ rule EXEStealth_v2dot75a_WebtoolMaster_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FixupPak_v1dot20___: Packer
+rule FixupPak_v1dot20 : Packer
 {
     meta:
         name = "FixupPak v1.20" // Packer name & version
@@ -892,7 +872,7 @@ rule FixupPak_v1dot20___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FreePascal_2dot0dot0_Win32_Berczi_Gabor__Pierre_Muller__and__Peter_Vreman____: Packer
+rule FreePascal_2dot0dot0_Win32_Berczi_Gabor_Pierre_Muller_and_Peter_Vreman : Packer
 {
     meta:
         name = "FreePascal 2.0.0 Win32 -> (Bérczi Gábor, Pierre Muller & Peter Vreman)" // Packer name & version
@@ -901,24 +881,12 @@ rule FreePascal_2dot0dot0_Win32_Berczi_Gabor__Pierre_Muller__and__Peter_Vreman__
  
     strings:
         $1 = { C6 05 ?? ?? ?? ?? 01 E8 74 00 00 00 C6 05 00 80 40 00 00 E8 68 00 00 00 50 E8 00 00 00 00 FF 25 D8 A1 40 00 90 90 90 90 90 90 90 90 90 90 90 90 55 89 E5 83 EC 04 89 5D FC E8 92 00 00 00 E8 ED 00 00 00 89 C3 B9 ?? 70 40 00 89 DA B8 00 00 00 00 E8 0A 01 00 }
+        $2 = { C6 05 00 80 40 00 01 E8 74 00 00 00 C6 05 00 80 40 00 00 E8 68 00 00 00 50 E8 00 00 00 00 FF 25 D8 A1 40 00 90 90 90 90 90 90 90 90 90 90 90 90 55 89 E5 83 EC 04 89 5D FC E8 92 00 00 00 E8 ED 00 00 00 89 C3 B9 ?? 70 40 00 89 DA B8 00 00 00 00 E8 0A 01 00 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FreePascal_2dot0dot0_Win32_Berczi_Gabor__Pierre_Muller__and__Peter_Vreman____: Packer
-{
-    meta:
-        name = "FreePascal 2.0.0 Win32 -> (Bérczi Gábor, Pierre Muller & Peter Vreman)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { C6 05 00 80 40 00 01 E8 74 00 00 00 C6 05 00 80 40 00 00 E8 68 00 00 00 50 E8 00 00 00 00 FF 25 D8 A1 40 00 90 90 90 90 90 90 90 90 90 90 90 90 55 89 E5 83 EC 04 89 5D FC E8 92 00 00 00 E8 ED 00 00 00 89 C3 B9 ?? 70 40 00 89 DA B8 00 00 00 00 E8 0A 01 00 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot00_Eng_dulek_xt___: Packer
+rule FSG_v1dot00_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.00 (Eng) -> dulek/xt" // Packer name & version
@@ -927,12 +895,11 @@ rule FSG_v1dot00_Eng_dulek_xt___: Packer
  
     strings:
         $1 = { BB D0 01 40 00 BF 00 10 40 00 BE ?? ?? ?? 00 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B FF 14 24 73 F7 33 C9 FF 14 24 73 18 33 C0 FF 14 24 73 21 B3 02 41 B0 10 FF 14 24 12 C0 73 F9 75 3F AA EB DC E8 43 00 00 00 2B CB 75 10 E8 38 }
-        $1 = { BB D0 01 40 00 BF 00 10 40 00 BE ?? ?? ?? 00 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B FF 14 24 73 F7 33 C9 FF 14 24 73 18 33 C0 FF 14 24 73 21 B3 02 41 B0 10 FF 14 24 12 C0 73 F9 75 3F AA EB DC E8 43 00 00 00 2B CB 75 10 E8 38 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_bart_xt___: Packer
+rule FSG_v1dot10_Eng_bart_xt : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> bart/xt" // Packer name & version
@@ -945,7 +912,7 @@ rule FSG_v1dot10_Eng_bart_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Cplusplus__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
@@ -959,7 +926,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Cplusplus__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Delphi_Borland_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -968,24 +935,12 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
  
     strings:
         $1 = { 2B C2 E8 02 00 00 00 95 4A 59 8D 3D 52 F1 2A E8 C1 C8 1C BE 2E ?? ?? 18 EB 02 AB A0 03 F7 EB 02 CD 20 68 F4 00 00 00 0B C7 5B 03 CB 8A 06 8A 16 E8 02 00 00 00 8D 46 59 EB 01 A4 02 D3 EB 02 CD 20 02 D3 E8 02 00 00 00 57 AB 58 81 C2 AA 87 AC B9 0F BE C9 80 }
+        $2 = { 2B C2 E8 02 00 00 00 95 4A 59 8D 3D 52 F1 2A E8 C1 C8 1C BE 2E ?? ?? 18 EB 02 AB A0 03 F7 EB 02 CD 20 68 F4 00 00 00 0B C7 5B 03 CB 8A 06 8A 16 E8 02 00 00 00 8D 46 59 EB 01 A4 02 D3 EB 02 CD 20 02 D3 E8 02 00 00 00 57 AB 58 81 C2 AA 87 AC B9 0F BE C9 80 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
-{
-    meta:
-        name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 2B C2 E8 02 00 00 00 95 4A 59 8D 3D 52 F1 2A E8 C1 C8 1C BE 2E ?? ?? 18 EB 02 AB A0 03 F7 EB 02 CD 20 68 F4 00 00 00 0B C7 5B 03 CB 8A 06 8A 16 E8 02 00 00 00 8D 46 59 EB 01 A4 02 D3 EB 02 CD 20 02 D3 E8 02 00 00 00 57 AB 58 81 C2 AA 87 AC B9 0F BE C9 80 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Delphi_Microsoft_Visual_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
@@ -994,24 +949,12 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__
  
     strings:
         $1 = { 1B DB E8 02 00 00 00 1A 0D 5B 68 80 ?? ?? 00 E8 01 00 00 00 EA 5A 58 EB 02 CD 20 68 F4 00 00 00 EB 02 CD 20 5E 0F B6 D0 80 CA 5C 8B 38 EB 01 35 EB 02 DC 97 81 EF F7 65 17 43 E8 02 00 00 00 97 CB 5B 81 C7 B2 8B A1 0C 8B D1 83 EF 17 EB 02 0C 65 83 EF 43 13 }
+        $2 = { 1B DB E8 02 00 00 00 1A 0D 5B 68 80 ?? ?? 00 E8 01 00 00 00 EA 5A 58 EB 02 CD 20 68 F4 00 00 00 EB 02 CD 20 5E 0F B6 D0 80 CA 5C 8B 38 EB 01 35 EB 02 DC 97 81 EF F7 65 17 43 E8 02 00 00 00 97 CB 5B 81 C7 B2 8B A1 0C 8B D1 83 EF 17 EB 02 0C 65 83 EF 43 13 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__: Packer
-{
-    meta:
-        name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 1B DB E8 02 00 00 00 1A 0D 5B 68 80 ?? ?? 00 E8 01 00 00 00 EA 5A 58 EB 02 CD 20 68 F4 00 00 00 EB 02 CD 20 5E 0F B6 D0 80 CA 5C 8B 38 EB 01 35 EB 02 DC 97 81 EF F7 65 17 43 E8 02 00 00 00 97 CB 5B 81 C7 B2 8B A1 0C 8B D1 83 EF 17 EB 02 0C 65 83 EF 43 13 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot10_Eng_____dulek_xt__MASM32___TASM32__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_MASM32_TASM32 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
@@ -1025,7 +968,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__MASM32___TASM32__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -1034,24 +977,12 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: P
  
     strings:
         $1 = { 0B D0 8B DA E8 02 00 00 00 40 A0 5A EB 01 9D B8 80 ?? ?? 00 EB 02 CD 20 03 D3 8D 35 F4 00 00 00 EB 01 35 EB 01 88 80 CA 7C 80 F3 74 8B 38 EB 02 AC BA 03 DB E8 01 00 00 00 A5 5B C1 C2 0B 81 C7 DA 10 0A 4E EB 01 08 2B D1 83 EF 14 EB 02 CD 20 33 D3 83 EF 27 }
+        $2 = { 0B D0 8B DA E8 02 00 00 00 40 A0 5A EB 01 9D B8 80 ?? ?? 00 EB 02 CD 20 03 D3 8D 35 F4 00 00 00 EB 01 35 EB 01 88 80 CA 7C 80 F3 74 8B 38 EB 02 AC BA 03 DB E8 01 00 00 00 A5 5B C1 C2 0B 81 C7 DA 10 0A 4E EB 01 08 2B D1 83 EF 14 EB 02 CD 20 33 D3 83 EF 27 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
-{
-    meta:
-        name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 0B D0 8B DA E8 02 00 00 00 40 A0 5A EB 01 9D B8 80 ?? ?? 00 EB 02 CD 20 03 D3 8D 35 F4 00 00 00 EB 01 35 EB 01 88 80 CA 7C 80 F3 74 8B 38 EB 02 AC BA 03 DB E8 01 00 00 00 A5 5B C1 C2 0B 81 C7 DA 10 0A 4E EB 01 08 2B D1 83 EF 14 EB 02 CD 20 33 D3 83 EF 27 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -1060,24 +991,12 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
  
     strings:
         $1 = { 03 DE EB 01 F8 B8 80 ?? 42 00 EB 02 CD 20 68 17 A0 B3 AB EB 01 E8 59 0F B6 DB 68 0B A1 B3 AB EB 02 CD 20 5E 80 CB AA 2B F1 EB 02 CD 20 43 0F BE 38 13 D6 80 C3 47 2B FE EB 01 F4 03 FE EB 02 4F 4E 81 EF 93 53 7C 3C 80 C3 29 81 F7 8A 8F 67 8B 80 C3 C7 2B FE }
+        $2 = { 03 DE EB 01 F8 B8 80 ?? 42 00 EB 02 CD 20 68 17 A0 B3 AB EB 01 E8 59 0F B6 DB 68 0B A1 B3 AB EB 02 CD 20 5E 80 CB AA 2B F1 EB 02 CD 20 43 0F BE 38 13 D6 80 C3 47 2B FE EB 01 F4 03 FE EB 02 4F 4E 81 EF 93 53 7C 3C 80 C3 29 81 F7 8A 8F 67 8B 80 C3 C7 2B FE }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
-{
-    meta:
-        name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 03 DE EB 01 F8 B8 80 ?? 42 00 EB 02 CD 20 68 17 A0 B3 AB EB 01 E8 59 0F B6 DB 68 0B A1 B3 AB EB 02 CD 20 5E 80 CB AA 2B F1 EB 02 CD 20 43 0F BE 38 13 D6 80 C3 47 2B FE EB 01 F4 03 FE EB 02 4F 4E 81 EF 93 53 7C 3C 80 C3 29 81 F7 8A 8F 67 8B 80 C3 C7 2B FE }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot20_Eng_____dulek_xt__Borland_Cplusplus__: Packer
+rule FSG_v1dot20_Eng_dulek_xt_Borland_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
@@ -1086,24 +1005,12 @@ rule FSG_v1dot20_Eng_____dulek_xt__Borland_Cplusplus__: Packer
  
     strings:
         $1 = { C1 F0 07 EB 02 CD 20 BE 80 ?? ?? 00 1B C6 8D 1D F4 00 00 00 0F B6 06 EB 02 CD 20 8A 16 0F B6 C3 E8 01 00 00 00 DC 59 80 EA 37 EB 02 CD 20 2A D3 EB 02 CD 20 80 EA 73 1B CF 32 D3 C1 C8 0E 80 EA 23 0F B6 C9 02 D3 EB 01 B5 02 D3 EB 02 DB 5B 81 C2 F6 56 7B F6 }
+        $2 = { C1 F0 07 EB 02 CD 20 BE 80 ?? ?? 00 1B C6 8D 1D F4 00 00 00 0F B6 06 EB 02 CD 20 8A 16 0F B6 C3 E8 01 00 00 00 DC 59 80 EA 37 EB 02 CD 20 2A D3 EB 02 CD 20 80 EA 73 1B CF 32 D3 C1 C8 0E 80 EA 23 0F B6 C9 02 D3 EB 01 B5 02 D3 EB 02 DB 5B 81 C2 F6 56 7B F6 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng_____dulek_xt__Borland_Cplusplus__: Packer
-{
-    meta:
-        name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { C1 F0 07 EB 02 CD 20 BE 80 ?? ?? 00 1B C6 8D 1D F4 00 00 00 0F B6 06 EB 02 CD 20 8A 16 0F B6 C3 E8 01 00 00 00 DC 59 80 EA 37 EB 02 CD 20 2A D3 EB 02 CD 20 80 EA 73 1B CF 32 D3 C1 C8 0E 80 EA 23 0F B6 C9 02 D3 EB 01 B5 02 D3 EB 02 DB 5B 81 C2 F6 56 7B F6 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot20_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
+rule FSG_v1dot20_Eng_dulek_xt_Borland_Delphi_Borland_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -1112,24 +1019,12 @@ rule FSG_v1dot20_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
  
     strings:
         $1 = { 0F BE C1 EB 01 0E 8D 35 C3 BE B6 22 F7 D1 68 43 ?? ?? 22 EB 02 B5 15 5F C1 F1 15 33 F7 80 E9 F9 BB F4 00 00 00 EB 02 8F D0 EB 02 08 AD 8A 16 2B C7 1B C7 80 C2 7A 41 80 EA 10 EB 01 3C 81 EA CF AE F1 AA EB 01 EC 81 EA BB C6 AB EE 2C E3 32 D3 0B CB 81 EA AB }
+        $2 = { 0F BE C1 EB 01 0E 8D 35 C3 BE B6 22 F7 D1 68 43 ?? ?? 22 EB 02 B5 15 5F C1 F1 15 33 F7 80 E9 F9 BB F4 00 00 00 EB 02 8F D0 EB 02 08 AD 8A 16 2B C7 1B C7 80 C2 7A 41 80 EA 10 EB 01 3C 81 EA CF AE F1 AA EB 01 EC 81 EA BB C6 AB EE 2C E3 32 D3 0B CB 81 EA AB }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
-{
-    meta:
-        name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 0F BE C1 EB 01 0E 8D 35 C3 BE B6 22 F7 D1 68 43 ?? ?? 22 EB 02 B5 15 5F C1 F1 15 33 F7 80 E9 F9 BB F4 00 00 00 EB 02 8F D0 EB 02 08 AD 8A 16 2B C7 1B C7 80 C2 7A 41 80 EA 10 EB 01 3C 81 EA CF AE F1 AA EB 01 EC 81 EA BB C6 AB EE 2C E3 32 D3 0B CB 81 EA AB }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot20_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__: Packer
+rule FSG_v1dot20_Eng_dulek_xt_Borland_Delphi_Microsoft_Visual_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
@@ -1138,24 +1033,12 @@ rule FSG_v1dot20_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__
  
     strings:
         $1 = { 0F B6 D0 E8 01 00 00 00 0C 5A B8 80 ?? ?? 00 EB 02 00 DE 8D 35 F4 00 00 00 F7 D2 EB 02 0E EA 8B 38 EB 01 A0 C1 F3 11 81 EF 84 88 F4 4C EB 02 CD 20 83 F7 22 87 D3 33 FE C1 C3 19 83 F7 26 E8 02 00 00 00 BC DE 5A 81 EF F7 EF 6F 18 EB 02 CD 20 83 EF 7F EB 01 }
+        $2 = { 0F B6 D0 E8 01 00 00 00 0C 5A B8 80 ?? ?? 00 EB 02 00 DE 8D 35 F4 00 00 00 F7 D2 EB 02 0E EA 8B 38 EB 01 A0 C1 F3 11 81 EF 84 88 F4 4C EB 02 CD 20 83 F7 22 87 D3 33 FE C1 C3 19 83 F7 26 E8 02 00 00 00 BC DE 5A 81 EF F7 EF 6F 18 EB 02 CD 20 83 EF 7F EB 01 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__: Packer
-{
-    meta:
-        name = "FSG v1.20 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 0F B6 D0 E8 01 00 00 00 0C 5A B8 80 ?? ?? 00 EB 02 00 DE 8D 35 F4 00 00 00 F7 D2 EB 02 0E EA 8B 38 EB 01 A0 C1 F3 11 81 EF 84 88 F4 4C EB 02 CD 20 83 F7 22 87 D3 33 FE C1 C3 19 83 F7 26 E8 02 00 00 00 BC DE 5A 81 EF F7 EF 6F 18 EB 02 CD 20 83 EF 7F EB 01 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot20_Eng_____dulek_xt__MASM32___TASM32__: Packer
+rule FSG_v1dot20_Eng_dulek_xt_MASM32_TASM32 : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
@@ -1164,24 +1047,12 @@ rule FSG_v1dot20_Eng_____dulek_xt__MASM32___TASM32__: Packer
  
     strings:
         $1 = { 33 C2 2C FB 8D 3D 7E 45 B4 80 E8 02 00 00 00 8A 45 58 68 02 ?? 8C 7F EB 02 CD 20 5E 80 C9 16 03 F7 EB 02 40 B0 68 F4 00 00 00 80 F1 2C 5B C1 E9 05 0F B6 C9 8A 16 0F B6 C9 0F BF C7 2A D3 E8 02 00 00 00 99 4C 58 80 EA 53 C1 C9 16 2A D3 E8 02 00 00 00 9D CE }
+        $2 = { 33 C2 2C FB 8D 3D 7E 45 B4 80 E8 02 00 00 00 8A 45 58 68 02 ?? 8C 7F EB 02 CD 20 5E 80 C9 16 03 F7 EB 02 40 B0 68 F4 00 00 00 80 F1 2C 5B C1 E9 05 0F B6 C9 8A 16 0F B6 C9 0F BF C7 2A D3 E8 02 00 00 00 99 4C 58 80 EA 53 C1 C9 16 2A D3 E8 02 00 00 00 9D CE }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng_____dulek_xt__MASM32___TASM32__: Packer
-{
-    meta:
-        name = "FSG v1.20 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 33 C2 2C FB 8D 3D 7E 45 B4 80 E8 02 00 00 00 8A 45 58 68 02 ?? 8C 7F EB 02 CD 20 5E 80 C9 16 03 F7 EB 02 40 B0 68 F4 00 00 00 80 F1 2C 5B C1 E9 05 0F B6 C9 8A 16 0F B6 C9 0F BF C7 2A D3 E8 02 00 00 00 99 4C 58 80 EA 53 C1 C9 16 2A D3 E8 02 00 00 00 9D CE }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot20_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
+rule FSG_v1dot20_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0 : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -1190,24 +1061,12 @@ rule FSG_v1dot20_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: P
  
     strings:
         $1 = { EB 02 CD 20 EB 01 91 8D 35 80 ?? ?? 00 33 C2 68 83 93 7E 7D 0C A4 5B 23 C3 68 77 93 7E 7D EB 01 FA 5F E8 02 00 00 00 F7 FB 58 33 DF EB 01 3F E8 02 00 00 00 11 88 58 0F B6 16 EB 02 CD 20 EB 02 86 2F 2A D3 EB 02 CD 20 80 EA 2F EB 01 52 32 D3 80 E9 CD 80 EA }
+        $2 = { EB 02 CD 20 EB 01 91 8D 35 80 ?? ?? 00 33 C2 68 83 93 7E 7D 0C A4 5B 23 C3 68 77 93 7E 7D EB 01 FA 5F E8 02 00 00 00 F7 FB 58 33 DF EB 01 3F E8 02 00 00 00 11 88 58 0F B6 16 EB 02 CD 20 EB 02 86 2F 2A D3 EB 02 CD 20 80 EA 2F EB 01 52 32 D3 80 E9 CD 80 EA }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
-{
-    meta:
-        name = "FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { EB 02 CD 20 EB 01 91 8D 35 80 ?? ?? 00 33 C2 68 83 93 7E 7D 0C A4 5B 23 C3 68 77 93 7E 7D EB 01 FA 5F E8 02 00 00 00 F7 FB 58 33 DF EB 01 3F E8 02 00 00 00 11 88 58 0F B6 16 EB 02 CD 20 EB 02 86 2F 2A D3 EB 02 CD 20 80 EA 2F EB 01 52 32 D3 80 E9 CD 80 EA }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot20_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot20_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -1216,24 +1075,12 @@ rule FSG_v1dot20_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
  
     strings:
         $1 = { C1 E0 06 EB 02 CD 20 EB 01 27 EB 01 24 BE 80 ?? 42 00 49 EB 01 99 8D 1D F4 00 00 00 EB 01 5C F7 D8 1B CA EB 01 31 8A 16 80 E9 41 EB 01 C2 C1 E0 0A EB 01 A1 81 EA A8 8C 18 A1 34 46 E8 01 00 00 00 62 59 32 D3 C1 C9 02 EB 01 68 80 F2 1A 0F BE C9 F7 D1 2A D3 }
+        $2 = { C1 E0 06 EB 02 CD 20 EB 01 27 EB 01 24 BE 80 ?? 42 00 49 EB 01 99 8D 1D F4 00 00 00 EB 01 5C F7 D8 1B CA EB 01 31 8A 16 80 E9 41 EB 01 C2 C1 E0 0A EB 01 A1 81 EA A8 8C 18 A1 34 46 E8 01 00 00 00 62 59 32 D3 C1 C9 02 EB 01 68 80 F2 1A 0F BE C9 F7 D1 2A D3 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot20_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
-{
-    meta:
-        name = "FSG v1.20 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { C1 E0 06 EB 02 CD 20 EB 01 27 EB 01 24 BE 80 ?? 42 00 49 EB 01 99 8D 1D F4 00 00 00 EB 01 5C F7 D8 1B CA EB 01 31 8A 16 80 E9 41 EB 01 C2 C1 E0 0A EB 01 A1 81 EA A8 8C 18 A1 34 46 E8 01 00 00 00 62 59 32 D3 C1 C9 02 EB 01 68 80 F2 1A 0F BE C9 F7 D1 2A D3 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot3___: Packer
+rule FSG_v1dot3 : Packer
 {
     meta:
         name = "FSG v1.3" // Packer name & version
@@ -1242,24 +1089,12 @@ rule FSG_v1dot3___: Packer
  
     strings:
         $1 = { BB D0 01 40 00 BF 00 10 40 00 BE ?? ?? ?? ?? 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 B2 80 A4 6A 02 5B FF 14 24 73 F7 33 C9 FF 14 24 73 18 33 C0 FF 14 24 73 21 B3 02 41 B0 10 FF 14 24 12 C0 73 F9 75 3F AA EB DC E8 43 00 00 00 2B CB 75 10 E8 38 00 }
+        $2 = { BB D0 01 40 00 BF 00 10 40 00 BE ?? ?? ?? ?? 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 B2 80 A4 6A 02 5B FF 14 24 73 F7 33 C9 FF 14 24 73 18 33 C0 FF 14 24 73 21 B3 02 41 B0 10 FF 14 24 12 C0 73 F9 75 3F AA EB DC E8 43 00 00 00 2B CB 75 10 E8 38 00 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot3___: Packer
-{
-    meta:
-        name = "FSG v1.3" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { BB D0 01 40 00 BF 00 10 40 00 BE ?? ?? ?? ?? 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 B2 80 A4 6A 02 5B FF 14 24 73 F7 33 C9 FF 14 24 73 18 33 C0 FF 14 24 73 21 B3 02 41 B0 10 FF 14 24 12 C0 73 F9 75 3F AA EB DC E8 43 00 00 00 2B CB 75 10 E8 38 00 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot30_Eng_dulek_xt___: Packer
+rule FSG_v1dot30_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.30 (Eng) -> dulek/xt" // Packer name & version
@@ -1272,7 +1107,7 @@ rule FSG_v1dot30_Eng_dulek_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot31_Eng_dulek_xt___: Packer
+rule FSG_v1dot31_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.31 (Eng) -> dulek/xt" // Packer name & version
@@ -1281,24 +1116,12 @@ rule FSG_v1dot31_Eng_dulek_xt___: Packer
  
     strings:
         $1 = { BB D0 01 40 00 BF 00 10 40 00 BE ?? ?? ?? 00 53 BB ?? ?? ?? 00 B2 80 A4 B6 80 FF D3 73 F9 33 C9 FF D3 73 16 33 C0 FF D3 73 23 B6 80 41 B0 10 FF D3 12 C0 73 FA 75 42 AA EB E0 E8 46 00 00 00 02 F6 83 D9 01 75 10 E8 38 00 00 00 EB 28 AC D1 E8 74 48 13 C9 EB }
+        $2 = { BB D0 01 40 00 BF 00 10 40 00 BE ?? ?? ?? 00 53 BB ?? ?? ?? 00 B2 80 A4 B6 80 FF D3 73 F9 33 C9 FF D3 73 16 33 C0 FF D3 73 23 B6 80 41 B0 10 FF D3 12 C0 73 FA 75 42 AA EB E0 E8 46 00 00 00 02 F6 83 D9 01 75 10 E8 38 00 00 00 EB 28 AC D1 E8 74 48 13 C9 EB }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot31_Eng_dulek_xt___: Packer
-{
-    meta:
-        name = "FSG v1.31 (Eng) -> dulek/xt" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { BB D0 01 40 00 BF 00 10 40 00 BE ?? ?? ?? 00 53 BB ?? ?? ?? 00 B2 80 A4 B6 80 FF D3 73 F9 33 C9 FF D3 73 16 33 C0 FF D3 73 23 B6 80 41 B0 10 FF D3 12 C0 73 FA 75 42 AA EB E0 E8 46 00 00 00 02 F6 83 D9 01 75 10 E8 38 00 00 00 EB 28 AC D1 E8 74 48 13 C9 EB }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule FSG_v1dot33_Eng_dulek_xt___: Packer
+rule FSG_v1dot33_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.33 (Eng) -> dulek/xt" // Packer name & version
@@ -1307,24 +1130,12 @@ rule FSG_v1dot33_Eng_dulek_xt___: Packer
  
     strings:
         $1 = { BE A4 01 40 00 AD 93 AD 97 AD 56 96 B2 80 A4 B6 80 FF 13 73 F9 33 C9 FF 13 73 16 33 C0 FF 13 73 1F B6 80 41 B0 10 FF 13 12 C0 73 FA 75 3C AA EB E0 FF 53 08 02 F6 83 D9 01 75 0E FF 53 04 EB 26 AC D1 E8 74 2F 13 C9 EB 1A 91 48 C1 E0 08 AC FF 53 04 3D 00 7D }
+        $2 = { BE A4 01 40 00 AD 93 AD 97 AD 56 96 B2 80 A4 B6 80 FF 13 73 F9 33 C9 FF 13 73 16 33 C0 FF 13 73 1F B6 80 41 B0 10 FF 13 12 C0 73 FA 75 3C AA EB E0 FF 53 08 02 F6 83 D9 01 75 0E FF 53 04 EB 26 AC D1 E8 74 2F 13 C9 EB 1A 91 48 C1 E0 08 AC FF 53 04 3D 00 7D }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot33_Eng_dulek_xt___: Packer
-{
-    meta:
-        name = "FSG v1.33 (Eng) -> dulek/xt" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { BE A4 01 40 00 AD 93 AD 97 AD 56 96 B2 80 A4 B6 80 FF 13 73 F9 33 C9 FF 13 73 16 33 C0 FF 13 73 1F B6 80 41 B0 10 FF 13 12 C0 73 FA 75 3C AA EB E0 FF 53 08 02 F6 83 D9 01 75 0E FF 53 04 EB 26 AC D1 E8 74 2F 13 C9 EB 1A 91 48 C1 E0 08 AC FF 53 04 3D 00 7D }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Fuckn___Joy_v1dot0c_UsAr_: Packer
+rule Fuckn_Joy_v1dot0c_UsAr : Packer
 {
     meta:
         name = "Fuck'n'Joy v1.0c -> UsAr" // Packer name & version
@@ -1333,24 +1144,12 @@ rule Fuckn___Joy_v1dot0c_UsAr_: Packer
  
     strings:
         $1 = { 60 E8 00 00 00 00 5D 81 ED D8 05 40 00 FF 74 24 20 E8 8C 02 00 00 0B C0 0F 84 2C 01 00 00 89 85 6C 08 40 00 8D 85 2F 08 40 00 50 FF B5 6C 08 40 00 E8 EF 02 00 00 0B C0 0F 84 0C 01 00 00 89 85 3B 08 40 00 8D 85 3F 08 40 00 50 FF B5 6C 08 40 00 E8 CF 02 00 }
+        $2 = { 60 E8 00 00 00 00 5D 81 ED D8 05 40 00 FF 74 24 20 E8 8C 02 00 00 0B C0 0F 84 2C 01 00 00 89 85 6C 08 40 00 8D 85 2F 08 40 00 50 FF B5 6C 08 40 00 E8 EF 02 00 00 0B C0 0F 84 0C 01 00 00 89 85 3B 08 40 00 8D 85 3F 08 40 00 50 FF B5 6C 08 40 00 E8 CF 02 00 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Fuckn___Joy_v1dot0c_UsAr_: Packer
-{
-    meta:
-        name = "Fuck'n'Joy v1.0c -> UsAr" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 00 00 00 00 5D 81 ED D8 05 40 00 FF 74 24 20 E8 8C 02 00 00 0B C0 0F 84 2C 01 00 00 89 85 6C 08 40 00 8D 85 2F 08 40 00 50 FF B5 6C 08 40 00 E8 EF 02 00 00 0B C0 0F 84 0C 01 00 00 89 85 3B 08 40 00 8D 85 3F 08 40 00 50 FF B5 6C 08 40 00 E8 CF 02 00 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Goats_PE_Mutilator_1dot6___: Packer
+rule Goats_PE_Mutilator_1dot6 : Packer
 {
     meta:
         name = "Goat's PE Mutilator 1.6" // Packer name & version
@@ -1363,7 +1162,7 @@ rule Goats_PE_Mutilator_1dot6___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule hmimys_Protect_v1dot0___: Packer
+rule hmimys_Protect_v1dot0 : Packer
 {
     meta:
         name = "hmimys Protect v1.0" // Packer name & version
@@ -1376,7 +1175,7 @@ rule hmimys_Protect_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule InstallAnywhere_6dot1_Zero_G_Software_Inc___: Packer
+rule InstallAnywhere_6dot1_Zero_G_Software_Inc : Packer
 {
     meta:
         name = "InstallAnywhere 6.1 -> Zero G Software Inc" // Packer name & version
@@ -1385,24 +1184,12 @@ rule InstallAnywhere_6dot1_Zero_G_Software_Inc___: Packer
  
     strings:
         $1 = { 60 BE 00 A0 42 00 8D BE 00 70 FD FF 57 83 CD FF EB 10 90 90 90 90 90 90 8A 06 46 88 07 47 01 DB 75 07 8B 1E 83 EE FC 11 DB 72 ED B8 01 00 00 00 01 DB 75 07 8B 1E 83 EE FC 11 DB 11 C0 01 DB 73 EF 75 09 8B 1E 83 EE FC 11 DB 73 E4 31 C9 83 E8 03 72 0D C1 E0 }
+        $2 = { 60 BE 00 A0 42 00 8D BE 00 70 FD FF 57 83 CD FF EB 10 90 90 90 90 90 90 8A 06 46 88 07 47 01 DB 75 07 8B 1E 83 EE FC 11 DB 72 ED B8 01 00 00 00 01 DB 75 07 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule InstallAnywhere_6dot1_Zero_G_Software_Inc___: Packer
-{
-    meta:
-        name = "InstallAnywhere 6.1 ->Zero G Software Inc" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 BE 00 A0 42 00 8D BE 00 70 FD FF 57 83 CD FF EB 10 90 90 90 90 90 90 8A 06 46 88 07 47 01 DB 75 07 8B 1E 83 EE FC 11 DB 72 ED B8 01 00 00 00 01 DB 75 07 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule InstallShield_Custom___: Packer
+rule InstallShield_Custom : Packer
 {
     meta:
         name = "InstallShield Custom" // Packer name & version
@@ -1415,7 +1202,7 @@ rule InstallShield_Custom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule KGB_SFX___: Packer
+rule KGB_SFX : Packer
 {
     meta:
         name = "KGB SFX" // Packer name & version
@@ -1428,7 +1215,7 @@ rule KGB_SFX___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LaunchAnywhere_v4dot0dot0dot1___: Packer
+rule LaunchAnywhere_v4dot0dot0dot1 : Packer
 {
     meta:
         name = "LaunchAnywhere v4.0.0.1" // Packer name & version
@@ -1441,7 +1228,7 @@ rule LaunchAnywhere_v4dot0dot0dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Macromedia_Windows_Flash_Projector_Player_v5dot0___: Packer
+rule Macromedia_Windows_Flash_Projector_Player_v5dot0 : Packer
 {
     meta:
         name = "Macromedia Windows Flash Projector/Player v5.0" // Packer name & version
@@ -1454,7 +1241,7 @@ rule Macromedia_Windows_Flash_Projector_Player_v5dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Csharp___Basic_dotNET_: Packer
+rule Microsoft_Visual_Csharp_Basic_dotNET : Packer
 {
     meta:
         name = "Microsoft Visual C# / Basic .NET" // Packer name & version
@@ -1467,7 +1254,7 @@ rule Microsoft_Visual_Csharp___Basic_dotNET_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_6dot0_SFX_Custom___: Packer
+rule Microsoft_Visual_Cplusplus_6dot0_SFX_Custom : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 SFX Custom" // Packer name & version
@@ -1480,7 +1267,7 @@ rule Microsoft_Visual_Cplusplus_6dot0_SFX_Custom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_7dot0_Custom___: Packer
+rule Microsoft_Visual_Cplusplus_7dot0_Custom : Packer
 {
     meta:
         name = "Microsoft Visual C++ 7.0 Custom" // Packer name & version
@@ -1493,7 +1280,7 @@ rule Microsoft_Visual_Cplusplus_7dot0_Custom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot0___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.0" // Packer name & version
@@ -1506,7 +1293,7 @@ rule Microsoft_Visual_Cplusplus_v7dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_v3dot2dotx_Dll_main___: Packer
+rule MinGW_v3dot2dotx_Dll_main : Packer
 {
     meta:
         name = "MinGW v3.2.x (Dll_main)" // Packer name & version
@@ -1519,7 +1306,7 @@ rule MinGW_v3dot2dotx_Dll_main___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_v3dot2dotx_Dll_mainCRTStartup___: Packer
+rule MinGW_v3dot2dotx_Dll_mainCRTStartup : Packer
 {
     meta:
         name = "MinGW v3.2.x (Dll_mainCRTStartup)" // Packer name & version
@@ -1532,7 +1319,7 @@ rule MinGW_v3dot2dotx_Dll_mainCRTStartup___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_v3dot2dotx_Dll_WinMain___: Packer
+rule MinGW_v3dot2dotx_Dll_WinMain : Packer
 {
     meta:
         name = "MinGW v3.2.x (Dll_WinMain)" // Packer name & version
@@ -1545,7 +1332,7 @@ rule MinGW_v3dot2dotx_Dll_WinMain___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_v3dot2dotx_main___: Packer
+rule MinGW_v3dot2dotx_main : Packer
 {
     meta:
         name = "MinGW v3.2.x (main)" // Packer name & version
@@ -1558,7 +1345,7 @@ rule MinGW_v3dot2dotx_main___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_v3dot2dotx_WinMain___: Packer
+rule MinGW_v3dot2dotx_WinMain : Packer
 {
     meta:
         name = "MinGW v3.2.x (WinMain)" // Packer name & version
@@ -1571,7 +1358,7 @@ rule MinGW_v3dot2dotx_WinMain___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_v3dot2dotx_mainCRTStartup___: Packer
+rule MinGW_v3dot2dotx_mainCRTStartup : Packer
 {
     meta:
         name = "MinGW v3.2.x (_mainCRTStartup)" // Packer name & version
@@ -1584,7 +1371,7 @@ rule MinGW_v3dot2dotx_mainCRTStartup___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NoodleCrypt_v2dot00_Eng_NoodleSpa___: Packer
+rule NoodleCrypt_v2dot00_Eng_NoodleSpa : Packer
 {
     meta:
         name = "NoodleCrypt v2.00 (Eng) -> NoodleSpa" // Packer name & version
@@ -1597,7 +1384,7 @@ rule NoodleCrypt_v2dot00_Eng_NoodleSpa___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Nullsoft_Install_System_v1dotxx___: Packer
+rule Nullsoft_Install_System_v1dotxx : Packer
 {
     meta:
         name = "Nullsoft Install System v1.xx" // Packer name & version
@@ -1606,24 +1393,12 @@ rule Nullsoft_Install_System_v1dotxx___: Packer
  
     strings:
         $1 = { 55 8B EC 83 EC 2C 53 56 33 F6 57 56 89 75 DC 89 75 F4 BB A4 9E 40 00 FF 15 60 70 40 00 BF C0 B2 40 00 68 04 01 00 00 57 50 A3 AC B2 40 00 FF 15 4C 70 40 00 56 56 6A 03 56 6A 01 68 00 00 00 80 57 FF 15 9C 70 40 00 8B F8 83 FF FF 89 7D EC 0F 84 C3 00 00 00 }
+        $2 = { 83 EC 0C 53 56 57 FF 15 20 71 40 00 05 E8 03 00 00 BE 60 FD 41 00 89 44 24 10 B3 20 FF 15 28 70 40 00 68 00 04 00 00 FF 15 28 71 40 00 50 56 FF 15 08 71 40 00 80 3D 60 FD 41 00 22 75 08 80 C3 02 BE 61 FD 41 00 8A 06 8B 3D F0 71 40 00 84 C0 74 0F 3A C3 74 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Nullsoft_Install_System_v1dotxx___: Packer
-{
-    meta:
-        name = "Nullsoft Install System v1.xx" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 83 EC 0C 53 56 57 FF 15 20 71 40 00 05 E8 03 00 00 BE 60 FD 41 00 89 44 24 10 B3 20 FF 15 28 70 40 00 68 00 04 00 00 FF 15 28 71 40 00 50 56 FF 15 08 71 40 00 80 3D 60 FD 41 00 22 75 08 80 C3 02 BE 61 FD 41 00 8A 06 8B 3D F0 71 40 00 84 C0 74 0F 3A C3 74 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Nullsoft_Install_System_v2dot0b2__v2dot0b3___: Packer
+rule Nullsoft_Install_System_v2dot0b2_v2dot0b3 : Packer
 {
     meta:
         name = "Nullsoft Install System v2.0b2, v2.0b3" // Packer name & version
@@ -1636,7 +1411,7 @@ rule Nullsoft_Install_System_v2dot0b2__v2dot0b3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_v1dot2dot5dot0_Obsidium_Software_h___: Packer
+rule Obsidium_v1dot2dot5dot0_Obsidium_Software_h : Packer
 {
     meta:
         name = "Obsidium v1.2.5.0 -> Obsidium Software (h)" // Packer name & version
@@ -1645,37 +1420,12 @@ rule Obsidium_v1dot2dot5dot0_Obsidium_Software_h___: Packer
  
     strings:
         $1 = { E8 0E 00 00 00 8B 54 24 0C 83 82 B8 00 00 00 0D 33 C0 C3 64 67 FF 36 00 00 64 67 89 26 00 00 50 33 C0 8B 00 C3 E9 FA 00 00 00 E8 D5 FF FF FF 58 64 67 8F 06 00 00 83 C4 04 E8 2B 13 00 00 }
+        $2 = { E8 0E 00 00 00 8B 54 24 0C 83 82 B8 00 00 00 0D 33 C0 C3 64 67 FF 36 00 00 64 67 89 26 00 00 50 33 C0 8B 00 C3 E9 FA 00 00 00 E8 D5 FF FF FF 58 64 67 8F 06 00 00 83 C4 04 E8 2B 13 00 00 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_v1dot2dot5dot0_Obsidium_Software_h___: Packer
-{
-    meta:
-        name = "Obsidium v1.2.5.0 -> Obsidium Software (h)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { E8 0E 00 00 00 8B 54 24 0C 83 82 B8 00 00 00 0D 33 C0 C3 64 67 FF 36 00 00 64 67 89 26 00 00 50 33 C0 8B 00 C3 E9 FA 00 00 00 E8 D5 FF FF FF 58 64 67 8F 06 00 00 83 C4 04 E8 2B 13 00 00 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Obsidium_v1dot3dot0dot0_Obsidium_Software_h___: Packer
-{
-    meta:
-        name = "Obsidium v1.3.0.0 -> Obsidium Software (h)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { EB 04 25 80 34 CA E8 29 00 00 00 EB 02 C1 81 EB 01 3A 8B 54 24 0C EB 02 32 92 83 82 B8 00 00 00 22 EB 02 F2 7F 33 C0 EB 04 65 7E 14 79 C3 EB 04 05 AD 7F 45 EB 04 05 65 0B E8 64 67 FF 36 00 00 EB 04 0D F6 A8 7F 64 67 89 26 00 00 EB 04 8D 68 C7 FB EB 01 6B }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Obsidium_v1dot3dot0dot4_Obsidium_Software___: Packer
+rule Obsidium_v1dot3dot0dot4_Obsidium_Software : Packer
 {
     meta:
         name = "Obsidium v1.3.0.4 -> Obsidium Software" // Packer name & version
@@ -1688,7 +1438,7 @@ rule Obsidium_v1dot3dot0dot4_Obsidium_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ORiEN_v2dot11_DEMO___: Packer
+rule ORiEN_v2dot11_DEMO : Packer
 {
     meta:
         name = "ORiEN v2.11 (DEMO)" // Packer name & version
@@ -1701,7 +1451,7 @@ rule ORiEN_v2dot11_DEMO___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ORiEN_v2dot11_2dot12_Fisun_Alexander___: Packer
+rule ORiEN_v2dot11_2dot12_Fisun_Alexander : Packer
 {
     meta:
         name = "ORiEN v2.11 - 2.12 -> Fisun Alexander" // Packer name & version
@@ -1714,7 +1464,7 @@ rule ORiEN_v2dot11_2dot12_Fisun_Alexander___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PassLock_2000_v1dot0_Eng_Moonlight_Software___: Packer
+rule PassLock_2000_v1dot0_Eng_Moonlight_Software : Packer
 {
     meta:
         name = "PassLock 2000 v1.0 (Eng) -> Moonlight-Software" // Packer name & version
@@ -1727,7 +1477,7 @@ rule PassLock_2000_v1dot0_Eng_Moonlight_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PC_Guard_for_Win32_v5dot00_SofPro_Blagoje_Ceklic_h____: Packer
+rule PC_Guard_for_Win32_v5dot00_SofPro_Blagoje_Ceklic_h : Packer
 {
     meta:
         name = "PC Guard for Win32 v5.00 -> SofPro/Blagoje Ceklic (h)" // Packer name & version
@@ -1740,7 +1490,7 @@ rule PC_Guard_for_Win32_v5dot00_SofPro_Blagoje_Ceklic_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PC_Guard_v5dot00d___: Packer
+rule PC_Guard_v5dot00d : Packer
 {
     meta:
         name = "PC-Guard v5.00d" // Packer name & version
@@ -1753,7 +1503,7 @@ rule PC_Guard_v5dot00d___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Diminisher_v0dot1_Teraphy___: Packer
+rule PE_Diminisher_v0dot1_Teraphy : Packer
 {
     meta:
         name = "PE Diminisher v0.1 -> Teraphy" // Packer name & version
@@ -1766,7 +1516,7 @@ rule PE_Diminisher_v0dot1_Teraphy___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Protector_0dot9dot3_CRYPToCRACk___: Packer
+rule PE_Protector_0dot9dot3_CRYPToCRACk : Packer
 {
     meta:
         name = "PE Protector 0.9.3 --> CRYPToCRACk" // Packer name & version
@@ -1779,7 +1529,7 @@ rule PE_Protector_0dot9dot3_CRYPToCRACk___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Spin_v0dotb___: Packer
+rule PE_Spin_v0dotb : Packer
 {
     meta:
         name = "PE Spin v0.b" // Packer name & version
@@ -1792,7 +1542,7 @@ rule PE_Spin_v0dotb___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Pe123_v2006dot4dot12___: Packer
+rule Pe123_v2006dot4dot12 : Packer
 {
     meta:
         name = "Pe123  v2006.4.12" // Packer name & version
@@ -1805,7 +1555,7 @@ rule Pe123_v2006dot4dot12___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Pe123_v2006dot4dot4___: Packer
+rule Pe123_v2006dot4dot4 : Packer
 {
     meta:
         name = "Pe123  v2006.4.4" // Packer name & version
@@ -1818,7 +1568,7 @@ rule Pe123_v2006dot4dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot67___: Packer
+rule PECompact_v1dot67 : Packer
 {
     meta:
         name = "PECompact v1.67" // Packer name & version
@@ -1831,7 +1581,7 @@ rule PECompact_v1dot67___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot68_v1dot84___: Packer
+rule PECompact_v1dot68_v1dot84 : Packer
 {
     meta:
         name = "PECompact v1.68 - v1.84" // Packer name & version
@@ -1844,7 +1594,7 @@ rule PECompact_v1dot68_v1dot84___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEiD_Bundle_v1dot00_____v1dot01_BoB___BobSoft_: Packer
+rule PEiD_Bundle_v1dot00_v1dot01_BoB_BobSoft : Packer
 {
     meta:
         name = "PEiD-Bundle v1.00 - v1.01 --> BoB / BobSoft" // Packer name & version
@@ -1857,7 +1607,7 @@ rule PEiD_Bundle_v1dot00_____v1dot01_BoB___BobSoft_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEiD_Bundle_v1dot00_BoB_____BobSoft_: Packer
+rule PEiD_Bundle_v1dot00_BoB_BobSoft : Packer
 {
     meta:
         name = "PEiD-Bundle v1.00 --> BoB / BobSoft" // Packer name & version
@@ -1870,7 +1620,7 @@ rule PEiD_Bundle_v1dot00_BoB_____BobSoft_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEiD_Bundle_v1dot01_BoB_____BobSoft_: Packer
+rule PEiD_Bundle_v1dot01_BoB_BobSoft : Packer
 {
     meta:
         name = "PEiD-Bundle v1.01 --> BoB / BobSoft" // Packer name & version
@@ -1883,7 +1633,7 @@ rule PEiD_Bundle_v1dot01_BoB_____BobSoft_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEiD_Bundle_v1dot02_BoB_____BobSoft_: Packer
+rule PEiD_Bundle_v1dot02_BoB_BobSoft : Packer
 {
     meta:
         name = "PEiD-Bundle v1.02 --> BoB / BobSoft" // Packer name & version
@@ -1896,7 +1646,7 @@ rule PEiD_Bundle_v1dot02_BoB_____BobSoft_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEnguinCrypt_v1dot0___: Packer
+rule PEnguinCrypt_v1dot0 : Packer
 {
     meta:
         name = "PEnguinCrypt v1.0" // Packer name & version
@@ -1909,7 +1659,7 @@ rule PEnguinCrypt_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESpin_v0dot1_Cyberbob_h___: Packer
+rule PESpin_v0dot1_Cyberbob_h : Packer
 {
     meta:
         name = "PESpin v0.1 -> Cyberbob (h)" // Packer name & version
@@ -1922,7 +1672,7 @@ rule PESpin_v0dot1_Cyberbob_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESpin_v0dot3_Eng_cyberbob___: Packer
+rule PESpin_v0dot3_Eng_cyberbob : Packer
 {
     meta:
         name = "PESpin v0.3 (Eng) -> cyberbob" // Packer name & version
@@ -1935,7 +1685,7 @@ rule PESpin_v0dot3_Eng_cyberbob___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESpin_v0dot7_Cyberbob_h___: Packer
+rule PESpin_v0dot7_Cyberbob_h : Packer
 {
     meta:
         name = "PESpin v0.7 -> Cyberbob (h)" // Packer name & version
@@ -1948,7 +1698,7 @@ rule PESpin_v0dot7_Cyberbob_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESpin_v1dot1_Cyberbob_h___: Packer
+rule PESpin_v1dot1_Cyberbob_h : Packer
 {
     meta:
         name = "PESpin v1.1 -> Cyberbob (h)" // Packer name & version
@@ -1961,7 +1711,7 @@ rule PESpin_v1dot1_Cyberbob_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESPin_v1dot3_Cyberbob_h___: Packer
+rule PESPin_v1dot3_Cyberbob_h : Packer
 {
     meta:
         name = "PESPin v1.3 -> Cyberbob (h)" // Packer name & version
@@ -1974,7 +1724,7 @@ rule PESPin_v1dot3_Cyberbob_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESpin_v1dot304_Cyberbob_h___: Packer
+rule PESpin_v1dot304_Cyberbob_h : Packer
 {
     meta:
         name = "PESpin v1.304 -> Cyberbob (h)" // Packer name & version
@@ -1987,7 +1737,7 @@ rule PESpin_v1dot304_Cyberbob_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESpin_v1dot3beta_Cyberbob_h___: Packer
+rule PESpin_v1dot3beta_Cyberbob_h : Packer
 {
     meta:
         name = "PESpin v1.3beta -> Cyberbob (h)" // Packer name & version
@@ -2000,7 +1750,7 @@ rule PESpin_v1dot3beta_Cyberbob_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Petite_1dot2_c_1998_Ian_Luck_h____: Packer
+rule Petite_1dot2_c_1998_Ian_Luck_h : Packer
 {
     meta:
         name = "Petite 1.2 -> (c)1998 Ian Luck (h)" // Packer name & version
@@ -2013,7 +1763,7 @@ rule Petite_1dot2_c_1998_Ian_Luck_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Petite_1dot4_c_1998_99_Ian_Luck__h____: Packer
+rule Petite_1dot4_c_1998_99_Ian_Luck_h : Packer
 {
     meta:
         name = "Petite 1.4 -> (c)1998-99 Ian Luck (h)" // Packer name & version
@@ -2026,7 +1776,7 @@ rule Petite_1dot4_c_1998_99_Ian_Luck__h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PeX_v0dot99_Eng_bart_CrackPl___: Packer
+rule PeX_v0dot99_Eng_bart_CrackPl : Packer
 {
     meta:
         name = "PeX v0.99 (Eng) -> bart/CrackPl" // Packer name & version
@@ -2039,7 +1789,7 @@ rule PeX_v0dot99_Eng_bart_CrackPl___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Private_EXE_Protector_1dot8_SetiSoft___: Packer
+rule Private_EXE_Protector_1dot8_SetiSoft : Packer
 {
     meta:
         name = "Private EXE Protector 1.8 -> SetiSoft" // Packer name & version
@@ -2052,7 +1802,7 @@ rule Private_EXE_Protector_1dot8_SetiSoft___: Packer
     condition:
     	for any of them
 }
-rule Private_EXE_Protector_1dot9dot7_SetiSoft_h___: Packer
+rule Private_EXE_Protector_1dot9dot7_SetiSoft_h : Packer
 {
     meta:
         name = "Private EXE Protector 1.9.7 -> SetiSoft (h)" // Packer name & version
@@ -2065,46 +1815,7 @@ rule Private_EXE_Protector_1dot9dot7_SetiSoft_h___: Packer
     condition:
     	for any of them
 }
-rule PseudoSigner_0dot2_FSG_1dot0_Anorganix___: Packer
-{
-    meta:
-        name = "PseudoSigner 0.2 [FSG 1.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 BB D0 01 40 00 BF 00 10 40 00 BE 90 90 90 90 53 E8 0A 00 00 00 02 D2 75 05 8A 16 46 12 D2 C3 FC B2 80 A4 6A 02 5B }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot2_Macromedia_Flash_Projector_6dot0_Anorganix___: Packer
-{
-    meta:
-        name = "PseudoSigner 0.2 [Macromedia Flash Projector 6.0] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 90 90 90 90 68 ?? ?? ?? ?? 67 64 FF 36 00 00 67 64 89 26 00 00 F1 90 90 90 90 83 EC 44 56 FF 15 24 81 49 00 8B F0 8A 06 3C 22 75 1C 8A 46 01 46 3C 22 74 0C 84 C0 74 08 8A 46 01 46 3C 22 75 F4 80 3E 22 75 0F 46 EB 0C }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PseudoSigner_0dot2_Video_Lan_Client_Anorganix___: Packer
-{
-    meta:
-        name = "PseudoSigner 0.2 [Video-Lan-Client] --> Anorganix" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 89 E5 83 EC 08 90 90 90 90 90 90 90 90 90 90 90 90 90 90 01 FF FF 01 01 01 00 01 90 90 90 90 90 90 90 90 90 90 90 90 90 90 00 01 00 01 00 01 90 90 00 01 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule PUNiSHER_v1dot5_DEMO_FEUERRADER_AHTeam___: Packer
+rule PUNiSHER_v1dot5_DEMO_FEUERRADER_AHTeam : Packer
 {
     meta:
         name = "PUNiSHER v1.5 (DEMO) -> FEUERRADER/AHTeam" // Packer name & version
@@ -2117,7 +1828,7 @@ rule PUNiSHER_v1dot5_DEMO_FEUERRADER_AHTeam___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RE_Crypt_v0dot7x_Crudd____RET___h1__: Packer
+rule RE_Crypt_v0dot7x_Crudd_RET_h1 : Packer
 {
     meta:
         name = "RE-Crypt v0.7x -> Crudd [RET] (h1)" // Packer name & version
@@ -2130,7 +1841,7 @@ rule RE_Crypt_v0dot7x_Crudd____RET___h1__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RE_Crypt_v0dot7x_Crudd____RET___h2__: Packer
+rule RE_Crypt_v0dot7x_Crudd_RET_h2 : Packer
 {
     meta:
         name = "RE-Crypt v0.7x -> Crudd [RET] (h2)" // Packer name & version
@@ -2143,7 +1854,7 @@ rule RE_Crypt_v0dot7x_Crudd____RET___h2__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Reflexive_Arcade_Wrapper___: Packer
+rule Reflexive_Arcade_Wrapper : Packer
 {
     meta:
         name = "Reflexive Arcade Wrapper" // Packer name & version
@@ -2156,7 +1867,7 @@ rule Reflexive_Arcade_Wrapper___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_1dot0_beta_ap0x___: Packer
+rule RLPack_1dot0_beta_ap0x : Packer
 {
     meta:
         name = "RLPack 1.0 beta -> ap0x" // Packer name & version
@@ -2169,7 +1880,7 @@ rule RLPack_1dot0_beta_ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Full_Edition_1dot17_DLL_aPLib_Ap0x___: Packer
+rule RLPack_Full_Edition_1dot17_DLL_aPLib_Ap0x : Packer
 {
     meta:
         name = "RLPack Full Edition 1.17 DLL [aPLib] -> Ap0x" // Packer name & version
@@ -2182,7 +1893,7 @@ rule RLPack_Full_Edition_1dot17_DLL_aPLib_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_V1dot0dotbeta_ap0x___: Packer
+rule RLPack_V1dot0dotbeta_ap0x : Packer
 {
     meta:
         name = "RLPack V1.0.beta -> ap0x" // Packer name & version
@@ -2195,7 +1906,7 @@ rule RLPack_V1dot0dotbeta_ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SafeDisc_SafeCast_2dotxx_3dotxx_Macrovision___: Packer
+rule SafeDisc_SafeCast_2dotxx_3dotxx_Macrovision : Packer
 {
     meta:
         name = "SafeDisc/SafeCast 2.xx - 3.xx -> Macrovision" // Packer name & version
@@ -2208,7 +1919,7 @@ rule SafeDisc_SafeCast_2dotxx_3dotxx_Macrovision___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SDProtect_Randy_Li___: Packer
+rule SDProtect_Randy_Li : Packer
 {
     meta:
         name = "SDProtect -> Randy Li" // Packer name & version
@@ -2221,7 +1932,7 @@ rule SDProtect_Randy_Li___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SDProtector_1dotx_Randy_Li___: Packer
+rule SDProtector_1dotx_Randy_Li : Packer
 {
     meta:
         name = "SDProtector 1.x -> Randy Li" // Packer name & version
@@ -2234,7 +1945,7 @@ rule SDProtector_1dotx_Randy_Li___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SDProtector_Basic_Pro_Edition_1dot10_Randy_Li_h____: Packer
+rule SDProtector_Basic_Pro_Edition_1dot10_Randy_Li_h : Packer
 {
     meta:
         name = "SDProtector Basic/Pro Edition 1.10 -> Randy Li (h)" // Packer name & version
@@ -2247,7 +1958,7 @@ rule SDProtector_Basic_Pro_Edition_1dot10_Randy_Li_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SDProtector_Pro_Edition_1dot16_Randy_Li_h___: Packer
+rule SDProtector_Pro_Edition_1dot16_Randy_Li_h : Packer
 {
     meta:
         name = "SDProtector Pro Edition 1.16 -> Randy Li (h)" // Packer name & version
@@ -2260,7 +1971,7 @@ rule SDProtector_Pro_Edition_1dot16_Randy_Li_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SmartE_Microsoft___: Packer
+rule SmartE_Microsoft : Packer
 {
     meta:
         name = "SmartE -> Microsoft" // Packer name & version
@@ -2273,7 +1984,7 @@ rule SmartE_Microsoft___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Soft_Defender_v1dot0_v1dot1___: Packer
+rule Soft_Defender_v1dot0_v1dot1 : Packer
 {
     meta:
         name = "Soft Defender v1.0 - v1.1" // Packer name & version
@@ -2286,7 +1997,7 @@ rule Soft_Defender_v1dot0_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SoftDefender_1dotx_Randy_Li___: Packer
+rule SoftDefender_1dotx_Randy_Li : Packer
 {
     meta:
         name = "SoftDefender 1.x -> Randy Li" // Packer name & version
@@ -2299,7 +2010,7 @@ rule SoftDefender_1dotx_Randy_Li___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SOFTWrapper_for_Win9x_NT_Evaluation_Version____: Packer
+rule SOFTWrapper_for_Win9x_NT_Evaluation_Version : Packer
 {
     meta:
         name = "SOFTWrapper for Win9x/NT (Evaluation Version)" // Packer name & version
@@ -2312,7 +2023,7 @@ rule SOFTWrapper_for_Win9x_NT_Evaluation_Version____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Special_EXE_Pasword_Protector_v1dot01_Eng_Pavol_Cerven___: Packer
+rule Special_EXE_Pasword_Protector_v1dot01_Eng_Pavol_Cerven : Packer
 {
     meta:
         name = "Special EXE Pasword Protector v1.01 (Eng) -> Pavol Cerven" // Packer name & version
@@ -2325,7 +2036,7 @@ rule Special_EXE_Pasword_Protector_v1dot01_Eng_Pavol_Cerven___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SuperDAT___: Packer
+rule SuperDAT : Packer
 {
     meta:
         name = "SuperDAT" // Packer name & version
@@ -2338,7 +2049,7 @@ rule SuperDAT___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SVK_Protector_v1dot32_Eng_Pavol_Cerven___: Packer
+rule SVK_Protector_v1dot32_Eng_Pavol_Cerven : Packer
 {
     meta:
         name = "SVK Protector v1.32 (Eng) -> Pavol Cerven" // Packer name & version
@@ -2351,7 +2062,7 @@ rule SVK_Protector_v1dot32_Eng_Pavol_Cerven___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SVK_Protector_v1dot3x_Eng_Pavol_Cerven___: Packer
+rule SVK_Protector_v1dot3x_Eng_Pavol_Cerven : Packer
 {
     meta:
         name = "SVK Protector v1.3x (Eng) -> Pavol Cerven" // Packer name & version
@@ -2364,7 +2075,7 @@ rule SVK_Protector_v1dot3x_Eng_Pavol_Cerven___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule themida_1dot0dot0dot5_http____wwwdotoreansdotcom_: Packer
+rule themida_1dot0dot0dot5_http_wwwdotoreansdotcom : Packer
 {
     meta:
         name = "themida 1.0.0.5 -> http://www.oreans.com" // Packer name & version
@@ -2377,7 +2088,7 @@ rule themida_1dot0dot0dot5_http____wwwdotoreansdotcom_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_1dot0dotxdotx_1dot8dot0dot0__compressed_engine__Oreans_Technologies___: Packer
+rule Themida_1dot0dotxdotx_1dot8dot0dot0_compressed_engine_Oreans_Technologies : Packer
 {
     meta:
         name = "Themida 1.0.x.x - 1.8.0.0 (compressed engine) -> Oreans Technologies" // Packer name & version
@@ -2390,7 +2101,7 @@ rule Themida_1dot0dotxdotx_1dot8dot0dot0__compressed_engine__Oreans_Technologies
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_1dot2dot0dot1_compressed_Oreans_Technologies_h____: Packer
+rule Themida_1dot2dot0dot1_compressed_Oreans_Technologies_h : Packer
 {
     meta:
         name = "Themida 1.2.0.1 (compressed) -> Oreans Technologies (h)" // Packer name & version
@@ -2403,7 +2114,7 @@ rule Themida_1dot2dot0dot1_compressed_Oreans_Technologies_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_1dot8dotxdotx_Oreans_Technologies___: Packer
+rule Themida_1dot8dotxdotx_Oreans_Technologies : Packer
 {
     meta:
         name = "Themida 1.8.x.x -> Oreans Technologies" // Packer name & version
@@ -2416,7 +2127,7 @@ rule Themida_1dot8dotxdotx_Oreans_Technologies___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Thinstall_v2dot460_Jitit___: Packer
+rule Thinstall_v2dot460_Jitit : Packer
 {
     meta:
         name = "Thinstall v2.460 -> Jitit" // Packer name & version
@@ -2429,7 +2140,7 @@ rule Thinstall_v2dot460_Jitit___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_0dot1x_beta_Dwing___: Packer
+rule Upack_0dot1x_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.1x beta -> Dwing" // Packer name & version
@@ -2442,7 +2153,7 @@ rule Upack_0dot1x_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_0dot20_beta_Dwing___: Packer
+rule Upack_0dot20_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.20 beta -> Dwing" // Packer name & version
@@ -2455,7 +2166,7 @@ rule Upack_0dot20_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_0dot21_beta_Dwing___: Packer
+rule Upack_0dot21_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.21 beta -> Dwing" // Packer name & version
@@ -2468,7 +2179,7 @@ rule Upack_0dot21_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_0dot22_0dot23_beta_Dwing___: Packer
+rule Upack_0dot22_0dot23_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.22 - 0.23 beta -> Dwing" // Packer name & version
@@ -2481,7 +2192,7 @@ rule Upack_0dot22_0dot23_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_0dot24_beta_Dwing___: Packer
+rule Upack_0dot24_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.24 beta -> Dwing" // Packer name & version
@@ -2494,7 +2205,7 @@ rule Upack_0dot24_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot399_Dwing___: Packer
+rule Upack_v0dot399_Dwing : Packer
 {
     meta:
         name = "Upack v0.399 -> Dwing" // Packer name & version
@@ -2507,7 +2218,7 @@ rule Upack_v0dot399_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_2dot90_LZMA_Markus_Oberhumer__Laszlo_Molnar__and__John_Reiser___: Packer
+rule UPX_2dot90_LZMA_Markus_Oberhumer_Laszlo_Molnar_and_John_Reiser : Packer
 {
     meta:
         name = "UPX 2.90 [LZMA] -> Markus Oberhumer, Laszlo Molnar & John Reiser" // Packer name & version
@@ -2520,7 +2231,7 @@ rule UPX_2dot90_LZMA_Markus_Oberhumer__Laszlo_Molnar__and__John_Reiser___: Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Modified_Stub_b_Farb_rausch_Consumer_Consulting___: Packer
+rule UPX_Modified_Stub_b_Farb_rausch_Consumer_Consulting : Packer
 {
     meta:
         name = "UPX Modified Stub b -> Farb-rausch Consumer Consulting" // Packer name & version
@@ -2533,7 +2244,7 @@ rule UPX_Modified_Stub_b_Farb_rausch_Consumer_Consulting___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Modified_Stub_c_Farb_rausch_Consumer_Consulting___: Packer
+rule UPX_Modified_Stub_c_Farb_rausch_Consumer_Consulting : Packer
 {
     meta:
         name = "UPX Modified Stub c -> Farb-rausch Consumer Consulting" // Packer name & version
@@ -2546,7 +2257,7 @@ rule UPX_Modified_Stub_c_Farb_rausch_Consumer_Consulting___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upx_v1dot2_Marcus__and__Lazlo___: Packer
+rule Upx_v1dot2_Marcus_and_Lazlo : Packer
 {
     meta:
         name = "Upx v1.2 -> Marcus & Lazlo" // Packer name & version
@@ -2559,7 +2270,7 @@ rule Upx_v1dot2_Marcus__and__Lazlo___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_SCRAMBLER_3dot06___cOnTroL_: Packer
+rule UPX_SCRAMBLER_3dot06_cOnTroL : Packer
 {
     meta:
         name = "UPX-SCRAMBLER 3.06 -> ©OnT®oL" // Packer name & version
@@ -2572,7 +2283,7 @@ rule UPX_SCRAMBLER_3dot06___cOnTroL_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vcasm_Protector_1dot0___: Packer
+rule Vcasm_Protector_1dot0 : Packer
 {
     meta:
         name = "Vcasm-Protector 1.0" // Packer name & version
@@ -2585,7 +2296,7 @@ rule Vcasm_Protector_1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule vfp_and_exeNc_v6dot00_Wang_JianGuo___: Packer
+rule vfp_and_exeNc_v6dot00_Wang_JianGuo : Packer
 {
     meta:
         name = "vfp&exeNc v6.00 -> Wang JianGuo" // Packer name & version
@@ -2598,7 +2309,7 @@ rule vfp_and_exeNc_v6dot00_Wang_JianGuo___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule vprotector_1dot2_vcasm___: Packer
+rule vprotector_1dot2_vcasm : Packer
 {
     meta:
         name = "vprotector 1.2 -> vcasm" // Packer name & version
@@ -2611,7 +2322,7 @@ rule vprotector_1dot2_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VProtector_V1dot0E_vcasm___: Packer
+rule VProtector_V1dot0E_vcasm : Packer
 {
     meta:
         name = "VProtector V1.0E -> vcasm" // Packer name & version
@@ -2624,7 +2335,7 @@ rule VProtector_V1dot0E_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinUpack_v0dot39_final_relocated_image_base_By_Dwing_c_2005_h2____: Packer
+rule WinUpack_v0dot39_final_relocated_image_base_By_Dwing_c_2005_h2 : Packer
 {
     meta:
         name = "WinUpack v0.39 final (relocated image base) -> By Dwing (c)2005 (h2)" // Packer name & version
@@ -2637,7 +2348,7 @@ rule WinUpack_v0dot39_final_relocated_image_base_By_Dwing_c_2005_h2____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinZip_Self_Extractor_2dot2_personal_edition_WinZip_Computing__h____: Packer
+rule WinZip_Self_Extractor_2dot2_personal_edition_WinZip_Computing_h : Packer
 {
     meta:
         name = "WinZip Self-Extractor 2.2 personal edition -> WinZip Computing (h)" // Packer name & version
@@ -2650,7 +2361,7 @@ rule WinZip_Self_Extractor_2dot2_personal_edition_WinZip_Computing__h____: Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Wise_Installer_Stub___: Packer
+rule Wise_Installer_Stub : Packer
 {
     meta:
         name = "Wise Installer Stub" // Packer name & version
@@ -2663,7 +2374,7 @@ rule Wise_Installer_Stub___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Wise_Installer_Stub_v1dot10dot1029dot1___: Packer
+rule Wise_Installer_Stub_v1dot10dot1029dot1 : Packer
 {
     meta:
         name = "Wise Installer Stub v1.10.1029.1" // Packer name & version
@@ -2676,7 +2387,7 @@ rule Wise_Installer_Stub_v1dot10dot1029dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Xtreme_Protector_v1dot06___: Packer
+rule Xtreme_Protector_v1dot06 : Packer
 {
     meta:
         name = "Xtreme-Protector v1.06" // Packer name & version
@@ -2689,7 +2400,7 @@ rule Xtreme_Protector_v1dot06___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Crypter_1dot3_Ashkbiz_Danehkar___: Packer
+rule yodas_Crypter_1dot3_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "yoda's Crypter 1.3 -> Ashkbiz Danehkar" // Packer name & version
@@ -2702,7 +2413,7 @@ rule yodas_Crypter_1dot3_Ashkbiz_Danehkar___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Protector_1dot0_beta_Ashkbiz_Danehkar___: Packer
+rule yodas_Protector_1dot0_beta_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "yoda's Protector 1.0 beta -> Ashkbiz Danehkar" // Packer name & version
@@ -2715,7 +2426,7 @@ rule yodas_Protector_1dot0_beta_Ashkbiz_Danehkar___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Protector_1dot02_____1dot03_Ashkbiz_Danehkar_: Packer
+rule yodas_Protector_1dot02_1dot03_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "yoda's Protector 1.02 - 1.03 -> Ashkbiz Danehkar" // Packer name & version
@@ -2728,7 +2439,7 @@ rule yodas_Protector_1dot02_____1dot03_Ashkbiz_Danehkar_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Protector_v1dot01_Ashkbiz_Danehkar__h____: Packer
+rule yodas_Protector_v1dot01_Ashkbiz_Danehkar_h : Packer
 {
     meta:
         name = "yoda's Protector v1.01 -> Ashkbiz Danehkar (h)" // Packer name & version
@@ -2741,7 +2452,7 @@ rule yodas_Protector_v1dot01_Ashkbiz_Danehkar__h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Protector_v1dot03dot2__dotexe_dotscr___dotcom__Ashkbiz_Danehkar__h__: Packer
+rule yodas_Protector_v1dot03dot2_dotexe_dotscr_dotcom_Ashkbiz_Danehkar_h : Packer
 {
     meta:
         name = "yoda's Protector v1.03.2 (.exe,.scr,.com) -> Ashkbiz Danehkar (h)" // Packer name & version
@@ -2754,7 +2465,7 @@ rule yodas_Protector_v1dot03dot2__dotexe_dotscr___dotcom__Ashkbiz_Danehkar__h__:
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Yodas_Protector_v1dot03dot2_Beta2_Ashkbiz_Danehkar___: Packer
+rule Yodas_Protector_v1dot03dot2_Beta2_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "Yoda's Protector v1.03.2 Beta2 -> Ashkbiz Danehkar" // Packer name & version
@@ -2767,7 +2478,7 @@ rule Yodas_Protector_v1dot03dot2_Beta2_Ashkbiz_Danehkar___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Protector_v1dot03dot3__dotexe_dotscr___dotcom__Ashkbiz_Danehkar__h__: Packer
+rule yodas_Protector_v1dot03dot3_dotexe_dotscr_dotcom_Ashkbiz_Danehkar_h : Packer
 {
     meta:
         name = "yoda's Protector v1.03.3 (.exe,.scr,.com) -> Ashkbiz Danehkar (h)" // Packer name & version
@@ -2780,7 +2491,7 @@ rule yodas_Protector_v1dot03dot3__dotexe_dotscr___dotcom__Ashkbiz_Danehkar__h__:
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Protector_v1dot0b_Ashkbiz_Danehkar__h____: Packer
+rule yodas_Protector_v1dot0b_Ashkbiz_Danehkar_h : Packer
 {
     meta:
         name = "yoda's Protector v1.0b -> Ashkbiz Danehkar (h)" // Packer name & version
@@ -2793,7 +2504,7 @@ rule yodas_Protector_v1dot0b_Ashkbiz_Danehkar__h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Armadillo_3dot00_Anorganix___: Packer
+rule PseudoSigner_0dot1_Armadillo_3dot00_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Armadillo 3.00] --> Anorganix" // Packer name & version
@@ -2807,7 +2518,7 @@ rule PseudoSigner_0dot1_Armadillo_3dot00_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_CodeSafe_2dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_CodeSafe_2dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [CodeSafe 2.0] --> Anorganix" // Packer name & version
@@ -2821,7 +2532,7 @@ rule PseudoSigner_0dot1_CodeSafe_2dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_DEF_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_DEF_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [DEF 1.0] --> Anorganix" // Packer name & version
@@ -2835,7 +2546,7 @@ rule PseudoSigner_0dot1_DEF_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_DxPack_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_DxPack_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [DxPack 1.0] --> Anorganix" // Packer name & version
@@ -2849,7 +2560,7 @@ rule PseudoSigner_0dot1_DxPack_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_ExeSmasher_Anorganix___: Packer
+rule PseudoSigner_0dot1_ExeSmasher_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [ExeSmasher] --> Anorganix" // Packer name & version
@@ -2863,7 +2574,7 @@ rule PseudoSigner_0dot1_ExeSmasher_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Gleam_1dot00_Anorganix___: Packer
+rule PseudoSigner_0dot1_Gleam_1dot00_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Gleam 1.00] --> Anorganix" // Packer name & version
@@ -2877,7 +2588,7 @@ rule PseudoSigner_0dot1_Gleam_1dot00_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_JDPack_1dotx_JDProtect_0dot9_Anorganix___: Packer
+rule PseudoSigner_0dot1_JDPack_1dotx_JDProtect_0dot9_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [JDPack 1.x / JDProtect 0.9] --> Anorganix" // Packer name & version
@@ -2891,7 +2602,7 @@ rule PseudoSigner_0dot1_JDPack_1dotx_JDProtect_0dot9_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_LCC_Win32_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot1_LCC_Win32_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [LCC Win32 DLL] --> Anorganix" // Packer name & version
@@ -2905,7 +2616,7 @@ rule PseudoSigner_0dot1_LCC_Win32_DLL_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Lockless_Intro_Pack_Anorganix___: Packer
+rule PseudoSigner_0dot1_Lockless_Intro_Pack_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Lockless Intro Pack] --> Anorganix" // Packer name & version
@@ -2919,7 +2630,7 @@ rule PseudoSigner_0dot1_Lockless_Intro_Pack_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Basic_6dot0_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Basic_6dot0_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual Basic 6.0 DLL] --> Anorganix" // Packer name & version
@@ -2933,7 +2644,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Basic_6dot0_DLL_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot20_Anorganix___: Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot20_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual C++ 6.20] --> Anorganix" // Packer name & version
@@ -2947,7 +2658,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_6dot20_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual C++ 7.0 DLL] --> Anorganix" // Packer name & version
@@ -2961,7 +2672,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix___: Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PE_Intro_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_PE_Intro_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PE Intro 1.0] --> Anorganix" // Packer name & version
@@ -2975,7 +2686,7 @@ rule PseudoSigner_0dot1_PE_Intro_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PENinja_1dot31_Anorganix___: Packer
+rule PseudoSigner_0dot1_PENinja_1dot31_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PENinja 1.31] --> Anorganix" // Packer name & version
@@ -2989,7 +2700,7 @@ rule PseudoSigner_0dot1_PENinja_1dot31_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PESHiELD_0dot25_Anorganix___: Packer
+rule PseudoSigner_0dot1_PESHiELD_0dot25_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PESHiELD 0.25] --> Anorganix" // Packer name & version
@@ -3003,7 +2714,7 @@ rule PseudoSigner_0dot1_PESHiELD_0dot25_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Armadillo_3dot00_Anorganix___: Packer
+rule PseudoSigner_0dot2_Armadillo_3dot00_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Armadillo 3.00] --> Anorganix" // Packer name & version
@@ -3016,7 +2727,7 @@ rule PseudoSigner_0dot2_Armadillo_3dot00_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_CodeSafe_2dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_CodeSafe_2dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [CodeSafe 2.0] --> Anorganix" // Packer name & version
@@ -3029,7 +2740,7 @@ rule PseudoSigner_0dot2_CodeSafe_2dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_DEF_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_DEF_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [DEF 1.0] --> Anorganix" // Packer name & version
@@ -3042,7 +2753,7 @@ rule PseudoSigner_0dot2_DEF_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_DxPack_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_DxPack_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [DxPack 1.0] --> Anorganix" // Packer name & version
@@ -3055,7 +2766,7 @@ rule PseudoSigner_0dot2_DxPack_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_ExeSmasher_Anorganix___: Packer
+rule PseudoSigner_0dot2_ExeSmasher_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [ExeSmasher] --> Anorganix" // Packer name & version
@@ -3068,7 +2779,7 @@ rule PseudoSigner_0dot2_ExeSmasher_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Gleam_1dot00_Anorganix___: Packer
+rule PseudoSigner_0dot2_Gleam_1dot00_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Gleam 1.00] --> Anorganix" // Packer name & version
@@ -3081,7 +2792,7 @@ rule PseudoSigner_0dot2_Gleam_1dot00_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_JDPack_1dotx_JDProtect_0dot9_Anorganix___: Packer
+rule PseudoSigner_0dot2_JDPack_1dotx_JDProtect_0dot9_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [JDPack 1.x / JDProtect 0.9] --> Anorganix" // Packer name & version
@@ -3094,7 +2805,7 @@ rule PseudoSigner_0dot2_JDPack_1dotx_JDProtect_0dot9_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PESHiELD_0dot25_Anorganix___: Packer
+rule PseudoSigner_0dot2_PESHiELD_0dot25_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PESHiELD 0.25] --> Anorganix" // Packer name & version
@@ -3107,7 +2818,7 @@ rule PseudoSigner_0dot2_PESHiELD_0dot25_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_ZCode_1dot01_Anorganix___: Packer
+rule PseudoSigner_0dot2_ZCode_1dot01_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [ZCode 1.01] --> Anorganix" // Packer name & version
@@ -3784,7 +3495,7 @@ rule PseudoSigner_0dot2_ZCode_1dot01_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule** Protector_v1dot1dot11__DDeM__PE_Engine_v0dot9__DDeM_CI_v0dot9dot2__: Packer
+rule** Protector_v1dot1dot11_DDeM_PE_Engine_v0dot9_DDeM_CI_v0dot9dot2 : Packer
 {
     meta:
         source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
@@ -3796,7 +3507,7 @@ rule** Protector_v1dot1dot11__DDeM__PE_Engine_v0dot9__DDeM_CI_v0dot9dot2__: Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-rule** Protector_v1dot1dot11__DDeM__PE_Engine_v0dot9__DDeM_CI_v0dot9dot2__: Packer
+rule** Protector_v1dot1dot11_DDeM_PE_Engine_v0dot9_DDeM_CI_v0dot9dot2 : Packer
 {
     meta:
         source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
@@ -3808,7 +3519,7 @@ rule** Protector_v1dot1dot11__DDeM__PE_Engine_v0dot9__DDeM_CI_v0dot9dot2__: Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-rule dotNET_executable___: Packer
+rule dotNET_executable : Packer
 {
     meta:
         name = ".NET executable" // Packer name & version
@@ -3821,7 +3532,7 @@ rule dotNET_executable___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ACProtect_1dot4x_RISCO_soft___: Packer
+rule ACProtect_1dot4x_RISCO_soft : Packer
 {
     meta:
         name = "ACProtect 1.4x -> RISCO soft" // Packer name & version
@@ -3834,7 +3545,7 @@ rule ACProtect_1dot4x_RISCO_soft___: Packer
     condition:
     	for any of them
 }
-rule ACProtect_1dot4x_RISCO_soft___: Packer
+rule ACProtect_1dot4x_RISCO_soft : Packer
 {
     meta:
         name = "ACProtect 1.4x -> RISCO soft" // Packer name & version
@@ -3847,7 +3558,7 @@ rule ACProtect_1dot4x_RISCO_soft___: Packer
     condition:
     	for any of them
 }
-rule ActiveMARK_5dotx_Trymedia_Systems_Incdot____h__: Packer
+rule ActiveMARK_5dotx_Trymedia_Systems_Incdot_h : Packer
 {
     meta:
         name = "ActiveMARK 5.x -> Trymedia Systems,Inc. (h)" // Packer name & version
@@ -3860,7 +3571,7 @@ rule ActiveMARK_5dotx_Trymedia_Systems_Incdot____h__: Packer
     condition:
     	for any of them
 }
-rule ActiveMARK_5dotx_Trymedia_Systems_Incdot____h__: Packer
+rule ActiveMARK_5dotx_Trymedia_Systems_Incdot_h : Packer
 {
     meta:
         name = "ActiveMARK 5.x -> Trymedia Systems,Inc. (h)" // Packer name & version
@@ -3873,7 +3584,7 @@ rule ActiveMARK_5dotx_Trymedia_Systems_Incdot____h__: Packer
     condition:
     	for any of them
 }
-rule AHpack_0dot1_FEUERRADER_h___: Packer
+rule AHpack_0dot1_FEUERRADER_h : Packer
 {
     meta:
         name = "AHpack 0.1 -> FEUERRADER (h)" // Packer name & version
@@ -3882,24 +3593,12 @@ rule AHpack_0dot1_FEUERRADER_h___: Packer
  
     strings:
         $1 = { 60 68 54 ?? ?? ?? B8 48 ?? ?? ?? FF 10 68 B3 ?? ?? ?? 50 B8 44 ?? ?? ?? FF 10 68 00 ?? ?? ?? 6A 40 FF D0 89 05 CA ?? ?? ?? 89 C7 BE 00 10 ?? ?? 60 FC B2 80 31 DB A4 B3 02 E8 6D 00 00 00 73 F6 31 C9 E8 64 00 00 00 73 1C 31 C0 E8 5B 00 00 00 73 23 B3 02 41 }
+        $2 = { 60 68 54 ?? ?? ?? B8 48 ?? ?? ?? FF 10 68 B3 ?? ?? ?? 50 B8 44 ?? ?? ?? FF 10 68 00 ?? ?? ?? 6A 40 FF D0 89 05 CA ?? ?? ?? 89 C7 BE 00 10 ?? ?? 60 FC B2 80 31 DB A4 B3 02 E8 6D 00 00 00 73 F6 31 C9 E8 64 00 00 00 73 1C 31 C0 E8 5B 00 00 00 73 23 B3 02 41 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AHpack_0dot1_FEUERRADER_h___: Packer
-{
-    meta:
-        name = "AHpack 0.1 -> FEUERRADER (h)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 68 54 ?? ?? ?? B8 48 ?? ?? ?? FF 10 68 B3 ?? ?? ?? 50 B8 44 ?? ?? ?? FF 10 68 00 ?? ?? ?? 6A 40 FF D0 89 05 CA ?? ?? ?? 89 C7 BE 00 10 ?? ?? 60 FC B2 80 31 DB A4 B3 02 E8 6D 00 00 00 73 F6 31 C9 E8 64 00 00 00 73 1C 31 C0 E8 5B 00 00 00 73 23 B3 02 41 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Alex_Protector_1dot0_beta_2_by_Alex___: Packer
+rule Alex_Protector_1dot0_beta_2_by_Alex : Packer
 {
     meta:
         name = "Alex Protector 1.0 beta 2 by Alex" // Packer name & version
@@ -3912,7 +3611,7 @@ rule Alex_Protector_1dot0_beta_2_by_Alex___: Packer
     condition:
     	for any of them
 }
-rule Alex_Protector_1dot0_beta_2_by_Alex___: Packer
+rule Alex_Protector_1dot0_beta_2_by_Alex : Packer
 {
     meta:
         name = "Alex Protector 1.0 beta 2 by Alex" // Packer name & version
@@ -3925,7 +3624,7 @@ rule Alex_Protector_1dot0_beta_2_by_Alex___: Packer
     condition:
     	for any of them
 }
-rule Alex_Protector_v0dot4_beta_1_by_Alex___: Packer
+rule Alex_Protector_v0dot4_beta_1_by_Alex : Packer
 {
     meta:
         name = "Alex Protector v0.4 beta 1 by Alex" // Packer name & version
@@ -3938,7 +3637,7 @@ rule Alex_Protector_v0dot4_beta_1_by_Alex___: Packer
     condition:
     	for any of them
 }
-rule Alex_Protector_v0dot4_beta_1_by_Alex___: Packer
+rule Alex_Protector_v0dot4_beta_1_by_Alex : Packer
 {
     meta:
         name = "Alex Protector v0.4 beta 1 by Alex" // Packer name & version
@@ -3951,7 +3650,7 @@ rule Alex_Protector_v0dot4_beta_1_by_Alex___: Packer
     condition:
     	for any of them
 }
-rule ARM_Protector_v0dot1_by_SMoKE___: Packer
+rule ARM_Protector_v0dot1_by_SMoKE : Packer
 {
     meta:
         name = "ARM Protector v0.1 by SMoKE" // Packer name & version
@@ -3964,7 +3663,7 @@ rule ARM_Protector_v0dot1_by_SMoKE___: Packer
     condition:
     	for any of them
 }
-rule ARM_Protector_v0dot1_by_SMoKE___: Packer
+rule ARM_Protector_v0dot1_by_SMoKE : Packer
 {
     meta:
         name = "ARM Protector v0.1 by SMoKE" // Packer name & version
@@ -3977,7 +3676,7 @@ rule ARM_Protector_v0dot1_by_SMoKE___: Packer
     condition:
     	for any of them
 }
-rule Armadillo_3dot00a_Silicon_Realms_Toolworks___: Packer
+rule Armadillo_3dot00a_Silicon_Realms_Toolworks : Packer
 {
     meta:
         name = "Armadillo 3.00a -> Silicon Realms Toolworks" // Packer name & version
@@ -3986,24 +3685,12 @@ rule Armadillo_3dot00a_Silicon_Realms_Toolworks___: Packer
  
     strings:
         $1 = { 60 E8 00 00 00 00 5D 50 51 EB 0F ?? EB 0F ?? EB 07 ?? EB 0F ?? EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC ?? 59 58 50 51 EB 0F ?? EB 0F ?? EB 07 ?? EB 0F ?? EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC ?? 59 58 50 51 EB 0F }
+        $2 = { 60 E8 00 00 00 00 5D 50 51 EB 0F ?? EB 0F ?? EB 07 ?? EB 0F ?? EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC ?? 59 58 50 51 EB 0F ?? EB 0F ?? EB 07 ?? EB 0F ?? EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC ?? 59 58 50 51 EB 0F }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_3dot00a_Silicon_Realms_Toolworks___: Packer
-{
-    meta:
-        name = "Armadillo 3.00a -> Silicon Realms Toolworks" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 00 00 00 00 5D 50 51 EB 0F ?? EB 0F ?? EB 07 ?? EB 0F ?? EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC ?? 59 58 50 51 EB 0F ?? EB 0F ?? EB 07 ?? EB 0F ?? EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC ?? 59 58 50 51 EB 0F }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_4dot30a_Silicon_Realms_Toolworks_h___: Packer
+rule Armadillo_4dot30a_Silicon_Realms_Toolworks_h : Packer
 {
     meta:
         name = "Armadillo 4.30a -> Silicon Realms Toolworks (h)" // Packer name & version
@@ -4016,7 +3703,7 @@ rule Armadillo_4dot30a_Silicon_Realms_Toolworks_h___: Packer
     condition:
     	for any of them
 }
-rule Armadillo_4dot30a_Silicon_Realms_Toolworks_h___: Packer
+rule Armadillo_4dot30a_Silicon_Realms_Toolworks_h : Packer
 {
     meta:
         name = "Armadillo 4.30a -> Silicon Realms Toolworks (h)" // Packer name & version
@@ -4029,7 +3716,7 @@ rule Armadillo_4dot30a_Silicon_Realms_Toolworks_h___: Packer
     condition:
     	for any of them
 }
-rule Armadillo_4dot40_Silicon_Realms_Toolworks_h___: Packer
+rule Armadillo_4dot40_Silicon_Realms_Toolworks_h : Packer
 {
     meta:
         name = "Armadillo 4.40 -> Silicon Realms Toolworks (h)" // Packer name & version
@@ -4038,24 +3725,12 @@ rule Armadillo_4dot40_Silicon_Realms_Toolworks_h___: Packer
  
     strings:
         $1 = { 31 2E 31 2E 34 00 00 00 C2 E0 94 BE 93 FC DE C6 B6 24 83 F7 D2 A4 92 77 40 27 CF EB D8 6F 50 B4 B5 29 24 FA 45 08 04 52 D5 1B D2 8C 8A 1E 6E FF 8C 5F 42 89 F1 83 B1 27 C5 69 57 FC 55 0A DD 44 BE 2A 02 97 6B 65 15 AA 31 E9 28 7D 49 1B DF B5 5D 08 A8 BA A8 }
+        $2 = { 31 2E 31 2E 34 00 00 00 C2 E0 94 BE 93 FC DE C6 B6 24 83 F7 D2 A4 92 77 40 27 CF EB D8 6F 50 B4 B5 29 24 FA 45 08 04 52 D5 1B D2 8C 8A 1E 6E FF 8C 5F 42 89 F1 83 B1 27 C5 69 57 FC 55 0A DD 44 BE 2A 02 97 6B 65 15 AA 31 E9 28 7D 49 1B DF B5 5D 08 A8 BA A8 }
 
     condition:
     	for any of them
 }
-rule Armadillo_4dot40_Silicon_Realms_Toolworks_h___: Packer
-{
-    meta:
-        name = "Armadillo 4.40 -> Silicon Realms Toolworks (h)" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 31 2E 31 2E 34 00 00 00 C2 E0 94 BE 93 FC DE C6 B6 24 83 F7 D2 A4 92 77 40 27 CF EB D8 6F 50 B4 B5 29 24 FA 45 08 04 52 D5 1B D2 8C 8A 1E 6E FF 8C 5F 42 89 F1 83 B1 27 C5 69 57 FC 55 0A DD 44 BE 2A 02 97 6B 65 15 AA 31 E9 28 7D 49 1B DF B5 5D 08 A8 BA A8 }
-
-    condition:
-    	for any of them
-}
-rule Armadillo_v1dot60a___: Packer
+rule Armadillo_v1dot60a : Packer
 {
     meta:
         name = "Armadillo v1.60a" // Packer name & version
@@ -4064,24 +3739,12 @@ rule Armadillo_v1dot60a___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 98 71 40 00 68 48 2D 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 98 71 40 00 68 48 2D 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot60a___: Packer
-{
-    meta:
-        name = "Armadillo v1.60a" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 98 71 40 00 68 48 2D 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v1dot77___: Packer
+rule Armadillo_v1dot77 : Packer
 {
     meta:
         name = "Armadillo v1.77" // Packer name & version
@@ -4090,24 +3753,12 @@ rule Armadillo_v1dot77___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 B0 71 40 00 68 6C 37 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 B0 71 40 00 68 6C 37 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot77___: Packer
-{
-    meta:
-        name = "Armadillo v1.77" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 B0 71 40 00 68 6C 37 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v1dot80___: Packer
+rule Armadillo_v1dot80 : Packer
 {
     meta:
         name = "Armadillo v1.80" // Packer name & version
@@ -4116,24 +3767,12 @@ rule Armadillo_v1dot80___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 E8 C1 00 00 68 F4 86 00 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v1dot80___: Packer
-{
-    meta:
-        name = "Armadillo v1.80" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
         $1 = { 55 8B EC 6A FF 68 E8 C1 00 00 68 F4 86 00 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot82___: Packer
+rule Armadillo_v1dot82 : Packer
 {
     meta:
         name = "Armadillo v1.82" // Packer name & version
@@ -4147,7 +3786,7 @@ rule Armadillo_v1dot82___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot83___: Packer
+rule Armadillo_v1dot83 : Packer
 {
     meta:
         name = "Armadillo v1.83" // Packer name & version
@@ -4161,7 +3800,7 @@ rule Armadillo_v1dot83___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot84___: Packer
+rule Armadillo_v1dot84 : Packer
 {
     meta:
         name = "Armadillo v1.84" // Packer name & version
@@ -4170,24 +3809,12 @@ rule Armadillo_v1dot84___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 E8 C1 40 00 68 F4 86 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 E8 C1 40 00 68 F4 86 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot84___: Packer
-{
-    meta:
-        name = "Armadillo v1.84" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 E8 C1 40 00 68 F4 86 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v1dot90___: Packer
+rule Armadillo_v1dot90 : Packer
 {
     meta:
         name = "Armadillo v1.90" // Packer name & version
@@ -4201,7 +3828,7 @@ rule Armadillo_v1dot90___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot90a___: Packer
+rule Armadillo_v1dot90a : Packer
 {
     meta:
         name = "Armadillo v1.90a" // Packer name & version
@@ -4215,7 +3842,7 @@ rule Armadillo_v1dot90a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot90b1___: Packer
+rule Armadillo_v1dot90b1 : Packer
 {
     meta:
         name = "Armadillo v1.90b1" // Packer name & version
@@ -4229,7 +3856,7 @@ rule Armadillo_v1dot90b1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot90b2___: Packer
+rule Armadillo_v1dot90b2 : Packer
 {
     meta:
         name = "Armadillo v1.90b2" // Packer name & version
@@ -4243,7 +3870,7 @@ rule Armadillo_v1dot90b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot90b3___: Packer
+rule Armadillo_v1dot90b3 : Packer
 {
     meta:
         name = "Armadillo v1.90b3" // Packer name & version
@@ -4257,7 +3884,7 @@ rule Armadillo_v1dot90b3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot90b4___: Packer
+rule Armadillo_v1dot90b4 : Packer
 {
     meta:
         name = "Armadillo v1.90b4" // Packer name & version
@@ -4271,7 +3898,7 @@ rule Armadillo_v1dot90b4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot90c___: Packer
+rule Armadillo_v1dot90c : Packer
 {
     meta:
         name = "Armadillo v1.90c" // Packer name & version
@@ -4284,7 +3911,7 @@ rule Armadillo_v1dot90c___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot90c___: Packer
+rule Armadillo_v1dot90c : Packer
 {
     meta:
         name = "Armadillo v1.90c" // Packer name & version
@@ -4297,7 +3924,7 @@ rule Armadillo_v1dot90c___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot00___: Packer
+rule Armadillo_v2dot00 : Packer
 {
     meta:
         name = "Armadillo v2.00" // Packer name & version
@@ -4306,24 +3933,12 @@ rule Armadillo_v2dot00___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 00 02 41 00 68 C4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 00 02 41 00 68 C4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot00___: Packer
-{
-    meta:
-        name = "Armadillo v2.00" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 00 02 41 00 68 C4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v2dot00b2_2dot00b3___: Packer
+rule Armadillo_v2dot00b2_2dot00b3 : Packer
 {
     meta:
         name = "Armadillo v2.00b2-2.00b3" // Packer name & version
@@ -4332,24 +3947,12 @@ rule Armadillo_v2dot00b2_2dot00b3___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 00 F2 40 00 68 C4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 00 F2 40 00 68 C4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot00b2_2dot00b3___: Packer
-{
-    meta:
-        name = "Armadillo v2.00b2-2.00b3" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 00 F2 40 00 68 C4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v2dot01___: Packer
+rule Armadillo_v2dot01 : Packer
 {
     meta:
         name = "Armadillo v2.01" // Packer name & version
@@ -4358,24 +3961,12 @@ rule Armadillo_v2dot01___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 08 02 41 00 68 04 9A 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 08 02 41 00 68 04 9A 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot01___: Packer
-{
-    meta:
-        name = "Armadillo v2.01" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 08 02 41 00 68 04 9A 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v2dot10b2___: Packer
+rule Armadillo_v2dot10b2 : Packer
 {
     meta:
         name = "Armadillo v2.10b2" // Packer name & version
@@ -4384,24 +3975,12 @@ rule Armadillo_v2dot10b2___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 18 12 41 00 68 24 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 18 12 41 00 68 24 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot10b2___: Packer
-{
-    meta:
-        name = "Armadillo v2.10b2" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 18 12 41 00 68 24 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v2dot20___: Packer
+rule Armadillo_v2dot20 : Packer
 {
     meta:
         name = "Armadillo v2.20" // Packer name & version
@@ -4410,24 +3989,12 @@ rule Armadillo_v2dot20___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 10 12 41 00 68 F4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 10 12 41 00 68 F4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot20___: Packer
-{
-    meta:
-        name = "Armadillo v2.20" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 10 12 41 00 68 F4 A0 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v2dot20b1___: Packer
+rule Armadillo_v2dot20b1 : Packer
 {
     meta:
         name = "Armadillo v2.20b1" // Packer name & version
@@ -4436,24 +4003,12 @@ rule Armadillo_v2dot20b1___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 30 12 41 00 68 A4 A5 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
+        $2 = { 55 8B EC 6A FF 68 30 12 41 00 68 A4 A5 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot20b1___: Packer
-{
-    meta:
-        name = "Armadillo v2.20b1" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 30 12 41 00 68 A4 A5 40 00 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v2dot50___: Packer
+rule Armadillo_v2dot50 : Packer
 {
     meta:
         name = "Armadillo v2.50" // Packer name & version
@@ -4462,24 +4017,12 @@ rule Armadillo_v2dot50___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 B8 ?? ?? ?? 68 F8 ?? ?? ?? 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF 15 20 ?? ?? ?? 33 D2 8A D4 89 15 D0 }
+        $2 = { 55 8B EC 6A FF 68 B8 ?? ?? ?? 68 F8 ?? ?? ?? 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF 15 20 ?? ?? ?? 33 D2 8A D4 89 15 D0 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot50___: Packer
-{
-    meta:
-        name = "Armadillo v2.50" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 B8 ?? ?? ?? 68 F8 ?? ?? ?? 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF 15 20 ?? ?? ?? 33 D2 8A D4 89 15 D0 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v2dot53___: Packer
+rule Armadillo_v2dot53 : Packer
 {
     meta:
         name = "Armadillo v2.53" // Packer name & version
@@ -4488,24 +4031,12 @@ rule Armadillo_v2dot53___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 ?? ?? ?? ?? 40 ?? ?? ?? ?? 68 54 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF ?? ?? ?? 15 58 33 D2 8A D4 89 }
+        $2 = { 55 8B EC 6A FF 68 ?? ?? ?? ?? 40 ?? ?? ?? ?? 68 54 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF ?? ?? ?? 15 58 33 D2 8A D4 89 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot53___: Packer
-{
-    meta:
-        name = "Armadillo v2.53" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 ?? ?? ?? ?? 40 ?? ?? ?? ?? 68 54 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF ?? ?? ?? 15 58 33 D2 8A D4 89 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v2dot5x_v2dot6x___: Packer
+rule Armadillo_v2dot5x_v2dot6x : Packer
 {
     meta:
         name = "Armadillo v2.5x - v2.6x" // Packer name & version
@@ -4514,24 +4045,12 @@ rule Armadillo_v2dot5x_v2dot6x___: Packer
  
     strings:
         $1 = { 55 8B EC 6A FF 68 ?? ?? ?? ?? 68 ?? ?? ?? ?? 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF 15 58 ?? ?? ?? 33 D2 8A D4 89 15 EC }
+        $2 = { 55 8B EC 6A FF 68 ?? ?? ?? ?? 68 ?? ?? ?? ?? 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF 15 58 ?? ?? ?? 33 D2 8A D4 89 15 EC }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot5x_v2dot6x___: Packer
-{
-    meta:
-        name = "Armadillo v2.5x - v2.6x" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 55 8B EC 6A FF 68 ?? ?? ?? ?? 68 ?? ?? ?? ?? 64 A1 00 00 00 00 50 64 89 25 00 00 00 00 83 EC 58 53 56 57 89 65 E8 FF 15 58 ?? ?? ?? 33 D2 8A D4 89 15 EC }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v3dot00___: Packer
+rule Armadillo_v3dot00 : Packer
 {
     meta:
         name = "Armadillo v3.00" // Packer name & version
@@ -4540,24 +4059,12 @@ rule Armadillo_v3dot00___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 60 33 C9 }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 60 33 C9 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v3dot00___: Packer
-{
-    meta:
-        name = "Armadillo v3.00" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 60 33 C9 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v3dot00a___: Packer
+rule Armadillo_v3dot00a : Packer
 {
     meta:
         name = "Armadillo v3.00a" // Packer name & version
@@ -4566,24 +4073,12 @@ rule Armadillo_v3dot00a___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 50 51 EB }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 50 51 EB }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v3dot00a___: Packer
-{
-    meta:
-        name = "Armadillo v3.00a" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 50 51 EB }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule Armadillo_v3dotxx___: Packer
+rule Armadillo_v3dotxx : Packer
 {
     meta:
         name = "Armadillo v3.xx" // Packer name & version
@@ -4592,24 +4087,12 @@ rule Armadillo_v3dotxx___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v3dotxx___: Packer
-{
-    meta:
-        name = "Armadillo v3.xx" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 50 51 EB 0F B9 EB 0F B8 EB 07 B9 EB 0F 90 EB 08 FD EB 0B F2 EB F5 EB F6 F2 EB 08 FD EB E9 F3 EB E4 FC E9 59 58 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule ASPack_v1dot00b___: Packer
+rule ASPack_v1dot00b : Packer
 {
     meta:
         name = "ASPack v1.00b" // Packer name & version
@@ -4618,24 +4101,12 @@ rule ASPack_v1dot00b___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 92 1A 44 ?? B8 8C 1A 44 ?? 03 C5 2B 85 CD 1D 44 ?? 89 85 D9 1D 44 ?? 80 BD C4 1D 44 }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 92 1A 44 ?? B8 8C 1A 44 ?? 03 C5 2B 85 CD 1D 44 ?? 89 85 D9 1D 44 ?? 80 BD C4 1D 44 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot00b___: Packer
-{
-    meta:
-        name = "ASPack v1.00b" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 92 1A 44 ?? B8 8C 1A 44 ?? 03 C5 2B 85 CD 1D 44 ?? 89 85 D9 1D 44 ?? 80 BD C4 1D 44 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule ASPack_v1dot01b___: Packer
+rule ASPack_v1dot01b : Packer
 {
     meta:
         name = "ASPack v1.01b" // Packer name & version
@@ -4644,24 +4115,12 @@ rule ASPack_v1dot01b___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED D2 2A 44 ?? B8 CC 2A 44 ?? 03 C5 2B 85 A5 2E 44 ?? 89 85 B1 2E 44 ?? 80 BD 9C 2E 44 }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 81 ED D2 2A 44 ?? B8 CC 2A 44 ?? 03 C5 2B 85 A5 2E 44 ?? 89 85 B1 2E 44 ?? 80 BD 9C 2E 44 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot01b___: Packer
-{
-    meta:
-        name = "ASPack v1.01b" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED D2 2A 44 ?? B8 CC 2A 44 ?? 03 C5 2B 85 A5 2E 44 ?? 89 85 B1 2E 44 ?? 80 BD 9C 2E 44 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule ASPack_v1dot02a___: Packer
+rule ASPack_v1dot02a : Packer
 {
     meta:
         name = "ASPack v1.02a" // Packer name & version
@@ -4670,24 +4129,12 @@ rule ASPack_v1dot02a___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 3E D9 43 ?? B8 38 ?? ?? ?? 03 C5 2B 85 0B DE 43 ?? 89 85 17 DE 43 ?? 80 BD 01 DE 43 ?? ?? 75 15 FE 85 01 DE 43 ?? E8 1D ?? ?? ?? E8 79 02 ?? ?? E8 12 03 ?? ?? 8B 85 03 DE 43 ?? 03 85 17 DE 43 ?? 89 44 24 1C 61 FF }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 3E D9 43 ?? B8 38 ?? ?? ?? 03 C5 2B 85 0B DE 43 ?? 89 85 17 DE 43 ?? 80 BD 01 DE 43 ?? ?? 75 15 FE 85 01 DE 43 ?? E8 1D ?? ?? ?? E8 79 02 ?? ?? E8 12 03 ?? ?? 8B 85 03 DE 43 ?? 03 85 17 DE 43 ?? 89 44 24 1C 61 FF }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot02a___: Packer
-{
-    meta:
-        name = "ASPack v1.02a" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 3E D9 43 ?? B8 38 ?? ?? ?? 03 C5 2B 85 0B DE 43 ?? 89 85 17 DE 43 ?? 80 BD 01 DE 43 ?? ?? 75 15 FE 85 01 DE 43 ?? E8 1D ?? ?? ?? E8 79 02 ?? ?? E8 12 03 ?? ?? 8B 85 03 DE 43 ?? 03 85 17 DE 43 ?? 89 44 24 1C 61 FF }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule ASPack_v1dot02b___: Packer
+rule ASPack_v1dot02b : Packer
 {
     meta:
         name = "ASPack v1.02b" // Packer name & version
@@ -4696,24 +4143,12 @@ rule ASPack_v1dot02b___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 96 78 43 ?? B8 90 78 43 ?? 03 C5 2B 85 7D 7C 43 ?? 89 85 89 7C 43 ?? 80 BD 74 7C 43 }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 96 78 43 ?? B8 90 78 43 ?? 03 C5 2B 85 7D 7C 43 ?? 89 85 89 7C 43 ?? 80 BD 74 7C 43 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot02b___: Packer
-{
-    meta:
-        name = "ASPack v1.02b" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED 96 78 43 ?? B8 90 78 43 ?? 03 C5 2B 85 7D 7C 43 ?? 89 85 89 7C 43 ?? 80 BD 74 7C 43 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule ASPack_v1dot03b___: Packer
+rule ASPack_v1dot03b : Packer
 {
     meta:
         name = "ASPack v1.03b" // Packer name & version
@@ -4722,24 +4157,12 @@ rule ASPack_v1dot03b___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED AE 98 43 ?? B8 A8 98 43 ?? 03 C5 2B 85 18 9D 43 ?? 89 85 24 9D 43 ?? 80 BD 0E 9D 43 }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 81 ED AE 98 43 ?? B8 A8 98 43 ?? 03 C5 2B 85 18 9D 43 ?? 89 85 24 9D 43 ?? 80 BD 0E 9D 43 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot03b___: Packer
-{
-    meta:
-        name = "ASPack v1.03b" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED AE 98 43 ?? B8 A8 98 43 ?? 03 C5 2B 85 18 9D 43 ?? 89 85 24 9D 43 ?? 80 BD 0E 9D 43 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule ASPack_v1dot05b___: Packer
+rule ASPack_v1dot05b : Packer
 {
     meta:
         name = "ASPack v1.05b" // Packer name & version
@@ -4748,24 +4171,12 @@ rule ASPack_v1dot05b___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED CE 3A 44 ?? B8 C8 3A 44 ?? 03 C5 2B 85 B5 3E 44 ?? 89 85 C1 3E 44 ?? 80 BD AC 3E 44 }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 81 ED CE 3A 44 ?? B8 C8 3A 44 ?? 03 C5 2B 85 B5 3E 44 ?? 89 85 C1 3E 44 ?? 80 BD AC 3E 44 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot05b___: Packer
-{
-    meta:
-        name = "ASPack v1.05b" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED CE 3A 44 ?? B8 C8 3A 44 ?? 03 C5 2B 85 B5 3E 44 ?? 89 85 C1 3E 44 ?? 80 BD AC 3E 44 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule ASPack_v1dot061b___: Packer
+rule ASPack_v1dot061b : Packer
 {
     meta:
         name = "ASPack v1.061b" // Packer name & version
@@ -4774,24 +4185,12 @@ rule ASPack_v1dot061b___: Packer
  
     strings:
         $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED EA A8 43 ?? B8 E4 A8 43 ?? 03 C5 2B 85 78 AD 43 ?? 89 85 84 AD 43 ?? 80 BD 6E AD 43 }
+        $2 = { 60 E8 ?? ?? ?? ?? 5D 81 ED EA A8 43 ?? B8 E4 A8 43 ?? 03 C5 2B 85 78 AD 43 ?? 89 85 84 AD 43 ?? 80 BD 6E AD 43 }
 
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot061b___: Packer
-{
-    meta:
-        name = "ASPack v1.061b" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { 60 E8 ?? ?? ?? ?? 5D 81 ED EA A8 43 ?? B8 E4 A8 43 ?? 03 C5 2B 85 78 AD 43 ?? 89 85 84 AD 43 ?? 80 BD 6E AD 43 }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule ASPack_v1dot08dot01___: Packer
+rule ASPack_v1dot08dot01 : Packer
 {
     meta:
         name = "ASPack v1.08.01" // Packer name & version
@@ -4804,7 +4203,7 @@ rule ASPack_v1dot08dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot01___: Packer
+rule ASPack_v1dot08dot01 : Packer
 {
     meta:
         name = "ASPack v1.08.01" // Packer name & version
@@ -4817,7 +4216,7 @@ rule ASPack_v1dot08dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot01___: Packer
+rule ASPack_v1dot08dot01 : Packer
 {
     meta:
         name = "ASPack v1.08.01" // Packer name & version
@@ -4830,7 +4229,7 @@ rule ASPack_v1dot08dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot01___: Packer
+rule ASPack_v1dot08dot01 : Packer
 {
     meta:
         name = "ASPack v1.08.01" // Packer name & version
@@ -4843,7 +4242,7 @@ rule ASPack_v1dot08dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot02___: Packer
+rule ASPack_v1dot08dot02 : Packer
 {
     meta:
         name = "ASPack v1.08.02" // Packer name & version
@@ -4856,7 +4255,7 @@ rule ASPack_v1dot08dot02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot02___: Packer
+rule ASPack_v1dot08dot02 : Packer
 {
     meta:
         name = "ASPack v1.08.02" // Packer name & version
@@ -4869,7 +4268,7 @@ rule ASPack_v1dot08dot02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot03___: Packer
+rule ASPack_v1dot08dot03 : Packer
 {
     meta:
         name = "ASPack v1.08.03" // Packer name & version
@@ -4882,7 +4281,7 @@ rule ASPack_v1dot08dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot03___: Packer
+rule ASPack_v1dot08dot03 : Packer
 {
     meta:
         name = "ASPack v1.08.03" // Packer name & version
@@ -4895,7 +4294,7 @@ rule ASPack_v1dot08dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dotxx___: Packer
+rule ASPack_v2dotxx : Packer
 {
     meta:
         name = "ASPack v2.xx" // Packer name & version
@@ -4908,7 +4307,7 @@ rule ASPack_v2dotxx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dotxx___: Packer
+rule ASPack_v2dotxx : Packer
 {
     meta:
         name = "ASPack v2.xx" // Packer name & version
@@ -4921,7 +4320,7 @@ rule ASPack_v2dotxx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_SKE_2dot1x_exe_Alexey_Solodovnikov_h____: Packer
+rule ASProtect_SKE_2dot1x_exe_Alexey_Solodovnikov_h : Packer
 {
     meta:
         name = "ASProtect SKE 2.1x (exe) -> Alexey Solodovnikov (h)" // Packer name & version
@@ -4934,7 +4333,7 @@ rule ASProtect_SKE_2dot1x_exe_Alexey_Solodovnikov_h____: Packer
     condition:
     	for any of them
 }
-rule ASProtect_SKE_2dot1x_exe_Alexey_Solodovnikov_h____: Packer
+rule ASProtect_SKE_2dot1x_exe_Alexey_Solodovnikov_h : Packer
 {
     meta:
         name = "ASProtect SKE 2.1x (exe) -> Alexey Solodovnikov (h)" // Packer name & version
@@ -4947,7 +4346,7 @@ rule ASProtect_SKE_2dot1x_exe_Alexey_Solodovnikov_h____: Packer
     condition:
     	for any of them
 }
-rule ASProtect_v1dot23_RC4_build_08dot07_exe_Alexey_Solodovnikov_h____: Packer
+rule ASProtect_v1dot23_RC4_build_08dot07_exe_Alexey_Solodovnikov_h : Packer
 {
     meta:
         name = "ASProtect v1.23 RC4 build 08.07 (exe) -> Alexey Solodovnikov (h)" // Packer name & version
@@ -4960,7 +4359,7 @@ rule ASProtect_v1dot23_RC4_build_08dot07_exe_Alexey_Solodovnikov_h____: Packer
     condition:
     	for any of them
 }
-rule ASProtect_v1dot23_RC4_build_08dot07_exe_Alexey_Solodovnikov_h____: Packer
+rule ASProtect_v1dot23_RC4_build_08dot07_exe_Alexey_Solodovnikov_h : Packer
 {
     meta:
         name = "ASProtect v1.23 RC4 build 08.07 (exe) -> Alexey Solodovnikov (h)" // Packer name & version
@@ -4973,7 +4372,7 @@ rule ASProtect_v1dot23_RC4_build_08dot07_exe_Alexey_Solodovnikov_h____: Packer
     condition:
     	for any of them
 }
-rule ASProtect_v__?dot?_If you know this version, post on PEiD board (h2) : Packer
+rule ASProtect_v_?dot?_If you know this version, post on PEiD board (h2) : Packer
 {
     meta:
         name = "ASProtect v?.? -> If you know this version, post on PEiD board (h2)" // Packer name & version
@@ -4986,7 +4385,7 @@ rule ASProtect_v__?dot?_If you know this version, post on PEiD board (h2) : Pack
     condition:
     	for any of them
 }
-rule ASProtect_v__?dot?_If you know this version, post on PEiD board (h2) : Packer
+rule ASProtect_v_?dot?_If you know this version, post on PEiD board (h2) : Packer
 {
     meta:
         name = "ASProtect v?.? -> If you know this version, post on PEiD board (h2)" // Packer name & version
@@ -4999,7 +4398,7 @@ rule ASProtect_v__?dot?_If you know this version, post on PEiD board (h2) : Pack
     condition:
     	for any of them
 }
-rule BeRoEXEPacker_v1dot00_DLL_LZBRS_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_DLL_LZBRS_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 DLL [LZBRS] -> BeRo / Farbrausch" // Packer name & version
@@ -5012,7 +4411,7 @@ rule BeRoEXEPacker_v1dot00_DLL_LZBRS_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_LZBRS_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_LZBRS_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 [LZBRS] -> BeRo / Farbrausch" // Packer name & version
@@ -5025,7 +4424,7 @@ rule BeRoEXEPacker_v1dot00_LZBRS_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BlackEnergy_DDoS_Bot_Crypter___: Packer
+rule BlackEnergy_DDoS_Bot_Crypter : Packer
 {
     meta:
         name = "BlackEnergy DDoS Bot Crypter" // Packer name & version
@@ -5038,7 +4437,7 @@ rule BlackEnergy_DDoS_Bot_Crypter___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CExe_v1dot0a___: Packer
+rule CExe_v1dot0a : Packer
 {
     meta:
         name = "CExe v1.0a" // Packer name & version
@@ -5051,7 +4450,7 @@ rule CExe_v1dot0a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CExe_v1dot0a___: Packer
+rule CExe_v1dot0a : Packer
 {
     meta:
         name = "CExe v1.0a" // Packer name & version
@@ -5064,7 +4463,7 @@ rule CExe_v1dot0a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Com4mail_v1dot0___: Packer
+rule Com4mail_v1dot0 : Packer
 {
     meta:
         name = "Com4mail v1.0" // Packer name & version
@@ -5077,7 +4476,7 @@ rule Com4mail_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CreateInstall_v2003dot3dot5___: Packer
+rule CreateInstall_v2003dot3dot5 : Packer
 {
     meta:
         name = "CreateInstall v2003.3.5" // Packer name & version
@@ -5090,7 +4489,7 @@ rule CreateInstall_v2003dot3dot5___: Packer
     condition:
     	for any of them
 }
-rule CreateInstall_v2003dot3dot5___: Packer
+rule CreateInstall_v2003dot3dot5 : Packer
 {
     meta:
         name = "CreateInstall v2003.3.5" // Packer name & version
@@ -5103,7 +4502,7 @@ rule CreateInstall_v2003dot3dot5___: Packer
     condition:
     	for any of them
 }
-rule CRYPToCRACKs_PE_Protector_V0dot9dot2_Lukas_Fleischer___: Packer
+rule CRYPToCRACKs_PE_Protector_V0dot9dot2_Lukas_Fleischer : Packer
 {
     meta:
         name = "CRYPToCRACK's PE Protector V0.9.2 -> Lukas Fleischer" // Packer name & version
@@ -5116,7 +4515,7 @@ rule CRYPToCRACKs_PE_Protector_V0dot9dot2_Lukas_Fleischer___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Dev_C__plusplus_4dot9dot9dot2_Bloodshed_Software_: Packer
+rule Dev_C_plusplus_4dot9dot9dot2_Bloodshed_Software : Packer
 {
     meta:
         name = "Dev-C++ 4.9.9.2 -> Bloodshed Software" // Packer name & version
@@ -5129,7 +4528,7 @@ rule Dev_C__plusplus_4dot9dot9dot2_Bloodshed_Software_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DotFix_Nice_Protect_2dot1_GPcH_Soft___: Packer
+rule DotFix_Nice_Protect_2dot1_GPcH_Soft : Packer
 {
     meta:
         name = "DotFix Nice Protect 2.1 -> GPcH Soft" // Packer name & version
@@ -5142,7 +4541,7 @@ rule DotFix_Nice_Protect_2dot1_GPcH_Soft___: Packer
     condition:
     	for any of them
 }
-rule DxPack_V0dot86_Dxd___: Packer
+rule DxPack_V0dot86_Dxd : Packer
 {
     meta:
         name = "DxPack V0.86 -> Dxd" // Packer name & version
@@ -5155,7 +4554,7 @@ rule DxPack_V0dot86_Dxd___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DxPack_V0dot86_Dxd___: Packer
+rule DxPack_V0dot86_Dxd : Packer
 {
     meta:
         name = "DxPack V0.86 -> Dxd" // Packer name & version
@@ -5168,7 +4567,7 @@ rule DxPack_V0dot86_Dxd___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DzA_Patcher_v1dot3_Loader___: Packer
+rule DzA_Patcher_v1dot3_Loader : Packer
 {
     meta:
         name = "DzA Patcher v1.3 Loader" // Packer name & version
@@ -5181,7 +4580,7 @@ rule DzA_Patcher_v1dot3_Loader___: Packer
     condition:
     	for any of them
 }
-rule DzA_Patcher_v1dot3_Loader___: Packer
+rule DzA_Patcher_v1dot3_Loader : Packer
 {
     meta:
         name = "DzA Patcher v1.3 Loader" // Packer name & version
@@ -5194,7 +4593,7 @@ rule DzA_Patcher_v1dot3_Loader___: Packer
     condition:
     	for any of them
 }
-rule Enigma_protector_1dot10_unregistered___: Packer
+rule Enigma_protector_1dot10_unregistered : Packer
 {
     meta:
         name = "Enigma protector 1.10 (unregistered)" // Packer name & version
@@ -5207,7 +4606,7 @@ rule Enigma_protector_1dot10_unregistered___: Packer
     condition:
     	for any of them
 }
-rule Enigma_protector_1dot10_unregistered___: Packer
+rule Enigma_protector_1dot10_unregistered : Packer
 {
     meta:
         name = "Enigma protector 1.10 (unregistered)" // Packer name & version
@@ -5220,7 +4619,7 @@ rule Enigma_protector_1dot10_unregistered___: Packer
     condition:
     	for any of them
 }
-rule Exe_Shield_v1dot7___: Packer
+rule Exe_Shield_v1dot7 : Packer
 {
     meta:
         name = "Exe Shield v1.7" // Packer name & version
@@ -5233,7 +4632,7 @@ rule Exe_Shield_v1dot7___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Shield_v1dot7___: Packer
+rule Exe_Shield_v1dot7 : Packer
 {
     meta:
         name = "Exe Shield v1.7" // Packer name & version
@@ -5246,7 +4645,7 @@ rule Exe_Shield_v1dot7___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Shield_v2dot9___: Packer
+rule Exe_Shield_v2dot9 : Packer
 {
     meta:
         name = "Exe Shield v2.9" // Packer name & version
@@ -5259,7 +4658,7 @@ rule Exe_Shield_v2dot9___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Shield_v2dot9___: Packer
+rule Exe_Shield_v2dot9 : Packer
 {
     meta:
         name = "Exe Shield v2.9" // Packer name & version
@@ -5272,7 +4671,7 @@ rule Exe_Shield_v2dot9___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Stealth_v2dot5___: Packer
+rule EXE_Stealth_v2dot5 : Packer
 {
     meta:
         name = "EXE Stealth v2.5" // Packer name & version
@@ -5285,7 +4684,7 @@ rule EXE_Stealth_v2dot5___: Packer
     condition:
     	for any of them
 }
-rule EXE_Stealth_v2dot5___: Packer
+rule EXE_Stealth_v2dot5 : Packer
 {
     meta:
         name = "EXE Stealth v2.5" // Packer name & version
@@ -5298,7 +4697,7 @@ rule EXE_Stealth_v2dot5___: Packer
     condition:
     	for any of them
 }
-rule EXE_Stealth_v2dot73___: Packer
+rule EXE_Stealth_v2dot73 : Packer
 {
     meta:
         name = "EXE Stealth v2.73" // Packer name & version
@@ -5311,7 +4710,7 @@ rule EXE_Stealth_v2dot73___: Packer
     condition:
     	for any of them
 }
-rule EXE_Stealth_v2dot73___: Packer
+rule EXE_Stealth_v2dot73 : Packer
 {
     meta:
         name = "EXE Stealth v2.73" // Packer name & version
@@ -5324,7 +4723,7 @@ rule EXE_Stealth_v2dot73___: Packer
     condition:
     	for any of them
 }
-rule EXE_Stealth_v2dot74___: Packer
+rule EXE_Stealth_v2dot74 : Packer
 {
     meta:
         name = "EXE Stealth v2.74" // Packer name & version
@@ -5337,7 +4736,7 @@ rule EXE_Stealth_v2dot74___: Packer
     condition:
     	for any of them
 }
-rule EXE_Stealth_v2dot74___: Packer
+rule EXE_Stealth_v2dot74 : Packer
 {
     meta:
         name = "EXE Stealth v2.74" // Packer name & version
@@ -5350,7 +4749,7 @@ rule EXE_Stealth_v2dot74___: Packer
     condition:
     	for any of them
 }
-rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h1____: Packer
+rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h1 : Packer
 {
     meta:
         name = "EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h1)" // Packer name & version
@@ -5363,7 +4762,7 @@ rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h1____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h1____: Packer
+rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h1 : Packer
 {
     meta:
         name = "EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h1)" // Packer name & version
@@ -5376,7 +4775,7 @@ rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h1____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h3____: Packer
+rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h3 : Packer
 {
     meta:
         name = "EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h3)" // Packer name & version
@@ -5389,7 +4788,7 @@ rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h3____: Packer
     condition:
     	for any of them
 }
-rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h3____: Packer
+rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h3 : Packer
 {
     meta:
         name = "EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h3)" // Packer name & version
@@ -5402,7 +4801,7 @@ rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h3____: Packer
     condition:
     	for any of them
 }
-rule EXECryptor_v1dot3dot0dot45___: Packer
+rule EXECryptor_v1dot3dot0dot45 : Packer
 {
     meta:
         name = "EXECryptor v1.3.0.45" // Packer name & version
@@ -5415,7 +4814,7 @@ rule EXECryptor_v1dot3dot0dot45___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_v1dot3dot0dot45___: Packer
+rule EXECryptor_v1dot3dot0dot45 : Packer
 {
     meta:
         name = "EXECryptor v1.3.0.45" // Packer name & version
@@ -5428,7 +4827,7 @@ rule EXECryptor_v1dot3dot0dot45___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_v1dot4dot0dot1___: Packer
+rule EXECryptor_v1dot4dot0dot1 : Packer
 {
     meta:
         name = "EXECryptor v1.4.0.1" // Packer name & version
@@ -5441,7 +4840,7 @@ rule EXECryptor_v1dot4dot0dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_v1dot4dot0dot1___: Packer
+rule EXECryptor_v1dot4dot0dot1 : Packer
 {
     meta:
         name = "EXECryptor v1.4.0.1" // Packer name & version
@@ -5454,7 +4853,7 @@ rule EXECryptor_v1dot4dot0dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_v1dot5dot1dotx___: Packer
+rule EXECryptor_v1dot5dot1dotx : Packer
 {
     meta:
         name = "EXECryptor v1.5.1.x" // Packer name & version
@@ -5467,7 +4866,7 @@ rule EXECryptor_v1dot5dot1dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_v1dot5dot1dotx___: Packer
+rule EXECryptor_v1dot5dot1dotx : Packer
 {
     meta:
         name = "EXECryptor v1.5.1.x" // Packer name & version
@@ -5480,7 +4879,7 @@ rule EXECryptor_v1dot5dot1dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_v1dot5dot3___: Packer
+rule EXECryptor_v1dot5dot3 : Packer
 {
     meta:
         name = "EXECryptor v1.5.3" // Packer name & version
@@ -5493,7 +4892,7 @@ rule EXECryptor_v1dot5dot3___: Packer
     condition:
     	for any of them
 }
-rule EXECryptor_v1dot5dot3___: Packer
+rule EXECryptor_v1dot5dot3 : Packer
 {
     meta:
         name = "EXECryptor v1.5.3" // Packer name & version
@@ -5506,7 +4905,7 @@ rule EXECryptor_v1dot5dot3___: Packer
     condition:
     	for any of them
 }
-rule EXEJoiner_v1dot0___: Packer
+rule EXEJoiner_v1dot0 : Packer
 {
     meta:
         name = "EXEJoiner v1.0" // Packer name & version
@@ -5519,7 +4918,7 @@ rule EXEJoiner_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXEJoiner_v1dot0___: Packer
+rule EXEJoiner_v1dot0 : Packer
 {
     meta:
         name = "EXEJoiner v1.0" // Packer name & version
@@ -5532,7 +4931,7 @@ rule EXEJoiner_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeSafeguard_v1dot0_simonzh_h___: Packer
+rule ExeSafeguard_v1dot0_simonzh_h : Packer
 {
     meta:
         name = "ExeSafeguard v1.0 -> simonzh (h)" // Packer name & version
@@ -5545,7 +4944,7 @@ rule ExeSafeguard_v1dot0_simonzh_h___: Packer
     condition:
     	for any of them
 }
-rule ExeSafeguard_v1dot0_simonzh_h___: Packer
+rule ExeSafeguard_v1dot0_simonzh_h : Packer
 {
     meta:
         name = "ExeSafeguard v1.0 -> simonzh (h)" // Packer name & version
@@ -5558,7 +4957,7 @@ rule ExeSafeguard_v1dot0_simonzh_h___: Packer
     condition:
     	for any of them
 }
-rule ExeShield_Protector_V3dot6_wwwdotexeshielddotcom___: Packer
+rule ExeShield_Protector_V3dot6_wwwdotexeshielddotcom : Packer
 {
     meta:
         name = "ExeShield Protector V3.6 -> www.exeshield.com" // Packer name & version
@@ -5571,7 +4970,7 @@ rule ExeShield_Protector_V3dot6_wwwdotexeshielddotcom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeShield_Protector_V3dot6_wwwdotexeshielddotcom___: Packer
+rule ExeShield_Protector_V3dot6_wwwdotexeshielddotcom : Packer
 {
     meta:
         name = "ExeShield Protector V3.6 -> www.exeshield.com" // Packer name & version
@@ -5584,7 +4983,7 @@ rule ExeShield_Protector_V3dot6_wwwdotexeshielddotcom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_V1dot0_CGSoftLabs___: Packer
+rule eXPressor_V1dot0_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor V1.0 -> CGSoftLabs" // Packer name & version
@@ -5597,7 +4996,7 @@ rule eXPressor_V1dot0_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_V1dot0_CGSoftLabs___: Packer
+rule eXPressor_V1dot0_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor V1.0 -> CGSoftLabs" // Packer name & version
@@ -5610,7 +5009,7 @@ rule eXPressor_V1dot0_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXpressor_v1dot1_CGSoftLabs___: Packer
+rule eXpressor_v1dot1_CGSoftLabs : Packer
 {
     meta:
         name = "eXpressor v1.1 -> CGSoftLabs" // Packer name & version
@@ -5623,7 +5022,7 @@ rule eXpressor_v1dot1_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXpressor_v1dot1_CGSoftLabs___: Packer
+rule eXpressor_v1dot1_CGSoftLabs : Packer
 {
     meta:
         name = "eXpressor v1.1 -> CGSoftLabs" // Packer name & version
@@ -5636,7 +5035,7 @@ rule eXpressor_v1dot1_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_v1dot2_CGSoftLabs_h___: Packer
+rule eXPressor_v1dot2_CGSoftLabs_h : Packer
 {
     meta:
         name = "eXPressor v1.2 -> CGSoftLabs (h)" // Packer name & version
@@ -5649,7 +5048,7 @@ rule eXPressor_v1dot2_CGSoftLabs_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_v1dot2_CGSoftLabs_h___: Packer
+rule eXPressor_v1dot2_CGSoftLabs_h : Packer
 {
     meta:
         name = "eXPressor v1.2 -> CGSoftLabs (h)" // Packer name & version
@@ -5662,7 +5061,7 @@ rule eXPressor_v1dot2_CGSoftLabs_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_V1dot4dot5dot1_CGSoftLabs___: Packer
+rule eXPressor_V1dot4dot5dot1_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor V1.4.5.1 -> CGSoftLabs" // Packer name & version
@@ -5675,7 +5074,7 @@ rule eXPressor_V1dot4dot5dot1_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_V1dot4dot5dot1_CGSoftLabs___: Packer
+rule eXPressor_V1dot4dot5dot1_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor V1.4.5.1 -> CGSoftLabs" // Packer name & version
@@ -5688,7 +5087,7 @@ rule eXPressor_V1dot4dot5dot1_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_v1dot4dot5dot1_CGSoftLabs_h___: Packer
+rule eXPressor_v1dot4dot5dot1_CGSoftLabs_h : Packer
 {
     meta:
         name = "eXPressor v1.4.5.1 -> CGSoftLabs (h)" // Packer name & version
@@ -5701,7 +5100,7 @@ rule eXPressor_v1dot4dot5dot1_CGSoftLabs_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_v1dot4dot5dot1_CGSoftLabs_h___: Packer
+rule eXPressor_v1dot4dot5dot1_CGSoftLabs_h : Packer
 {
     meta:
         name = "eXPressor v1.4.5.1 -> CGSoftLabs (h)" // Packer name & version
@@ -5714,7 +5113,7 @@ rule eXPressor_v1dot4dot5dot1_CGSoftLabs_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_V1dot4dot5dotx_CGSoftLabs___: Packer
+rule eXPressor_V1dot4dot5dotx_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor V1.4.5.x -> CGSoftLabs" // Packer name & version
@@ -5727,7 +5126,7 @@ rule eXPressor_V1dot4dot5dotx_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_v1dot5x_CGSoftLabs_h___: Packer
+rule eXPressor_v1dot5x_CGSoftLabs_h : Packer
 {
     meta:
         name = "eXPressor v1.5x -> CGSoftLabs (h)" // Packer name & version
@@ -5740,7 +5139,7 @@ rule eXPressor_v1dot5x_CGSoftLabs_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EZIP_v1dot0___: Packer
+rule EZIP_v1dot0 : Packer
 {
     meta:
         name = "EZIP v1.0" // Packer name & version
@@ -5753,7 +5152,7 @@ rule EZIP_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EZIP_v1dot0___: Packer
+rule EZIP_v1dot0 : Packer
 {
     meta:
         name = "EZIP v1.0" // Packer name & version
@@ -5766,7 +5165,7 @@ rule EZIP_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot0___: Packer
+rule FSG_v1dot0 : Packer
 {
     meta:
         name = "FSG v1.0" // Packer name & version
@@ -5779,7 +5178,7 @@ rule FSG_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot0___: Packer
+rule FSG_v1dot0 : Packer
 {
     meta:
         name = "FSG v1.0" // Packer name & version
@@ -5792,7 +5191,7 @@ rule FSG_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot2___: Packer
+rule FSG_v1dot2 : Packer
 {
     meta:
         name = "FSG v1.2" // Packer name & version
@@ -5805,7 +5204,7 @@ rule FSG_v1dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot2___: Packer
+rule FSG_v1dot2 : Packer
 {
     meta:
         name = "FSG v1.2" // Packer name & version
@@ -5818,7 +5217,7 @@ rule FSG_v1dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot31___: Packer
+rule FSG_v1dot31 : Packer
 {
     meta:
         name = "FSG v1.31" // Packer name & version
@@ -5831,7 +5230,7 @@ rule FSG_v1dot31___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot31___: Packer
+rule FSG_v1dot31 : Packer
 {
     meta:
         name = "FSG v1.31" // Packer name & version
@@ -5844,7 +5243,7 @@ rule FSG_v1dot31___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Goats_Mutilator_v1dot6_Goat_e0f___: Packer
+rule Goats_Mutilator_v1dot6_Goat_e0f : Packer
 {
     meta:
         name = "Goats Mutilator v1.6 -> Goat/_e0f" // Packer name & version
@@ -5857,7 +5256,7 @@ rule Goats_Mutilator_v1dot6_Goat_e0f___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Goats_Mutilator_v1dot6_Goat_e0f___: Packer
+rule Goats_Mutilator_v1dot6_Goat_e0f : Packer
 {
     meta:
         name = "Goats Mutilator v1.6 -> Goat/_e0f" // Packer name & version
@@ -5870,7 +5269,7 @@ rule Goats_Mutilator_v1dot6_Goat_e0f___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule GP_Install_v5dot0dot3dot32___: Packer
+rule GP_Install_v5dot0dot3dot32 : Packer
 {
     meta:
         name = "GP-Install v5.0.3.32" // Packer name & version
@@ -5883,7 +5282,7 @@ rule GP_Install_v5dot0dot3dot32___: Packer
     condition:
     	for any of them
 }
-rule GP_Install_v5dot0dot3dot32___: Packer
+rule GP_Install_v5dot0dot3dot32 : Packer
 {
     meta:
         name = "GP-Install v5.0.3.32" // Packer name & version
@@ -5896,7 +5295,7 @@ rule GP_Install_v5dot0dot3dot32___: Packer
     condition:
     	for any of them
 }
-rule HACKSTOP_v1dot10p1___: Packer
+rule HACKSTOP_v1dot10p1 : Packer
 {
     meta:
         name = "HACKSTOP v1.10p1" // Packer name & version
@@ -5909,7 +5308,7 @@ rule HACKSTOP_v1dot10p1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HACKSTOP_v1dot10p1___: Packer
+rule HACKSTOP_v1dot10p1 : Packer
 {
     meta:
         name = "HACKSTOP v1.10p1" // Packer name & version
@@ -5922,7 +5321,7 @@ rule HACKSTOP_v1dot10p1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Hardlock_dongle_Alladin___: Packer
+rule Hardlock_dongle_Alladin : Packer
 {
     meta:
         name = "Hardlock dongle (Alladin)" // Packer name & version
@@ -5935,7 +5334,7 @@ rule Hardlock_dongle_Alladin___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Hasp_dongle_Alladin___: Packer
+rule Hasp_dongle_Alladin : Packer
 {
     meta:
         name = "Hasp dongle (Alladin)" // Packer name & version
@@ -5948,7 +5347,7 @@ rule Hasp_dongle_Alladin___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Hide_PE_1dot01_BGCorp___: Packer
+rule Hide_PE_1dot01_BGCorp : Packer
 {
     meta:
         name = "Hide PE 1.01 -> BGCorp" // Packer name & version
@@ -5961,7 +5360,7 @@ rule Hide_PE_1dot01_BGCorp___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Hide_PE_1dot01_BGCorp___: Packer
+rule Hide_PE_1dot01_BGCorp : Packer
 {
     meta:
         name = "Hide PE 1.01 -> BGCorp" // Packer name & version
@@ -5974,7 +5373,7 @@ rule Hide_PE_1dot01_BGCorp___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Inno_Setup_Module_v1dot09a___: Packer
+rule Inno_Setup_Module_v1dot09a : Packer
 {
     meta:
         name = "Inno Setup Module v1.09a" // Packer name & version
@@ -5987,7 +5386,7 @@ rule Inno_Setup_Module_v1dot09a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Inno_Setup_Module_v1dot2dot9___: Packer
+rule Inno_Setup_Module_v1dot2dot9 : Packer
 {
     meta:
         name = "Inno Setup Module v1.2.9" // Packer name & version
@@ -6000,7 +5399,7 @@ rule Inno_Setup_Module_v1dot2dot9___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule iPBProtect_v0dot1dot3___: Packer
+rule iPBProtect_v0dot1dot3 : Packer
 {
     meta:
         name = "iPBProtect v0.1.3" // Packer name & version
@@ -6013,7 +5412,7 @@ rule iPBProtect_v0dot1dot3___: Packer
     condition:
     	for any of them
 }
-rule JDPack_V2dot00_JDPack___: Packer
+rule JDPack_V2dot00_JDPack : Packer
 {
     meta:
         name = "JDPack V2.00 -> JDPack" // Packer name & version
@@ -6026,7 +5425,7 @@ rule JDPack_V2dot00_JDPack___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule kkrunchy_Ryd___: Packer
+rule kkrunchy_Ryd : Packer
 {
     meta:
         name = "kkrunchy -> Ryd" // Packer name & version
@@ -6039,7 +5438,7 @@ rule kkrunchy_Ryd___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LameCrypt_LaZaRus___: Packer
+rule LameCrypt_LaZaRus : Packer
 {
     meta:
         name = "LameCrypt -> LaZaRus" // Packer name & version
@@ -6052,7 +5451,7 @@ rule LameCrypt_LaZaRus___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Launcher_Generator_v1dot03___: Packer
+rule Launcher_Generator_v1dot03 : Packer
 {
     meta:
         name = "Launcher Generator v1.03" // Packer name & version
@@ -6065,7 +5464,7 @@ rule Launcher_Generator_v1dot03___: Packer
     condition:
     	for any of them
 }
-rule Macromedia_Windows_Flash_Projector_Player_v3dot0___: Packer
+rule Macromedia_Windows_Flash_Projector_Player_v3dot0 : Packer
 {
     meta:
         name = "Macromedia Windows Flash Projector/Player v3.0" // Packer name & version
@@ -6078,7 +5477,7 @@ rule Macromedia_Windows_Flash_Projector_Player_v3dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Macromedia_Windows_Flash_Projector_Player_v4dot0___: Packer
+rule Macromedia_Windows_Flash_Projector_Player_v4dot0 : Packer
 {
     meta:
         name = "Macromedia Windows Flash Projector/Player v4.0" // Packer name & version
@@ -6091,7 +5490,7 @@ rule Macromedia_Windows_Flash_Projector_Player_v4dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Macromedia_Windows_Flash_Projector_Player_v6dot0___: Packer
+rule Macromedia_Windows_Flash_Projector_Player_v6dot0 : Packer
 {
     meta:
         name = "Macromedia Windows Flash Projector/Player v6.0" // Packer name & version
@@ -6104,7 +5503,7 @@ rule Macromedia_Windows_Flash_Projector_Player_v6dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Metrowerks_CodeWarrior_DLL_v2dot0___: Packer
+rule Metrowerks_CodeWarrior_DLL_v2dot0 : Packer
 {
     meta:
         name = "Metrowerks CodeWarrior (DLL) v2.0" // Packer name & version
@@ -6117,7 +5516,7 @@ rule Metrowerks_CodeWarrior_DLL_v2dot0___: Packer
     condition:
     	for any of them
 }
-rule MEW_11_SE_v1dot2___: Packer
+rule MEW_11_SE_v1dot2 : Packer
 {
     meta:
         name = "MEW 11 SE v1.2" // Packer name & version
@@ -6130,7 +5529,7 @@ rule MEW_11_SE_v1dot2___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_CAB_SFX_module___: Packer
+rule Microsoft_CAB_SFX_module : Packer
 {
     meta:
         name = "Microsoft CAB SFX module" // Packer name & version
@@ -6143,7 +5542,7 @@ rule Microsoft_CAB_SFX_module___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_C__sharp_v7dot0___Basic_dotNET_: Packer
+rule Microsoft_Visual_C_sharp_v7dot0_Basic_dotNET : Packer
 {
     meta:
         name = "Microsoft Visual C# v7.0 / Basic .NET" // Packer name & version
@@ -6156,7 +5555,7 @@ rule Microsoft_Visual_C__sharp_v7dot0___Basic_dotNET_: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_6dot0_8dot0___: Packer
+rule Microsoft_Visual_Cplusplus_6dot0_8dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 - 8.0" // Packer name & version
@@ -6169,7 +5568,7 @@ rule Microsoft_Visual_Cplusplus_6dot0_8dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_6dot0_8dot0___: Packer
+rule Microsoft_Visual_Cplusplus_6dot0_8dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 - 8.0" // Packer name & version
@@ -6182,7 +5581,7 @@ rule Microsoft_Visual_Cplusplus_6dot0_8dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_6dot0_8dot0___: Packer
+rule Microsoft_Visual_Cplusplus_6dot0_8dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 - 8.0" // Packer name & version
@@ -6195,7 +5594,7 @@ rule Microsoft_Visual_Cplusplus_6dot0_8dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_v7dot1_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot1_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.1 DLL" // Packer name & version
@@ -6208,7 +5607,7 @@ rule Microsoft_Visual_Cplusplus_v7dot1_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot1_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot1_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.1 DLL" // Packer name & version
@@ -6221,7 +5620,7 @@ rule Microsoft_Visual_Cplusplus_v7dot1_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Windows_Update_CAB_SFX_module___: Packer
+rule Microsoft_Windows_Update_CAB_SFX_module : Packer
 {
     meta:
         name = "Microsoft Windows Update CAB SFX module" // Packer name & version
@@ -6234,7 +5633,7 @@ rule Microsoft_Windows_Update_CAB_SFX_module___: Packer
     condition:
     	for any of them
 }
-rule MingWin32_v__?dot? (h) : Packer
+rule MingWin32_v_?dot? (h) : Packer
 {
     meta:
         name = "MingWin32 v?.? (h)" // Packer name & version
@@ -6247,7 +5646,7 @@ rule MingWin32_v__?dot? (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Morphine_v3dot3_Silent_Software__and__Silent_Shield____c_2005_: Packer
+rule Morphine_v3dot3_Silent_Software_and_Silent_Shield_c_2005 : Packer
 {
     meta:
         name = "Morphine v3.3 -> Silent Software & Silent Shield (c)2005" // Packer name & version
@@ -6260,7 +5659,7 @@ rule Morphine_v3dot3_Silent_Software__and__Silent_Shield____c_2005_: Packer
     condition:
     	for any of them
 }
-rule nBinder_v4dot0___: Packer
+rule nBinder_v4dot0 : Packer
 {
     meta:
         name = "nBinder v4.0" // Packer name & version
@@ -6273,7 +5672,7 @@ rule nBinder_v4dot0___: Packer
     condition:
     	for any of them
 }
-rule nMacro_recorder_1dot0___: Packer
+rule nMacro_recorder_1dot0 : Packer
 {
     meta:
         name = "nMacro recorder 1.0" // Packer name & version
@@ -6286,7 +5685,7 @@ rule nMacro_recorder_1dot0___: Packer
     condition:
     	for any of them
 }
-rule North_Star_PE_Shrinker_v1dot3_by_Liuxingping___: Packer
+rule North_Star_PE_Shrinker_v1dot3_by_Liuxingping : Packer
 {
     meta:
         name = "North Star PE Shrinker v1.3 by Liuxingping" // Packer name & version
@@ -6299,7 +5698,7 @@ rule North_Star_PE_Shrinker_v1dot3_by_Liuxingping___: Packer
     condition:
     	for any of them
 }
-rule nPack_v1dot1_150_200_Beta_NEOx___: Packer
+rule nPack_v1dot1_150_200_Beta_NEOx : Packer
 {
     meta:
         name = "nPack v1.1 150-200 Beta -> NEOx" // Packer name & version
@@ -6312,7 +5711,7 @@ rule nPack_v1dot1_150_200_Beta_NEOx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule nPack_v1dot1_250_Beta_NEOx___: Packer
+rule nPack_v1dot1_250_Beta_NEOx : Packer
 {
     meta:
         name = "nPack v1.1 250 Beta -> NEOx" // Packer name & version
@@ -6325,7 +5724,7 @@ rule nPack_v1dot1_250_Beta_NEOx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule nPack_V1dot1dot150dot2006dotBeta_NEOx____uinC__: Packer
+rule nPack_V1dot1dot150dot2006dotBeta_NEOx_uinC : Packer
 {
     meta:
         name = "nPack V1.1.150.2006.Beta -> NEOx/[uinC]" // Packer name & version
@@ -6338,7 +5737,7 @@ rule nPack_V1dot1dot150dot2006dotBeta_NEOx____uinC__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule nPack_V1dot1dot150dot2006dotBeta_NEOx____uinC__: Packer
+rule nPack_V1dot1dot150dot2006dotBeta_NEOx_uinC : Packer
 {
     meta:
         name = "nPack V1.1.150.2006.Beta -> NEOx/[uinC]" // Packer name & version
@@ -6351,7 +5750,7 @@ rule nPack_V1dot1dot150dot2006dotBeta_NEOx____uinC__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule nPack_V1dot1dot200dot2006dotBeta_NEOx____uinC__: Packer
+rule nPack_V1dot1dot200dot2006dotBeta_NEOx_uinC : Packer
 {
     meta:
         name = "nPack V1.1.200.2006.Beta -> NEOx/[uinC]" // Packer name & version
@@ -6364,7 +5763,7 @@ rule nPack_V1dot1dot200dot2006dotBeta_NEOx____uinC__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule nPack_v1dot1dotxxx_NEOx___: Packer
+rule nPack_v1dot1dotxxx_NEOx : Packer
 {
     meta:
         name = "nPack v1.1.xxx -> NEOx" // Packer name & version
@@ -6377,7 +5776,7 @@ rule nPack_v1dot1dotxxx_NEOx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPack_v3dot1_North_Star_h___: Packer
+rule NsPack_v3dot1_North_Star_h : Packer
 {
     meta:
         name = "NsPack v3.1 -> North Star (h)" // Packer name & version
@@ -6390,7 +5789,7 @@ rule NsPack_v3dot1_North_Star_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NTkrnl_Secure_Suite_NTkrnl_Team_Blue___: Packer
+rule NTkrnl_Secure_Suite_NTkrnl_Team_Blue : Packer
 {
     meta:
         name = "NTkrnl Secure Suite -> NTkrnl Team (Blue)" // Packer name & version
@@ -6403,7 +5802,7 @@ rule NTkrnl_Secure_Suite_NTkrnl_Team_Blue___: Packer
     condition:
     	for any of them
 }
-rule NTkrnl_Secure_Suite_NTkrnl_team_h___: Packer
+rule NTkrnl_Secure_Suite_NTkrnl_team_h : Packer
 {
     meta:
         name = "NTkrnl Secure Suite -> NTkrnl team (h)" // Packer name & version
@@ -6416,7 +5815,7 @@ rule NTkrnl_Secure_Suite_NTkrnl_team_h___: Packer
     condition:
     	for any of them
 }
-rule NTkrnl_Secure_Suite_V0dot1_NTkrnl_Software___: Packer
+rule NTkrnl_Secure_Suite_V0dot1_NTkrnl_Software : Packer
 {
     meta:
         name = "NTkrnl Secure Suite V0.1 -> NTkrnl Software" // Packer name & version
@@ -6429,7 +5828,7 @@ rule NTkrnl_Secure_Suite_V0dot1_NTkrnl_Software___: Packer
     condition:
     	for any of them
 }
-rule NTkrnl_Secure_Suite_V0dot1_DLL_NTkrnl_Software___: Packer
+rule NTkrnl_Secure_Suite_V0dot1_DLL_NTkrnl_Software : Packer
 {
     meta:
         name = "NTkrnl Secure Suite V0.1 DLL -> NTkrnl Software" // Packer name & version
@@ -6442,7 +5841,7 @@ rule NTkrnl_Secure_Suite_V0dot1_DLL_NTkrnl_Software___: Packer
     condition:
     	for any of them
 }
-rule NTKrnlPacker_Ashkbiz_Danehkar___: Packer
+rule NTKrnlPacker_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "NTKrnlPacker -> Ashkbiz Danehkar" // Packer name & version
@@ -6455,7 +5854,7 @@ rule NTKrnlPacker_Ashkbiz_Danehkar___: Packer
     condition:
     	for any of them
 }
-rule Nullsoft_Install_System_v2dot0___: Packer
+rule Nullsoft_Install_System_v2dot0 : Packer
 {
     meta:
         name = "Nullsoft Install System v2.0" // Packer name & version
@@ -6468,7 +5867,7 @@ rule Nullsoft_Install_System_v2dot0___: Packer
     condition:
     	for any of them
 }
-rule Nullsoft_Install_System_v2dot0_RC2___: Packer
+rule Nullsoft_Install_System_v2dot0_RC2 : Packer
 {
     meta:
         name = "Nullsoft Install System v2.0 RC2" // Packer name & version
@@ -6481,7 +5880,7 @@ rule Nullsoft_Install_System_v2dot0_RC2___: Packer
     condition:
     	for any of them
 }
-rule Nullsoft_Install_System_v2dot0a0___: Packer
+rule Nullsoft_Install_System_v2dot0a0 : Packer
 {
     meta:
         name = "Nullsoft Install System v2.0a0" // Packer name & version
@@ -6494,7 +5893,7 @@ rule Nullsoft_Install_System_v2dot0a0___: Packer
     condition:
     	for any of them
 }
-rule Nullsoft_Install_System_v2dot0b4___: Packer
+rule Nullsoft_Install_System_v2dot0b4 : Packer
 {
     meta:
         name = "Nullsoft Install System v2.0b4" // Packer name & version
@@ -6507,7 +5906,7 @@ rule Nullsoft_Install_System_v2dot0b4___: Packer
     condition:
     	for any of them
 }
-rule Nullsoft_Install_System_v2dot0b4___: Packer
+rule Nullsoft_Install_System_v2dot0b4 : Packer
 {
     meta:
         name = "Nullsoft Install System v2.0b4" // Packer name & version
@@ -6520,7 +5919,7 @@ rule Nullsoft_Install_System_v2dot0b4___: Packer
     condition:
     	for any of them
 }
-rule Obsidium_1dot3dot0dot17_Obsidium_software___: Packer
+rule Obsidium_1dot3dot0dot17_Obsidium_software : Packer
 {
     meta:
         name = "Obsidium 1.3.0.17 -> Obsidium software" // Packer name & version
@@ -6533,7 +5932,7 @@ rule Obsidium_1dot3dot0dot17_Obsidium_software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_v1dot3dot0dot37_Obsidium_Software_h___: Packer
+rule Obsidium_v1dot3dot0dot37_Obsidium_Software_h : Packer
 {
     meta:
         name = "Obsidium v1.3.0.37 -> Obsidium Software (h)" // Packer name & version
@@ -6546,7 +5945,7 @@ rule Obsidium_v1dot3dot0dot37_Obsidium_Software_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_v1dot3dot0dot4_Obsidium_Software_h___: Packer
+rule Obsidium_v1dot3dot0dot4_Obsidium_Software_h : Packer
 {
     meta:
         name = "Obsidium v1.3.0.4 -> Obsidium Software (h)" // Packer name & version
@@ -6559,7 +5958,7 @@ rule Obsidium_v1dot3dot0dot4_Obsidium_Software_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_v1dot3dot3dot1_Obsidium_Software_h___: Packer
+rule Obsidium_v1dot3dot3dot1_Obsidium_Software_h : Packer
 {
     meta:
         name = "Obsidium v1.3.3.1 -> Obsidium Software (h)" // Packer name & version
@@ -6572,7 +5971,7 @@ rule Obsidium_v1dot3dot3dot1_Obsidium_Software_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsiduim_1dot3dot0dot4_Obsiduim_Software___: Packer
+rule Obsiduim_1dot3dot0dot4_Obsiduim_Software : Packer
 {
     meta:
         name = "Obsiduim 1.3.0.4 -> Obsiduim Software" // Packer name & version
@@ -6585,7 +5984,7 @@ rule Obsiduim_1dot3dot0dot4_Obsiduim_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Pack_Master_v1dot0___: Packer
+rule Pack_Master_v1dot0 : Packer
 {
     meta:
         name = "Pack Master v1.0" // Packer name & version
@@ -6598,7 +5997,7 @@ rule Pack_Master_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packanoid_1dot0_ackanoid___: Packer
+rule Packanoid_1dot0_ackanoid : Packer
 {
     meta:
         name = "Packanoid 1.0 -> ackanoid" // Packer name & version
@@ -6611,7 +6010,7 @@ rule Packanoid_1dot0_ackanoid___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packanoid_v1_Arkanoid___: Packer
+rule Packanoid_v1_Arkanoid : Packer
 {
     meta:
         name = "Packanoid v1 -> Arkanoid" // Packer name & version
@@ -6624,7 +6023,7 @@ rule Packanoid_v1_Arkanoid___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packman_0dot0dot0dot1_Bubbasoft_h___: Packer
+rule Packman_0dot0dot0dot1_Bubbasoft_h : Packer
 {
     meta:
         name = "Packman 0.0.0.1 -> Bubbasoft (h)" // Packer name & version
@@ -6637,7 +6036,7 @@ rule Packman_0dot0dot0dot1_Bubbasoft_h___: Packer
     condition:
     	for any of them
 }
-rule PC_PE_Encryptor_Alpha_preview___: Packer
+rule PC_PE_Encryptor_Alpha_preview : Packer
 {
     meta:
         name = "PC PE Encryptor Alpha preview" // Packer name & version
@@ -6650,7 +6049,7 @@ rule PC_PE_Encryptor_Alpha_preview___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Diminisher_v0dot1___: Packer
+rule PE_Diminisher_v0dot1 : Packer
 {
     meta:
         name = "PE Diminisher v0.1" // Packer name & version
@@ -6663,7 +6062,7 @@ rule PE_Diminisher_v0dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Lock_v1dot06___: Packer
+rule PE_Lock_v1dot06 : Packer
 {
     meta:
         name = "PE Lock v1.06" // Packer name & version
@@ -6676,7 +6075,7 @@ rule PE_Lock_v1dot06___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Ninja_v1dot0_plusDzA_kRAker_TNT___: Packer
+rule PE_Ninja_v1dot0_plusDzA_kRAker_TNT : Packer
 {
     meta:
         name = "PE Ninja v1.0 -> +DzA kRAker TNT" // Packer name & version
@@ -6689,7 +6088,7 @@ rule PE_Ninja_v1dot0_plusDzA_kRAker_TNT___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Protect_v0dot9___: Packer
+rule PE_Protect_v0dot9 : Packer
 {
     meta:
         name = "PE Protect v0.9" // Packer name & version
@@ -6702,7 +6101,7 @@ rule PE_Protect_v0dot9___: Packer
     condition:
     	for any of them
 }
-rule PE_Armor_0dot46_China_Cracking_Group___: Packer
+rule PE_Armor_0dot46_China_Cracking_Group : Packer
 {
     meta:
         name = "PE-Armor 0.46 -> China Cracking Group" // Packer name & version
@@ -6715,7 +6114,7 @@ rule PE_Armor_0dot46_China_Cracking_Group___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_PaCK_v1dot0_C_Copyright_1998_by_ANAKiN__h____: Packer
+rule PE_PaCK_v1dot0_C_Copyright_1998_by_ANAKiN_h : Packer
 {
     meta:
         name = "PE-PaCK v1.0 -> (C) Copyright 1998 by ANAKiN (h)" // Packer name & version
@@ -6728,7 +6127,7 @@ rule PE_PaCK_v1dot0_C_Copyright_1998_by_ANAKiN__h____: Packer
     condition:
     	for any of them
 }
-rule PeCompact_2dotxx_BitSum_Technologies___: Packer
+rule PeCompact_2dotxx_BitSum_Technologies : Packer
 {
     meta:
         name = "PeCompact 2.xx --> BitSum Technologies" // Packer name & version
@@ -6741,7 +6140,7 @@ rule PeCompact_2dotxx_BitSum_Technologies___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot90___: Packer
+rule PECompact_v0dot90 : Packer
 {
     meta:
         name = "PECompact v0.90" // Packer name & version
@@ -6754,7 +6153,7 @@ rule PECompact_v0dot90___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot977___: Packer
+rule PECompact_v0dot977 : Packer
 {
     meta:
         name = "PECompact v0.977" // Packer name & version
@@ -6767,7 +6166,7 @@ rule PECompact_v0dot977___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot978___: Packer
+rule PECompact_v0dot978 : Packer
 {
     meta:
         name = "PECompact v0.978" // Packer name & version
@@ -6780,7 +6179,7 @@ rule PECompact_v0dot978___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot978dot1___: Packer
+rule PECompact_v0dot978dot1 : Packer
 {
     meta:
         name = "PECompact v0.978.1" // Packer name & version
@@ -6793,7 +6192,7 @@ rule PECompact_v0dot978dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot978dot2___: Packer
+rule PECompact_v0dot978dot2 : Packer
 {
     meta:
         name = "PECompact v0.978.2" // Packer name & version
@@ -6806,7 +6205,7 @@ rule PECompact_v0dot978dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot98___: Packer
+rule PECompact_v0dot98 : Packer
 {
     meta:
         name = "PECompact v0.98" // Packer name & version
@@ -6819,7 +6218,7 @@ rule PECompact_v0dot98___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot99___: Packer
+rule PECompact_v0dot99 : Packer
 {
     meta:
         name = "PECompact v0.99" // Packer name & version
@@ -6832,7 +6231,7 @@ rule PECompact_v0dot99___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot00___: Packer
+rule PECompact_v1dot00 : Packer
 {
     meta:
         name = "PECompact v1.00" // Packer name & version
@@ -6845,7 +6244,7 @@ rule PECompact_v1dot00___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot10b1___: Packer
+rule PECompact_v1dot10b1 : Packer
 {
     meta:
         name = "PECompact v1.10b1" // Packer name & version
@@ -6858,7 +6257,7 @@ rule PECompact_v1dot10b1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot10b2___: Packer
+rule PECompact_v1dot10b2 : Packer
 {
     meta:
         name = "PECompact v1.10b2" // Packer name & version
@@ -6871,7 +6270,7 @@ rule PECompact_v1dot10b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot10b3___: Packer
+rule PECompact_v1dot10b3 : Packer
 {
     meta:
         name = "PECompact v1.10b3" // Packer name & version
@@ -6884,7 +6283,7 @@ rule PECompact_v1dot10b3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot10b4___: Packer
+rule PECompact_v1dot10b4 : Packer
 {
     meta:
         name = "PECompact v1.10b4" // Packer name & version
@@ -6897,7 +6296,7 @@ rule PECompact_v1dot10b4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot10b5___: Packer
+rule PECompact_v1dot10b5 : Packer
 {
     meta:
         name = "PECompact v1.10b5" // Packer name & version
@@ -6910,7 +6309,7 @@ rule PECompact_v1dot10b5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot10b6___: Packer
+rule PECompact_v1dot10b6 : Packer
 {
     meta:
         name = "PECompact v1.10b6" // Packer name & version
@@ -6923,7 +6322,7 @@ rule PECompact_v1dot10b6___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot10b7___: Packer
+rule PECompact_v1dot10b7 : Packer
 {
     meta:
         name = "PECompact v1.10b7" // Packer name & version
@@ -6936,7 +6335,7 @@ rule PECompact_v1dot10b7___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot20_v1dot20dot1___: Packer
+rule PECompact_v1dot20_v1dot20dot1 : Packer
 {
     meta:
         name = "PECompact v1.20 - v1.20.1" // Packer name & version
@@ -6949,7 +6348,7 @@ rule PECompact_v1dot20_v1dot20dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot22___: Packer
+rule PECompact_v1dot22 : Packer
 {
     meta:
         name = "PECompact v1.22" // Packer name & version
@@ -6962,7 +6361,7 @@ rule PECompact_v1dot22___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot23b3_v1dot24dot1___: Packer
+rule PECompact_v1dot23b3_v1dot24dot1 : Packer
 {
     meta:
         name = "PECompact v1.23b3 - v1.24.1" // Packer name & version
@@ -6975,7 +6374,7 @@ rule PECompact_v1dot23b3_v1dot24dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot24dot2_v1dot24dot3___: Packer
+rule PECompact_v1dot24dot2_v1dot24dot3 : Packer
 {
     meta:
         name = "PECompact v1.24.2 - v1.24.3" // Packer name & version
@@ -6988,7 +6387,7 @@ rule PECompact_v1dot24dot2_v1dot24dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot25___: Packer
+rule PECompact_v1dot25 : Packer
 {
     meta:
         name = "PECompact v1.25" // Packer name & version
@@ -7001,7 +6400,7 @@ rule PECompact_v1dot25___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot26b1_v1dot26b2___: Packer
+rule PECompact_v1dot26b1_v1dot26b2 : Packer
 {
     meta:
         name = "PECompact v1.26b1 - v1.26b2" // Packer name & version
@@ -7014,7 +6413,7 @@ rule PECompact_v1dot26b1_v1dot26b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot33___: Packer
+rule PECompact_v1dot33 : Packer
 {
     meta:
         name = "PECompact v1.33" // Packer name & version
@@ -7027,7 +6426,7 @@ rule PECompact_v1dot33___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot34_v1dot40b1___: Packer
+rule PECompact_v1dot34_v1dot40b1 : Packer
 {
     meta:
         name = "PECompact v1.34 - v1.40b1" // Packer name & version
@@ -7040,7 +6439,7 @@ rule PECompact_v1dot34_v1dot40b1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot40_v1dot45___: Packer
+rule PECompact_v1dot40_v1dot45 : Packer
 {
     meta:
         name = "PECompact v1.40 - v1.45" // Packer name & version
@@ -7053,7 +6452,7 @@ rule PECompact_v1dot40_v1dot45___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot40b2_v1dot40b4___: Packer
+rule PECompact_v1dot40b2_v1dot40b4 : Packer
 {
     meta:
         name = "PECompact v1.40b2 - v1.40b4" // Packer name & version
@@ -7066,7 +6465,7 @@ rule PECompact_v1dot40b2_v1dot40b4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot40b5_v1dot40b6___: Packer
+rule PECompact_v1dot40b5_v1dot40b6 : Packer
 {
     meta:
         name = "PECompact v1.40b5 - v1.40b6" // Packer name & version
@@ -7079,7 +6478,7 @@ rule PECompact_v1dot40b5_v1dot40b6___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot46___: Packer
+rule PECompact_v1dot46 : Packer
 {
     meta:
         name = "PECompact v1.46" // Packer name & version
@@ -7092,7 +6491,7 @@ rule PECompact_v1dot46___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot47_v1dot50___: Packer
+rule PECompact_v1dot47_v1dot50 : Packer
 {
     meta:
         name = "PECompact v1.47 - v1.50" // Packer name & version
@@ -7105,7 +6504,7 @@ rule PECompact_v1dot47_v1dot50___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot55___: Packer
+rule PECompact_v1dot55 : Packer
 {
     meta:
         name = "PECompact v1.55" // Packer name & version
@@ -7118,7 +6517,7 @@ rule PECompact_v1dot55___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot56___: Packer
+rule PECompact_v1dot56 : Packer
 {
     meta:
         name = "PECompact v1.56" // Packer name & version
@@ -7131,7 +6530,7 @@ rule PECompact_v1dot56___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot60_v1dot65___: Packer
+rule PECompact_v1dot60_v1dot65 : Packer
 {
     meta:
         name = "PECompact v1.60 - v1.65" // Packer name & version
@@ -7144,7 +6543,7 @@ rule PECompact_v1dot60_v1dot65___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot66___: Packer
+rule PECompact_v1dot66 : Packer
 {
     meta:
         name = "PECompact v1.66" // Packer name & version
@@ -7157,7 +6556,7 @@ rule PECompact_v1dot66___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v2dot00_alpha_38___: Packer
+rule PECompact_v2dot00_alpha_38 : Packer
 {
     meta:
         name = "PECompact v2.00 alpha 38" // Packer name & version
@@ -7170,7 +6569,7 @@ rule PECompact_v2dot00_alpha_38___: Packer
     condition:
     	for any of them
 }
-rule PECompact_v2dot5_Retail_Bitsum_Technologies___: Packer
+rule PECompact_v2dot5_Retail_Bitsum_Technologies : Packer
 {
     meta:
         name = "PECompact v2.5 Retail -> Bitsum Technologies" // Packer name & version
@@ -7183,7 +6582,7 @@ rule PECompact_v2dot5_Retail_Bitsum_Technologies___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PeCompact2_2dot53_2dot76_BitSum_Technologies___: Packer
+rule PeCompact2_2dot53_2dot76_BitSum_Technologies : Packer
 {
     meta:
         name = "PeCompact2 2.53-2.76 --> BitSum Technologies" // Packer name & version
@@ -7196,7 +6595,7 @@ rule PeCompact2_2dot53_2dot76_BitSum_Technologies___: Packer
     condition:
     	for any of them
 }
-rule PEncrypt_v3dot0___: Packer
+rule PEncrypt_v3dot0 : Packer
 {
     meta:
         name = "PEncrypt v3.0" // Packer name & version
@@ -7209,7 +6608,7 @@ rule PEncrypt_v3dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PENinja___: Packer
+rule PENinja : Packer
 {
     meta:
         name = "PENinja" // Packer name & version
@@ -7222,7 +6621,7 @@ rule PENinja___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PENinja_modified___: Packer
+rule PENinja_modified : Packer
 {
     meta:
         name = "PENinja modified" // Packer name & version
@@ -7235,7 +6634,7 @@ rule PENinja_modified___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEQuake_v0dot06_by_fORGAT___: Packer
+rule PEQuake_v0dot06_by_fORGAT : Packer
 {
     meta:
         name = "PEQuake v0.06 by fORGAT" // Packer name & version
@@ -7248,7 +6647,7 @@ rule PEQuake_v0dot06_by_fORGAT___: Packer
     condition:
     	for any of them
 }
-rule PESpin_V0dot71_cyberbob___: Packer
+rule PESpin_V0dot71_cyberbob : Packer
 {
     meta:
         name = "PESpin V0.71 -> cyberbob" // Packer name & version
@@ -7261,7 +6660,7 @@ rule PESpin_V0dot71_cyberbob___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Petite_1dot3_c_1998_Ian_Luck_h____: Packer
+rule Petite_1dot3_c_1998_Ian_Luck_h : Packer
 {
     meta:
         name = "Petite 1.3 -> (c)1998 Ian Luck (h)" // Packer name & version
@@ -7274,7 +6673,7 @@ rule Petite_1dot3_c_1998_Ian_Luck_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Petite_2dot2_c_1998_99_Ian_Luck__h____: Packer
+rule Petite_2dot2_c_1998_99_Ian_Luck_h : Packer
 {
     meta:
         name = "Petite 2.2 -> (c)1998-99 Ian Luck (h)" // Packer name & version
@@ -7287,7 +6686,7 @@ rule Petite_2dot2_c_1998_99_Ian_Luck__h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEZip_v1dot0_by_BaGIE___: Packer
+rule PEZip_v1dot0_by_BaGIE : Packer
 {
     meta:
         name = "PEZip v1.0 by BaGIE" // Packer name & version
@@ -7300,7 +6699,7 @@ rule PEZip_v1dot0_by_BaGIE___: Packer
     condition:
     	for any of them
 }
-rule PocketPC_ARM___: Packer
+rule PocketPC_ARM : Packer
 {
     meta:
         name = "PocketPC ARM" // Packer name & version
@@ -7313,7 +6712,7 @@ rule PocketPC_ARM___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PocketPC_MIB___: Packer
+rule PocketPC_MIB : Packer
 {
     meta:
         name = "PocketPC MIB" // Packer name & version
@@ -7326,7 +6725,7 @@ rule PocketPC_MIB___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PocketPC_SHA___: Packer
+rule PocketPC_SHA : Packer
 {
     meta:
         name = "PocketPC SHA" // Packer name & version
@@ -7339,7 +6738,7 @@ rule PocketPC_SHA___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PowerBASIC_CC_4dot0___: Packer
+rule PowerBASIC_CC_4dot0 : Packer
 {
     meta:
         name = "PowerBASIC/CC 4.0" // Packer name & version
@@ -7352,7 +6751,7 @@ rule PowerBASIC_CC_4dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PowerBASIC_Win_8dot00___: Packer
+rule PowerBASIC_Win_8dot00 : Packer
 {
     meta:
         name = "PowerBASIC/Win 8.00" // Packer name & version
@@ -7365,7 +6764,7 @@ rule PowerBASIC_Win_8dot00___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PrincessSandy_v1dot0_eMiNENCE_Process_Patcher_Patch___: Packer
+rule PrincessSandy_v1dot0_eMiNENCE_Process_Patcher_Patch : Packer
 {
     meta:
         name = "PrincessSandy v1.0 eMiNENCE Process Patcher Patch" // Packer name & version
@@ -7378,7 +6777,7 @@ rule PrincessSandy_v1dot0_eMiNENCE_Process_Patcher_Patch___: Packer
     condition:
     	for any of them
 }
-rule Private_exe_Protector_V1dot8X_V1dot9X_SetiSoft_Team___: Packer
+rule Private_exe_Protector_V1dot8X_V1dot9X_SetiSoft_Team : Packer
 {
     meta:
         name = "Private exe Protector V1.8X-V1.9X -> SetiSoft Team" // Packer name & version
@@ -7391,7 +6790,7 @@ rule Private_exe_Protector_V1dot8X_V1dot9X_SetiSoft_Team___: Packer
     condition:
     	for any of them
 }
-rule PseudoSigner_0dot2_Armadillo_3dot00_Anorganix___: Packer
+rule PseudoSigner_0dot2_Armadillo_3dot00_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Armadillo 3.00] --> Anorganix" // Packer name & version
@@ -7404,7 +6803,7 @@ rule PseudoSigner_0dot2_Armadillo_3dot00_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_CodeSafe_2dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_CodeSafe_2dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [CodeSafe 2.0] --> Anorganix" // Packer name & version
@@ -7417,7 +6816,7 @@ rule PseudoSigner_0dot2_CodeSafe_2dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_DEF_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_DEF_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [DEF 1.0] --> Anorganix" // Packer name & version
@@ -7430,7 +6829,7 @@ rule PseudoSigner_0dot2_DEF_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_DxPack_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_DxPack_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [DxPack 1.0] --> Anorganix" // Packer name & version
@@ -7443,7 +6842,7 @@ rule PseudoSigner_0dot2_DxPack_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_ExeSmasher_Anorganix___: Packer
+rule PseudoSigner_0dot2_ExeSmasher_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [ExeSmasher] --> Anorganix" // Packer name & version
@@ -7456,7 +6855,7 @@ rule PseudoSigner_0dot2_ExeSmasher_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Gleam_1dot00_Anorganix___: Packer
+rule PseudoSigner_0dot2_Gleam_1dot00_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Gleam 1.00] --> Anorganix" // Packer name & version
@@ -7469,7 +6868,7 @@ rule PseudoSigner_0dot2_Gleam_1dot00_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_JDPack_1dotx_JDProtect_0dot9_Anorganix___: Packer
+rule PseudoSigner_0dot2_JDPack_1dotx_JDProtect_0dot9_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [JDPack 1.x / JDProtect 0.9] --> Anorganix" // Packer name & version
@@ -7482,7 +6881,7 @@ rule PseudoSigner_0dot2_JDPack_1dotx_JDProtect_0dot9_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PESHiELD_0dot25_Anorganix___: Packer
+rule PseudoSigner_0dot2_PESHiELD_0dot25_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PESHiELD 0.25] --> Anorganix" // Packer name & version
@@ -7495,7 +6894,7 @@ rule PseudoSigner_0dot2_PESHiELD_0dot25_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_ZCode_1dot01_Anorganix___: Packer
+rule PseudoSigner_0dot2_ZCode_1dot01_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [ZCode 1.01] --> Anorganix" // Packer name & version
@@ -7508,7 +6907,7 @@ rule PseudoSigner_0dot2_ZCode_1dot01_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule R__!SC's Process Patcher v1dot4 : Packer
+rule R_!SC's Process Patcher v1dot4 : Packer
 {
     meta:
         name = "R!SC's Process Patcher v1.4" // Packer name & version
@@ -7521,7 +6920,7 @@ rule R__!SC's Process Patcher v1dot4 : Packer
     condition:
     	for any of them
 }
-rule R__!SC's Process Patcher v1dot5dot1 : Packer
+rule R_!SC's Process Patcher v1dot5dot1 : Packer
 {
     meta:
         name = "R!SC's Process Patcher v1.5.1" // Packer name & version
@@ -7534,7 +6933,7 @@ rule R__!SC's Process Patcher v1dot5dot1 : Packer
     condition:
     	for any of them
 }
-rule RJcrush_v1dot00___: Packer
+rule RJcrush_v1dot00 : Packer
 {
     meta:
         name = "RJcrush v1.00" // Packer name & version
@@ -7547,7 +6946,7 @@ rule RJcrush_v1dot00___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Ap0x___: Packer
+rule RLPack_Ap0x : Packer
 {
     meta:
         name = "RLPack -> Ap0x" // Packer name & version
@@ -7560,7 +6959,7 @@ rule RLPack_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Ap0x___: Packer
+rule RLPack_Ap0x : Packer
 {
     meta:
         name = "RLPack -> Ap0x" // Packer name & version
@@ -7573,7 +6972,7 @@ rule RLPack_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_1dot17plus___: Packer
+rule RLPack_1dot17plus : Packer
 {
     meta:
         name = "RLPack 1.17+" // Packer name & version
@@ -7586,7 +6985,7 @@ rule RLPack_1dot17plus___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Full_Edition_1dot17_DLL_LZMA_Ap0x___: Packer
+rule RLPack_Full_Edition_1dot17_DLL_LZMA_Ap0x : Packer
 {
     meta:
         name = "RLPack Full Edition 1.17 DLL [LZMA] -> Ap0x" // Packer name & version
@@ -7599,7 +6998,7 @@ rule RLPack_Full_Edition_1dot17_DLL_LZMA_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_FullEdition_V1dot1X_ap0x___* SigndotBydotfly : Packer
+rule RLPack_FullEdition_V1dot1X_ap0x_* SigndotBydotfly : Packer
 {
     meta:
         name = "RLPack FullEdition V1.1X -> ap0x   * Sign.By.fly" // Packer name & version
@@ -7612,7 +7011,7 @@ rule RLPack_FullEdition_V1dot1X_ap0x___* SigndotBydotfly : Packer
     condition:
     	for any of them
 }
-rule RLPack_v0dot7dot3beta_ap0x_h___: Packer
+rule RLPack_v0dot7dot3beta_ap0x_h : Packer
 {
     meta:
         name = "RLPack v0.7.3beta -> ap0x (h)" // Packer name & version
@@ -7625,7 +7024,7 @@ rule RLPack_v0dot7dot3beta_ap0x_h___: Packer
     condition:
     	for any of them
 }
-rule RLPack_V1dot11_ap0x___: Packer
+rule RLPack_V1dot11_ap0x : Packer
 {
     meta:
         name = "RLPack V1.11 -> ap0x" // Packer name & version
@@ -7638,7 +7037,7 @@ rule RLPack_V1dot11_ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SecuPack_v1dot5___: Packer
+rule SecuPack_v1dot5 : Packer
 {
     meta:
         name = "SecuPack v1.5" // Packer name & version
@@ -7651,7 +7050,7 @@ rule SecuPack_v1dot5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Setup_Factory_v6dot0dot0dot3_Setup_Launcher___: Packer
+rule Setup_Factory_v6dot0dot0dot3_Setup_Launcher : Packer
 {
     meta:
         name = "Setup Factory v6.0.0.3 Setup Launcher" // Packer name & version
@@ -7664,7 +7063,7 @@ rule Setup_Factory_v6dot0dot0dot3_Setup_Launcher___: Packer
     condition:
     	for any of them
 }
-rule Shrinker_v3dot4___: Packer
+rule Shrinker_v3dot4 : Packer
 {
     meta:
         name = "Shrinker v3.4" // Packer name & version
@@ -7677,7 +7076,7 @@ rule Shrinker_v3dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SimplePack_1dot11_Method_2_NT_bagie_TMX_h____: Packer
+rule SimplePack_1dot11_Method_2_NT_bagie_TMX_h : Packer
 {
     meta:
         name = "SimplePack 1.11 Method 2(NT) -> bagie[TMX] (h)" // Packer name & version
@@ -7690,7 +7089,7 @@ rule SimplePack_1dot11_Method_2_NT_bagie_TMX_h____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SimplePack_V1dot0X_bagie___: Packer
+rule SimplePack_V1dot0X_bagie : Packer
 {
     meta:
         name = "SimplePack V1.0X -> bagie" // Packer name & version
@@ -7703,7 +7102,7 @@ rule SimplePack_V1dot0X_bagie___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SimplePack_V1dotX_Method1_bagie___: Packer
+rule SimplePack_V1dotX_Method1_bagie : Packer
 {
     meta:
         name = "SimplePack V1.X (Method1) -> bagie" // Packer name & version
@@ -7716,7 +7115,7 @@ rule SimplePack_V1dotX_Method1_bagie___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SoftProtect_SoftProtectdotbydotru___: Packer
+rule SoftProtect_SoftProtectdotbydotru : Packer
 {
     meta:
         name = "SoftProtect -> SoftProtect.by.ru" // Packer name & version
@@ -7729,7 +7128,7 @@ rule SoftProtect_SoftProtectdotbydotru___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SPEC_b3___: Packer
+rule SPEC_b3 : Packer
 {
     meta:
         name = "SPEC b3" // Packer name & version
@@ -7742,7 +7141,7 @@ rule SPEC_b3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Special_EXE_Password_Protector_v1dot0___: Packer
+rule Special_EXE_Password_Protector_v1dot0 : Packer
 {
     meta:
         name = "Special EXE Password Protector v1.0" // Packer name & version
@@ -7755,7 +7154,7 @@ rule Special_EXE_Password_Protector_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Stones_PE_Encryptor_v1dot0___: Packer
+rule Stones_PE_Encryptor_v1dot0 : Packer
 {
     meta:
         name = "Stone's PE Encryptor v1.0" // Packer name & version
@@ -7768,7 +7167,7 @@ rule Stones_PE_Encryptor_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Stones_PE_Encryptor_v1dot13___: Packer
+rule Stones_PE_Encryptor_v1dot13 : Packer
 {
     meta:
         name = "Stone's PE Encryptor v1.13" // Packer name & version
@@ -7781,7 +7180,7 @@ rule Stones_PE_Encryptor_v1dot13___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SVK_Protector_v1dot051___: Packer
+rule SVK_Protector_v1dot051 : Packer
 {
     meta:
         name = "SVK-Protector v1.051" // Packer name & version
@@ -7794,7 +7193,7 @@ rule SVK_Protector_v1dot051___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot41x___: Packer
+rule tElock_v0dot41x : Packer
 {
     meta:
         name = "tElock v0.41x" // Packer name & version
@@ -7807,7 +7206,7 @@ rule tElock_v0dot41x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot42___: Packer
+rule tElock_v0dot42 : Packer
 {
     meta:
         name = "tElock v0.42" // Packer name & version
@@ -7820,7 +7219,7 @@ rule tElock_v0dot42___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot4x_v0dot5x___: Packer
+rule tElock_v0dot4x_v0dot5x : Packer
 {
     meta:
         name = "tElock v0.4x - v0.5x" // Packer name & version
@@ -7833,7 +7232,7 @@ rule tElock_v0dot4x_v0dot5x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot51___: Packer
+rule tElock_v0dot51 : Packer
 {
     meta:
         name = "tElock v0.51" // Packer name & version
@@ -7846,7 +7245,7 @@ rule tElock_v0dot51___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot99_Special_Build_heXer__and__forgot___: Packer
+rule tElock_v0dot99_Special_Build_heXer_and_forgot : Packer
 {
     meta:
         name = "tElock v0.99 Special Build -> heXer & forgot" // Packer name & version
@@ -7859,7 +7258,7 @@ rule tElock_v0dot99_Special_Build_heXer__and__forgot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_WinLicense_V1dot0dot0dot0_V1dot8dot0dot0_Oreans_Technologies___: Packer
+rule Themida_WinLicense_V1dot0dot0dot0_V1dot8dot0dot0_Oreans_Technologies : Packer
 {
     meta:
         name = "Themida/WinLicense V1.0.0.0-V1.8.0.0-> Oreans Technologies" // Packer name & version
@@ -7872,7 +7271,7 @@ rule Themida_WinLicense_V1dot0dot0dot0_V1dot8dot0dot0_Oreans_Technologies___: Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_WinLicense_V1dot8dot0dot2___plus__Oreans_Technologies_: Packer
+rule Themida_WinLicense_V1dot8dot0dot2_plus_Oreans_Technologies : Packer
 {
     meta:
         name = "Themida/WinLicense V1.8.0.2 +  -> Oreans Technologies" // Packer name & version
@@ -7885,7 +7284,7 @@ rule Themida_WinLicense_V1dot8dot0dot2___plus__Oreans_Technologies_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Thinstall_2dot5___??? (h) : Packer
+rule Thinstall_2dot5_??? (h) : Packer
 {
     meta:
         name = "Thinstall 2.5 -> ??? (h)" // Packer name & version
@@ -7898,7 +7297,7 @@ rule Thinstall_2dot5___??? (h) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Trainer_Creation_Kit_v5_Trainer___: Packer
+rule Trainer_Creation_Kit_v5_Trainer : Packer
 {
     meta:
         name = "Trainer Creation Kit v5 Trainer" // Packer name & version
@@ -7911,7 +7310,7 @@ rule Trainer_Creation_Kit_v5_Trainer___: Packer
     condition:
     	for any of them
 }
-rule Upack_0dot22_0dot23_beta_Dwing___: Packer
+rule Upack_0dot22_0dot23_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.22 - 0.23 beta -> Dwing" // Packer name & version
@@ -7924,7 +7323,7 @@ rule Upack_0dot22_0dot23_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPack_v0dot11___: Packer
+rule UPack_v0dot11 : Packer
 {
     meta:
         name = "UPack v0.11" // Packer name & version
@@ -7937,7 +7336,7 @@ rule UPack_v0dot11___: Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot37_beta_Dwing___: Packer
+rule Upack_v0dot37_beta_Dwing : Packer
 {
     meta:
         name = "Upack v0.37 beta -> Dwing" // Packer name & version
@@ -7950,7 +7349,7 @@ rule Upack_v0dot37_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot38_beta_Dwing___: Packer
+rule Upack_v0dot38_beta_Dwing : Packer
 {
     meta:
         name = "Upack v0.38 beta -> Dwing" // Packer name & version
@@ -7963,7 +7362,7 @@ rule Upack_v0dot38_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot399_Dwing___: Packer
+rule Upack_v0dot399_Dwing : Packer
 {
     meta:
         name = "Upack v0.399 -> Dwing" // Packer name & version
@@ -7976,7 +7375,7 @@ rule Upack_v0dot399_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_plus_ECLiPSE_layer___: Packer
+rule UPX_plus_ECLiPSE_layer : Packer
 {
     meta:
         name = "UPX + ECLiPSE layer" // Packer name & version
@@ -7989,7 +7388,7 @@ rule UPX_plus_ECLiPSE_layer___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Alternative_stub___: Packer
+rule UPX_Alternative_stub : Packer
 {
     meta:
         name = "UPX Alternative stub" // Packer name & version
@@ -8002,7 +7401,7 @@ rule UPX_Alternative_stub___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Inliner_v1dot0_by_GPcH___: Packer
+rule UPX_Inliner_v1dot0_by_GPcH : Packer
 {
     meta:
         name = "UPX Inliner v1.0 by GPcH" // Packer name & version
@@ -8015,7 +7414,7 @@ rule UPX_Inliner_v1dot0_by_GPcH___: Packer
     condition:
     	for any of them
 }
-rule UPX_Modified_stub___: Packer
+rule UPX_Modified_stub : Packer
 {
     meta:
         name = "UPX Modified stub" // Packer name & version
@@ -8028,7 +7427,7 @@ rule UPX_Modified_stub___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot51___: Packer
+rule UPX_v0dot51 : Packer
 {
     meta:
         name = "UPX v0.51" // Packer name & version
@@ -8041,7 +7440,7 @@ rule UPX_v0dot51___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot62___: Packer
+rule UPX_v0dot62 : Packer
 {
     meta:
         name = "UPX v0.62" // Packer name & version
@@ -8054,7 +7453,7 @@ rule UPX_v0dot62___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot70___: Packer
+rule UPX_v0dot70 : Packer
 {
     meta:
         name = "UPX v0.70" // Packer name & version
@@ -8067,7 +7466,7 @@ rule UPX_v0dot70___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot81_v0dot84_Modified___: Packer
+rule UPX_v0dot81_v0dot84_Modified : Packer
 {
     meta:
         name = "UPX v0.81 - v0.84 Modified" // Packer name & version
@@ -8080,7 +7479,7 @@ rule UPX_v0dot81_v0dot84_Modified___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot89dot6_v1dot02_____v1dot05___v1dot22_Modified_: Packer
+rule UPX_v0dot89dot6_v1dot02_v1dot05_v1dot22_Modified : Packer
 {
     meta:
         name = "UPX v0.89.6 - v1.02 / v1.05 - v1.22 Modified" // Packer name & version
@@ -8093,7 +7492,7 @@ rule UPX_v0dot89dot6_v1dot02_____v1dot05___v1dot22_Modified_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v1dot03_v1dot04_Modified___: Packer
+rule UPX_v1dot03_v1dot04_Modified : Packer
 {
     meta:
         name = "UPX v1.03 - v1.04 Modified" // Packer name & version
@@ -8106,7 +7505,7 @@ rule UPX_v1dot03_v1dot04_Modified___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Shit_v0dot1_500mhz___: Packer
+rule UPX_Shit_v0dot1_500mhz : Packer
 {
     meta:
         name = "UPX-Shit v0.1 -> 500mhz" // Packer name & version
@@ -8119,7 +7518,7 @@ rule UPX_Shit_v0dot1_500mhz___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Shit_v0dot1_500mhz___: Packer
+rule UPX_Shit_v0dot1_500mhz : Packer
 {
     meta:
         name = "UPX-Shit v0.1 -> 500mhz" // Packer name & version
@@ -8132,7 +7531,7 @@ rule UPX_Shit_v0dot1_500mhz___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VcAsm_Protector_VcAsm___: Packer
+rule VcAsm_Protector_VcAsm : Packer
 {
     meta:
         name = "VcAsm Protector -> VcAsm" // Packer name & version
@@ -8145,7 +7544,7 @@ rule VcAsm_Protector_VcAsm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VcAsm_Protector_V1dot0X_VcAsm___: Packer
+rule VcAsm_Protector_V1dot0X_VcAsm : Packer
 {
     meta:
         name = "VcAsm Protector V1.0X-> VcAsm" // Packer name & version
@@ -8158,7 +7557,7 @@ rule VcAsm_Protector_V1dot0X_VcAsm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VIRUS_I___WormdotBagle_: Packer
+rule VIRUS_I_WormdotBagle : Packer
 {
     meta:
         name = "VIRUS - I-Worm.Bagle" // Packer name & version
@@ -8171,7 +7570,7 @@ rule VIRUS_I___WormdotBagle_: Packer
     condition:
     	for any of them
 }
-rule VProtector_V1dot0_Build_2004dot12dot13_test__!_vcasm : Packer
+rule VProtector_V1dot0_Build_2004dot12dot13_test_!_vcasm : Packer
 {
     meta:
         name = "VProtector V1.0 [Build 2004.12.13] test! -> vcasm" // Packer name & version
@@ -8184,7 +7583,7 @@ rule VProtector_V1dot0_Build_2004dot12dot13_test__!_vcasm : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VProtector_V1dot0A_vcasm___: Packer
+rule VProtector_V1dot0A_vcasm : Packer
 {
     meta:
         name = "VProtector V1.0A -> vcasm" // Packer name & version
@@ -8197,7 +7596,7 @@ rule VProtector_V1dot0A_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VProtector_V1dot0B_vcasm___: Packer
+rule VProtector_V1dot0B_vcasm : Packer
 {
     meta:
         name = "VProtector V1.0B -> vcasm" // Packer name & version
@@ -8210,7 +7609,7 @@ rule VProtector_V1dot0B_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VProtector_V1dot0D_vcasm___: Packer
+rule VProtector_V1dot0D_vcasm : Packer
 {
     meta:
         name = "VProtector V1.0D -> vcasm" // Packer name & version
@@ -8223,7 +7622,7 @@ rule VProtector_V1dot0D_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VProtector_V1dot1_vcasm___: Packer
+rule VProtector_V1dot1_vcasm : Packer
 {
     meta:
         name = "VProtector V1.1 -> vcasm" // Packer name & version
@@ -8236,7 +7635,7 @@ rule VProtector_V1dot1_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VProtector_V1dot1A_vcasm___: Packer
+rule VProtector_V1dot1A_vcasm : Packer
 {
     meta:
         name = "VProtector V1.1A -> vcasm" // Packer name & version
@@ -8249,7 +7648,7 @@ rule VProtector_V1dot1A_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Watcom_C_Cplusplus___: Packer
+rule Watcom_C_Cplusplus : Packer
 {
     meta:
         name = "Watcom C/C++" // Packer name & version
@@ -8262,7 +7661,7 @@ rule Watcom_C_Cplusplus___: Packer
     condition:
     	for any of them
 }
-rule Winkript_v1dot0___: Packer
+rule Winkript_v1dot0 : Packer
 {
     meta:
         name = "Winkript v1.0" // Packer name & version
@@ -8275,7 +7674,7 @@ rule Winkript_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinKript_v1dot0_Mrdot_Crimson_h___: Packer
+rule WinKript_v1dot0_Mrdot_Crimson_h : Packer
 {
     meta:
         name = "WinKript v1.0 -> Mr. Crimson (h)" // Packer name & version
@@ -8288,7 +7687,7 @@ rule WinKript_v1dot0_Mrdot_Crimson_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinUpack_v0dot39_final_By_Dwing_c_2005_h1____: Packer
+rule WinUpack_v0dot39_final_By_Dwing_c_2005_h1 : Packer
 {
     meta:
         name = "WinUpack v0.39 final -> By Dwing (c)2005 (h1)" // Packer name & version
@@ -8301,7 +7700,7 @@ rule WinUpack_v0dot39_final_By_Dwing_c_2005_h1____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinZip_32_bit_SFX_v6dotx_module___: Packer
+rule WinZip_32_bit_SFX_v6dotx_module : Packer
 {
     meta:
         name = "WinZip 32-bit SFX v6.x module" // Packer name & version
@@ -8314,7 +7713,7 @@ rule WinZip_32_bit_SFX_v6dotx_module___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinZip_32_bit_SFX_v8dotx_module___: Packer
+rule WinZip_32_bit_SFX_v8dotx_module : Packer
 {
     meta:
         name = "WinZip 32-bit SFX v8.x module" // Packer name & version
@@ -8327,7 +7726,7 @@ rule WinZip_32_bit_SFX_v8dotx_module___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule XJ_XPAL_LiNSoN___: Packer
+rule XJ_XPAL_LiNSoN : Packer
 {
     meta:
         name = "XJ / XPAL -> LiNSoN" // Packer name & version
@@ -8340,7 +7739,7 @@ rule XJ_XPAL_LiNSoN___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yC_v1dot3_by_Ashkbiz_Danehkar___: Packer
+rule yC_v1dot3_by_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "yC v1.3 by Ashkbiz Danehkar" // Packer name & version
@@ -8353,7 +7752,7 @@ rule yC_v1dot3_by_Ashkbiz_Danehkar___: Packer
     condition:
     	for any of them
 }
-rule ZipWorxSecureEXE_v2dot5_ZipWORX_Technologies_LLC_h___: Packer
+rule ZipWorxSecureEXE_v2dot5_ZipWORX_Technologies_LLC_h : Packer
 {
     meta:
         name = "ZipWorxSecureEXE v2.5 -> ZipWORX Technologies LLC (h)" // Packer name & version
@@ -8418,7 +7817,7 @@ rule [MSLRH] v0dot32a_emadicius (h) : Packer
     condition:
     	for any of them
 }
-rule PseudoSigner_0dot1_Anorganix___: Packer
+rule PseudoSigner_0dot1_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 --> Anorganix" // Packer name & version
@@ -8431,7 +7830,7 @@ rule PseudoSigner_0dot1_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Anorganix___: Packer
+rule PseudoSigner_0dot1_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 --> Anorganix" // Packer name & version
@@ -8444,7 +7843,7 @@ rule PseudoSigner_0dot1_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_32Lite_0dot03_Anorganix___: Packer
+rule PseudoSigner_0dot1_32Lite_0dot03_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [32Lite 0.03] --> Anorganix" // Packer name & version
@@ -8457,7 +7856,7 @@ rule PseudoSigner_0dot1_32Lite_0dot03_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_32Lite_0dot03_Anorganix___: Packer
+rule PseudoSigner_0dot1_32Lite_0dot03_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [32Lite 0.03] --> Anorganix" // Packer name & version
@@ -8470,7 +7869,7 @@ rule PseudoSigner_0dot1_32Lite_0dot03_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_ASProtect_Anorganix___: Packer
+rule PseudoSigner_0dot1_ASProtect_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [ASProtect] --> Anorganix" // Packer name & version
@@ -8483,7 +7882,7 @@ rule PseudoSigner_0dot1_ASProtect_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_ASProtect_Anorganix___: Packer
+rule PseudoSigner_0dot1_ASProtect_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [ASProtect] --> Anorganix" // Packer name & version
@@ -8496,7 +7895,7 @@ rule PseudoSigner_0dot1_ASProtect_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_CD_Cops_II_Anorganix___: Packer
+rule PseudoSigner_0dot1_CD_Cops_II_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [CD-Cops II] --> Anorganix" // Packer name & version
@@ -8509,7 +7908,7 @@ rule PseudoSigner_0dot1_CD_Cops_II_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_CD_Cops_II_Anorganix___: Packer
+rule PseudoSigner_0dot1_CD_Cops_II_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [CD-Cops II] --> Anorganix" // Packer name & version
@@ -8522,7 +7921,7 @@ rule PseudoSigner_0dot1_CD_Cops_II_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Code_Lock_Anorganix___: Packer
+rule PseudoSigner_0dot1_Code_Lock_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Code-Lock] --> Anorganix" // Packer name & version
@@ -8535,7 +7934,7 @@ rule PseudoSigner_0dot1_Code_Lock_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Code_Lock_Anorganix___: Packer
+rule PseudoSigner_0dot1_Code_Lock_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Code-Lock] --> Anorganix" // Packer name & version
@@ -8548,7 +7947,7 @@ rule PseudoSigner_0dot1_Code_Lock_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Crunch_PE_Heuristic_Anorganix___: Packer
+rule PseudoSigner_0dot1_Crunch_PE_Heuristic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Crunch/PE Heuristic] --> Anorganix" // Packer name & version
@@ -8561,7 +7960,7 @@ rule PseudoSigner_0dot1_Crunch_PE_Heuristic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Crunch_PE_Heuristic_Anorganix___: Packer
+rule PseudoSigner_0dot1_Crunch_PE_Heuristic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Crunch/PE Heuristic] --> Anorganix" // Packer name & version
@@ -8574,7 +7973,7 @@ rule PseudoSigner_0dot1_Crunch_PE_Heuristic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_FSG_1dot31_Anorganix___: Packer
+rule PseudoSigner_0dot1_FSG_1dot31_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [FSG 1.31] --> Anorganix" // Packer name & version
@@ -8587,7 +7986,7 @@ rule PseudoSigner_0dot1_FSG_1dot31_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_FSG_1dot31_Anorganix___: Packer
+rule PseudoSigner_0dot1_FSG_1dot31_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [FSG 1.31] --> Anorganix" // Packer name & version
@@ -8600,7 +7999,7 @@ rule PseudoSigner_0dot1_FSG_1dot31_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_LCC_Win32_1dotx_Anorganix___: Packer
+rule PseudoSigner_0dot1_LCC_Win32_1dotx_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [LCC Win32 1.x] --> Anorganix" // Packer name & version
@@ -8613,7 +8012,7 @@ rule PseudoSigner_0dot1_LCC_Win32_1dotx_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_LCC_Win32_1dotx_Anorganix___: Packer
+rule PseudoSigner_0dot1_LCC_Win32_1dotx_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [LCC Win32 1.x] --> Anorganix" // Packer name & version
@@ -8626,7 +8025,7 @@ rule PseudoSigner_0dot1_LCC_Win32_1dotx_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_LTC_1dot3_Anorganix___: Packer
+rule PseudoSigner_0dot1_LTC_1dot3_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [LTC 1.3] --> Anorganix" // Packer name & version
@@ -8639,7 +8038,7 @@ rule PseudoSigner_0dot1_LTC_1dot3_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_LTC_1dot3_Anorganix___: Packer
+rule PseudoSigner_0dot1_LTC_1dot3_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [LTC 1.3] --> Anorganix" // Packer name & version
@@ -8652,7 +8051,7 @@ rule PseudoSigner_0dot1_LTC_1dot3_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix" // Packer name & version
@@ -8665,7 +8064,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix" // Packer name & version
@@ -8678,7 +8077,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_5dot0__plus__MFC___Anorganix_: Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_5dot0_plus_MFC_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual C++ 5.0+ (MFC)] --> Anorganix" // Packer name & version
@@ -8691,7 +8090,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_5dot0__plus__MFC___Anorganix_
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_5dot0__plus__MFC___Anorganix_: Packer
+rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_5dot0_plus_MFC_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Microsoft Visual C++ 5.0+ (MFC)] --> Anorganix" // Packer name & version
@@ -8704,7 +8103,7 @@ rule PseudoSigner_0dot1_Microsoft_Visual_Cplusplus_5dot0__plus__MFC___Anorganix_
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_NorthStar_PE_Shrinker_1dot3_Anorganix___: Packer
+rule PseudoSigner_0dot1_NorthStar_PE_Shrinker_1dot3_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [NorthStar PE Shrinker 1.3] --> Anorganix" // Packer name & version
@@ -8717,7 +8116,7 @@ rule PseudoSigner_0dot1_NorthStar_PE_Shrinker_1dot3_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_NorthStar_PE_Shrinker_1dot3_Anorganix___: Packer
+rule PseudoSigner_0dot1_NorthStar_PE_Shrinker_1dot3_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [NorthStar PE Shrinker 1.3] --> Anorganix" // Packer name & version
@@ -8730,7 +8129,7 @@ rule PseudoSigner_0dot1_NorthStar_PE_Shrinker_1dot3_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PE_Pack_0dot99_Anorganix___: Packer
+rule PseudoSigner_0dot1_PE_Pack_0dot99_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PE Pack 0.99] --> Anorganix" // Packer name & version
@@ -8743,7 +8142,7 @@ rule PseudoSigner_0dot1_PE_Pack_0dot99_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PE_Pack_0dot99_Anorganix___: Packer
+rule PseudoSigner_0dot1_PE_Pack_0dot99_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PE Pack 0.99] --> Anorganix" // Packer name & version
@@ -8756,7 +8155,7 @@ rule PseudoSigner_0dot1_PE_Pack_0dot99_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PE_Protect_0dot9_Anorganix___: Packer
+rule PseudoSigner_0dot1_PE_Protect_0dot9_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PE Protect 0.9] --> Anorganix" // Packer name & version
@@ -8769,7 +8168,7 @@ rule PseudoSigner_0dot1_PE_Protect_0dot9_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PE_Protect_0dot9_Anorganix___: Packer
+rule PseudoSigner_0dot1_PE_Protect_0dot9_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PE Protect 0.9] --> Anorganix" // Packer name & version
@@ -8782,7 +8181,7 @@ rule PseudoSigner_0dot1_PE_Protect_0dot9_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PENightMare_2_Beta_Anorganix___: Packer
+rule PseudoSigner_0dot1_PENightMare_2_Beta_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PENightMare 2 Beta] --> Anorganix" // Packer name & version
@@ -8795,7 +8194,7 @@ rule PseudoSigner_0dot1_PENightMare_2_Beta_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PENightMare_2_Beta_Anorganix___: Packer
+rule PseudoSigner_0dot1_PENightMare_2_Beta_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PENightMare 2 Beta] --> Anorganix" // Packer name & version
@@ -8808,7 +8207,7 @@ rule PseudoSigner_0dot1_PENightMare_2_Beta_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PEX_0dot99_Anorganix___: Packer
+rule PseudoSigner_0dot1_PEX_0dot99_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PEX 0.99] --> Anorganix" // Packer name & version
@@ -8821,7 +8220,7 @@ rule PseudoSigner_0dot1_PEX_0dot99_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_PEX_0dot99_Anorganix___: Packer
+rule PseudoSigner_0dot1_PEX_0dot99_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [PEX 0.99] --> Anorganix" // Packer name & version
@@ -8834,7 +8233,7 @@ rule PseudoSigner_0dot1_PEX_0dot99_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_REALBasic_Anorganix___: Packer
+rule PseudoSigner_0dot1_REALBasic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [REALBasic] --> Anorganix" // Packer name & version
@@ -8847,7 +8246,7 @@ rule PseudoSigner_0dot1_REALBasic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_REALBasic_Anorganix___: Packer
+rule PseudoSigner_0dot1_REALBasic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [REALBasic] --> Anorganix" // Packer name & version
@@ -8860,7 +8259,7 @@ rule PseudoSigner_0dot1_REALBasic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_UPX_0dot6_Anorganix___: Packer
+rule PseudoSigner_0dot1_UPX_0dot6_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [UPX 0.6] --> Anorganix" // Packer name & version
@@ -8873,7 +8272,7 @@ rule PseudoSigner_0dot1_UPX_0dot6_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_UPX_0dot6_Anorganix___: Packer
+rule PseudoSigner_0dot1_UPX_0dot6_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [UPX 0.6] --> Anorganix" // Packer name & version
@@ -8886,7 +8285,7 @@ rule PseudoSigner_0dot1_UPX_0dot6_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_dotBJFNT_1dot1b_Anorganix___: Packer
+rule PseudoSigner_0dot2_dotBJFNT_1dot1b_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [.BJFNT 1.1b] --> Anorganix" // Packer name & version
@@ -8899,7 +8298,7 @@ rule PseudoSigner_0dot2_dotBJFNT_1dot1b_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_dotBJFNT_1dot2_Anorganix___: Packer
+rule PseudoSigner_0dot2_dotBJFNT_1dot2_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [.BJFNT 1.2] --> Anorganix" // Packer name & version
@@ -8912,7 +8311,7 @@ rule PseudoSigner_0dot2_dotBJFNT_1dot2_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_ASProtect_Anorganix___: Packer
+rule PseudoSigner_0dot2_ASProtect_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [ASProtect] --> Anorganix" // Packer name & version
@@ -8925,7 +8324,7 @@ rule PseudoSigner_0dot2_ASProtect_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Borland_Cplusplus_1999_Anorganix___: Packer
+rule PseudoSigner_0dot2_Borland_Cplusplus_1999_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Borland C++ 1999] --> Anorganix" // Packer name & version
@@ -8938,7 +8337,7 @@ rule PseudoSigner_0dot2_Borland_Cplusplus_1999_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Borland_Delphi_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot2_Borland_Delphi_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Borland Delphi DLL] --> Anorganix" // Packer name & version
@@ -8951,7 +8350,7 @@ rule PseudoSigner_0dot2_Borland_Delphi_DLL_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Borland_Delphi_Setup_Module_Anorganix___: Packer
+rule PseudoSigner_0dot2_Borland_Delphi_Setup_Module_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Borland Delphi Setup Module] --> Anorganix" // Packer name & version
@@ -8964,7 +8363,7 @@ rule PseudoSigner_0dot2_Borland_Delphi_Setup_Module_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Code_Lock_Anorganix___: Packer
+rule PseudoSigner_0dot2_Code_Lock_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Code-Lock] --> Anorganix" // Packer name & version
@@ -8977,7 +8376,7 @@ rule PseudoSigner_0dot2_Code_Lock_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Crunch_PE_Heuristic_Anorganix___: Packer
+rule PseudoSigner_0dot2_Crunch_PE_Heuristic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Crunch/PE Heuristic] --> Anorganix" // Packer name & version
@@ -8990,7 +8389,7 @@ rule PseudoSigner_0dot2_Crunch_PE_Heuristic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_FSG_1dot31_Anorganix___: Packer
+rule PseudoSigner_0dot2_FSG_1dot31_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [FSG 1.31] --> Anorganix" // Packer name & version
@@ -9003,7 +8402,7 @@ rule PseudoSigner_0dot2_FSG_1dot31_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_LCC_Win32_1dotx_Anorganix___: Packer
+rule PseudoSigner_0dot2_LCC_Win32_1dotx_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [LCC Win32 1.x] --> Anorganix" // Packer name & version
@@ -9016,7 +8415,7 @@ rule PseudoSigner_0dot2_LCC_Win32_1dotx_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_LCC_Win32_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot2_LCC_Win32_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [LCC Win32 DLL] --> Anorganix" // Packer name & version
@@ -9029,7 +8428,7 @@ rule PseudoSigner_0dot2_LCC_Win32_DLL_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Lockless_Intro_Pack_Anorganix___: Packer
+rule PseudoSigner_0dot2_Lockless_Intro_Pack_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Lockless Intro Pack] --> Anorganix" // Packer name & version
@@ -9042,7 +8441,7 @@ rule PseudoSigner_0dot2_Lockless_Intro_Pack_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot2_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Microsoft Visual C++ 7.0 DLL] --> Anorganix" // Packer name & version
@@ -9055,7 +8454,7 @@ rule PseudoSigner_0dot2_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix___: Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_NorthStar_PE_Shrinker_1dot3_Anorganix___: Packer
+rule PseudoSigner_0dot2_NorthStar_PE_Shrinker_1dot3_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [NorthStar PE Shrinker 1.3] --> Anorganix" // Packer name & version
@@ -9068,7 +8467,7 @@ rule PseudoSigner_0dot2_NorthStar_PE_Shrinker_1dot3_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PE_Intro_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_PE_Intro_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PE Intro 1.0] --> Anorganix" // Packer name & version
@@ -9081,7 +8480,7 @@ rule PseudoSigner_0dot2_PE_Intro_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PE_Pack_0dot99_Anorganix___: Packer
+rule PseudoSigner_0dot2_PE_Pack_0dot99_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PE Pack 0.99] --> Anorganix" // Packer name & version
@@ -9094,7 +8493,7 @@ rule PseudoSigner_0dot2_PE_Pack_0dot99_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PE_Protect_0dot9_Anorganix___: Packer
+rule PseudoSigner_0dot2_PE_Protect_0dot9_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PE Protect 0.9] --> Anorganix" // Packer name & version
@@ -9107,7 +8506,7 @@ rule PseudoSigner_0dot2_PE_Protect_0dot9_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PENightMare_2_Beta_Anorganix___: Packer
+rule PseudoSigner_0dot2_PENightMare_2_Beta_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PENightMare 2 Beta] --> Anorganix" // Packer name & version
@@ -9120,7 +8519,7 @@ rule PseudoSigner_0dot2_PENightMare_2_Beta_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PEX_0dot99_Anorganix___: Packer
+rule PseudoSigner_0dot2_PEX_0dot99_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PEX 0.99] --> Anorganix" // Packer name & version
@@ -9133,7 +8532,7 @@ rule PseudoSigner_0dot2_PEX_0dot99_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_REALBasic_Anorganix___: Packer
+rule PseudoSigner_0dot2_REALBasic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [REALBasic] --> Anorganix" // Packer name & version
@@ -9146,7 +8545,7 @@ rule PseudoSigner_0dot2_REALBasic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_UPX_0dot6_Anorganix___: Packer
+rule PseudoSigner_0dot2_UPX_0dot6_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [UPX 0.6] --> Anorganix" // Packer name & version
@@ -9159,7 +8558,7 @@ rule PseudoSigner_0dot2_UPX_0dot6_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Watcom_C_Cplusplus_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot2_Watcom_C_Cplusplus_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Watcom C/C++ DLL] --> Anorganix" // Packer name & version
@@ -9912,7 +9311,7 @@ rule PseudoSigner_0dot2_Watcom_C_Cplusplus_DLL_Anorganix___: Packer
     condition:
     	for any of them
 }
-rule VMProtect_v1dot25_PolyTech___: Packer
+rule VMProtect_v1dot25_PolyTech : Packer
 {
     meta:
         name = "VMProtect v1.25 --> PolyTech" // Packer name & version
@@ -10867,7 +10266,7 @@ rule VMProtect_v1dot25_PolyTech___: Packer
     condition:
     	for any of them
 }
-rule VMProtect_v1dot25_PolyTech___: Packer
+rule VMProtect_v1dot25_PolyTech : Packer
 {
     meta:
         name = "VMProtect v1.25 --> PolyTech" // Packer name & version
@@ -11082,7 +10481,7 @@ rule VMProtect_v1dot25_PolyTech___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule dotBJFnt_v1dot3___: Packer
+rule dotBJFnt_v1dot3 : Packer
 {
     meta:
         name = ".BJFnt v1.3" // Packer name & version
@@ -11095,7 +10494,7 @@ rule dotBJFnt_v1dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule 624_Six_to_Four_v1dot0___: Packer
+rule 624_Six_to_Four_v1dot0 : Packer
 {
     meta:
         name = "624 (Six to Four) v1.0" // Packer name & version
@@ -11108,7 +10507,7 @@ rule 624_Six_to_Four_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Ady__`s Glue v0dot10 : Packer
+rule Ady_`s Glue v0dot10 : Packer
 {
     meta:
         name = "Ady`s Glue v0.10" // Packer name & version
@@ -11121,7 +10520,7 @@ rule Ady__`s Glue v0dot10 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AHPack_0dot1_FEUERRADER___: Packer
+rule AHPack_0dot1_FEUERRADER : Packer
 {
     meta:
         name = "AHPack 0.1 -> FEUERRADER" // Packer name & version
@@ -11134,7 +10533,7 @@ rule AHPack_0dot1_FEUERRADER___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Alex_Protector_v1dot0_Alex___: Packer
+rule Alex_Protector_v1dot0_Alex : Packer
 {
     meta:
         name = "Alex Protector v1.0 -> Alex" // Packer name & version
@@ -11147,7 +10546,7 @@ rule Alex_Protector_v1dot0_Alex___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Alloy_v1dotxdot2000___: Packer
+rule Alloy_v1dotxdot2000 : Packer
 {
     meta:
         name = "Alloy v1.x.2000" // Packer name & version
@@ -11160,7 +10559,7 @@ rule Alloy_v1dotxdot2000___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Anticrack_Software_Protector_v1dot09_ACProtect___: Packer
+rule Anticrack_Software_Protector_v1dot09_ACProtect : Packer
 {
     meta:
         name = "Anticrack Software Protector v1.09 (ACProtect)" // Packer name & version
@@ -11173,7 +10572,7 @@ rule Anticrack_Software_Protector_v1dot09_ACProtect___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule aPack_v0dot82___: Packer
+rule aPack_v0dot82 : Packer
 {
     meta:
         name = "aPack v0.82" // Packer name & version
@@ -11186,7 +10585,7 @@ rule aPack_v0dot82___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot50b3___: Packer
+rule Armadillo_v2dot50b3 : Packer
 {
     meta:
         name = "Armadillo v2.50b3" // Packer name & version
@@ -11199,7 +10598,7 @@ rule Armadillo_v2dot50b3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot52___: Packer
+rule Armadillo_v2dot52 : Packer
 {
     meta:
         name = "Armadillo v2.52" // Packer name & version
@@ -11212,7 +10611,7 @@ rule Armadillo_v2dot52___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot52_beta2___: Packer
+rule Armadillo_v2dot52_beta2 : Packer
 {
     meta:
         name = "Armadillo v2.52 beta2" // Packer name & version
@@ -11225,7 +10624,7 @@ rule Armadillo_v2dot52_beta2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot53___: Packer
+rule Armadillo_v2dot53 : Packer
 {
     meta:
         name = "Armadillo v2.53" // Packer name & version
@@ -11238,7 +10637,7 @@ rule Armadillo_v2dot53___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot60___: Packer
+rule Armadillo_v2dot60 : Packer
 {
     meta:
         name = "Armadillo v2.60" // Packer name & version
@@ -11251,7 +10650,7 @@ rule Armadillo_v2dot60___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot60a___: Packer
+rule Armadillo_v2dot60a : Packer
 {
     meta:
         name = "Armadillo v2.60a" // Packer name & version
@@ -11264,7 +10663,7 @@ rule Armadillo_v2dot60a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot60b1___: Packer
+rule Armadillo_v2dot60b1 : Packer
 {
     meta:
         name = "Armadillo v2.60b1" // Packer name & version
@@ -11277,7 +10676,7 @@ rule Armadillo_v2dot60b1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot60b2___: Packer
+rule Armadillo_v2dot60b2 : Packer
 {
     meta:
         name = "Armadillo v2.60b2" // Packer name & version
@@ -11290,7 +10689,7 @@ rule Armadillo_v2dot60b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot60c___: Packer
+rule Armadillo_v2dot60c : Packer
 {
     meta:
         name = "Armadillo v2.60c" // Packer name & version
@@ -11303,7 +10702,7 @@ rule Armadillo_v2dot60c___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot61___: Packer
+rule Armadillo_v2dot61 : Packer
 {
     meta:
         name = "Armadillo v2.61" // Packer name & version
@@ -11316,7 +10715,7 @@ rule Armadillo_v2dot61___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot65b1___: Packer
+rule Armadillo_v2dot65b1 : Packer
 {
     meta:
         name = "Armadillo v2.65b1" // Packer name & version
@@ -11329,7 +10728,7 @@ rule Armadillo_v2dot65b1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot75a___: Packer
+rule Armadillo_v2dot75a : Packer
 {
     meta:
         name = "Armadillo v2.75a" // Packer name & version
@@ -11342,7 +10741,7 @@ rule Armadillo_v2dot75a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot85___: Packer
+rule Armadillo_v2dot85 : Packer
 {
     meta:
         name = "Armadillo v2.85" // Packer name & version
@@ -11355,7 +10754,7 @@ rule Armadillo_v2dot85___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dotxx_CopyMem_II___: Packer
+rule Armadillo_v2dotxx_CopyMem_II : Packer
 {
     meta:
         name = "Armadillo v2.xx (CopyMem II)" // Packer name & version
@@ -11368,7 +10767,7 @@ rule Armadillo_v2dotxx_CopyMem_II___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot03___: Packer
+rule ASPack_v1dot08dot03 : Packer
 {
     meta:
         name = "ASPack v1.08.03" // Packer name & version
@@ -11381,7 +10780,7 @@ rule ASPack_v1dot08dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dotx___: Packer
+rule ASPack_v1dot08dotx : Packer
 {
     meta:
         name = "ASPack v1.08.x" // Packer name & version
@@ -11394,7 +10793,7 @@ rule ASPack_v1dot08dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot11b___: Packer
+rule ASPack_v2dot11b : Packer
 {
     meta:
         name = "ASPack v2.11b" // Packer name & version
@@ -11407,7 +10806,7 @@ rule ASPack_v2dot11b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot11c___: Packer
+rule ASPack_v2dot11c : Packer
 {
     meta:
         name = "ASPack v2.11c" // Packer name & version
@@ -11420,7 +10819,7 @@ rule ASPack_v2dot11c___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot12___: Packer
+rule ASPack_v2dot12 : Packer
 {
     meta:
         name = "ASPack v2.12" // Packer name & version
@@ -11433,7 +10832,7 @@ rule ASPack_v2dot12___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot2_Alexey_Solodovnikov_h1___: Packer
+rule ASProtect_v1dot2_Alexey_Solodovnikov_h1 : Packer
 {
     meta:
         name = "ASProtect v1.2 -> Alexey Solodovnikov (h1)" // Packer name & version
@@ -11446,7 +10845,7 @@ rule ASProtect_v1dot2_Alexey_Solodovnikov_h1___: Packer
     condition:
     	for any of them
 }
-rule ASProtect_V2dotX_DLL_Alexey_Solodovnikov___: Packer
+rule ASProtect_V2dotX_DLL_Alexey_Solodovnikov : Packer
 {
     meta:
         name = "ASProtect V2.X DLL -> Alexey Solodovnikov" // Packer name & version
@@ -11459,7 +10858,7 @@ rule ASProtect_V2dotX_DLL_Alexey_Solodovnikov___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AVPACK_v1dot20___: Packer
+rule AVPACK_v1dot20 : Packer
 {
     meta:
         name = "AVPACK v1.20" // Packer name & version
@@ -11472,7 +10871,7 @@ rule AVPACK_v1dot20___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BamBam_v0dot01___: Packer
+rule BamBam_v0dot01 : Packer
 {
     meta:
         name = "BamBam v0.01" // Packer name & version
@@ -11485,7 +10884,7 @@ rule BamBam_v0dot01___: Packer
     condition:
     	for any of them
 }
-rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch" // Packer name & version
@@ -11498,7 +10897,7 @@ rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch" // Packer name & version
@@ -11511,7 +10910,7 @@ rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch" // Packer name & version
@@ -11524,7 +10923,7 @@ rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 (DLL) -> BeRo / Farbrausch" // Packer name & version
@@ -11537,7 +10936,7 @@ rule BeRoEXEPacker_v1dot00_DLL_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_V1dot00_BeRo___: Packer
+rule BeRoEXEPacker_V1dot00_BeRo : Packer
 {
     meta:
         name = "BeRoEXEPacker V1.00 -> BeRo" // Packer name & version
@@ -11550,7 +10949,7 @@ rule BeRoEXEPacker_V1dot00_BeRo___: Packer
     condition:
     	for any of them
 }
-rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 -> BeRo / Farbrausch" // Packer name & version
@@ -11563,7 +10962,7 @@ rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 -> BeRo / Farbrausch" // Packer name & version
@@ -11576,7 +10975,7 @@ rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_DLL_LZMA_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_DLL_LZMA_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 DLL [LZMA] -> BeRo / Farbrausch" // Packer name & version
@@ -11589,7 +10988,7 @@ rule BeRoEXEPacker_v1dot00_DLL_LZMA_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_LZMA_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_LZMA_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 [LZMA] -> BeRo / Farbrausch" // Packer name & version
@@ -11602,7 +11001,7 @@ rule BeRoEXEPacker_v1dot00_LZMA_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CA_Visual_Objects_2dot0_2dot5___: Packer
+rule CA_Visual_Objects_2dot0_2dot5 : Packer
 {
     meta:
         name = "CA Visual Objects 2.0 - 2.5" // Packer name & version
@@ -11615,7 +11014,7 @@ rule CA_Visual_Objects_2dot0_2dot5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CAN2EXE_v0dot01___: Packer
+rule CAN2EXE_v0dot01 : Packer
 {
     meta:
         name = "CAN2EXE v0.01" // Packer name & version
@@ -11628,7 +11027,7 @@ rule CAN2EXE_v0dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ChinaProtect_dummy___* SigndotBydotfly : Packer
+rule ChinaProtect_dummy_* SigndotBydotfly : Packer
 {
     meta:
         name = "ChinaProtect -> dummy   * Sign.By.fly" // Packer name & version
@@ -11641,7 +11040,7 @@ rule ChinaProtect_dummy___* SigndotBydotfly : Packer
     condition:
     	for any of them
 }
-rule CodeCrypt_v0dot164___: Packer
+rule CodeCrypt_v0dot164 : Packer
 {
     meta:
         name = "CodeCrypt v0.164" // Packer name & version
@@ -11654,7 +11053,7 @@ rule CodeCrypt_v0dot164___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule COMPACK_v4dot5_2___: Packer
+rule COMPACK_v4dot5_2 : Packer
 {
     meta:
         name = "COMPACK v4.5 (2)" // Packer name & version
@@ -11667,7 +11066,7 @@ rule COMPACK_v4dot5_2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule COMPACK_v5dot1___: Packer
+rule COMPACK_v5dot1 : Packer
 {
     meta:
         name = "COMPACK v5.1" // Packer name & version
@@ -11680,7 +11079,7 @@ rule COMPACK_v5dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CopyControl_v3dot03___: Packer
+rule CopyControl_v3dot03 : Packer
 {
     meta:
         name = "CopyControl v3.03" // Packer name & version
@@ -11693,7 +11092,7 @@ rule CopyControl_v3dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Cracked_by_AutoHack_1___: Packer
+rule Cracked_by_AutoHack_1 : Packer
 {
     meta:
         name = "Cracked by AutoHack (1)" // Packer name & version
@@ -11706,7 +11105,7 @@ rule Cracked_by_AutoHack_1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Cracked_by_Autohack_2___: Packer
+rule Cracked_by_Autohack_2 : Packer
 {
     meta:
         name = "Cracked by Autohack (2)" // Packer name & version
@@ -11719,7 +11118,7 @@ rule Cracked_by_Autohack_2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_PE___: Packer
+rule Crunch_PE : Packer
 {
     meta:
         name = "Crunch/PE" // Packer name & version
@@ -11732,7 +11131,7 @@ rule Crunch_PE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_PE_v2dot0dotxdotx___: Packer
+rule Crunch_PE_v2dot0dotxdotx : Packer
 {
     meta:
         name = "Crunch/PE v2.0.x.x" // Packer name & version
@@ -11745,7 +11144,7 @@ rule Crunch_PE_v2dot0dotxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_PE_v4dot0___: Packer
+rule Crunch_PE_v4dot0 : Packer
 {
     meta:
         name = "Crunch/PE v4.0" // Packer name & version
@@ -11758,7 +11157,7 @@ rule Crunch_PE_v4dot0___: Packer
     condition:
     	for any of them
 }
-rule Crypto_Lock_v2dot02__Eng__Ryan_Thian___: Packer
+rule Crypto_Lock_v2dot02_Eng_Ryan_Thian : Packer
 {
     meta:
         name = "Crypto-Lock v2.02 (Eng) -> Ryan Thian" // Packer name & version
@@ -11771,7 +11170,7 @@ rule Crypto_Lock_v2dot02__Eng__Ryan_Thian___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DAEMON_Protect_v0dot6dot7___: Packer
+rule DAEMON_Protect_v0dot6dot7 : Packer
 {
     meta:
         name = "DAEMON Protect v0.6.7" // Packer name & version
@@ -11784,7 +11183,7 @@ rule DAEMON_Protect_v0dot6dot7___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DBPE_v1dot53___: Packer
+rule DBPE_v1dot53 : Packer
 {
     meta:
         name = "DBPE v1.53" // Packer name & version
@@ -11797,20 +11196,7 @@ rule DBPE_v1dot53___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DBPE_v2dot10___: Packer
-{
-    meta:
-        name = "DBPE v2.10" // Packer name & version
-        source = "http://research.pandasecurity.com/blogs/images/userdb.txt" // Original data source
-        date_added = "2012/07/17"
- 
-    strings:
-        $1 = { EB 20 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 9C 55 57 56 52 51 53 9C E8 ?? ?? ?? ?? 5D 81 ED ?? ?? ?? ?? EB 58 75 73 65 72 33 32 2E 64 6C 6C ?? 4D 65 73 73 61 67 65 42 6F 78 41 ?? 6B 65 72 6E 65 6C }
-
-    condition:
-        for any of them : ($ at entrypoint)
-}
-rule DBPE_v2dot33___: Packer
+rule DBPE_v2dot33 : Packer
 {
     meta:
         name = "DBPE v2.33" // Packer name & version
@@ -11823,7 +11209,7 @@ rule DBPE_v2dot33___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DEF_v1dot0___: Packer
+rule DEF_v1dot0 : Packer
 {
     meta:
         name = "DEF v1.0" // Packer name & version
@@ -11836,7 +11222,7 @@ rule DEF_v1dot0___: Packer
     condition:
     	for any of them
 }
-rule DIET_v1dot00__v1dot00d___: Packer
+rule DIET_v1dot00_v1dot00d : Packer
 {
     meta:
         name = "DIET v1.00, v1.00d" // Packer name & version
@@ -11849,7 +11235,7 @@ rule DIET_v1dot00__v1dot00d___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DIET_v1dot02b__v1dot10a____v1dot20_: Packer
+rule DIET_v1dot02b_v1dot10a_v1dot20 : Packer
 {
     meta:
         name = "DIET v1.02b, v1.10a, v1.20" // Packer name & version
@@ -11862,7 +11248,7 @@ rule DIET_v1dot02b__v1dot10a____v1dot20_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Ding_Boys_PE___lock_Phantasm_v1dot5b3_: Packer
+rule Ding_Boys_PE_lock_Phantasm_v1dot5b3 : Packer
 {
     meta:
         name = "Ding Boy's PE-lock Phantasm v1.5b3" // Packer name & version
@@ -11875,7 +11261,7 @@ rule Ding_Boys_PE___lock_Phantasm_v1dot5b3_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DOS32_vdot3dot3_DOS_Extender_and_Loader___: Packer
+rule DOS32_vdot3dot3_DOS_Extender_and_Loader : Packer
 {
     meta:
         name = "DOS32 v.3.3 DOS-Extender and Loader" // Packer name & version
@@ -11888,7 +11274,7 @@ rule DOS32_vdot3dot3_DOS_Extender_and_Loader___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Dropper_Creator_V0dot1_Conflict___: Packer
+rule Dropper_Creator_V0dot1_Conflict : Packer
 {
     meta:
         name = "Dropper Creator V0.1 -> Conflict" // Packer name & version
@@ -11901,7 +11287,7 @@ rule Dropper_Creator_V0dot1_Conflict___: Packer
     condition:
     	for any of them
 }
-rule dUP_v2dotx_Patcher_wwwdotdiablo2oo2dotcjbdotnet___: Packer
+rule dUP_v2dotx_Patcher_wwwdotdiablo2oo2dotcjbdotnet : Packer
 {
     meta:
         name = "dUP v2.x Patcher --> www.diablo2oo2.cjb.net" // Packer name & version
@@ -11914,7 +11300,7 @@ rule dUP_v2dotx_Patcher_wwwdotdiablo2oo2dotcjbdotnet___: Packer
     condition:
     	for any of them
 }
-rule dUP2_diablo2oo2___: Packer
+rule dUP2_diablo2oo2 : Packer
 {
     meta:
         name = "dUP2 -> diablo2oo2" // Packer name & version
@@ -11927,7 +11313,7 @@ rule dUP2_diablo2oo2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EEXE_Version_1dot12___: Packer
+rule EEXE_Version_1dot12 : Packer
 {
     meta:
         name = "EEXE Version 1.12" // Packer name & version
@@ -11940,7 +11326,7 @@ rule EEXE_Version_1dot12___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ENIGMA_Protector_V1dot12_Sukhov_Vladimir___: Packer
+rule ENIGMA_Protector_V1dot12_Sukhov_Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector V1.12-> Sukhov Vladimir" // Packer name & version
@@ -11953,7 +11339,7 @@ rule ENIGMA_Protector_V1dot12_Sukhov_Vladimir___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exact_Audio_Copy___: Packer
+rule Exact_Audio_Copy : Packer
 {
     meta:
         name = "Exact Audio Copy" // Packer name & version
@@ -11966,7 +11352,7 @@ rule Exact_Audio_Copy___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Packer_v7dot0_by_TurboPower_Software___: Packer
+rule EXE_Packer_v7dot0_by_TurboPower_Software : Packer
 {
     meta:
         name = "EXE Packer v7.0 by TurboPower Software" // Packer name & version
@@ -11979,7 +11365,7 @@ rule EXE_Packer_v7dot0_by_TurboPower_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Stealth_v1dot1___: Packer
+rule EXE_Stealth_v1dot1 : Packer
 {
     meta:
         name = "EXE Stealth v1.1" // Packer name & version
@@ -11992,7 +11378,7 @@ rule EXE_Stealth_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE2COM_regular___: Packer
+rule EXE2COM_regular : Packer
 {
     meta:
         name = "EXE2COM (regular)" // Packer name & version
@@ -12005,7 +11391,7 @@ rule EXE2COM_regular___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE2COM_With_CRC_check___: Packer
+rule EXE2COM_With_CRC_check : Packer
 {
     meta:
         name = "EXE2COM (With CRC check)" // Packer name & version
@@ -12018,7 +11404,7 @@ rule EXE2COM_With_CRC_check___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE32Pack_v1dot36___: Packer
+rule EXE32Pack_v1dot36 : Packer
 {
     meta:
         name = "EXE32Pack v1.36" // Packer name & version
@@ -12031,7 +11417,7 @@ rule EXE32Pack_v1dot36___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE32Pack_v1dot37___: Packer
+rule EXE32Pack_v1dot37 : Packer
 {
     meta:
         name = "EXE32Pack v1.37" // Packer name & version
@@ -12044,7 +11430,7 @@ rule EXE32Pack_v1dot37___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE32Pack_v1dot38___: Packer
+rule EXE32Pack_v1dot38 : Packer
 {
     meta:
         name = "EXE32Pack v1.38" // Packer name & version
@@ -12057,7 +11443,7 @@ rule EXE32Pack_v1dot38___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE32Pack_v1dot39___: Packer
+rule EXE32Pack_v1dot39 : Packer
 {
     meta:
         name = "EXE32Pack v1.39" // Packer name & version
@@ -12070,7 +11456,7 @@ rule EXE32Pack_v1dot39___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_2dot1dot17_Strongbit_SoftComplete_Development_h____: Packer
+rule EXECryptor_2dot1dot17_Strongbit_SoftComplete_Development_h : Packer
 {
     meta:
         name = "EXECryptor 2.1.17 -> Strongbit/SoftComplete Development (h)" // Packer name & version
@@ -12083,7 +11469,7 @@ rule EXECryptor_2dot1dot17_Strongbit_SoftComplete_Development_h____: Packer
     condition:
     	for any of them
 }
-rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h2____: Packer
+rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h2 : Packer
 {
     meta:
         name = "EXECryptor 2.2.4 -> Strongbit/SoftComplete Development (h2)" // Packer name & version
@@ -12096,7 +11482,7 @@ rule EXECryptor_2dot2dot4_Strongbit_SoftComplete_Development_h2____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_2dotx_SoftComplete_Developement___: Packer
+rule EXECryptor_2dotx_SoftComplete_Developement : Packer
 {
     meta:
         name = "EXECryptor 2.x -> SoftComplete Developement" // Packer name & version
@@ -12109,7 +11495,7 @@ rule EXECryptor_2dotx_SoftComplete_Developement___: Packer
     condition:
     	for any of them
 }
-rule ExeJoiner_V1dot0_Yoda_f2f___: Packer
+rule ExeJoiner_V1dot0_Yoda_f2f : Packer
 {
     meta:
         name = "ExeJoiner V1.0 -> Yoda f2f" // Packer name & version
@@ -12122,7 +11508,7 @@ rule ExeJoiner_V1dot0_Yoda_f2f___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXEPACK_v4dot05__v4dot06___: Packer
+rule EXEPACK_v4dot05_v4dot06 : Packer
 {
     meta:
         name = "EXEPACK v4.05, v4.06" // Packer name & version
@@ -12135,7 +11521,7 @@ rule EXEPACK_v4dot05__v4dot06___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXERefactor_V0dot1_random___: Packer
+rule EXERefactor_V0dot1_random : Packer
 {
     meta:
         name = "EXERefactor V0.1 -> random" // Packer name & version
@@ -12148,7 +11534,7 @@ rule EXERefactor_V0dot1_random___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeSmasher_vxdotx___: Packer
+rule ExeSmasher_vxdotx : Packer
 {
     meta:
         name = "ExeSmasher vx.x" // Packer name & version
@@ -12161,7 +11547,7 @@ rule ExeSmasher_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeTools_COM2EXE___: Packer
+rule ExeTools_COM2EXE : Packer
 {
     meta:
         name = "ExeTools COM2EXE" // Packer name & version
@@ -12174,7 +11560,7 @@ rule ExeTools_COM2EXE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_1dot2_CGSoftLabs___: Packer
+rule eXPressor_1dot2_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor 1.2 -> CGSoftLabs" // Packer name & version
@@ -12187,7 +11573,7 @@ rule eXPressor_1dot2_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_1dot2dot0_Beta_PE_Packer___: Packer
+rule eXPressor_1dot2dot0_Beta_PE_Packer : Packer
 {
     meta:
         name = "eXPressor 1.2.0 Beta PE Packer" // Packer name & version
@@ -12200,7 +11586,7 @@ rule eXPressor_1dot2dot0_Beta_PE_Packer___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_v1dot2dot0b___: Packer
+rule eXPressor_v1dot2dot0b : Packer
 {
     meta:
         name = "eXPressor v1.2.0b" // Packer name & version
@@ -12213,7 +11599,7 @@ rule eXPressor_v1dot2dot0b___: Packer
     condition:
     	for any of them
 }
-rule eXPressor_v1dot3_CGSoftLabs_h___: Packer
+rule eXPressor_v1dot3_CGSoftLabs_h : Packer
 {
     meta:
         name = "eXPressor v1.3 -> CGSoftLabs (h)" // Packer name & version
@@ -12226,7 +11612,7 @@ rule eXPressor_v1dot3_CGSoftLabs_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_v1dot4_CGSoftLabs_h___: Packer
+rule eXPressor_v1dot4_CGSoftLabs_h : Packer
 {
     meta:
         name = "eXPressor v1.4 -> CGSoftLabs (h)" // Packer name & version
@@ -12239,7 +11625,7 @@ rule eXPressor_v1dot4_CGSoftLabs_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule E__ÓÎµØ´ø_ ÔÂºÚ·ç¸ß : Packer
+rule E_oiu0_o_OAoU_c_B : Packer
 {
     meta:
         name = "EÓÎµØ´ø-> ÔÂºÚ·ç¸ß" // Packer name & version
@@ -12252,7 +11638,7 @@ rule E__ÓÎµØ´ø_ ÔÂºÚ·ç¸ß : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FACRYPT_v1dot0___: Packer
+rule FACRYPT_v1dot0 : Packer
 {
     meta:
         name = "FACRYPT v1.0" // Packer name & version
@@ -12265,7 +11651,7 @@ rule FACRYPT_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Feokt___: Packer
+rule Feokt : Packer
 {
     meta:
         name = "Feokt" // Packer name & version
@@ -12278,7 +11664,7 @@ rule Feokt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FreeBasic_0dot14___: Packer
+rule FreeBasic_0dot14 : Packer
 {
     meta:
         name = "FreeBasic 0.14" // Packer name & version
@@ -12291,7 +11677,7 @@ rule FreeBasic_0dot14___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot1___: Packer
+rule FSG_v1dot1 : Packer
 {
     meta:
         name = "FSG v1.1" // Packer name & version
@@ -12304,7 +11690,7 @@ rule FSG_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____bart_xt_WinRAR_SFX_: Packer
+rule FSG_v1dot10_Eng_bart_xt_WinRAR_SFX : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> bart/xt -> WinRAR-SFX" // Packer name & version
@@ -12317,7 +11703,7 @@ rule FSG_v1dot10_Eng_____bart_xt_WinRAR_SFX_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____bart_xt_WinRAR_SFX_: Packer
+rule FSG_v1dot10_Eng_bart_xt_WinRAR_SFX : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> bart/xt -> WinRAR-SFX" // Packer name & version
@@ -12330,7 +11716,7 @@ rule FSG_v1dot10_Eng_____bart_xt_WinRAR_SFX_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Cplusplus_1999__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Cplusplus_1999 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland C++ 1999)" // Packer name & version
@@ -12343,7 +11729,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Cplusplus_1999__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Cplusplus__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland C++)" // Packer name & version
@@ -12356,7 +11742,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Cplusplus__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Delphi_Borland_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -12369,7 +11755,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Delphi_Borland_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Borland C++)" // Packer name & version
@@ -12382,7 +11768,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Borland_Cplusplus__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus___ASM__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Delphi_Microsoft_Visual_Cplusplus_ASM : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++ / ASM)" // Packer name & version
@@ -12395,7 +11781,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Delphi_Microsoft_Visual_Cplusplus : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)" // Packer name & version
@@ -12408,7 +11794,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus__
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus_x_: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Delphi_Microsoft_Visual_Cplusplus_x : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi / Microsoft Visual C++)x" // Packer name & version
@@ -12421,7 +11807,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi___Microsoft_Visual_Cplusplus_x
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi_2dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Borland_Delphi_2dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Borland Delphi 2.0)" // Packer name & version
@@ -12434,7 +11820,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Borland_Delphi_2dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__MASM32___TASM32___Microsoft_Visual_Basic__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_MASM32_TASM32_Microsoft_Visual_Basic : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32 / Microsoft Visual Basic)" // Packer name & version
@@ -12447,7 +11833,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__MASM32___TASM32___Microsoft_Visual_Basic__: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__MASM32___TASM32__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_MASM32_TASM32 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32 / TASM32)" // Packer name & version
@@ -12460,7 +11846,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__MASM32___TASM32__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__MASM32__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_MASM32 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (MASM32)" // Packer name & version
@@ -12473,7 +11859,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__MASM32__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Basic___MASM32__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Basic_MASM32 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual Basic / MASM32)" // Packer name & version
@@ -12486,7 +11872,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Basic___MASM32__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Basic_5dot0___6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Basic_5dot0_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual Basic 5.0 / 6.0)" // Packer name & version
@@ -12499,7 +11885,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Basic_5dot0___6dot0__: Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_4dotx___LCC_Win32_1dotx__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_4dotx_LCC_Win32_1dotx : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 4.x / LCC Win32 1.x)" // Packer name & version
@@ -12512,7 +11898,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_4dotx___LCC_Win32_
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_5dot0___6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_5dot0_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 5.0 / 6.0)" // Packer name & version
@@ -12525,7 +11911,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_5dot0___6dot0__: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0___ASM__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0_ASM : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0 / ASM)" // Packer name & version
@@ -12538,7 +11924,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0___AS
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -12551,7 +11937,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -12564,7 +11950,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -12577,7 +11963,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -12590,7 +11976,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___ASM__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_ASM : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / ASM)" // Packer name & version
@@ -12603,7 +11989,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___ASM__: Pac
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -12616,7 +12002,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -12629,7 +12015,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -12642,7 +12028,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -12655,7 +12041,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -12668,7 +12054,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -12681,7 +12067,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -12694,7 +12080,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -12707,7 +12093,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot33_Eng_dulek_xt___: Packer
+rule FSG_v1dot33_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.33 (Eng) -> dulek/xt" // Packer name & version
@@ -12720,7 +12106,7 @@ rule FSG_v1dot33_Eng_dulek_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v2dot0___: Packer
+rule FSG_v2dot0 : Packer
 {
     meta:
         name = "FSG v2.0" // Packer name & version
@@ -12733,7 +12119,7 @@ rule FSG_v2dot0___: Packer
     condition:
     	for any of them
 }
-rule Fusion_1dot0_jaNooNi___: Packer
+rule Fusion_1dot0_jaNooNi : Packer
 {
     meta:
         name = "Fusion 1.0 -> jaNooNi" // Packer name & version
@@ -12746,7 +12132,7 @@ rule Fusion_1dot0_jaNooNi___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule GHF_Protector_pack_only_GPcH___: Packer
+rule GHF_Protector_pack_only_GPcH : Packer
 {
     meta:
         name = "GHF Protector (pack only) -> GPcH" // Packer name & version
@@ -12759,7 +12145,7 @@ rule GHF_Protector_pack_only_GPcH___: Packer
     condition:
     	for any of them
 }
-rule GHF_Protector_GPcH___: Packer
+rule GHF_Protector_GPcH : Packer
 {
     meta:
         name = "GHF Protector / GPcH" // Packer name & version
@@ -12772,7 +12158,7 @@ rule GHF_Protector_GPcH___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HACKSTOP_v1dot10__v1dot11___: Packer
+rule HACKSTOP_v1dot10_v1dot11 : Packer
 {
     meta:
         name = "HACKSTOP v1.10, v1.11" // Packer name & version
@@ -12785,7 +12171,7 @@ rule HACKSTOP_v1dot10__v1dot11___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HACKSTOP_v1dot11c___: Packer
+rule HACKSTOP_v1dot11c : Packer
 {
     meta:
         name = "HACKSTOP v1.11c" // Packer name & version
@@ -12798,7 +12184,7 @@ rule HACKSTOP_v1dot11c___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HACKSTOP_v1dot13___: Packer
+rule HACKSTOP_v1dot13 : Packer
 {
     meta:
         name = "HACKSTOP v1.13" // Packer name & version
@@ -12811,7 +12197,7 @@ rule HACKSTOP_v1dot13___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HASP_HL_Protection_V1dotX_Aladdin___: Packer
+rule HASP_HL_Protection_V1dotX_Aladdin : Packer
 {
     meta:
         name = "HASP HL Protection V1.X -> Aladdin" // Packer name & version
@@ -12824,7 +12210,7 @@ rule HASP_HL_Protection_V1dotX_Aladdin___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HPA___: Packer
+rule HPA : Packer
 {
     meta:
         name = "HPA" // Packer name & version
@@ -12837,7 +12223,7 @@ rule HPA___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Hyings_PE___Armor_0dot75dotexe_Hying__CCG___h__: Packer
+rule Hyings_PE_Armor_0dot75dotexe_Hying_CCG_h : Packer
 {
     meta:
         name = "Hying's PE-Armor 0.75.exe -> Hying [CCG] (h)" // Packer name & version
@@ -12850,7 +12236,7 @@ rule Hyings_PE___Armor_0dot75dotexe_Hying__CCG___h__: Packer
     condition:
     	for any of them
 }
-rule hyings_PEArmor_V0dot76_hying___: Packer
+rule hyings_PEArmor_V0dot76_hying : Packer
 {
     meta:
         name = "hying's PEArmor V0.76 -> hying" // Packer name & version
@@ -12863,7 +12249,7 @@ rule hyings_PEArmor_V0dot76_hying___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule IMP_Packer_1dot0_Mahdi_Hezavehi____IMPOSTER___h__: Packer
+rule IMP_Packer_1dot0_Mahdi_Hezavehi_IMPOSTER_h : Packer
 {
     meta:
         name = "IMP-Packer 1.0 -> Mahdi Hezavehi [IMPOSTER] (h)" // Packer name & version
@@ -12876,7 +12262,7 @@ rule IMP_Packer_1dot0_Mahdi_Hezavehi____IMPOSTER___h__: Packer
     condition:
     	for any of them
 }
-rule IMPostor_Pack_1dot0_Mahdi_Hezavehi___: Packer
+rule IMPostor_Pack_1dot0_Mahdi_Hezavehi : Packer
 {
     meta:
         name = "IMPostor Pack 1.0 -> Mahdi Hezavehi" // Packer name & version
@@ -12889,7 +12275,7 @@ rule IMPostor_Pack_1dot0_Mahdi_Hezavehi___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Inno_Setup_Module___: Packer
+rule Inno_Setup_Module : Packer
 {
     meta:
         name = "Inno Setup Module" // Packer name & version
@@ -12902,7 +12288,7 @@ rule Inno_Setup_Module___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Inno_Setup_Module_v2dot0dot18___: Packer
+rule Inno_Setup_Module_v2dot0dot18 : Packer
 {
     meta:
         name = "Inno Setup Module v2.0.18" // Packer name & version
@@ -12915,7 +12301,7 @@ rule Inno_Setup_Module_v2dot0dot18___: Packer
     condition:
     	for any of them
 }
-rule Inno_Setup_Module_v3dot0dot4_beta_v3dot0dot6___v3dot0dot7_: Packer
+rule Inno_Setup_Module_v3dot0dot4_beta_v3dot0dot6_v3dot0dot7 : Packer
 {
     meta:
         name = "Inno Setup Module v3.0.4-beta/v3.0.6/v3.0.7" // Packer name & version
@@ -12928,7 +12314,7 @@ rule Inno_Setup_Module_v3dot0dot4_beta_v3dot0dot6___v3dot0dot7_: Packer
     condition:
     	for any of them
 }
-rule iPB_Protect_0dot1dot3_0dot1dot7_forgot___: Packer
+rule iPB_Protect_0dot1dot3_0dot1dot7_forgot : Packer
 {
     meta:
         name = "iPB Protect 0.1.3 - 0.1.7 -> forgot" // Packer name & version
@@ -12941,7 +12327,7 @@ rule iPB_Protect_0dot1dot3_0dot1dot7_forgot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule JAM_v2dot11___: Packer
+rule JAM_v2dot11 : Packer
 {
     meta:
         name = "JAM v2.11" // Packer name & version
@@ -12954,7 +12340,7 @@ rule JAM_v2dot11___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule JDPack_2dotx_JDPack___: Packer
+rule JDPack_2dotx_JDPack : Packer
 {
     meta:
         name = "JDPack 2.x -> JDPack" // Packer name & version
@@ -12967,7 +12353,7 @@ rule JDPack_2dotx_JDPack___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Krypton_v0dot3___: Packer
+rule Krypton_v0dot3 : Packer
 {
     meta:
         name = "Krypton v0.3" // Packer name & version
@@ -12980,7 +12366,7 @@ rule Krypton_v0dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Krypton_v0dot4___: Packer
+rule Krypton_v0dot4 : Packer
 {
     meta:
         name = "Krypton v0.4" // Packer name & version
@@ -12993,7 +12379,7 @@ rule Krypton_v0dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Krypton_v0dot5___: Packer
+rule Krypton_v0dot5 : Packer
 {
     meta:
         name = "Krypton v0.5" // Packer name & version
@@ -13006,7 +12392,7 @@ rule Krypton_v0dot5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule kryptor_9___: Packer
+rule kryptor_9 : Packer
 {
     meta:
         name = "kryptor 9" // Packer name & version
@@ -13019,7 +12405,7 @@ rule kryptor_9___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LameCrypt_v1dot0___: Packer
+rule LameCrypt_v1dot0 : Packer
 {
     meta:
         name = "LameCrypt v1.0" // Packer name & version
@@ -13032,7 +12418,7 @@ rule LameCrypt_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LCC_Win32_DLL___: Packer
+rule LCC_Win32_DLL : Packer
 {
     meta:
         name = "LCC Win32 DLL" // Packer name & version
@@ -13045,7 +12431,7 @@ rule LCC_Win32_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LTC_v1dot3___: Packer
+rule LTC_v1dot3 : Packer
 {
     meta:
         name = "LTC v1.3" // Packer name & version
@@ -13058,7 +12444,7 @@ rule LTC_v1dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MASM32___: Packer
+rule MASM32 : Packer
 {
     meta:
         name = "MASM32" // Packer name & version
@@ -13071,7 +12457,7 @@ rule MASM32___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Metrowerks_CodeWarrior_v2dot0_GUI___: Packer
+rule Metrowerks_CodeWarrior_v2dot0_GUI : Packer
 {
     meta:
         name = "Metrowerks CodeWarrior v2.0 (GUI)" // Packer name & version
@@ -13084,7 +12470,7 @@ rule Metrowerks_CodeWarrior_v2dot0_GUI___: Packer
     condition:
     	for any of them
 }
-rule Mew_11_SE_v1dot2_Eng_Northfox___: Packer
+rule Mew_11_SE_v1dot2_Eng_Northfox : Packer
 {
     meta:
         name = "Mew 11 SE v1.2 (Eng) -> Northfox" // Packer name & version
@@ -13097,7 +12483,7 @@ rule Mew_11_SE_v1dot2_Eng_Northfox___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MicroJoiner_1dot7_coban2k___: Packer
+rule MicroJoiner_1dot7_coban2k : Packer
 {
     meta:
         name = "MicroJoiner 1.7 -> coban2k" // Packer name & version
@@ -13110,7 +12496,7 @@ rule MicroJoiner_1dot7_coban2k___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_C_1990_1992____: Packer
+rule Microsoft_C_1990_1992 : Packer
 {
     meta:
         name = "Microsoft C (1990/1992)" // Packer name & version
@@ -13123,7 +12509,7 @@ rule Microsoft_C_1990_1992____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Cplusplus_1990_1992____: Packer
+rule Microsoft_Cplusplus_1990_1992 : Packer
 {
     meta:
         name = "Microsoft C++ (1990/1992)" // Packer name & version
@@ -13136,7 +12522,7 @@ rule Microsoft_Cplusplus_1990_1992____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Basic_v5dot0___: Packer
+rule Microsoft_Visual_Basic_v5dot0 : Packer
 {
     meta:
         name = "Microsoft Visual Basic v5.0" // Packer name & version
@@ -13149,7 +12535,7 @@ rule Microsoft_Visual_Basic_v5dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus___: Packer
+rule Microsoft_Visual_Cplusplus : Packer
 {
     meta:
         name = "Microsoft Visual C++" // Packer name & version
@@ -13162,7 +12548,7 @@ rule Microsoft_Visual_Cplusplus___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_6dot0_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_6dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 DLL" // Packer name & version
@@ -13175,7 +12561,7 @@ rule Microsoft_Visual_Cplusplus_6dot0_DLL___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_8dot0___: Packer
+rule Microsoft_Visual_Cplusplus_8dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 8.0" // Packer name & version
@@ -13188,7 +12574,7 @@ rule Microsoft_Visual_Cplusplus_8dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_8dot0____Debug__: Packer
+rule Microsoft_Visual_Cplusplus_8dot0_Debug : Packer
 {
     meta:
         name = "Microsoft Visual C++ 8.0 [Debug]" // Packer name & version
@@ -13201,7 +12587,7 @@ rule Microsoft_Visual_Cplusplus_8dot0____Debug__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus___?dot? : Packer
+rule Microsoft_Visual_Cplusplus_?dot? : Packer
 {
     meta:
         name = "Microsoft Visual C++ ?.?" // Packer name & version
@@ -13214,7 +12600,7 @@ rule Microsoft_Visual_Cplusplus___?dot? : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ DLL" // Packer name & version
@@ -13227,7 +12613,7 @@ rule Microsoft_Visual_Cplusplus_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v4dotx___: Packer
+rule Microsoft_Visual_Cplusplus_v4dotx : Packer
 {
     meta:
         name = "Microsoft Visual C++ v4.x" // Packer name & version
@@ -13240,7 +12626,7 @@ rule Microsoft_Visual_Cplusplus_v4dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v5dot0___: Packer
+rule Microsoft_Visual_Cplusplus_v5dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ v5.0" // Packer name & version
@@ -13253,7 +12639,7 @@ rule Microsoft_Visual_Cplusplus_v5dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v5dot0_v6dot0_MFC____: Packer
+rule Microsoft_Visual_Cplusplus_v5dot0_v6dot0_MFC : Packer
 {
     meta:
         name = "Microsoft Visual C++ v5.0/v6.0 (MFC)" // Packer name & version
@@ -13266,7 +12652,7 @@ rule Microsoft_Visual_Cplusplus_v5dot0_v6dot0_MFC____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v6dot0___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0" // Packer name & version
@@ -13279,7 +12665,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v6dot0_Debug_Version____: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0_Debug_Version : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0 (Debug Version)" // Packer name & version
@@ -13292,7 +12678,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0_Debug_Version____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v6dot0_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0 DLL" // Packer name & version
@@ -13305,7 +12691,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot0___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.0" // Packer name & version
@@ -13318,7 +12704,7 @@ rule Microsoft_Visual_Cplusplus_v7dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot1_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot1_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.1 DLL" // Packer name & version
@@ -13331,7 +12717,7 @@ rule Microsoft_Visual_Cplusplus_v7dot1_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot1_EXE___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot1_EXE : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.1 EXE" // Packer name & version
@@ -13344,7 +12730,7 @@ rule Microsoft_Visual_Cplusplus_v7dot1_EXE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_vxdotx___: Packer
+rule Microsoft_Visual_Cplusplus_vxdotx : Packer
 {
     meta:
         name = "Microsoft Visual C++ vx.x" // Packer name & version
@@ -13357,7 +12743,7 @@ rule Microsoft_Visual_Cplusplus_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_vxdotx_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_vxdotx_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ vx.x DLL" // Packer name & version
@@ -13370,7 +12756,7 @@ rule Microsoft_Visual_Cplusplus_vxdotx_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MingWin32_Dev_C__plusplus_v4dotx__h__: Packer
+rule MingWin32_Dev_C_plusplus_v4dotx_h : Packer
 {
     meta:
         name = "MingWin32 - Dev C++ v4.x (h)" // Packer name & version
@@ -13383,7 +12769,7 @@ rule MingWin32_Dev_C__plusplus_v4dotx__h__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MingWin32_GCC_3dotx___: Packer
+rule MingWin32_GCC_3dotx : Packer
 {
     meta:
         name = "MingWin32 GCC 3.x" // Packer name & version
@@ -13396,7 +12782,7 @@ rule MingWin32_GCC_3dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule modified_HACKSTOP_v1dot11f___: Packer
+rule modified_HACKSTOP_v1dot11f : Packer
 {
     meta:
         name = "modified HACKSTOP v1.11f" // Packer name & version
@@ -13409,7 +12795,7 @@ rule modified_HACKSTOP_v1dot11f___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library_1988__04____: Packer
+rule MS_Run_Time_Library_1988_04 : Packer
 {
     meta:
         name = "MS Run-Time Library 1988 (04)" // Packer name & version
@@ -13422,7 +12808,7 @@ rule MS_Run_Time_Library_1988__04____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library_1992__11____: Packer
+rule MS_Run_Time_Library_1992_11 : Packer
 {
     meta:
         name = "MS Run-Time Library 1992 (11)" // Packer name & version
@@ -13435,7 +12821,7 @@ rule MS_Run_Time_Library_1992__11____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Nakedbind_1dot0_nakedcrew___: Packer
+rule Nakedbind_1dot0_nakedcrew : Packer
 {
     meta:
         name = "Nakedbind 1.0 -> nakedcrew" // Packer name & version
@@ -13448,7 +12834,7 @@ rule Nakedbind_1dot0_nakedcrew___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Name_of_the_Packer_v1dot0___: Packer
+rule Name_of_the_Packer_v1dot0 : Packer
 {
     meta:
         name = "Name of the Packer v1.0" // Packer name & version
@@ -13461,7 +12847,7 @@ rule Name_of_the_Packer_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule nBinder_v3dot6dot1___: Packer
+rule nBinder_v3dot6dot1 : Packer
 {
     meta:
         name = "nBinder v3.6.1" // Packer name & version
@@ -13474,7 +12860,7 @@ rule nBinder_v3dot6dot1___: Packer
     condition:
     	for any of them
 }
-rule NoodleCrypt_v2dot0___: Packer
+rule NoodleCrypt_v2dot0 : Packer
 {
     meta:
         name = "NoodleCrypt v2.0" // Packer name & version
@@ -13487,7 +12873,7 @@ rule NoodleCrypt_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule North_Star_PE_Shrinker_1dot3_Liuxingping___: Packer
+rule North_Star_PE_Shrinker_1dot3_Liuxingping : Packer
 {
     meta:
         name = "North Star PE Shrinker 1.3 -> Liuxingping" // Packer name & version
@@ -13500,7 +12886,7 @@ rule North_Star_PE_Shrinker_1dot3_Liuxingping___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPack_1dot4_by_North_Star_Liu_Xing_Ping___: Packer
+rule NsPack_1dot4_by_North_Star_Liu_Xing_Ping : Packer
 {
     meta:
         name = "NsPack 1.4 by North Star (Liu Xing Ping)" // Packer name & version
@@ -13513,7 +12899,7 @@ rule NsPack_1dot4_by_North_Star_Liu_Xing_Ping___: Packer
     condition:
     	for any of them
 }
-rule NSPack_3dotx_Liu_Xing_Ping___: Packer
+rule NSPack_3dotx_Liu_Xing_Ping : Packer
 {
     meta:
         name = "NSPack 3.x -> Liu Xing Ping" // Packer name & version
@@ -13526,7 +12912,7 @@ rule NSPack_3dotx_Liu_Xing_Ping___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPack_v2dot3_North_Star_h___: Packer
+rule NsPack_v2dot3_North_Star_h : Packer
 {
     meta:
         name = "NsPack v2.3 -> North Star (h)" // Packer name & version
@@ -13539,7 +12925,7 @@ rule NsPack_v2dot3_North_Star_h___: Packer
     condition:
     	for any of them
 }
-rule NsPacK_V3dot0_LiuXingPing___: Packer
+rule NsPacK_V3dot0_LiuXingPing : Packer
 {
     meta:
         name = "NsPacK V3.0 -> LiuXingPing" // Packer name & version
@@ -13552,7 +12938,7 @@ rule NsPacK_V3dot0_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPacK_V3dot1_LiuXingPing___: Packer
+rule NsPacK_V3dot1_LiuXingPing : Packer
 {
     meta:
         name = "NsPacK V3.1 -> LiuXingPing" // Packer name & version
@@ -13565,7 +12951,7 @@ rule NsPacK_V3dot1_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPacK_V3dot3_LiuXingPing___: Packer
+rule NsPacK_V3dot3_LiuXingPing : Packer
 {
     meta:
         name = "NsPacK V3.3 -> LiuXingPing" // Packer name & version
@@ -13578,7 +12964,7 @@ rule NsPacK_V3dot3_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPacK_V3dot4_V3dot5_LiuXingPing___: Packer
+rule NsPacK_V3dot4_V3dot5_LiuXingPing : Packer
 {
     meta:
         name = "NsPacK V3.4-V3.5 -> LiuXingPing" // Packer name & version
@@ -13591,7 +12977,7 @@ rule NsPacK_V3dot4_V3dot5_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPacK_V3dot6_LiuXingPing___: Packer
+rule NsPacK_V3dot6_LiuXingPing : Packer
 {
     meta:
         name = "NsPacK V3.6 -> LiuXingPing" // Packer name & version
@@ -13604,7 +12990,7 @@ rule NsPacK_V3dot6_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPacK_V3dot7_LiuXingPing___: Packer
+rule NsPacK_V3dot7_LiuXingPing : Packer
 {
     meta:
         name = "NsPacK V3.7 -> LiuXingPing" // Packer name & version
@@ -13617,7 +13003,7 @@ rule NsPacK_V3dot7_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Nullsoft_PIMP_Install_System_v1dot3x___: Packer
+rule Nullsoft_PIMP_Install_System_v1dot3x : Packer
 {
     meta:
         name = "Nullsoft PIMP Install System v1.3x" // Packer name & version
@@ -13630,7 +13016,7 @@ rule Nullsoft_PIMP_Install_System_v1dot3x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Nullsoft_PiMP_Install_System_v1dotx___: Packer
+rule Nullsoft_PiMP_Install_System_v1dotx : Packer
 {
     meta:
         name = "Nullsoft PiMP Install System v1.x" // Packer name & version
@@ -13643,7 +13029,7 @@ rule Nullsoft_PiMP_Install_System_v1dotx___: Packer
     condition:
     	for any of them
 }
-rule Pack_Master_v1dot0___: Packer
+rule Pack_Master_v1dot0 : Packer
 {
     meta:
         name = "Pack Master v1.0" // Packer name & version
@@ -13656,7 +13042,7 @@ rule Pack_Master_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packman_0dot0dot0dot1_bubba___: Packer
+rule Packman_0dot0dot0dot1_bubba : Packer
 {
     meta:
         name = "Packman 0.0.0.1 -> bubba" // Packer name & version
@@ -13669,7 +13055,7 @@ rule Packman_0dot0dot0dot1_bubba___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packman_v0dot0dot0dot1___: Packer
+rule Packman_v0dot0dot0dot1 : Packer
 {
     meta:
         name = "Packman v0.0.0.1" // Packer name & version
@@ -13682,7 +13068,7 @@ rule Packman_v0dot0dot0dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packman_V1dot0_Brandon_LaCombe___: Packer
+rule Packman_V1dot0_Brandon_LaCombe : Packer
 {
     meta:
         name = "Packman V1.0 -> Brandon LaCombe" // Packer name & version
@@ -13695,7 +13081,7 @@ rule Packman_V1dot0_Brandon_LaCombe___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PACKWIN_v1dot01p___: Packer
+rule PACKWIN_v1dot01p : Packer
 {
     meta:
         name = "PACKWIN v1.01p" // Packer name & version
@@ -13708,7 +13094,7 @@ rule PACKWIN_v1dot01p___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PassLock_2000_v1dot0_Eng_Moonlight_Software___: Packer
+rule PassLock_2000_v1dot0_Eng_Moonlight_Software : Packer
 {
     meta:
         name = "PassLock 2000 v1.0 (Eng) -> Moonlight-Software" // Packer name & version
@@ -13721,7 +13107,7 @@ rule PassLock_2000_v1dot0_Eng_Moonlight_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Password_Protector_c_MiniSoft_1992___: Packer
+rule Password_Protector_c_MiniSoft_1992 : Packer
 {
     meta:
         name = "Password Protector (c) MiniSoft 1992" // Packer name & version
@@ -13734,7 +13120,7 @@ rule Password_Protector_c_MiniSoft_1992___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PC_Shrinker_v0dot71___: Packer
+rule PC_Shrinker_v0dot71 : Packer
 {
     meta:
         name = "PC Shrinker v0.71" // Packer name & version
@@ -13747,7 +13133,7 @@ rule PC_Shrinker_v0dot71___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PC_Guard_v3dot03d__v3dot05d___: Packer
+rule PC_Guard_v3dot03d_v3dot05d : Packer
 {
     meta:
         name = "PC-Guard v3.03d, v3.05d" // Packer name & version
@@ -13760,7 +13146,7 @@ rule PC_Guard_v3dot03d__v3dot05d___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Crypt_1dot5_BitShape_Software___: Packer
+rule PE_Crypt_1dot5_BitShape_Software : Packer
 {
     meta:
         name = "PE Crypt 1.5 -> BitShape Software" // Packer name & version
@@ -13773,7 +13159,7 @@ rule PE_Crypt_1dot5_BitShape_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Diminisher_v0dot1___: Packer
+rule PE_Diminisher_v0dot1 : Packer
 {
     meta:
         name = "PE Diminisher v0.1" // Packer name & version
@@ -13786,7 +13172,7 @@ rule PE_Diminisher_v0dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Intro_v1dot0___: Packer
+rule PE_Intro_v1dot0 : Packer
 {
     meta:
         name = "PE Intro v1.0" // Packer name & version
@@ -13799,7 +13185,7 @@ rule PE_Intro_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Password_v0dot2_SMT_SMF___: Packer
+rule PE_Password_v0dot2_SMT_SMF : Packer
 {
     meta:
         name = "PE Password v0.2 SMT/SMF" // Packer name & version
@@ -13812,7 +13198,7 @@ rule PE_Password_v0dot2_SMT_SMF___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Protect_v0dot9___: Packer
+rule PE_Protect_v0dot9 : Packer
 {
     meta:
         name = "PE Protect v0.9" // Packer name & version
@@ -13825,7 +13211,7 @@ rule PE_Protect_v0dot9___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEBundle_v0dot2_v2dot0x___: Packer
+rule PEBundle_v0dot2_v2dot0x : Packer
 {
     meta:
         name = "PEBundle v0.2 - v2.0x" // Packer name & version
@@ -13838,7 +13224,7 @@ rule PEBundle_v0dot2_v2dot0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEBundle_v2dot0b5_v2dot3___: Packer
+rule PEBundle_v2dot0b5_v2dot3 : Packer
 {
     meta:
         name = "PEBundle v2.0b5 - v2.3" // Packer name & version
@@ -13851,7 +13237,7 @@ rule PEBundle_v2dot0b5_v2dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEBundle_v2dot44___: Packer
+rule PEBundle_v2dot44 : Packer
 {
     meta:
         name = "PEBundle v2.44" // Packer name & version
@@ -13864,7 +13250,7 @@ rule PEBundle_v2dot44___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEBundle_v3dot10___: Packer
+rule PEBundle_v3dot10 : Packer
 {
     meta:
         name = "PEBundle v3.10" // Packer name & version
@@ -13877,7 +13263,7 @@ rule PEBundle_v3dot10___: Packer
     condition:
     	for any of them
 }
-rule PeCompact_2dotxx_Slim_Loader_BitSum_Technologies___: Packer
+rule PeCompact_2dotxx_Slim_Loader_BitSum_Technologies : Packer
 {
     meta:
         name = "PeCompact 2.xx (Slim Loader) --> BitSum Technologies" // Packer name & version
@@ -13890,7 +13276,7 @@ rule PeCompact_2dotxx_Slim_Loader_BitSum_Technologies___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot4xplus___: Packer
+rule PECompact_v1dot4xplus : Packer
 {
     meta:
         name = "PECompact v1.4x+" // Packer name & version
@@ -13903,7 +13289,7 @@ rule PECompact_v1dot4xplus___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v2dot0_beta_Jeremy_Collake___: Packer
+rule PECompact_v2dot0_beta_Jeremy_Collake : Packer
 {
     meta:
         name = "PECompact v2.0 beta -> Jeremy Collake" // Packer name & version
@@ -13916,7 +13302,7 @@ rule PECompact_v2dot0_beta_Jeremy_Collake___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v2dot5_Retail_Slim_Loader_Bitsum_Technologies___: Packer
+rule PECompact_v2dot5_Retail_Slim_Loader_Bitsum_Technologies : Packer
 {
     meta:
         name = "PECompact v2.5 Retail (Slim Loader) -> Bitsum Technologies" // Packer name & version
@@ -13929,7 +13315,7 @@ rule PECompact_v2dot5_Retail_Slim_Loader_Bitsum_Technologies___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_V2dotX_Bitsum_Technologies___: Packer
+rule PECompact_V2dotX_Bitsum_Technologies : Packer
 {
     meta:
         name = "PECompact V2.X-> Bitsum Technologies" // Packer name & version
@@ -13942,7 +13328,7 @@ rule PECompact_V2dotX_Bitsum_Technologies___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v2dotxx___: Packer
+rule PECompact_v2dotxx : Packer
 {
     meta:
         name = "PECompact v2.xx" // Packer name & version
@@ -13955,7 +13341,7 @@ rule PECompact_v2dotxx___: Packer
     condition:
     	for any of them
 }
-rule PECrc32_0dot88_ZhouJinYu___: Packer
+rule PECrc32_0dot88_ZhouJinYu : Packer
 {
     meta:
         name = "PECrc32 0.88 -> ZhouJinYu" // Packer name & version
@@ -13968,7 +13354,7 @@ rule PECrc32_0dot88_ZhouJinYu___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEMangle___: Packer
+rule PEMangle : Packer
 {
     meta:
         name = "PEMangle" // Packer name & version
@@ -13981,7 +13367,7 @@ rule PEMangle___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEncrypt_v1dot0___: Packer
+rule PEncrypt_v1dot0 : Packer
 {
     meta:
         name = "PEncrypt v1.0" // Packer name & version
@@ -13994,7 +13380,7 @@ rule PEncrypt_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PENightMare_2_Beta___: Packer
+rule PENightMare_2_Beta : Packer
 {
     meta:
         name = "PENightMare 2 Beta" // Packer name & version
@@ -14007,7 +13393,7 @@ rule PENightMare_2_Beta___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESpin_v0dot3_Eng_cyberbob___: Packer
+rule PESpin_v0dot3_Eng_cyberbob : Packer
 {
     meta:
         name = "PESpin v0.3 (Eng) -> cyberbob" // Packer name & version
@@ -14020,7 +13406,7 @@ rule PESpin_v0dot3_Eng_cyberbob___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEtite_v1dot4___: Packer
+rule PEtite_v1dot4 : Packer
 {
     meta:
         name = "PEtite v1.4" // Packer name & version
@@ -14033,7 +13419,7 @@ rule PEtite_v1dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEtite_v2dot0___: Packer
+rule PEtite_v2dot0 : Packer
 {
     meta:
         name = "PEtite v2.0" // Packer name & version
@@ -14046,7 +13432,7 @@ rule PEtite_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PeX_0dot99_bart__^CrackPl : Packer
+rule PeX_0dot99_bart_^CrackPl : Packer
 {
     meta:
         name = "PeX 0.99 -> bart^CrackPl" // Packer name & version
@@ -14059,7 +13445,7 @@ rule PeX_0dot99_bart__^CrackPl : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot50_Device_driver_compression___: Packer
+rule PKLITE_v1dot50_Device_driver_compression : Packer
 {
     meta:
         name = "PKLITE v1.50 (Device driver compression)" // Packer name & version
@@ -14072,7 +13458,7 @@ rule PKLITE_v1dot50_Device_driver_compression___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v2dot00b___: Packer
+rule PKLITE_v2dot00b : Packer
 {
     meta:
         name = "PKLITE v2.00b" // Packer name & version
@@ -14085,7 +13471,7 @@ rule PKLITE_v2dot00b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v2dot00b_extra___: Packer
+rule PKLITE_v2dot00b_extra : Packer
 {
     meta:
         name = "PKLITE v2.00b [extra]" // Packer name & version
@@ -14098,7 +13484,7 @@ rule PKLITE_v2dot00b_extra___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE32_v1dot1___: Packer
+rule PKLITE32_v1dot1 : Packer
 {
     meta:
         name = "PKLITE32 v1.1" // Packer name & version
@@ -14111,7 +13497,7 @@ rule PKLITE32_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Pksmart_1dot0b___: Packer
+rule Pksmart_1dot0b : Packer
 {
     meta:
         name = "Pksmart 1.0b" // Packer name & version
@@ -14124,7 +13510,7 @@ rule Pksmart_1dot0b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PMODE_W_vdot1dot12__1dot16____1dot21__1dot33_DOS_extender_: Packer
+rule PMODE_W_vdot1dot12_1dot16_1dot21_1dot33_DOS_extender : Packer
 {
     meta:
         name = "PMODE/W v.1.12, 1.16, 1.21, 1.33 DOS extender" // Packer name & version
@@ -14137,7 +13523,7 @@ rule PMODE_W_vdot1dot12__1dot16____1dot21__1dot33_DOS_extender_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PolyCrypt_PE_2dot1dot4b___2dot1dot5_JLab_Software_Creations__h-signed) : Packer
+rule PolyCrypt_PE_2dot1dot4b_2dot1dot5_JLab_Software_Creations_h-signed) : Packer
 {
     meta:
         name = "PolyCrypt PE - 2.1.4b/2.1.5 -> JLab Software Creations (h-signed)" // Packer name & version
@@ -14150,7 +13536,7 @@ rule PolyCrypt_PE_2dot1dot4b___2dot1dot5_JLab_Software_Creations__h-signed) : Pa
     condition:
     	for any of them
 }
-rule PolyCryptor_by_SMT_Version___%v3dot%v4 : Packer
+rule PolyCryptor_by_SMT_Version_%v3dot%v4 : Packer
 {
     meta:
         name = "PolyCryptor by SMT Version %v3.%v4" // Packer name & version
@@ -14163,7 +13549,7 @@ rule PolyCryptor_by_SMT_Version___%v3dot%v4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PowerBASIC_CC_3dot0x___: Packer
+rule PowerBASIC_CC_3dot0x : Packer
 {
     meta:
         name = "PowerBASIC/CC 3.0x" // Packer name & version
@@ -14176,7 +13562,7 @@ rule PowerBASIC_CC_3dot0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PowerBASIC_Win_7dot0x___: Packer
+rule PowerBASIC_Win_7dot0x : Packer
 {
     meta:
         name = "PowerBASIC/Win 7.0x" // Packer name & version
@@ -14189,7 +13575,7 @@ rule PowerBASIC_Win_7dot0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Private_exe_Protector_V2dot0_SetiSoft_Team___: Packer
+rule Private_exe_Protector_V2dot0_SetiSoft_Team : Packer
 {
     meta:
         name = "Private exe Protector V2.0 -> SetiSoft Team" // Packer name & version
@@ -14202,7 +13588,7 @@ rule Private_exe_Protector_V2dot0_SetiSoft_Team___: Packer
     condition:
     	for any of them
 }
-rule PRO_PACK_v2dot08___: Packer
+rule PRO_PACK_v2dot08 : Packer
 {
     meta:
         name = "PRO-PACK v2.08" // Packer name & version
@@ -14215,7 +13601,7 @@ rule PRO_PACK_v2dot08___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Program_Protector_XP_v1dot0___: Packer
+rule Program_Protector_XP_v1dot0 : Packer
 {
     meta:
         name = "Program Protector XP v1.0" // Packer name & version
@@ -14228,7 +13614,7 @@ rule Program_Protector_XP_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Protection_Plus_vxdotx___: Packer
+rule Protection_Plus_vxdotx : Packer
 {
     meta:
         name = "Protection Plus vx.x" // Packer name & version
@@ -14241,7 +13627,7 @@ rule Protection_Plus_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_dotBJFNT_1dot1b_Anorganix___: Packer
+rule PseudoSigner_0dot2_dotBJFNT_1dot1b_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [.BJFNT 1.1b] --> Anorganix" // Packer name & version
@@ -14254,7 +13640,7 @@ rule PseudoSigner_0dot2_dotBJFNT_1dot1b_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_dotBJFNT_1dot2_Anorganix___: Packer
+rule PseudoSigner_0dot2_dotBJFNT_1dot2_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [.BJFNT 1.2] --> Anorganix" // Packer name & version
@@ -14267,7 +13653,7 @@ rule PseudoSigner_0dot2_dotBJFNT_1dot2_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_ASProtect_Anorganix___: Packer
+rule PseudoSigner_0dot2_ASProtect_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [ASProtect] --> Anorganix" // Packer name & version
@@ -14280,7 +13666,7 @@ rule PseudoSigner_0dot2_ASProtect_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Borland_Cplusplus_1999_Anorganix___: Packer
+rule PseudoSigner_0dot2_Borland_Cplusplus_1999_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Borland C++ 1999] --> Anorganix" // Packer name & version
@@ -14293,7 +13679,7 @@ rule PseudoSigner_0dot2_Borland_Cplusplus_1999_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Borland_Delphi_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot2_Borland_Delphi_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Borland Delphi DLL] --> Anorganix" // Packer name & version
@@ -14306,7 +13692,7 @@ rule PseudoSigner_0dot2_Borland_Delphi_DLL_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Borland_Delphi_Setup_Module_Anorganix___: Packer
+rule PseudoSigner_0dot2_Borland_Delphi_Setup_Module_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Borland Delphi Setup Module] --> Anorganix" // Packer name & version
@@ -14319,7 +13705,7 @@ rule PseudoSigner_0dot2_Borland_Delphi_Setup_Module_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Code_Lock_Anorganix___: Packer
+rule PseudoSigner_0dot2_Code_Lock_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Code-Lock] --> Anorganix" // Packer name & version
@@ -14332,7 +13718,7 @@ rule PseudoSigner_0dot2_Code_Lock_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Crunch_PE_Heuristic_Anorganix___: Packer
+rule PseudoSigner_0dot2_Crunch_PE_Heuristic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Crunch/PE Heuristic] --> Anorganix" // Packer name & version
@@ -14345,7 +13731,7 @@ rule PseudoSigner_0dot2_Crunch_PE_Heuristic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_FSG_1dot31_Anorganix___: Packer
+rule PseudoSigner_0dot2_FSG_1dot31_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [FSG 1.31] --> Anorganix" // Packer name & version
@@ -14358,7 +13744,7 @@ rule PseudoSigner_0dot2_FSG_1dot31_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_LCC_Win32_1dotx_Anorganix___: Packer
+rule PseudoSigner_0dot2_LCC_Win32_1dotx_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [LCC Win32 1.x] --> Anorganix" // Packer name & version
@@ -14371,7 +13757,7 @@ rule PseudoSigner_0dot2_LCC_Win32_1dotx_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_LCC_Win32_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot2_LCC_Win32_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [LCC Win32 DLL] --> Anorganix" // Packer name & version
@@ -14384,7 +13770,7 @@ rule PseudoSigner_0dot2_LCC_Win32_DLL_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Lockless_Intro_Pack_Anorganix___: Packer
+rule PseudoSigner_0dot2_Lockless_Intro_Pack_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Lockless Intro Pack] --> Anorganix" // Packer name & version
@@ -14397,7 +13783,7 @@ rule PseudoSigner_0dot2_Lockless_Intro_Pack_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot2_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Microsoft Visual C++ 7.0 DLL] --> Anorganix" // Packer name & version
@@ -14410,7 +13796,7 @@ rule PseudoSigner_0dot2_Microsoft_Visual_Cplusplus_7dot0_DLL_Anorganix___: Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_NorthStar_PE_Shrinker_1dot3_Anorganix___: Packer
+rule PseudoSigner_0dot2_NorthStar_PE_Shrinker_1dot3_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [NorthStar PE Shrinker 1.3] --> Anorganix" // Packer name & version
@@ -14423,7 +13809,7 @@ rule PseudoSigner_0dot2_NorthStar_PE_Shrinker_1dot3_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PE_Intro_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_PE_Intro_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PE Intro 1.0] --> Anorganix" // Packer name & version
@@ -14436,7 +13822,7 @@ rule PseudoSigner_0dot2_PE_Intro_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PE_Pack_0dot99_Anorganix___: Packer
+rule PseudoSigner_0dot2_PE_Pack_0dot99_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PE Pack 0.99] --> Anorganix" // Packer name & version
@@ -14449,7 +13835,7 @@ rule PseudoSigner_0dot2_PE_Pack_0dot99_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PE_Protect_0dot9_Anorganix___: Packer
+rule PseudoSigner_0dot2_PE_Protect_0dot9_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PE Protect 0.9] --> Anorganix" // Packer name & version
@@ -14462,7 +13848,7 @@ rule PseudoSigner_0dot2_PE_Protect_0dot9_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PENightMare_2_Beta_Anorganix___: Packer
+rule PseudoSigner_0dot2_PENightMare_2_Beta_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PENightMare 2 Beta] --> Anorganix" // Packer name & version
@@ -14475,7 +13861,7 @@ rule PseudoSigner_0dot2_PENightMare_2_Beta_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_PEX_0dot99_Anorganix___: Packer
+rule PseudoSigner_0dot2_PEX_0dot99_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [PEX 0.99] --> Anorganix" // Packer name & version
@@ -14488,7 +13874,7 @@ rule PseudoSigner_0dot2_PEX_0dot99_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_REALBasic_Anorganix___: Packer
+rule PseudoSigner_0dot2_REALBasic_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [REALBasic] --> Anorganix" // Packer name & version
@@ -14501,7 +13887,7 @@ rule PseudoSigner_0dot2_REALBasic_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_UPX_0dot6_Anorganix___: Packer
+rule PseudoSigner_0dot2_UPX_0dot6_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [UPX 0.6] --> Anorganix" // Packer name & version
@@ -14514,7 +13900,7 @@ rule PseudoSigner_0dot2_UPX_0dot6_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Watcom_C_Cplusplus_DLL_Anorganix___: Packer
+rule PseudoSigner_0dot2_Watcom_C_Cplusplus_DLL_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Watcom C/C++ DLL] --> Anorganix" // Packer name & version
@@ -14527,7 +13913,7 @@ rule PseudoSigner_0dot2_Watcom_C_Cplusplus_DLL_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PUNiSHER_V1dot5_FEUERRADER___: Packer
+rule PUNiSHER_V1dot5_FEUERRADER : Packer
 {
     meta:
         name = "PUNiSHER V1.5-> FEUERRADER" // Packer name & version
@@ -14540,7 +13926,7 @@ rule PUNiSHER_V1dot5_FEUERRADER___: Packer
     condition:
     	for any of them
 }
-rule RatPacker_Glue_stub___: Packer
+rule RatPacker_Glue_stub : Packer
 {
     meta:
         name = "RatPacker (Glue) stub" // Packer name & version
@@ -14553,7 +13939,7 @@ rule RatPacker_Glue_stub___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RCryptor_v1dot6x_Vaska___: Packer
+rule RCryptor_v1dot6x_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.6x --> Vaska" // Packer name & version
@@ -14566,7 +13952,7 @@ rule RCryptor_v1dot6x_Vaska___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RCryptor_v1dot__??_Vaska : Packer
+rule RCryptor_v1dot_??_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.?? -> Vaska" // Packer name & version
@@ -14579,7 +13965,7 @@ rule RCryptor_v1dot__??_Vaska : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Ap0x___: Packer
+rule RLPack_Ap0x : Packer
 {
     meta:
         name = "RLPack -> Ap0x" // Packer name & version
@@ -14592,7 +13978,7 @@ rule RLPack_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Full_Edition_1dot17_iBox_aPLib_Ap0x___: Packer
+rule RLPack_Full_Edition_1dot17_iBox_aPLib_Ap0x : Packer
 {
     meta:
         name = "RLPack Full Edition 1.17 iBox [aPLib] -> Ap0x" // Packer name & version
@@ -14605,7 +13991,7 @@ rule RLPack_Full_Edition_1dot17_iBox_aPLib_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Full_Edition_1dot17_iBox_LZMA_Ap0x___: Packer
+rule RLPack_Full_Edition_1dot17_iBox_LZMA_Ap0x : Packer
 {
     meta:
         name = "RLPack Full Edition 1.17 iBox [LZMA] -> Ap0x" // Packer name & version
@@ -14618,7 +14004,7 @@ rule RLPack_Full_Edition_1dot17_iBox_LZMA_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Full_Edition_1dot17_aPLib_Ap0x___: Packer
+rule RLPack_Full_Edition_1dot17_aPLib_Ap0x : Packer
 {
     meta:
         name = "RLPack Full Edition 1.17 [aPLib] -> Ap0x" // Packer name & version
@@ -14631,7 +14017,7 @@ rule RLPack_Full_Edition_1dot17_aPLib_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Full_Edition_1dot17_LZMA_Ap0x___: Packer
+rule RLPack_Full_Edition_1dot17_LZMA_Ap0x : Packer
 {
     meta:
         name = "RLPack Full Edition 1.17 [LZMA] -> Ap0x" // Packer name & version
@@ -14644,7 +14030,7 @@ rule RLPack_Full_Edition_1dot17_LZMA_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_V1dot12_V1dot14_LZMA_4dot30__ap0x___: Packer
+rule RLPack_V1dot12_V1dot14_LZMA_4dot30_ap0x : Packer
 {
     meta:
         name = "RLPack V1.12-V1.14 (LZMA 4.30) -> ap0x" // Packer name & version
@@ -14657,7 +14043,7 @@ rule RLPack_V1dot12_V1dot14_LZMA_4dot30__ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SCRAM__! v0dot8a1 : Packer
+rule SCRAM_! v0dot8a1 : Packer
 {
     meta:
         name = "SCRAM! v0.8a1" // Packer name & version
@@ -14670,7 +14056,7 @@ rule SCRAM__! v0dot8a1 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SCRAM__! vC5 : Packer
+rule SCRAM_! vC5 : Packer
 {
     meta:
         name = "SCRAM! vC5" // Packer name & version
@@ -14683,7 +14069,7 @@ rule SCRAM__! vC5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Sentinel_SuperPro_Automatic_Protection_v6dot4dot0_Safenet___: Packer
+rule Sentinel_SuperPro_Automatic_Protection_v6dot4dot0_Safenet : Packer
 {
     meta:
         name = "Sentinel SuperPro (Automatic Protection) v6.4.0 -> Safenet" // Packer name & version
@@ -14696,7 +14082,7 @@ rule Sentinel_SuperPro_Automatic_Protection_v6dot4dot0_Safenet___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Sentinel_SuperPro_Automatic_Protection_v6dot4dot1_Safenet___: Packer
+rule Sentinel_SuperPro_Automatic_Protection_v6dot4dot1_Safenet : Packer
 {
     meta:
         name = "Sentinel SuperPro (Automatic Protection) v6.4.1 -> Safenet" // Packer name & version
@@ -14709,7 +14095,7 @@ rule Sentinel_SuperPro_Automatic_Protection_v6dot4dot1_Safenet___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Shegerd_Dongle_V4dot78_MSdotCodot___: Packer
+rule Shegerd_Dongle_V4dot78_MSdotCodot : Packer
 {
     meta:
         name = "Shegerd Dongle V4.78 -> MS.Co." // Packer name & version
@@ -14722,7 +14108,7 @@ rule Shegerd_Dongle_V4dot78_MSdotCodot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ShellModify_0dot1_pll621___: Packer
+rule ShellModify_0dot1_pll621 : Packer
 {
     meta:
         name = "ShellModify 0.1 -> pll621" // Packer name & version
@@ -14735,7 +14121,7 @@ rule ShellModify_0dot1_pll621___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Shrink_v2dot0___: Packer
+rule Shrink_v2dot0 : Packer
 {
     meta:
         name = "Shrink v2.0" // Packer name & version
@@ -14748,7 +14134,7 @@ rule Shrink_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Shrinker_v3dot2___: Packer
+rule Shrinker_v3dot2 : Packer
 {
     meta:
         name = "Shrinker v3.2" // Packer name & version
@@ -14761,7 +14147,7 @@ rule Shrinker_v3dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Shrinker_v3dot4___: Packer
+rule Shrinker_v3dot4 : Packer
 {
     meta:
         name = "Shrinker v3.4" // Packer name & version
@@ -14774,7 +14160,7 @@ rule Shrinker_v3dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Silicon_Realms_Install_Stub___: Packer
+rule Silicon_Realms_Install_Stub : Packer
 {
     meta:
         name = "Silicon Realms Install Stub" // Packer name & version
@@ -14787,7 +14173,7 @@ rule Silicon_Realms_Install_Stub___: Packer
     condition:
     	for any of them
 }
-rule Simple_UPX_Cryptor_v30dot4dot2005_multi_layer_encryption_MANtiCORE___: Packer
+rule Simple_UPX_Cryptor_v30dot4dot2005_multi_layer_encryption_MANtiCORE : Packer
 {
     meta:
         name = "Simple UPX Cryptor v30.4.2005 [multi layer encryption] --> MANtiCORE" // Packer name & version
@@ -14800,7 +14186,7 @@ rule Simple_UPX_Cryptor_v30dot4dot2005_multi_layer_encryption_MANtiCORE___: Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Simple_UPX_Cryptor_v30dot4dot2005_One_layer_encryption_MANtiCORE___: Packer
+rule Simple_UPX_Cryptor_v30dot4dot2005_One_layer_encryption_MANtiCORE : Packer
 {
     meta:
         name = "Simple UPX Cryptor v30.4.2005 [One layer encryption] --> MANtiCORE" // Packer name & version
@@ -14813,7 +14199,7 @@ rule Simple_UPX_Cryptor_v30dot4dot2005_One_layer_encryption_MANtiCORE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SLVc0deProtector_0dot60_SLV_ICU___: Packer
+rule SLVc0deProtector_0dot60_SLV_ICU : Packer
 {
     meta:
         name = "SLVc0deProtector 0.60 -> SLV / ICU" // Packer name & version
@@ -14826,7 +14212,7 @@ rule SLVc0deProtector_0dot60_SLV_ICU___: Packer
     condition:
     	for any of them
 }
-rule SoftComp_1dotx_BG_Soft_PT___: Packer
+rule SoftComp_1dotx_BG_Soft_PT : Packer
 {
     meta:
         name = "SoftComp 1.x -> BG Soft PT" // Packer name & version
@@ -14839,7 +14225,7 @@ rule SoftComp_1dotx_BG_Soft_PT___: Packer
     condition:
     	for any of them
 }
-rule Software_Compress_V1dot2_BG_Software_Protect_Technologies___: Packer
+rule Software_Compress_V1dot2_BG_Software_Protect_Technologies : Packer
 {
     meta:
         name = "Software Compress V1.2 -> BG Software Protect Technologies" // Packer name & version
@@ -14852,7 +14238,7 @@ rule Software_Compress_V1dot2_BG_Software_Protect_Technologies___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Special_EXE_Pasword_Protector_v1dot01_Eng_Pavol_Cerven___: Packer
+rule Special_EXE_Pasword_Protector_v1dot01_Eng_Pavol_Cerven : Packer
 {
     meta:
         name = "Special EXE Pasword Protector v1.01 (Eng) -> Pavol Cerven" // Packer name & version
@@ -14865,7 +14251,7 @@ rule Special_EXE_Pasword_Protector_v1dot01_Eng_Pavol_Cerven___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Stones_PE_Encryptor_v2dot0___: Packer
+rule Stones_PE_Encryptor_v2dot0 : Packer
 {
     meta:
         name = "Stone's PE Encryptor v2.0" // Packer name & version
@@ -14878,7 +14264,7 @@ rule Stones_PE_Encryptor_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SVK_Protector_v1dot32___: Packer
+rule SVK_Protector_v1dot32 : Packer
 {
     meta:
         name = "SVK-Protector v1.32" // Packer name & version
@@ -14891,7 +14277,7 @@ rule SVK_Protector_v1dot32___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Symantec_C_v4dot00_plus_Libraries___: Packer
+rule Symantec_C_v4dot00_plus_Libraries : Packer
 {
     meta:
         name = "Symantec C v4.00 + Libraries" // Packer name & version
@@ -14904,7 +14290,7 @@ rule Symantec_C_v4dot00_plus_Libraries___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_0dot98_Special_Build_forgot__and__heXer___: Packer
+rule tElock_0dot98_Special_Build_forgot_and_heXer : Packer
 {
     meta:
         name = "tElock 0.98 Special Build -> forgot & heXer" // Packer name & version
@@ -14917,7 +14303,7 @@ rule tElock_0dot98_Special_Build_forgot__and__heXer___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_0dot99_tE__! : Packer
+rule tElock_0dot99_tE_! : Packer
 {
     meta:
         name = "tElock 0.99 -> tE!" // Packer name & version
@@ -14930,7 +14316,7 @@ rule tElock_0dot99_tE__! : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot98_tHE_EGOiSTE_h___: Packer
+rule tElock_v0dot98_tHE_EGOiSTE_h : Packer
 {
     meta:
         name = "tElock v0.98 -> tHE EGOiSTE (h)" // Packer name & version
@@ -14943,7 +14329,7 @@ rule tElock_v0dot98_tHE_EGOiSTE_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot99___: Packer
+rule tElock_v0dot99 : Packer
 {
     meta:
         name = "tElock v0.99" // Packer name & version
@@ -14956,7 +14342,7 @@ rule tElock_v0dot99___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_Oreans_Technologies_2004___: Packer
+rule Themida_Oreans_Technologies_2004 : Packer
 {
     meta:
         name = "Themida -> Oreans Technologies 2004" // Packer name & version
@@ -14969,7 +14355,7 @@ rule Themida_Oreans_Technologies_2004___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Themida_1dot2dot0dot1_Oreans_Technologies_h___: Packer
+rule Themida_1dot2dot0dot1_Oreans_Technologies_h : Packer
 {
     meta:
         name = "Themida 1.2.0.1 -> Oreans Technologies (h)" // Packer name & version
@@ -14982,7 +14368,7 @@ rule Themida_1dot2dot0dot1_Oreans_Technologies_h___: Packer
     condition:
     	for any of them
 }
-rule Thinstall_2dot4x_2dot5x_Jitit_Software___: Packer
+rule Thinstall_2dot4x_2dot5x_Jitit_Software : Packer
 {
     meta:
         name = "Thinstall 2.4x - 2.5x -> Jitit Software" // Packer name & version
@@ -14995,7 +14381,7 @@ rule Thinstall_2dot4x_2dot5x_Jitit_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TMT_Pascal_v0dot40___: Packer
+rule TMT_Pascal_v0dot40 : Packer
 {
     meta:
         name = "TMT-Pascal v0.40" // Packer name & version
@@ -15008,7 +14394,7 @@ rule TMT_Pascal_v0dot40___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Trivial173_by_SMT_SMF___: Packer
+rule Trivial173_by_SMT_SMF : Packer
 {
     meta:
         name = "Trivial173 by SMT/SMF" // Packer name & version
@@ -15021,7 +14407,7 @@ rule Trivial173_by_SMT_SMF___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_C_1987___: Packer
+rule Turbo_C_1987 : Packer
 {
     meta:
         name = "Turbo C 1987" // Packer name & version
@@ -15034,7 +14420,7 @@ rule Turbo_C_1987___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_C_or_Borland_Cplusplus___: Packer
+rule Turbo_C_or_Borland_Cplusplus : Packer
 {
     meta:
         name = "Turbo C or Borland C++" // Packer name & version
@@ -15047,7 +14433,7 @@ rule Turbo_C_or_Borland_Cplusplus___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TXT2COM_v2dot06___: Packer
+rule TXT2COM_v2dot06 : Packer
 {
     meta:
         name = "TXT2COM v2.06" // Packer name & version
@@ -15060,7 +14446,7 @@ rule TXT2COM_v2dot06___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UCEXE_v2dot3__v2dot4___: Packer
+rule UCEXE_v2dot3_v2dot4 : Packer
 {
     meta:
         name = "UCEXE v2.3, v2.4" // Packer name & version
@@ -15073,7 +14459,7 @@ rule UCEXE_v2dot3__v2dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UltraPro_V1dot0_SafeNet___: Packer
+rule UltraPro_V1dot0_SafeNet : Packer
 {
     meta:
         name = "UltraPro V1.0 -> SafeNet" // Packer name & version
@@ -15086,7 +14472,7 @@ rule UltraPro_V1dot0_SafeNet___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule unknown_jac___: Packer
+rule unknown_jac : Packer
 {
     meta:
         name = "unknown -> jac" // Packer name & version
@@ -15099,7 +14485,7 @@ rule unknown_jac___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_encryptor_1___: Packer
+rule Unknown_encryptor_1 : Packer
 {
     meta:
         name = "Unknown encryptor (1)" // Packer name & version
@@ -15112,7 +14498,7 @@ rule Unknown_encryptor_1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_packer_05___: Packer
+rule Unknown_packer_05 : Packer
 {
     meta:
         name = "Unknown packer (05)" // Packer name & version
@@ -15125,7 +14511,7 @@ rule Unknown_packer_05___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_packer_08___: Packer
+rule Unknown_packer_08 : Packer
 {
     meta:
         name = "Unknown packer (08)" // Packer name & version
@@ -15138,7 +14524,7 @@ rule Unknown_packer_08___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unpacked_BS_SFX_Archive_v1dot9___: Packer
+rule Unpacked_BS_SFX_Archive_v1dot9 : Packer
 {
     meta:
         name = "Unpacked BS-SFX Archive v1.9" // Packer name & version
@@ -15151,7 +14537,7 @@ rule Unpacked_BS_SFX_Archive_v1dot9___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_0dot12_beta_Dwing___: Packer
+rule Upack_0dot12_beta_Dwing : Packer
 {
     meta:
         name = "Upack 0.12 beta-->Dwing" // Packer name & version
@@ -15164,7 +14550,7 @@ rule Upack_0dot12_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot36_beta_Dwing___: Packer
+rule Upack_v0dot36_beta_Dwing : Packer
 {
     meta:
         name = "Upack v0.36 beta -> Dwing" // Packer name & version
@@ -15177,7 +14563,7 @@ rule Upack_v0dot36_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_2dot90_LZMA_Delphi_stub_Markus_Oberhumer__Laszlo_Molnar__and__John_Reiser___: Packer
+rule UPX_2dot90_LZMA_Delphi_stub_Markus_Oberhumer_Laszlo_Molnar_and_John_Reiser : Packer
 {
     meta:
         name = "UPX 2.90 [LZMA] (Delphi stub) -> Markus Oberhumer, Laszlo Molnar & John Reiser" // Packer name & version
@@ -15190,7 +14576,7 @@ rule UPX_2dot90_LZMA_Delphi_stub_Markus_Oberhumer__Laszlo_Molnar__and__John_Reis
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_2dot90_LZMA_Markus_Oberhumer__Laszlo_Molnar__and__John_Reiser___: Packer
+rule UPX_2dot90_LZMA_Markus_Oberhumer_Laszlo_Molnar_and_John_Reiser : Packer
 {
     meta:
         name = "UPX 2.90 [LZMA] -> Markus Oberhumer, Laszlo Molnar & John Reiser" // Packer name & version
@@ -15203,7 +14589,7 @@ rule UPX_2dot90_LZMA_Markus_Oberhumer__Laszlo_Molnar__and__John_Reiser___: Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot60_v0dot61___: Packer
+rule UPX_v0dot60_v0dot61 : Packer
 {
     meta:
         name = "UPX v0.60 - v0.61" // Packer name & version
@@ -15216,7 +14602,7 @@ rule UPX_v0dot60_v0dot61___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot71_v0dot72___: Packer
+rule UPX_v0dot71_v0dot72 : Packer
 {
     meta:
         name = "UPX v0.71 - v0.72" // Packer name & version
@@ -15229,7 +14615,7 @@ rule UPX_v0dot71_v0dot72___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot89dot6_v1dot02_____v1dot05__v1dot24_Markus_& Laszlo [overlay] : Packer
+rule UPX_v0dot89dot6_v1dot02_v1dot05_v1dot24_Markus_& Laszlo [overlay] : Packer
 {
     meta:
         name = "UPX v0.89.6 - v1.02 / v1.05 -v1.24 -> Markus & Laszlo [overlay]" // Packer name & version
@@ -15242,7 +14628,7 @@ rule UPX_v0dot89dot6_v1dot02_____v1dot05__v1dot24_Markus_& Laszlo [overlay] : Pa
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_V1dot94_Markus_Oberhumer__and__Laszlo_Molnar___& John Reiser : Packer
+rule UPX_V1dot94_Markus_Oberhumer_and_Laszlo_Molnar_& John Reiser : Packer
 {
     meta:
         name = "UPX V1.94 -> Markus Oberhumer & Laszlo Molnar & John Reiser" // Packer name & version
@@ -15255,7 +14641,7 @@ rule UPX_V1dot94_Markus_Oberhumer__and__Laszlo_Molnar___& John Reiser : Packer
     condition:
     	for any of them
 }
-rule UPX_V2dot00_V2dot90_Markus_Oberhumer__and__Laszlo_Molnar___& John Reiser : Packer
+rule UPX_V2dot00_V2dot90_Markus_Oberhumer_and_Laszlo_Molnar_& John Reiser : Packer
 {
     meta:
         name = "UPX V2.00-V2.90 -> Markus Oberhumer & Laszlo Molnar & John Reiser" // Packer name & version
@@ -15268,7 +14654,7 @@ rule UPX_V2dot00_V2dot90_Markus_Oberhumer__and__Laszlo_Molnar___& John Reiser : 
     condition:
     	for any of them
 }
-rule UPX_Shit_v0dot1_500mhz___: Packer
+rule UPX_Shit_v0dot1_500mhz : Packer
 {
     meta:
         name = "UPX-Shit v0.1 -> 500mhz" // Packer name & version
@@ -15281,7 +14667,7 @@ rule UPX_Shit_v0dot1_500mhz___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPXcrypter_archphase_NWC___: Packer
+rule UPXcrypter_archphase_NWC : Packer
 {
     meta:
         name = "UPXcrypter -> archphase/NWC" // Packer name & version
@@ -15294,7 +14680,7 @@ rule UPXcrypter_archphase_NWC___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPXFreak_v0dot1_Borland_Delphi_HMX0101___: Packer
+rule UPXFreak_v0dot1_Borland_Delphi_HMX0101 : Packer
 {
     meta:
         name = "UPXFreak v0.1 (Borland Delphi) -> HMX0101" // Packer name & version
@@ -15307,7 +14693,7 @@ rule UPXFreak_v0dot1_Borland_Delphi_HMX0101___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPXShit_0dot06___: Packer
+rule UPXShit_0dot06 : Packer
 {
     meta:
         name = "UPXShit 0.06" // Packer name & version
@@ -15320,7 +14706,7 @@ rule UPXShit_0dot06___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VBOX_v4dot3_v4dot6___: Packer
+rule VBOX_v4dot3_v4dot6 : Packer
 {
     meta:
         name = "VBOX v4.3 - v4.6" // Packer name & version
@@ -15333,7 +14719,7 @@ rule VBOX_v4dot3_v4dot6___: Packer
     condition:
     	for any of them
 }
-rule Video_Lan_Client_UnknownCompiler____: Packer
+rule Video_Lan_Client_UnknownCompiler : Packer
 {
     meta:
         name = "Video-Lan-Client -> (UnknownCompiler)" // Packer name & version
@@ -15346,7 +14732,7 @@ rule Video_Lan_Client_UnknownCompiler____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VMProtect_0dot7x_0dot8_PolyTech___: Packer
+rule VMProtect_0dot7x_0dot8_PolyTech : Packer
 {
     meta:
         name = "VMProtect 0.7x - 0.8 -> PolyTech" // Packer name & version
@@ -15359,7 +14745,7 @@ rule VMProtect_0dot7x_0dot8_PolyTech___: Packer
     condition:
     	for any of them
 }
-rule Vx__: ACME (Clonewar Mutant) : Packer
+rule Vx : ACME (Clonewar Mutant) : Packer
 {
     meta:
         name = "Vx: ACME (Clonewar Mutant)" // Packer name & version
@@ -15372,7 +14758,7 @@ rule Vx__: ACME (Clonewar Mutant) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: ARCVdot4 : Packer
+rule Vx : ARCVdot4 : Packer
 {
     meta:
         name = "Vx: ARCV.4" // Packer name & version
@@ -15385,7 +14771,7 @@ rule Vx__: ARCVdot4 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: August 16th (Iron Maiden) : Packer
+rule Vx : August 16th (Iron Maiden) : Packer
 {
     meta:
         name = "Vx: August 16th (Iron Maiden)" // Packer name & version
@@ -15398,7 +14784,7 @@ rule Vx__: August 16th (Iron Maiden) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Backfontdot900 : Packer
+rule Vx : Backfontdot900 : Packer
 {
     meta:
         name = "Vx: Backfont.900" // Packer name & version
@@ -15411,7 +14797,7 @@ rule Vx__: Backfontdot900 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Doomdot666 : Packer
+rule Vx : Doomdot666 : Packer
 {
     meta:
         name = "Vx: Doom.666" // Packer name & version
@@ -15424,7 +14810,7 @@ rule Vx__: Doomdot666 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Eddiedot1028 : Packer
+rule Vx : Eddiedot1028 : Packer
 {
     meta:
         name = "Vx: Eddie.1028" // Packer name & version
@@ -15437,7 +14823,7 @@ rule Vx__: Eddiedot1028 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Eddiedot1530 : Packer
+rule Vx : Eddiedot1530 : Packer
 {
     meta:
         name = "Vx: Eddie.1530" // Packer name & version
@@ -15450,7 +14836,7 @@ rule Vx__: Eddiedot1530 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Eddiedot1800 : Packer
+rule Vx : Eddiedot1800 : Packer
 {
     meta:
         name = "Vx: Eddie.1800" // Packer name & version
@@ -15463,7 +14849,7 @@ rule Vx__: Eddiedot1800 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Eddiedot2000 : Packer
+rule Vx : Eddiedot2000 : Packer
 {
     meta:
         name = "Vx: Eddie.2000" // Packer name & version
@@ -15476,7 +14862,7 @@ rule Vx__: Eddiedot2000 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Einstein : Packer
+rule Vx : Einstein : Packer
 {
     meta:
         name = "Vx: Einstein" // Packer name & version
@@ -15489,7 +14875,7 @@ rule Vx__: Einstein : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Gotchadot879 : Packer
+rule Vx : Gotchadot879 : Packer
 {
     meta:
         name = "Vx: Gotcha.879" // Packer name & version
@@ -15502,7 +14888,7 @@ rule Vx__: Gotchadot879 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Graziedot883 : Packer
+rule Vx : Graziedot883 : Packer
 {
     meta:
         name = "Vx: Grazie.883" // Packer name & version
@@ -15515,7 +14901,7 @@ rule Vx__: Graziedot883 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: GRUNTdot4dotFamily : Packer
+rule Vx : GRUNTdot4dotFamily : Packer
 {
     meta:
         name = "Vx: GRUNT.4.Family" // Packer name & version
@@ -15528,7 +14914,7 @@ rule Vx__: GRUNTdot4dotFamily : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Hafendot809 : Packer
+rule Vx : Hafendot809 : Packer
 {
     meta:
         name = "Vx: Hafen.809" // Packer name & version
@@ -15541,7 +14927,7 @@ rule Vx__: Hafendot809 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Kukudot886 : Packer
+rule Vx : Kukudot886 : Packer
 {
     meta:
         name = "Vx: Kuku.886" // Packer name & version
@@ -15554,7 +14940,7 @@ rule Vx__: Kukudot886 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Modification of Hidot924 : Packer
+rule Vx : Modification of Hidot924 : Packer
 {
     meta:
         name = "Vx: Modification of Hi.924" // Packer name & version
@@ -15567,7 +14953,7 @@ rule Vx__: Modification of Hidot924 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Uddydot2617 : Packer
+rule Vx : Uddydot2617 : Packer
 {
     meta:
         name = "Vx: Uddy.2617" // Packer name & version
@@ -15580,7 +14966,7 @@ rule Vx__: Uddydot2617 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: XRCVdot1015 : Packer
+rule Vx : XRCVdot1015 : Packer
 {
     meta:
         name = "Vx: XRCV.1015" // Packer name & version
@@ -15593,7 +14979,7 @@ rule Vx__: XRCVdot1015 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule W32dotJeefo_PE_File_Infector___: Packer
+rule W32dotJeefo_PE_File_Infector : Packer
 {
     meta:
         name = "W32.Jeefo (PE File Infector)" // Packer name & version
@@ -15606,7 +14992,7 @@ rule W32dotJeefo_PE_File_Infector___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WARNING_____TROJAN_ADinjector_: Packer
+rule WARNING_TROJAN_ADinjector : Packer
 {
     meta:
         name = "WARNING -> TROJAN -> ADinjector" // Packer name & version
@@ -15619,7 +15005,7 @@ rule WARNING_____TROJAN_ADinjector_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WATCOM_C_Cplusplus_32_Run_Time_System_1988___1995_: Packer
+rule WATCOM_C_Cplusplus_32_Run_Time_System_1988_1995 : Packer
 {
     meta:
         name = "WATCOM C/C++ 32 Run-Time System 1988-1995" // Packer name & version
@@ -15632,7 +15018,7 @@ rule WATCOM_C_Cplusplus_32_Run_Time_System_1988___1995_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WATCOM_C_Cplusplus_DLL___: Packer
+rule WATCOM_C_Cplusplus_DLL : Packer
 {
     meta:
         name = "WATCOM C/C++ DLL" // Packer name & version
@@ -15645,7 +15031,7 @@ rule WATCOM_C_Cplusplus_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WebCops_DLL_LINK_Data_Security___: Packer
+rule WebCops_DLL_LINK_Data_Security : Packer
 {
     meta:
         name = "WebCops [DLL] -> LINK Data Security" // Packer name & version
@@ -15658,7 +15044,7 @@ rule WebCops_DLL_LINK_Data_Security___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WebCops_EXE_LINK_Data_Security___: Packer
+rule WebCops_EXE_LINK_Data_Security : Packer
 {
     meta:
         name = "WebCops [EXE] -> LINK Data Security" // Packer name & version
@@ -15671,7 +15057,7 @@ rule WebCops_EXE_LINK_Data_Security___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Wise_Installer_Stub___: Packer
+rule Wise_Installer_Stub : Packer
 {
     meta:
         name = "Wise Installer Stub" // Packer name & version
@@ -15684,7 +15070,7 @@ rule Wise_Installer_Stub___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Wise_Installer_Stub___: Packer
+rule Wise_Installer_Stub : Packer
 {
     meta:
         name = "Wise Installer Stub" // Packer name & version
@@ -15697,7 +15083,7 @@ rule Wise_Installer_Stub___: Packer
     condition:
     	for any of them
 }
-rule WWPACK_v3dot00__v3dot01____Extractable__: Packer
+rule WWPACK_v3dot00_v3dot01_Extractable : Packer
 {
     meta:
         name = "WWPACK v3.00, v3.01 (Extractable)" // Packer name & version
@@ -15710,7 +15096,7 @@ rule WWPACK_v3dot00__v3dot01____Extractable__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot02__v3dot02a____Extractable__: Packer
+rule WWPACK_v3dot02_v3dot02a_Extractable : Packer
 {
     meta:
         name = "WWPACK v3.02, v3.02a (Extractable)" // Packer name & version
@@ -15723,7 +15109,7 @@ rule WWPACK_v3dot02__v3dot02a____Extractable__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot02__v3dot02a____v3dot04__Relocations_pack__: Packer
+rule WWPACK_v3dot02_v3dot02a_v3dot04_Relocations_pack : Packer
 {
     meta:
         name = "WWPACK v3.02, v3.02a, v3.04 (Relocations pack)" // Packer name & version
@@ -15736,7 +15122,7 @@ rule WWPACK_v3dot02__v3dot02a____v3dot04__Relocations_pack__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot03___: Packer
+rule WWPACK_v3dot03 : Packer
 {
     meta:
         name = "WWPACK v3.03" // Packer name & version
@@ -15749,7 +15135,7 @@ rule WWPACK_v3dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Extrdot_Passwdotcheckdot_Virdot_shield___: Packer
+rule WWPACK_v3dot05c4_Extrdot_Passwdotcheckdot_Virdot_shield : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Extr. Passw.check. Vir. shield)" // Packer name & version
@@ -15762,7 +15148,7 @@ rule WWPACK_v3dot05c4_Extrdot_Passwdotcheckdot_Virdot_shield___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Extractable_plus_Password_checking____: Packer
+rule WWPACK_v3dot05c4_Extractable_plus_Password_checking : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Extractable + Password checking)" // Packer name & version
@@ -15775,7 +15161,7 @@ rule WWPACK_v3dot05c4_Extractable_plus_Password_checking____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Extractable_plus_Virus_Shield____: Packer
+rule WWPACK_v3dot05c4_Extractable_plus_Virus_Shield : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Extractable + Virus Shield)" // Packer name & version
@@ -15788,7 +15174,7 @@ rule WWPACK_v3dot05c4_Extractable_plus_Virus_Shield____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Extractable___: Packer
+rule WWPACK_v3dot05c4_Extractable : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Extractable)" // Packer name & version
@@ -15801,7 +15187,7 @@ rule WWPACK_v3dot05c4_Extractable___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Modified___: Packer
+rule WWPACK_v3dot05c4_Modified : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Modified)" // Packer name & version
@@ -15814,7 +15200,7 @@ rule WWPACK_v3dot05c4_Modified___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Unextrdot_Passwdotcheckdot_Virdot_shield___: Packer
+rule WWPACK_v3dot05c4_Unextrdot_Passwdotcheckdot_Virdot_shield : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Unextr. Passw.check. Vir. shield)" // Packer name & version
@@ -15827,7 +15213,7 @@ rule WWPACK_v3dot05c4_Unextrdot_Passwdotcheckdot_Virdot_shield___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Unextractable_plus_Password_checking____: Packer
+rule WWPACK_v3dot05c4_Unextractable_plus_Password_checking : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Unextractable + Password checking)" // Packer name & version
@@ -15840,7 +15226,7 @@ rule WWPACK_v3dot05c4_Unextractable_plus_Password_checking____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Unextractable_plus_Virus_Shield____: Packer
+rule WWPACK_v3dot05c4_Unextractable_plus_Virus_Shield : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Unextractable + Virus Shield)" // Packer name & version
@@ -15853,7 +15239,7 @@ rule WWPACK_v3dot05c4_Unextractable_plus_Virus_Shield____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot05c4_Unextractable___: Packer
+rule WWPACK_v3dot05c4_Unextractable : Packer
 {
     meta:
         name = "WWPACK v3.05c4 (Unextractable)" // Packer name & version
@@ -15866,7 +15252,7 @@ rule WWPACK_v3dot05c4_Unextractable___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule XCR_v0dot13___: Packer
+rule XCR_v0dot13 : Packer
 {
     meta:
         name = "XCR v0.13" // Packer name & version
@@ -15879,7 +15265,7 @@ rule XCR_v0dot13___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule XPack_1dot67___: Packer
+rule XPack_1dot67 : Packer
 {
     meta:
         name = "XPack 1.67" // Packer name & version
@@ -15892,7 +15278,7 @@ rule XPack_1dot67___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule y0das_Crypter_v1dot0___: Packer
+rule y0das_Crypter_v1dot0 : Packer
 {
     meta:
         name = "y0da's Crypter v1.0" // Packer name & version
@@ -15905,7 +15291,7 @@ rule y0das_Crypter_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule y0das_Crypter_v1dot1___: Packer
+rule y0das_Crypter_v1dot1 : Packer
 {
     meta:
         name = "y0da's Crypter v1.1" // Packer name & version
@@ -15918,7 +15304,7 @@ rule y0das_Crypter_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule y0das_Crypter_v1dot2___: Packer
+rule y0das_Crypter_v1dot2 : Packer
 {
     meta:
         name = "y0da's Crypter v1.2" // Packer name & version
@@ -15931,7 +15317,7 @@ rule y0das_Crypter_v1dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Crypter_1dot3_Ashkbiz_Danehkar___: Packer
+rule yodas_Crypter_1dot3_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "yoda's Crypter 1.3-->Ashkbiz Danehkar" // Packer name & version
@@ -15944,7 +15330,7 @@ rule yodas_Crypter_1dot3_Ashkbiz_Danehkar___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yP_v1dot0b_by_Ashkbiz_Danehkar___: Packer
+rule yP_v1dot0b_by_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "yP v1.0b by Ashkbiz Danehkar" // Packer name & version
@@ -15983,7 +15369,7 @@ rule $pirit v1dot5 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_MEW_11_SE_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_MEW_11_SE_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [MEW 11 SE 1.0] --> Anorganix" // Packer name & version
@@ -15996,7 +15382,7 @@ rule PseudoSigner_0dot1_MEW_11_SE_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_MinGW_GCC_2dotx_Anorganix___: Packer
+rule PseudoSigner_0dot1_MinGW_GCC_2dotx_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [MinGW GCC 2.x] --> Anorganix" // Packer name & version
@@ -16009,7 +15395,7 @@ rule PseudoSigner_0dot1_MinGW_GCC_2dotx_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_VBOX_4dot3_MTE_Anorganix___: Packer
+rule PseudoSigner_0dot1_VBOX_4dot3_MTE_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [VBOX 4.3 MTE] --> Anorganix" // Packer name & version
@@ -16022,7 +15408,7 @@ rule PseudoSigner_0dot1_VBOX_4dot3_MTE_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_VOB_ProtectCD_5_Anorganix___: Packer
+rule PseudoSigner_0dot1_VOB_ProtectCD_5_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [VOB ProtectCD 5] --> Anorganix" // Packer name & version
@@ -16035,7 +15421,7 @@ rule PseudoSigner_0dot1_VOB_ProtectCD_5_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_WATCOM_C_Cplusplus_EXE_Anorganix___: Packer
+rule PseudoSigner_0dot1_WATCOM_C_Cplusplus_EXE_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [WATCOM C/C++ EXE] --> Anorganix" // Packer name & version
@@ -16048,7 +15434,7 @@ rule PseudoSigner_0dot1_WATCOM_C_Cplusplus_EXE_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_XCR_0dot11_Anorganix___: Packer
+rule PseudoSigner_0dot1_XCR_0dot11_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [XCR 0.11] --> Anorganix" // Packer name & version
@@ -16061,7 +15447,7 @@ rule PseudoSigner_0dot1_XCR_0dot11_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Yodas_Protector_1dot02_Anorganix___: Packer
+rule PseudoSigner_0dot1_Yodas_Protector_1dot02_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Yoda's Protector 1.02] --> Anorganix" // Packer name & version
@@ -16074,7 +15460,7 @@ rule PseudoSigner_0dot1_Yodas_Protector_1dot02_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_32Lite_0dot03_Anorganix___: Packer
+rule PseudoSigner_0dot2_32Lite_0dot03_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [32Lite 0.03] --> Anorganix" // Packer name & version
@@ -16087,7 +15473,7 @@ rule PseudoSigner_0dot2_32Lite_0dot03_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Borland_Cplusplus_DLL_Method_2_Anorganix___: Packer
+rule PseudoSigner_0dot2_Borland_Cplusplus_DLL_Method_2_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Borland C++ DLL (Method 2)] --> Anorganix" // Packer name & version
@@ -16100,7 +15486,7 @@ rule PseudoSigner_0dot2_Borland_Cplusplus_DLL_Method_2_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_CD_Cops_II_Anorganix___: Packer
+rule PseudoSigner_0dot2_CD_Cops_II_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [CD-Cops II] --> Anorganix" // Packer name & version
@@ -16113,7 +15499,7 @@ rule PseudoSigner_0dot2_CD_Cops_II_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_MEW_11_SE_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_MEW_11_SE_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [MEW 11 SE 1.0] --> Anorganix" // Packer name & version
@@ -16126,7 +15512,7 @@ rule PseudoSigner_0dot2_MEW_11_SE_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix" // Packer name & version
@@ -16139,7 +15525,7 @@ rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_MinGW_GCC_2dotx_Anorganix___: Packer
+rule PseudoSigner_0dot2_MinGW_GCC_2dotx_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [MinGW GCC 2.x] --> Anorganix" // Packer name & version
@@ -16152,7 +15538,7 @@ rule PseudoSigner_0dot2_MinGW_GCC_2dotx_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_VBOX_4dot3_MTE_Anorganix___: Packer
+rule PseudoSigner_0dot2_VBOX_4dot3_MTE_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [VBOX 4.3 MTE] --> Anorganix" // Packer name & version
@@ -16165,7 +15551,7 @@ rule PseudoSigner_0dot2_VBOX_4dot3_MTE_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_VOB_ProtectCD_5_Anorganix___: Packer
+rule PseudoSigner_0dot2_VOB_ProtectCD_5_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [VOB ProtectCD 5] --> Anorganix" // Packer name & version
@@ -16178,7 +15564,7 @@ rule PseudoSigner_0dot2_VOB_ProtectCD_5_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_WATCOM_C_Cplusplus_EXE_Anorganix___: Packer
+rule PseudoSigner_0dot2_WATCOM_C_Cplusplus_EXE_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [WATCOM C/C++ EXE] --> Anorganix" // Packer name & version
@@ -16191,7 +15577,7 @@ rule PseudoSigner_0dot2_WATCOM_C_Cplusplus_EXE_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_XCR_0dot11_Anorganix___: Packer
+rule PseudoSigner_0dot2_XCR_0dot11_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [XCR 0.11] --> Anorganix" // Packer name & version
@@ -16204,7 +15590,7 @@ rule PseudoSigner_0dot2_XCR_0dot11_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix___: Packer
+rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Yoda's Protector 1.02] --> Anorganix" // Packer name & version
@@ -16233,7 +15619,7 @@ rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule dotBJFnt_v1dot1b___: Packer
+rule dotBJFnt_v1dot1b : Packer
 {
     meta:
         name = ".BJFnt v1.1b" // Packer name & version
@@ -16246,7 +15632,7 @@ rule dotBJFnt_v1dot1b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule dotBJFnt_v1dot2_RC___: Packer
+rule dotBJFnt_v1dot2_RC : Packer
 {
     meta:
         name = ".BJFnt v1.2 RC" // Packer name & version
@@ -16259,7 +15645,7 @@ rule dotBJFnt_v1dot2_RC___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule dotBJFnt_v1dot3___: Packer
+rule dotBJFnt_v1dot3 : Packer
 {
     meta:
         name = ".BJFnt v1.3" // Packer name & version
@@ -16272,7 +15658,7 @@ rule dotBJFnt_v1dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule 32Lite_v0dot03a___: Packer
+rule 32Lite_v0dot03a : Packer
 {
     meta:
         name = "32Lite v0.03a" // Packer name & version
@@ -16285,7 +15671,7 @@ rule 32Lite_v0dot03a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule A_program_by_Jupiter_dotdot___: Packer
+rule A_program_by_Jupiter_dotdot : Packer
 {
     meta:
         name = "A program by Jupiter .." // Packer name & version
@@ -16298,7 +15684,7 @@ rule A_program_by_Jupiter_dotdot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule A3E_TXT2COM___: Packer
+rule A3E_TXT2COM : Packer
 {
     meta:
         name = "A3E (TXT2COM)" // Packer name & version
@@ -16311,7 +15697,7 @@ rule A3E_TXT2COM___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AcidCrypt___: Packer
+rule AcidCrypt : Packer
 {
     meta:
         name = "AcidCrypt" // Packer name & version
@@ -16324,7 +15710,7 @@ rule AcidCrypt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AcidCrypt___: Packer
+rule AcidCrypt : Packer
 {
     meta:
         name = "AcidCrypt" // Packer name & version
@@ -16337,7 +15723,7 @@ rule AcidCrypt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ACProtect_v1dot35_risco_software_Incdot__and__Anticrack_Software____h__: Packer
+rule ACProtect_v1dot35_risco_software_Incdot_and_Anticrack_Software_h : Packer
 {
     meta:
         name = "ACProtect v1.35 -> risco software Inc. & Anticrack Software (h)" // Packer name & version
@@ -16350,7 +15736,7 @@ rule ACProtect_v1dot35_risco_software_Incdot__and__Anticrack_Software____h__: Pa
     condition:
     	for any of them
 }
-rule ACProtect_V1dot3X_risco___: Packer
+rule ACProtect_V1dot3X_risco : Packer
 {
     meta:
         name = "ACProtect V1.3X -> risco" // Packer name & version
@@ -16363,7 +15749,7 @@ rule ACProtect_V1dot3X_risco___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ACProtect_V1dot4X_risco___: Packer
+rule ACProtect_V1dot4X_risco : Packer
 {
     meta:
         name = "ACProtect V1.4X -> risco" // Packer name & version
@@ -16376,7 +15762,7 @@ rule ACProtect_V1dot4X_risco___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ACProtect_v1dot90g_Risco_software_Incdot___: Packer
+rule ACProtect_v1dot90g_Risco_software_Incdot : Packer
 {
     meta:
         name = "ACProtect v1.90g -> Risco software Inc." // Packer name & version
@@ -16389,7 +15775,7 @@ rule ACProtect_v1dot90g_Risco_software_Incdot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ActiveMARK_TM_R5dot31dot1140_Trymedia___: Packer
+rule ActiveMARK_TM_R5dot31dot1140_Trymedia : Packer
 {
     meta:
         name = "ActiveMARK[TM] R5.31.1140 -> Trymedia" // Packer name & version
@@ -16402,7 +15788,7 @@ rule ActiveMARK_TM_R5dot31dot1140_Trymedia___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AdFlt2___: Packer
+rule AdFlt2 : Packer
 {
     meta:
         name = "AdFlt2" // Packer name & version
@@ -16415,7 +15801,7 @@ rule AdFlt2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Adys_Glue_1dot10___: Packer
+rule Adys_Glue_1dot10 : Packer
 {
     meta:
         name = "Ady's Glue 1.10" // Packer name & version
@@ -16428,7 +15814,7 @@ rule Adys_Glue_1dot10___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AINEXE_v2dot1___: Packer
+rule AINEXE_v2dot1 : Packer
 {
     meta:
         name = "AINEXE v2.1" // Packer name & version
@@ -16441,7 +15827,7 @@ rule AINEXE_v2dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AINEXE_v2dot30___: Packer
+rule AINEXE_v2dot30 : Packer
 {
     meta:
         name = "AINEXE v2.30" // Packer name & version
@@ -16454,7 +15840,7 @@ rule AINEXE_v2dot30___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Aluwain_v8dot09___: Packer
+rule Aluwain_v8dot09 : Packer
 {
     meta:
         name = "Aluwain v8.09" // Packer name & version
@@ -16467,7 +15853,7 @@ rule Aluwain_v8dot09___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Anskya_Binder_v1dot1_Anskya___: Packer
+rule Anskya_Binder_v1dot1_Anskya : Packer
 {
     meta:
         name = "Anskya Binder v1.1 -> Anskya" // Packer name & version
@@ -16480,7 +15866,7 @@ rule Anskya_Binder_v1dot1_Anskya___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Anticrack_Software_Protector_v1dot09_ACProtect___: Packer
+rule Anticrack_Software_Protector_v1dot09_ACProtect : Packer
 {
     meta:
         name = "Anticrack Software Protector v1.09 (ACProtect)" // Packer name & version
@@ -16493,7 +15879,7 @@ rule Anticrack_Software_Protector_v1dot09_ACProtect___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule AntiVirus_Vaccine_vdot1dot03___: Packer
+rule AntiVirus_Vaccine_vdot1dot03 : Packer
 {
     meta:
         name = "AntiVirus Vaccine v.1.03" // Packer name & version
@@ -16506,7 +15892,7 @@ rule AntiVirus_Vaccine_vdot1dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule aPack_v0dot62___: Packer
+rule aPack_v0dot62 : Packer
 {
     meta:
         name = "aPack v0.62" // Packer name & version
@@ -16519,7 +15905,7 @@ rule aPack_v0dot62___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule aPack_v0dot98_m___: Packer
+rule aPack_v0dot98_m : Packer
 {
     meta:
         name = "aPack v0.98 -m" // Packer name & version
@@ -16532,7 +15918,7 @@ rule aPack_v0dot98_m___: Packer
     condition:
     	for any of them
 }
-rule aPack_v0dot98b_DS_and_ES_not_saved____: Packer
+rule aPack_v0dot98b_DS_and_ES_not_saved : Packer
 {
     meta:
         name = "aPack v0.98b (DS&ES not saved)" // Packer name & version
@@ -16545,7 +15931,7 @@ rule aPack_v0dot98b_DS_and_ES_not_saved____: Packer
     condition:
     	for any of them
 }
-rule APatch_GUI_v1dot1___: Packer
+rule APatch_GUI_v1dot1 : Packer
 {
     meta:
         name = "APatch GUI v1.1" // Packer name & version
@@ -16558,7 +15944,7 @@ rule APatch_GUI_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ARC_SFX_Archive___: Packer
+rule ARC_SFX_Archive : Packer
 {
     meta:
         name = "ARC-SFX Archive" // Packer name & version
@@ -16571,7 +15957,7 @@ rule ARC_SFX_Archive___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot71___: Packer
+rule Armadillo_v1dot71 : Packer
 {
     meta:
         name = "Armadillo v1.71" // Packer name & version
@@ -16584,7 +15970,7 @@ rule Armadillo_v1dot71___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot72_v1dot73___: Packer
+rule Armadillo_v1dot72_v1dot73 : Packer
 {
     meta:
         name = "Armadillo v1.72 - v1.73" // Packer name & version
@@ -16597,7 +15983,7 @@ rule Armadillo_v1dot72_v1dot73___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dot9x___: Packer
+rule Armadillo_v1dot9x : Packer
 {
     meta:
         name = "Armadillo v1.9x" // Packer name & version
@@ -16610,7 +15996,7 @@ rule Armadillo_v1dot9x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v1dotxx_v2dotxx___: Packer
+rule Armadillo_v1dotxx_v2dotxx : Packer
 {
     meta:
         name = "Armadillo v1.xx - v2.xx" // Packer name & version
@@ -16623,7 +16009,7 @@ rule Armadillo_v1dotxx_v2dotxx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot51___: Packer
+rule Armadillo_v2dot51 : Packer
 {
     meta:
         name = "Armadillo v2.51" // Packer name & version
@@ -16636,7 +16022,7 @@ rule Armadillo_v2dot51___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot52___: Packer
+rule Armadillo_v2dot52 : Packer
 {
     meta:
         name = "Armadillo v2.52" // Packer name & version
@@ -16649,7 +16035,7 @@ rule Armadillo_v2dot52___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot52b2___: Packer
+rule Armadillo_v2dot52b2 : Packer
 {
     meta:
         name = "Armadillo v2.52b2" // Packer name & version
@@ -16662,7 +16048,7 @@ rule Armadillo_v2dot52b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Armadillo_v2dot53b3___: Packer
+rule Armadillo_v2dot53b3 : Packer
 {
     meta:
         name = "Armadillo v2.53b3" // Packer name & version
@@ -16675,7 +16061,7 @@ rule Armadillo_v2dot53b3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot02b___: Packer
+rule ASPack_v1dot02b : Packer
 {
     meta:
         name = "ASPack v1.02b" // Packer name & version
@@ -16688,7 +16074,7 @@ rule ASPack_v1dot02b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot04b___: Packer
+rule ASPack_v1dot04b : Packer
 {
     meta:
         name = "ASPack v1.04b" // Packer name & version
@@ -16701,7 +16087,7 @@ rule ASPack_v1dot04b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot07b___: Packer
+rule ASPack_v1dot07b : Packer
 {
     meta:
         name = "ASPack v1.07b" // Packer name & version
@@ -16714,7 +16100,7 @@ rule ASPack_v1dot07b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot07b_DLL___: Packer
+rule ASPack_v1dot07b_DLL : Packer
 {
     meta:
         name = "ASPack v1.07b (DLL)" // Packer name & version
@@ -16727,7 +16113,7 @@ rule ASPack_v1dot07b_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot01___: Packer
+rule ASPack_v1dot08dot01 : Packer
 {
     meta:
         name = "ASPack v1.08.01" // Packer name & version
@@ -16740,7 +16126,7 @@ rule ASPack_v1dot08dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot03___: Packer
+rule ASPack_v1dot08dot03 : Packer
 {
     meta:
         name = "ASPack v1.08.03" // Packer name & version
@@ -16753,7 +16139,7 @@ rule ASPack_v1dot08dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot03___: Packer
+rule ASPack_v1dot08dot03 : Packer
 {
     meta:
         name = "ASPack v1.08.03" // Packer name & version
@@ -16766,7 +16152,7 @@ rule ASPack_v1dot08dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot04___: Packer
+rule ASPack_v1dot08dot04 : Packer
 {
     meta:
         name = "ASPack v1.08.04" // Packer name & version
@@ -16779,7 +16165,7 @@ rule ASPack_v1dot08dot04___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot000___: Packer
+rule ASPack_v2dot000 : Packer
 {
     meta:
         name = "ASPack v2.000" // Packer name & version
@@ -16792,7 +16178,7 @@ rule ASPack_v2dot000___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot001___: Packer
+rule ASPack_v2dot001 : Packer
 {
     meta:
         name = "ASPack v2.001" // Packer name & version
@@ -16805,7 +16191,7 @@ rule ASPack_v2dot001___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot1___: Packer
+rule ASPack_v2dot1 : Packer
 {
     meta:
         name = "ASPack v2.1" // Packer name & version
@@ -16818,7 +16204,7 @@ rule ASPack_v2dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot11d___: Packer
+rule ASPack_v2dot11d : Packer
 {
     meta:
         name = "ASPack v2.11d" // Packer name & version
@@ -16831,7 +16217,7 @@ rule ASPack_v2dot11d___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot12___: Packer
+rule ASPack_v2dot12 : Packer
 {
     meta:
         name = "ASPack v2.12" // Packer name & version
@@ -16844,7 +16230,7 @@ rule ASPack_v2dot12___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dotxx___: Packer
+rule ASPack_v2dotxx : Packer
 {
     meta:
         name = "ASPack v2.xx" // Packer name & version
@@ -16857,7 +16243,7 @@ rule ASPack_v2dotxx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPR_Stripper_v2dotx_unpacked___: Packer
+rule ASPR_Stripper_v2dotx_unpacked : Packer
 {
     meta:
         name = "ASPR Stripper v2.x unpacked" // Packer name & version
@@ -16870,7 +16256,7 @@ rule ASPR_Stripper_v2dotx_unpacked___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_1dot33_2dot1_Registered_Alexey_Solodovnikov___: Packer
+rule ASProtect_1dot33_2dot1_Registered_Alexey_Solodovnikov : Packer
 {
     meta:
         name = "ASProtect 1.33 - 2.1 Registered -> Alexey Solodovnikov" // Packer name & version
@@ -16883,7 +16269,7 @@ rule ASProtect_1dot33_2dot1_Registered_Alexey_Solodovnikov___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot0___: Packer
+rule ASProtect_v1dot0 : Packer
 {
     meta:
         name = "ASProtect v1.0" // Packer name & version
@@ -16896,7 +16282,7 @@ rule ASProtect_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot1___: Packer
+rule ASProtect_v1dot1 : Packer
 {
     meta:
         name = "ASProtect v1.1" // Packer name & version
@@ -16909,7 +16295,7 @@ rule ASProtect_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot1_MTE___: Packer
+rule ASProtect_v1dot1_MTE : Packer
 {
     meta:
         name = "ASProtect v1.1 MTE" // Packer name & version
@@ -16922,7 +16308,7 @@ rule ASProtect_v1dot1_MTE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot1_MTEc___: Packer
+rule ASProtect_v1dot1_MTEc : Packer
 {
     meta:
         name = "ASProtect v1.1 MTEc" // Packer name & version
@@ -16935,7 +16321,7 @@ rule ASProtect_v1dot1_MTEc___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot23_RC1___: Packer
+rule ASProtect_v1dot23_RC1 : Packer
 {
     meta:
         name = "ASProtect v1.23 RC1" // Packer name & version
@@ -16948,7 +16334,7 @@ rule ASProtect_v1dot23_RC1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot2x___: Packer
+rule ASProtect_v1dot2x : Packer
 {
     meta:
         name = "ASProtect v1.2x" // Packer name & version
@@ -16961,7 +16347,7 @@ rule ASProtect_v1dot2x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot2x_New_Strain___: Packer
+rule ASProtect_v1dot2x_New_Strain : Packer
 {
     meta:
         name = "ASProtect v1.2x (New Strain)" // Packer name & version
@@ -16974,7 +16360,7 @@ rule ASProtect_v1dot2x_New_Strain___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_vxdotx___: Packer
+rule ASProtect_vxdotx : Packer
 {
     meta:
         name = "ASProtect vx.x" // Packer name & version
@@ -16987,7 +16373,7 @@ rule ASProtect_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule bambam_V0dot01_bedrock___: Packer
+rule bambam_V0dot01_bedrock : Packer
 {
     meta:
         name = "bambam V0.01 -> bedrock" // Packer name & version
@@ -17000,7 +16386,7 @@ rule bambam_V0dot01_bedrock___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 -> BeRo / Farbrausch" // Packer name & version
@@ -17013,7 +16399,7 @@ rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch___: Packer
+rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch : Packer
 {
     meta:
         name = "BeRoEXEPacker v1.00 -> BeRo / Farbrausch" // Packer name & version
@@ -17026,7 +16412,7 @@ rule BeRoEXEPacker_v1dot00_BeRo_Farbrausch___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Blade_Joiner_v1dot5___: Packer
+rule Blade_Joiner_v1dot5 : Packer
 {
     meta:
         name = "Blade Joiner v1.5" // Packer name & version
@@ -17039,7 +16425,7 @@ rule Blade_Joiner_v1dot5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BobSoft_Mini_Delphi_BoB_BobSoft___: Packer
+rule BobSoft_Mini_Delphi_BoB_BobSoft : Packer
 {
     meta:
         name = "BobSoft Mini Delphi -> BoB / BobSoft" // Packer name & version
@@ -17052,7 +16438,7 @@ rule BobSoft_Mini_Delphi_BoB_BobSoft___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BobSoft_Mini_Delphi_BoB_BobSoft___: Packer
+rule BobSoft_Mini_Delphi_BoB_BobSoft : Packer
 {
     meta:
         name = "BobSoft Mini Delphi -> BoB / BobSoft" // Packer name & version
@@ -17065,7 +16451,7 @@ rule BobSoft_Mini_Delphi_BoB_BobSoft___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BobSoft_Mini_Delphi_BoB_BobSoft___: Packer
+rule BobSoft_Mini_Delphi_BoB_BobSoft : Packer
 {
     meta:
         name = "BobSoft Mini Delphi -> BoB / BobSoft" // Packer name & version
@@ -17078,7 +16464,7 @@ rule BobSoft_Mini_Delphi_BoB_BobSoft___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BookManager_v9510___: Packer
+rule BookManager_v9510 : Packer
 {
     meta:
         name = "BookManager v9510" // Packer name & version
@@ -17091,7 +16477,7 @@ rule BookManager_v9510___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule BopCrypt_v1dot0___: Packer
+rule BopCrypt_v1dot0 : Packer
 {
     meta:
         name = "BopCrypt v1.0" // Packer name & version
@@ -17104,7 +16490,7 @@ rule BopCrypt_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule by_Central_Point_Software___: Packer
+rule by_Central_Point_Software : Packer
 {
     meta:
         name = "by Central Point Software" // Packer name & version
@@ -17117,7 +16503,7 @@ rule by_Central_Point_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Can2Exe_v0dot01___: Packer
+rule Can2Exe_v0dot01 : Packer
 {
     meta:
         name = "Can2Exe v0.01" // Packer name & version
@@ -17130,7 +16516,7 @@ rule Can2Exe_v0dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CauseWay_DOS_Extender_v3dot25___: Packer
+rule CauseWay_DOS_Extender_v3dot25 : Packer
 {
     meta:
         name = "CauseWay DOS Extender v3.25" // Packer name & version
@@ -17143,7 +16529,7 @@ rule CauseWay_DOS_Extender_v3dot25___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CC_v2dot61_Beta___: Packer
+rule CC_v2dot61_Beta : Packer
 {
     meta:
         name = "CC v2.61 Beta" // Packer name & version
@@ -17156,7 +16542,7 @@ rule CC_v2dot61_Beta___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CD_Cops_II___: Packer
+rule CD_Cops_II : Packer
 {
     meta:
         name = "CD-Cops II" // Packer name & version
@@ -17169,7 +16555,7 @@ rule CD_Cops_II___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CERBERUS_v2dot0___: Packer
+rule CERBERUS_v2dot0 : Packer
 {
     meta:
         name = "CERBERUS v2.0" // Packer name & version
@@ -17182,7 +16568,7 @@ rule CERBERUS_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CHECKPRG_c_1992___: Packer
+rule CHECKPRG_c_1992 : Packer
 {
     meta:
         name = "CHECKPRG (c) 1992" // Packer name & version
@@ -17195,7 +16581,7 @@ rule CHECKPRG_c_1992___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ChSfx_small_v1dot1___: Packer
+rule ChSfx_small_v1dot1 : Packer
 {
     meta:
         name = "ChSfx (small) v1.1" // Packer name & version
@@ -17208,7 +16594,7 @@ rule ChSfx_small_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Code_Lock_vxdotx___: Packer
+rule Code_Lock_vxdotx : Packer
 {
     meta:
         name = "Code-Lock vx.x" // Packer name & version
@@ -17221,7 +16607,7 @@ rule Code_Lock_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CodeCrypt_v0dot14b___: Packer
+rule CodeCrypt_v0dot14b : Packer
 {
     meta:
         name = "CodeCrypt v0.14b" // Packer name & version
@@ -17234,7 +16620,7 @@ rule CodeCrypt_v0dot14b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CodeCrypt_v0dot15b___: Packer
+rule CodeCrypt_v0dot15b : Packer
 {
     meta:
         name = "CodeCrypt v0.15b" // Packer name & version
@@ -17247,7 +16633,7 @@ rule CodeCrypt_v0dot15b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CodeCrypt_v0dot16b_v0dot163b___: Packer
+rule CodeCrypt_v0dot16b_v0dot163b : Packer
 {
     meta:
         name = "CodeCrypt v0.16b - v0.163b" // Packer name & version
@@ -17260,7 +16646,7 @@ rule CodeCrypt_v0dot16b_v0dot163b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule COP_v1dot0_c_1988___: Packer
+rule COP_v1dot0_c_1988 : Packer
 {
     meta:
         name = "COP v1.0 (c) 1988" // Packer name & version
@@ -17273,7 +16659,7 @@ rule COP_v1dot0_c_1988___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Copy_Protector_v2dot0___: Packer
+rule Copy_Protector_v2dot0 : Packer
 {
     meta:
         name = "Copy Protector v2.0" // Packer name & version
@@ -17286,7 +16672,7 @@ rule Copy_Protector_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CPAV___: Packer
+rule CPAV : Packer
 {
     meta:
         name = "CPAV" // Packer name & version
@@ -17299,7 +16685,7 @@ rule CPAV___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CrackStop_v1dot01_c_Stefan_Esser_1997___: Packer
+rule CrackStop_v1dot01_c_Stefan_Esser_1997 : Packer
 {
     meta:
         name = "CrackStop v1.01 (c) Stefan Esser 1997" // Packer name & version
@@ -17312,7 +16698,7 @@ rule CrackStop_v1dot01_c_Stefan_Esser_1997___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crinkler_V0dot1_V0dot2_Rune_LdotHdotStubbe_and_Aske_Simon_Christensen___: Packer
+rule Crinkler_V0dot1_V0dot2_Rune_LdotHdotStubbe_and_Aske_Simon_Christensen : Packer
 {
     meta:
         name = "Crinkler V0.1-V0.2 -> Rune L.H.Stubbe and Aske Simon Christensen" // Packer name & version
@@ -17325,7 +16711,7 @@ rule Crinkler_V0dot1_V0dot2_Rune_LdotHdotStubbe_and_Aske_Simon_Christensen___: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crinkler_V0dot3_V0dot4_Rune_LdotHdotStubbe_and_Aske_Simon_Christensen___: Packer
+rule Crinkler_V0dot3_V0dot4_Rune_LdotHdotStubbe_and_Aske_Simon_Christensen : Packer
 {
     meta:
         name = "Crinkler V0.3-V0.4 -> Rune L.H.Stubbe and Aske Simon Christensen" // Packer name & version
@@ -17338,7 +16724,7 @@ rule Crinkler_V0dot3_V0dot4_Rune_LdotHdotStubbe_and_Aske_Simon_Christensen___: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_PE_v1dot0dotxdotx___: Packer
+rule Crunch_PE_v1dot0dotxdotx : Packer
 {
     meta:
         name = "Crunch/PE v1.0.x.x" // Packer name & version
@@ -17351,7 +16737,7 @@ rule Crunch_PE_v1dot0dotxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_PE_v3dot0dotxdotx___: Packer
+rule Crunch_PE_v3dot0dotxdotx : Packer
 {
     meta:
         name = "Crunch/PE v3.0.x.x" // Packer name & version
@@ -17364,7 +16750,7 @@ rule Crunch_PE_v3dot0dotxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Cruncher_v1dot0___: Packer
+rule Cruncher_v1dot0 : Packer
 {
     meta:
         name = "Cruncher v1.0" // Packer name & version
@@ -17377,7 +16763,7 @@ rule Cruncher_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CrypKey_v5_v6___: Packer
+rule CrypKey_v5_v6 : Packer
 {
     meta:
         name = "CrypKey v5 - v6" // Packer name & version
@@ -17390,7 +16776,7 @@ rule CrypKey_v5_v6___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CrypKey_V5dot6dotX_Kenonic_Controls_Ltddot___: Packer
+rule CrypKey_V5dot6dotX_Kenonic_Controls_Ltddot : Packer
 {
     meta:
         name = "CrypKey V5.6.X -> Kenonic Controls Ltd." // Packer name & version
@@ -17403,7 +16789,7 @@ rule CrypKey_V5dot6dotX_Kenonic_Controls_Ltddot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CrypKey_V5dot6dotX_DLL_Kenonic_Controls_Ltddot___: Packer
+rule CrypKey_V5dot6dotX_DLL_Kenonic_Controls_Ltddot : Packer
 {
     meta:
         name = "CrypKey V5.6.X DLL -> Kenonic Controls Ltd." // Packer name & version
@@ -17416,7 +16802,7 @@ rule CrypKey_V5dot6dotX_DLL_Kenonic_Controls_Ltddot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CrypKey_V6dot1X_DLL_CrypKey_Canada_Incdot___: Packer
+rule CrypKey_V6dot1X_DLL_CrypKey_Canada_Incdot : Packer
 {
     meta:
         name = "CrypKey V6.1X DLL -> CrypKey (Canada) Inc." // Packer name & version
@@ -17429,7 +16815,7 @@ rule CrypKey_V6dot1X_DLL_CrypKey_Canada_Incdot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CRYPT_Version_1dot7_c_Dismember___: Packer
+rule CRYPT_Version_1dot7_c_Dismember : Packer
 {
     meta:
         name = "CRYPT Version 1.7 (c) Dismember" // Packer name & version
@@ -17442,7 +16828,7 @@ rule CRYPT_Version_1dot7_c_Dismember___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CRYPT_Version_1dot7_c_Dismember_COM____: Packer
+rule CRYPT_Version_1dot7_c_Dismember_COM : Packer
 {
     meta:
         name = "CRYPT Version 1.7 (c) Dismember (COM)" // Packer name & version
@@ -17455,7 +16841,7 @@ rule CRYPT_Version_1dot7_c_Dismember_COM____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CRYPT_Version_1dot7_c_Dismember_EXE____: Packer
+rule CRYPT_Version_1dot7_c_Dismember_EXE : Packer
 {
     meta:
         name = "CRYPT Version 1.7 (c) Dismember (EXE)" // Packer name & version
@@ -17468,7 +16854,7 @@ rule CRYPT_Version_1dot7_c_Dismember_EXE____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CryptCom_v1dot1___: Packer
+rule CryptCom_v1dot1 : Packer
 {
     meta:
         name = "CryptCom v1.1" // Packer name & version
@@ -17481,7 +16867,7 @@ rule CryptCom_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule CrypWrap_vxdotx___: Packer
+rule CrypWrap_vxdotx : Packer
 {
     meta:
         name = "CrypWrap vx.x" // Packer name & version
@@ -17494,7 +16880,7 @@ rule CrypWrap_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Cygwin32___: Packer
+rule Cygwin32 : Packer
 {
     meta:
         name = "Cygwin32" // Packer name & version
@@ -17507,7 +16893,7 @@ rule Cygwin32___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DBPE_vxdotxx___: Packer
+rule DBPE_vxdotxx : Packer
 {
     meta:
         name = "DBPE vx.xx" // Packer name & version
@@ -17520,7 +16906,7 @@ rule DBPE_vxdotxx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DEF_v1dot0___: Packer
+rule DEF_v1dot0 : Packer
 {
     meta:
         name = "DEF v1.0" // Packer name & version
@@ -17533,7 +16919,7 @@ rule DEF_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule dePACK_deNULL___: Packer
+rule dePACK_deNULL : Packer
 {
     meta:
         name = "dePACK -> deNULL" // Packer name & version
@@ -17546,7 +16932,7 @@ rule dePACK_deNULL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Dev_C__plusplus_v4_: Packer
+rule Dev_C_plusplus_v4 : Packer
 {
     meta:
         name = "Dev-C++ v4" // Packer name & version
@@ -17559,7 +16945,7 @@ rule Dev_C__plusplus_v4_: Packer
     condition:
     	for any of them
 }
-rule DIET_v1dot00d___: Packer
+rule DIET_v1dot00d : Packer
 {
     meta:
         name = "DIET v1.00d" // Packer name & version
@@ -17572,7 +16958,7 @@ rule DIET_v1dot00d___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DIET_v1dot44__v1dot45f___: Packer
+rule DIET_v1dot44_v1dot45f : Packer
 {
     meta:
         name = "DIET v1.44, v1.45f" // Packer name & version
@@ -17585,7 +16971,7 @@ rule DIET_v1dot44__v1dot45f___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Ding_Boys_PE___lock_Phantasm_v0dot8_: Packer
+rule Ding_Boys_PE_lock_Phantasm_v0dot8 : Packer
 {
     meta:
         name = "Ding Boy's PE-lock Phantasm v0.8" // Packer name & version
@@ -17598,7 +16984,7 @@ rule Ding_Boys_PE___lock_Phantasm_v0dot8_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Ding_Boys_PE___lock_Phantasm_v1dot0___v1dot1_: Packer
+rule Ding_Boys_PE_lock_Phantasm_v1dot0_v1dot1 : Packer
 {
     meta:
         name = "Ding Boy's PE-lock Phantasm v1.0 / v1.1" // Packer name & version
@@ -17611,7 +16997,7 @@ rule Ding_Boys_PE___lock_Phantasm_v1dot0___v1dot1_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Ding_Boys_PE___lock_v0dot07_: Packer
+rule Ding_Boys_PE_lock_v0dot07 : Packer
 {
     meta:
         name = "Ding Boy's PE-lock v0.07" // Packer name & version
@@ -17624,7 +17010,7 @@ rule Ding_Boys_PE___lock_v0dot07_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DJoin_v0dot7_public_RC4_encryption_drmist___: Packer
+rule DJoin_v0dot7_public_RC4_encryption_drmist : Packer
 {
     meta:
         name = "DJoin v0.7 public (RC4 encryption) -> drmist" // Packer name & version
@@ -17637,7 +17023,7 @@ rule DJoin_v0dot7_public_RC4_encryption_drmist___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DJoin_v0dot7_public_xor_encryption_drmist___: Packer
+rule DJoin_v0dot7_public_xor_encryption_drmist : Packer
 {
     meta:
         name = "DJoin v0.7 public (xor encryption) -> drmist" // Packer name & version
@@ -17650,7 +17036,7 @@ rule DJoin_v0dot7_public_xor_encryption_drmist___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DOS_16M_DOS_Extender_c_Tenberry_Software_Inc_1987___1995_: Packer
+rule DOS_16M_DOS_Extender_c_Tenberry_Software_Inc_1987_1995 : Packer
 {
     meta:
         name = "DOS/16M DOS Extender (c) Tenberry Software Inc 1987-1995" // Packer name & version
@@ -17663,7 +17049,7 @@ rule DOS_16M_DOS_Extender_c_Tenberry_Software_Inc_1987___1995_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DrdotWeb_Virus_Finding_Engine_InSoft_EDV___Systeme_: Packer
+rule DrdotWeb_Virus_Finding_Engine_InSoft_EDV_Systeme : Packer
 {
     meta:
         name = "Dr.Web Virus-Finding Engine -> InSoft EDV-Systeme" // Packer name & version
@@ -17676,7 +17062,7 @@ rule DrdotWeb_Virus_Finding_Engine_InSoft_EDV___Systeme_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule DSHIELD___: Packer
+rule DSHIELD : Packer
 {
     meta:
         name = "DSHIELD" // Packer name & version
@@ -17689,7 +17075,7 @@ rule DSHIELD___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule dUP_2dotx_Patcher_wwwdotdiablo2oo2dotcjbdotnet___: Packer
+rule dUP_2dotx_Patcher_wwwdotdiablo2oo2dotcjbdotnet : Packer
 {
     meta:
         name = "dUP 2.x Patcher --> www.diablo2oo2.cjb.net" // Packer name & version
@@ -17702,7 +17088,7 @@ rule dUP_2dotx_Patcher_wwwdotdiablo2oo2dotcjbdotnet___: Packer
     condition:
     	for any of them
 }
-rule DxPack_1dot0___: Packer
+rule DxPack_1dot0 : Packer
 {
     meta:
         name = "DxPack 1.0" // Packer name & version
@@ -17715,7 +17101,7 @@ rule DxPack_1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule E_language___: Packer
+rule E_language : Packer
 {
     meta:
         name = "E language" // Packer name & version
@@ -17728,7 +17114,7 @@ rule E_language___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EdotSdotOdot_Eclipse_Operating_System_vdot2dot08_plus_DOS_Extender___: Packer
+rule EdotSdotOdot_Eclipse_Operating_System_vdot2dot08_plus_DOS_Extender : Packer
 {
     meta:
         name = "E.S.O. Eclipse Operating System v.2.08 + DOS Extender" // Packer name & version
@@ -17741,7 +17127,7 @@ rule EdotSdotOdot_Eclipse_Operating_System_vdot2dot08_plus_DOS_Extender___: Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-rule E2C_by_DoP___: Packer
+rule E2C_by_DoP : Packer
 {
     meta:
         name = "E2C by DoP" // Packer name & version
@@ -17754,7 +17140,7 @@ rule E2C_by_DoP___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Elicense_System_V4dot0dot0dot0_ViaTech_Inc___: Packer
+rule Elicense_System_V4dot0dot0dot0_ViaTech_Inc : Packer
 {
     meta:
         name = "Elicense System V4.0.0.0 -> ViaTech Inc" // Packer name & version
@@ -17767,7 +17153,7 @@ rule Elicense_System_V4dot0dot0dot0_ViaTech_Inc___: Packer
     condition:
     	for any of them
 }
-rule Embed_PE_v1dot13_cyclotron___: Packer
+rule Embed_PE_v1dot13_cyclotron : Packer
 {
     meta:
         name = "Embed PE v1.13 -> cyclotron" // Packer name & version
@@ -17780,7 +17166,7 @@ rule Embed_PE_v1dot13_cyclotron___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EmbedPE_v1dot24_cyclotron___: Packer
+rule EmbedPE_v1dot24_cyclotron : Packer
 {
     meta:
         name = "EmbedPE v1.24 -> cyclotron" // Packer name & version
@@ -17793,7 +17179,7 @@ rule EmbedPE_v1dot24_cyclotron___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EmbedPE_V1dotX_cyclotron___: Packer
+rule EmbedPE_V1dotX_cyclotron : Packer
 {
     meta:
         name = "EmbedPE V1.X -> cyclotron" // Packer name & version
@@ -17806,7 +17192,7 @@ rule EmbedPE_V1dotX_cyclotron___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EncryptPE_1dot2003dot5dot18_WFS___: Packer
+rule EncryptPE_1dot2003dot5dot18_WFS : Packer
 {
     meta:
         name = "EncryptPE 1.2003.5.18 -> WFS" // Packer name & version
@@ -17819,7 +17205,7 @@ rule EncryptPE_1dot2003dot5dot18_WFS___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EncryptPE_2dot2004dot8dot10_2dot2005dot3dot14_WFS___: Packer
+rule EncryptPE_2dot2004dot8dot10_2dot2005dot3dot14_WFS : Packer
 {
     meta:
         name = "EncryptPE 2.2004.8.10 - 2.2005.3.14 -> WFS" // Packer name & version
@@ -17832,7 +17218,7 @@ rule EncryptPE_2dot2004dot8dot10_2dot2005dot3dot14_WFS___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EncryptPE_V2dot2006dot1dot15_WFS___: Packer
+rule EncryptPE_V2dot2006dot1dot15_WFS : Packer
 {
     meta:
         name = "EncryptPE V2.2006.1.15 -> WFS" // Packer name & version
@@ -17845,7 +17231,7 @@ rule EncryptPE_V2dot2006dot1dot15_WFS___: Packer
     condition:
     	for any of them
 }
-rule EncryptPE_V2dot2006dot7dot10_WFS___: Packer
+rule EncryptPE_V2dot2006dot7dot10_WFS : Packer
 {
     meta:
         name = "EncryptPE V2.2006.7.10 -> WFS" // Packer name & version
@@ -17858,7 +17244,7 @@ rule EncryptPE_V2dot2006dot7dot10_WFS___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Enigma_protector_1dot10_1dot11_Vladimir_Sukhov___: Packer
+rule Enigma_protector_1dot10_1dot11_Vladimir_Sukhov : Packer
 {
     meta:
         name = "Enigma protector 1.10/1.11 -> Vladimir Sukhov" // Packer name & version
@@ -17871,7 +17257,7 @@ rule Enigma_protector_1dot10_1dot11_Vladimir_Sukhov___: Packer
     condition:
     	for any of them
 }
-rule ENIGMA_Protector_V1dot0_V1dot2_Sukhov_Vladimir___: Packer
+rule ENIGMA_Protector_V1dot0_V1dot2_Sukhov_Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector V1.0-V1.2-> Sukhov Vladimir" // Packer name & version
@@ -17884,7 +17270,7 @@ rule ENIGMA_Protector_V1dot0_V1dot2_Sukhov_Vladimir___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ENIGMA_Protector_V1dot1_CracKed_By__: shoooo & fly_Sukhov Vladimir : Packer
+rule ENIGMA_Protector_V1dot1_CracKed_By : shoooo & fly_Sukhov Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector V1.1 CracKed By: shoooo & fly -> Sukhov Vladimir" // Packer name & version
@@ -17897,7 +17283,7 @@ rule ENIGMA_Protector_V1dot1_CracKed_By__: shoooo & fly_Sukhov Vladimir : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ENIGMA_Protector_V1dot1_Sukhov_Vladimir___: Packer
+rule ENIGMA_Protector_V1dot1_Sukhov_Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector V1.1-> Sukhov Vladimir" // Packer name & version
@@ -17910,7 +17296,7 @@ rule ENIGMA_Protector_V1dot1_Sukhov_Vladimir___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ENIGMA_Protector_V1dot1_V1dot2_Sukhov_Vladimir___: Packer
+rule ENIGMA_Protector_V1dot1_V1dot2_Sukhov_Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector V1.1-V1.2-> Sukhov Vladimir" // Packer name & version
@@ -17923,7 +17309,7 @@ rule ENIGMA_Protector_V1dot1_V1dot2_Sukhov_Vladimir___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EPW_v1dot2___: Packer
+rule EPW_v1dot2 : Packer
 {
     meta:
         name = "EPW v1.2" // Packer name & version
@@ -17936,7 +17322,7 @@ rule EPW_v1dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EPW_v1dot30___: Packer
+rule EPW_v1dot30 : Packer
 {
     meta:
         name = "EPW v1.30" // Packer name & version
@@ -17949,7 +17335,7 @@ rule EPW_v1dot30___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Escargot_V0dot1_plusplusMeat___: Packer
+rule Escargot_V0dot1_plusplusMeat : Packer
 {
     meta:
         name = "Escargot V0.1 -> ++Meat" // Packer name & version
@@ -17962,7 +17348,7 @@ rule Escargot_V0dot1_plusplusMeat___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exact_Audio_Copy_UnknownCompiler___: Packer
+rule Exact_Audio_Copy_UnknownCompiler : Packer
 {
     meta:
         name = "Exact Audio Copy -> (UnknownCompiler)" // Packer name & version
@@ -17975,7 +17361,7 @@ rule Exact_Audio_Copy_UnknownCompiler___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Excalibur_1dot03_forgot___: Packer
+rule Excalibur_1dot03_forgot : Packer
 {
     meta:
         name = "Excalibur 1.03 -> forgot" // Packer name & version
@@ -17988,7 +17374,7 @@ rule Excalibur_1dot03_forgot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_joiner_Amok___: Packer
+rule EXE_joiner_Amok : Packer
 {
     meta:
         name = "EXE joiner -> Amok" // Packer name & version
@@ -18001,7 +17387,7 @@ rule EXE_joiner_Amok___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Locker_1dot0_IonIce___: Packer
+rule Exe_Locker_1dot0_IonIce : Packer
 {
     meta:
         name = "Exe Locker 1.0 -> IonIce" // Packer name & version
@@ -18014,7 +17400,7 @@ rule Exe_Locker_1dot0_IonIce___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Manager_Version_3dot0_1994_c_Solar_Designer___: Packer
+rule EXE_Manager_Version_3dot0_1994_c_Solar_Designer : Packer
 {
     meta:
         name = "EXE Manager Version 3.0 1994 (c) Solar Designer" // Packer name & version
@@ -18027,7 +17413,7 @@ rule EXE_Manager_Version_3dot0_1994_c_Solar_Designer___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Shield_v0dot1b_v0dot3b__v0dot3_SMoKE___: Packer
+rule EXE_Shield_v0dot1b_v0dot3b_v0dot3_SMoKE : Packer
 {
     meta:
         name = "EXE Shield v0.1b - v0.3b, v0.3 -> SMoKE" // Packer name & version
@@ -18040,7 +17426,7 @@ rule EXE_Shield_v0dot1b_v0dot3b__v0dot3_SMoKE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Shield_v2dot7___: Packer
+rule Exe_Shield_v2dot7 : Packer
 {
     meta:
         name = "Exe Shield v2.7" // Packer name & version
@@ -18053,7 +17439,7 @@ rule Exe_Shield_v2dot7___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Exe_Shield_vxdotx___: Packer
+rule Exe_Shield_vxdotx : Packer
 {
     meta:
         name = "Exe Shield vx.x" // Packer name & version
@@ -18066,7 +17452,7 @@ rule Exe_Shield_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Stealth_v2dot7___: Packer
+rule EXE_Stealth_v2dot7 : Packer
 {
     meta:
         name = "EXE Stealth v2.7" // Packer name & version
@@ -18079,7 +17465,7 @@ rule EXE_Stealth_v2dot7___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Stealth_v2dot71___: Packer
+rule EXE_Stealth_v2dot71 : Packer
 {
     meta:
         name = "EXE Stealth v2.71" // Packer name & version
@@ -18092,7 +17478,7 @@ rule EXE_Stealth_v2dot71___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Stealth_v2dot72___: Packer
+rule EXE_Stealth_v2dot72 : Packer
 {
     meta:
         name = "EXE Stealth v2.72" // Packer name & version
@@ -18105,7 +17491,7 @@ rule EXE_Stealth_v2dot72___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE_Stealth_v2dot74_WebToolMaster___: Packer
+rule EXE_Stealth_v2dot74_WebToolMaster : Packer
 {
     meta:
         name = "EXE Stealth v2.74 -> WebToolMaster" // Packer name & version
@@ -18118,7 +17504,7 @@ rule EXE_Stealth_v2dot74_WebToolMaster___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE2COM_Encrypted_without_selfcheck___: Packer
+rule EXE2COM_Encrypted_without_selfcheck : Packer
 {
     meta:
         name = "EXE2COM (Encrypted without selfcheck)" // Packer name & version
@@ -18131,7 +17517,7 @@ rule EXE2COM_Encrypted_without_selfcheck___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE2COM_Limited___: Packer
+rule EXE2COM_Limited : Packer
 {
     meta:
         name = "EXE2COM (Limited)" // Packer name & version
@@ -18144,7 +17530,7 @@ rule EXE2COM_Limited___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE2COM_Method_1___: Packer
+rule EXE2COM_Method_1 : Packer
 {
     meta:
         name = "EXE2COM (Method 1)" // Packer name & version
@@ -18157,7 +17543,7 @@ rule EXE2COM_Method_1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE2COM_Packed___: Packer
+rule EXE2COM_Packed : Packer
 {
     meta:
         name = "EXE2COM (Packed)" // Packer name & version
@@ -18170,7 +17556,7 @@ rule EXE2COM_Packed___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXE32Pack_v1dot3x___: Packer
+rule EXE32Pack_v1dot3x : Packer
 {
     meta:
         name = "EXE32Pack v1.3x" // Packer name & version
@@ -18183,7 +17569,7 @@ rule EXE32Pack_v1dot3x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_v1dot3dot0dot45___: Packer
+rule EXECryptor_v1dot3dot0dot45 : Packer
 {
     meta:
         name = "EXECryptor v1.3.0.45" // Packer name & version
@@ -18196,7 +17582,7 @@ rule EXECryptor_v1dot3dot0dot45___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_V2dot1X_SoftCompletedotcom___: Packer
+rule EXECryptor_V2dot1X_SoftCompletedotcom : Packer
 {
     meta:
         name = "EXECryptor V2.1X -> SoftComplete.com" // Packer name & version
@@ -18209,7 +17595,7 @@ rule EXECryptor_V2dot1X_SoftCompletedotcom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXECryptor_vxdotxdotxdotx___: Packer
+rule EXECryptor_vxdotxdotxdotx : Packer
 {
     meta:
         name = "EXECryptor vx.x.x.x" // Packer name & version
@@ -18222,7 +17608,7 @@ rule EXECryptor_vxdotxdotxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXELOCK_666_1dot5___: Packer
+rule EXELOCK_666_1dot5 : Packer
 {
     meta:
         name = "EXELOCK 666 1.5" // Packer name & version
@@ -18235,7 +17621,7 @@ rule EXELOCK_666_1dot5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeLock_v1dot00___: Packer
+rule ExeLock_v1dot00 : Packer
 {
     meta:
         name = "ExeLock v1.00" // Packer name & version
@@ -18248,7 +17634,7 @@ rule ExeLock_v1dot00___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXEPACK_LINK_v3dot60__v3dot64____v3dot65_or_5dot01dot21_: Packer
+rule EXEPACK_LINK_v3dot60_v3dot64_v3dot65_or_5dot01dot21 : Packer
 {
     meta:
         name = "EXEPACK (LINK) v3.60, v3.64, v3.65 or 5.01.21" // Packer name & version
@@ -18261,7 +17647,7 @@ rule EXEPACK_LINK_v3dot60__v3dot64____v3dot65_or_5dot01dot21_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXEStealth_2dot75_WebtoolMaster___: Packer
+rule EXEStealth_2dot75_WebtoolMaster : Packer
 {
     meta:
         name = "EXEStealth 2.75 -> WebtoolMaster" // Packer name & version
@@ -18274,7 +17660,7 @@ rule EXEStealth_2dot75_WebtoolMaster___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ExeTools_v2dot1_Encruptor_by_DISMEMBER___: Packer
+rule ExeTools_v2dot1_Encruptor_by_DISMEMBER : Packer
 {
     meta:
         name = "ExeTools v2.1 Encruptor by DISMEMBER" // Packer name & version
@@ -18287,7 +17673,7 @@ rule ExeTools_v2dot1_Encruptor_by_DISMEMBER___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_1dot1_CGSoftLabs___: Packer
+rule eXPressor_1dot1_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor 1.1 -> CGSoftLabs" // Packer name & version
@@ -18300,7 +17686,7 @@ rule eXPressor_1dot1_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXpressor_v1dot2_CGSoftLabs___: Packer
+rule eXpressor_v1dot2_CGSoftLabs : Packer
 {
     meta:
         name = "eXpressor v1.2 -> CGSoftLabs" // Packer name & version
@@ -18313,7 +17699,7 @@ rule eXpressor_v1dot2_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXPressor_V1dot3_CGSoftLabs___: Packer
+rule eXPressor_V1dot3_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor V1.3 -> CGSoftLabs" // Packer name & version
@@ -18326,7 +17712,7 @@ rule eXPressor_V1dot3_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXpressor_v1dot4dot5_CGSoftLabs___: Packer
+rule eXpressor_v1dot4dot5_CGSoftLabs : Packer
 {
     meta:
         name = "eXpressor v1.4.5 -> CGSoftLabs" // Packer name & version
@@ -18339,7 +17725,7 @@ rule eXpressor_v1dot4dot5_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule eXpressor_v1dot4dot5_CGSoftLabs___: Packer
+rule eXpressor_v1dot4dot5_CGSoftLabs : Packer
 {
     meta:
         name = "eXpressor v1.4.5 -> CGSoftLabs" // Packer name & version
@@ -18352,7 +17738,7 @@ rule eXpressor_v1dot4dot5_CGSoftLabs___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FASM_v1dot3x___: Packer
+rule FASM_v1dot3x : Packer
 {
     meta:
         name = "FASM v1.3x" // Packer name & version
@@ -18365,7 +17751,7 @@ rule FASM_v1dot3x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FileShield___: Packer
+rule FileShield : Packer
 {
     meta:
         name = "FileShield" // Packer name & version
@@ -18378,7 +17764,7 @@ rule FileShield___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Free_Pascal_v0dot99dot10___: Packer
+rule Free_Pascal_v0dot99dot10 : Packer
 {
     meta:
         name = "Free Pascal v0.99.10" // Packer name & version
@@ -18391,7 +17777,7 @@ rule Free_Pascal_v0dot99dot10___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Free_Pascal_v1dot0dot10_win32_GUI___: Packer
+rule Free_Pascal_v1dot0dot10_win32_GUI : Packer
 {
     meta:
         name = "Free Pascal v1.0.10 (win32 GUI)" // Packer name & version
@@ -18404,7 +17790,7 @@ rule Free_Pascal_v1dot0dot10_win32_GUI___: Packer
     condition:
     	for any of them
 }
-rule FreeBASIC_v0dot11___: Packer
+rule FreeBASIC_v0dot11 : Packer
 {
     meta:
         name = "FreeBASIC v0.11" // Packer name & version
@@ -18417,7 +17803,7 @@ rule FreeBASIC_v0dot11___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FreePascal_1dot0dot4_Win32_Berczi_Gabor__Pierre_Muller__and__Peter_Vreman____: Packer
+rule FreePascal_1dot0dot4_Win32_Berczi_Gabor_Pierre_Muller_and_Peter_Vreman : Packer
 {
     meta:
         name = "FreePascal 1.0.4 Win32 -> (Berczi Gabor, Pierre Muller & Peter Vreman)" // Packer name & version
@@ -18430,7 +17816,7 @@ rule FreePascal_1dot0dot4_Win32_Berczi_Gabor__Pierre_Muller__and__Peter_Vreman__
     condition:
     	for any of them
 }
-rule FreePascal_1dot0dot4_Win32_DLL_Berczi_Gabor__Pierre_Muller__and__Peter_Vreman____: Packer
+rule FreePascal_1dot0dot4_Win32_DLL_Berczi_Gabor_Pierre_Muller_and_Peter_Vreman : Packer
 {
     meta:
         name = "FreePascal 1.0.4 Win32 DLL -> (Berczi Gabor, Pierre Muller & Peter Vreman)" // Packer name & version
@@ -18443,7 +17829,7 @@ rule FreePascal_1dot0dot4_Win32_DLL_Berczi_Gabor__Pierre_Muller__and__Peter_Vrem
     condition:
     	for any of them
 }
-rule Freshbind_v2dot0_gFresh___: Packer
+rule Freshbind_v2dot0_gFresh : Packer
 {
     meta:
         name = "Freshbind v2.0 -> gFresh" // Packer name & version
@@ -18456,7 +17842,7 @@ rule Freshbind_v2dot0_gFresh___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule from_NORMAN_Anti_Virus_Utilites___: Packer
+rule from_NORMAN_Anti_Virus_Utilites : Packer
 {
     meta:
         name = "from NORMAN Anti-Virus Utilites" // Packer name & version
@@ -18469,7 +17855,7 @@ rule from_NORMAN_Anti_Virus_Utilites___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Frusion_biff___: Packer
+rule Frusion_biff : Packer
 {
     meta:
         name = "Frusion -> biff" // Packer name & version
@@ -18482,7 +17868,7 @@ rule Frusion_biff___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_1dot31_dulek_xt___: Packer
+rule FSG_1dot31_dulek_xt : Packer
 {
     meta:
         name = "FSG 1.31 -> dulek/xt" // Packer name & version
@@ -18495,7 +17881,7 @@ rule FSG_1dot31_dulek_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____bart_xt__Watcom_C_Cplusplus_EXE__: Packer
+rule FSG_v1dot10_Eng_bart_xt_Watcom_C_Cplusplus_EXE : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> bart/xt -> (Watcom C/C++ EXE)" // Packer name & version
@@ -18508,7 +17894,7 @@ rule FSG_v1dot10_Eng_____bart_xt__Watcom_C_Cplusplus_EXE__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_dulek_xt___: Packer
+rule FSG_v1dot10_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt" // Packer name & version
@@ -18521,7 +17907,7 @@ rule FSG_v1dot10_Eng_dulek_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_dulek_xt___: Packer
+rule FSG_v1dot10_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt" // Packer name & version
@@ -18534,7 +17920,7 @@ rule FSG_v1dot10_Eng_dulek_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_dulek_xt___: Packer
+rule FSG_v1dot10_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt" // Packer name & version
@@ -18547,7 +17933,7 @@ rule FSG_v1dot10_Eng_dulek_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_dulek_xt___: Packer
+rule FSG_v1dot10_Eng_dulek_xt : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt" // Packer name & version
@@ -18560,7 +17946,7 @@ rule FSG_v1dot10_Eng_dulek_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -18573,7 +17959,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0_7dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0 / 7.0)" // Packer name & version
@@ -18586,7 +17972,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0___7dot0__: P
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
+rule FSG_v1dot10_Eng_dulek_xt_Microsoft_Visual_Cplusplus_6dot0 : Packer
 {
     meta:
         name = "FSG v1.10 (Eng) -> dulek/xt -> (Microsoft Visual C++ 6.0)" // Packer name & version
@@ -18599,7 +17985,7 @@ rule FSG_v1dot10_Eng_____dulek_xt__Microsoft_Visual_Cplusplus_6dot0__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v1dot33___: Packer
+rule FSG_v1dot33 : Packer
 {
     meta:
         name = "FSG v1.33" // Packer name & version
@@ -18612,7 +17998,7 @@ rule FSG_v1dot33___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule FSG_v2dot0_bart_xt___: Packer
+rule FSG_v2dot0_bart_xt : Packer
 {
     meta:
         name = "FSG v2.0 -> bart/xt" // Packer name & version
@@ -18625,7 +18011,7 @@ rule FSG_v2dot0_bart_xt___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Gamehouse_Media_Protector_Version_Unknown___: Packer
+rule Gamehouse_Media_Protector_Version_Unknown : Packer
 {
     meta:
         name = "Gamehouse Media Protector Version Unknown" // Packer name & version
@@ -18638,7 +18024,7 @@ rule Gamehouse_Media_Protector_Version_Unknown___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Gardian_Angel_1dot0___: Packer
+rule Gardian_Angel_1dot0 : Packer
 {
     meta:
         name = "Gardian Angel 1.0" // Packer name & version
@@ -18651,7 +18037,7 @@ rule Gardian_Angel_1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Go32Stub_vdot2dot00_DOS_Extender___: Packer
+rule Go32Stub_vdot2dot00_DOS_Extender : Packer
 {
     meta:
         name = "Go32Stub v.2.00 DOS-Extender" // Packer name & version
@@ -18664,7 +18050,7 @@ rule Go32Stub_vdot2dot00_DOS_Extender___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Go32Stub_vdot2dot00T_DOS_Extender___: Packer
+rule Go32Stub_vdot2dot00T_DOS_Extender : Packer
 {
     meta:
         name = "Go32Stub v.2.00T DOS-Extender" // Packer name & version
@@ -18677,7 +18063,7 @@ rule Go32Stub_vdot2dot00T_DOS_Extender___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Guardant_Stealth_aka_Novex_Dongle___: Packer
+rule Guardant_Stealth_aka_Novex_Dongle : Packer
 {
     meta:
         name = "Guardant Stealth aka Novex Dongle" // Packer name & version
@@ -18690,7 +18076,7 @@ rule Guardant_Stealth_aka_Novex_Dongle___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HACKSTOP_v1dot00___: Packer
+rule HACKSTOP_v1dot00 : Packer
 {
     meta:
         name = "HACKSTOP v1.00" // Packer name & version
@@ -18703,7 +18089,7 @@ rule HACKSTOP_v1dot00___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HACKSTOP_v1dot18___: Packer
+rule HACKSTOP_v1dot18 : Packer
 {
     meta:
         name = "HACKSTOP v1.18" // Packer name & version
@@ -18716,7 +18102,7 @@ rule HACKSTOP_v1dot18___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HACKSTOP_v1dot19___: Packer
+rule HACKSTOP_v1dot19 : Packer
 {
     meta:
         name = "HACKSTOP v1.19" // Packer name & version
@@ -18729,7 +18115,7 @@ rule HACKSTOP_v1dot19___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule HEALTH_vdot5dot1_by_Muslim_MdotPolyak___: Packer
+rule HEALTH_vdot5dot1_by_Muslim_MdotPolyak : Packer
 {
     meta:
         name = "HEALTH v.5.1 by Muslim M.Polyak" // Packer name & version
@@ -18742,7 +18128,7 @@ rule HEALTH_vdot5dot1_by_Muslim_MdotPolyak___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ILUCRYPT_v4dot015_exe___: Packer
+rule ILUCRYPT_v4dot015_exe : Packer
 {
     meta:
         name = "ILUCRYPT v4.015 [exe]" // Packer name & version
@@ -18755,7 +18141,7 @@ rule ILUCRYPT_v4dot015_exe___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule iLUCRYPT_v4dot018_exe___: Packer
+rule iLUCRYPT_v4dot018_exe : Packer
 {
     meta:
         name = "iLUCRYPT v4.018 [exe]" // Packer name & version
@@ -18768,7 +18154,7 @@ rule iLUCRYPT_v4dot018_exe___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Inbuild_v1dot0_hard___: Packer
+rule Inbuild_v1dot0_hard : Packer
 {
     meta:
         name = "Inbuild v1.0 [hard]" // Packer name & version
@@ -18781,7 +18167,7 @@ rule Inbuild_v1dot0_hard___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Inno_Setup_Module___: Packer
+rule Inno_Setup_Module : Packer
 {
     meta:
         name = "Inno Setup Module" // Packer name & version
@@ -18794,7 +18180,7 @@ rule Inno_Setup_Module___: Packer
     condition:
     	for any of them
 }
-rule Install_Stub_32_bit___: Packer
+rule Install_Stub_32_bit : Packer
 {
     meta:
         name = "Install Stub 32-bit" // Packer name & version
@@ -18807,7 +18193,7 @@ rule Install_Stub_32_bit___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule InstallShield_2000___: Packer
+rule InstallShield_2000 : Packer
 {
     meta:
         name = "InstallShield 2000" // Packer name & version
@@ -18820,7 +18206,7 @@ rule InstallShield_2000___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule JDPack___: Packer
+rule JDPack : Packer
 {
     meta:
         name = "JDPack" // Packer name & version
@@ -18833,7 +18219,7 @@ rule JDPack___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule KGCrypt_vxdotx___: Packer
+rule KGCrypt_vxdotx : Packer
 {
     meta:
         name = "KGCrypt vx.x" // Packer name & version
@@ -18846,7 +18232,7 @@ rule KGCrypt_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Krypton_v0dot2___: Packer
+rule Krypton_v0dot2 : Packer
 {
     meta:
         name = "Krypton v0.2" // Packer name & version
@@ -18859,7 +18245,7 @@ rule Krypton_v0dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule kryptor_5___: Packer
+rule kryptor_5 : Packer
 {
     meta:
         name = "kryptor 5" // Packer name & version
@@ -18872,7 +18258,7 @@ rule kryptor_5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule kryptor_6___: Packer
+rule kryptor_6 : Packer
 {
     meta:
         name = "kryptor 6" // Packer name & version
@@ -18885,7 +18271,7 @@ rule kryptor_6___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LamerStop_v1dot0c_c_Stefan_Esser___: Packer
+rule LamerStop_v1dot0c_c_Stefan_Esser : Packer
 {
     meta:
         name = "LamerStop v1.0c (c) Stefan Esser" // Packer name & version
@@ -18898,7 +18284,7 @@ rule LamerStop_v1dot0c_c_Stefan_Esser___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Lattice_C_v1dot01___: Packer
+rule Lattice_C_v1dot01 : Packer
 {
     meta:
         name = "Lattice C v1.01" // Packer name & version
@@ -18911,7 +18297,7 @@ rule Lattice_C_v1dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Lattice_C_v3dot0___: Packer
+rule Lattice_C_v3dot0 : Packer
 {
     meta:
         name = "Lattice C v3.0" // Packer name & version
@@ -18924,7 +18310,7 @@ rule Lattice_C_v3dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LCC_Win32_v1dotx___: Packer
+rule LCC_Win32_v1dotx : Packer
 {
     meta:
         name = "LCC Win32 v1.x" // Packer name & version
@@ -18937,7 +18323,7 @@ rule LCC_Win32_v1dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LCC_Win32___: Packer
+rule LCC_Win32 : Packer
 {
     meta:
         name = "LCC-Win32" // Packer name & version
@@ -18950,7 +18336,7 @@ rule LCC_Win32___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Libraries_by_John_Socha___: Packer
+rule Libraries_by_John_Socha : Packer
 {
     meta:
         name = "Libraries by John Socha" // Packer name & version
@@ -18963,7 +18349,7 @@ rule Libraries_by_John_Socha___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Lockless_Intro_Pack___: Packer
+rule Lockless_Intro_Pack : Packer
 {
     meta:
         name = "Lockless Intro Pack" // Packer name & version
@@ -18976,7 +18362,7 @@ rule Lockless_Intro_Pack___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule LSI_C_86_Run___Time_Libray_: Packer
+rule LSI_C_86_Run_Time_Libray : Packer
 {
     meta:
         name = "LSI C-86 Run-Time Libray" // Packer name & version
@@ -18989,7 +18375,7 @@ rule LSI_C_86_Run___Time_Libray_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MASM_TASM___: Packer
+rule MASM_TASM : Packer
 {
     meta:
         name = "MASM / TASM" // Packer name & version
@@ -19002,7 +18388,7 @@ rule MASM_TASM___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MEGALITE_v1dot20a___: Packer
+rule MEGALITE_v1dot20a : Packer
 {
     meta:
         name = "MEGALITE v1.20a" // Packer name & version
@@ -19015,7 +18401,7 @@ rule MEGALITE_v1dot20a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MESS_v1dot20___: Packer
+rule MESS_v1dot20 : Packer
 {
     meta:
         name = "MESS v1.20" // Packer name & version
@@ -19028,7 +18414,7 @@ rule MESS_v1dot20___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MetaWare_High_C_plus_Phar_Lap_DOS_Extender_1983___89_: Packer
+rule MetaWare_High_C_plus_Phar_Lap_DOS_Extender_1983_89 : Packer
 {
     meta:
         name = "MetaWare High C + Phar Lap DOS Extender 1983-89" // Packer name & version
@@ -19041,7 +18427,7 @@ rule MetaWare_High_C_plus_Phar_Lap_DOS_Extender_1983___89_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MetaWare_High_C_Run_Time_Library___plus_Phar_Lap_DOS_Extender_1983_89_: Packer
+rule MetaWare_High_C_Run_Time_Library_plus_Phar_Lap_DOS_Extender_1983_89 : Packer
 {
     meta:
         name = "MetaWare High C Run-Time Library + Phar Lap DOS Extender 1983-89" // Packer name & version
@@ -19054,7 +18440,7 @@ rule MetaWare_High_C_Run_Time_Library___plus_Phar_Lap_DOS_Extender_1983_89_: Pac
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Metrowerks_CodeWarrior_v2dot0_Console___: Packer
+rule Metrowerks_CodeWarrior_v2dot0_Console : Packer
 {
     meta:
         name = "Metrowerks CodeWarrior v2.0 (Console)" // Packer name & version
@@ -19067,7 +18453,7 @@ rule Metrowerks_CodeWarrior_v2dot0_Console___: Packer
     condition:
     	for any of them
 }
-rule Mew_10_exe_coder_1dot0_Northfox____HCC__: Packer
+rule Mew_10_exe_coder_1dot0_Northfox_HCC : Packer
 {
     meta:
         name = "Mew 10 exe-coder 1.0 -> Northfox [HCC]" // Packer name & version
@@ -19080,7 +18466,7 @@ rule Mew_10_exe_coder_1dot0_Northfox____HCC__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MEW_11_SE_v1dot2_Northfox_HCC___: Packer
+rule MEW_11_SE_v1dot2_Northfox_HCC : Packer
 {
     meta:
         name = "MEW 11 SE v1.2 -> Northfox[HCC]" // Packer name & version
@@ -19093,7 +18479,7 @@ rule MEW_11_SE_v1dot2_Northfox_HCC___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MEW_5_1dot0_Northfox___: Packer
+rule MEW_5_1dot0_Northfox : Packer
 {
     meta:
         name = "MEW 5 1.0 -> Northfox" // Packer name & version
@@ -19106,7 +18492,7 @@ rule MEW_5_1dot0_Northfox___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MicroJoiner_1dot1_coban2k___: Packer
+rule MicroJoiner_1dot1_coban2k : Packer
 {
     meta:
         name = "MicroJoiner 1.1 -> coban2k" // Packer name & version
@@ -19119,7 +18505,7 @@ rule MicroJoiner_1dot1_coban2k___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MicroJoiner_1dot5_coban2k___: Packer
+rule MicroJoiner_1dot5_coban2k : Packer
 {
     meta:
         name = "MicroJoiner 1.5 -> coban2k" // Packer name & version
@@ -19132,7 +18518,7 @@ rule MicroJoiner_1dot5_coban2k___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MicroJoiner_1dot6_coban2k___: Packer
+rule MicroJoiner_1dot6_coban2k : Packer
 {
     meta:
         name = "MicroJoiner 1.6 -> coban2k" // Packer name & version
@@ -19145,7 +18531,7 @@ rule MicroJoiner_1dot6_coban2k___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Basic_Compiler_v5dot60_1982_97___: Packer
+rule Microsoft_Basic_Compiler_v5dot60_1982_97 : Packer
 {
     meta:
         name = "Microsoft Basic Compiler v5.60 1982-97" // Packer name & version
@@ -19158,7 +18544,7 @@ rule Microsoft_Basic_Compiler_v5dot60_1982_97___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_C___: Packer
+rule Microsoft_C : Packer
 {
     meta:
         name = "Microsoft C" // Packer name & version
@@ -19171,7 +18557,7 @@ rule Microsoft_C___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_C_1988_1989____: Packer
+rule Microsoft_C_1988_1989 : Packer
 {
     meta:
         name = "Microsoft C (1988/1989)" // Packer name & version
@@ -19184,7 +18570,7 @@ rule Microsoft_C_1988_1989____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_C_for_Windows_1___: Packer
+rule Microsoft_C_for_Windows_1 : Packer
 {
     meta:
         name = "Microsoft C for Windows (1)" // Packer name & version
@@ -19197,7 +18583,7 @@ rule Microsoft_C_for_Windows_1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_C_for_Windows_2___: Packer
+rule Microsoft_C_for_Windows_2 : Packer
 {
     meta:
         name = "Microsoft C for Windows (2)" // Packer name & version
@@ -19210,7 +18596,7 @@ rule Microsoft_C_for_Windows_2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_C_Library_1985___: Packer
+rule Microsoft_C_Library_1985 : Packer
 {
     meta:
         name = "Microsoft C Library 1985" // Packer name & version
@@ -19223,7 +18609,7 @@ rule Microsoft_C_Library_1985___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_C_v1dot04___: Packer
+rule Microsoft_C_v1dot04 : Packer
 {
     meta:
         name = "Microsoft C v1.04" // Packer name & version
@@ -19236,7 +18622,7 @@ rule Microsoft_C_v1dot04___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_CAB_SFX___: Packer
+rule Microsoft_CAB_SFX : Packer
 {
     meta:
         name = "Microsoft CAB SFX" // Packer name & version
@@ -19249,7 +18635,7 @@ rule Microsoft_CAB_SFX___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_FORTRAN___: Packer
+rule Microsoft_FORTRAN : Packer
 {
     meta:
         name = "Microsoft FORTRAN" // Packer name & version
@@ -19262,7 +18648,7 @@ rule Microsoft_FORTRAN___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Basic_v5dot0_v6dot0___: Packer
+rule Microsoft_Visual_Basic_v5dot0_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual Basic v5.0/v6.0" // Packer name & version
@@ -19275,7 +18661,7 @@ rule Microsoft_Visual_Basic_v5dot0_v6dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Basic_v6dot0_DLL___: Packer
+rule Microsoft_Visual_Basic_v6dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual Basic v6.0 DLL" // Packer name & version
@@ -19288,7 +18674,7 @@ rule Microsoft_Visual_Basic_v6dot0_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_C_2dot0___: Packer
+rule Microsoft_Visual_C_2dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C 2.0" // Packer name & version
@@ -19301,7 +18687,7 @@ rule Microsoft_Visual_C_2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_C_v2dot0___: Packer
+rule Microsoft_Visual_C_v2dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C v2.0" // Packer name & version
@@ -19314,7 +18700,7 @@ rule Microsoft_Visual_C_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus___: Packer
+rule Microsoft_Visual_Cplusplus : Packer
 {
     meta:
         name = "Microsoft Visual C++" // Packer name & version
@@ -19327,7 +18713,7 @@ rule Microsoft_Visual_Cplusplus___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus___: Packer
+rule Microsoft_Visual_Cplusplus : Packer
 {
     meta:
         name = "Microsoft Visual C++" // Packer name & version
@@ -19340,7 +18726,7 @@ rule Microsoft_Visual_Cplusplus___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_3dot0_old_crap____: Packer
+rule Microsoft_Visual_Cplusplus_3dot0_old_crap : Packer
 {
     meta:
         name = "Microsoft Visual C++ (3.0 old crap)" // Packer name & version
@@ -19353,7 +18739,7 @@ rule Microsoft_Visual_Cplusplus_3dot0_old_crap____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_7dot1___: Packer
+rule Microsoft_Visual_Cplusplus_7dot1 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 7.1" // Packer name & version
@@ -19366,7 +18752,7 @@ rule Microsoft_Visual_Cplusplus_7dot1___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_7dot1___: Packer
+rule Microsoft_Visual_Cplusplus_7dot1 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 7.1" // Packer name & version
@@ -19379,7 +18765,7 @@ rule Microsoft_Visual_Cplusplus_7dot1___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_7dot1___: Packer
+rule Microsoft_Visual_Cplusplus_7dot1 : Packer
 {
     meta:
         name = "Microsoft Visual C++ 7.1" // Packer name & version
@@ -19392,7 +18778,7 @@ rule Microsoft_Visual_Cplusplus_7dot1___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ DLL" // Packer name & version
@@ -19405,7 +18791,7 @@ rule Microsoft_Visual_Cplusplus_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ DLL" // Packer name & version
@@ -19418,7 +18804,7 @@ rule Microsoft_Visual_Cplusplus_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ DLL" // Packer name & version
@@ -19431,7 +18817,7 @@ rule Microsoft_Visual_Cplusplus_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v4dot2___: Packer
+rule Microsoft_Visual_Cplusplus_v4dot2 : Packer
 {
     meta:
         name = "Microsoft Visual C++ v4.2" // Packer name & version
@@ -19444,7 +18830,7 @@ rule Microsoft_Visual_Cplusplus_v4dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v4dot2___: Packer
+rule Microsoft_Visual_Cplusplus_v4dot2 : Packer
 {
     meta:
         name = "Microsoft Visual C++ v4.2" // Packer name & version
@@ -19457,7 +18843,7 @@ rule Microsoft_Visual_Cplusplus_v4dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v4dot2_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v4dot2_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v4.2 DLL" // Packer name & version
@@ -19470,7 +18856,7 @@ rule Microsoft_Visual_Cplusplus_v4dot2_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v6dot0___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0" // Packer name & version
@@ -19483,7 +18869,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_v6dot0_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0 DLL" // Packer name & version
@@ -19496,7 +18882,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v6dot0_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0 DLL" // Packer name & version
@@ -19509,7 +18895,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v6dot0_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0 DLL" // Packer name & version
@@ -19522,7 +18908,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0_DLL___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_v6dot0_SPx___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0_SPx : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0 SPx" // Packer name & version
@@ -19535,7 +18921,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0_SPx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v6dot0_SPx___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0_SPx : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0 SPx" // Packer name & version
@@ -19548,7 +18934,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0_SPx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot0_64_Bit____: Packer
+rule Microsoft_Visual_Cplusplus_v7dot0_64_Bit : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.0 (64 Bit)" // Packer name & version
@@ -19561,7 +18947,7 @@ rule Microsoft_Visual_Cplusplus_v7dot0_64_Bit____: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_v7dot0_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.0 DLL" // Packer name & version
@@ -19574,7 +18960,7 @@ rule Microsoft_Visual_Cplusplus_v7dot0_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot1_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot1_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.1 DLL" // Packer name & version
@@ -19587,7 +18973,7 @@ rule Microsoft_Visual_Cplusplus_v7dot1_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot1_DLL_Debug____: Packer
+rule Microsoft_Visual_Cplusplus_v7dot1_DLL_Debug : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.1 DLL (Debug)" // Packer name & version
@@ -19600,7 +18986,7 @@ rule Microsoft_Visual_Cplusplus_v7dot1_DLL_Debug____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_v7dot1_EXE___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot1_EXE : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.1 EXE" // Packer name & version
@@ -19613,7 +18999,7 @@ rule Microsoft_Visual_Cplusplus_v7dot1_EXE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_vxdotx___: Packer
+rule Microsoft_Visual_Cplusplus_vxdotx : Packer
 {
     meta:
         name = "Microsoft Visual C++ vx.x" // Packer name & version
@@ -19626,7 +19012,7 @@ rule Microsoft_Visual_Cplusplus_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Microsoft_Visual_Cplusplus_vxdotx___: Packer
+rule Microsoft_Visual_Cplusplus_vxdotx : Packer
 {
     meta:
         name = "Microsoft Visual C++ vx.x" // Packer name & version
@@ -19639,7 +19025,7 @@ rule Microsoft_Visual_Cplusplus_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_GCC_DLL_v2xx___: Packer
+rule MinGW_GCC_DLL_v2xx : Packer
 {
     meta:
         name = "MinGW GCC DLL v2xx" // Packer name & version
@@ -19652,7 +19038,7 @@ rule MinGW_GCC_DLL_v2xx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_GCC_v2dotx___: Packer
+rule MinGW_GCC_v2dotx : Packer
 {
     meta:
         name = "MinGW GCC v2.x" // Packer name & version
@@ -19665,7 +19051,7 @@ rule MinGW_GCC_v2dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MinGW_GCC_v2dotx___: Packer
+rule MinGW_GCC_v2dotx : Packer
 {
     meta:
         name = "MinGW GCC v2.x" // Packer name & version
@@ -19678,7 +19064,7 @@ rule MinGW_GCC_v2dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MoleBox_V2dotX_MoleStudiodotcom___: Packer
+rule MoleBox_V2dotX_MoleStudiodotcom : Packer
 {
     meta:
         name = "MoleBox V2.X -> MoleStudio.com" // Packer name & version
@@ -19691,7 +19077,7 @@ rule MoleBox_V2dotX_MoleStudiodotcom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_FORTRAN_Library_19__?? : Packer
+rule MS_FORTRAN_Library_19_?? : Packer
 {
     meta:
         name = "MS FORTRAN Library 19??" // Packer name & version
@@ -19704,7 +19090,7 @@ rule MS_FORTRAN_Library_19__?? : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_FORTRAN_Library_19__?? : Packer
+rule MS_FORTRAN_Library_19_?? : Packer
 {
     meta:
         name = "MS FORTRAN Library 19??" // Packer name & version
@@ -19717,7 +19103,7 @@ rule MS_FORTRAN_Library_19__?? : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library__OS___2__& FORTRAN Compiler 1989 : Packer
+rule MS_Run_Time_Library_OS_2_& FORTRAN Compiler 1989 : Packer
 {
     meta:
         name = "MS Run-Time Library (OS/2) & FORTRAN Compiler 1989" // Packer name & version
@@ -19730,7 +19116,7 @@ rule MS_Run_Time_Library__OS___2__& FORTRAN Compiler 1989 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library_1987___: Packer
+rule MS_Run_Time_Library_1987 : Packer
 {
     meta:
         name = "MS Run-Time Library 1987" // Packer name & version
@@ -19743,7 +19129,7 @@ rule MS_Run_Time_Library_1987___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library_1990__07____: Packer
+rule MS_Run_Time_Library_1990_07 : Packer
 {
     meta:
         name = "MS Run-Time Library 1990 (07)" // Packer name & version
@@ -19756,7 +19142,7 @@ rule MS_Run_Time_Library_1990__07____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library_1990__10____: Packer
+rule MS_Run_Time_Library_1990_10 : Packer
 {
     meta:
         name = "MS Run-Time Library 1990 (10)" // Packer name & version
@@ -19769,7 +19155,7 @@ rule MS_Run_Time_Library_1990__10____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library_1990__1992____09__: Packer
+rule MS_Run_Time_Library_1990_1992_09 : Packer
 {
     meta:
         name = "MS Run-Time Library 1990, 1992 (09)" // Packer name & version
@@ -19782,7 +19168,7 @@ rule MS_Run_Time_Library_1990__1992____09__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library_1992__13____: Packer
+rule MS_Run_Time_Library_1992_13 : Packer
 {
     meta:
         name = "MS Run-Time Library 1992 (13)" // Packer name & version
@@ -19795,7 +19181,7 @@ rule MS_Run_Time_Library_1992__13____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MS_Run_Time_Library_1992__14____: Packer
+rule MS_Run_Time_Library_1992_14 : Packer
 {
     meta:
         name = "MS Run-Time Library 1992 (14)" // Packer name & version
@@ -19808,7 +19194,7 @@ rule MS_Run_Time_Library_1992__14____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule nbuild_v1dot0_soft___: Packer
+rule nbuild_v1dot0_soft : Packer
 {
     meta:
         name = "nbuild v1.0 [soft]" // Packer name & version
@@ -19821,7 +19207,7 @@ rule nbuild_v1dot0_soft___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NeoLite_v1dot0___: Packer
+rule NeoLite_v1dot0 : Packer
 {
     meta:
         name = "NeoLite v1.0" // Packer name & version
@@ -19834,7 +19220,7 @@ rule NeoLite_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NeoLite_v2dot0___: Packer
+rule NeoLite_v2dot0 : Packer
 {
     meta:
         name = "NeoLite v2.0" // Packer name & version
@@ -19847,7 +19233,7 @@ rule NeoLite_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NeoLite_v2dot00___: Packer
+rule NeoLite_v2dot00 : Packer
 {
     meta:
         name = "NeoLite v2.00" // Packer name & version
@@ -19860,7 +19246,7 @@ rule NeoLite_v2dot00___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NFO_v1dot0___: Packer
+rule NFO_v1dot0 : Packer
 {
     meta:
         name = "NFO v1.0" // Packer name & version
@@ -19873,7 +19259,7 @@ rule NFO_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NoodleCrypt_v2dot0___: Packer
+rule NoodleCrypt_v2dot0 : Packer
 {
     meta:
         name = "NoodleCrypt v2.0" // Packer name & version
@@ -19886,7 +19272,7 @@ rule NoodleCrypt_v2dot0___: Packer
     condition:
     	for any of them
 }
-rule Noodlecrypt2_r__!sc : Packer
+rule Noodlecrypt2_r_!sc : Packer
 {
     meta:
         name = "Noodlecrypt2 -> r!sc" // Packer name & version
@@ -19899,7 +19285,7 @@ rule Noodlecrypt2_r__!sc : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPack_V1dot1_LiuXingPing___: Packer
+rule NsPack_V1dot1_LiuXingPing : Packer
 {
     meta:
         name = "NsPack V1.1 -> LiuXingPing" // Packer name & version
@@ -19912,7 +19298,7 @@ rule NsPack_V1dot1_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule nSpack_V1dot3_LiuXingPing___: Packer
+rule nSpack_V1dot3_LiuXingPing : Packer
 {
     meta:
         name = "nSpack V1.3 -> LiuXingPing" // Packer name & version
@@ -19925,7 +19311,7 @@ rule nSpack_V1dot3_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NsPack_V1dot4_LiuXingPing___: Packer
+rule NsPack_V1dot4_LiuXingPing : Packer
 {
     meta:
         name = "NsPack V1.4 -> LiuXingPing" // Packer name & version
@@ -19938,7 +19324,7 @@ rule NsPack_V1dot4_LiuXingPing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Nullsoft_Install_System_v1dot98___: Packer
+rule Nullsoft_Install_System_v1dot98 : Packer
 {
     meta:
         name = "Nullsoft Install System v1.98" // Packer name & version
@@ -19951,7 +19337,7 @@ rule Nullsoft_Install_System_v1dot98___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Nullsoft_PIMP_Install_System_v1dotx___: Packer
+rule Nullsoft_PIMP_Install_System_v1dotx : Packer
 {
     meta:
         name = "Nullsoft PIMP Install System v1.x" // Packer name & version
@@ -19964,7 +19350,7 @@ rule Nullsoft_PIMP_Install_System_v1dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NX_PE_Packer_v1dot0___: Packer
+rule NX_PE_Packer_v1dot0 : Packer
 {
     meta:
         name = "NX PE Packer v1.0" // Packer name & version
@@ -19977,7 +19363,7 @@ rule NX_PE_Packer_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_1dot2dot0dot0_Obsidium_Software___: Packer
+rule Obsidium_1dot2dot0dot0_Obsidium_Software : Packer
 {
     meta:
         name = "Obsidium 1.2.0.0 -> Obsidium Software" // Packer name & version
@@ -19990,7 +19376,7 @@ rule Obsidium_1dot2dot0dot0_Obsidium_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_v1dot1dot1dot1___: Packer
+rule Obsidium_v1dot1dot1dot1 : Packer
 {
     meta:
         name = "Obsidium v1.1.1.1" // Packer name & version
@@ -20003,7 +19389,7 @@ rule Obsidium_v1dot1dot1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_V1dot2_Obsidium_Software___: Packer
+rule Obsidium_V1dot2_Obsidium_Software : Packer
 {
     meta:
         name = "Obsidium V1.2 -> Obsidium Software" // Packer name & version
@@ -20016,7 +19402,7 @@ rule Obsidium_V1dot2_Obsidium_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_V1dot2dot5dot8_Obsidium_Software___: Packer
+rule Obsidium_V1dot2dot5dot8_Obsidium_Software : Packer
 {
     meta:
         name = "Obsidium V1.2.5.8 -> Obsidium Software" // Packer name & version
@@ -20029,7 +19415,7 @@ rule Obsidium_V1dot2dot5dot8_Obsidium_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_V1dot25_Obsidium_Software___: Packer
+rule Obsidium_V1dot25_Obsidium_Software : Packer
 {
     meta:
         name = "Obsidium V1.25 -> Obsidium Software" // Packer name & version
@@ -20042,7 +19428,7 @@ rule Obsidium_V1dot25_Obsidium_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_V1dot3dot0dot0_Obsidium_Software___: Packer
+rule Obsidium_V1dot3dot0dot0_Obsidium_Software : Packer
 {
     meta:
         name = "Obsidium V1.3.0.0 -> Obsidium Software" // Packer name & version
@@ -20055,7 +19441,7 @@ rule Obsidium_V1dot3dot0dot0_Obsidium_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_V1dot3dot0dot0_Obsidium_Software___: Packer
+rule Obsidium_V1dot3dot0dot0_Obsidium_Software : Packer
 {
     meta:
         name = "Obsidium V1.3.0.0 -> Obsidium Software" // Packer name & version
@@ -20068,7 +19454,7 @@ rule Obsidium_V1dot3dot0dot0_Obsidium_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_V1dot3dot0dot4_Obsidium_Software___: Packer
+rule Obsidium_V1dot3dot0dot4_Obsidium_Software : Packer
 {
     meta:
         name = "Obsidium V1.3.0.4 -> Obsidium Software" // Packer name & version
@@ -20081,7 +19467,7 @@ rule Obsidium_V1dot3dot0dot4_Obsidium_Software___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ORiEN_V2dot12_Fisun_AdotVdot___: Packer
+rule ORiEN_V2dot12_Fisun_AdotVdot : Packer
 {
     meta:
         name = "ORiEN V2.12 -> Fisun A.V." // Packer name & version
@@ -20094,7 +19480,7 @@ rule ORiEN_V2dot12_Fisun_AdotVdot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packanoid_Arkanoid___: Packer
+rule Packanoid_Arkanoid : Packer
 {
     meta:
         name = "Packanoid -> Arkanoid" // Packer name & version
@@ -20107,7 +19493,7 @@ rule Packanoid_Arkanoid___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packed_with__: PKLITE v1dot50 with CRC check (1) : Packer
+rule Packed_with : PKLITE v1dot50 with CRC check (1) : Packer
 {
     meta:
         name = "Packed with: PKLITE v1.50 with CRC check (1)" // Packer name & version
@@ -20120,7 +19506,7 @@ rule Packed_with__: PKLITE v1dot50 with CRC check (1) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Packman_V0dot0dot0dot1_Bubbasoft___: Packer
+rule Packman_V0dot0dot0dot1_Bubbasoft : Packer
 {
     meta:
         name = "Packman V0.0.0.1 -> Bubbasoft" // Packer name & version
@@ -20133,7 +19519,7 @@ rule Packman_V0dot0dot0dot1_Bubbasoft___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PAK_SFX_Archive___: Packer
+rule PAK_SFX_Archive : Packer
 {
     meta:
         name = "PAK-SFX Archive" // Packer name & version
@@ -20146,7 +19532,7 @@ rule PAK_SFX_Archive___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PassEXE_v2dot0___: Packer
+rule PassEXE_v2dot0 : Packer
 {
     meta:
         name = "PassEXE v2.0" // Packer name & version
@@ -20159,7 +19545,7 @@ rule PassEXE_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Password_protector_my_SMT___: Packer
+rule Password_protector_my_SMT : Packer
 {
     meta:
         name = "Password protector my SMT" // Packer name & version
@@ -20172,7 +19558,7 @@ rule Password_protector_my_SMT___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PC_Shrinker_v0dot20___: Packer
+rule PC_Shrinker_v0dot20 : Packer
 {
     meta:
         name = "PC Shrinker v0.20" // Packer name & version
@@ -20185,7 +19571,7 @@ rule PC_Shrinker_v0dot20___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PC_Shrinker_v0dot29___: Packer
+rule PC_Shrinker_v0dot29 : Packer
 {
     meta:
         name = "PC Shrinker v0.29" // Packer name & version
@@ -20198,7 +19584,7 @@ rule PC_Shrinker_v0dot29___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PC_Shrinker_v0dot45___: Packer
+rule PC_Shrinker_v0dot45 : Packer
 {
     meta:
         name = "PC Shrinker v0.45" // Packer name & version
@@ -20211,7 +19597,7 @@ rule PC_Shrinker_v0dot45___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PC_Guard_v4dot05d__v4dot10d____v4dot15d_: Packer
+rule PC_Guard_v4dot05d_v4dot10d_v4dot15d : Packer
 {
     meta:
         name = "PC-Guard v4.05d, v4.10d, v4.15d" // Packer name & version
@@ -20224,7 +19610,7 @@ rule PC_Guard_v4dot05d__v4dot10d____v4dot15d_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PCPEC___"alpha - preview" : Packer
+rule PCPEC_"alpha - preview" : Packer
 {
     meta:
         name = "PCPEC "alpha - preview"" // Packer name & version
@@ -20237,7 +19623,7 @@ rule PCPEC___"alpha - preview" : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PCPEC_alpha___: Packer
+rule PCPEC_alpha : Packer
 {
     meta:
         name = "PCPEC [alpha]" // Packer name & version
@@ -20250,7 +19636,7 @@ rule PCPEC_alpha___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PCrypt_v3dot51___: Packer
+rule PCrypt_v3dot51 : Packer
 {
     meta:
         name = "PCrypt v3.51" // Packer name & version
@@ -20263,7 +19649,7 @@ rule PCrypt_v3dot51___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PcShare___ÎÄ¼þÀ¦°óÆ÷ v4dot0_ÎÞ¿É·ÇÒé : Packer
+rule PcShare_ÎÄ¼þÀ¦°óÆ÷ v4dot0_ÎÞ¿É·ÇÒé : Packer
 {
     meta:
         name = "PcShare ÎÄ¼þÀ¦°óÆ÷ v4.0 -> ÎÞ¿É·ÇÒé" // Packer name & version
@@ -20276,7 +19662,7 @@ rule PcShare___ÎÄ¼þÀ¦°óÆ÷ v4dot0_ÎÞ¿É·ÇÒé : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PCShrink_0dot71_beta___: Packer
+rule PCShrink_0dot71_beta : Packer
 {
     meta:
         name = "PCShrink 0.71 beta" // Packer name & version
@@ -20289,7 +19675,7 @@ rule PCShrink_0dot71_beta___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PCShrink_v0dot40b___: Packer
+rule PCShrink_v0dot40b : Packer
 {
     meta:
         name = "PCShrink v0.40b" // Packer name & version
@@ -20302,7 +19688,7 @@ rule PCShrink_v0dot40b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Crypt_v1dot00_v1dot01___: Packer
+rule PE_Crypt_v1dot00_v1dot01 : Packer
 {
     meta:
         name = "PE Crypt v1.00/v1.01" // Packer name & version
@@ -20315,7 +19701,7 @@ rule PE_Crypt_v1dot00_v1dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Crypt_v1dot02___: Packer
+rule PE_Crypt_v1dot02 : Packer
 {
     meta:
         name = "PE Crypt v1.02" // Packer name & version
@@ -20328,7 +19714,7 @@ rule PE_Crypt_v1dot02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Crypt32_Console_v1dot0__v1dot01____v1dot02__: Packer
+rule PE_Crypt32_Console_v1dot0_v1dot01_v1dot02 : Packer
 {
     meta:
         name = "PE Crypt32 (Console v1.0, v1.01, v1.02)" // Packer name & version
@@ -20341,7 +19727,7 @@ rule PE_Crypt32_Console_v1dot0__v1dot01____v1dot02__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Crypt32_v1dot02___: Packer
+rule PE_Crypt32_v1dot02 : Packer
 {
     meta:
         name = "PE Crypt32 v1.02" // Packer name & version
@@ -20354,7 +19740,7 @@ rule PE_Crypt32_v1dot02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Diminisher_V0dot1_Teraphy___: Packer
+rule PE_Diminisher_V0dot1_Teraphy : Packer
 {
     meta:
         name = "PE Diminisher V0.1 -> Teraphy" // Packer name & version
@@ -20367,7 +19753,7 @@ rule PE_Diminisher_V0dot1_Teraphy___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Lock_NT_v2dot01___: Packer
+rule PE_Lock_NT_v2dot01 : Packer
 {
     meta:
         name = "PE Lock NT v2.01" // Packer name & version
@@ -20380,7 +19766,7 @@ rule PE_Lock_NT_v2dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Lock_NT_v2dot02c___: Packer
+rule PE_Lock_NT_v2dot02c : Packer
 {
     meta:
         name = "PE Lock NT v2.02c" // Packer name & version
@@ -20393,7 +19779,7 @@ rule PE_Lock_NT_v2dot02c___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Lock_NT_v2dot03___: Packer
+rule PE_Lock_NT_v2dot03 : Packer
 {
     meta:
         name = "PE Lock NT v2.03" // Packer name & version
@@ -20406,7 +19792,7 @@ rule PE_Lock_NT_v2dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Lock_NT_v2dot04___: Packer
+rule PE_Lock_NT_v2dot04 : Packer
 {
     meta:
         name = "PE Lock NT v2.04" // Packer name & version
@@ -20419,7 +19805,7 @@ rule PE_Lock_NT_v2dot04___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Pack_v0dot99___: Packer
+rule PE_Pack_v0dot99 : Packer
 {
     meta:
         name = "PE Pack v0.99" // Packer name & version
@@ -20432,7 +19818,7 @@ rule PE_Pack_v0dot99___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Packer___: Packer
+rule PE_Packer : Packer
 {
     meta:
         name = "PE Packer" // Packer name & version
@@ -20445,7 +19831,7 @@ rule PE_Packer___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Armor_0dot46_Hying___: Packer
+rule PE_Armor_0dot46_Hying : Packer
 {
     meta:
         name = "PE-Armor 0.46 -> Hying" // Packer name & version
@@ -20458,7 +19844,7 @@ rule PE_Armor_0dot46_Hying___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Armor_0dot49_Hying___: Packer
+rule PE_Armor_0dot49_Hying : Packer
 {
     meta:
         name = "PE-Armor 0.49 -> Hying" // Packer name & version
@@ -20471,7 +19857,7 @@ rule PE_Armor_0dot49_Hying___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Crypt_1dot02___: Packer
+rule PE_Crypt_1dot02 : Packer
 {
     meta:
         name = "PE-Crypt 1.02" // Packer name & version
@@ -20484,7 +19870,7 @@ rule PE_Crypt_1dot02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_Crypter___: Packer
+rule PE_Crypter : Packer
 {
     meta:
         name = "PE-Crypter" // Packer name & version
@@ -20497,7 +19883,7 @@ rule PE_Crypter___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_PACK_0dot99___: Packer
+rule PE_PACK_0dot99 : Packer
 {
     meta:
         name = "PE-PACK 0.99" // Packer name & version
@@ -20510,7 +19896,7 @@ rule PE_PACK_0dot99___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_PACK_v1dot0_by_ANAKiN_1998____???) : Packer
+rule PE_PACK_v1dot0_by_ANAKiN_1998_???) : Packer
 {
     meta:
         name = "PE-PACK v1.0 by ANAKiN 1998 (???)" // Packer name & version
@@ -20523,7 +19909,7 @@ rule PE_PACK_v1dot0_by_ANAKiN_1998____???) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_PROTECT_0dot9___: Packer
+rule PE_PROTECT_0dot9 : Packer
 {
     meta:
         name = "PE-PROTECT 0.9" // Packer name & version
@@ -20536,7 +19922,7 @@ rule PE_PROTECT_0dot9___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PE_SHiELD_0dot2___: Packer
+rule PE_SHiELD_0dot2 : Packer
 {
     meta:
         name = "PE-SHiELD 0.2" // Packer name & version
@@ -20549,7 +19935,7 @@ rule PE_SHiELD_0dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEArmor_V0dot7X_Hying___: Packer
+rule PEArmor_V0dot7X_Hying : Packer
 {
     meta:
         name = "PEArmor V0.7X -> Hying" // Packer name & version
@@ -20562,7 +19948,7 @@ rule PEArmor_V0dot7X_Hying___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot92___: Packer
+rule PECompact_v0dot92 : Packer
 {
     meta:
         name = "PECompact v0.92" // Packer name & version
@@ -20575,7 +19961,7 @@ rule PECompact_v0dot92___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot94___: Packer
+rule PECompact_v0dot94 : Packer
 {
     meta:
         name = "PECompact v0.94" // Packer name & version
@@ -20588,7 +19974,7 @@ rule PECompact_v0dot94___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v0dot971_v0dot976___: Packer
+rule PECompact_v0dot971_v0dot976 : Packer
 {
     meta:
         name = "PECompact v0.971 - v0.976" // Packer name & version
@@ -20601,7 +19987,7 @@ rule PECompact_v0dot971_v0dot976___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PECompact_v1dot84___: Packer
+rule PECompact_v1dot84 : Packer
 {
     meta:
         name = "PECompact v1.84" // Packer name & version
@@ -20614,7 +20000,7 @@ rule PECompact_v1dot84___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEEncrypt_v4dot0b_JunkCode___: Packer
+rule PEEncrypt_v4dot0b_JunkCode : Packer
 {
     meta:
         name = "PEEncrypt v4.0b (JunkCode)" // Packer name & version
@@ -20627,7 +20013,7 @@ rule PEEncrypt_v4dot0b_JunkCode___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PELOCKnt_2dot04___: Packer
+rule PELOCKnt_2dot04 : Packer
 {
     meta:
         name = "PELOCKnt 2.04" // Packer name & version
@@ -20640,7 +20026,7 @@ rule PELOCKnt_2dot04___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEncrypt_v3dot1___: Packer
+rule PEncrypt_v3dot1 : Packer
 {
     meta:
         name = "PEncrypt v3.1" // Packer name & version
@@ -20653,7 +20039,7 @@ rule PEncrypt_v3dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PENightMare_v1dot3___: Packer
+rule PENightMare_v1dot3 : Packer
 {
     meta:
         name = "PENightMare v1.3" // Packer name & version
@@ -20666,7 +20052,7 @@ rule PENightMare_v1dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESHiELD_v0dot1b_MTE___: Packer
+rule PESHiELD_v0dot1b_MTE : Packer
 {
     meta:
         name = "PESHiELD v0.1b MTE" // Packer name & version
@@ -20679,7 +20065,7 @@ rule PESHiELD_v0dot1b_MTE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESHiELD_v0dot2_v0dot2b_v0dot2b2___: Packer
+rule PESHiELD_v0dot2_v0dot2b_v0dot2b2 : Packer
 {
     meta:
         name = "PESHiELD v0.2 / v0.2b / v0.2b2" // Packer name & version
@@ -20692,7 +20078,7 @@ rule PESHiELD_v0dot2_v0dot2b_v0dot2b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESHiELD_v0dot251___: Packer
+rule PESHiELD_v0dot251 : Packer
 {
     meta:
         name = "PESHiELD v0.251" // Packer name & version
@@ -20705,7 +20091,7 @@ rule PESHiELD_v0dot251___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEShit___: Packer
+rule PEShit : Packer
 {
     meta:
         name = "PEShit" // Packer name & version
@@ -20718,7 +20104,7 @@ rule PEShit___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEStubOEP_v1dotx___: Packer
+rule PEStubOEP_v1dotx : Packer
 {
     meta:
         name = "PEStubOEP v1.x" // Packer name & version
@@ -20731,7 +20117,7 @@ rule PEStubOEP_v1dotx___: Packer
     condition:
     	for any of them
 }
-rule Petite_1dot2___: Packer
+rule Petite_1dot2 : Packer
 {
     meta:
         name = "Petite 1.2" // Packer name & version
@@ -20744,7 +20130,7 @@ rule Petite_1dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEtite_v1dot2___: Packer
+rule PEtite_v1dot2 : Packer
 {
     meta:
         name = "PEtite v1.2" // Packer name & version
@@ -20757,7 +20143,7 @@ rule PEtite_v1dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEtite_v1dot3___: Packer
+rule PEtite_v1dot3 : Packer
 {
     meta:
         name = "PEtite v1.3" // Packer name & version
@@ -20770,7 +20156,7 @@ rule PEtite_v1dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Petite_v1dot4___: Packer
+rule Petite_v1dot4 : Packer
 {
     meta:
         name = "Petite v1.4" // Packer name & version
@@ -20783,7 +20169,7 @@ rule Petite_v1dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEtite_v1dot4___: Packer
+rule PEtite_v1dot4 : Packer
 {
     meta:
         name = "PEtite v1.4" // Packer name & version
@@ -20796,7 +20182,7 @@ rule PEtite_v1dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEtite_v2dot1___: Packer
+rule PEtite_v2dot1 : Packer
 {
     meta:
         name = "PEtite v2.1" // Packer name & version
@@ -20809,7 +20195,7 @@ rule PEtite_v2dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Petite_v2dot1_1___: Packer
+rule Petite_v2dot1_1 : Packer
 {
     meta:
         name = "Petite v2.1 (1)" // Packer name & version
@@ -20822,7 +20208,7 @@ rule Petite_v2dot1_1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Petite_v2dot1_2___: Packer
+rule Petite_v2dot1_2 : Packer
 {
     meta:
         name = "Petite v2.1 (2)" // Packer name & version
@@ -20835,7 +20221,7 @@ rule Petite_v2dot1_2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEtite_v2dot2___: Packer
+rule PEtite_v2dot2 : Packer
 {
     meta:
         name = "PEtite v2.2" // Packer name & version
@@ -20848,7 +20234,7 @@ rule PEtite_v2dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Petite_v__?dot? (after v1dot4) : Packer
+rule Petite_v_?dot? (after v1dot4) : Packer
 {
     meta:
         name = "Petite v?.? (after v1.4)" // Packer name & version
@@ -20861,7 +20247,7 @@ rule Petite_v__?dot? (after v1dot4) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEtite_vxdotx___: Packer
+rule PEtite_vxdotx : Packer
 {
     meta:
         name = "PEtite vx.x" // Packer name & version
@@ -20874,7 +20260,7 @@ rule PEtite_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PEX_v0dot99___: Packer
+rule PEX_v0dot99 : Packer
 {
     meta:
         name = "PEX v0.99" // Packer name & version
@@ -20887,7 +20273,7 @@ rule PEX_v0dot99___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PGMPACK_v0dot13___: Packer
+rule PGMPACK_v0dot13 : Packer
 {
     meta:
         name = "PGMPACK v0.13" // Packer name & version
@@ -20900,7 +20286,7 @@ rule PGMPACK_v0dot13___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PGMPACK_v0dot14___: Packer
+rule PGMPACK_v0dot14 : Packer
 {
     meta:
         name = "PGMPACK v0.14" // Packer name & version
@@ -20913,7 +20299,7 @@ rule PGMPACK_v0dot14___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PIRIT_v1dot5___: Packer
+rule PIRIT_v1dot5 : Packer
 {
     meta:
         name = "PIRIT v1.5" // Packer name & version
@@ -20926,7 +20312,7 @@ rule PIRIT_v1dot5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot00__v1dot03___: Packer
+rule PKLITE_v1dot00_v1dot03 : Packer
 {
     meta:
         name = "PKLITE v1.00, v1.03" // Packer name & version
@@ -20939,7 +20325,7 @@ rule PKLITE_v1dot00__v1dot03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot00c_1___: Packer
+rule PKLITE_v1dot00c_1 : Packer
 {
     meta:
         name = "PKLITE v1.00c (1)" // Packer name & version
@@ -20952,7 +20338,7 @@ rule PKLITE_v1dot00c_1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot00c_2___: Packer
+rule PKLITE_v1dot00c_2 : Packer
 {
     meta:
         name = "PKLITE v1.00c (2)" // Packer name & version
@@ -20965,7 +20351,7 @@ rule PKLITE_v1dot00c_2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot12__v1dot15____v1dot20__1__: Packer
+rule PKLITE_v1dot12_v1dot15_v1dot20_1 : Packer
 {
     meta:
         name = "PKLITE v1.12, v1.15, v1.20 (1)" // Packer name & version
@@ -20978,7 +20364,7 @@ rule PKLITE_v1dot12__v1dot15____v1dot20__1__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot12__v1dot15____v1dot20__2__: Packer
+rule PKLITE_v1dot12_v1dot15_v1dot20_2 : Packer
 {
     meta:
         name = "PKLITE v1.12, v1.15, v1.20 (2)" // Packer name & version
@@ -20991,7 +20377,7 @@ rule PKLITE_v1dot12__v1dot15____v1dot20__2__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot14__v1dot15____v1dot20__3__: Packer
+rule PKLITE_v1dot14_v1dot15_v1dot20_3 : Packer
 {
     meta:
         name = "PKLITE v1.14, v1.15, v1.20 (3)" // Packer name & version
@@ -21004,7 +20390,7 @@ rule PKLITE_v1dot14__v1dot15____v1dot20__3__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot14__v1dot20___: Packer
+rule PKLITE_v1dot14_v1dot20 : Packer
 {
     meta:
         name = "PKLITE v1.14, v1.20" // Packer name & version
@@ -21017,7 +20403,7 @@ rule PKLITE_v1dot14__v1dot20___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot20___: Packer
+rule PKLITE_v1dot20 : Packer
 {
     meta:
         name = "PKLITE v1.20" // Packer name & version
@@ -21030,7 +20416,7 @@ rule PKLITE_v1dot20___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v1dot50_1___: Packer
+rule PKLITE_v1dot50_1 : Packer
 {
     meta:
         name = "PKLITE v1.50 (1)" // Packer name & version
@@ -21043,7 +20429,7 @@ rule PKLITE_v1dot50_1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE_v2dot00c___: Packer
+rule PKLITE_v2dot00c : Packer
 {
     meta:
         name = "PKLITE v2.00c" // Packer name & version
@@ -21056,7 +20442,7 @@ rule PKLITE_v2dot00c___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE32_1dot1___: Packer
+rule PKLITE32_1dot1 : Packer
 {
     meta:
         name = "PKLITE32 1.1" // Packer name & version
@@ -21069,7 +20455,7 @@ rule PKLITE32_1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE32_1dot1_PKWARE_Incdot___: Packer
+rule PKLITE32_1dot1_PKWARE_Incdot : Packer
 {
     meta:
         name = "PKLITE32 1.1 -> PKWARE Inc." // Packer name & version
@@ -21082,7 +20468,7 @@ rule PKLITE32_1dot1_PKWARE_Incdot___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE32_v1dot1___: Packer
+rule PKLITE32_v1dot1 : Packer
 {
     meta:
         name = "PKLITE32 v1.1" // Packer name & version
@@ -21095,7 +20481,7 @@ rule PKLITE32_v1dot1___: Packer
     condition:
     	for any of them
 }
-rule PKLITE32_v1dot1___: Packer
+rule PKLITE32_v1dot1 : Packer
 {
     meta:
         name = "PKLITE32 v1.1" // Packer name & version
@@ -21108,7 +20494,7 @@ rule PKLITE32_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKLITE32_v1dot1___: Packer
+rule PKLITE32_v1dot1 : Packer
 {
     meta:
         name = "PKLITE32 v1.1" // Packer name & version
@@ -21121,7 +20507,7 @@ rule PKLITE32_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKTINY_v1dot0_with_TINYPROG_v3dot8___: Packer
+rule PKTINY_v1dot0_with_TINYPROG_v3dot8 : Packer
 {
     meta:
         name = "PKTINY v1.0 with TINYPROG v3.8" // Packer name & version
@@ -21134,7 +20520,7 @@ rule PKTINY_v1dot0_with_TINYPROG_v3dot8___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PKZIP_SFX_v1dot1_1989___90_: Packer
+rule PKZIP_SFX_v1dot1_1989_90 : Packer
 {
     meta:
         name = "PKZIP-SFX v1.1 1989-90" // Packer name & version
@@ -21147,7 +20533,7 @@ rule PKZIP_SFX_v1dot1_1989___90_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PLINK86_1984__1985___: Packer
+rule PLINK86_1984_1985 : Packer
 {
     meta:
         name = "PLINK86 1984, 1985" // Packer name & version
@@ -21160,7 +20546,7 @@ rule PLINK86_1984__1985___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PolyEnE_V0dot01plus_Lennart_Hedlund___: Packer
+rule PolyEnE_V0dot01plus_Lennart_Hedlund : Packer
 {
     meta:
         name = "PolyEnE V0.01+ -> Lennart Hedlund" // Packer name & version
@@ -21173,7 +20559,7 @@ rule PolyEnE_V0dot01plus_Lennart_Hedlund___: Packer
     condition:
     	for any of them
 }
-rule Prepared_by_SLR_OPTLINK___: Packer
+rule Prepared_by_SLR_OPTLINK : Packer
 {
     meta:
         name = "Prepared by SLR (OPTLINK)" // Packer name & version
@@ -21186,7 +20572,7 @@ rule Prepared_by_SLR_OPTLINK___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Private_EXE_Protector_1dot8___: Packer
+rule Private_EXE_Protector_1dot8 : Packer
 {
     meta:
         name = "Private EXE Protector 1.8" // Packer name & version
@@ -21199,7 +20585,7 @@ rule Private_EXE_Protector_1dot8___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Private_EXE_Protector_2dot0_SetiSoft___: Packer
+rule Private_EXE_Protector_2dot0_SetiSoft : Packer
 {
     meta:
         name = "Private EXE Protector 2.0 -> SetiSoft" // Packer name & version
@@ -21212,7 +20598,7 @@ rule Private_EXE_Protector_2dot0_SetiSoft___: Packer
     condition:
     	for any of them
 }
-rule Private_EXE_v2dot0a___: Packer
+rule Private_EXE_v2dot0a : Packer
 {
     meta:
         name = "Private EXE v2.0a" // Packer name & version
@@ -21225,7 +20611,7 @@ rule Private_EXE_v2dot0a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PrivateEXE_v2dot0a___: Packer
+rule PrivateEXE_v2dot0a : Packer
 {
     meta:
         name = "PrivateEXE v2.0a" // Packer name & version
@@ -21238,7 +20624,7 @@ rule PrivateEXE_v2dot0a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PrivateEXE_v2dot0a___: Packer
+rule PrivateEXE_v2dot0a : Packer
 {
     meta:
         name = "PrivateEXE v2.0a" // Packer name & version
@@ -21251,7 +20637,7 @@ rule PrivateEXE_v2dot0a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PRO_PACK_v2dot08__emphasis_on_packed_size____locked_: Packer
+rule PRO_PACK_v2dot08_emphasis_on_packed_size_locked : Packer
 {
     meta:
         name = "PRO-PACK v2.08, emphasis on packed size, locked" // Packer name & version
@@ -21264,7 +20650,7 @@ rule PRO_PACK_v2dot08__emphasis_on_packed_size____locked_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PROTECT__! EXE/COM v6dot0 : Packer
+rule PROTECT_! EXE/COM v6dot0 : Packer
 {
     meta:
         name = "PROTECT! EXE/COM v6.0" // Packer name & version
@@ -21277,7 +20663,7 @@ rule PROTECT__! EXE/COM v6dot0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_MEW_11_SE_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot1_MEW_11_SE_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [MEW 11 SE 1.0] --> Anorganix" // Packer name & version
@@ -21290,7 +20676,7 @@ rule PseudoSigner_0dot1_MEW_11_SE_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_MinGW_GCC_2dotx_Anorganix___: Packer
+rule PseudoSigner_0dot1_MinGW_GCC_2dotx_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [MinGW GCC 2.x] --> Anorganix" // Packer name & version
@@ -21303,7 +20689,7 @@ rule PseudoSigner_0dot1_MinGW_GCC_2dotx_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_VBOX_4dot3_MTE_Anorganix___: Packer
+rule PseudoSigner_0dot1_VBOX_4dot3_MTE_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [VBOX 4.3 MTE] --> Anorganix" // Packer name & version
@@ -21316,7 +20702,7 @@ rule PseudoSigner_0dot1_VBOX_4dot3_MTE_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_VOB_ProtectCD_5_Anorganix___: Packer
+rule PseudoSigner_0dot1_VOB_ProtectCD_5_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [VOB ProtectCD 5] --> Anorganix" // Packer name & version
@@ -21329,7 +20715,7 @@ rule PseudoSigner_0dot1_VOB_ProtectCD_5_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_WATCOM_C_Cplusplus_EXE_Anorganix___: Packer
+rule PseudoSigner_0dot1_WATCOM_C_Cplusplus_EXE_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [WATCOM C/C++ EXE] --> Anorganix" // Packer name & version
@@ -21342,7 +20728,7 @@ rule PseudoSigner_0dot1_WATCOM_C_Cplusplus_EXE_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_XCR_0dot11_Anorganix___: Packer
+rule PseudoSigner_0dot1_XCR_0dot11_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [XCR 0.11] --> Anorganix" // Packer name & version
@@ -21355,7 +20741,7 @@ rule PseudoSigner_0dot1_XCR_0dot11_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot1_Yodas_Protector_1dot02_Anorganix___: Packer
+rule PseudoSigner_0dot1_Yodas_Protector_1dot02_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.1 [Yoda's Protector 1.02] --> Anorganix" // Packer name & version
@@ -21368,7 +20754,7 @@ rule PseudoSigner_0dot1_Yodas_Protector_1dot02_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_32Lite_0dot03_Anorganix___: Packer
+rule PseudoSigner_0dot2_32Lite_0dot03_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [32Lite 0.03] --> Anorganix" // Packer name & version
@@ -21381,7 +20767,7 @@ rule PseudoSigner_0dot2_32Lite_0dot03_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Borland_Cplusplus_DLL_Method_2_Anorganix___: Packer
+rule PseudoSigner_0dot2_Borland_Cplusplus_DLL_Method_2_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Borland C++ DLL (Method 2)] --> Anorganix" // Packer name & version
@@ -21394,7 +20780,7 @@ rule PseudoSigner_0dot2_Borland_Cplusplus_DLL_Method_2_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_CD_Cops_II_Anorganix___: Packer
+rule PseudoSigner_0dot2_CD_Cops_II_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [CD-Cops II] --> Anorganix" // Packer name & version
@@ -21407,7 +20793,7 @@ rule PseudoSigner_0dot2_CD_Cops_II_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_MEW_11_SE_1dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_MEW_11_SE_1dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [MEW 11 SE 1.0] --> Anorganix" // Packer name & version
@@ -21420,7 +20806,7 @@ rule PseudoSigner_0dot2_MEW_11_SE_1dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix___: Packer
+rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Microsoft Visual Basic 5.0 - 6.0] --> Anorganix" // Packer name & version
@@ -21433,7 +20819,7 @@ rule PseudoSigner_0dot2_Microsoft_Visual_Basic_5dot0_6dot0_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_MinGW_GCC_2dotx_Anorganix___: Packer
+rule PseudoSigner_0dot2_MinGW_GCC_2dotx_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [MinGW GCC 2.x] --> Anorganix" // Packer name & version
@@ -21446,7 +20832,7 @@ rule PseudoSigner_0dot2_MinGW_GCC_2dotx_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_VBOX_4dot3_MTE_Anorganix___: Packer
+rule PseudoSigner_0dot2_VBOX_4dot3_MTE_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [VBOX 4.3 MTE] --> Anorganix" // Packer name & version
@@ -21459,7 +20845,7 @@ rule PseudoSigner_0dot2_VBOX_4dot3_MTE_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_VOB_ProtectCD_5_Anorganix___: Packer
+rule PseudoSigner_0dot2_VOB_ProtectCD_5_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [VOB ProtectCD 5] --> Anorganix" // Packer name & version
@@ -21472,7 +20858,7 @@ rule PseudoSigner_0dot2_VOB_ProtectCD_5_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_WATCOM_C_Cplusplus_EXE_Anorganix___: Packer
+rule PseudoSigner_0dot2_WATCOM_C_Cplusplus_EXE_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [WATCOM C/C++ EXE] --> Anorganix" // Packer name & version
@@ -21485,7 +20871,7 @@ rule PseudoSigner_0dot2_WATCOM_C_Cplusplus_EXE_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_XCR_0dot11_Anorganix___: Packer
+rule PseudoSigner_0dot2_XCR_0dot11_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [XCR 0.11] --> Anorganix" // Packer name & version
@@ -21498,7 +20884,7 @@ rule PseudoSigner_0dot2_XCR_0dot11_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix___: Packer
+rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix : Packer
 {
     meta:
         name = "PseudoSigner 0.2 [Yoda's Protector 1.02] --> Anorganix" // Packer name & version
@@ -21511,7 +20897,7 @@ rule PseudoSigner_0dot2_Yodas_Protector_1dot02_Anorganix___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PUNiSHER_V1dot5_Demo_FEUERRADER___: Packer
+rule PUNiSHER_V1dot5_Demo_FEUERRADER : Packer
 {
     meta:
         name = "PUNiSHER V1.5 Demo-> FEUERRADER" // Packer name & version
@@ -21524,7 +20910,7 @@ rule PUNiSHER_V1dot5_Demo_FEUERRADER___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RAZOR_1911_encruptor___: Packer
+rule RAZOR_1911_encruptor : Packer
 {
     meta:
         name = "RAZOR 1911 encruptor" // Packer name & version
@@ -21537,7 +20923,7 @@ rule RAZOR_1911_encruptor___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RCryptor_v1dot3_v1dot4_Vaska___: Packer
+rule RCryptor_v1dot3_v1dot4_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.3 / v1.4 --> Vaska" // Packer name & version
@@ -21550,7 +20936,7 @@ rule RCryptor_v1dot3_v1dot4_Vaska___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RCryptor_v1dot3b_Vaska___: Packer
+rule RCryptor_v1dot3b_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.3b --> Vaska" // Packer name & version
@@ -21563,7 +20949,7 @@ rule RCryptor_v1dot3b_Vaska___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RCryptor_v1dot5_Private_Vaska___: Packer
+rule RCryptor_v1dot5_Private_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.5 (Private) --> Vaska" // Packer name & version
@@ -21576,7 +20962,7 @@ rule RCryptor_v1dot5_Private_Vaska___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RCryptor_v1dot6_Vaska___: Packer
+rule RCryptor_v1dot6_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.6 -> Vaska" // Packer name & version
@@ -21589,7 +20975,7 @@ rule RCryptor_v1dot6_Vaska___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RCryptor_v1dot6b_v1dot6c_Vaska___: Packer
+rule RCryptor_v1dot6b_v1dot6c_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.6b / v1.6c --> Vaska" // Packer name & version
@@ -21602,7 +20988,7 @@ rule RCryptor_v1dot6b_v1dot6c_Vaska___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RCryptor_v1dot6d_Vaska___: Packer
+rule RCryptor_v1dot6d_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.6d --> Vaska" // Packer name & version
@@ -21615,7 +21001,7 @@ rule RCryptor_v1dot6d_Vaska___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule REALbasic___: Packer
+rule REALbasic : Packer
 {
     meta:
         name = "REALbasic" // Packer name & version
@@ -21628,7 +21014,7 @@ rule REALbasic___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule REC_v0dot32___: Packer
+rule REC_v0dot32 : Packer
 {
     meta:
         name = "REC v0.32" // Packer name & version
@@ -21641,7 +21027,7 @@ rule REC_v0dot32___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule REC_v0dot34_3___: Packer
+rule REC_v0dot34_3 : Packer
 {
     meta:
         name = "REC v0.34 [3]" // Packer name & version
@@ -21654,7 +21040,7 @@ rule REC_v0dot34_3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule REC__C0ded_by_ROSE___: Packer
+rule REC_C0ded_by_ROSE : Packer
 {
     meta:
         name = "REC, C0ded by ROSE" // Packer name & version
@@ -21667,7 +21053,7 @@ rule REC__C0ded_by_ROSE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RECdotSmall_v1dot02___: Packer
+rule RECdotSmall_v1dot02 : Packer
 {
     meta:
         name = "REC.Small v1.02" // Packer name & version
@@ -21680,7 +21066,7 @@ rule RECdotSmall_v1dot02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ReversingLabsProtector_0dot7dot4_beta_Ap0x___: Packer
+rule ReversingLabsProtector_0dot7dot4_beta_Ap0x : Packer
 {
     meta:
         name = "ReversingLabsProtector 0.7.4 beta -> Ap0x" // Packer name & version
@@ -21693,7 +21079,7 @@ rule ReversingLabsProtector_0dot7dot4_beta_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLP_V0dot7dot3dotbeta_ap0x___: Packer
+rule RLP_V0dot7dot3dotbeta_ap0x : Packer
 {
     meta:
         name = "RLP V0.7.3.beta -> ap0x" // Packer name & version
@@ -21706,7 +21092,7 @@ rule RLP_V0dot7dot3dotbeta_ap0x___: Packer
     condition:
     	for any of them
 }
-rule RLPack_Full_Edition_1dot17_Ap0x___: Packer
+rule RLPack_Full_Edition_1dot17_Ap0x : Packer
 {
     meta:
         name = "RLPack Full Edition 1.17 -> Ap0x" // Packer name & version
@@ -21719,7 +21105,7 @@ rule RLPack_Full_Edition_1dot17_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_Full_Edition_1dot17_DLL_Ap0x___: Packer
+rule RLPack_Full_Edition_1dot17_DLL_Ap0x : Packer
 {
     meta:
         name = "RLPack Full Edition 1.17 DLL -> Ap0x" // Packer name & version
@@ -21732,7 +21118,7 @@ rule RLPack_Full_Edition_1dot17_DLL_Ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule RLPack_V1dot12_V1dot14_aPlib_0dot43__ap0x___: Packer
+rule RLPack_V1dot12_V1dot14_aPlib_0dot43_ap0x : Packer
 {
     meta:
         name = "RLPack V1.12-V1.14 (aPlib 0.43) -> ap0x" // Packer name & version
@@ -21745,7 +21131,7 @@ rule RLPack_V1dot12_V1dot14_aPlib_0dot43__ap0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ROD_High_TECH_Ayman___: Packer
+rule ROD_High_TECH_Ayman : Packer
 {
     meta:
         name = "ROD High TECH -> Ayman" // Packer name & version
@@ -21758,7 +21144,7 @@ rule ROD_High_TECH_Ayman___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SCAN_AV___: Packer
+rule SCAN_AV : Packer
 {
     meta:
         name = "SCAN /AV" // Packer name & version
@@ -21771,7 +21157,7 @@ rule SCAN_AV___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SEA_AXE___: Packer
+rule SEA_AXE : Packer
 {
     meta:
         name = "SEA-AXE" // Packer name & version
@@ -21784,7 +21170,7 @@ rule SEA_AXE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SEA_AXE_v2dot2___: Packer
+rule SEA_AXE_v2dot2 : Packer
 {
     meta:
         name = "SEA-AXE v2.2" // Packer name & version
@@ -21797,7 +21183,7 @@ rule SEA_AXE_v2dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SecureEXE_3dot0_ZipWorx___: Packer
+rule SecureEXE_3dot0_ZipWorx : Packer
 {
     meta:
         name = "SecureEXE 3.0 -> ZipWorx" // Packer name & version
@@ -21810,7 +21196,7 @@ rule SecureEXE_3dot0_ZipWorx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SEN_Debug_Protector__??? : Packer
+rule SEN_Debug_Protector_??? : Packer
 {
     meta:
         name = "SEN Debug Protector???" // Packer name & version
@@ -21823,7 +21209,7 @@ rule SEN_Debug_Protector__??? : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Shrink_v1dot0___: Packer
+rule Shrink_v1dot0 : Packer
 {
     meta:
         name = "Shrink v1.0" // Packer name & version
@@ -21836,7 +21222,7 @@ rule Shrink_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Shrink_Wrap_v1dot4___: Packer
+rule Shrink_Wrap_v1dot4 : Packer
 {
     meta:
         name = "Shrink Wrap v1.4" // Packer name & version
@@ -21849,7 +21235,7 @@ rule Shrink_Wrap_v1dot4___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Shrinker_v3dot3___: Packer
+rule Shrinker_v3dot3 : Packer
 {
     meta:
         name = "Shrinker v3.3" // Packer name & version
@@ -21862,7 +21248,7 @@ rule Shrinker_v3dot3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Simple_UPX_Cryptor_V30dot4dot2005_MANtiCORE___: Packer
+rule Simple_UPX_Cryptor_V30dot4dot2005_MANtiCORE : Packer
 {
     meta:
         name = "Simple UPX Cryptor V30.4.2005 -> MANtiCORE" // Packer name & version
@@ -21875,7 +21261,7 @@ rule Simple_UPX_Cryptor_V30dot4dot2005_MANtiCORE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Simple_UPX_Cryptor_v30dot4dot2005_multi_layer_encryption_MANtiCORE___: Packer
+rule Simple_UPX_Cryptor_v30dot4dot2005_multi_layer_encryption_MANtiCORE : Packer
 {
     meta:
         name = "Simple UPX Cryptor v30.4.2005 [multi layer encryption] --> MANtiCORE" // Packer name & version
@@ -21888,7 +21274,7 @@ rule Simple_UPX_Cryptor_v30dot4dot2005_multi_layer_encryption_MANtiCORE___: Pack
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SimplePack_V1dot1X_V1dot2X_Method2_bagie___: Packer
+rule SimplePack_V1dot1X_V1dot2X_Method2_bagie : Packer
 {
     meta:
         name = "SimplePack V1.1X-V1.2X (Method2) -> bagie" // Packer name & version
@@ -21901,7 +21287,7 @@ rule SimplePack_V1dot1X_V1dot2X_Method2_bagie___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SLR_OPTLINK___: Packer
+rule SLR_OPTLINK : Packer
 {
     meta:
         name = "SLR (OPTLINK)" // Packer name & version
@@ -21914,7 +21300,7 @@ rule SLR_OPTLINK___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SLR_OPTLINK_1____: Packer
+rule SLR_OPTLINK_1 : Packer
 {
     meta:
         name = "SLR (OPTLINK) (1)" // Packer name & version
@@ -21927,7 +21313,7 @@ rule SLR_OPTLINK_1____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SLVc0deProtector_1dot1x_SLV_ICU___: Packer
+rule SLVc0deProtector_1dot1x_SLV_ICU : Packer
 {
     meta:
         name = "SLVc0deProtector 1.1x -> SLV / ICU" // Packer name & version
@@ -21940,7 +21326,7 @@ rule SLVc0deProtector_1dot1x_SLV_ICU___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SLVc0deProtector_v1dot1_SLV_h___: Packer
+rule SLVc0deProtector_v1dot1_SLV_h : Packer
 {
     meta:
         name = "SLVc0deProtector v1.1 -> SLV (h)" // Packer name & version
@@ -21953,7 +21339,7 @@ rule SLVc0deProtector_v1dot1_SLV_h___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SmokesCrypt_v1dot2___: Packer
+rule SmokesCrypt_v1dot2 : Packer
 {
     meta:
         name = "SmokesCrypt v1.2" // Packer name & version
@@ -21966,7 +21352,7 @@ rule SmokesCrypt_v1dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Soft_Defender_v1dot1x_Randy_Li___: Packer
+rule Soft_Defender_v1dot1x_Randy_Li : Packer
 {
     meta:
         name = "Soft Defender v1.1x -> Randy Li" // Packer name & version
@@ -21979,7 +21365,7 @@ rule Soft_Defender_v1dot1x_Randy_Li___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SoftSentry_v2dot11___: Packer
+rule SoftSentry_v2dot11 : Packer
 {
     meta:
         name = "SoftSentry v2.11" // Packer name & version
@@ -21992,7 +21378,7 @@ rule SoftSentry_v2dot11___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SoftSentry_v3dot0___: Packer
+rule SoftSentry_v3dot0 : Packer
 {
     meta:
         name = "SoftSentry v3.0" // Packer name & version
@@ -22005,7 +21391,7 @@ rule SoftSentry_v3dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SoftWrap___: Packer
+rule SoftWrap : Packer
 {
     meta:
         name = "SoftWrap" // Packer name & version
@@ -22018,7 +21404,7 @@ rule SoftWrap___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Spalsher_1dot0_3dot0_Amok___: Packer
+rule Spalsher_1dot0_3dot0_Amok : Packer
 {
     meta:
         name = "Spalsher 1.0 - 3.0 -> Amok" // Packer name & version
@@ -22031,7 +21417,7 @@ rule Spalsher_1dot0_3dot0_Amok___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Spalsher_v1dot0_v3dot0___: Packer
+rule Spalsher_v1dot0_v3dot0 : Packer
 {
     meta:
         name = "Spalsher v1.0 - v3.0" // Packer name & version
@@ -22044,7 +21430,7 @@ rule Spalsher_v1dot0_v3dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SPEC_b2___: Packer
+rule SPEC_b2 : Packer
 {
     meta:
         name = "SPEC b2" // Packer name & version
@@ -22057,7 +21443,7 @@ rule SPEC_b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule StarForce_Protection_Driver_Protection_Technology___: Packer
+rule StarForce_Protection_Driver_Protection_Technology : Packer
 {
     meta:
         name = "StarForce Protection Driver -> Protection Technology" // Packer name & version
@@ -22070,7 +21456,7 @@ rule StarForce_Protection_Driver_Protection_Technology___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule StarForce_V3dotX_StarForce_Copy_Protection_System___: Packer
+rule StarForce_V3dotX_StarForce_Copy_Protection_System : Packer
 {
     meta:
         name = "StarForce V3.X -> StarForce Copy Protection System" // Packer name & version
@@ -22083,7 +21469,7 @@ rule StarForce_V3dotX_StarForce_Copy_Protection_System___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule StarForce_V3dotX_DLL_StarForce_Copy_Protection_System___: Packer
+rule StarForce_V3dotX_DLL_StarForce_Copy_Protection_System : Packer
 {
     meta:
         name = "StarForce V3.X DLL -> StarForce Copy Protection System" // Packer name & version
@@ -22096,7 +21482,7 @@ rule StarForce_V3dotX_DLL_StarForce_Copy_Protection_System___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Stealth_PE_v1dot1___: Packer
+rule Stealth_PE_v1dot1 : Packer
 {
     meta:
         name = "Stealth PE v1.1" // Packer name & version
@@ -22109,7 +21495,7 @@ rule Stealth_PE_v1dot1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule STNPEE_1dot13___: Packer
+rule STNPEE_1dot13 : Packer
 {
     meta:
         name = "STNPEE 1.13" // Packer name & version
@@ -22122,7 +21508,7 @@ rule STNPEE_1dot13___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Stone__`s PE Encruptor v1dot13 : Packer
+rule Stone_`s PE Encruptor v1dot13 : Packer
 {
     meta:
         name = "Stone`s PE Encruptor v1.13" // Packer name & version
@@ -22135,7 +21521,7 @@ rule Stone__`s PE Encruptor v1dot13 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Stony_Brook_Pascal_v6dot14___: Packer
+rule Stony_Brook_Pascal_v6dot14 : Packer
 {
     meta:
         name = "Stony Brook Pascal v6.14" // Packer name & version
@@ -22148,7 +21534,7 @@ rule Stony_Brook_Pascal_v6dot14___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Stony_Brook_Pascalplus_v7dot0___: Packer
+rule Stony_Brook_Pascalplus_v7dot0 : Packer
 {
     meta:
         name = "Stony Brook Pascal+ v7.0" // Packer name & version
@@ -22161,7 +21547,7 @@ rule Stony_Brook_Pascalplus_v7dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Stranik_1dot3_Modula_C_Pascal___: Packer
+rule Stranik_1dot3_Modula_C_Pascal : Packer
 {
     meta:
         name = "Stranik 1.3 Modula/C/Pascal" // Packer name & version
@@ -22174,7 +21560,7 @@ rule Stranik_1dot3_Modula_C_Pascal___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SuckStop_v1dot11___: Packer
+rule SuckStop_v1dot11 : Packer
 {
     meta:
         name = "SuckStop v1.11" // Packer name & version
@@ -22187,7 +21573,7 @@ rule SuckStop_v1dot11___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule SVK_Protector_v1dot11___: Packer
+rule SVK_Protector_v1dot11 : Packer
 {
     meta:
         name = "SVK-Protector v1.11" // Packer name & version
@@ -22200,7 +21586,7 @@ rule SVK_Protector_v1dot11___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Symantec_Visual_Cafe_v3dot0___: Packer
+rule Symantec_Visual_Cafe_v3dot0 : Packer
 {
     meta:
         name = "Symantec Visual Cafe v3.0" // Packer name & version
@@ -22213,7 +21599,7 @@ rule Symantec_Visual_Cafe_v3dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule T_PACK_v0dot5c____m1_: Packer
+rule T_PACK_v0dot5c_m1 : Packer
 {
     meta:
         name = "T-PACK v0.5c -m1" // Packer name & version
@@ -22226,7 +21612,7 @@ rule T_PACK_v0dot5c____m1_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule T_PACK_v0dot5c____m2_: Packer
+rule T_PACK_v0dot5c_m2 : Packer
 {
     meta:
         name = "T-PACK v0.5c -m2" // Packer name & version
@@ -22239,7 +21625,7 @@ rule T_PACK_v0dot5c____m2_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TASM_MASM___: Packer
+rule TASM_MASM : Packer
 {
     meta:
         name = "TASM / MASM" // Packer name & version
@@ -22252,7 +21638,7 @@ rule TASM_MASM___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_0dot99_1dot0_private_tE__! : Packer
+rule tElock_0dot99_1dot0_private_tE_! : Packer
 {
     meta:
         name = "tElock 0.99 - 1.0 private -> tE!" // Packer name & version
@@ -22265,7 +21651,7 @@ rule tElock_0dot99_1dot0_private_tE__! : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot60___: Packer
+rule tElock_v0dot60 : Packer
 {
     meta:
         name = "tElock v0.60" // Packer name & version
@@ -22278,7 +21664,7 @@ rule tElock_v0dot60___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot70___: Packer
+rule tElock_v0dot70 : Packer
 {
     meta:
         name = "tElock v0.70" // Packer name & version
@@ -22291,7 +21677,7 @@ rule tElock_v0dot70___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot71___: Packer
+rule tElock_v0dot71 : Packer
 {
     meta:
         name = "tElock v0.71" // Packer name & version
@@ -22304,7 +21690,7 @@ rule tElock_v0dot71___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot71b2___: Packer
+rule tElock_v0dot71b2 : Packer
 {
     meta:
         name = "tElock v0.71b2" // Packer name & version
@@ -22317,7 +21703,7 @@ rule tElock_v0dot71b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot71b7___: Packer
+rule tElock_v0dot71b7 : Packer
 {
     meta:
         name = "tElock v0.71b7" // Packer name & version
@@ -22330,7 +21716,7 @@ rule tElock_v0dot71b7___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot80___: Packer
+rule tElock_v0dot80 : Packer
 {
     meta:
         name = "tElock v0.80" // Packer name & version
@@ -22343,7 +21729,7 @@ rule tElock_v0dot80___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot85f___: Packer
+rule tElock_v0dot85f : Packer
 {
     meta:
         name = "tElock v0.85f" // Packer name & version
@@ -22356,7 +21742,7 @@ rule tElock_v0dot85f___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot90___: Packer
+rule tElock_v0dot90 : Packer
 {
     meta:
         name = "tElock v0.90" // Packer name & version
@@ -22369,7 +21755,7 @@ rule tElock_v0dot90___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot98___: Packer
+rule tElock_v0dot98 : Packer
 {
     meta:
         name = "tElock v0.98" // Packer name & version
@@ -22382,7 +21768,7 @@ rule tElock_v0dot98___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Thinstall_vxdotx___: Packer
+rule Thinstall_vxdotx : Packer
 {
     meta:
         name = "Thinstall vx.x" // Packer name & version
@@ -22395,7 +21781,7 @@ rule Thinstall_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TopSpeed_v3dot01_1989___: Packer
+rule TopSpeed_v3dot01_1989 : Packer
 {
     meta:
         name = "TopSpeed v3.01 1989" // Packer name & version
@@ -22408,7 +21794,7 @@ rule TopSpeed_v3dot01_1989___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_C___: Packer
+rule Turbo_C : Packer
 {
     meta:
         name = "Turbo C" // Packer name & version
@@ -22421,7 +21807,7 @@ rule Turbo_C___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_C_1987_or_Borland_Cplusplus_1991___: Packer
+rule Turbo_C_1987_or_Borland_Cplusplus_1991 : Packer
 {
     meta:
         name = "Turbo C 1987 or Borland C++ 1991" // Packer name & version
@@ -22434,7 +21820,7 @@ rule Turbo_C_1987_or_Borland_Cplusplus_1991___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_C_1988___: Packer
+rule Turbo_C_1988 : Packer
 {
     meta:
         name = "Turbo C 1988" // Packer name & version
@@ -22447,7 +21833,7 @@ rule Turbo_C_1988___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_C_1990_or_Turbo_C_1988___: Packer
+rule Turbo_C_1990_or_Turbo_C_1988 : Packer
 {
     meta:
         name = "Turbo C 1990 or Turbo C 1988" // Packer name & version
@@ -22460,7 +21846,7 @@ rule Turbo_C_1990_or_Turbo_C_1988___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_Cplusplus_3dot0_1990___: Packer
+rule Turbo_Cplusplus_3dot0_1990 : Packer
 {
     meta:
         name = "Turbo C++ 3.0 1990" // Packer name & version
@@ -22473,7 +21859,7 @@ rule Turbo_Cplusplus_3dot0_1990___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_or_Borland_Pascal_v7dot0___: Packer
+rule Turbo_or_Borland_Pascal_v7dot0 : Packer
 {
     meta:
         name = "Turbo or Borland Pascal v7.0" // Packer name & version
@@ -22486,7 +21872,7 @@ rule Turbo_or_Borland_Pascal_v7dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_Pascal_v2dot0_1984___: Packer
+rule Turbo_Pascal_v2dot0_1984 : Packer
 {
     meta:
         name = "Turbo Pascal v2.0 1984" // Packer name & version
@@ -22499,7 +21885,7 @@ rule Turbo_Pascal_v2dot0_1984___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_Pascal_v3dot0_1985___: Packer
+rule Turbo_Pascal_v3dot0_1985 : Packer
 {
     meta:
         name = "Turbo Pascal v3.0 1985" // Packer name & version
@@ -22512,7 +21898,7 @@ rule Turbo_Pascal_v3dot0_1985___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TurboBAT_v3dot10_dotdot_5dot0___: Packer
+rule TurboBAT_v3dot10_dotdot_5dot0 : Packer
 {
     meta:
         name = "TurboBAT v3.10 .. 5.0" // Packer name & version
@@ -22525,7 +21911,7 @@ rule TurboBAT_v3dot10_dotdot_5dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TurboBAT_v3dot10_dotdot_5dot0_Patched___: Packer
+rule TurboBAT_v3dot10_dotdot_5dot0_Patched : Packer
 {
     meta:
         name = "TurboBAT v3.10 .. 5.0 (Patched)" // Packer name & version
@@ -22538,7 +21924,7 @@ rule TurboBAT_v3dot10_dotdot_5dot0_Patched___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TXT2COM_Read_A_Matic_v1dot0____: Packer
+rule TXT2COM_Read_A_Matic_v1dot0 : Packer
 {
     meta:
         name = "TXT2COM (Read-A-Matic v1.0)" // Packer name & version
@@ -22551,7 +21937,7 @@ rule TXT2COM_Read_A_Matic_v1dot0____: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UG2002_Cruncher_v0dot3b3___: Packer
+rule UG2002_Cruncher_v0dot3b3 : Packer
 {
     meta:
         name = "UG2002 Cruncher v0.3b3" // Packer name & version
@@ -22564,7 +21950,7 @@ rule UG2002_Cruncher_v0dot3b3___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_by_SMT___: Packer
+rule Unknown_by_SMT : Packer
 {
     meta:
         name = "Unknown by SMT" // Packer name & version
@@ -22577,7 +21963,7 @@ rule Unknown_by_SMT___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_encryptor_2___"PK7Tjrvx" : Packer
+rule Unknown_encryptor_2_"PK7Tjrvx" : Packer
 {
     meta:
         name = "Unknown encryptor (2) - "PK7Tjrvx"" // Packer name & version
@@ -22590,7 +21976,7 @@ rule Unknown_encryptor_2___"PK7Tjrvx" : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_packer_01___: Packer
+rule Unknown_packer_01 : Packer
 {
     meta:
         name = "Unknown packer (01)" // Packer name & version
@@ -22603,7 +21989,7 @@ rule Unknown_packer_01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_packer_02___: Packer
+rule Unknown_packer_02 : Packer
 {
     meta:
         name = "Unknown packer (02)" // Packer name & version
@@ -22616,7 +22002,7 @@ rule Unknown_packer_02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_packer_03___: Packer
+rule Unknown_packer_03 : Packer
 {
     meta:
         name = "Unknown packer (03)" // Packer name & version
@@ -22629,7 +22015,7 @@ rule Unknown_packer_03___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_packer_04___: Packer
+rule Unknown_packer_04 : Packer
 {
     meta:
         name = "Unknown packer (04)" // Packer name & version
@@ -22642,7 +22028,7 @@ rule Unknown_packer_04___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_packer_06___: Packer
+rule Unknown_packer_06 : Packer
 {
     meta:
         name = "Unknown packer (06)" // Packer name & version
@@ -22655,7 +22041,7 @@ rule Unknown_packer_06___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_packer_07___: Packer
+rule Unknown_packer_07 : Packer
 {
     meta:
         name = "Unknown packer (07)" // Packer name & version
@@ -22668,7 +22054,7 @@ rule Unknown_packer_07___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_Protected_Mode_compiler_1___: Packer
+rule Unknown_Protected_Mode_compiler_1 : Packer
 {
     meta:
         name = "Unknown Protected Mode compiler (1)" // Packer name & version
@@ -22681,7 +22067,7 @@ rule Unknown_Protected_Mode_compiler_1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_Protected_Mode_compiler_2___: Packer
+rule Unknown_Protected_Mode_compiler_2 : Packer
 {
     meta:
         name = "Unknown Protected Mode compiler (2)" // Packer name & version
@@ -22694,7 +22080,7 @@ rule Unknown_Protected_Mode_compiler_2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot10_v0dot12Beta_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot10_v0dot12Beta_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.10 - v0.12Beta -> Sign by hot_UNP" // Packer name & version
@@ -22707,7 +22093,7 @@ rule Upack_v0dot10_v0dot12Beta_Sign_by_hot_UNP___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_V0dot1X_V0dot2X_Dwing___: Packer
+rule Upack_V0dot1X_V0dot2X_Dwing : Packer
 {
     meta:
         name = "Upack V0.1X-V0.2X -> Dwing" // Packer name & version
@@ -22720,7 +22106,7 @@ rule Upack_V0dot1X_V0dot2X_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot21Beta_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot21Beta_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.21Beta -> Sign by hot_UNP" // Packer name & version
@@ -22733,7 +22119,7 @@ rule Upack_v0dot21Beta_Sign_by_hot_UNP___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot22___~ v0dot23Beta_Sign by hot_UNP : Packer
+rule Upack_v0dot22_~ v0dot23Beta_Sign by hot_UNP : Packer
 {
     meta:
         name = "Upack v0.22 ~ v0.23Beta -> Sign by hot_UNP" // Packer name & version
@@ -22746,7 +22132,7 @@ rule Upack_v0dot22___~ v0dot23Beta_Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot24___~ v0dot28alpha_Sign by hot_UNP : Packer
+rule Upack_v0dot24_~ v0dot28alpha_Sign by hot_UNP : Packer
 {
     meta:
         name = "Upack v0.24 ~ v0.28alpha -> Sign by hot_UNP" // Packer name & version
@@ -22759,7 +22145,7 @@ rule Upack_v0dot24___~ v0dot28alpha_Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot29_beta_Dwing___: Packer
+rule Upack_v0dot29_beta_Dwing : Packer
 {
     meta:
         name = "Upack v0.29 beta -> Dwing" // Packer name & version
@@ -22772,7 +22158,7 @@ rule Upack_v0dot29_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot2Beta___: Packer
+rule Upack_v0dot2Beta : Packer
 {
     meta:
         name = "Upack v0.2Beta" // Packer name & version
@@ -22785,7 +22171,7 @@ rule Upack_v0dot2Beta___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot30_beta_Dwing___: Packer
+rule Upack_v0dot30_beta_Dwing : Packer
 {
     meta:
         name = "Upack v0.30 beta -> Dwing" // Packer name & version
@@ -22798,7 +22184,7 @@ rule Upack_v0dot30_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot31_beta_Dwing___: Packer
+rule Upack_v0dot31_beta_Dwing : Packer
 {
     meta:
         name = "Upack v0.31 beta -> Dwing" // Packer name & version
@@ -22811,7 +22197,7 @@ rule Upack_v0dot31_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot32_beta_Dwing___: Packer
+rule Upack_v0dot32_beta_Dwing : Packer
 {
     meta:
         name = "Upack v0.32 beta -> Dwing" // Packer name & version
@@ -22824,7 +22210,7 @@ rule Upack_v0dot32_beta_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot33___~ v0dot34 Beta_Sign by hot_UNP : Packer
+rule Upack_v0dot33_~ v0dot34 Beta_Sign by hot_UNP : Packer
 {
     meta:
         name = "Upack v0.33 ~ v0.34 Beta -> Sign by hot_UNP" // Packer name & version
@@ -22837,7 +22223,7 @@ rule Upack_v0dot33___~ v0dot34 Beta_Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_V0dot36_Dwing___: Packer
+rule Upack_V0dot36_Dwing : Packer
 {
     meta:
         name = "Upack V0.36 -> Dwing" // Packer name & version
@@ -22850,7 +22236,7 @@ rule Upack_V0dot36_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_V0dot37_V0dot39_Dwing___: Packer
+rule Upack_V0dot37_V0dot39_Dwing : Packer
 {
     meta:
         name = "Upack V0.37-V0.39 -> Dwing" // Packer name & version
@@ -22863,7 +22249,7 @@ rule Upack_V0dot37_V0dot39_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_v0dot39_final_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot39_final_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.39 final -> Sign by hot_UNP" // Packer name & version
@@ -22876,7 +22262,7 @@ rule Upack_v0dot39_final_Sign_by_hot_UNP___: Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot39_final_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot39_final_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.39 final -> Sign by hot_UNP" // Packer name & version
@@ -22889,7 +22275,7 @@ rule Upack_v0dot39_final_Sign_by_hot_UNP___: Packer
     condition:
     	for any of them
 }
-rule Upack_V0dot3X_Dwing___: Packer
+rule Upack_V0dot3X_Dwing : Packer
 {
     meta:
         name = "Upack V0.3X -> Dwing" // Packer name & version
@@ -22902,7 +22288,7 @@ rule Upack_V0dot3X_Dwing___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_Patch_Sign_by_hot_UNP___: Packer
+rule Upack_Patch_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack_Patch -> Sign by hot_UNP" // Packer name & version
@@ -22915,7 +22301,7 @@ rule Upack_Patch_Sign_by_hot_UNP___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_Patch_or_any_Version_Sign_by_hot_UNP___: Packer
+rule Upack_Patch_or_any_Version_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack_Patch or any Version -> Sign by hot_UNP" // Packer name & version
@@ -22928,7 +22314,7 @@ rule Upack_Patch_or_any_Version_Sign_by_hot_UNP___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_Unknown_DLL___???)_Sign by hot_UNP : Packer
+rule Upack_Unknown_DLL_???)_Sign by hot_UNP : Packer
 {
     meta:
         name = "Upack_Unknown (DLL ???) -> Sign by hot_UNP" // Packer name & version
@@ -22941,7 +22327,7 @@ rule Upack_Unknown_DLL___???)_Sign by hot_UNP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_0dot50_0dot70___: Packer
+rule UPX_0dot50_0dot70 : Packer
 {
     meta:
         name = "UPX 0.50 - 0.70" // Packer name & version
@@ -22954,7 +22340,7 @@ rule UPX_0dot50_0dot70___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_0dot72___: Packer
+rule UPX_0dot72 : Packer
 {
     meta:
         name = "UPX 0.72" // Packer name & version
@@ -22967,7 +22353,7 @@ rule UPX_0dot72___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Modifier_v0dot1x___: Packer
+rule UPX_Modifier_v0dot1x : Packer
 {
     meta:
         name = "UPX Modifier v0.1x" // Packer name & version
@@ -22980,7 +22366,7 @@ rule UPX_Modifier_v0dot1x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Protector_v1dot0x___: Packer
+rule UPX_Protector_v1dot0x : Packer
 {
     meta:
         name = "UPX Protector v1.0x" // Packer name & version
@@ -22993,7 +22379,7 @@ rule UPX_Protector_v1dot0x___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Protector_v1dot0x_2___: Packer
+rule UPX_Protector_v1dot0x_2 : Packer
 {
     meta:
         name = "UPX Protector v1.0x (2)" // Packer name & version
@@ -23006,7 +22392,7 @@ rule UPX_Protector_v1dot0x_2___: Packer
     condition:
     	for any of them
 }
-rule UPX_v0dot62___: Packer
+rule UPX_v0dot62 : Packer
 {
     meta:
         name = "UPX v0.62" // Packer name & version
@@ -23019,7 +22405,7 @@ rule UPX_v0dot62___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot62_DLL___: Packer
+rule UPX_v0dot62_DLL : Packer
 {
     meta:
         name = "UPX v0.62 [DLL]" // Packer name & version
@@ -23032,7 +22418,7 @@ rule UPX_v0dot62_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot70___: Packer
+rule UPX_v0dot70 : Packer
 {
     meta:
         name = "UPX v0.70" // Packer name & version
@@ -23045,7 +22431,7 @@ rule UPX_v0dot70___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot70___: Packer
+rule UPX_v0dot70 : Packer
 {
     meta:
         name = "UPX v0.70" // Packer name & version
@@ -23058,7 +22444,7 @@ rule UPX_v0dot70___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot71_DLL___: Packer
+rule UPX_v0dot71_DLL : Packer
 {
     meta:
         name = "UPX v0.71 [DLL]" // Packer name & version
@@ -23071,7 +22457,7 @@ rule UPX_v0dot71_DLL___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot72___: Packer
+rule UPX_v0dot72 : Packer
 {
     meta:
         name = "UPX v0.72" // Packer name & version
@@ -23084,7 +22470,7 @@ rule UPX_v0dot72___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot76dot1_dos_exe___: Packer
+rule UPX_v0dot76dot1_dos_exe : Packer
 {
     meta:
         name = "UPX v0.76.1 [dos exe]" // Packer name & version
@@ -23097,7 +22483,7 @@ rule UPX_v0dot76dot1_dos_exe___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot76dot1_pe_exe___: Packer
+rule UPX_v0dot76dot1_pe_exe : Packer
 {
     meta:
         name = "UPX v0.76.1 [pe exe]" // Packer name & version
@@ -23110,7 +22496,7 @@ rule UPX_v0dot76dot1_pe_exe___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot89dot6_v1dot02_____v1dot05___v1dot22_DLL_: Packer
+rule UPX_v0dot89dot6_v1dot02_v1dot05_v1dot22_DLL : Packer
 {
     meta:
         name = "UPX v0.89.6 - v1.02 / v1.05 - v1.22 DLL" // Packer name & version
@@ -23123,7 +22509,7 @@ rule UPX_v0dot89dot6_v1dot02_____v1dot05___v1dot22_DLL_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_v0dot89dot6_v1dot02_____v1dot05__v1dot22__Delphi__stub_: Packer
+rule UPX_v0dot89dot6_v1dot02_v1dot05_v1dot22_Delphi_stub : Packer
 {
     meta:
         name = "UPX v0.89.6 - v1.02 / v1.05 -v1.22 (Delphi) stub" // Packer name & version
@@ -23136,7 +22522,7 @@ rule UPX_v0dot89dot6_v1dot02_____v1dot05__v1dot22__Delphi__stub_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_com___: Packer
+rule UPX_com : Packer
 {
     meta:
         name = "UPX [com]" // Packer name & version
@@ -23149,7 +22535,7 @@ rule UPX_com___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX__$HiT v0dot0dot1 : Packer
+rule UPX_$HiT v0dot0dot1 : Packer
 {
     meta:
         name = "UPX$HiT v0.0.1" // Packer name & version
@@ -23162,7 +22548,7 @@ rule UPX__$HiT v0dot0dot1 : Packer
     condition:
     	for any of them
 }
-rule Upx_Lock_1dot0_____1dot2_CyberDoom___Team-X & BoB / BobSoft : Packer
+rule Upx_Lock_1dot0_1dot2_CyberDoom_Team-X & BoB / BobSoft : Packer
 {
     meta:
         name = "Upx-Lock 1.0 - 1.2 --> CyberDoom / Team-X & BoB / BobSoft" // Packer name & version
@@ -23175,7 +22561,7 @@ rule Upx_Lock_1dot0_____1dot2_CyberDoom___Team-X & BoB / BobSoft : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPX_Scrambler_RC_v1dotx___: Packer
+rule UPX_Scrambler_RC_v1dotx : Packer
 {
     meta:
         name = "UPX-Scrambler RC v1.x" // Packer name & version
@@ -23188,7 +22574,7 @@ rule UPX_Scrambler_RC_v1dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPXFreak_V0dot1_HMX0101___: Packer
+rule UPXFreak_V0dot1_HMX0101 : Packer
 {
     meta:
         name = "UPXFreak V0.1 -> HMX0101" // Packer name & version
@@ -23201,7 +22587,7 @@ rule UPXFreak_V0dot1_HMX0101___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UPXLock_v1dot0_CyberDoom___: Packer
+rule UPXLock_v1dot0_CyberDoom : Packer
 {
     meta:
         name = "UPXLock v1.0 -> CyberDoom" // Packer name & version
@@ -23214,7 +22600,7 @@ rule UPXLock_v1dot0_CyberDoom___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule USERNAME_v3dot00___: Packer
+rule USERNAME_v3dot00 : Packer
 {
     meta:
         name = "USERNAME v3.00" // Packer name & version
@@ -23227,7 +22613,7 @@ rule USERNAME_v3dot00___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VBOX_v4dot2_MTE___: Packer
+rule VBOX_v4dot2_MTE : Packer
 {
     meta:
         name = "VBOX v4.2 MTE" // Packer name & version
@@ -23240,7 +22626,7 @@ rule VBOX_v4dot2_MTE___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VBOX_v4dot3_v4dot6___: Packer
+rule VBOX_v4dot3_v4dot6 : Packer
 {
     meta:
         name = "VBOX v4.3 - v4.6" // Packer name & version
@@ -23253,7 +22639,7 @@ rule VBOX_v4dot3_v4dot6___: Packer
     condition:
     	for any of them
 }
-rule Vcasm_Protector_V1dotX_vcasm___: Packer
+rule Vcasm_Protector_V1dotX_vcasm : Packer
 {
     meta:
         name = "Vcasm Protector V1.X -> vcasm" // Packer name & version
@@ -23266,7 +22652,7 @@ rule Vcasm_Protector_V1dotX_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vcasm_Protector_1dot0e_vcasm___: Packer
+rule Vcasm_Protector_1dot0e_vcasm : Packer
 {
     meta:
         name = "Vcasm-Protector 1.0e -> vcasm" // Packer name & version
@@ -23279,7 +22665,7 @@ rule Vcasm_Protector_1dot0e_vcasm___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vcasm_Protector_1dot1_____1dot2_vcasm_: Packer
+rule Vcasm_Protector_1dot1_1dot2_vcasm : Packer
 {
     meta:
         name = "Vcasm-Protector 1.1 - 1.2 -> vcasm" // Packer name & version
@@ -23292,7 +22678,7 @@ rule Vcasm_Protector_1dot1_____1dot2_vcasm_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule vfp_and_exeNc_V5dot00_Wang_JianGuo___: Packer
+rule vfp_and_exeNc_V5dot00_Wang_JianGuo : Packer
 {
     meta:
         name = "vfp&exeNc V5.00 -> Wang JianGuo" // Packer name & version
@@ -23305,7 +22691,7 @@ rule vfp_and_exeNc_V5dot00_Wang_JianGuo___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Video_Lan_Client___: Packer
+rule Video_Lan_Client : Packer
 {
     meta:
         name = "Video-Lan-Client" // Packer name & version
@@ -23318,7 +22704,7 @@ rule Video_Lan_Client___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Virogen_Crypt_v0dot75___: Packer
+rule Virogen_Crypt_v0dot75 : Packer
 {
     meta:
         name = "Virogen Crypt v0.75" // Packer name & version
@@ -23331,7 +22717,7 @@ rule Virogen_Crypt_v0dot75___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Virogen__`s PE Shrinker v0dot14 : Packer
+rule Virogen_`s PE Shrinker v0dot14 : Packer
 {
     meta:
         name = "Virogen`s PE Shrinker v0.14" // Packer name & version
@@ -23344,7 +22730,7 @@ rule Virogen__`s PE Shrinker v0dot14 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VIRUS_I___WormdotKLEZ_: Packer
+rule VIRUS_I_WormdotKLEZ : Packer
 {
     meta:
         name = "VIRUS - I-Worm.KLEZ" // Packer name & version
@@ -23357,7 +22743,7 @@ rule VIRUS_I___WormdotKLEZ_: Packer
     condition:
     	for any of them
 }
-rule VMProtect_v1dot25_PolyTech___: Packer
+rule VMProtect_v1dot25_PolyTech : Packer
 {
     meta:
         name = "VMProtect v1.25 --> PolyTech" // Packer name & version
@@ -23386,7 +22772,7 @@ rule VMProtect_v1dot25_PolyTech___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule VMProtect_V1dotX_PolyTech___: Packer
+rule VMProtect_V1dotX_PolyTech : Packer
 {
     meta:
         name = "VMProtect V1.X -> PolyTech" // Packer name & version
@@ -23399,7 +22785,7 @@ rule VMProtect_V1dotX_PolyTech___: Packer
     condition:
     	for any of them
 }
-rule VOB_ProtectCD___: Packer
+rule VOB_ProtectCD : Packer
 {
     meta:
         name = "VOB ProtectCD" // Packer name & version
@@ -23412,7 +22798,7 @@ rule VOB_ProtectCD___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vterminal_V1dot0X_Lei_Peng___: Packer
+rule Vterminal_V1dot0X_Lei_Peng : Packer
 {
     meta:
         name = "Vterminal V1.0X -> Lei Peng" // Packer name & version
@@ -23425,7 +22811,7 @@ rule Vterminal_V1dot0X_Lei_Peng___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Cazdot1204 : Packer
+rule Vx : Cazdot1204 : Packer
 {
     meta:
         name = "Vx: Caz.1204" // Packer name & version
@@ -23438,7 +22824,7 @@ rule Vx__: Cazdot1204 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: CIH Version 1dot2 TTIT (! WIN95CIH !) : Packer
+rule Vx : CIH Version 1dot2 TTIT (! WIN95CIH !) : Packer
 {
     meta:
         name = "Vx: CIH Version 1.2 TTIT (! WIN95CIH !)" // Packer name & version
@@ -23451,7 +22837,7 @@ rule Vx__: CIH Version 1dot2 TTIT (! WIN95CIH !) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Compiler : Packer
+rule Vx : Compiler : Packer
 {
     meta:
         name = "Vx: Compiler" // Packer name & version
@@ -23464,7 +22850,7 @@ rule Vx__: Compiler : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Danish tiny : Packer
+rule Vx : Danish tiny : Packer
 {
     meta:
         name = "Vx: Danish tiny" // Packer name & version
@@ -23477,7 +22863,7 @@ rule Vx__: Danish tiny : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Eddiedot2100 : Packer
+rule Vx : Eddiedot2100 : Packer
 {
     meta:
         name = "Vx: Eddie.2100" // Packer name & version
@@ -23490,7 +22876,7 @@ rule Vx__: Eddiedot2100 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Eddiedotbaseddot1745 : Packer
+rule Vx : Eddiedotbaseddot1745 : Packer
 {
     meta:
         name = "Vx: Eddie.based.1745" // Packer name & version
@@ -23503,7 +22889,7 @@ rule Vx__: Eddiedotbaseddot1745 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Explosiondot1000 : Packer
+rule Vx : Explosiondot1000 : Packer
 {
     meta:
         name = "Vx: Explosion.1000" // Packer name & version
@@ -23516,7 +22902,7 @@ rule Vx__: Explosiondot1000 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: FaxFreedotTopo : Packer
+rule Vx : FaxFreedotTopo : Packer
 {
     meta:
         name = "Vx: FaxFree.Topo" // Packer name & version
@@ -23529,7 +22915,7 @@ rule Vx__: FaxFreedotTopo : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: GRUNTdot2dotFamily : Packer
+rule Vx : GRUNTdot2dotFamily : Packer
 {
     meta:
         name = "Vx: GRUNT.2.Family" // Packer name & version
@@ -23542,7 +22928,7 @@ rule Vx__: GRUNTdot2dotFamily : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Hafendot1641 : Packer
+rule Vx : Hafendot1641 : Packer
 {
     meta:
         name = "Vx: Hafen.1641" // Packer name & version
@@ -23555,7 +22941,7 @@ rule Vx__: Hafendot1641 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Haryanto : Packer
+rule Vx : Haryanto : Packer
 {
     meta:
         name = "Vx: Haryanto" // Packer name & version
@@ -23568,7 +22954,7 @@ rule Vx__: Haryanto : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Heloweendot1172 : Packer
+rule Vx : Heloweendot1172 : Packer
 {
     meta:
         name = "Vx: Heloween.1172" // Packer name & version
@@ -23581,7 +22967,7 @@ rule Vx__: Heloweendot1172 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Horsedot1776 : Packer
+rule Vx : Horsedot1776 : Packer
 {
     meta:
         name = "Vx: Horse.1776" // Packer name & version
@@ -23594,7 +22980,7 @@ rule Vx__: Horsedot1776 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Hymndot1865 : Packer
+rule Vx : Hymndot1865 : Packer
 {
     meta:
         name = "Vx: Hymn.1865" // Packer name & version
@@ -23607,7 +22993,7 @@ rule Vx__: Hymndot1865 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Igor : Packer
+rule Vx : Igor : Packer
 {
     meta:
         name = "Vx: Igor" // Packer name & version
@@ -23620,7 +23006,7 @@ rule Vx__: Igor : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Involuntarydot1349 : Packer
+rule Vx : Involuntarydot1349 : Packer
 {
     meta:
         name = "Vx: Involuntary.1349" // Packer name & version
@@ -23633,7 +23019,7 @@ rule Vx__: Involuntarydot1349 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: KBDflagsdot1024 : Packer
+rule Vx : KBDflagsdot1024 : Packer
 {
     meta:
         name = "Vx: KBDflags.1024" // Packer name & version
@@ -23646,7 +23032,7 @@ rule Vx__: KBDflagsdot1024 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Keypressdot1212 : Packer
+rule Vx : Keypressdot1212 : Packer
 {
     meta:
         name = "Vx: Keypress.1212" // Packer name & version
@@ -23659,7 +23045,7 @@ rule Vx__: Keypressdot1212 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Kukudot448 : Packer
+rule Vx : Kukudot448 : Packer
 {
     meta:
         name = "Vx: Kuku.448" // Packer name & version
@@ -23672,7 +23058,7 @@ rule Vx__: Kukudot448 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: MTE (non-encrypted) : Packer
+rule Vx : MTE (non-encrypted) : Packer
 {
     meta:
         name = "Vx: MTE (non-encrypted)" // Packer name & version
@@ -23685,7 +23071,7 @@ rule Vx__: MTE (non-encrypted) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Ncu-Lidot1688 : Packer
+rule Vx : Ncu-Lidot1688 : Packer
 {
     meta:
         name = "Vx: Ncu-Li.1688" // Packer name & version
@@ -23698,7 +23084,7 @@ rule Vx__: Ncu-Lidot1688 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Necropolis : Packer
+rule Vx : Necropolis : Packer
 {
     meta:
         name = "Vx: Necropolis" // Packer name & version
@@ -23711,7 +23097,7 @@ rule Vx__: Necropolis : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Necropolisdot1963 : Packer
+rule Vx : Necropolisdot1963 : Packer
 {
     meta:
         name = "Vx: Necropolis.1963" // Packer name & version
@@ -23724,7 +23110,7 @@ rule Vx__: Necropolisdot1963 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Noondot1163 : Packer
+rule Vx : Noondot1163 : Packer
 {
     meta:
         name = "Vx: Noon.1163" // Packer name & version
@@ -23737,7 +23123,7 @@ rule Vx__: Noondot1163 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: November 17dot768 : Packer
+rule Vx : November 17dot768 : Packer
 {
     meta:
         name = "Vx: November 17.768" // Packer name & version
@@ -23750,7 +23136,7 @@ rule Vx__: November 17dot768 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Number One : Packer
+rule Vx : Number One : Packer
 {
     meta:
         name = "Vx: Number One" // Packer name & version
@@ -23763,7 +23149,7 @@ rule Vx__: Number One : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Phoenixdot927 : Packer
+rule Vx : Phoenixdot927 : Packer
 {
     meta:
         name = "Vx: Phoenix.927" // Packer name & version
@@ -23776,7 +23162,7 @@ rule Vx__: Phoenixdot927 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Predatordot2448 : Packer
+rule Vx : Predatordot2448 : Packer
 {
     meta:
         name = "Vx: Predator.2448" // Packer name & version
@@ -23789,7 +23175,7 @@ rule Vx__: Predatordot2448 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Quakedot518 : Packer
+rule Vx : Quakedot518 : Packer
 {
     meta:
         name = "Vx: Quake.518" // Packer name & version
@@ -23802,7 +23188,7 @@ rule Vx__: Quakedot518 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: SK : Packer
+rule Vx : SK : Packer
 {
     meta:
         name = "Vx: SK" // Packer name & version
@@ -23815,7 +23201,7 @@ rule Vx__: SK : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Slowload : Packer
+rule Vx : Slowload : Packer
 {
     meta:
         name = "Vx: Slowload" // Packer name & version
@@ -23828,7 +23214,7 @@ rule Vx__: Slowload : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Sonik Youth : Packer
+rule Vx : Sonik Youth : Packer
 {
     meta:
         name = "Vx: Sonik Youth" // Packer name & version
@@ -23841,7 +23227,7 @@ rule Vx__: Sonik Youth : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Spanz : Packer
+rule Vx : Spanz : Packer
 {
     meta:
         name = "Vx: Spanz" // Packer name & version
@@ -23854,7 +23240,7 @@ rule Vx__: Spanz : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: SYP : Packer
+rule Vx : SYP : Packer
 {
     meta:
         name = "Vx: SYP" // Packer name & version
@@ -23867,7 +23253,7 @@ rule Vx__: SYP : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: TravJackdot883 : Packer
+rule Vx : TravJackdot883 : Packer
 {
     meta:
         name = "Vx: TravJack.883" // Packer name & version
@@ -23880,7 +23266,7 @@ rule Vx__: TravJackdot883 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Trivialdot25 : Packer
+rule Vx : Trivialdot25 : Packer
 {
     meta:
         name = "Vx: Trivial.25" // Packer name & version
@@ -23893,7 +23279,7 @@ rule Vx__: Trivialdot25 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: Trivialdot46 : Packer
+rule Vx : Trivialdot46 : Packer
 {
     meta:
         name = "Vx: Trivial.46" // Packer name & version
@@ -23906,7 +23292,7 @@ rule Vx__: Trivialdot46 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: TrojandotTelefoon : Packer
+rule Vx : TrojandotTelefoon : Packer
 {
     meta:
         name = "Vx: Trojan.Telefoon" // Packer name & version
@@ -23919,7 +23305,7 @@ rule Vx__: TrojandotTelefoon : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: VCL : Packer
+rule Vx : VCL : Packer
 {
     meta:
         name = "Vx: VCL" // Packer name & version
@@ -23932,7 +23318,7 @@ rule Vx__: VCL : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: VCL (encrypted) : Packer
+rule Vx : VCL (encrypted) : Packer
 {
     meta:
         name = "Vx: VCL (encrypted)" // Packer name & version
@@ -23945,7 +23331,7 @@ rule Vx__: VCL (encrypted) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: VCL (encrypted) : Packer
+rule Vx : VCL (encrypted) : Packer
 {
     meta:
         name = "Vx: VCL (encrypted)" // Packer name & version
@@ -23958,7 +23344,7 @@ rule Vx__: VCL (encrypted) : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: VirusConstructor(IVP)dotbased : Packer
+rule Vx : VirusConstructor(IVP)dotbased : Packer
 {
     meta:
         name = "Vx: VirusConstructor(IVP).based" // Packer name & version
@@ -23971,7 +23357,7 @@ rule Vx__: VirusConstructor(IVP)dotbased : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: VirusConstructordotbased : Packer
+rule Vx : VirusConstructordotbased : Packer
 {
     meta:
         name = "Vx: VirusConstructor.based" // Packer name & version
@@ -23984,7 +23370,7 @@ rule Vx__: VirusConstructordotbased : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: VirusConstructordotbased : Packer
+rule Vx : VirusConstructordotbased : Packer
 {
     meta:
         name = "Vx: VirusConstructor.based" // Packer name & version
@@ -23997,7 +23383,7 @@ rule Vx__: VirusConstructordotbased : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: XPEHdot4768 : Packer
+rule Vx : XPEHdot4768 : Packer
 {
     meta:
         name = "Vx: XPEH.4768" // Packer name & version
@@ -24010,7 +23396,7 @@ rule Vx__: XPEHdot4768 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WARNING_____TROJAN_HuiGeZi_: Packer
+rule WARNING_TROJAN_HuiGeZi : Packer
 {
     meta:
         name = "WARNING -> TROJAN -> HuiGeZi" // Packer name & version
@@ -24023,7 +23409,7 @@ rule WARNING_____TROJAN_HuiGeZi_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WARNING_____TROJAN_RobinPE_: Packer
+rule WARNING_TROJAN_RobinPE : Packer
 {
     meta:
         name = "WARNING -> TROJAN -> RobinPE" // Packer name & version
@@ -24036,7 +23422,7 @@ rule WARNING_____TROJAN_RobinPE_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WARNING_____TROJAN_XiaoHui_: Packer
+rule WARNING_TROJAN_XiaoHui : Packer
 {
     meta:
         name = "WARNING -> TROJAN -> XiaoHui" // Packer name & version
@@ -24049,7 +23435,7 @@ rule WARNING_____TROJAN_XiaoHui_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WATCOM_C_Cplusplus___: Packer
+rule WATCOM_C_Cplusplus : Packer
 {
     meta:
         name = "WATCOM C/C++" // Packer name & version
@@ -24062,7 +23448,7 @@ rule WATCOM_C_Cplusplus___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WATCOM_C_Cplusplus_32_Run_Time_System_1988___1994_: Packer
+rule WATCOM_C_Cplusplus_32_Run_Time_System_1988_1994 : Packer
 {
     meta:
         name = "WATCOM C/C++ 32 Run-Time System 1988-1994" // Packer name & version
@@ -24075,7 +23461,7 @@ rule WATCOM_C_Cplusplus_32_Run_Time_System_1988___1994_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WATCOM_C_Cplusplus_32_Run_Time_System_1988___1995_: Packer
+rule WATCOM_C_Cplusplus_32_Run_Time_System_1988_1995 : Packer
 {
     meta:
         name = "WATCOM C/C++ 32 Run-Time System 1988-1995" // Packer name & version
@@ -24088,7 +23474,7 @@ rule WATCOM_C_Cplusplus_32_Run_Time_System_1988___1995_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WATCOM_C_Cplusplus_32_Run_Time_System_1989__1994___: Packer
+rule WATCOM_C_Cplusplus_32_Run_Time_System_1989_1994 : Packer
 {
     meta:
         name = "WATCOM C/C++ 32 Run-Time System 1989, 1994" // Packer name & version
@@ -24101,7 +23487,7 @@ rule WATCOM_C_Cplusplus_32_Run_Time_System_1989__1994___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WATCOM_C_Cplusplus_Run_Time_system__plusDOS4GW_DOS_Extender_1988_93_: Packer
+rule WATCOM_C_Cplusplus_Run_Time_system_plusDOS4GW_DOS_Extender_1988_93 : Packer
 {
     meta:
         name = "WATCOM C/C++ Run-Time system+DOS4GW DOS Extender 1988-93" // Packer name & version
@@ -24114,7 +23500,7 @@ rule WATCOM_C_Cplusplus_Run_Time_system__plusDOS4GW_DOS_Extender_1988_93_: Packe
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinRAR_32_bit_SFX_Module___: Packer
+rule WinRAR_32_bit_SFX_Module : Packer
 {
     meta:
         name = "WinRAR 32-bit SFX Module" // Packer name & version
@@ -24127,7 +23513,7 @@ rule WinRAR_32_bit_SFX_Module___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WinUpack_v0dot30_beta_By_Dwing___: Packer
+rule WinUpack_v0dot30_beta_By_Dwing : Packer
 {
     meta:
         name = "WinUpack v0.30 beta -> By Dwing" // Packer name & version
@@ -24140,7 +23526,7 @@ rule WinUpack_v0dot30_beta_By_Dwing___: Packer
     condition:
     	for any of them
 }
-rule WinZip_32_bit_6dotx___: Packer
+rule WinZip_32_bit_6dotx : Packer
 {
     meta:
         name = "WinZip (32-bit) 6.x" // Packer name & version
@@ -24153,7 +23539,7 @@ rule WinZip_32_bit_6dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule with_added_PK____signature_: Packer
+rule with_added_PK_signature : Packer
 {
     meta:
         name = "with added 'PK' signature" // Packer name & version
@@ -24166,7 +23552,7 @@ rule with_added_PK____signature_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPACK_v3dot00__v3dot01____Relocations_pack__: Packer
+rule WWPACK_v3dot00_v3dot01_Relocations_pack : Packer
 {
     meta:
         name = "WWPACK v3.00, v3.01 (Relocations pack)" // Packer name & version
@@ -24179,7 +23565,7 @@ rule WWPACK_v3dot00__v3dot01____Relocations_pack__: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPack32_v1dot00__v1dot11____v1dot12__v1dot20_: Packer
+rule WWPack32_v1dot00_v1dot11_v1dot12_v1dot20 : Packer
 {
     meta:
         name = "WWPack32 v1.00, v1.11, v1.12, v1.20" // Packer name & version
@@ -24192,7 +23578,7 @@ rule WWPack32_v1dot00__v1dot11____v1dot12__v1dot20_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule WWPack32_v1dotx___: Packer
+rule WWPack32_v1dotx : Packer
 {
     meta:
         name = "WWPack32 v1.x" // Packer name & version
@@ -24205,7 +23591,7 @@ rule WWPack32_v1dotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule X_Pack_v1dot4dot2___: Packer
+rule X_Pack_v1dot4dot2 : Packer
 {
     meta:
         name = "X-Pack v1.4.2" // Packer name & version
@@ -24218,7 +23604,7 @@ rule X_Pack_v1dot4dot2___: Packer
     condition:
     	for any of them
 }
-rule X_PEOR_v0dot99b___: Packer
+rule X_PEOR_v0dot99b : Packer
 {
     meta:
         name = "X-PEOR v0.99b" // Packer name & version
@@ -24231,7 +23617,7 @@ rule X_PEOR_v0dot99b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule X_PEOR_v0dot99b___: Packer
+rule X_PEOR_v0dot99b : Packer
 {
     meta:
         name = "X-PEOR v0.99b" // Packer name & version
@@ -24244,7 +23630,7 @@ rule X_PEOR_v0dot99b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule XCR_v0dot12___: Packer
+rule XCR_v0dot12 : Packer
 {
     meta:
         name = "XCR v0.12" // Packer name & version
@@ -24257,7 +23643,7 @@ rule XCR_v0dot12___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule XPack_1dot52_1dot64___: Packer
+rule XPack_1dot52_1dot64 : Packer
 {
     meta:
         name = "XPack 1.52 - 1.64" // Packer name & version
@@ -24270,7 +23656,7 @@ rule XPack_1dot52_1dot64___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule XPack_1dot67_com___: Packer
+rule XPack_1dot67_com : Packer
 {
     meta:
         name = "XPack 1.67 [com]" // Packer name & version
@@ -24283,7 +23669,7 @@ rule XPack_1dot67_com___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule xPEP_0dot3x_xIkUg___: Packer
+rule xPEP_0dot3x_xIkUg : Packer
 {
     meta:
         name = "xPEP 0.3x -> xIkUg" // Packer name & version
@@ -24296,7 +23682,7 @@ rule xPEP_0dot3x_xIkUg___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Xtreme_Protector_v1dot05___: Packer
+rule Xtreme_Protector_v1dot05 : Packer
 {
     meta:
         name = "Xtreme-Protector v1.05" // Packer name & version
@@ -24309,7 +23695,7 @@ rule Xtreme_Protector_v1dot05___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule y0das_Crypter_v1dotx_____Modified_: Packer
+rule y0das_Crypter_v1dotx_Modified : Packer
 {
     meta:
         name = "y0da's Crypter v1.x / Modified" // Packer name & version
@@ -24322,7 +23708,7 @@ rule y0das_Crypter_v1dotx_____Modified_: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule yodas_Protector_1dot0x_Ashkbiz_Danehkar___: Packer
+rule yodas_Protector_1dot0x_Ashkbiz_Danehkar : Packer
 {
     meta:
         name = "yoda's Protector 1.0x-->Ashkbiz Danehkar" // Packer name & version
@@ -24335,7 +23721,7 @@ rule yodas_Protector_1dot0x_Ashkbiz_Danehkar___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ZCode_Win32_PE_Protector_v1dot01___: Packer
+rule ZCode_Win32_PE_Protector_v1dot01 : Packer
 {
     meta:
         name = "ZCode Win32/PE Protector v1.01" // Packer name & version
@@ -24348,7 +23734,7 @@ rule ZCode_Win32_PE_Protector_v1dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Zortech_C___: Packer
+rule Zortech_C : Packer
 {
     meta:
         name = "Zortech C" // Packer name & version
@@ -24361,7 +23747,7 @@ rule Zortech_C___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Zortech_C_v2dot00_1988__1989___: Packer
+rule Zortech_C_v2dot00_1988_1989 : Packer
 {
     meta:
         name = "Zortech C v2.00 1988, 1989" // Packer name & version
@@ -24374,7 +23760,7 @@ rule Zortech_C_v2dot00_1988__1989___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Zortech_C_v3dot0___: Packer
+rule Zortech_C_v3dot0 : Packer
 {
     meta:
         name = "Zortech C v3.0" // Packer name & version
@@ -24387,7 +23773,7 @@ rule Zortech_C_v3dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Zurenava_DOS_Extender_v0dot45__v0dot49___: Packer
+rule Zurenava_DOS_Extender_v0dot45_v0dot49 : Packer
 {
     meta:
         name = "Zurenava DOS Extender v0.45, v0.49" // Packer name & version
@@ -24426,7 +23812,7 @@ rule ÐÄÆæEXEºÏ²¢Æ÷_yy66 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule aPack_v0dot98b_Jibz___: Packer
+rule aPack_v0dot98b_Jibz : Packer
 {
     meta:
         name = "aPack v0.98b -> Jibz" // Packer name & version
@@ -24439,7 +23825,7 @@ rule aPack_v0dot98b_Jibz___: Packer
     condition:
     	for any of them
 }
-rule aPack_v0dot98b_com___: Packer
+rule aPack_v0dot98b_com : Packer
 {
     meta:
         name = "aPack v0.98b [com]" // Packer name & version
@@ -24452,7 +23838,7 @@ rule aPack_v0dot98b_com___: Packer
     condition:
     	for any of them
 }
-rule aPack_v0dot98b_exe___: Packer
+rule aPack_v0dot98b_exe : Packer
 {
     meta:
         name = "aPack v0.98b [exe]" // Packer name & version
@@ -24465,7 +23851,7 @@ rule aPack_v0dot98b_exe___: Packer
     condition:
     	for any of them
 }
-rule AsCrypt_v0dot1_SToRM_needs_to_be_added___: Packer
+rule AsCrypt_v0dot1_SToRM_needs_to_be_added : Packer
 {
     meta:
         name = "AsCrypt v0.1 -> SToRM - needs to be added" // Packer name & version
@@ -24478,7 +23864,7 @@ rule AsCrypt_v0dot1_SToRM_needs_to_be_added___: Packer
     condition:
     	for any of them
 }
-rule AsCrypt_v0dot1_SToRM_needs_to_be_added___: Packer
+rule AsCrypt_v0dot1_SToRM_needs_to_be_added : Packer
 {
     meta:
         name = "AsCrypt v0.1 -> SToRM - needs to be added" // Packer name & version
@@ -24491,7 +23877,7 @@ rule AsCrypt_v0dot1_SToRM_needs_to_be_added___: Packer
     condition:
     	for any of them
 }
-rule AsCrypt_v0dot1_SToRM_needs_to_be_added___: Packer
+rule AsCrypt_v0dot1_SToRM_needs_to_be_added : Packer
 {
     meta:
         name = "AsCrypt v0.1 -> SToRM - needs to be added" // Packer name & version
@@ -24504,7 +23890,7 @@ rule AsCrypt_v0dot1_SToRM_needs_to_be_added___: Packer
     condition:
     	for any of them
 }
-rule AsCrypt_v0dot1_SToRM_needs_to_be_added___: Packer
+rule AsCrypt_v0dot1_SToRM_needs_to_be_added : Packer
 {
     meta:
         name = "AsCrypt v0.1 -> SToRM - needs to be added" // Packer name & version
@@ -24517,7 +23903,7 @@ rule AsCrypt_v0dot1_SToRM_needs_to_be_added___: Packer
     condition:
     	for any of them
 }
-rule ASProtect_v2dot0___: Packer
+rule ASProtect_v2dot0 : Packer
 {
     meta:
         name = "ASProtect v2.0" // Packer name & version
@@ -24530,7 +23916,7 @@ rule ASProtect_v2dot0___: Packer
     condition:
     	for any of them
 }
-rule Crunch_4___: Packer
+rule Crunch_4 : Packer
 {
     meta:
         name = "Crunch 4" // Packer name & version
@@ -24543,7 +23929,7 @@ rule Crunch_4___: Packer
     condition:
     	for any of them
 }
-rule Crunch_5_Fusion_4___: Packer
+rule Crunch_5_Fusion_4 : Packer
 {
     meta:
         name = "Crunch 5 Fusion 4" // Packer name & version
@@ -24556,7 +23942,7 @@ rule Crunch_5_Fusion_4___: Packer
     condition:
     	for any of them
 }
-rule Dev_C__plusplus_v5_: Packer
+rule Dev_C_plusplus_v5 : Packer
 {
     meta:
         name = "Dev-C++ v5" // Packer name & version
@@ -24569,7 +23955,7 @@ rule Dev_C__plusplus_v5_: Packer
     condition:
     	for any of them
 }
-rule ENIGMA_Protector_Sukhov_Vladimir___: Packer
+rule ENIGMA_Protector_Sukhov_Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector -> Sukhov Vladimir" // Packer name & version
@@ -24582,7 +23968,7 @@ rule ENIGMA_Protector_Sukhov_Vladimir___: Packer
     condition:
     	for any of them
 }
-rule ENIGMA_Protector_V1dotX_Sukhov_Vladimir___: Packer
+rule ENIGMA_Protector_V1dotX_Sukhov_Vladimir : Packer
 {
     meta:
         name = "ENIGMA Protector V1.X-> Sukhov Vladimir" // Packer name & version
@@ -24595,7 +23981,7 @@ rule ENIGMA_Protector_V1dotX_Sukhov_Vladimir___: Packer
     condition:
     	for any of them
 }
-rule EXECryptor_V2dot1X_softcompletedotcom___: Packer
+rule EXECryptor_V2dot1X_softcompletedotcom : Packer
 {
     meta:
         name = "EXECryptor V2.1X -> softcomplete.com" // Packer name & version
@@ -24608,7 +23994,7 @@ rule EXECryptor_V2dot1X_softcompletedotcom___: Packer
     condition:
     	for any of them
 }
-rule EXECryptor_V2dot2X_softcompletedotcom___: Packer
+rule EXECryptor_V2dot2X_softcompletedotcom : Packer
 {
     meta:
         name = "EXECryptor V2.2X -> softcomplete.com" // Packer name & version
@@ -24621,7 +24007,7 @@ rule EXECryptor_V2dot2X_softcompletedotcom___: Packer
     condition:
     	for any of them
 }
-rule eXPressor_v1dot2_CGSoftLabs___: Packer
+rule eXPressor_v1dot2_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor v1.2 -> CGSoftLabs" // Packer name & version
@@ -24634,7 +24020,7 @@ rule eXPressor_v1dot2_CGSoftLabs___: Packer
     condition:
     	for any of them
 }
-rule eXPressor_v1dot3_CGSoftLabs___: Packer
+rule eXPressor_v1dot3_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor v1.3 -> CGSoftLabs" // Packer name & version
@@ -24647,7 +24033,7 @@ rule eXPressor_v1dot3_CGSoftLabs___: Packer
     condition:
     	for any of them
 }
-rule eXPressor_v1dot4_CGSoftLabs___: Packer
+rule eXPressor_v1dot4_CGSoftLabs : Packer
 {
     meta:
         name = "eXPressor v1.4 -> CGSoftLabs" // Packer name & version
@@ -24660,7 +24046,7 @@ rule eXPressor_v1dot4_CGSoftLabs___: Packer
     condition:
     	for any of them
 }
-rule FASM_v1dot5x___: Packer
+rule FASM_v1dot5x : Packer
 {
     meta:
         name = "FASM v1.5x" // Packer name & version
@@ -24673,7 +24059,7 @@ rule FASM_v1dot5x___: Packer
     condition:
     	for any of them
 }
-rule Free_Pascal_0dot99dot10___: Packer
+rule Free_Pascal_0dot99dot10 : Packer
 {
     meta:
         name = "Free Pascal 0.99.10" // Packer name & version
@@ -24686,7 +24072,7 @@ rule Free_Pascal_0dot99dot10___: Packer
     condition:
     	for any of them
 }
-rule Free_Pascal_v1dot0dot10_win32_console___: Packer
+rule Free_Pascal_v1dot0dot10_win32_console : Packer
 {
     meta:
         name = "Free Pascal v1.0.10 (win32 console)" // Packer name & version
@@ -24699,7 +24085,7 @@ rule Free_Pascal_v1dot0dot10_win32_console___: Packer
     condition:
     	for any of them
 }
-rule Free_Pascal_v1dot06___: Packer
+rule Free_Pascal_v1dot06 : Packer
 {
     meta:
         name = "Free Pascal v1.06" // Packer name & version
@@ -24712,7 +24098,7 @@ rule Free_Pascal_v1dot06___: Packer
     condition:
     	for any of them
 }
-rule Gleam_1dot00___: Packer
+rule Gleam_1dot00 : Packer
 {
     meta:
         name = "Gleam 1.00" // Packer name & version
@@ -24725,7 +24111,7 @@ rule Gleam_1dot00___: Packer
     condition:
     	for any of them
 }
-rule kkrunchy_v0dot17_Fdot_Giesen___: Packer
+rule kkrunchy_v0dot17_Fdot_Giesen : Packer
 {
     meta:
         name = "kkrunchy v0.17 -> F. Giesen" // Packer name & version
@@ -24738,7 +24124,7 @@ rule kkrunchy_v0dot17_Fdot_Giesen___: Packer
     condition:
     	for any of them
 }
-rule MEW_10_by_Northfox___: Packer
+rule MEW_10_by_Northfox : Packer
 {
     meta:
         name = "MEW 10 by Northfox" // Packer name & version
@@ -24751,7 +24137,7 @@ rule MEW_10_by_Northfox___: Packer
     condition:
     	for any of them
 }
-rule MEW_11_SE_v1dot1___: Packer
+rule MEW_11_SE_v1dot1 : Packer
 {
     meta:
         name = "MEW 11 SE v1.1" // Packer name & version
@@ -24764,7 +24150,7 @@ rule MEW_11_SE_v1dot1___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Basic_5dot0___: Packer
+rule Microsoft_Visual_Basic_5dot0 : Packer
 {
     meta:
         name = "Microsoft Visual Basic 5.0" // Packer name & version
@@ -24777,7 +24163,7 @@ rule Microsoft_Visual_Basic_5dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Basic_v5dot0_v6dot0___: Packer
+rule Microsoft_Visual_Basic_v5dot0_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual Basic v5.0 - v6.0" // Packer name & version
@@ -24790,7 +24176,7 @@ rule Microsoft_Visual_Basic_v5dot0_v6dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Basic_v5dot0_v6dot0___: Packer
+rule Microsoft_Visual_Basic_v5dot0_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual Basic v5.0 - v6.0" // Packer name & version
@@ -24803,7 +24189,7 @@ rule Microsoft_Visual_Basic_v5dot0_v6dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Basic_v6dot0___: Packer
+rule Microsoft_Visual_Basic_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual Basic v6.0" // Packer name & version
@@ -24816,7 +24202,7 @@ rule Microsoft_Visual_Basic_v6dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_C_5dot0___: Packer
+rule Microsoft_Visual_C_5dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C 5.0" // Packer name & version
@@ -24829,7 +24215,7 @@ rule Microsoft_Visual_C_5dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_6dot0_DLL_Debug____: Packer
+rule Microsoft_Visual_Cplusplus_6dot0_DLL_Debug : Packer
 {
     meta:
         name = "Microsoft Visual C++ 6.0 DLL (Debug)" // Packer name & version
@@ -24842,7 +24228,7 @@ rule Microsoft_Visual_Cplusplus_6dot0_DLL_Debug____: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_7dot0_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_7dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ 7.0 DLL" // Packer name & version
@@ -24855,7 +24241,7 @@ rule Microsoft_Visual_Cplusplus_7dot0_DLL___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_v6dot0___: Packer
+rule Microsoft_Visual_Cplusplus_v6dot0 : Packer
 {
     meta:
         name = "Microsoft Visual C++ v6.0" // Packer name & version
@@ -24868,7 +24254,7 @@ rule Microsoft_Visual_Cplusplus_v6dot0___: Packer
     condition:
     	for any of them
 }
-rule Microsoft_Visual_Cplusplus_v7dot0_DLL___: Packer
+rule Microsoft_Visual_Cplusplus_v7dot0_DLL : Packer
 {
     meta:
         name = "Microsoft Visual C++ v7.0 DLL" // Packer name & version
@@ -24881,7 +24267,7 @@ rule Microsoft_Visual_Cplusplus_v7dot0_DLL___: Packer
     condition:
     	for any of them
 }
-rule MoleBox_v2dot0___: Packer
+rule MoleBox_v2dot0 : Packer
 {
     meta:
         name = "MoleBox v2.0" // Packer name & version
@@ -24894,7 +24280,7 @@ rule MoleBox_v2dot0___: Packer
     condition:
     	for any of them
 }
-rule nSpack_V2dot3_LiuXingPing___: Packer
+rule nSpack_V2dot3_LiuXingPing : Packer
 {
     meta:
         name = "nSpack V2.3 -> LiuXingPing" // Packer name & version
@@ -24907,7 +24293,7 @@ rule nSpack_V2dot3_LiuXingPing___: Packer
     condition:
     	for any of them
 }
-rule nSpack_V2dotx_LiuXingPing___: Packer
+rule nSpack_V2dotx_LiuXingPing : Packer
 {
     meta:
         name = "nSpack V2.x -> LiuXingPing" // Packer name & version
@@ -24920,7 +24306,7 @@ rule nSpack_V2dotx_LiuXingPing___: Packer
     condition:
     	for any of them
 }
-rule NsPack_V2dotX_LiuXingPing___: Packer
+rule NsPack_V2dotX_LiuXingPing : Packer
 {
     meta:
         name = "NsPack V2.X -> LiuXingPing" // Packer name & version
@@ -24933,7 +24319,7 @@ rule NsPack_V2dotX_LiuXingPing___: Packer
     condition:
     	for any of them
 }
-rule PE_Spin_v0dot4x___: Packer
+rule PE_Spin_v0dot4x : Packer
 {
     meta:
         name = "PE Spin v0.4x" // Packer name & version
@@ -24946,7 +24332,7 @@ rule PE_Spin_v0dot4x___: Packer
     condition:
     	for any of them
 }
-rule PE_Protect_0dot9_by_Cristoph_Gabler_1998___: Packer
+rule PE_Protect_0dot9_by_Cristoph_Gabler_1998 : Packer
 {
     meta:
         name = "PE-Protect 0.9 by Cristoph Gabler 1998" // Packer name & version
@@ -24959,7 +24345,7 @@ rule PE_Protect_0dot9_by_Cristoph_Gabler_1998___: Packer
     condition:
     	for any of them
 }
-rule PeStubOEP_v1dotx___: Packer
+rule PeStubOEP_v1dotx : Packer
 {
     meta:
         name = "PeStubOEP v1.x" // Packer name & version
@@ -24972,7 +24358,7 @@ rule PeStubOEP_v1dotx___: Packer
     condition:
     	for any of them
 }
-rule PeStubOEP_v1dotx___: Packer
+rule PeStubOEP_v1dotx : Packer
 {
     meta:
         name = "PeStubOEP v1.x" // Packer name & version
@@ -24985,7 +24371,7 @@ rule PeStubOEP_v1dotx___: Packer
     condition:
     	for any of them
 }
-rule PeStubOEP_v1dotx___: Packer
+rule PeStubOEP_v1dotx : Packer
 {
     meta:
         name = "PeStubOEP v1.x" // Packer name & version
@@ -24998,7 +24384,7 @@ rule PeStubOEP_v1dotx___: Packer
     condition:
     	for any of them
 }
-rule Petite_1dot3___: Packer
+rule Petite_1dot3 : Packer
 {
     meta:
         name = "Petite 1.3" // Packer name & version
@@ -25011,7 +24397,7 @@ rule Petite_1dot3___: Packer
     condition:
     	for any of them
 }
-rule Petite_1dot4___: Packer
+rule Petite_1dot4 : Packer
 {
     meta:
         name = "Petite 1.4" // Packer name & version
@@ -25024,7 +24410,7 @@ rule Petite_1dot4___: Packer
     condition:
     	for any of them
 }
-rule Petite_2dot1___: Packer
+rule Petite_2dot1 : Packer
 {
     meta:
         name = "Petite 2.1" // Packer name & version
@@ -25037,7 +24423,7 @@ rule Petite_2dot1___: Packer
     condition:
     	for any of them
 }
-rule PolyCrypt_PE_2dot1dot4b___2dot1dot5_JLab_Software_Creations__h-oep) : Packer
+rule PolyCrypt_PE_2dot1dot4b_2dot1dot5_JLab_Software_Creations_h-oep) : Packer
 {
     meta:
         name = "PolyCrypt PE - 2.1.4b/2.1.5 -> JLab Software Creations (h-oep)" // Packer name & version
@@ -25050,7 +24436,7 @@ rule PolyCrypt_PE_2dot1dot4b___2dot1dot5_JLab_Software_Creations__h-oep) : Packe
     condition:
     	for any of them
 }
-rule PolyEnE_0dot01plus_by_Lennart_Hedlund___: Packer
+rule PolyEnE_0dot01plus_by_Lennart_Hedlund : Packer
 {
     meta:
         name = "PolyEnE 0.01+ by Lennart Hedlund" // Packer name & version
@@ -25063,7 +24449,7 @@ rule PolyEnE_0dot01plus_by_Lennart_Hedlund___: Packer
     condition:
     	for any of them
 }
-rule Private_EXE_v2dot0a___: Packer
+rule Private_EXE_v2dot0a : Packer
 {
     meta:
         name = "Private EXE v2.0a" // Packer name & version
@@ -25076,7 +24462,7 @@ rule Private_EXE_v2dot0a___: Packer
     condition:
     	for any of them
 }
-rule RAR_SFX_Archive__1____: Packer
+rule RAR_SFX_Archive_1 : Packer
 {
     meta:
         name = "RAR-SFX Archive (1)" // Packer name & version
@@ -25089,7 +24475,7 @@ rule RAR_SFX_Archive__1____: Packer
     condition:
     	for any of them
 }
-rule RatPacker_Glue_stub___: Packer
+rule RatPacker_Glue_stub : Packer
 {
     meta:
         name = "RatPacker (Glue) stub" // Packer name & version
@@ -25102,7 +24488,7 @@ rule RatPacker_Glue_stub___: Packer
     condition:
     	for any of them
 }
-rule RCryptor_v1dot1_Vaska___: Packer
+rule RCryptor_v1dot1_Vaska : Packer
 {
     meta:
         name = "RCryptor v1.1 --> Vaska" // Packer name & version
@@ -25115,7 +24501,7 @@ rule RCryptor_v1dot1_Vaska___: Packer
     condition:
     	for any of them
 }
-rule Safe_2dot0___: Packer
+rule Safe_2dot0 : Packer
 {
     meta:
         name = "Safe 2.0" // Packer name & version
@@ -25128,7 +24514,7 @@ rule Safe_2dot0___: Packer
     condition:
     	for any of them
 }
-rule SafeDisc_v4___: Packer
+rule SafeDisc_v4 : Packer
 {
     meta:
         name = "SafeDisc v4" // Packer name & version
@@ -25141,7 +24527,7 @@ rule SafeDisc_v4___: Packer
     condition:
     	for any of them
 }
-rule Setup2Go_Installer_Stub___: Packer
+rule Setup2Go_Installer_Stub : Packer
 {
     meta:
         name = "Setup2Go Installer Stub" // Packer name & version
@@ -25154,7 +24540,7 @@ rule Setup2Go_Installer_Stub___: Packer
     condition:
     	for any of them
 }
-rule Shrinker_3dot2___: Packer
+rule Shrinker_3dot2 : Packer
 {
     meta:
         name = "Shrinker 3.2" // Packer name & version
@@ -25167,7 +24553,7 @@ rule Shrinker_3dot2___: Packer
     condition:
     	for any of them
 }
-rule Shrinker_3dot3___: Packer
+rule Shrinker_3dot3 : Packer
 {
     meta:
         name = "Shrinker 3.3" // Packer name & version
@@ -25180,7 +24566,7 @@ rule Shrinker_3dot3___: Packer
     condition:
     	for any of them
 }
-rule Shrinker_3dot4___: Packer
+rule Shrinker_3dot4 : Packer
 {
     meta:
         name = "Shrinker 3.4" // Packer name & version
@@ -25193,7 +24579,7 @@ rule Shrinker_3dot4___: Packer
     condition:
     	for any of them
 }
-rule SPLayer_v0dot08___: Packer
+rule SPLayer_v0dot08 : Packer
 {
     meta:
         name = "SPLayer v0.08" // Packer name & version
@@ -25206,7 +24592,7 @@ rule SPLayer_v0dot08___: Packer
     condition:
     	for any of them
 }
-rule Trilobytes_JPEG_graphics_Library___: Packer
+rule Trilobytes_JPEG_graphics_Library : Packer
 {
     meta:
         name = "Trilobyte's JPEG graphics Library" // Packer name & version
@@ -25219,7 +24605,7 @@ rule Trilobytes_JPEG_graphics_Library___: Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot29_Beta___~ v0dot31 Beta_Sign by hot_UNP : Packer
+rule Upack_v0dot29_Beta_~ v0dot31 Beta_Sign by hot_UNP : Packer
 {
     meta:
         name = "Upack v0.29 Beta ~ v0.31 Beta -> Sign by hot_UNP" // Packer name & version
@@ -25232,7 +24618,7 @@ rule Upack_v0dot29_Beta___~ v0dot31 Beta_Sign by hot_UNP : Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot32_Beta_Patch_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot32_Beta_Patch_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.32 Beta (Patch) -> Sign by hot_UNP" // Packer name & version
@@ -25245,7 +24631,7 @@ rule Upack_v0dot32_Beta_Patch_Sign_by_hot_UNP___: Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot32_Beta_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot32_Beta_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.32 Beta -> Sign by hot_UNP" // Packer name & version
@@ -25258,7 +24644,7 @@ rule Upack_v0dot32_Beta_Sign_by_hot_UNP___: Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot32_Beta_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot32_Beta_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.32 Beta -> Sign by hot_UNP" // Packer name & version
@@ -25271,7 +24657,7 @@ rule Upack_v0dot32_Beta_Sign_by_hot_UNP___: Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot35_alpha_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot35_alpha_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.35 alpha -> Sign by hot_UNP" // Packer name & version
@@ -25284,7 +24670,7 @@ rule Upack_v0dot35_alpha_Sign_by_hot_UNP___: Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot36_alpha_Sign_by_hot_UNP___: Packer
+rule Upack_v0dot36_alpha_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack v0.36 alpha -> Sign by hot_UNP" // Packer name & version
@@ -25297,7 +24683,7 @@ rule Upack_v0dot36_alpha_Sign_by_hot_UNP___: Packer
     condition:
     	for any of them
 }
-rule Upack_v0dot37___~ v0dot38 Beta (Strip base relocation table Option)_ Sign by hot_UNP : Packer
+rule Upack_v0dot37_~ v0dot38 Beta (Strip base relocation table Option)_ Sign by hot_UNP : Packer
 {
     meta:
         name = "Upack v0.37 ~ v0.38 Beta (Strip base relocation table Option)-> Sign by hot_UNP" // Packer name & version
@@ -25310,7 +24696,7 @@ rule Upack_v0dot37___~ v0dot38 Beta (Strip base relocation table Option)_ Sign b
     condition:
     	for any of them
 }
-rule UPX__$HiT 0dot0dot1_sibaway7@yahoodotcom : Packer
+rule UPX_$HiT 0dot0dot1_sibaway7@yahoodotcom : Packer
 {
     meta:
         name = "UPX$HiT 0.0.1 -> sibaway7@yahoo.com" // Packer name & version
@@ -25323,7 +24709,7 @@ rule UPX__$HiT 0dot0dot1_sibaway7@yahoodotcom : Packer
     condition:
     	for any of them
 }
-rule VIRUS_I___WormdotHybris_: Packer
+rule VIRUS_I_WormdotHybris : Packer
 {
     meta:
         name = "VIRUS - I-Worm.Hybris" // Packer name & version
@@ -25336,7 +24722,7 @@ rule VIRUS_I___WormdotHybris_: Packer
     condition:
     	for any of them
 }
-rule WinUpack_v0dot30_beta_By_Dwing_h___: Packer
+rule WinUpack_v0dot30_beta_By_Dwing_h : Packer
 {
     meta:
         name = "WinUpack v0.30 beta -> By Dwing (h)" // Packer name & version
@@ -25349,7 +24735,7 @@ rule WinUpack_v0dot30_beta_By_Dwing_h___: Packer
     condition:
     	for any of them
 }
-rule ASPack_1dot08___: Packer
+rule ASPack_1dot08 : Packer
 {
     meta:
         name = "ASPack 1.08" // Packer name & version
@@ -25362,7 +24748,7 @@ rule ASPack_1dot08___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot06b___: Packer
+rule ASPack_v1dot06b : Packer
 {
     meta:
         name = "ASPack v1.06b" // Packer name & version
@@ -25375,7 +24761,7 @@ rule ASPack_v1dot06b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot06b___: Packer
+rule ASPack_v1dot06b : Packer
 {
     meta:
         name = "ASPack v1.06b" // Packer name & version
@@ -25388,7 +24774,7 @@ rule ASPack_v1dot06b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot06b___: Packer
+rule ASPack_v1dot06b : Packer
 {
     meta:
         name = "ASPack v1.06b" // Packer name & version
@@ -25401,7 +24787,7 @@ rule ASPack_v1dot06b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot07b___: Packer
+rule ASPack_v1dot07b : Packer
 {
     meta:
         name = "ASPack v1.07b" // Packer name & version
@@ -25414,7 +24800,7 @@ rule ASPack_v1dot07b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot07b___: Packer
+rule ASPack_v1dot07b : Packer
 {
     meta:
         name = "ASPack v1.07b" // Packer name & version
@@ -25427,7 +24813,7 @@ rule ASPack_v1dot07b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot07b___: Packer
+rule ASPack_v1dot07b : Packer
 {
     meta:
         name = "ASPack v1.07b" // Packer name & version
@@ -25440,7 +24826,7 @@ rule ASPack_v1dot07b___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08___: Packer
+rule ASPack_v1dot08 : Packer
 {
     meta:
         name = "ASPack v1.08" // Packer name & version
@@ -25453,7 +24839,7 @@ rule ASPack_v1dot08___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08___: Packer
+rule ASPack_v1dot08 : Packer
 {
     meta:
         name = "ASPack v1.08" // Packer name & version
@@ -25466,7 +24852,7 @@ rule ASPack_v1dot08___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08___: Packer
+rule ASPack_v1dot08 : Packer
 {
     meta:
         name = "ASPack v1.08" // Packer name & version
@@ -25479,7 +24865,7 @@ rule ASPack_v1dot08___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot01___: Packer
+rule ASPack_v1dot08dot01 : Packer
 {
     meta:
         name = "ASPack v1.08.01" // Packer name & version
@@ -25492,7 +24878,7 @@ rule ASPack_v1dot08dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot01___: Packer
+rule ASPack_v1dot08dot01 : Packer
 {
     meta:
         name = "ASPack v1.08.01" // Packer name & version
@@ -25505,7 +24891,7 @@ rule ASPack_v1dot08dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot01___: Packer
+rule ASPack_v1dot08dot01 : Packer
 {
     meta:
         name = "ASPack v1.08.01" // Packer name & version
@@ -25518,7 +24904,7 @@ rule ASPack_v1dot08dot01___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot02___: Packer
+rule ASPack_v1dot08dot02 : Packer
 {
     meta:
         name = "ASPack v1.08.02" // Packer name & version
@@ -25531,7 +24917,7 @@ rule ASPack_v1dot08dot02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot02___: Packer
+rule ASPack_v1dot08dot02 : Packer
 {
     meta:
         name = "ASPack v1.08.02" // Packer name & version
@@ -25544,7 +24930,7 @@ rule ASPack_v1dot08dot02___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v1dot08dot04___: Packer
+rule ASPack_v1dot08dot04 : Packer
 {
     meta:
         name = "ASPack v1.08.04" // Packer name & version
@@ -25557,7 +24943,7 @@ rule ASPack_v1dot08dot04___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASPack_v2dot11___: Packer
+rule ASPack_v2dot11 : Packer
 {
     meta:
         name = "ASPack v2.11" // Packer name & version
@@ -25570,7 +24956,7 @@ rule ASPack_v2dot11___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot1_BRS___: Packer
+rule ASProtect_v1dot1_BRS : Packer
 {
     meta:
         name = "ASProtect v1.1 BRS" // Packer name & version
@@ -25583,7 +24969,7 @@ rule ASProtect_v1dot1_BRS___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot1_MTEb___: Packer
+rule ASProtect_v1dot1_MTEb : Packer
 {
     meta:
         name = "ASProtect v1.1 MTEb" // Packer name & version
@@ -25596,7 +24982,7 @@ rule ASProtect_v1dot1_MTEb___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_v1dot2___: Packer
+rule ASProtect_v1dot2 : Packer
 {
     meta:
         name = "ASProtect v1.2" // Packer name & version
@@ -25609,7 +24995,7 @@ rule ASProtect_v1dot2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule ASProtect_vxdotx___: Packer
+rule ASProtect_vxdotx : Packer
 {
     meta:
         name = "ASProtect vx.x" // Packer name & version
@@ -25622,7 +25008,7 @@ rule ASProtect_vxdotx___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_V5dot0_Bitarts___: Packer
+rule Crunch_V5dot0_Bitarts : Packer
 {
     meta:
         name = "Crunch V5.0 -> Bitarts" // Packer name & version
@@ -25635,7 +25021,7 @@ rule Crunch_V5dot0_Bitarts___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Crunch_PE_v5dot0___: Packer
+rule Crunch_PE_v5dot0 : Packer
 {
     meta:
         name = "Crunch/PE v5.0" // Packer name & version
@@ -25648,7 +25034,7 @@ rule Crunch_PE_v5dot0___: Packer
     condition:
     	for any of them
 }
-rule EP_v2dot0___: Packer
+rule EP_v2dot0 : Packer
 {
     meta:
         name = "EP v2.0" // Packer name & version
@@ -25661,7 +25047,7 @@ rule EP_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule EXEPACK_v5dot31dot009_LINK_v3dot69___: Packer
+rule EXEPACK_v5dot31dot009_LINK_v3dot69 : Packer
 {
     meta:
         name = "EXEPACK v5.31.009 (LINK v3.69)" // Packer name & version
@@ -25674,7 +25060,7 @@ rule EXEPACK_v5dot31dot009_LINK_v3dot69___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Hasp_4_envelope_dongle_Alladin___: Packer
+rule Hasp_4_envelope_dongle_Alladin : Packer
 {
     meta:
         name = "Hasp 4 envelope dongle (Alladin)" // Packer name & version
@@ -25687,7 +25073,7 @@ rule Hasp_4_envelope_dongle_Alladin___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Hide_and_Protect_V1dot0X__SoftWar_Company___: Packer
+rule Hide_and_Protect_V1dot0X_SoftWar_Company : Packer
 {
     meta:
         name = "Hide&Protect V1.0X-> SoftWar Company" // Packer name & version
@@ -25700,7 +25086,7 @@ rule Hide_and_Protect_V1dot0X__SoftWar_Company___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Mew_10_v1dot0_Eng_Northfox___: Packer
+rule Mew_10_v1dot0_Eng_Northfox : Packer
 {
     meta:
         name = "Mew 10 v1.0 (Eng) -> Northfox" // Packer name & version
@@ -25713,7 +25099,7 @@ rule Mew_10_v1dot0_Eng_Northfox___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule MEW_11_SE_v1dot1_Northfox_HCC___: Packer
+rule MEW_11_SE_v1dot1_Northfox_HCC : Packer
 {
     meta:
         name = "MEW 11 SE v1.1  -> Northfox [HCC]" // Packer name & version
@@ -25726,7 +25112,7 @@ rule MEW_11_SE_v1dot1_Northfox_HCC___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NeoLite_v1dot0___: Packer
+rule NeoLite_v1dot0 : Packer
 {
     meta:
         name = "NeoLite v1.0" // Packer name & version
@@ -25739,7 +25125,7 @@ rule NeoLite_v1dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Neolite_v2dot0___: Packer
+rule Neolite_v2dot0 : Packer
 {
     meta:
         name = "Neolite v2.0" // Packer name & version
@@ -25752,7 +25138,7 @@ rule Neolite_v2dot0___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule NFO_v1dotx_modified___: Packer
+rule NFO_v1dotx_modified : Packer
 {
     meta:
         name = "NFO v1.x modified" // Packer name & version
@@ -25765,7 +25151,7 @@ rule NFO_v1dotx_modified___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Obsidium_v1dot0dot0dot61___: Packer
+rule Obsidium_v1dot0dot0dot61 : Packer
 {
     meta:
         name = "Obsidium v1.0.0.61" // Packer name & version
@@ -25778,7 +25164,7 @@ rule Obsidium_v1dot0dot0dot61___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PCIENC_Cryptor___: Packer
+rule PCIENC_Cryptor : Packer
 {
     meta:
         name = "PCIENC Cryptor" // Packer name & version
@@ -25791,7 +25177,7 @@ rule PCIENC_Cryptor___: Packer
     condition:
     	for any of them
 }
-rule PEQuake_V0dot06_forgat___: Packer
+rule PEQuake_V0dot06_forgat : Packer
 {
     meta:
         name = "PEQuake V0.06 -> forgat" // Packer name & version
@@ -25804,7 +25190,7 @@ rule PEQuake_V0dot06_forgat___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PESHiELD_v0dot25___: Packer
+rule PESHiELD_v0dot25 : Packer
 {
     meta:
         name = "PESHiELD v0.25" // Packer name & version
@@ -25817,7 +25203,7 @@ rule PESHiELD_v0dot25___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule pex_V0dot99_params___: Packer
+rule pex_V0dot99_params : Packer
 {
     meta:
         name = "pex V0.99 -> params" // Packer name & version
@@ -25830,7 +25216,7 @@ rule pex_V0dot99_params___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule PROTECT__! EXE/COM v5dot0 : Packer
+rule PROTECT_! EXE/COM v5dot0 : Packer
 {
     meta:
         name = "PROTECT! EXE/COM v5.0" // Packer name & version
@@ -25843,7 +25229,7 @@ rule PROTECT__! EXE/COM v5dot0 : Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Safeguard_1dot0_Simonzh___: Packer
+rule Safeguard_1dot0_Simonzh : Packer
 {
     meta:
         name = "Safeguard 1.0 -> Simonzh" // Packer name & version
@@ -25856,7 +25242,7 @@ rule Safeguard_1dot0_Simonzh___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Symantec_C_v2dot10__v4dot00_or_Zortech_C_v3dot0r1___: Packer
+rule Symantec_C_v2dot10_v4dot00_or_Zortech_C_v3dot0r1 : Packer
 {
     meta:
         name = "Symantec C v2.10, v4.00 or Zortech C v3.0r1" // Packer name & version
@@ -25869,7 +25255,7 @@ rule Symantec_C_v2dot10__v4dot00_or_Zortech_C_v3dot0r1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TAV___: Packer
+rule TAV : Packer
 {
     meta:
         name = "TAV" // Packer name & version
@@ -25882,7 +25268,7 @@ rule TAV___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot7x_v0dot84___: Packer
+rule tElock_v0dot7x_v0dot84 : Packer
 {
     meta:
         name = "tElock v0.7x - v0.84" // Packer name & version
@@ -25895,7 +25281,7 @@ rule tElock_v0dot7x_v0dot84___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot92a___: Packer
+rule tElock_v0dot92a : Packer
 {
     meta:
         name = "tElock v0.92a" // Packer name & version
@@ -25908,7 +25294,7 @@ rule tElock_v0dot92a___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot95___: Packer
+rule tElock_v0dot95 : Packer
 {
     meta:
         name = "tElock v0.95" // Packer name & version
@@ -25921,7 +25307,7 @@ rule tElock_v0dot95___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot96___: Packer
+rule tElock_v0dot96 : Packer
 {
     meta:
         name = "tElock v0.96" // Packer name & version
@@ -25934,7 +25320,7 @@ rule tElock_v0dot96___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot98b1___: Packer
+rule tElock_v0dot98b1 : Packer
 {
     meta:
         name = "tElock v0.98b1" // Packer name & version
@@ -25947,7 +25333,7 @@ rule tElock_v0dot98b1___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v0dot98b2___: Packer
+rule tElock_v0dot98b2 : Packer
 {
     meta:
         name = "tElock v0.98b2" // Packer name & version
@@ -25960,7 +25346,7 @@ rule tElock_v0dot98b2___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule tElock_v1dot00___: Packer
+rule tElock_v1dot00 : Packer
 {
     meta:
         name = "tElock v1.00" // Packer name & version
@@ -25973,7 +25359,7 @@ rule tElock_v1dot00___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Turbo_Basic_v1dot0_1987___: Packer
+rule Turbo_Basic_v1dot0_1987 : Packer
 {
     meta:
         name = "Turbo Basic v1.0 1987" // Packer name & version
@@ -25986,7 +25372,7 @@ rule Turbo_Basic_v1dot0_1987___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule TXT2COM___: Packer
+rule TXT2COM : Packer
 {
     meta:
         name = "TXT2COM" // Packer name & version
@@ -25999,7 +25385,7 @@ rule TXT2COM___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule UNITA3_tm_by_Sanitary_Equipment_Research___: Packer
+rule UNITA3_tm_by_Sanitary_Equipment_Research : Packer
 {
     meta:
         name = "UNITA3 (tm) by Sanitary Equipment Research" // Packer name & version
@@ -26012,7 +25398,7 @@ rule UNITA3_tm_by_Sanitary_Equipment_Research___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Unknown_Packer_Northfox___: Packer
+rule Unknown_Packer_Northfox : Packer
 {
     meta:
         name = "Unknown Packer -> Northfox" // Packer name & version
@@ -26025,7 +25411,7 @@ rule Unknown_Packer_Northfox___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Upack_Patch_Sign_by_hot_UNP___: Packer
+rule Upack_Patch_Sign_by_hot_UNP : Packer
 {
     meta:
         name = "Upack_Patch -> Sign by hot_UNP" // Packer name & version
@@ -26038,7 +25424,7 @@ rule Upack_Patch_Sign_by_hot_UNP___: Packer
     condition:
     	for any of them
 }
-rule VOB_ProtectCD_5___: Packer
+rule VOB_ProtectCD_5 : Packer
 {
     meta:
         name = "VOB ProtectCD 5" // Packer name & version
@@ -26051,7 +25437,7 @@ rule VOB_ProtectCD_5___: Packer
     condition:
         for any of them : ($ at entrypoint)
 }
-rule Vx__: GRUNTdot1dotFamily : Packer
+rule Vx : GRUNTdot1dotFamily : Packer
 {
     meta:
         name = "Vx: GRUNT.1.Family" // Packer name & version
